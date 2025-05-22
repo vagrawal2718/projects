@@ -4,6 +4,11 @@ This guide will walk you through setting up a Flask application that handles ima
 
 ---
 
+**Link to Deployed Application:**  
+https://avk-video.onrender.com/
+
+---
+
 ## Python Virtual Environment Setup
 
 To begin, create and activate a Python virtual environment:
