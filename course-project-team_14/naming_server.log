@@ -1,0 +1,66 @@
+IP: 192.168.0.222, Port: 54984, Message: Accepted connection from Storage Server
+IP: 192.168.0.222, Port: 49048, Message: Accepted connection from Storage Server
+IP: 192.168.0.222, Port: 43796, Message:  Client request=> COPY /home/symphony/dummmy1/e.txt /home/harmony/dummy
+
+IP: 192.168.0.222, Port: 43796, Message:  Initial SS ack for COPY /home/symphony/dummmy1/e.txt /home/harmony/dummy => ACK: REQUEST ACKNOWLEDGMENT SUCCESS 
+IP: 192.168.0.222, Port: 43796, Message:  Final SS ack for COPY /home/symphony/dummmy1/e.txt /home/harmony/dummy => ACK: COPY_FAILED /home/symphony/dummmy1/e.txt
+IP: 192.168.0.220, Port: 53784, Message:  Client request=> COPY /home/symphony/dummy1/e.txt /home/harmony/dummy
+
+IP: 192.168.0.220, Port: 53784, Message:  Initial SS ack for COPY /home/symphony/dummy1/e.txt /home/harmony/dummy => ACK: REQUEST ACKNOWLEDGMENT SUCCESS 
+IP: 192.168.0.220, Port: 53784, Message:  Final SS ack for COPY /home/symphony/dummy1/e.txt /home/harmony/dummy => ACK: COPY_FAILED /home/symphony/dummy1/e.txt
+IP: 192.168.0.220, Port: 56006, Message:  Client request=> COPY /home/symphony/dummy1/dummy2 /home/harmony/dummy
+
+IP: 192.168.0.220, Port: 56006, Message:  Initial SS ack for COPY /home/symphony/dummy1/dummy2 /home/harmony/dummy => ACK: REQUEST ACKNOWLEDGMENT SUCCESS 
+IP: 192.168.0.220, Port: 56006, Message:  Final SS ack for COPY /home/symphony/dummy1/dummy2 /home/harmony/dummy => ACK: COPY_FAILED /home/symphony/dummy1/dummy2
+IP: 192.168.0.220, Port: 35976, Message:  Client request=> COPY /home/symphony/dummy1/e.txt /home/harmony/dummy1/dummy2
+
+IP: 192.168.0.220, Port: 35976, Message:  Initial SS ack for COPY /home/symphony/dummy1/e.txt /home/harmony/dummy1/dummy2 => ACK: REQUEST ACKNOWLEDGMENT SUCCESS 
+IP: 192.168.0.220, Port: 35976, Message:  Final SS ack for COPY /home/symphony/dummy1/e.txt /home/harmony/dummy1/dummy2 => ACK: COPY_FAILED /home/symphony/dummy1/e.txt
+IP: 192.168.0.220, Port: 42904, Message:  Client request=> COPY /home/symphony/dummy1/e.txt /home/symphony/dummy1/dummy2
+
+IP: 192.168.0.220, Port: 42904, Message:  Initial SS ack for COPY /home/symphony/dummy1/e.txt /home/symphony/dummy1/dummy2 => ACK: REQUEST ACKNOWLEDGMENT SUCCESS 
+IP: 192.168.0.220, Port: 42904, Message:  Final SS ack for COPY /home/symphony/dummy1/e.txt /home/symphony/dummy1/dummy2 => ACK: COPY_SUCCESS /home/symphony/dummy1/dummy2/e.txt
+IP: 192.168.0.220, Port: 55940, Message:  Client request=> COPY /home/symphony/dummy1/dummy2 /home/symphony/dummy1/dummy2/dummy3
+
+IP: 192.168.0.220, Port: 55940, Message:  Initial SS ack for COPY /home/symphony/dummy1/dummy2 /home/symphony/dummy1/dummy2/dummy3 => ACK: REQUEST ACKNOWLEDGMENT SUCCESS 
+IP: 192.168.0.220, Port: 55940, Message:  Final SS ack for COPY /home/symphony/dummy1/dummy2 /home/symphony/dummy1/dummy2/dummy3 => ACK: COPY_SUCCESS /home/symphony/dummy1/dummy2/dummy3/dummy2
+IP: 192.168.0.220, Port: 60438, Message:  Client request=> COPY /home/symphony/dummy1/dummy2 /home/harmony/dummy1/dummy2/dummy3
+
+IP: 192.168.0.220, Port: 60438, Message:  Initial SS ack for COPY /home/symphony/dummy1/dummy2 /home/harmony/dummy1/dummy2/dummy3 => ACK: REQUEST ACKNOWLEDGMENT SUCCESS 
+IP: 192.168.0.220, Port: 60438, Message:  Final SS ack for COPY /home/symphony/dummy1/dummy2 /home/harmony/dummy1/dummy2/dummy3 => ACK: COPY_FAILED /home/symphony/dummy1/dummy2
+IP: 192.168.0.222, Port: 60744, Message:  Client request=> Server down
+IP: 192.168.0.220, Port: 60158, Message:  Client request=> Server down
+IP: 192.168.204.89, Port: 58034, Message: Accepted connection from Storage Server
+IP: 192.168.204.239, Port: 44294, Message: Accepted connection from Storage Server
+IP: 192.168.204.89, Port: 35170, Message:  Client request=> COPY /home/symphony/dummy1/dummy2 /home/harmony/dummy
+
+IP: 192.168.204.89, Port: 35170, Message:  Initial SS ack for COPY /home/symphony/dummy1/dummy2 /home/harmony/dummy => ACK: REQUEST ACKNOWLEDGMENT SUCCESS 
+IP: 192.168.204.89, Port: 35170, Message:  Final SS ack for COPY /home/symphony/dummy1/dummy2 /home/harmony/dummy => ACK: COPY_FAILED /home/symphony/dummy1/dummy2
+IP: 192.168.204.89, Port: 33288, Message:  Client request=> COPY /home/symphony/dummy1/e.txt /home/harmony/dummy
+
+IP: 192.168.204.89, Port: 33288, Message:  Initial SS ack for COPY /home/symphony/dummy1/e.txt /home/harmony/dummy => ACK: REQUEST ACKNOWLEDGMENT SUCCESS 
+IP: 192.168.204.89, Port: 33288, Message:  Final SS ack for COPY /home/symphony/dummy1/e.txt /home/harmony/dummy => ACK: COPY_FAILED /home/symphony/dummy1/e.txt
+IP: 192.168.204.239, Port: 49808, Message:  Client request=> Server down
+IP: 192.168.204.89, Port: 43054, Message:  Client request=> Server down
+IP: 192.168.204.239, Port: 35046, Message: Accepted connection from Storage Server
+IP: 192.168.204.239, Port: 60446, Message: Accepted connection from Storage Server
+IP: 192.168.204.89, Port: 39356, Message:  Client request=> COPY /home/symphony/dummy1/e.txt /home/harmony/dummy
+
+IP: 192.168.204.89, Port: 39356, Message:  Initial SS ack for COPY /home/symphony/dummy1/e.txt /home/harmony/dummy => ACK: REQUEST ACKNOWLEDGMENT SUCCESS 
+IP: 192.168.204.89, Port: 39356, Message:  Final SS ack for COPY /home/symphony/dummy1/e.txt /home/harmony/dummy => ACK: COPY_FAILED /home/symphony/dummy1/e.txt
+IP: 192.168.204.89, Port: 49378, Message: Accepted connection from Storage Server
+IP: 192.168.204.89, Port: 34516, Message: Accepted connection from Storage Server
+IP: 192.168.204.89, Port: 42982, Message:  Client request=> COPY /home/symphony/dummy1/e.txt /home/harmony/dummy
+
+IP: 192.168.204.89, Port: 42982, Message:  Initial SS ack for COPY /home/symphony/dummy1/e.txt /home/harmony/dummy => ACK: REQUEST ACKNOWLEDGMENT SUCCESS 
+IP: 192.168.204.89, Port: 42982, Message:  Final SS ack for COPY /home/symphony/dummy1/e.txt /home/harmony/dummy => ACK: COPY_FILE_SUCCESS /home/harmony/dummy
+IP: 192.168.204.89, Port: 56572, Message:  Client request=> COPY /home/symphony/dummy1/dummy2 /home/harmony/dummy
+
+IP: 192.168.204.89, Port: 56572, Message:  Initial SS ack for COPY /home/symphony/dummy1/dummy2 /home/harmony/dummy => ACK: REQUEST ACKNOWLEDGMENT SUCCESS 
+IP: 192.168.204.89, Port: 56572, Message:  Final SS ack for COPY /home/symphony/dummy1/dummy2 /home/harmony/dummy => ACK: COPY_FAILED /home/symphony/dummy1/dummy2
+IP: 192.168.204.89, Port: 39756, Message:  Client request=> Server down
+IP: 192.168.204.239, Port: 40434, Message:  Client request=> Server down
+IP: 192.168.204.89, Port: 58084, Message: Accepted connection from Storage Server
+IP: 192.168.204.239, Port: 56180, Message:  Client request=> WRITE /home/harmony/dummy/b.txt root_directory
+
+IP: 192.168.204.89, Port: 46226, Message:  Client request=> Server down
