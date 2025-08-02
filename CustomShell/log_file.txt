@@ -1,0 +1,15 @@
+activities
+gedit &
+sleep 5 & echo "Lorem ipsum"
+sleep 5 & ; echo "Lorem Ipsum"
+mkdir test
+hopt test; pwd
+hop test; pwd
+cd test
+ls
+pwd
+cd tesr
+cd test
+pwd
+echo "Hello World" | wc | echo
+echo "Hello World" | wc > c.txt

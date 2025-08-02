@@ -1,0 +1,15 @@
+gedit
+gedit &
+activities
+sleeeep 9
+hop ~
+mkdir assignment
+hop assignment
+mkdir tut
+hop .. tut
+ls
+reveal -alal
+reveal -a -l
+cd ..
+echo "Lorem Ipsum" | wc
+cd ..
