@@ -1,0 +1,124 @@
+.
+├── backend
+│   ├── config
+│   │   └── db.js
+│   ├── controllers
+│   │   ├── categoryController.js
+│   │   ├── orderController.js
+│   │   ├── productController.js
+│   │   └── userController.js
+│   ├── index.js
+│   ├── middlewares
+│   │   ├── asyncHandler.js
+│   │   ├── authMiddleware.js
+│   │   └── checkId.js
+│   ├── models
+│   │   ├── categoryModel.js
+│   │   ├── orderModel.js
+│   │   ├── productModel.js
+│   │   └── userModel.js
+│   ├── routes
+│   │   ├── categoryRoutes.js
+│   │   ├── orderRoutes.js
+│   │   ├── productRoutes.js
+│   │   ├── uploadRoutes.js
+│   │   └── userRoutes.js
+│   └── utils
+│       └── createToken.js
+├── frontend
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── README.md
+│   ├── src
+│   │   ├── App.jsx
+│   │   ├── components
+│   │   │   ├── CategoryForm.jsx
+│   │   │   ├── Header.jsx
+│   │   │   ├── Loader.jsx
+│   │   │   ├── Message.jsx
+│   │   │   ├── Modal.jsx
+│   │   │   ├── PrivateRoute.jsx
+│   │   │   └── ProgressSteps.jsx
+│   │   ├── index.css
+│   │   ├── main.jsx
+│   │   ├── pages
+│   │   │   ├── Admin
+│   │   │   │   ├── AdminDashboard.jsx
+│   │   │   │   ├── AdminMenu.jsx
+│   │   │   │   ├── AdminRoute.jsx
+│   │   │   │   ├── AllProducts.jsx
+│   │   │   │   ├── CategoryList.jsx
+│   │   │   │   ├── OrderList.jsx
+│   │   │   │   ├── ProductList.jsx
+│   │   │   │   ├── ProductUpdate.jsx
+│   │   │   │   └── UserList.jsx
+│   │   │   ├── Auth
+│   │   │   │   ├── Login.jsx
+│   │   │   │   ├── Navigation.css
+│   │   │   │   ├── Navigation.jsx
+│   │   │   │   └── Register.jsx
+│   │   │   ├── Cart.jsx
+│   │   │   ├── Home.jsx
+│   │   │   ├── Orders
+│   │   │   │   ├── DeliverOrders.jsx
+│   │   │   │   ├── Order.jsx
+│   │   │   │   ├── PlaceOrder.jsx
+│   │   │   │   └── Shipping.jsx
+│   │   │   ├── Products
+│   │   │   │   ├── FavoritesCount.jsx
+│   │   │   │   ├── Favorites.jsx
+│   │   │   │   ├── HeartIcon.jsx
+│   │   │   │   ├── ProductCard.jsx
+│   │   │   │   ├── ProductCarousel.jsx
+│   │   │   │   ├── ProductDetails.jsx
+│   │   │   │   ├── Product.jsx
+│   │   │   │   ├── Products.jsx
+│   │   │   │   ├── ProductTabs.jsx
+│   │   │   │   ├── Ratings.jsx
+│   │   │   │   └── SmallProduct.jsx
+│   │   │   ├── Shop.jsx
+│   │   │   └── User
+│   │   │       ├── Profile.jsx
+│   │   │       └── UserOrder.jsx
+│   │   ├── redux
+│   │   │   ├── api
+│   │   │   │   ├── apiSlice.js
+│   │   │   │   ├── categoryApiSlice.js
+│   │   │   │   ├── orderApiSlice.js
+│   │   │   │   ├── productApiSlice.js
+│   │   │   │   └── usersApiSlice.js
+│   │   │   ├── constants.js
+│   │   │   ├── features
+│   │   │   │   ├── auth
+│   │   │   │   │   └── authSlice.js
+│   │   │   │   ├── cart
+│   │   │   │   │   └── cartSlice.js
+│   │   │   │   ├── favorites
+│   │   │   │   │   └── favoriteSlice.js
+│   │   │   │   └── shop
+│   │   │   │       └── shopSlice.js
+│   │   │   └── store.js
+│   │   └── Utils
+│   │       ├── cartUtils.js
+│   │       └── localStorage.js
+│   └── vite.config.js
+├── package.json
+├── package-lock.json
+├── tree
+└── uploads
+    ├── image-1738591777870.jpeg
+    ├── image-1738591871663.jpeg
+    ├── image-1738594515844.png
+    ├── image-1738643586919.jpeg
+    ├── image-1738643982037.jpeg
+    ├── image-1738646475392.jpeg
+    ├── image-1738648369162.jpeg
+    ├── image-1738648519106.jpeg
+    ├── image-1738662266334.jpeg
+    ├── image-1738662276333.jpeg
+    └── image-1738662309054.jpeg
+
+25 directories, 95 files
+:}
