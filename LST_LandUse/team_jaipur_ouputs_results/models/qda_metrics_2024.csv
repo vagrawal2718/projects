@@ -1,0 +1,5 @@
+Class,Producer's Accuracy,User's Accuracy,MSE
+Urban,0.7058823529411765,1.0,0.07936507936507936
+Vegetation,1.0,1.0,0.0
+Water,1.0,1.0,0.0
+Others,1.0,0.8076923076923077,0.07936507936507936
