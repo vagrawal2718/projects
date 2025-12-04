@@ -126,6 +126,11 @@ See `TeamX_Result_Code_Demo.mp4` for spatial predictions and change detection ma
 - CA simulation and spatial prediction
 - Validation and accuracy assessment
 
+**Demo Video:** [View Results & Code Demonstration](https://drive.google.com/file/d/1TFYDhuULdxDNWMWhToacqXP5YewGUxG2/view?usp=sharing)
+- Spatial predictions and change detection maps
+- Visual walkthrough of results (2020-2050)
+- Code execution demonstration
+
 
 ## Reference
 
