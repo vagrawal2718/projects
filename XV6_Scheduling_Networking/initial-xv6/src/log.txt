@@ -1,0 +1,468 @@
+riscv64-unknown-elf-gcc    -c -o kernel/entry.o kernel/entry.S
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/start.o kernel/start.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/console.o kernel/console.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/printf.o kernel/printf.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/uart.o kernel/uart.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/kalloc.o kernel/kalloc.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/spinlock.o kernel/spinlock.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/string.o kernel/string.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/main.o kernel/main.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/vm.o kernel/vm.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/proc.o kernel/proc.c
+riscv64-unknown-elf-gcc    -c -o kernel/swtch.o kernel/swtch.S
+riscv64-unknown-elf-gcc    -c -o kernel/trampoline.o kernel/trampoline.S
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/trap.o kernel/trap.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/syscall.o kernel/syscall.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/sysproc.o kernel/sysproc.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/bio.o kernel/bio.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/fs.o kernel/fs.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/log.o kernel/log.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/sleeplock.o kernel/sleeplock.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/file.o kernel/file.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/pipe.o kernel/pipe.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/exec.o kernel/exec.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/sysfile.o kernel/sysfile.c
+riscv64-unknown-elf-gcc    -c -o kernel/kernelvec.o kernel/kernelvec.S
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/plic.o kernel/plic.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o kernel/virtio_disk.o kernel/virtio_disk.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie -march=rv64g -nostdinc -I. -Ikernel -c user/initcode.S -o user/initcode.o
+riscv64-unknown-elf-ld -z max-page-size=4096 -N -e start -Ttext 0 -o user/initcode.out user/initcode.o
+riscv64-unknown-elf-objcopy -S -O binary user/initcode.out user/initcode
+riscv64-unknown-elf-objdump -S user/initcode.o > user/initcode.asm
+riscv64-unknown-elf-ld -z max-page-size=4096 -T kernel/kernel.ld -o kernel/kernel kernel/entry.o kernel/start.o kernel/console.o kernel/printf.o kernel/uart.o kernel/kalloc.o kernel/spinlock.o kernel/string.o kernel/main.o kernel/vm.o kernel/proc.o kernel/swtch.o kernel/trampoline.o kernel/trap.o kernel/syscall.o kernel/sysproc.o kernel/bio.o kernel/fs.o kernel/log.o kernel/sleeplock.o kernel/file.o kernel/pipe.o kernel/exec.o kernel/sysfile.o kernel/kernelvec.o kernel/plic.o kernel/virtio_disk.o 
+riscv64-unknown-elf-objdump -S kernel/kernel > kernel/kernel.asm
+riscv64-unknown-elf-objdump -t kernel/kernel | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > kernel/kernel.sym
+gcc -Werror -Wall -I. -o mkfs/mkfs mkfs/mkfs.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/ulib.o user/ulib.c
+perl user/usys.pl > user/usys.S
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie -c -o user/usys.o user/usys.S
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/printf.o user/printf.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/umalloc.o user/umalloc.c
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/cat.o user/cat.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_cat user/cat.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_cat > user/cat.asm
+riscv64-unknown-elf-objdump -t user/_cat | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/cat.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/echo.o user/echo.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_echo user/echo.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_echo > user/echo.asm
+riscv64-unknown-elf-objdump -t user/_echo | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/echo.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/forktest.o user/forktest.c
+# forktest has less library code linked in - needs to be small
+# in order to be able to max out the proc table.
+riscv64-unknown-elf-ld -z max-page-size=4096 -N -e main -Ttext 0 -o user/_forktest user/forktest.o user/ulib.o user/usys.o
+riscv64-unknown-elf-objdump -S user/_forktest > user/forktest.asm
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/grep.o user/grep.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_grep user/grep.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_grep > user/grep.asm
+riscv64-unknown-elf-objdump -t user/_grep | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/grep.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/init.o user/init.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_init user/init.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_init > user/init.asm
+riscv64-unknown-elf-objdump -t user/_init | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/init.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/kill.o user/kill.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_kill user/kill.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_kill > user/kill.asm
+riscv64-unknown-elf-objdump -t user/_kill | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/kill.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/ln.o user/ln.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_ln user/ln.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_ln > user/ln.asm
+riscv64-unknown-elf-objdump -t user/_ln | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/ln.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/ls.o user/ls.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_ls user/ls.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_ls > user/ls.asm
+riscv64-unknown-elf-objdump -t user/_ls | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/ls.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/mkdir.o user/mkdir.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_mkdir user/mkdir.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_mkdir > user/mkdir.asm
+riscv64-unknown-elf-objdump -t user/_mkdir | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/mkdir.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/rm.o user/rm.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_rm user/rm.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_rm > user/rm.asm
+riscv64-unknown-elf-objdump -t user/_rm | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/rm.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/sh.o user/sh.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_sh user/sh.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_sh > user/sh.asm
+riscv64-unknown-elf-objdump -t user/_sh | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/sh.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/stressfs.o user/stressfs.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_stressfs user/stressfs.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_stressfs > user/stressfs.asm
+riscv64-unknown-elf-objdump -t user/_stressfs | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/stressfs.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/usertests.o user/usertests.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_usertests user/usertests.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_usertests > user/usertests.asm
+riscv64-unknown-elf-objdump -t user/_usertests | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/usertests.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/grind.o user/grind.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_grind user/grind.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_grind > user/grind.asm
+riscv64-unknown-elf-objdump -t user/_grind | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/grind.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/wc.o user/wc.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_wc user/wc.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_wc > user/wc.asm
+riscv64-unknown-elf-objdump -t user/_wc | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/wc.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/zombie.o user/zombie.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_zombie user/zombie.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_zombie > user/zombie.asm
+riscv64-unknown-elf-objdump -t user/_zombie | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/zombie.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/schedulertest.o user/schedulertest.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_schedulertest user/schedulertest.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_schedulertest > user/schedulertest.asm
+riscv64-unknown-elf-objdump -t user/_schedulertest | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/schedulertest.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/syscount.o user/syscount.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_syscount user/syscount.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_syscount > user/syscount.asm
+riscv64-unknown-elf-objdump -t user/_syscount | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/syscount.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/alarmtest.o user/alarmtest.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_alarmtest user/alarmtest.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_alarmtest > user/alarmtest.asm
+riscv64-unknown-elf-objdump -t user/_alarmtest | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/alarmtest.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/mlfq.o user/mlfq.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_mlfq user/mlfq.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_mlfq > user/mlfq.asm
+riscv64-unknown-elf-objdump -t user/_mlfq | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/mlfq.sym
+riscv64-unknown-elf-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -DMLFQ -fno-pie -no-pie   -c -o user/lbs.o user/lbs.c
+riscv64-unknown-elf-ld -z max-page-size=4096 -T user/user.ld -o user/_lbs user/lbs.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+riscv64-unknown-elf-objdump -S user/_lbs > user/lbs.asm
+riscv64-unknown-elf-objdump -t user/_lbs | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > user/lbs.sym
+mkfs/mkfs fs.img README user/_cat user/_echo user/_forktest user/_grep user/_init user/_kill user/_ln user/_ls user/_mkdir user/_rm user/_sh user/_stressfs user/_usertests user/_grind user/_wc user/_zombie user/_schedulertest user/_syscount user/_alarmtest user/_mlfq user/_lbs 
+nmeta 46 (boot, super, log blocks 30 inode blocks 13, bitmap blocks 1) blocks 1954 total 2000
+balloc: first 943 blocks have been allocated
+balloc: write bitmap block at sector 45
+qemu-system-riscv64 -machine virt -bios none -kernel kernel/kernel -m 128M -smp 1 -nographic -global virtio-mmio.force-legacy=false -drive file=fs.img,if=none,format=raw,id=x0 -device virtio-blk-device,drive=x0,bus=virtio-mmio-bus.0
+
+xv6 kernel is booting
+
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+PID: 1, Queue: 0, Tick: 1
+init: starting sh
+PID: 2, Queue: 0, Tick: 1
+PID: 2, Queue: 0, Tick: 1
+PID: 2, Queue: 0, Tick: 1
+PID: 2, Queue: 0, Tick: 1
+PID: 2, Queue: 0, Tick: 1
+PID: 2, Queue: 0, Tick: 1
+PID: 2, Queue: 0, Tick: 1
+PID: 2, Queue: 0, Tick: 1
+PID: 2, Queue: 0, Tick: 1
+PID: 2, Queue: 0, Tick: 1
+PID: 2, Queue: 0, Tick: 1
+PID: 2, Queue: 0, Tick: 1
+$ mlfq
+PID: 2, Queue: 0, Tick: 184
+PID: 3, Queue: 0, Tick: 184
+PID: 3, Queue: 0, Tick: 184
+PID: 3, Queue: 0, Tick: 184
+PID: 3, Queue: 0, Tick: 184
+PID: 3, Queue: 0, Tick: 184
+PID: 3, Queue: 0, Tick: 184
+PID: 4, Queue: 0, Tick: 184
+PID: 5, Queue: 0, Tick: 184
+PID: 6, Queue: 0, Tick: 184
+PID: 4, Queue: 0, Tick: 185
+PID: 5, Queue: 0, Tick: 185
+PID: 6, Queue: 0, Tick: 185
+PID: 3, Queue: 0, Tick: 185
+PID: 7, Queue: 0, Tick: 185
+PID: 3, Queue: 0, Tick: 185
+PID: 8, Queue: 0, Tick: 185
+PID: 4, Queue: 0, Tick: 186
+PID: 5, Queue: 0, Tick: 186
+PID: 8, Queue: 0, Tick: 186
+Mixed process 4: iteration 0
+Mixed process 4: iteration 1
+PID: 4, Queue: 0, Tick: 187
+PID: 5, Queue: 0, Tick: 187
+PID: 8, Queue: 0, Tick: 187
+Mixed process 4: iteration 2
+Mixed process 4: iteration 3
+PID: 4, Queue: 0, Tick: 188
+PID: 5, Queue: 0, Tick: 188
+PID: 8, Queue: 0, Tick: 188
+Mixed process 4: iteration 4
+Mixed process 4: iteration 5
+PID: 4, Queue: 0, Tick: 189
+PID: 5, Queue: 0, Tick: 189
+PID: 8, Queue: 0, Tick: 189
+Mixed process 4: iteration 6
+Mixed process 4: iteration 7
+PID: 4, Queue: 0, Tick: 190
+PID: 5, Queue: 0, Tick: 190
+PID: 8, Queue: 0, Tick: 190
+Mixed process 4: iteration 8
+Mixed process 4: iteration 9
+PID: 4, Queue: 0, Tick: 191
+PID: 5, Queue: 0, Tick: 191
+PID: 8, Queue: 0, Tick: 191
+Mixed process 4: iteration 10
+Mixed process 4: iteration 11
+PID: 4, Queue: 0, Tick: 192
+PID: 5, Queue: 0, Tick: 192
+PID: 8, Queue: 0, Tick: 192
+Mixed process 4: iteration 12
+Mixed process 4: iteration 13
+PID: 4, Queue: 0, Tick: 193
+PID: 5, Queue: 0, Tick: 193
+PID: 8, Queue: 0, Tick: 193
+Mixed process 4: iteration 14
+Mixed process 4: iteration 15
+PID: 4, Queue: 0, Tick: 194
+PID: 5, Queue: 0, Tick: 194
+PID: 8, Queue: 0, Tick: 194
+Mixed process 4: iteration 16
+Mixed process 4: iteration 17
+PID: 4, Queue: 0, Tick: 195
+PID: 5, Queue: 0, Tick: 195
+PID: 8, Queue: 0, Tick: 195
+Mixed process 4: iteration 18
+Mixed process 4: iteration 19
+PID: 4, Queue: 0, Tick: 196
+PID: 5, Queue: 0, Tick: 196
+PID: 8, Queue: 0, Tick: 196
+Mixed process 4: iteration 20
+Mixed process 4: iteration 21
+PID: 4, Queue: 0, Tick: 197
+PID: 5, Queue: 0, Tick: 197
+PID: 8, Queue: 0, Tick: 197
+Mixed process 4: iteration 22
+Mixed process 4: iteration 23
+PID: 4, Queue: 0, Tick: 198
+PID: 5, Queue: 0, Tick: 198
+PID: 8, Queue: 0, Tick: 198
+Mixed process 4: iteration 24
+Mixed process 4: iteration 25
+PID: 4, Queue: 0, Tick: 199
+PID: 5, Queue: 0, Tick: 199
+PID: 8, Queue: 0, Tick: 199
+Mixed process 4: iteration 26
+Mixed process 4: iteration 27
+PID: 4, Queue: 0, Tick: 200
+PID: 5, Queue: 0, Tick: 200
+PID: 8, Queue: 0, Tick: 200
+Mixed process 4: iteration 28
+Mixed process 4: iteration 29
+PID: 4, Queue: 0, Tick: 201
+PID: 5, Queue: 0, Tick: 201
+PID: 8, Queue: 0, Tick: 201
+Mixed process 4: iteration 30
+Mixed process 4: iteration 31
+PID: 4, Queue: 0, Tick: 202
+PID: 5, Queue: 0, Tick: 202
+PID: 8, Queue: 0, Tick: 202
+Mixed process 4: iteration 32
+Mixed process 4: iteration 33
+PID: 4, Queue: 0, Tick: 203
+PID: 5, Queue: 0, Tick: 203
+PID: 8, Queue: 0, Tick: 203
+Mixed process 4: iteration 34
+Mixed process 4: iteration 35
+PID: 4, Queue: 0, Tick: 204
+PID: 5, Queue: 0, Tick: 204
+PID: 8, Queue: 0, Tick: 204
+Mixed process 4: iteration 36
+Mixed process 4: iteration 37
+PID: 4, Queue: 0, Tick: 205
+PID: 5, Queue: 0, Tick: 205
+PID: 8, Queue: 0, Tick: 205
+Mixed process 4: iteration 38
+Mixed process 4: iteration 39
+PID: 4, Queue: 0, Tick: 206
+PID: 5, Queue: 0, Tick: 206
+PID: 8, Queue: 0, Tick: 206
+Mixed process 4: iteration 40
+Mixed process 4: iteration 41
+PID: 4, Queue: 0, Tick: 207
+PID: 5, Queue: 0, Tick: 207
+PID: 8, Queue: 0, Tick: 207
+Mixed process 4: iteration 42
+Mixed process 4: iteration 43
+PID: 4, Queue: 0, Tick: 208
+PID: 5, Queue: 0, Tick: 208
+PID: 8, Queue: 0, Tick: 208
+Mixed process 4: iteration 44
+Mixed process 4: iteration 45
+PID: 4, Queue: 0, Tick: 209
+PID: 5, Queue: 0, Tick: 209
+PID: 8, Queue: 0, Tick: 209
+Mixed process 4: iteration 46
+Mixed process 4: iteration 47
+PID: 4, Queue: 0, Tick: 210
+PID: 5, Queue: 0, Tick: 210
+PID: 8, Queue: 0, Tick: 210
+Mixed process 4: iteration 48
+Mixed process 4: iteration 49
+PID: 3, Queue: 0, Tick: 210
+PID: 4, Queue: 0, Tick: 211
+PID: 5, Queue: 0, Tick: 211
+PID: 4, Queue: 0, Tick: 212
+PID: 5, Queue: 0, Tick: 212
+PID: 4, Queue: 0, Tick: 213
+PID: 5, Queue: 0, Tick: 213
+PID: 4, Queue: 0, Tick: 214
+PID: 5, Queue: 0, Tick: 214
+PID: 4, Queue: 0, Tick: 215
+PID: 5, Queue: 0, Tick: 215
+PID: 4, Queue: 0, Tick: 216
+PID: 5, Queue: 0, Tick: 216
+PID: 4, Queue: 0, Tick: 217
+PID: 5, Queue: 0, Tick: 217
+PID: 4, Queue: 0, Tick: 218
+PID: 5, Queue: 0, Tick: 218
+PID: 4, Queue: 0, Tick: 219
+PID: 5, Queue: 0, Tick: 219
+PID: 4, Queue: 0, Tick: 220
+PID: 5, Queue: 0, Tick: 220
+PID: 4, Queue: 0, Tick: 221
+PID: 5, Queue: 0, Tick: 221
+PID: 4, Queue: 0, Tick: 222
+PID: 5, Queue: 0, Tick: 222
+PID: 4, Queue: 0, Tick: 223
+PID: 5, Queue: 0, Tick: 223
+PID: 4, Queue: 0, Tick: 224
+PID: 5, Queue: 0, Tick: 224
+PID: 4, Queue: 0, Tick: 225
+PID: 5, Queue: 0, Tick: 225
+PID: 4, Queue: 0, Tick: 226
+PID: 5, Queue: 0, Tick: 226
+PID: 4, Queue: 0, Tick: 227
+PID: 5, Queue: 0, Tick: 227
+PID: 4, Queue: 0, Tick: 228
+PID: 5, Queue: 0, Tick: 228
+PID: 4, Queue: 0, Tick: 229
+PID: 5, Queue: 0, Tick: 229
+PID: 4, Queue: 0, Tick: 230
+PID: 5, Queue: 0, Tick: 230
+PID: 4, Queue: 0, Tick: 231
+PID: 5, Queue: 0, Tick: 231
+PID: 4, Queue: 0, Tick: 232
+PID: 5, Queue: 0, Tick: 232
+PID: 4, Queue: 0, Tick: 233
+PID: 5, Queue: 0, Tick: 233
+PID: 4, Queue: 0, Tick: 234
+PID: 5, Queue: 0, Tick: 234
+PID: 4, Queue: 0, Tick: 235
+PID: 5, Queue: 0, Tick: 235
+PID: 4, Queue: 0, Tick: 236
+PID: 5, Queue: 0, Tick: 236
+PID: 4, Queue: 0, Tick: 237
+PID: 5, Queue: 0, Tick: 237
+PID: 4, Queue: 0, Tick: 238
+PID: 5, Queue: 0, Tick: 238
+PID: 4, Queue: 0, Tick: 239
+PID: 5, Queue: 0, Tick: 239
+PID: 4, Queue: 0, Tick: 240
+PID: 5, Queue: 0, Tick: 240
+PID: 4, Queue: 0, Tick: 241
+PID: 5, Queue: 0, Tick: 241
+PID: 4, Queue: 0, Tick: 242
+PID: 5, Queue: 0, Tick: 242
+PID: 4, Queue: 0, Tick: 243
+PID: 5, Queue: 0, Tick: 243
+PID: 4, Queue: 0, Tick: 244
+PID: 5, Queue: 0, Tick: 244
+PID: 4, Queue: 0, Tick: 245
+PID: 5, Queue: 0, Tick: 245
+PID: 4, Queue: 0, Tick: 246
+PID: 5, Queue: 0, Tick: 246
+PID: 4, Queue: 0, Tick: 247
+PID: 5, Queue: 0, Tick: 247
+PID: 4, Queue: 0, Tick: 248
+PID: 5, Queue: 0, Tick: 248
+PID: 4, Queue: 0, Tick: 249
+PID: 5, Queue: 0, Tick: 249
+PID: 4, Queue: 0, Tick: 250
+PID: 5, Queue: 0, Tick: 250
+PID: 4, Queue: 0, Tick: 251
+PID: 5, Queue: 0, Tick: 251
+PID: 4, Queue: 0, Tick: 252
+PID: 5, Queue: 0, Tick: 252
+PID: 4, Queue: 0, Tick: 253
+PID: 5, Queue: 0, Tick: 253
+PID: 4, Queue: 0, Tick: 254
+PID: 5, Queue: 0, Tick: 254
+PID: 4, Queue: 0, Tick: 255
+PID: 5, Queue: 0, Tick: 255
+PID: 4, Queue: 0, Tick: 256
+PID: 5, Queue: 0, Tick: 256
+PID: 4, Queue: 0, Tick: 257
+PID: 5, Queue: 0, Tick: 257
+PID: 4, Queue: 0, Tick: 258
+PID: 5, Queue: 0, Tick: 258
+PID: 4, Queue: 0, Tick: 259
+PID: 5, Queue: 0, Tick: 259
+PID: 4, Queue: 0, Tick: 260
+PID: 5, Queue: 0, Tick: 260
+PID: 4, Queue: 0, Tick: 261
+PID: 5, Queue: 0, Tick: 261
+PID: 4, Queue: 0, Tick: 262
+PID: 5, Queue: 0, Tick: 262
+PID: 4, Queue: 0, Tick: 263
+PID: 5, Queue: 0, Tick: 263
+PID: 4, Queue: 0, Tick: 264
+PID: 5, Queue: 0, Tick: 264
+PID: 4, Queue: 0, Tick: 265
+PID: 5, Queue: 0, Tick: 265
+PID: 4, Queue: 0, Tick: 266
+PID: 5, Queue: 0, Tick: 266
+PID: 4, Queue: 0, Tick: 267
+PID: 5, Queue: 0, Tick: 267
+PID: 4, Queue: 0, Tick: 268
+PID: 5, Queue: 0, Tick: 268
+PID: 4, Queue: 0, Tick: 269
+PID: 5, Queue: 0, Tick: 269
+PID: 4, Queue: 0, Tick: 270
+PID: 5, Queue: 0, Tick: 270
+PID: 4, Queue: 0, Tick: 271
+PID: 5, Queue: 0, Tick: 271
+PID: 4, Queue: 0, Tick: 272
+PID: 5, Queue: 0, Tick: 272
+PID: 4, Queue: 0, Tick: 273
+PID: 5, Queue: 0, Tick: 273
+PID: 4, Queue: 0, Tick: 274
+PID: 5, Queue: 0, Tick: 274
+PID: 4, Queue: 0, Tick: 275
+PID: 5, Queue: 0, Tick: 275
+PID: 4, Queue: 0, Tick: 276
+PID: 5, Queue: 0, Tick: 276
+PID: 4, Queue: 0, Tick: 277
+PID: 5, Queue: 0, Tick: 277
+PID: 4, Queue: 1, Tick: 278
+PID: 5, Queue: 1, Tick: 278
+PID: 4, Queue: 1, Tick: 279
+PID: 5, Queue: 1, Tick: 279
+PID: 4, Queue: 1, Tick: 280
+PID: 5, Queue: 1, Tick: 280
+PID: 4, Queue: 1, Tick: 281
+PID: 5, Queue: 1, Tick: 281
+PID: 4, Queue: 1, Tick: 282
+PID: 5, Queue: 1, Tick: 282
+PID: 4, Queue: 1, Tick: 283
+PID: 5, Queue: 1, Tick: 283
+PID: 4, Queue: 1, Tick: 284
+PID: 3, Queue: 0, Tick: 284
+PID: 5, Queue: 1, Tick: 284
+PID: 3, Queue: 0, Tick: 284
+All processes completed
+PID: 2, Queue: 0, Tick: 284
+$ QEMU: Terminated
+

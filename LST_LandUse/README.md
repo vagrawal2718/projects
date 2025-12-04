@@ -1,5 +1,11 @@
 # Intro to Spatial Sciences - Course Project
 
+## Team Members
+* Vishakha Agrawal
+* Kashik P
+* Keerthana Korlapati
+* Shambhavi
+
 ## Problem Statement
 
 To study the changes in Land Surface Temperature (LST) due to increased urbanization of a city every five years between 2014 and 2024.
@@ -30,7 +36,15 @@ To study the changes in Land Surface Temperature (LST) due to increased urbaniza
 6.  **LST Variation Analysis near Water Bodies:**
     * A water body was picked and the variation in LST for every 2km within a 10 km distance from water bodies was analyzed.
 
-## Colab Notebook
+## Code Resources
 
-The work on the course project can be found in the following Colab notebook:
-[Link to Colab Notebook](https://colab.research.google.com/drive/1PNAbq__Pu8oDyzgRlZDwVDhGDp0eWIat?usp=sharing)
+**Google Earth Engine Script:** [LULC Classification & LST Calculation](https://code.earthengine.google.com/69458f14648bf7bf1c84d1d5aad60063?noload=true)
+- Landsat imagery preprocessing
+- LULC classification (Urban, Vegetation, Waterbodies, Others)
+- Feature collection export for multiple years
+- LST calculation using Mono-window algorithm
+
+**Colab Notebook:** [Project Analysis & Visualization](https://colab.research.google.com/drive/1PNAbq__Pu8oDyzgRlZDwVDhGDp0eWIat?usp=sharing)
+- Complete analysis pipeline
+- Sector-wise statistics
+- LST vs land cover analysis
