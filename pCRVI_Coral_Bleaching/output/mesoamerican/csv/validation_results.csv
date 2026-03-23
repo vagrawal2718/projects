@@ -1,0 +1,6 @@
+year,actual_severity,actual_dhw,actual_bleaching_pct,peak_month,model_dhw_max,dhw_severity_prediction,dhw_match,pcrvi_max,pcrvi_30d_lead,pcrvi_severity_prediction,pcrvi_match,pcrvi_early_warning,notes,source
+1998,severe,9.0,75,9,5.31,minor,UNDERESTIMATE,0.747,0.642,severe,CORRECT,True,Major Caribbean-wide event; Belize and Honduras hardest hit,Aronson et al. (2002) Nature 405:36-38
+2005,catastrophic,12.0,80,10,1.96,none,UNDERESTIMATE,0.607,0.494,severe,CLOSE,True,Most destructive Caribbean event to date; record Atlantic SST,Eakin et al. (2010) PLoS ONE 5(11):e13969
+2010,moderate,6.5,40,9,12.47,severe,CLOSE,0.747,0.688,severe,CLOSE,True,Moderate bleaching; cold water anomalies helped some reefs,McField (2012) Healthy Reefs Report Card
+2016,moderate,7.0,35,9,11.87,severe,CLOSE,0.747,0.715,severe,CLOSE,True,Third global event; less severe than 2005 for this system,Healthy Reefs Initiative 2016
+2023,severe,12.0,70,9,4.65,minor,UNDERESTIMATE,0.622,0.528,severe,CORRECT,True,Record marine heatwave across Caribbean,NOAA CRW; Healthy Reefs Initiative 2023

@@ -1,0 +1,8 @@
+year,actual_severity,actual_dhw,actual_bleaching_pct,peak_month,model_dhw_max,dhw_severity_prediction,dhw_match,pcrvi_max,pcrvi_30d_lead,pcrvi_severity_prediction,pcrvi_match,pcrvi_early_warning,notes,source
+1998,severe,4.9,80,5,2.17,none,UNDERESTIMATE,0.695,0.584,severe,CORRECT,True,"First global bleaching event, strong El Niño",Mondal et al. 2014; Arthur 2000
+2002,minor,2.5,15,5,0.0,none,UNDERESTIMATE,0.49,0.361,moderate,CLOSE,False,Localized bleaching,Andaman Sea monitoring reports
+2005,minor,3.5,20,5,0.3,none,UNDERESTIMATE,0.579,0.461,moderate,CLOSE,True,Post-tsunami recovery period assessment,Roy et al. 2014
+2010,catastrophic,11.7,77,5,6.96,moderate,UNDERESTIMATE,0.738,0.689,severe,CLOSE,True,"El Niño Modoki, 87% in South Andaman, SST up to 34°C",Krishnan et al. 2011; Marimuthu et al. 2013
+2016,moderate,8.3,40,4,7.37,moderate,CORRECT,0.748,0.706,severe,CLOSE,True,"Third global bleaching event, DHW 7.2-9.5",Majumdar et al. 2018
+2020,moderate,6.0,35,5,0.0,none,UNDERESTIMATE,0.504,0.412,moderate,CORRECT,True,Following extreme IOD event of 2019,Mhalaskar et al. 2024; NCCR monitoring
+2024,moderate,8.0,50,5,7.87,moderate,CORRECT,0.808,0.75,severe,CLOSE,True,Fourth Global Coral Bleaching Event (GCBE4),PIB India 2024; Down to Earth 2024

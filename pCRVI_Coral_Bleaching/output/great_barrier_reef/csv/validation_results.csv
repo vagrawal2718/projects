@@ -1,0 +1,8 @@
+year,actual_severity,actual_dhw,actual_bleaching_pct,peak_month,model_dhw_max,dhw_severity_prediction,dhw_match,pcrvi_max,pcrvi_30d_lead,pcrvi_severity_prediction,pcrvi_match,pcrvi_early_warning,notes,source
+1998,severe,8.0,42,2,28.33,severe,CORRECT,0.827,0.69,severe,CORRECT,True,First mass bleaching on GBR; northern reefs most affected,Berkelmans & Oliver (1999) Coral Reefs 18:55-60
+2002,severe,7.5,54,2,19.54,severe,CORRECT,0.691,0.595,severe,CORRECT,True,More extensive than 1998; both inshore and offshore reefs,Berkelmans et al. (2004) Coral Reefs 23:74-83
+2016,catastrophic,12.0,93,3,33.85,severe,CLOSE,0.832,0.704,severe,CLOSE,True,Worst on record; 93% reefs bleached; mass mortality in north,Hughes et al. (2017) Nature 543:373-377
+2017,catastrophic,9.0,89,3,23.41,severe,CLOSE,0.717,0.624,severe,CLOSE,True,Back-to-back with 2016; central GBR most affected,Hughes et al. (2018) Nature 556:492-496
+2020,severe,8.5,60,2,26.4,severe,CORRECT,0.727,0.618,severe,CORRECT,True,First bleaching during La Niña; most extensive heat stress,Hughes et al. (2021) Current Biology 31(19)
+2022,severe,9.5,91,3,27.37,severe,CORRECT,0.728,0.548,severe,CORRECT,True,6th mass event; unprecedented early-summer onset; La Niña,AIMS LTMP 2022; Bainbridge et al. (2022) PMC9652503
+2024,severe,10.0,73,2,35.03,severe,CORRECT,0.831,0.68,severe,CORRECT,True,GCBE4; 7th mass event; widespread across all sectors,GBRMPA aerial surveys Feb-Apr 2024; NOAA CRW

@@ -1,0 +1,6 @@
+year,actual_severity,actual_dhw,actual_bleaching_pct,peak_month,model_dhw_max,dhw_severity_prediction,dhw_match,pcrvi_max,pcrvi_30d_lead,pcrvi_severity_prediction,pcrvi_match,pcrvi_early_warning,notes,source
+1998,catastrophic,7.5,82,5,3.69,minor,UNDERESTIMATE,0.731,0.633,severe,CLOSE,True,82% bleaching in lagoon reefs; 26% mortality; strong El Niño,Arthur (2000) Current Science 79(12):1723-1729
+2010,severe,9.0,75,5,10.87,severe,CORRECT,0.748,0.69,severe,CORRECT,True,"Bleaching at Agatti, Kadmat, Kavaratti; SST >31°C for 50+ days",Vinoth et al. (2011) J Ocean Univ China 10:209-216
+2016,severe,8.8,60,5,10.92,severe,CORRECT,0.768,0.732,severe,CORRECT,True,Third global event; Acropora most affected genus,Arora et al. (2019) Reg Stud Mar Sci 29:100672
+2020,moderate,5.5,30,5,2.08,none,UNDERESTIMATE,0.592,0.517,moderate,CORRECT,True,Post-IOD 2019 warm anomaly,INCOIS coral bleaching alert system
+2024,severe,9.5,70,5,11.11,severe,CORRECT,0.821,0.768,severe,CORRECT,True,4th Global Coral Bleaching Event (GCBE4); among most affected in India,Down to Earth 2024; NOAA CRW GCBE4 report

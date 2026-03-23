@@ -1,0 +1,155 @@
+
+================================================================================
+CORAL BLEACHING EARLY WARNING SYSTEM
+COMPREHENSIVE ANALYSIS REPORT
+================================================================================
+
+REPORT METADATA
+----------------------------------------
+Generated: 2026-02-08 13:06:15 UTC
+Analysis Period: 1998-01-01 00:00:00 to 2025-12-30 00:00:00
+Region: Andaman & Nicobar Islands
+Coordinates: 90E-95E, 6N-14N
+MMM SST: 29.87C (NOAA CRW)
+Forecasting Model: Ensemble-pCRVI
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+This report presents coral bleaching risk analysis based on 10,197 days 
+of environmental data, using the Ensemble-pCRVI forecasting model.
+
+KEY FINDINGS:
+- Maximum DHW recorded: 6.24C-weeks on 2024-05-18 00:00:00
+- Current pCRVI Score: 0.328 (Low)
+- Bleaching events detected: 2 years with DHW >= 4
+
+================================================================================
+1. THERMAL STRESS ANALYSIS
+================================================================================
+
+DHW Statistics:
+  Total Days: 10,197
+  Mean DHW: 0.16C-weeks
+  Maximum DHW: 6.24C-weeks
+
+Alert Level Distribution:
+  No Stress (DHW = 0):    9,324 days
+  Watch (0 < DHW < 3):    555 days
+  Warning (3 <= DHW < 6): 127 days
+  Alert Level 1 (6-8):    108 days
+  Alert Level 2 (>=8):    0 days
+
+Annual Maximum DHW:
+----------------------------------------
+  1998:   1.00C-weeks WATCH
+  1999:   0.00C-weeks NORMAL
+  2000:   0.00C-weeks NORMAL
+  2001:   0.00C-weeks NORMAL
+  2002:   0.00C-weeks NORMAL
+  2003:   0.00C-weeks NORMAL
+  2004:   0.00C-weeks NORMAL
+  2005:   0.00C-weeks NORMAL
+  2006:   0.00C-weeks NORMAL
+  2007:   0.00C-weeks NORMAL
+  2008:   0.00C-weeks NORMAL
+  2009:   0.00C-weeks NORMAL
+  2010:   3.81C-weeks WATCH
+  2011:   0.00C-weeks NORMAL
+  2012:   0.00C-weeks NORMAL
+  2013:   0.00C-weeks NORMAL
+  2014:   0.61C-weeks WATCH
+  2015:   0.00C-weeks NORMAL
+  2016:   6.10C-weeks SIGNIFICANT
+  2017:   0.00C-weeks NORMAL
+  2018:   0.44C-weeks WATCH
+  2019:   0.00C-weeks NORMAL
+  2020:   0.00C-weeks NORMAL
+  2021:   0.30C-weeks WATCH
+  2022:   1.21C-weeks WATCH
+  2023:   0.00C-weeks NORMAL
+  2024:   6.24C-weeks SIGNIFICANT
+  2025:   0.00C-weeks NORMAL
+
+================================================================================
+2. PREDICTIVE CRVI (pCRVI)
+================================================================================
+
+Current Status:
+  pCRVI Score: 0.328
+  Risk Category: Low
+  
+Predictive Skill (at optimal threshold = 0.55):
+  F1 Score: 0.492
+  MCC: 0.481
+
+Recommendation:
+  ROUTINE: Risk falling. Standard monitoring sufficient. Good period for baseline surveys.
+
+================================================================================
+3. HISTORICAL EVENT VALIDATION
+================================================================================
+
+Year   Severity        Reported DHW  Model DHW   pCRVI Max  Assessment
+----------------------------------------------------------------------
+1998   minor           3.00          1.00        0.658      UNDERESTIMATE
+2010   moderate        5.50          3.81        0.714      CLOSE
+2016   moderate        6.00          6.10        0.732      CORRECT
+2024   moderate        7.00          6.24        0.803      CORRECT
+
+================================================================================
+4. DHW TIME SERIES FORECASTING (Ensemble-pCRVI)
+================================================================================
+
+The Ensemble-pCRVI model predicts actual DHW values using time series
+regression, providing actionable early warning with demonstrated skill.
+
+Model Performance:
+----------------------------------------
+
+Ensemble-pCRVI-30d:
+  MAE: 0.171 C-weeks
+  RMSE: 0.517 C-weeks
+  R2: 0.808
+  Bleaching F1: 0.738
+  Precision: 1.000
+  Recall: 0.584
+
+Ensemble-pCRVI-60d:
+  MAE: 0.190 C-weeks
+  RMSE: 0.682 C-weeks
+  R2: 0.668
+  Bleaching F1: 0.308
+  Precision: 1.000
+  Recall: 0.182
+
+Key Predictive Features:
+----------------------------------------
+  Coral Reef Vulnerability Index (pCRVI): 43.0%
+  Coral Reef Vulnerability Index (7-day lag) (pCRVI_L7): 12.8%
+  Population Vulnerability (7-day lag) (BH_L7): 8.9%
+  El Niño Index (60-day lag) (ONI_L60): 7.8%
+  Indian Ocean Dipole (60-day lag) (DMI_L60): 6.4%
+
+================================================================================
+5. CONCLUSIONS AND RECOMMENDATIONS
+================================================================================
+
+1. CURRENT STATUS
+   pCRVI: 0.328 (Low)
+
+2. MONITORING PRIORITIES
+   - Monitor pCRVI daily during peak season (April-June)
+   - pCRVI >= 0.4: Issue WARNING
+   - pCRVI >= 0.6: Activate emergency protocols
+
+3. FORECAST CAPABILITY
+   The Ensemble-pCRVI model provides 60-day advance warning 
+   with demonstrated predictive skill.
+
+================================================================================
+END OF REPORT
+Generated by Coral Bleaching Early Warning System
+Forecast Model: Ensemble-pCRVI
+================================================================================

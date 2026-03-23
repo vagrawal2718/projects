@@ -1,0 +1,4 @@
+year,actual_severity,actual_dhw,actual_bleaching_pct,peak_month,model_dhw_max,dhw_severity_prediction,dhw_match,pcrvi_max,pcrvi_30d_lead,pcrvi_severity_prediction,pcrvi_match,pcrvi_early_warning,notes,source
+1998,catastrophic,15.0,95,4,7.63,moderate,UNDERESTIMATE,0.81,0.708,severe,CLOSE,True,>90% bleaching; ~50% mortality; regime shift on some reefs,Goreau et al. (2000); Graham et al. (2015) Curr Biol
+2016,severe,10.0,70,4,15.45,severe,CORRECT,0.794,0.722,severe,CORRECT,True,Third global event; ~70% bleaching across inner islands,Wilson et al. (2019) Coral Reefs 38:437-449
+2024,severe,9.5,60,4,14.45,severe,CORRECT,0.834,0.772,severe,CORRECT,True,GCBE4; confirmed by NOAA; widespread in inner islands,NOAA CRW GCBE4 confirmation April 2024

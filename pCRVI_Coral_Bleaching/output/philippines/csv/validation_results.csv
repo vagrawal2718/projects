@@ -1,0 +1,5 @@
+year,actual_severity,actual_dhw,actual_bleaching_pct,peak_month,model_dhw_max,dhw_severity_prediction,dhw_match,pcrvi_max,pcrvi_30d_lead,pcrvi_severity_prediction,pcrvi_match,pcrvi_early_warning,notes,source
+1998,severe,9.0,65,7,2.46,none,UNDERESTIMATE,0.683,0.57,severe,CORRECT,True,Widespread across Visayas and Palawan,Arceo et al. (2001); Wilkinson (2000) GCRMN
+2010,severe,10.0,55,6,8.48,severe,CORRECT,0.705,0.674,severe,CORRECT,True,"Severe in Bolinao, Batangas; patchy recovery",Licuanan & Gomez (2012)
+2016,moderate,7.0,40,6,9.13,severe,CLOSE,0.765,0.711,severe,CLOSE,True,Third global event; Tubbataha moderately affected,Tubbataha Management Office; Reef Check Philippines
+2024,severe,9.5,55,7,9.01,severe,CORRECT,0.778,0.719,severe,CORRECT,True,GCBE4; Lingayen Gulf 293 MHW days in 2022 precursor,Yu et al. (2025) Remote Sensing 17(6):1048

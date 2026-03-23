@@ -1,0 +1,77 @@
+{
+  "n_samples": 10114,
+  "expert_weights": {
+    "thermal_anomaly": 0.25,
+    "accumulating_stress": 0.18,
+    "seasonal_risk": 0.1,
+    "climate_driver": 0.12,
+    "bleaching_history": 0.08,
+    "water_quality": 0.15,
+    "light_availability": 0.12
+  },
+  "method": "xgboost",
+  "ml_weights": {
+    "thermal_anomaly": 0.08371885120868683,
+    "accumulating_stress": 0.49633482098579407,
+    "seasonal_risk": 0.05216573178768158,
+    "climate_driver": 0.08511427044868469,
+    "bleaching_history": 0.25805580615997314,
+    "water_quality": 0.011188612319529057,
+    "light_availability": 0.013421843759715557
+  },
+  "feature_importances": {
+    "thermal_anomaly": 0.08371885865926743,
+    "accumulating_stress": 0.49633488059043884,
+    "seasonal_risk": 0.052165739238262177,
+    "climate_driver": 0.08511427789926529,
+    "bleaching_history": 0.25805583596229553,
+    "water_quality": 0.011188613250851631,
+    "light_availability": 0.013421845622360706
+  },
+  "model_metrics": {
+    "mean_mae": 0.3623069407019403,
+    "mean_r2": -0.4030231340823315,
+    "std_mae": 0.11912283711285772,
+    "std_r2": 1.9301893431485524,
+    "target": "future_dhw_30d"
+  },
+  "quality_warning": "R\u00b2=-0.403 is too low for reliable weight derivation. Expert weights should be used for operational deployment.",
+  "use_expert": true,
+  "comparison": {
+    "thermal_anomaly": {
+      "expert": 0.25,
+      "ml": 0.08371885120868683,
+      "diff": -0.16628114879131317
+    },
+    "accumulating_stress": {
+      "expert": 0.18,
+      "ml": 0.49633482098579407,
+      "diff": 0.3163348209857941
+    },
+    "seasonal_risk": {
+      "expert": 0.1,
+      "ml": 0.05216573178768158,
+      "diff": -0.047834268212318426
+    },
+    "climate_driver": {
+      "expert": 0.12,
+      "ml": 0.08511427044868469,
+      "diff": -0.0348857295513153
+    },
+    "bleaching_history": {
+      "expert": 0.08,
+      "ml": 0.25805580615997314,
+      "diff": 0.17805580615997313
+    },
+    "water_quality": {
+      "expert": 0.15,
+      "ml": 0.011188612319529057,
+      "diff": -0.13881138768047094
+    },
+    "light_availability": {
+      "expert": 0.12,
+      "ml": 0.013421843759715557,
+      "diff": -0.10657815624028444
+    }
+  }
+}

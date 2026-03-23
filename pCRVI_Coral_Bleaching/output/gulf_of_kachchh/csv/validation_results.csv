@@ -1,0 +1,5 @@
+year,actual_severity,actual_dhw,actual_bleaching_pct,peak_month,model_dhw_max,dhw_severity_prediction,dhw_match,pcrvi_max,pcrvi_30d_lead,pcrvi_severity_prediction,pcrvi_match,pcrvi_early_warning,notes,source
+1998,minor,3.0,11,6,1.0,none,UNDERESTIMATE,0.658,0.552,severe,OVERESTIMATE,True,Only 11% bleaching; no mortality; corals pre-adapted to extremes,Arthur (2000) Current Science 79(12):1723-1729
+2010,moderate,5.5,25,6,3.81,minor,CLOSE,0.714,0.642,severe,CLOSE,True,Moderate bleaching; Pirotan reef affected; high sedimentation,GEER Foundation & ZSI monitoring
+2016,moderate,6.0,30,5,6.1,moderate,CORRECT,0.732,0.691,severe,CLOSE,True,Third global event; successful Biorock restoration ongoing,Gujarat Forest Dept & WTI coral recovery project
+2024,moderate,7.0,35,6,6.24,moderate,CORRECT,0.803,0.713,severe,CLOSE,True,GCBE4; bleaching observed but lower than other Indian reefs,Down to Earth 2024

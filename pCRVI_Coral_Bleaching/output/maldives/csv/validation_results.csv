@@ -1,0 +1,5 @@
+year,actual_severity,actual_dhw,actual_bleaching_pct,peak_month,model_dhw_max,dhw_severity_prediction,dhw_match,pcrvi_max,pcrvi_30d_lead,pcrvi_severity_prediction,pcrvi_match,pcrvi_early_warning,notes,source
+1998,catastrophic,12.0,90,5,3.69,minor,UNDERESTIMATE,0.731,0.635,severe,CLOSE,True,Up to 90% bleaching; estimated 60% mortality nationwide,McClanahan (2000) Conserv Biol 14(5):1547-1549
+2016,severe,10.0,73,5,10.92,severe,CORRECT,0.768,0.729,severe,CORRECT,True,73% bleaching; significant Acropora loss,Perry & Morgan (2017) Sci Rep 7:40581
+2020,moderate,5.0,30,4,2.08,none,UNDERESTIMATE,0.591,0.52,moderate,CORRECT,True,Moderate; post-IOD warm anomaly,Maldives Marine Research Institute
+2024,severe,9.0,65,4,11.11,severe,CORRECT,0.819,0.767,severe,CORRECT,True,GCBE4; severe bleaching confirmed across multiple atolls,NOAA CRW GCBE4 report; Maldives EPA

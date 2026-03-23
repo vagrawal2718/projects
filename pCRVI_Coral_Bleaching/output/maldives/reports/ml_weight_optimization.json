@@ -1,0 +1,76 @@
+{
+  "n_samples": 10114,
+  "expert_weights": {
+    "thermal_anomaly": 0.25,
+    "accumulating_stress": 0.18,
+    "seasonal_risk": 0.1,
+    "climate_driver": 0.12,
+    "bleaching_history": 0.08,
+    "water_quality": 0.15,
+    "light_availability": 0.12
+  },
+  "method": "xgboost",
+  "ml_weights": {
+    "thermal_anomaly": 0.08892086148262024,
+    "accumulating_stress": 0.4671994149684906,
+    "seasonal_risk": 0.037294335663318634,
+    "climate_driver": 0.0884600430727005,
+    "bleaching_history": 0.2844598889350891,
+    "water_quality": 0.01193605549633503,
+    "light_availability": 0.02172941341996193
+  },
+  "feature_importances": {
+    "thermal_anomaly": 0.08892086148262024,
+    "accumulating_stress": 0.4671994149684906,
+    "seasonal_risk": 0.037294335663318634,
+    "climate_driver": 0.0884600430727005,
+    "bleaching_history": 0.2844598889350891,
+    "water_quality": 0.01193605549633503,
+    "light_availability": 0.02172941341996193
+  },
+  "model_metrics": {
+    "mean_mae": 0.505019069638814,
+    "mean_r2": 0.5606701311945356,
+    "std_mae": 0.17009133435043464,
+    "std_r2": 0.16652854003723752,
+    "target": "future_dhw_30d"
+  },
+  "use_expert": false,
+  "comparison": {
+    "thermal_anomaly": {
+      "expert": 0.25,
+      "ml": 0.08892086148262024,
+      "diff": -0.16107913851737976
+    },
+    "accumulating_stress": {
+      "expert": 0.18,
+      "ml": 0.4671994149684906,
+      "diff": 0.2871994149684906
+    },
+    "seasonal_risk": {
+      "expert": 0.1,
+      "ml": 0.037294335663318634,
+      "diff": -0.06270566433668137
+    },
+    "climate_driver": {
+      "expert": 0.12,
+      "ml": 0.0884600430727005,
+      "diff": -0.031539956927299495
+    },
+    "bleaching_history": {
+      "expert": 0.08,
+      "ml": 0.2844598889350891,
+      "diff": 0.2044598889350891
+    },
+    "water_quality": {
+      "expert": 0.15,
+      "ml": 0.01193605549633503,
+      "diff": -0.13806394450366496
+    },
+    "light_availability": {
+      "expert": 0.12,
+      "ml": 0.02172941341996193,
+      "diff": -0.09827058658003807
+    }
+  }
+}

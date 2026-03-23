@@ -1,0 +1,6 @@
+year,actual_severity,actual_dhw,actual_bleaching_pct,peak_month,model_dhw_max,dhw_severity_prediction,dhw_match,pcrvi_max,pcrvi_30d_lead,pcrvi_severity_prediction,pcrvi_match,pcrvi_early_warning,notes,source
+1998,catastrophic,8.0,89,5,7.63,moderate,UNDERESTIMATE,0.81,0.709,severe,CLOSE,True,89% coral cover bleached; 23% mortality; El Niño driven,Arthur (2000) Current Science 79(12):1723-1729
+2010,severe,10.5,70,5,15.14,severe,CORRECT,0.772,0.7,severe,CORRECT,True,Algal phase shift initiated; SST anomaly persisted 50+ days,Krishnan et al. (2011); Jeevamani et al. (2013)
+2016,severe,9.2,46,4,15.45,severe,CORRECT,0.793,0.726,severe,CORRECT,True,"46% GoM, 70% Palk Bay; SST reached 34°C",Edward et al. (2018); Krishnan et al. (2018)
+2020,severe,7.0,85,5,5.23,minor,UNDERESTIMATE,0.634,0.566,severe,CORRECT,True,Marine heatwave; 85% bleaching per underwater survey,Raj et al. (2022) Indo-Pac J Ocean Life 6(2)
+2024,severe,8.5,60,5,14.45,severe,CORRECT,0.835,0.775,severe,CORRECT,True,GCBE4; significant die-off especially Mandapam islands,Down to Earth May 2024; SDMRI reports

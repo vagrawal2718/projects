@@ -1,0 +1,5 @@
+year,actual_severity,actual_dhw,actual_bleaching_pct,peak_month,model_dhw_max,dhw_severity_prediction,dhw_match,pcrvi_max,pcrvi_30d_lead,pcrvi_severity_prediction,pcrvi_match,pcrvi_early_warning,notes,source
+1998,catastrophic,10.0,90,4,2.77,none,UNDERESTIMATE,0.711,0.594,severe,CLOSE,True,Widespread across Indonesia; mass mortality reported,Wilkinson (2000) GCRMN Status Report
+2010,severe,9.0,60,5,9.36,severe,CORRECT,0.726,0.688,severe,CORRECT,True,Aceh (Sabang) ~60% hard coral mortality,Rudi et al. (2012)
+2016,severe,8.5,50,5,9.88,severe,CORRECT,0.783,0.732,severe,CORRECT,True,E. Nusa Tenggara & W. Sumatra 30-90% mortality,"Kimura et al. (2018, 2022)"
+2024,moderate,8.1,40,6,9.82,severe,CLOSE,0.799,0.746,severe,CLOSE,True,GCBE4; DHW peak 8.1 °C-weeks at Thousand Islands (June),Margaritis et al. (2025) Diversity 17(8):540

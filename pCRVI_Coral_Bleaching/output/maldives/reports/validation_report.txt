@@ -1,0 +1,195 @@
+
+    ================================================================================
+    MODEL VALIDATION REPORT
+    ================================================================================
+
+    Generated: 2026-02-08 13:25:35 UTC
+    Region: Andaman & Nicobar Islands
+    Forecasting Model: Ensemble-pCRVI
+    
+    This report validates predictions from TWO systems:
+    1. DHW (Degree Heating Weeks) - thermal stress indicator
+    2. pCRVI (Predictive Coral Reef Vulnerability Index) - composite risk index
+
+    ================================================================================
+    DHW VALIDATION SUMMARY
+    ================================================================================
+
+    DHW measures accumulated thermal stress and is the standard metric for
+    predicting coral bleaching. Values above 4°C-weeks indicate bleaching risk,
+    above 8°C-weeks indicates severe bleaching expected.
+
+    
+    DHW Accuracy: 2/5 events correctly characterized
+    - Good matches: 2
+    - Underestimated: 0
+    - Overestimated: 1
+    - Missed: 2
+    
+    ================================================================================
+    pCRVI VALIDATION SUMMARY  
+    ================================================================================
+
+    pCRVI is a composite index that provides 30-day advance warning of 
+    bleaching events. Unlike DHW (reactive), pCRVI is designed for prediction.
+
+    
+    pCRVI Predictive Skill:
+    ┌─────────────────────────────────────────────────┐
+    │ At OPTIMAL threshold = 0.55:                    │
+    │   F1 Score:  0.506                             │
+    │   Precision: 0.639   Recall: 0.419              │
+    │   MCC:       0.487   HSS:    0.475              │
+    │   PSS/TSS:   0.400   CSI:    0.339              │
+    └─────────────────────────────────────────────────┘
+    At default threshold = 0.40 (30-day lead):
+      Correlation: 0.000  F1: 0.271
+      Precision:   0.159  Recall: 0.913
+    
+    ================================================================================
+    DETAILED EVENT COMPARISON
+    ================================================================================
+    
+    Year: 1998
+    ----------------------------------------
+    DHW PREDICTION:
+      Model DHW:          3.69°C-weeks
+      Reported DHW:       4.9
+      DHW Discrepancy:    -1.21
+      Model Alert:        Warning - Partial/Minor Bleaching
+    
+    OBSERVATIONS:
+      Observed Severity:  severe
+      Observed Bleaching: 80.0%
+    
+    DHW MATCH QUALITY:    MISSED
+    
+    pCRVI PREDICTION:
+      Max pCRVI:          0.731 on 1998-05-05
+      Risk Assessment:    CRITICAL (≥0.6)
+    
+    Year: 2005
+    ----------------------------------------
+    DHW PREDICTION:
+      Model DHW:          1.27°C-weeks
+      Reported DHW:       6.0
+      DHW Discrepancy:    -4.73
+      Model Alert:        Watch - Thermal Stress Building
+    
+    OBSERVATIONS:
+      Observed Severity:  moderate
+      Observed Bleaching: 25.0%
+    
+    DHW MATCH QUALITY:    MISSED
+    
+    pCRVI PREDICTION:
+      Max pCRVI:          0.628 on 2005-04-30
+      Risk Assessment:    CRITICAL (≥0.6)
+    
+    Year: 2010
+    ----------------------------------------
+    DHW PREDICTION:
+      Model DHW:          10.87°C-weeks
+      Reported DHW:       11.7
+      DHW Discrepancy:    -0.83
+      Model Alert:        Alert Level 3 - Mass Bleaching/Mortality
+    
+    OBSERVATIONS:
+      Observed Severity:  catastrophic
+      Observed Bleaching: 70.0%
+    
+    DHW MATCH QUALITY:    GOOD
+    
+    pCRVI PREDICTION:
+      Max pCRVI:          0.748 on 2010-04-29
+      Risk Assessment:    CRITICAL (≥0.6)
+    
+    Year: 2016
+    ----------------------------------------
+    DHW PREDICTION:
+      Model DHW:          10.92°C-weeks
+      Reported DHW:       7.2
+      DHW Discrepancy:    3.72
+      Model Alert:        Alert Level 3 - Mass Bleaching/Mortality
+    
+    OBSERVATIONS:
+      Observed Severity:  severe
+      Observed Bleaching: 83.6%
+    
+    DHW MATCH QUALITY:    GOOD
+    
+    pCRVI PREDICTION:
+      Max pCRVI:          0.768 on 2016-05-03
+      Risk Assessment:    CRITICAL (≥0.6)
+    
+    Year: 2024
+    ----------------------------------------
+    DHW PREDICTION:
+      Model DHW:          11.11°C-weeks
+      Reported DHW:       7.5
+      DHW Discrepancy:    3.61
+      Model Alert:        Alert Level 3 - Mass Bleaching/Mortality
+    
+    OBSERVATIONS:
+      Observed Severity:  minor
+      Observed Bleaching: 15.0%
+    
+    DHW MATCH QUALITY:    OVERESTIMATED
+    
+    pCRVI PREDICTION:
+      Max pCRVI:          0.819 on 2024-05-09
+      Risk Assessment:    CRITICAL (≥0.6)
+    
+    ================================================================================
+    CALIBRATION RECOMMENDATIONS
+    ================================================================================
+
+    Based on the validation analysis:
+    
+    1. MISSED EVENTS ISSUE:
+    - The model missed some documented bleaching events
+    - Consider lowering the DHW alert thresholds
+    - Review SST data quality for those years
+    - Recommended: Lower Warning threshold from 4.0 to 3.0°C-weeks
+    
+    3. OVERESTIMATION ISSUE (Adaptation Effect):
+    - Recent years show high thermal stress but lower bleaching impact
+    - This suggests coral adaptation from surviving past events
+    - Consider incorporating an adaptation factor into vulnerability assessments
+    - The pCRVI includes an adaptation adjustment for this effect
+    
+    4. pCRVI USAGE RECOMMENDATIONS:
+    - Use pCRVI for proactive early warning (30-day lead time)
+    - Use DHW for real-time monitoring during thermal events
+    - Combined approach: pCRVI for planning, DHW for response
+    - Monitor pCRVI daily during peak season (March-June)
+    
+    ================================================================================
+    RECOMMENDED THRESHOLD ADJUSTMENTS
+    ================================================================================
+
+    DHW Thresholds (Current → Recommended):
+
+    Watch:         0°C-weeks  →  1°C-weeks
+    Warning:       4°C-weeks  →  3°C-weeks  
+    Alert Level 1: 8°C-weeks  →  6°C-weeks
+    Alert Level 2: 12°C-weeks →  8°C-weeks
+
+    pCRVI Risk Thresholds:
+
+    Low Risk:      < 0.3
+    Watch:         0.3 - 0.4
+    Elevated:      0.4 - 0.5
+    High:          0.5 - 0.6
+    Critical:      > 0.6
+
+    These adjustments account for:
+    - Local coral thermal tolerance
+    - Historical bleaching-DHW relationships
+    - Regional oceanographic conditions
+    - Coral adaptation from past events
+    
+    ================================================================================
+    END OF VALIDATION REPORT
+    ================================================================================
+    

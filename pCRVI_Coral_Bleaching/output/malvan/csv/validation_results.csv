@@ -1,0 +1,3 @@
+year,actual_severity,actual_dhw,actual_bleaching_pct,peak_month,model_dhw_max,dhw_severity_prediction,dhw_match,pcrvi_max,pcrvi_30d_lead,pcrvi_severity_prediction,pcrvi_match,pcrvi_early_warning,notes,source
+2016,moderate,5.0,35,5,14.04,severe,CLOSE,0.781,0.722,severe,CLOSE,True,First documented bleaching in Malvan; Goniopora affected,National Centre for Coastal Research (NCCR)
+2024,moderate,6.0,25,5,13.16,severe,CLOSE,0.833,0.783,severe,CLOSE,True,GCBE4; bleaching limited to one species (Goniopora),Vision IAS June 2024 report

@@ -1,0 +1,3 @@
+Year,Observed Severity,Reported DHW (°C-weeks),Bleaching (%),Model DHW,DHW Match,pCRVI Max,pCRVI 30d Lead,pCRVI Match,Early Warning
+2016,moderate,5.0,35,14.04,CLOSE,0.781,0.722,CLOSE,True
+2024,moderate,6.0,25,13.16,CLOSE,0.833,0.783,CLOSE,True

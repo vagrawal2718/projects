@@ -1,0 +1,5 @@
+year,actual_severity,actual_dhw,actual_bleaching_pct,peak_month,model_dhw_max,dhw_severity_prediction,dhw_match,pcrvi_max,pcrvi_30d_lead,pcrvi_severity_prediction,pcrvi_match,pcrvi_early_warning,notes,source
+1998,severe,8.0,70,5,2.29,none,UNDERESTIMATE,0.69,0.576,severe,CORRECT,True,Severe bleaching on Andaman Sea reefs,Phongsuwan & Chansang (2012)
+2010,catastrophic,14.0,80,5,7.63,moderate,UNDERESTIMATE,0.717,0.685,severe,CLOSE,True,Worst event on record; 80% bleaching in Similan Is.,Yeemin et al. (2012) Phuket Mar Biol Cent Res Bull 71:75-85
+2016,moderate,6.0,40,5,8.01,severe,CLOSE,0.756,0.707,severe,CLOSE,True,Some resilience observed from 2010 survivors,DMCR (Dept. of Marine & Coastal Resources) Thailand
+2024,moderate,7.5,45,5,8.36,severe,CLOSE,0.79,0.728,severe,CLOSE,True,GCBE4; Andaman Sea side less affected than Gulf of Thailand,NOAA CRW GCBE4; DMCR 2024 assessment

@@ -1,0 +1,76 @@
+{
+  "n_samples": 10114,
+  "expert_weights": {
+    "thermal_anomaly": 0.25,
+    "accumulating_stress": 0.18,
+    "seasonal_risk": 0.1,
+    "climate_driver": 0.12,
+    "bleaching_history": 0.08,
+    "water_quality": 0.15,
+    "light_availability": 0.12
+  },
+  "method": "xgboost",
+  "ml_weights": {
+    "thermal_anomaly": 0.09278260916471481,
+    "accumulating_stress": 0.4717129170894623,
+    "seasonal_risk": 0.029527122154831886,
+    "climate_driver": 0.08219639211893082,
+    "bleaching_history": 0.2946334481239319,
+    "water_quality": 0.012526577338576317,
+    "light_availability": 0.016620924696326256
+  },
+  "feature_importances": {
+    "thermal_anomaly": 0.09278260916471481,
+    "accumulating_stress": 0.4717129170894623,
+    "seasonal_risk": 0.029527122154831886,
+    "climate_driver": 0.08219639211893082,
+    "bleaching_history": 0.2946334481239319,
+    "water_quality": 0.012526577338576317,
+    "light_availability": 0.016620924696326256
+  },
+  "model_metrics": {
+    "mean_mae": 0.38149238099944466,
+    "mean_r2": 0.4091284076236509,
+    "std_mae": 0.15677391980006777,
+    "std_r2": 0.4156758090940307,
+    "target": "future_dhw_30d"
+  },
+  "use_expert": false,
+  "comparison": {
+    "thermal_anomaly": {
+      "expert": 0.25,
+      "ml": 0.09278260916471481,
+      "diff": -0.1572173908352852
+    },
+    "accumulating_stress": {
+      "expert": 0.18,
+      "ml": 0.4717129170894623,
+      "diff": 0.2917129170894623
+    },
+    "seasonal_risk": {
+      "expert": 0.1,
+      "ml": 0.029527122154831886,
+      "diff": -0.07047287784516812
+    },
+    "climate_driver": {
+      "expert": 0.12,
+      "ml": 0.08219639211893082,
+      "diff": -0.03780360788106918
+    },
+    "bleaching_history": {
+      "expert": 0.08,
+      "ml": 0.2946334481239319,
+      "diff": 0.21463344812393187
+    },
+    "water_quality": {
+      "expert": 0.15,
+      "ml": 0.012526577338576317,
+      "diff": -0.13747342266142368
+    },
+    "light_availability": {
+      "expert": 0.12,
+      "ml": 0.016620924696326256,
+      "diff": -0.10337907530367374
+    }
+  }
+}

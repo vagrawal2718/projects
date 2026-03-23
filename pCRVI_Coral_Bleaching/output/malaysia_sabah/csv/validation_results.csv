@@ -1,0 +1,4 @@
+year,actual_severity,actual_dhw,actual_bleaching_pct,peak_month,model_dhw_max,dhw_severity_prediction,dhw_match,pcrvi_max,pcrvi_30d_lead,pcrvi_severity_prediction,pcrvi_match,pcrvi_early_warning,notes,source
+1998,severe,8.5,70,5,3.69,minor,UNDERESTIMATE,0.723,0.626,severe,CORRECT,True,Severe across Semporna; Sipadan reef severely affected,Wilkinson (2000) GCRMN Status Report
+2010,severe,8.0,50,5,10.87,severe,CORRECT,0.74,0.683,severe,CORRECT,True,Extensive bleaching in Tunku Abdul Rahman Marine Park,Reef Check Malaysia 2010 report
+2016,moderate,6.0,35,5,10.92,severe,CLOSE,0.762,0.729,severe,CLOSE,True,Third global event; moderate impacts,Reef Check Malaysia; NOAA CRW

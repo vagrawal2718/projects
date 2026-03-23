@@ -1,0 +1,6 @@
+year,actual_severity,actual_dhw,actual_bleaching_pct,peak_month,model_dhw_max,dhw_severity_prediction,dhw_match,pcrvi_max,pcrvi_30d_lead,pcrvi_severity_prediction,pcrvi_match,pcrvi_early_warning,notes,source
+1998,severe,8.5,50,9,6.28,moderate,CLOSE,0.766,0.652,severe,CORRECT,True,Widespread Keys bleaching; first major event,Causey (2001) NOAA FKNMS
+2005,severe,10.0,55,9,2.88,none,UNDERESTIMATE,0.616,0.504,severe,CORRECT,True,Caribbean-wide event; record Atlantic SSTs,Eakin et al. (2010) PLoS ONE 5(11):e13969
+2014,moderate,5.0,35,10,6.43,moderate,CORRECT,0.642,0.567,severe,CLOSE,True,Third global event onset in Florida,NOAA CRCP Mission: Iconic Reefs
+2023,catastrophic,20.0,95,8,5.43,minor,UNDERESTIMATE,0.625,0.549,severe,CLOSE,True,Unprecedented marine heatwave; SST >38°C; DHW ~20; nurseries relocated to deeper waters,NOAA CRW; Manzello et al. (2024); GCBE4 announcement
+2024,severe,12.0,65,8,13.16,severe,CORRECT,0.785,0.734,severe,CORRECT,True,GCBE4 continuation; heat-driven functional extinction of Acropora,NOAA CRW 2025 Science paper

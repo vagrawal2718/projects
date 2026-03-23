@@ -1,0 +1,16 @@
+Feature,feature,Importance,Contribution %,Cumulative %
+Coral Reef Vulnerability Index (7-day lag) (pCRVI_L7),pcrvi_lag7,0.3015324429990463,30.2,30.2
+Coral Reef Vulnerability Index (pCRVI),pcrvi,0.2402291185572348,24.0,54.2
+Coral Reef Vulnerability Index (14-day lag) (pCRVI_L14),pcrvi_lag14,0.1963661746167839,19.6,73.8
+SST Anomaly (SSTA),sst_anomaly,0.0463117830153281,4.6,78.4
+Climate Driver Response (CDR),cdr_norm,0.043868506046488,4.4,82.8
+El Niño Index (60-day lag) (ONI_L60),oni_lag60,0.0387280304557786,3.9,86.7
+Indian Ocean Dipole (60-day lag) (DMI_L60),dmi_lag60,0.0333857283100781,3.3,90.0
+Seasonal Bleaching Risk (SR),sr_norm,0.0221724678171311,2.2,92.3
+Climate Driver Response (14-day lag) (CDR_L14),cdr_norm_lag14,0.0142099656481763,1.4,93.7
+Population Vulnerability (BH),bh_norm,0.0136968978859596,1.4,95.1
+Population Vulnerability (7-day lag) (BH_L7),bh_norm_lag7,0.0083317174656818,0.8,95.9
+Climate Driver Response (7-day lag) (CDR_L7),cdr_norm_lag7,0.0082461489703332,0.8,96.7
+Population Vulnerability (14-day lag) (BH_L14),bh_norm_lag14,0.0070380375628827,0.7,97.4
+Seasonal Cycle (sine) (DoY_sin),doy_sin,0.0066873920531818,0.7,98.1
+Thermal Anomaly (TA),ta_norm,0.0046809854722054,0.5,98.5

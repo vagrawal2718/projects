@@ -1,0 +1,15 @@
+Region,Key,MMM,N_Events,Detected,Detect_Rate,Lead_Days,Opt_Thresh
+Andaman & Nicobar Islands,andaman,29.87,7,4,0.5714285714285714,28.25,0.6
+Lakshadweep Islands,lakshadweep,29.5,5,5,1.0,72.0,0.5
+Gulf of Mannar,gulf_of_mannar,29.2,5,5,1.0,104.8,0.45
+Gulf of Kachchh,gulf_of_kachchh,30.1,4,4,1.0,73.25,0.55
+Malvan Marine Sanctuary,malvan,29.3,2,2,1.0,58.5,0.5
+Coral Triangle – Indonesia,indonesia,29.6,5,4,0.8,87.75,0.5
+Thailand – Andaman Sea,thailand_andaman,29.8,4,4,1.0,50.25,0.55
+Philippines,philippines,29.7,4,4,1.0,89.5,0.55
+Malaysia – Sabah,malaysia_sabah,29.5,3,3,1.0,83.33333333333333,0.5
+Great Barrier Reef,great_barrier_reef,27.8,7,7,1.0,63.857142857142854,0.4
+Florida Reef Tract,florida,29.3,5,3,0.6,119.0,0.5
+Maldives,maldives,29.5,4,4,1.0,41.25,0.55
+Seychelles,seychelles,29.2,3,3,1.0,117.33333333333333,0.45
+Mesoamerican Barrier Reef,mesoamerican,29.4,5,4,0.8,119.0,0.5

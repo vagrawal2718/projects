@@ -1,0 +1,8 @@
+Unnamed: 0,Component,expert,ml,diff
+thermal_anomaly,Thermal Anomaly,0.25,0.050202153623104,-0.1997978463768959
+accumulating_stress,Accumulating Stress,0.18,0.3983142375946045,0.2183142375946045
+seasonal_risk,Seasonal Risk,0.1,0.0580903589725494,-0.0419096410274505
+climate_driver,Climate Driver,0.12,0.0571951866149902,-0.0628048133850097
+bleaching_history,Bleaching History,0.08,0.416332483291626,0.3363324832916259
+water_quality,Water Quality,0.15,0.0049832235090434,-0.1450167764909565
+light_availability,Light Availability,0.12,0.0148823531344532,-0.1051176468655467
