@@ -209,4 +209,4 @@ Key references underpinning the pCRVI framework:
 
 **Vishakha Agrawal**
 
-B.Tech. Thesis Project (BTP) carried out under the supervision of **Dr. Rama Chandra Prasad**, Lab for Spatial Informatics, International Institute of Information Technology Hyderabad (IIIT-H).
+B.Tech.Project (BTP) carried out under the supervision of **Dr. Rama Chandra Prasad**, Lab for Spatial Informatics, International Institute of Information Technology Hyderabad (IIIT-H).
