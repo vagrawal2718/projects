@@ -1,0 +1,5 @@
+Condition,Mean_Accuracy,SD_Accuracy,Mean_Confidence,N_Trials
+Original-Low,0.577,0.237,70.69,175
+Original-High,0.526,0.217,70.4,175
+Rephrased-Low,0.491,0.267,68.69,175
+Rephrased-High,0.583,0.272,68.0,175
