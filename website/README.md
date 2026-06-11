@@ -4,7 +4,7 @@ A single-page personal portfolio website The site is static (HTML + CSS + vanill
 deployment to a university `public_html` directory — no build step, no npm, and no
 server-side code. Third-party libraries are loaded from public CDNs.
 
-Live: <https://students.iiit.ac.in/~vishakha.agrawal/>
+Live: <https://web.iiit.ac.in/~vishakha.agrawal/>
 
 ---
 
@@ -97,7 +97,7 @@ python3 -m http.server 8000
    chmod 755 ~/public_html
    ```
 
-3. Visit your URL (e.g. `https://students.iiit.ac.in/~vishakha.agrawal/`).
+3. Visit your URL (e.g. `https://web.iiit.ac.in/~vishakha.agrawal/`).
 
 `index.html` is the default document, so no extra configuration is needed. An internet
 connection is required on the visitor's side for the CDN libraries and Google Fonts.

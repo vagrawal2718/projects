@@ -29,6 +29,6 @@ A static, single-page personal portfolio website (`website/`), served from a uni
 education, skills, projects, and publications sections, with all third-party libraries
 loaded from public CDNs.
 
-- **Live:** <https://students.iiit.ac.in/~vishakha.agrawal/>
+- **Live:** <https://web.iiit.ac.in/~vishakha.agrawal/>
 - **Source:** [`website/`](website/) — see [`website/README.md`](website/README.md) for the file structure and deployment steps.
 - **Built with:** HTML, CSS, vanilla JavaScript, GSAP, AOS, Typed.js, Lucide, and Google Fonts.
