@@ -1,0 +1,492 @@
+[
+  {
+    "name": "retapamulin",
+    "smiles": "C=C[C@]1(C)C[C@@H](OC(=O)CS[C@@H]2C[C@H]3CC[C@@H](C2)N3C)[C@]2(C)[C@H](C)CC[C@]3(CCC(=O)[C@H]32)[C@@H](C)[C@@H]1O",
+    "base_p_ecoli": 0.8549,
+    "attributions": [
+      {
+        "fragment": "[15*][C@@H]1C[C@@](C)(C=C)[C@@H](O)[C@H](C)[C@]23CCC(=O)[C@H]2[C@@]1(C)[C@H](C)CC3",
+        "fragment_p": 0.0,
+        "attribution": 0.8549
+      },
+      {
+        "fragment": "[15*][C@@H]1C[C@H]2CC[C@@H](C1)N2C",
+        "fragment_p": 0.0,
+        "attribution": 0.8549
+      },
+      {
+        "fragment": "[11*]S[11*]",
+        "fragment_p": 0.0002,
+        "attribution": 0.8547
+      },
+      {
+        "fragment": "[1*]C(=O)C[4*]",
+        "fragment_p": 0.0003,
+        "attribution": 0.8546
+      },
+      {
+        "fragment": "[3*]O[3*]",
+        "fragment_p": 0.0007,
+        "attribution": 0.8542
+      }
+    ]
+  },
+  {
+    "name": "AFN-1252",
+    "smiles": "Cc1c(CN(C)C(=O)/C=C/c2cnc3c(c2)CCC(=O)N3)oc2ccccc12",
+    "base_p_ecoli": 0.9241,
+    "attributions": [
+      {
+        "fragment": "[14*]c1oc2ccccc2c1C",
+        "fragment_p": 0.0002,
+        "attribution": 0.924
+      },
+      {
+        "fragment": "[16*]c1cnc2c(c1)CCC(=O)N2",
+        "fragment_p": 0.0003,
+        "attribution": 0.9239
+      },
+      {
+        "fragment": "[1*]C(=O)C[7*]",
+        "fragment_p": 0.0003,
+        "attribution": 0.9238
+      },
+      {
+        "fragment": "[7*]C[8*]",
+        "fragment_p": 0.0003,
+        "attribution": 0.9238
+      },
+      {
+        "fragment": "[4*]C[8*]",
+        "fragment_p": 0.0003,
+        "attribution": 0.9238
+      },
+      {
+        "fragment": "[5*]N([5*])C",
+        "fragment_p": 0.001,
+        "attribution": 0.9232
+      }
+    ]
+  },
+  {
+    "name": "trimetrexate",
+    "smiles": "COc1cc(NCc2ccc3nc(N)nc(N)c3c2C)cc(OC)c1OC",
+    "base_p_ecoli": 0.9526,
+    "attributions": [
+      {
+        "fragment": "[16*]c1cc([16*])c([16*])c([16*])c1",
+        "fragment_p": 0.0002,
+        "attribution": 0.9523
+      },
+      {
+        "fragment": "[4*]C[8*]",
+        "fragment_p": 0.0003,
+        "attribution": 0.9523
+      },
+      {
+        "fragment": "[5*]N[5*]",
+        "fragment_p": 0.0009,
+        "attribution": 0.9517
+      },
+      {
+        "fragment": "[3*]OC",
+        "fragment_p": 0.001,
+        "attribution": 0.9516
+      },
+      {
+        "fragment": "[16*]c1ccc2nc(N)nc(N)c2c1C",
+        "fragment_p": 0.9181,
+        "attribution": 0.0344
+      }
+    ]
+  },
+  {
+    "name": "micronomicin",
+    "smiles": "CNC[C@@H]1CC[C@@H](N)[C@@H](O[C@H]2[C@H](O)[C@@H](O[C@H]3OC[C@](C)(O)[C@H](NC)[C@H]3O)[C@H](N)C[C@@H]2N)O1",
+    "base_p_ecoli": 0.9851,
+    "attributions": [
+      {
+        "fragment": "[4*]C[8*]",
+        "fragment_p": 0.0003,
+        "attribution": 0.9848
+      },
+      {
+        "fragment": "[3*]O[3*]",
+        "fragment_p": 0.0007,
+        "attribution": 0.9845
+      },
+      {
+        "fragment": "[5*]NC",
+        "fragment_p": 0.001,
+        "attribution": 0.9842
+      },
+      {
+        "fragment": "[13*][C@@H]1CC[C@@H](N)[C@@H]([13*])O1",
+        "fragment_p": 0.0031,
+        "attribution": 0.982
+      },
+      {
+        "fragment": "[15*][C@@H]1[C@@H](O)[C@H]([15*])[C@@H](N)C[C@H]1N",
+        "fragment_p": 0.1315,
+        "attribution": 0.8536
+      },
+      {
+        "fragment": "[13*][C@H]1OC[C@](C)(O)[C@H]([15*])[C@H]1O",
+        "fragment_p": 0.5465,
+        "attribution": 0.4387
+      }
+    ]
+  },
+  {
+    "name": "SQ-109",
+    "smiles": "CC(C)=CCC/C(C)=C/CNCCNC1[C@H]2C[C@@H]3C[C@@H](C[C@H]1C3)C2",
+    "base_p_ecoli": 0.0,
+    "attributions": [
+      {
+        "fragment": "[5*]N[5*]",
+        "fragment_p": 0.0009,
+        "attribution": -0.0008
+      },
+      {
+        "fragment": "[15*]C1[C@H]2C[C@@H]3C[C@@H](C[C@H]1C3)C2",
+        "fragment_p": 0.0003,
+        "attribution": -0.0003
+      },
+      {
+        "fragment": "[7*]CCCC([7*])C",
+        "fragment_p": 0.0001,
+        "attribution": -0.0001
+      },
+      {
+        "fragment": "[7*]C(C)C",
+        "fragment_p": 0.0,
+        "attribution": -0.0
+      },
+      {
+        "fragment": "[4*]CC[4*]",
+        "fragment_p": 0.0,
+        "attribution": 0.0
+      },
+      {
+        "fragment": "[4*]CC[7*]",
+        "fragment_p": 0.0,
+        "attribution": 0.0
+      }
+    ]
+  },
+  {
+    "name": "netilmicin",
+    "smiles": "CCN[C@@H]1C[C@H](N)[C@@H](O[C@H]2OC(CN)=CC[C@H]2N)[C@H](O)[C@H]1O[C@H]1OC[C@](C)(O)[C@H](NC)[C@H]1O",
+    "base_p_ecoli": 0.9472,
+    "attributions": [
+      {
+        "fragment": "[4*]CC",
+        "fragment_p": 0.0,
+        "attribution": 0.9472
+      },
+      {
+        "fragment": "[15*][C@@H]1[C@@H](O)[C@H]([15*])[C@@H](N)C[C@H]1[15*]",
+        "fragment_p": 0.0002,
+        "attribution": 0.947
+      },
+      {
+        "fragment": "[13*][C@H]1OC(CN)=CC[C@H]1N",
+        "fragment_p": 0.0005,
+        "attribution": 0.9467
+      },
+      {
+        "fragment": "[3*]O[3*]",
+        "fragment_p": 0.0007,
+        "attribution": 0.9466
+      },
+      {
+        "fragment": "[5*]N[5*]",
+        "fragment_p": 0.0009,
+        "attribution": 0.9464
+      },
+      {
+        "fragment": "[5*]NC",
+        "fragment_p": 0.001,
+        "attribution": 0.9463
+      },
+      {
+        "fragment": "[13*][C@H]1OC[C@](C)(O)[C@H]([15*])[C@H]1O",
+        "fragment_p": 0.5465,
+        "attribution": 0.4008
+      }
+    ]
+  },
+  {
+    "name": "macozinone",
+    "smiles": "O=c1nc(N2CCN(CC3CCCCC3)CC2)sc2c([N+](=O)[O-])cc(C(F)(F)F)cc12",
+    "base_p_ecoli": 0.407,
+    "attributions": [
+      {
+        "fragment": "[15*]C1CCCCC1",
+        "fragment_p": 0.0001,
+        "attribution": 0.4069
+      },
+      {
+        "fragment": "[14*]c1nc(=O)c2cc([16*])cc([N+](=O)[O-])c2s1",
+        "fragment_p": 0.0001,
+        "attribution": 0.4068
+      },
+      {
+        "fragment": "[4*]C[8*]",
+        "fragment_p": 0.0003,
+        "attribution": 0.4067
+      },
+      {
+        "fragment": "[8*]C(F)(F)F",
+        "fragment_p": 0.0017,
+        "attribution": 0.4052
+      },
+      {
+        "fragment": "[5*]N1CCN([5*])CC1",
+        "fragment_p": 0.0115,
+        "attribution": 0.3955
+      }
+    ]
+  },
+  {
+    "name": "GSK656",
+    "smiles": "NC[C@H]1OB(O)c2c(OCCO)ccc(Cl)c21",
+    "base_p_ecoli": 0.8801,
+    "attributions": [
+      {
+        "fragment": "[3*]O[3*]",
+        "fragment_p": 0.0007,
+        "attribution": 0.8794
+      },
+      {
+        "fragment": "[4*]CCO",
+        "fragment_p": 0.0012,
+        "attribution": 0.8789
+      },
+      {
+        "fragment": "[16*]c1ccc(Cl)c2c1B(O)O[C@@H]2CN",
+        "fragment_p": 0.065,
+        "attribution": 0.8151
+      }
+    ]
+  },
+  {
+    "name": "gepotidacin",
+    "smiles": "O=c1ccc2ncc(=O)n3c2n1C[C@H]3CN1CCC(NCc2cc3c(cn2)OCCC3)CC1",
+    "base_p_ecoli": 0.988,
+    "attributions": [
+      {
+        "fragment": "[14*]c1cc2c(cn1)OCCC2",
+        "fragment_p": 0.0001,
+        "attribution": 0.9879
+      },
+      {
+        "fragment": "[5*]N1CCC([15*])CC1",
+        "fragment_p": 0.0,
+        "attribution": 0.9879
+      },
+      {
+        "fragment": "[4*]C[8*]",
+        "fragment_p": 0.0003,
+        "attribution": 0.9877
+      },
+      {
+        "fragment": "[5*]N[5*]",
+        "fragment_p": 0.0009,
+        "attribution": 0.9871
+      },
+      {
+        "fragment": "[4*]C[C@@H]1Cn2c(=O)ccc3ncc(=O)n1c32",
+        "fragment_p": 0.1594,
+        "attribution": 0.8285
+      }
+    ]
+  },
+  {
+    "name": "vinburnine",
+    "smiles": "CC[C@]12CCCN3CCc4c(n(c5ccccc45)C(=O)C1)[C@@H]32",
+    "base_p_ecoli": 0.0001,
+    "attributions": [
+      {
+        "fragment": "[8*]CC",
+        "fragment_p": 0.0,
+        "attribution": 0.0001
+      },
+      {
+        "fragment": "[15*][C@]12CCCN3CCc4c(n(c5ccccc45)C(=O)C1)[C@@H]32",
+        "fragment_p": 0.0,
+        "attribution": 0.0001
+      }
+    ]
+  },
+  {
+    "name": "sisomicin",
+    "smiles": "CN[C@@H]1[C@@H](O)[C@@H](O[C@@H]2[C@@H](O)[C@H](O[C@H]3OC(CN)=CC[C@H]3N)[C@@H](N)C[C@H]2N)OC[C@]1(C)O",
+    "base_p_ecoli": 0.9575,
+    "attributions": [
+      {
+        "fragment": "[13*][C@H]1OC(CN)=CC[C@H]1N",
+        "fragment_p": 0.0005,
+        "attribution": 0.957
+      },
+      {
+        "fragment": "[3*]O[3*]",
+        "fragment_p": 0.0007,
+        "attribution": 0.9568
+      },
+      {
+        "fragment": "[5*]NC",
+        "fragment_p": 0.001,
+        "attribution": 0.9565
+      },
+      {
+        "fragment": "[15*][C@@H]1[C@@H](O)[C@H]([15*])[C@@H](N)C[C@H]1N",
+        "fragment_p": 0.1315,
+        "attribution": 0.826
+      },
+      {
+        "fragment": "[13*][C@H]1OC[C@](C)(O)[C@H]([15*])[C@H]1O",
+        "fragment_p": 0.5465,
+        "attribution": 0.4111
+      }
+    ]
+  },
+  {
+    "name": "SB-772077B",
+    "smiles": "CCn1c(-c2nonc2N)nc2cncc(C(=O)N3CC[C@H](N)C3)c21",
+    "base_p_ecoli": 0.4444,
+    "attributions": [
+      {
+        "fragment": "[8*]CC",
+        "fragment_p": 0.0,
+        "attribution": 0.4444
+      },
+      {
+        "fragment": "[9*]n1c([14*])nc2cncc([16*])c21",
+        "fragment_p": 0.0007,
+        "attribution": 0.4438
+      },
+      {
+        "fragment": "[1*]C([6*])=O",
+        "fragment_p": 0.0025,
+        "attribution": 0.442
+      },
+      {
+        "fragment": "[14*]c1nonc1N",
+        "fragment_p": 0.0089,
+        "attribution": 0.4355
+      },
+      {
+        "fragment": "[5*]N1CC[C@H](N)C1",
+        "fragment_p": 0.581,
+        "attribution": -0.1365
+      }
+    ]
+  },
+  {
+    "name": "guadecitabine",
+    "smiles": "Nc1ncn([C@H]2C[C@H](OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(=O)nc(N)[nH]c54)C[C@@H]3O)[C@@H](CO)O2)c(=O)n1",
+    "base_p_ecoli": 1.0,
+    "attributions": [
+      {
+        "fragment": "[13*][C@H]1C[C@H]([15*])[C@@H]([13*])O1",
+        "fragment_p": 0.0003,
+        "attribution": 0.9997
+      },
+      {
+        "fragment": "[4*]C[8*]",
+        "fragment_p": 0.0003,
+        "attribution": 0.9997
+      },
+      {
+        "fragment": "[8*]CO",
+        "fragment_p": 0.001,
+        "attribution": 0.999
+      },
+      {
+        "fragment": "[13*][C@H]1C[C@H](O)[C@@H]([13*])O1",
+        "fragment_p": 0.0022,
+        "attribution": 0.9978
+      },
+      {
+        "fragment": "[9*]n1cnc2c(=O)nc(N)[nH]c21",
+        "fragment_p": 0.0141,
+        "attribution": 0.9859
+      },
+      {
+        "fragment": "[9*]n1cnc(N)nc1=O",
+        "fragment_p": 0.0292,
+        "attribution": 0.9708
+      },
+      {
+        "fragment": "[3*]OP(=O)(O)O[3*]",
+        "fragment_p": 0.9809,
+        "attribution": 0.0191
+      }
+    ]
+  },
+  {
+    "name": "sodium-nitroprusside",
+    "smiles": "N#[C][Fe-2]([C]#N)([C]#N)([C]#N)([C]#N)[N+][O-]",
+    "base_p_ecoli": 0.0421,
+    "attributions": [
+      {
+        "fragment": "N#[C][Fe-2]([C]#N)([C]#N)([C]#N)([C]#N)[N+][O-]",
+        "fragment_p": 0.0421,
+        "attribution": 0.0
+      }
+    ]
+  },
+  {
+    "name": "colistimethate",
+    "smiles": "CC(C)CCCC(=O)N[C@@H](CCNCS(=O)(=O)O)C(=O)N[C@H](C(=O)N[C@@H](CCNCS(=O)(=O)O)C(=O)N[C@H]1CCNC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](CCNCS(=O)(=O)O)NC(=O)[C@H](CCNCS(=O)(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCNCS(=O)(=O)O)NC1=O)[C@@H](C)O",
+    "base_p_ecoli": 0.4907,
+    "attributions": [
+      {
+        "fragment": "[1*]C(=O)[C@@H]([4*])CC[4*]",
+        "fragment_p": 0.0,
+        "attribution": 0.4907
+      },
+      {
+        "fragment": "[8*]CC(C)C",
+        "fragment_p": 0.0,
+        "attribution": 0.4907
+      },
+      {
+        "fragment": "[1*]C(=O)CCCC(C)C",
+        "fragment_p": 0.0,
+        "attribution": 0.4907
+      },
+      {
+        "fragment": "[4*]CC[8*]",
+        "fragment_p": 0.0,
+        "attribution": 0.4907
+      },
+      {
+        "fragment": "[1*]C(=O)[C@@H]([4*])[C@@H](C)O",
+        "fragment_p": 0.0001,
+        "attribution": 0.4906
+      },
+      {
+        "fragment": "[5*]N[5*]",
+        "fragment_p": 0.0009,
+        "attribution": 0.4899
+      },
+      {
+        "fragment": "[8*][C@@H](C)O",
+        "fragment_p": 0.0012,
+        "attribution": 0.4895
+      },
+      {
+        "fragment": "[5*]NCS(=O)(=O)O",
+        "fragment_p": 0.783,
+        "attribution": -0.2922
+      },
+      {
+        "fragment": "[13*][C@@H]1NC(=O)[C@H]([13*])NC(=O)[C@H]([13*])NC(=O)[C@H]([13*])NC(=O)[C@H]([13*])NC(=O)[C@H]([13*])NC(=O)[C@@H]([15*])CCNC1=O",
+        "fragment_p": 0.3831,
+        "attribution": 0.1076
+      }
+    ]
+  }
+]

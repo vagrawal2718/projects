@@ -1,0 +1,158 @@
+2026-03-22 00:40:33 | INFO  | showcase | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity/logs/showcase.log
+2026-03-22 00:40:33 | INFO  | showcase | ============================================================
+2026-03-22 00:40:33 | INFO  | showcase |  STARTING: Showcase Visualization Generation
+2026-03-22 00:40:33 | INFO  | showcase | ============================================================
+2026-03-22 00:40:33 | INFO  | showcase | 
+  Generating static PNG figures...
+2026-03-22 00:40:33 | INFO  | showcase |   Static: dataset_grand_overview.png
+2026-03-22 00:40:34 | INFO  | showcase |   Static: selectivity_heatmap.png
+2026-03-22 00:40:36 | INFO  | showcase |   Static: validation_drugs.png
+2026-03-22 00:40:36 | INFO  | showcase | 
+  Generating interactive HTML visualizations...
+2026-03-22 00:40:37 | INFO  | showcase |   Interactive: 3d_selectivity_surface.html
+2026-03-22 00:40:39 | INFO  | showcase |   Interactive: animated_threshold_bubbles.html
+2026-03-22 00:40:41 | INFO  | showcase |   Interactive: ranked_list_explorer.html
+2026-03-22 00:40:41 | INFO  | showcase |   Interactive: pipeline_comparison.html
+2026-03-22 00:40:41 | INFO  | showcase |   Interactive: 3d_chemical_space.html
+2026-03-22 00:40:42 | INFO  | showcase | 
+  Packaging outputs...
+2026-03-22 00:40:42 | INFO  | showcase |   Packaging all outputs...
+2026-03-22 00:40:46 | INFO  | showcase |   Packaged: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/showcase_results_20260322.zip (35.1 MB)
+2026-03-22 00:40:46 | INFO  | showcase | 
+  Figures generated: 44 PNG, 30 PDF, 29 interactive HTML
+2026-03-22 00:40:46 | INFO  | showcase |   All in: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures
+2026-03-22 00:40:46 | INFO  | showcase | ============================================================
+2026-03-22 00:40:46 | INFO  | showcase |  COMPLETED: Showcase Visualization
+2026-03-22 00:40:46 | INFO  | showcase |  Elapsed: 0m 13.0s
+2026-03-22 00:40:46 | INFO  | showcase | ============================================================
+2026-04-02 17:37:31 | INFO  | showcase | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/showcase.log
+2026-04-02 17:37:31 | INFO  | showcase | ============================================================
+2026-04-02 17:37:31 | INFO  | showcase |  STARTING: Showcase Visualization Generation
+2026-04-02 17:37:31 | INFO  | showcase | ============================================================
+2026-04-02 17:37:31 | INFO  | showcase | 
+  Generating static PNG figures...
+2026-04-02 17:37:31 | INFO  | showcase |   rf: 4 screening files
+2026-04-02 17:37:31 | INFO  | showcase |   dmpnn: 4 screening files
+2026-04-02 17:37:31 | INFO  | showcase |   chemeleon_frozen: 5 screening files
+2026-04-02 17:37:31 | INFO  | showcase |   molformer: 5 screening files
+2026-04-02 17:37:31 | INFO  | showcase |   Static: dataset_grand_overview.png
+2026-04-02 17:37:32 | INFO  | showcase |   Static: selectivity_heatmap.png
+2026-04-02 17:37:34 | INFO  | showcase |   Static: validation_drugs.png
+2026-04-02 17:37:36 | INFO  | showcase | 
+  Generating interactive HTML visualizations...
+2026-04-02 17:37:36 | INFO  | showcase |   rf: 4 screening files
+2026-04-02 17:37:36 | INFO  | showcase |   dmpnn: 4 screening files
+2026-04-02 17:37:36 | INFO  | showcase |   chemeleon_frozen: 5 screening files
+2026-04-02 17:37:36 | INFO  | showcase |   molformer: 5 screening files
+2026-04-02 17:37:36 | INFO  | showcase |   Interactive: 3d_selectivity_rf.html
+2026-04-02 17:37:37 | INFO  | showcase |   Interactive: 3d_selectivity_dmpnn.html
+2026-04-02 17:37:38 | INFO  | showcase |   Interactive: 3d_selectivity_chemeleon_frozen.html
+2026-04-02 17:37:38 | INFO  | showcase |   Interactive: 3d_selectivity_molformer.html
+2026-04-02 17:37:38 | INFO  | showcase |   Interactive: animated_threshold_bubbles_rf.html
+2026-04-02 17:37:39 | INFO  | showcase |   Interactive: ranked_list_explorer_rf.html
+2026-04-02 17:37:40 | INFO  | showcase |   Interactive: ranked_list_explorer_dmpnn.html
+2026-04-02 17:37:40 | INFO  | showcase |   Interactive: ranked_list_explorer_chemeleon_frozen.html
+2026-04-02 17:37:40 | INFO  | showcase |   Interactive: ranked_list_explorer_molformer.html
+2026-04-02 17:37:40 | INFO  | showcase |   Interactive: pipeline_comparison.html
+2026-04-02 17:37:40 | INFO  | showcase |   Interactive: 3d_chemical_space.html
+2026-04-02 17:37:41 | INFO  | showcase | 
+  Packaging outputs...
+2026-04-02 17:37:41 | INFO  | showcase |   Packaging all outputs...
+2026-04-02 17:37:49 | INFO  | showcase |   Packaged: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/showcase_results_20260402.zip (66.8 MB)
+2026-04-02 17:37:49 | INFO  | showcase | 
+  Figures generated: 77 PNG, 60 PDF, 38 interactive HTML
+2026-04-02 17:37:49 | INFO  | showcase |   All in: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures
+2026-04-02 17:37:49 | INFO  | showcase | ============================================================
+2026-04-02 17:37:49 | INFO  | showcase |  COMPLETED: Showcase Visualization
+2026-04-02 17:37:49 | INFO  | showcase |  Elapsed: 0m 17.3s
+2026-04-02 17:37:49 | INFO  | showcase | ============================================================
+2026-04-05 17:42:26 | INFO  | showcase | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/showcase.log
+2026-04-05 17:42:26 | INFO  | showcase | ============================================================
+2026-04-05 17:42:26 | INFO  | showcase |  STARTING: Showcase Visualization Generation
+2026-04-05 17:42:26 | INFO  | showcase | ============================================================
+2026-04-05 17:42:26 | INFO  | showcase | 
+  Generating static PNG figures...
+2026-04-05 17:42:26 | INFO  | showcase |   rf: 4 screening files
+2026-04-05 17:42:26 | INFO  | showcase |   dmpnn: 4 screening files
+2026-04-05 17:42:26 | INFO  | showcase |   chemeleon_frozen: 5 screening files
+2026-04-05 17:42:26 | INFO  | showcase |   molformer: 5 screening files
+2026-04-05 17:42:26 | INFO  | showcase |   dmpnn_rdkit: 4 screening files
+2026-04-05 17:42:26 | INFO  | showcase |   Static: dataset_grand_overview.png
+2026-04-05 17:42:27 | INFO  | showcase |   Static: selectivity_heatmap.png
+2026-04-05 17:42:30 | INFO  | showcase |   Static: validation_drugs.png
+2026-04-05 17:42:32 | INFO  | showcase | 
+  Generating interactive HTML visualizations...
+2026-04-05 17:42:33 | INFO  | showcase |   rf: 4 screening files
+2026-04-05 17:42:33 | INFO  | showcase |   dmpnn: 4 screening files
+2026-04-05 17:42:33 | INFO  | showcase |   chemeleon_frozen: 5 screening files
+2026-04-05 17:42:33 | INFO  | showcase |   molformer: 5 screening files
+2026-04-05 17:42:33 | INFO  | showcase |   dmpnn_rdkit: 4 screening files
+2026-04-05 17:42:33 | INFO  | showcase |   Interactive: 3d_selectivity_rf.html
+2026-04-05 17:42:33 | INFO  | showcase |   Interactive: 3d_selectivity_dmpnn.html
+2026-04-05 17:42:33 | INFO  | showcase |   Interactive: 3d_selectivity_chemeleon_frozen.html
+2026-04-05 17:42:34 | INFO  | showcase |   Interactive: 3d_selectivity_molformer.html
+2026-04-05 17:42:34 | INFO  | showcase |   Interactive: 3d_selectivity_dmpnn_rdkit.html
+2026-04-05 17:42:34 | INFO  | showcase |   Interactive: animated_threshold_bubbles_rf.html
+2026-04-05 17:42:35 | INFO  | showcase |   Interactive: ranked_list_explorer_rf.html
+2026-04-05 17:42:35 | INFO  | showcase |   Interactive: ranked_list_explorer_dmpnn.html
+2026-04-05 17:42:35 | INFO  | showcase |   Interactive: ranked_list_explorer_chemeleon_frozen.html
+2026-04-05 17:42:35 | INFO  | showcase |   Interactive: ranked_list_explorer_molformer.html
+2026-04-05 17:42:35 | INFO  | showcase |   Interactive: ranked_list_explorer_dmpnn_rdkit.html
+2026-04-05 17:42:35 | INFO  | showcase |   Interactive: pipeline_comparison.html
+2026-04-05 17:42:35 | INFO  | showcase |   Interactive: 3d_chemical_space.html
+2026-04-05 17:42:37 | INFO  | showcase | 
+  Packaging outputs...
+2026-04-05 17:42:37 | INFO  | showcase |   Packaging all outputs...
+2026-04-05 17:42:48 | INFO  | showcase |   Packaged: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/showcase_results_20260405.zip (96.0 MB)
+2026-04-05 17:42:48 | INFO  | showcase | 
+  Figures generated: 101 PNG, 83 PDF, 66 interactive HTML
+2026-04-05 17:42:48 | INFO  | showcase |   All in: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures
+2026-04-05 17:42:48 | INFO  | showcase | ============================================================
+2026-04-05 17:42:48 | INFO  | showcase |  COMPLETED: Showcase Visualization
+2026-04-05 17:42:48 | INFO  | showcase |  Elapsed: 0m 21.5s
+2026-04-05 17:42:48 | INFO  | showcase | ============================================================
+2026-04-05 20:31:43 | INFO  | showcase | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/showcase.log
+2026-04-05 20:31:43 | INFO  | showcase | ============================================================
+2026-04-05 20:31:43 | INFO  | showcase |  STARTING: Showcase Visualization Generation
+2026-04-05 20:31:43 | INFO  | showcase | ============================================================
+2026-04-05 20:31:43 | INFO  | showcase | 
+  Generating static PNG figures...
+2026-04-05 20:31:43 | INFO  | showcase |   rf: 4 screening files
+2026-04-05 20:31:43 | INFO  | showcase |   dmpnn: 4 screening files
+2026-04-05 20:31:43 | INFO  | showcase |   chemeleon_frozen: 5 screening files
+2026-04-05 20:31:43 | INFO  | showcase |   molformer: 5 screening files
+2026-04-05 20:31:43 | INFO  | showcase |   dmpnn_rdkit: 4 screening files
+2026-04-05 20:31:43 | INFO  | showcase |   Static: dataset_grand_overview.png
+2026-04-05 20:31:44 | INFO  | showcase |   Static: selectivity_heatmap.png
+2026-04-05 20:31:46 | INFO  | showcase |   Static: validation_drugs.png
+2026-04-05 20:31:48 | INFO  | showcase | 
+  Generating interactive HTML visualizations...
+2026-04-05 20:31:49 | INFO  | showcase |   rf: 4 screening files
+2026-04-05 20:31:49 | INFO  | showcase |   dmpnn: 4 screening files
+2026-04-05 20:31:49 | INFO  | showcase |   chemeleon_frozen: 5 screening files
+2026-04-05 20:31:49 | INFO  | showcase |   molformer: 5 screening files
+2026-04-05 20:31:49 | INFO  | showcase |   dmpnn_rdkit: 4 screening files
+2026-04-05 20:31:49 | INFO  | showcase |   Interactive: 3d_selectivity_rf.html
+2026-04-05 20:31:49 | INFO  | showcase |   Interactive: 3d_selectivity_dmpnn.html
+2026-04-05 20:31:49 | INFO  | showcase |   Interactive: 3d_selectivity_chemeleon_frozen.html
+2026-04-05 20:31:49 | INFO  | showcase |   Interactive: 3d_selectivity_molformer.html
+2026-04-05 20:31:50 | INFO  | showcase |   Interactive: 3d_selectivity_dmpnn_rdkit.html
+2026-04-05 20:31:50 | INFO  | showcase |   Interactive: animated_threshold_bubbles_rf.html
+2026-04-05 20:31:51 | INFO  | showcase |   Interactive: ranked_list_explorer_rf.html
+2026-04-05 20:31:51 | INFO  | showcase |   Interactive: ranked_list_explorer_dmpnn.html
+2026-04-05 20:31:51 | INFO  | showcase |   Interactive: ranked_list_explorer_chemeleon_frozen.html
+2026-04-05 20:31:51 | INFO  | showcase |   Interactive: ranked_list_explorer_molformer.html
+2026-04-05 20:31:51 | INFO  | showcase |   Interactive: ranked_list_explorer_dmpnn_rdkit.html
+2026-04-05 20:31:52 | INFO  | showcase |   Interactive: pipeline_comparison.html
+2026-04-05 20:31:52 | INFO  | showcase |   Interactive: 3d_chemical_space.html
+2026-04-05 20:31:53 | INFO  | showcase | 
+  Packaging outputs...
+2026-04-05 20:31:53 | INFO  | showcase |   Packaging all outputs...
+2026-04-05 20:32:03 | INFO  | showcase |   Packaged: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/showcase_results_20260405.zip (96.1 MB)
+2026-04-05 20:32:03 | INFO  | showcase | 
+  Figures generated: 101 PNG, 83 PDF, 66 interactive HTML
+2026-04-05 20:32:03 | INFO  | showcase |   All in: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures
+2026-04-05 20:32:03 | INFO  | showcase | ============================================================
+2026-04-05 20:32:03 | INFO  | showcase |  COMPLETED: Showcase Visualization
+2026-04-05 20:32:03 | INFO  | showcase |  Elapsed: 0m 20.1s
+2026-04-05 20:32:03 | INFO  | showcase | ============================================================

@@ -1,0 +1,100 @@
+2026-04-18 14:09:51 | INFO  | uncertainty_adjustment | 
+======================================================================
+2026-04-18 14:09:51 | INFO  | uncertainty_adjustment |   Phase 23: Uncertainty and Coactivity Adjustment
+2026-04-18 14:09:51 | INFO  | uncertainty_adjustment | ======================================================================
+2026-04-18 14:09:51 | INFO  | uncertainty_adjustment | 
+  Loading Hub compounds...
+2026-04-18 14:09:51 | INFO  | uncertainty_adjustment |   Hub: 6739 compounds
+2026-04-18 14:09:51 | INFO  | uncertainty_adjustment | 
+  Computing Morgan fingerprints for Hub...
+2026-04-18 14:11:36 | INFO  | uncertainty_adjustment | 
+======================================================================
+2026-04-18 14:11:36 | INFO  | uncertainty_adjustment |   Phase 23: Uncertainty and Coactivity Adjustment
+2026-04-18 14:11:36 | INFO  | uncertainty_adjustment | ======================================================================
+2026-04-18 14:11:36 | INFO  | uncertainty_adjustment | 
+  Loading Hub compounds...
+2026-04-18 14:11:36 | INFO  | uncertainty_adjustment |   Hub: 6739 compounds
+2026-04-18 14:11:36 | INFO  | uncertainty_adjustment | 
+  Loading precomputed Morgan fingerprints for Hub...
+2026-04-18 14:11:36 | INFO  | uncertainty_adjustment |   Loaded precomputed FPs: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/shared/features/morgan_repurposing_hub.npz (6739 x 2048)
+2026-04-18 14:11:36 | INFO  | uncertainty_adjustment |   Fingerprints: (6739, 2048)
+2026-04-18 14:11:36 | INFO  | uncertainty_adjustment | 
+  PHASE 1/3: RF TREE-LEVEL UNCERTAINTY
+2026-04-18 14:11:39 | INFO  | uncertainty_adjustment |   Loaded RF model: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/rf/rf_ecoli.pkl (500 trees)
+2026-04-18 14:11:40 | INFO  | uncertainty_adjustment |     ecoli             : mean_std=0.3089, max_std=0.4356, mean_CI_width=0.9381
+2026-04-18 14:11:43 | INFO  | uncertainty_adjustment |   Loaded RF model: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/rf/rf_saureus.pkl (500 trees)
+2026-04-18 14:11:44 | INFO  | uncertainty_adjustment |     saureus           : mean_std=0.3181, max_std=0.4255, mean_CI_width=0.9585
+2026-04-18 14:11:45 | INFO  | uncertainty_adjustment |   Loaded RF model: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/rf/rf_paeruginosa.pkl (500 trees)
+2026-04-18 14:11:46 | INFO  | uncertainty_adjustment |     paeruginosa       : mean_std=0.3044, max_std=0.4543, mean_CI_width=0.9323
+2026-04-18 14:11:47 | INFO  | uncertainty_adjustment |   Loaded RF model: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/rf/rf_mtb.pkl (500 trees)
+2026-04-18 14:11:48 | INFO  | uncertainty_adjustment |     mtb               : mean_std=0.3463, max_std=0.4279, mean_CI_width=0.9804
+2026-04-18 14:11:48 | INFO  | uncertainty_adjustment |   Loaded RF model: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/rf/rf_gut_t5.pkl (500 trees)
+2026-04-18 14:11:49 | INFO  | uncertainty_adjustment |     gut_t5            : mean_std=0.3254, max_std=0.4394, mean_CI_width=0.9299
+2026-04-18 14:11:49 | INFO  | uncertainty_adjustment |   Loaded RF model: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/rf/rf_gut_t10.pkl (500 trees)
+2026-04-18 14:11:50 | INFO  | uncertainty_adjustment |     gut_t10           : mean_std=0.3135, max_std=0.4565, mean_CI_width=0.9132
+2026-04-18 14:11:50 | INFO  | uncertainty_adjustment |   Loaded RF model: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/rf/rf_gut_t20.pkl (500 trees)
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     gut_t20           : mean_std=0.2842, max_std=0.4636, mean_CI_width=0.8869
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment | 
+  Loading coactivity odds ratios...
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     ecoli             : OR=13.125, p=0.000234
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     saureus           : OR=7.667, p=0.000574
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     paeruginosa       : OR=9.778, p=0.005379
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     mtb               : OR=1.857, p=0.368457
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment | 
+  PHASE 2/3: COACTIVITY-ADJUSTED SELECTIVITY
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     ecoli_t5                 : OR=13.1, n_active=228, mean_S=0.1590, mean_S_adj=0.1521, mean_delta(active)=0.2051, mean_CI_width=0.9385
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     ecoli_t10                : OR=13.1, n_active=228, mean_S=0.1686, mean_S_adj=0.1615, mean_delta(active)=0.2114, mean_CI_width=0.9392
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     ecoli_t20                : OR=13.1, n_active=228, mean_S=0.1831, mean_S_adj=0.1754, mean_delta(active)=0.2262, mean_CI_width=0.9411
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     saureus_t5               : OR=7.7, n_active=319, mean_S=0.1825, mean_S_adj=0.1741, mean_delta(active)=0.1772, mean_CI_width=0.9596
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     saureus_t10              : OR=7.7, n_active=319, mean_S=0.1940, mean_S_adj=0.1853, mean_delta(active)=0.1837, mean_CI_width=0.9602
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     saureus_t20              : OR=7.7, n_active=319, mean_S=0.2107, mean_S_adj=0.2013, mean_delta(active)=0.1979, mean_CI_width=0.9622
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     paeruginosa_t5           : OR=9.8, n_active=108, mean_S=0.1377, mean_S_adj=0.1348, mean_delta(active)=0.1834, mean_CI_width=0.9287
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     paeruginosa_t10          : OR=9.8, n_active=108, mean_S=0.1459, mean_S_adj=0.1429, mean_delta(active)=0.1832, mean_CI_width=0.9293
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     paeruginosa_t20          : OR=9.8, n_active=108, mean_S=0.1578, mean_S_adj=0.1548, mean_delta(active)=0.1871, mean_CI_width=0.9313
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     mtb_t5                   : OR=1.9, n_active=620, mean_S=0.2401, mean_S_adj=0.2333, mean_delta(active)=0.0739, mean_CI_width=0.9763
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     mtb_t10                  : OR=1.9, n_active=620, mean_S=0.2556, mean_S_adj=0.2491, mean_delta(active)=0.0708, mean_CI_width=0.9769
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     mtb_t20                  : OR=1.9, n_active=620, mean_S=0.2774, mean_S_adj=0.2717, mean_delta(active)=0.0626, mean_CI_width=0.9789
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment | 
+  PHASE 3/3: SAVING OUTPUTS AND FIGURES
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/uncertainty_rf_ecoli_t5.csv
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/uncertainty_rf_ecoli_t10.csv
+2026-04-18 14:11:51 | INFO  | uncertainty_adjustment |     Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/uncertainty_rf_ecoli_t20.csv
+2026-04-18 14:11:52 | INFO  | uncertainty_adjustment |     Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/uncertainty_rf_saureus_t5.csv
+2026-04-18 14:11:52 | INFO  | uncertainty_adjustment |     Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/uncertainty_rf_saureus_t10.csv
+2026-04-18 14:11:52 | INFO  | uncertainty_adjustment |     Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/uncertainty_rf_saureus_t20.csv
+2026-04-18 14:11:52 | INFO  | uncertainty_adjustment |     Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/uncertainty_rf_paeruginosa_t5.csv
+2026-04-18 14:11:52 | INFO  | uncertainty_adjustment |     Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/uncertainty_rf_paeruginosa_t10.csv
+2026-04-18 14:11:52 | INFO  | uncertainty_adjustment |     Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/uncertainty_rf_paeruginosa_t20.csv
+2026-04-18 14:11:52 | INFO  | uncertainty_adjustment |     Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/uncertainty_rf_mtb_t5.csv
+2026-04-18 14:11:52 | INFO  | uncertainty_adjustment |     Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/uncertainty_rf_mtb_t10.csv
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment |     Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/uncertainty_rf_mtb_t20.csv
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment |     Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/uncertainty_summary.json
+2026-04-18 14:11:53 | ERROR | uncertainty_adjustment |   Figure generation FAILED: AttributeError: 'numpy.ndarray' object has no attribute 'median'
+2026-04-18 14:11:53 | ERROR | uncertainty_adjustment | Traceback (most recent call last):
+  File "/scratch/vishakha.agrawal/antibiotic-selectivity-v2/scripts/23_uncertainty_and_adjustment.py", line 599, in main
+    generate_figures(results, hub_meta)
+  File "/scratch/vishakha.agrawal/antibiotic-selectivity-v2/scripts/23_uncertainty_and_adjustment.py", line 468, in generate_figures
+    axes[i].axvline(ci_widths.median(), color='red', linestyle='--',
+                    ^^^^^^^^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'median'. Did you mean: 'mean'?
+
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment | 
+======================================================================
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment |   UNCERTAINTY AND ADJUSTMENT SUMMARY
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment | ======================================================================
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment |   RF models loaded: 7 tasks
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment |   Odds ratios loaded: 4 pathogens
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment |   Combinations computed: 12
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment | 
+  Top-5 E. coli (t=10) with uncertainty:
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment |     sisomicin                 S=0.6825 [0.0140, 1.0000] S_adj=0.2103
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment |     gepotidacin               S=0.6748 [0.0000, 1.0000] S_adj=0.1849
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment |     netilmicin                S=0.6718 [0.0000, 1.0000] S_adj=0.1909
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment |     gentamycin                S=0.6630 [0.0280, 1.0000] S_adj=0.2174
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment |     AFN-1252                  S=0.6518 [0.0000, 1.0000] S_adj=0.1445
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment | 
+  Output: 12 CSVs, 0 figure pairs, 1 summary JSON
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment | ======================================================================
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment | 
+  Phase 23: Uncertainty and Coactivity Adjustment completed in 00:16
+2026-04-18 14:11:53 | INFO  | uncertainty_adjustment | ======================================================================

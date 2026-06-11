@@ -1,0 +1,4997 @@
+[
+  {
+    "name": "retapamulin",
+    "smiles": "C=C[C@]1(C)C[C@@H](OC(=O)CS[C@@H]2C[C@H]3CC[C@@H](C2)N3C)[C@]2(C)[C@H](C)CC[C@]3(CCC(=O)[C@H]32)[C@@H](C)[C@@H]1O",
+    "n_tokens": 69,
+    "top_tokens": [
+      {
+        "token": "N",
+        "attention": 3.1569,
+        "normalized": 0.0458
+      },
+      {
+        "token": "S",
+        "attention": 2.6974,
+        "normalized": 0.0391
+      },
+      {
+        "token": "C",
+        "attention": 2.2122,
+        "normalized": 0.0321
+      },
+      {
+        "token": "=",
+        "attention": 1.991,
+        "normalized": 0.0289
+      },
+      {
+        "token": "C",
+        "attention": 1.7043,
+        "normalized": 0.0247
+      }
+    ],
+    "all_tokens": [
+      {
+        "token": "N",
+        "attention": 3.1569,
+        "normalized": 0.0458
+      },
+      {
+        "token": "S",
+        "attention": 2.6974,
+        "normalized": 0.0391
+      },
+      {
+        "token": "C",
+        "attention": 2.2122,
+        "normalized": 0.0321
+      },
+      {
+        "token": "=",
+        "attention": 1.991,
+        "normalized": 0.0289
+      },
+      {
+        "token": "C",
+        "attention": 1.7043,
+        "normalized": 0.0247
+      },
+      {
+        "token": "O",
+        "attention": 1.6461,
+        "normalized": 0.0239
+      },
+      {
+        "token": "C",
+        "attention": 1.642,
+        "normalized": 0.0238
+      },
+      {
+        "token": "1",
+        "attention": 1.6333,
+        "normalized": 0.0237
+      },
+      {
+        "token": "2",
+        "attention": 1.6147,
+        "normalized": 0.0234
+      },
+      {
+        "token": "[C@]",
+        "attention": 1.5896,
+        "normalized": 0.023
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.5756,
+        "normalized": 0.0228
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.5163,
+        "normalized": 0.022
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.4374,
+        "normalized": 0.0208
+      },
+      {
+        "token": "C",
+        "attention": 1.3452,
+        "normalized": 0.0195
+      },
+      {
+        "token": "C",
+        "attention": 1.3076,
+        "normalized": 0.019
+      },
+      {
+        "token": "2",
+        "attention": 1.3041,
+        "normalized": 0.0189
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.2993,
+        "normalized": 0.0188
+      },
+      {
+        "token": "3",
+        "attention": 1.2852,
+        "normalized": 0.0186
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.2766,
+        "normalized": 0.0185
+      },
+      {
+        "token": "1",
+        "attention": 1.2604,
+        "normalized": 0.0183
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.239,
+        "normalized": 0.018
+      },
+      {
+        "token": "C",
+        "attention": 1.2296,
+        "normalized": 0.0178
+      },
+      {
+        "token": "2",
+        "attention": 1.2161,
+        "normalized": 0.0176
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.1835,
+        "normalized": 0.0172
+      },
+      {
+        "token": "[C@]",
+        "attention": 1.1716,
+        "normalized": 0.017
+      },
+      {
+        "token": "O",
+        "attention": 1.1496,
+        "normalized": 0.0167
+      },
+      {
+        "token": "C",
+        "attention": 1.1458,
+        "normalized": 0.0166
+      },
+      {
+        "token": "3",
+        "attention": 1.1446,
+        "normalized": 0.0166
+      },
+      {
+        "token": "3",
+        "attention": 1.1344,
+        "normalized": 0.0164
+      },
+      {
+        "token": "C",
+        "attention": 1.1225,
+        "normalized": 0.0163
+      },
+      {
+        "token": "2",
+        "attention": 1.1209,
+        "normalized": 0.0162
+      },
+      {
+        "token": "C",
+        "attention": 1.1206,
+        "normalized": 0.0162
+      },
+      {
+        "token": "C",
+        "attention": 1.0866,
+        "normalized": 0.0157
+      },
+      {
+        "token": "3",
+        "attention": 1.0484,
+        "normalized": 0.0152
+      },
+      {
+        "token": "[C@]",
+        "attention": 1.0391,
+        "normalized": 0.0151
+      },
+      {
+        "token": "C",
+        "attention": 1.0252,
+        "normalized": 0.0149
+      },
+      {
+        "token": "C",
+        "attention": 1.0174,
+        "normalized": 0.0147
+      },
+      {
+        "token": "[C@H]",
+        "attention": 0.9909,
+        "normalized": 0.0144
+      },
+      {
+        "token": "C",
+        "attention": 0.9039,
+        "normalized": 0.0131
+      },
+      {
+        "token": "C",
+        "attention": 0.8395,
+        "normalized": 0.0122
+      },
+      {
+        "token": "C",
+        "attention": 0.8277,
+        "normalized": 0.012
+      },
+      {
+        "token": "C",
+        "attention": 0.7605,
+        "normalized": 0.011
+      },
+      {
+        "token": "C",
+        "attention": 0.7557,
+        "normalized": 0.011
+      },
+      {
+        "token": "C",
+        "attention": 0.7183,
+        "normalized": 0.0104
+      },
+      {
+        "token": "=",
+        "attention": 0.6168,
+        "normalized": 0.0089
+      },
+      {
+        "token": "C",
+        "attention": 0.5846,
+        "normalized": 0.0085
+      },
+      {
+        "token": "(",
+        "attention": 0.5431,
+        "normalized": 0.0079
+      },
+      {
+        "token": "(",
+        "attention": 0.5365,
+        "normalized": 0.0078
+      },
+      {
+        "token": ")",
+        "attention": 0.4919,
+        "normalized": 0.0071
+      },
+      {
+        "token": ")",
+        "attention": 0.4457,
+        "normalized": 0.0065
+      },
+      {
+        "token": "=",
+        "attention": 0.4375,
+        "normalized": 0.0063
+      },
+      {
+        "token": "O",
+        "attention": 0.432,
+        "normalized": 0.0063
+      },
+      {
+        "token": "(",
+        "attention": 0.4266,
+        "normalized": 0.0062
+      },
+      {
+        "token": ")",
+        "attention": 0.4225,
+        "normalized": 0.0061
+      },
+      {
+        "token": ")",
+        "attention": 0.4223,
+        "normalized": 0.0061
+      },
+      {
+        "token": "(",
+        "attention": 0.4147,
+        "normalized": 0.006
+      },
+      {
+        "token": "(",
+        "attention": 0.3999,
+        "normalized": 0.0058
+      },
+      {
+        "token": ")",
+        "attention": 0.3982,
+        "normalized": 0.0058
+      },
+      {
+        "token": "(",
+        "attention": 0.393,
+        "normalized": 0.0057
+      },
+      {
+        "token": ")",
+        "attention": 0.3923,
+        "normalized": 0.0057
+      },
+      {
+        "token": ")",
+        "attention": 0.3829,
+        "normalized": 0.0055
+      },
+      {
+        "token": "(",
+        "attention": 0.3812,
+        "normalized": 0.0055
+      },
+      {
+        "token": "(",
+        "attention": 0.3807,
+        "normalized": 0.0055
+      },
+      {
+        "token": "(",
+        "attention": 0.3744,
+        "normalized": 0.0054
+      },
+      {
+        "token": ")",
+        "attention": 0.3718,
+        "normalized": 0.0054
+      },
+      {
+        "token": "O",
+        "attention": 0.37,
+        "normalized": 0.0054
+      },
+      {
+        "token": ")",
+        "attention": 0.3573,
+        "normalized": 0.0052
+      },
+      {
+        "token": "<eos>",
+        "attention": 0.3313,
+        "normalized": 0.0048
+      },
+      {
+        "token": "<bos>",
+        "attention": 0.2063,
+        "normalized": 0.003
+      }
+    ]
+  },
+  {
+    "name": "AFN-1252",
+    "smiles": "Cc1c(CN(C)C(=O)/C=C/c2cnc3c(c2)CCC(=O)N3)oc2ccccc12",
+    "n_tokens": 53,
+    "top_tokens": [
+      {
+        "token": "o",
+        "attention": 2.8953,
+        "normalized": 0.0546
+      },
+      {
+        "token": "=",
+        "attention": 2.4596,
+        "normalized": 0.0464
+      },
+      {
+        "token": "N",
+        "attention": 2.3169,
+        "normalized": 0.0437
+      },
+      {
+        "token": "c",
+        "attention": 2.009,
+        "normalized": 0.0379
+      },
+      {
+        "token": "n",
+        "attention": 1.9208,
+        "normalized": 0.0362
+      }
+    ],
+    "all_tokens": [
+      {
+        "token": "o",
+        "attention": 2.8953,
+        "normalized": 0.0546
+      },
+      {
+        "token": "=",
+        "attention": 2.4596,
+        "normalized": 0.0464
+      },
+      {
+        "token": "N",
+        "attention": 2.3169,
+        "normalized": 0.0437
+      },
+      {
+        "token": "c",
+        "attention": 2.009,
+        "normalized": 0.0379
+      },
+      {
+        "token": "n",
+        "attention": 1.9208,
+        "normalized": 0.0362
+      },
+      {
+        "token": "C",
+        "attention": 1.8012,
+        "normalized": 0.034
+      },
+      {
+        "token": "C",
+        "attention": 1.6289,
+        "normalized": 0.0307
+      },
+      {
+        "token": "/",
+        "attention": 1.5709,
+        "normalized": 0.0296
+      },
+      {
+        "token": "2",
+        "attention": 1.5242,
+        "normalized": 0.0288
+      },
+      {
+        "token": "c",
+        "attention": 1.5144,
+        "normalized": 0.0286
+      },
+      {
+        "token": "c",
+        "attention": 1.5065,
+        "normalized": 0.0284
+      },
+      {
+        "token": "C",
+        "attention": 1.4238,
+        "normalized": 0.0269
+      },
+      {
+        "token": "C",
+        "attention": 1.3717,
+        "normalized": 0.0259
+      },
+      {
+        "token": "3",
+        "attention": 1.3208,
+        "normalized": 0.0249
+      },
+      {
+        "token": "N",
+        "attention": 1.3065,
+        "normalized": 0.0247
+      },
+      {
+        "token": "/",
+        "attention": 1.2328,
+        "normalized": 0.0233
+      },
+      {
+        "token": "C",
+        "attention": 1.1937,
+        "normalized": 0.0225
+      },
+      {
+        "token": "3",
+        "attention": 1.1815,
+        "normalized": 0.0223
+      },
+      {
+        "token": "c",
+        "attention": 1.1559,
+        "normalized": 0.0218
+      },
+      {
+        "token": "c",
+        "attention": 1.0927,
+        "normalized": 0.0206
+      },
+      {
+        "token": "2",
+        "attention": 1.0616,
+        "normalized": 0.02
+      },
+      {
+        "token": "C",
+        "attention": 1.0472,
+        "normalized": 0.0198
+      },
+      {
+        "token": "1",
+        "attention": 1.0314,
+        "normalized": 0.0195
+      },
+      {
+        "token": "2",
+        "attention": 0.9011,
+        "normalized": 0.017
+      },
+      {
+        "token": "c",
+        "attention": 0.8834,
+        "normalized": 0.0167
+      },
+      {
+        "token": "1",
+        "attention": 0.8655,
+        "normalized": 0.0163
+      },
+      {
+        "token": "2",
+        "attention": 0.792,
+        "normalized": 0.0149
+      },
+      {
+        "token": "c",
+        "attention": 0.7849,
+        "normalized": 0.0148
+      },
+      {
+        "token": "c",
+        "attention": 0.7741,
+        "normalized": 0.0146
+      },
+      {
+        "token": "c",
+        "attention": 0.7667,
+        "normalized": 0.0145
+      },
+      {
+        "token": "c",
+        "attention": 0.7171,
+        "normalized": 0.0135
+      },
+      {
+        "token": "C",
+        "attention": 0.7075,
+        "normalized": 0.0133
+      },
+      {
+        "token": "c",
+        "attention": 0.7033,
+        "normalized": 0.0133
+      },
+      {
+        "token": "c",
+        "attention": 0.6683,
+        "normalized": 0.0126
+      },
+      {
+        "token": "C",
+        "attention": 0.6303,
+        "normalized": 0.0119
+      },
+      {
+        "token": "c",
+        "attention": 0.5623,
+        "normalized": 0.0106
+      },
+      {
+        "token": "=",
+        "attention": 0.5447,
+        "normalized": 0.0103
+      },
+      {
+        "token": "C",
+        "attention": 0.5351,
+        "normalized": 0.0101
+      },
+      {
+        "token": ")",
+        "attention": 0.502,
+        "normalized": 0.0095
+      },
+      {
+        "token": "=",
+        "attention": 0.479,
+        "normalized": 0.009
+      },
+      {
+        "token": ")",
+        "attention": 0.4708,
+        "normalized": 0.0089
+      },
+      {
+        "token": "<eos>",
+        "attention": 0.4688,
+        "normalized": 0.0088
+      },
+      {
+        "token": ")",
+        "attention": 0.4646,
+        "normalized": 0.0088
+      },
+      {
+        "token": "(",
+        "attention": 0.4641,
+        "normalized": 0.0088
+      },
+      {
+        "token": ")",
+        "attention": 0.4622,
+        "normalized": 0.0087
+      },
+      {
+        "token": "(",
+        "attention": 0.4602,
+        "normalized": 0.0087
+      },
+      {
+        "token": ")",
+        "attention": 0.4592,
+        "normalized": 0.0087
+      },
+      {
+        "token": "O",
+        "attention": 0.4456,
+        "normalized": 0.0084
+      },
+      {
+        "token": "O",
+        "attention": 0.4446,
+        "normalized": 0.0084
+      },
+      {
+        "token": "(",
+        "attention": 0.4163,
+        "normalized": 0.0079
+      },
+      {
+        "token": "(",
+        "attention": 0.4098,
+        "normalized": 0.0077
+      },
+      {
+        "token": "(",
+        "attention": 0.3912,
+        "normalized": 0.0074
+      },
+      {
+        "token": "<bos>",
+        "attention": 0.2579,
+        "normalized": 0.0049
+      }
+    ]
+  },
+  {
+    "name": "trimetrexate",
+    "smiles": "COc1cc(NCc2ccc3nc(N)nc(N)c3c2C)cc(OC)c1OC",
+    "n_tokens": 43,
+    "top_tokens": [
+      {
+        "token": "N",
+        "attention": 2.2221,
+        "normalized": 0.0517
+      },
+      {
+        "token": "N",
+        "attention": 1.9797,
+        "normalized": 0.046
+      },
+      {
+        "token": "N",
+        "attention": 1.7266,
+        "normalized": 0.0402
+      },
+      {
+        "token": "C",
+        "attention": 1.608,
+        "normalized": 0.0374
+      },
+      {
+        "token": "n",
+        "attention": 1.5893,
+        "normalized": 0.037
+      }
+    ],
+    "all_tokens": [
+      {
+        "token": "N",
+        "attention": 2.2221,
+        "normalized": 0.0517
+      },
+      {
+        "token": "N",
+        "attention": 1.9797,
+        "normalized": 0.046
+      },
+      {
+        "token": "N",
+        "attention": 1.7266,
+        "normalized": 0.0402
+      },
+      {
+        "token": "C",
+        "attention": 1.608,
+        "normalized": 0.0374
+      },
+      {
+        "token": "n",
+        "attention": 1.5893,
+        "normalized": 0.037
+      },
+      {
+        "token": "n",
+        "attention": 1.5561,
+        "normalized": 0.0362
+      },
+      {
+        "token": "c",
+        "attention": 1.4952,
+        "normalized": 0.0348
+      },
+      {
+        "token": "c",
+        "attention": 1.3592,
+        "normalized": 0.0316
+      },
+      {
+        "token": "O",
+        "attention": 1.3231,
+        "normalized": 0.0308
+      },
+      {
+        "token": "c",
+        "attention": 1.2863,
+        "normalized": 0.0299
+      },
+      {
+        "token": "c",
+        "attention": 1.2531,
+        "normalized": 0.0291
+      },
+      {
+        "token": "O",
+        "attention": 1.248,
+        "normalized": 0.029
+      },
+      {
+        "token": "c",
+        "attention": 1.179,
+        "normalized": 0.0274
+      },
+      {
+        "token": "3",
+        "attention": 1.1488,
+        "normalized": 0.0267
+      },
+      {
+        "token": "2",
+        "attention": 1.1413,
+        "normalized": 0.0265
+      },
+      {
+        "token": "c",
+        "attention": 1.1169,
+        "normalized": 0.026
+      },
+      {
+        "token": "c",
+        "attention": 1.1032,
+        "normalized": 0.0257
+      },
+      {
+        "token": "1",
+        "attention": 1.0812,
+        "normalized": 0.0251
+      },
+      {
+        "token": "c",
+        "attention": 1.0337,
+        "normalized": 0.024
+      },
+      {
+        "token": "C",
+        "attention": 0.9786,
+        "normalized": 0.0228
+      },
+      {
+        "token": "O",
+        "attention": 0.9732,
+        "normalized": 0.0226
+      },
+      {
+        "token": "3",
+        "attention": 0.9389,
+        "normalized": 0.0218
+      },
+      {
+        "token": "c",
+        "attention": 0.9306,
+        "normalized": 0.0216
+      },
+      {
+        "token": "c",
+        "attention": 0.9302,
+        "normalized": 0.0216
+      },
+      {
+        "token": "c",
+        "attention": 0.9207,
+        "normalized": 0.0214
+      },
+      {
+        "token": "1",
+        "attention": 0.8868,
+        "normalized": 0.0206
+      },
+      {
+        "token": "2",
+        "attention": 0.8388,
+        "normalized": 0.0195
+      },
+      {
+        "token": "c",
+        "attention": 0.8188,
+        "normalized": 0.019
+      },
+      {
+        "token": "C",
+        "attention": 0.7994,
+        "normalized": 0.0186
+      },
+      {
+        "token": "C",
+        "attention": 0.7831,
+        "normalized": 0.0182
+      },
+      {
+        "token": "C",
+        "attention": 0.6905,
+        "normalized": 0.0161
+      },
+      {
+        "token": ")",
+        "attention": 0.653,
+        "normalized": 0.0152
+      },
+      {
+        "token": "c",
+        "attention": 0.5918,
+        "normalized": 0.0138
+      },
+      {
+        "token": "c",
+        "attention": 0.5802,
+        "normalized": 0.0135
+      },
+      {
+        "token": "<eos>",
+        "attention": 0.5112,
+        "normalized": 0.0119
+      },
+      {
+        "token": "<bos>",
+        "attention": 0.4982,
+        "normalized": 0.0116
+      },
+      {
+        "token": "(",
+        "attention": 0.4888,
+        "normalized": 0.0114
+      },
+      {
+        "token": ")",
+        "attention": 0.4843,
+        "normalized": 0.0113
+      },
+      {
+        "token": ")",
+        "attention": 0.4796,
+        "normalized": 0.0112
+      },
+      {
+        "token": "(",
+        "attention": 0.4689,
+        "normalized": 0.0109
+      },
+      {
+        "token": ")",
+        "attention": 0.4593,
+        "normalized": 0.0107
+      },
+      {
+        "token": "(",
+        "attention": 0.4334,
+        "normalized": 0.0101
+      },
+      {
+        "token": "(",
+        "attention": 0.4112,
+        "normalized": 0.0096
+      }
+    ]
+  },
+  {
+    "name": "micronomicin",
+    "smiles": "CNC[C@@H]1CC[C@@H](N)[C@@H](O[C@H]2[C@H](O)[C@@H](O[C@H]3OC[C@](C)(O)[C@H](NC)[C@H]3O)[C@H](N)C[C@@H]2N)O1",
+    "n_tokens": 56,
+    "top_tokens": [
+      {
+        "token": "N",
+        "attention": 1.9994,
+        "normalized": 0.0357
+      },
+      {
+        "token": "N",
+        "attention": 1.9758,
+        "normalized": 0.0353
+      },
+      {
+        "token": "N",
+        "attention": 1.8852,
+        "normalized": 0.0337
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.6903,
+        "normalized": 0.0302
+      },
+      {
+        "token": "O",
+        "attention": 1.6706,
+        "normalized": 0.0298
+      }
+    ],
+    "all_tokens": [
+      {
+        "token": "N",
+        "attention": 1.9994,
+        "normalized": 0.0357
+      },
+      {
+        "token": "N",
+        "attention": 1.9758,
+        "normalized": 0.0353
+      },
+      {
+        "token": "N",
+        "attention": 1.8852,
+        "normalized": 0.0337
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.6903,
+        "normalized": 0.0302
+      },
+      {
+        "token": "O",
+        "attention": 1.6706,
+        "normalized": 0.0298
+      },
+      {
+        "token": "N",
+        "attention": 1.6181,
+        "normalized": 0.0289
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.5844,
+        "normalized": 0.0283
+      },
+      {
+        "token": "O",
+        "attention": 1.502,
+        "normalized": 0.0268
+      },
+      {
+        "token": "N",
+        "attention": 1.472,
+        "normalized": 0.0263
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.4467,
+        "normalized": 0.0258
+      },
+      {
+        "token": "O",
+        "attention": 1.4408,
+        "normalized": 0.0257
+      },
+      {
+        "token": "O",
+        "attention": 1.3405,
+        "normalized": 0.0239
+      },
+      {
+        "token": "3",
+        "attention": 1.3361,
+        "normalized": 0.0239
+      },
+      {
+        "token": "2",
+        "attention": 1.302,
+        "normalized": 0.0233
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.2993,
+        "normalized": 0.0232
+      },
+      {
+        "token": "C",
+        "attention": 1.2859,
+        "normalized": 0.023
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.269,
+        "normalized": 0.0227
+      },
+      {
+        "token": "2",
+        "attention": 1.2645,
+        "normalized": 0.0226
+      },
+      {
+        "token": "[C@]",
+        "attention": 1.2544,
+        "normalized": 0.0224
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.2383,
+        "normalized": 0.0221
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.2311,
+        "normalized": 0.022
+      },
+      {
+        "token": "C",
+        "attention": 1.2249,
+        "normalized": 0.0219
+      },
+      {
+        "token": "O",
+        "attention": 1.145,
+        "normalized": 0.0204
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.1389,
+        "normalized": 0.0203
+      },
+      {
+        "token": "1",
+        "attention": 1.1349,
+        "normalized": 0.0203
+      },
+      {
+        "token": "O",
+        "attention": 1.081,
+        "normalized": 0.0193
+      },
+      {
+        "token": "3",
+        "attention": 1.0614,
+        "normalized": 0.019
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.0432,
+        "normalized": 0.0186
+      },
+      {
+        "token": "C",
+        "attention": 1.0014,
+        "normalized": 0.0179
+      },
+      {
+        "token": ")",
+        "attention": 0.9754,
+        "normalized": 0.0174
+      },
+      {
+        "token": "[C@H]",
+        "attention": 0.9517,
+        "normalized": 0.017
+      },
+      {
+        "token": "[C@H]",
+        "attention": 0.941,
+        "normalized": 0.0168
+      },
+      {
+        "token": "C",
+        "attention": 0.9185,
+        "normalized": 0.0164
+      },
+      {
+        "token": "1",
+        "attention": 0.9181,
+        "normalized": 0.0164
+      },
+      {
+        "token": "O",
+        "attention": 0.8812,
+        "normalized": 0.0157
+      },
+      {
+        "token": "C",
+        "attention": 0.8455,
+        "normalized": 0.0151
+      },
+      {
+        "token": "C",
+        "attention": 0.7619,
+        "normalized": 0.0136
+      },
+      {
+        "token": "C",
+        "attention": 0.741,
+        "normalized": 0.0132
+      },
+      {
+        "token": "C",
+        "attention": 0.6341,
+        "normalized": 0.0113
+      },
+      {
+        "token": ")",
+        "attention": 0.5896,
+        "normalized": 0.0105
+      },
+      {
+        "token": "(",
+        "attention": 0.5343,
+        "normalized": 0.0095
+      },
+      {
+        "token": ")",
+        "attention": 0.5239,
+        "normalized": 0.0094
+      },
+      {
+        "token": ")",
+        "attention": 0.5155,
+        "normalized": 0.0092
+      },
+      {
+        "token": ")",
+        "attention": 0.5149,
+        "normalized": 0.0092
+      },
+      {
+        "token": ")",
+        "attention": 0.5051,
+        "normalized": 0.009
+      },
+      {
+        "token": ")",
+        "attention": 0.4821,
+        "normalized": 0.0086
+      },
+      {
+        "token": "(",
+        "attention": 0.4692,
+        "normalized": 0.0084
+      },
+      {
+        "token": "<eos>",
+        "attention": 0.458,
+        "normalized": 0.0082
+      },
+      {
+        "token": "(",
+        "attention": 0.4411,
+        "normalized": 0.0079
+      },
+      {
+        "token": ")",
+        "attention": 0.4164,
+        "normalized": 0.0074
+      },
+      {
+        "token": "(",
+        "attention": 0.385,
+        "normalized": 0.0069
+      },
+      {
+        "token": "(",
+        "attention": 0.3722,
+        "normalized": 0.0066
+      },
+      {
+        "token": "(",
+        "attention": 0.3337,
+        "normalized": 0.006
+      },
+      {
+        "token": "(",
+        "attention": 0.3254,
+        "normalized": 0.0058
+      },
+      {
+        "token": "(",
+        "attention": 0.3225,
+        "normalized": 0.0058
+      },
+      {
+        "token": "<bos>",
+        "attention": 0.3055,
+        "normalized": 0.0055
+      }
+    ]
+  },
+  {
+    "name": "SQ-109",
+    "smiles": "CC(C)=CCC/C(C)=C/CNCCNC1[C@H]2C[C@@H]3C[C@@H](C[C@H]1C3)C2",
+    "n_tokens": 42,
+    "top_tokens": [
+      {
+        "token": "1",
+        "attention": 1.8332,
+        "normalized": 0.0436
+      },
+      {
+        "token": "N",
+        "attention": 1.817,
+        "normalized": 0.0433
+      },
+      {
+        "token": "N",
+        "attention": 1.5873,
+        "normalized": 0.0378
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.5023,
+        "normalized": 0.0358
+      },
+      {
+        "token": "3",
+        "attention": 1.4473,
+        "normalized": 0.0345
+      }
+    ],
+    "all_tokens": [
+      {
+        "token": "1",
+        "attention": 1.8332,
+        "normalized": 0.0436
+      },
+      {
+        "token": "N",
+        "attention": 1.817,
+        "normalized": 0.0433
+      },
+      {
+        "token": "N",
+        "attention": 1.5873,
+        "normalized": 0.0378
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.5023,
+        "normalized": 0.0358
+      },
+      {
+        "token": "3",
+        "attention": 1.4473,
+        "normalized": 0.0345
+      },
+      {
+        "token": "2",
+        "attention": 1.3879,
+        "normalized": 0.033
+      },
+      {
+        "token": "=",
+        "attention": 1.387,
+        "normalized": 0.033
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.3686,
+        "normalized": 0.0326
+      },
+      {
+        "token": "/",
+        "attention": 1.2982,
+        "normalized": 0.0309
+      },
+      {
+        "token": "C",
+        "attention": 1.2481,
+        "normalized": 0.0297
+      },
+      {
+        "token": "C",
+        "attention": 1.2048,
+        "normalized": 0.0287
+      },
+      {
+        "token": "1",
+        "attention": 1.121,
+        "normalized": 0.0267
+      },
+      {
+        "token": "C",
+        "attention": 1.1207,
+        "normalized": 0.0267
+      },
+      {
+        "token": "C",
+        "attention": 1.1144,
+        "normalized": 0.0265
+      },
+      {
+        "token": "C",
+        "attention": 1.1063,
+        "normalized": 0.0263
+      },
+      {
+        "token": "2",
+        "attention": 1.1009,
+        "normalized": 0.0262
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.0924,
+        "normalized": 0.026
+      },
+      {
+        "token": "C",
+        "attention": 1.0686,
+        "normalized": 0.0254
+      },
+      {
+        "token": "C",
+        "attention": 1.0546,
+        "normalized": 0.0251
+      },
+      {
+        "token": "C",
+        "attention": 1.036,
+        "normalized": 0.0247
+      },
+      {
+        "token": "/",
+        "attention": 1.0355,
+        "normalized": 0.0247
+      },
+      {
+        "token": "C",
+        "attention": 1.0249,
+        "normalized": 0.0244
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.0133,
+        "normalized": 0.0241
+      },
+      {
+        "token": "=",
+        "attention": 1.01,
+        "normalized": 0.024
+      },
+      {
+        "token": "C",
+        "attention": 0.8789,
+        "normalized": 0.0209
+      },
+      {
+        "token": "C",
+        "attention": 0.8675,
+        "normalized": 0.0207
+      },
+      {
+        "token": "3",
+        "attention": 0.8658,
+        "normalized": 0.0206
+      },
+      {
+        "token": "C",
+        "attention": 0.8414,
+        "normalized": 0.02
+      },
+      {
+        "token": "C",
+        "attention": 0.8203,
+        "normalized": 0.0195
+      },
+      {
+        "token": "C",
+        "attention": 0.7936,
+        "normalized": 0.0189
+      },
+      {
+        "token": "C",
+        "attention": 0.75,
+        "normalized": 0.0179
+      },
+      {
+        "token": "C",
+        "attention": 0.7408,
+        "normalized": 0.0176
+      },
+      {
+        "token": ")",
+        "attention": 0.6801,
+        "normalized": 0.0162
+      },
+      {
+        "token": ")",
+        "attention": 0.6458,
+        "normalized": 0.0154
+      },
+      {
+        "token": ")",
+        "attention": 0.6436,
+        "normalized": 0.0153
+      },
+      {
+        "token": "C",
+        "attention": 0.6377,
+        "normalized": 0.0152
+      },
+      {
+        "token": "C",
+        "attention": 0.5918,
+        "normalized": 0.0141
+      },
+      {
+        "token": "(",
+        "attention": 0.5418,
+        "normalized": 0.0129
+      },
+      {
+        "token": "<bos>",
+        "attention": 0.5258,
+        "normalized": 0.0125
+      },
+      {
+        "token": "<eos>",
+        "attention": 0.5236,
+        "normalized": 0.0125
+      },
+      {
+        "token": "(",
+        "attention": 0.3398,
+        "normalized": 0.0081
+      },
+      {
+        "token": "(",
+        "attention": 0.3313,
+        "normalized": 0.0079
+      }
+    ]
+  },
+  {
+    "name": "netilmicin",
+    "smiles": "CCN[C@@H]1C[C@H](N)[C@@H](O[C@H]2OC(CN)=CC[C@H]2N)[C@H](O)[C@H]1O[C@H]1OC[C@](C)(O)[C@H](NC)[C@H]1O",
+    "n_tokens": 56,
+    "top_tokens": [
+      {
+        "token": "N",
+        "attention": 2.6442,
+        "normalized": 0.0472
+      },
+      {
+        "token": "N",
+        "attention": 1.793,
+        "normalized": 0.032
+      },
+      {
+        "token": "=",
+        "attention": 1.7886,
+        "normalized": 0.0319
+      },
+      {
+        "token": "[C@]",
+        "attention": 1.6209,
+        "normalized": 0.0289
+      },
+      {
+        "token": "C",
+        "attention": 1.6176,
+        "normalized": 0.0289
+      }
+    ],
+    "all_tokens": [
+      {
+        "token": "N",
+        "attention": 2.6442,
+        "normalized": 0.0472
+      },
+      {
+        "token": "N",
+        "attention": 1.793,
+        "normalized": 0.032
+      },
+      {
+        "token": "=",
+        "attention": 1.7886,
+        "normalized": 0.0319
+      },
+      {
+        "token": "[C@]",
+        "attention": 1.6209,
+        "normalized": 0.0289
+      },
+      {
+        "token": "C",
+        "attention": 1.6176,
+        "normalized": 0.0289
+      },
+      {
+        "token": "O",
+        "attention": 1.5974,
+        "normalized": 0.0285
+      },
+      {
+        "token": "O",
+        "attention": 1.5902,
+        "normalized": 0.0284
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.5756,
+        "normalized": 0.0281
+      },
+      {
+        "token": "N",
+        "attention": 1.5143,
+        "normalized": 0.027
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.4935,
+        "normalized": 0.0267
+      },
+      {
+        "token": "O",
+        "attention": 1.4902,
+        "normalized": 0.0266
+      },
+      {
+        "token": "N",
+        "attention": 1.4598,
+        "normalized": 0.0261
+      },
+      {
+        "token": "O",
+        "attention": 1.4594,
+        "normalized": 0.0261
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.4314,
+        "normalized": 0.0256
+      },
+      {
+        "token": "C",
+        "attention": 1.3363,
+        "normalized": 0.0239
+      },
+      {
+        "token": "1",
+        "attention": 1.3248,
+        "normalized": 0.0237
+      },
+      {
+        "token": "N",
+        "attention": 1.31,
+        "normalized": 0.0234
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.3072,
+        "normalized": 0.0233
+      },
+      {
+        "token": "C",
+        "attention": 1.3022,
+        "normalized": 0.0233
+      },
+      {
+        "token": "1",
+        "attention": 1.2615,
+        "normalized": 0.0225
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.2466,
+        "normalized": 0.0223
+      },
+      {
+        "token": "2",
+        "attention": 1.2113,
+        "normalized": 0.0216
+      },
+      {
+        "token": "2",
+        "attention": 1.1422,
+        "normalized": 0.0204
+      },
+      {
+        "token": "C",
+        "attention": 1.1273,
+        "normalized": 0.0201
+      },
+      {
+        "token": "O",
+        "attention": 1.1105,
+        "normalized": 0.0198
+      },
+      {
+        "token": "1",
+        "attention": 1.0414,
+        "normalized": 0.0186
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.0388,
+        "normalized": 0.0186
+      },
+      {
+        "token": "O",
+        "attention": 0.9596,
+        "normalized": 0.0171
+      },
+      {
+        "token": "[C@H]",
+        "attention": 0.9533,
+        "normalized": 0.017
+      },
+      {
+        "token": "1",
+        "attention": 0.9411,
+        "normalized": 0.0168
+      },
+      {
+        "token": "C",
+        "attention": 0.9364,
+        "normalized": 0.0167
+      },
+      {
+        "token": "C",
+        "attention": 0.8827,
+        "normalized": 0.0158
+      },
+      {
+        "token": "[C@H]",
+        "attention": 0.877,
+        "normalized": 0.0157
+      },
+      {
+        "token": "[C@H]",
+        "attention": 0.8589,
+        "normalized": 0.0153
+      },
+      {
+        "token": "[C@H]",
+        "attention": 0.8443,
+        "normalized": 0.0151
+      },
+      {
+        "token": "O",
+        "attention": 0.81,
+        "normalized": 0.0145
+      },
+      {
+        "token": "C",
+        "attention": 0.8038,
+        "normalized": 0.0144
+      },
+      {
+        "token": "C",
+        "attention": 0.7415,
+        "normalized": 0.0132
+      },
+      {
+        "token": "C",
+        "attention": 0.6472,
+        "normalized": 0.0116
+      },
+      {
+        "token": "C",
+        "attention": 0.6401,
+        "normalized": 0.0114
+      },
+      {
+        "token": ")",
+        "attention": 0.5208,
+        "normalized": 0.0093
+      },
+      {
+        "token": ")",
+        "attention": 0.5001,
+        "normalized": 0.0089
+      },
+      {
+        "token": "(",
+        "attention": 0.4882,
+        "normalized": 0.0087
+      },
+      {
+        "token": "(",
+        "attention": 0.4248,
+        "normalized": 0.0076
+      },
+      {
+        "token": "(",
+        "attention": 0.4134,
+        "normalized": 0.0074
+      },
+      {
+        "token": "<eos>",
+        "attention": 0.3981,
+        "normalized": 0.0071
+      },
+      {
+        "token": ")",
+        "attention": 0.3956,
+        "normalized": 0.0071
+      },
+      {
+        "token": ")",
+        "attention": 0.3815,
+        "normalized": 0.0068
+      },
+      {
+        "token": "(",
+        "attention": 0.3788,
+        "normalized": 0.0068
+      },
+      {
+        "token": ")",
+        "attention": 0.3754,
+        "normalized": 0.0067
+      },
+      {
+        "token": "(",
+        "attention": 0.3589,
+        "normalized": 0.0064
+      },
+      {
+        "token": ")",
+        "attention": 0.3565,
+        "normalized": 0.0064
+      },
+      {
+        "token": "(",
+        "attention": 0.3556,
+        "normalized": 0.0064
+      },
+      {
+        "token": "(",
+        "attention": 0.353,
+        "normalized": 0.0063
+      },
+      {
+        "token": ")",
+        "attention": 0.3471,
+        "normalized": 0.0062
+      },
+      {
+        "token": "<bos>",
+        "attention": 0.2198,
+        "normalized": 0.0039
+      }
+    ]
+  },
+  {
+    "name": "macozinone",
+    "smiles": "O=c1nc(N2CCN(CC3CCCCC3)CC2)sc2c([N+](=O)[O-])cc(C(F)(F)F)cc12",
+    "n_tokens": 57,
+    "top_tokens": [
+      {
+        "token": "s",
+        "attention": 3.8405,
+        "normalized": 0.0674
+      },
+      {
+        "token": "C",
+        "attention": 2.0957,
+        "normalized": 0.0368
+      },
+      {
+        "token": "N",
+        "attention": 2.0007,
+        "normalized": 0.0351
+      },
+      {
+        "token": "n",
+        "attention": 1.9945,
+        "normalized": 0.035
+      },
+      {
+        "token": "N",
+        "attention": 1.9281,
+        "normalized": 0.0338
+      }
+    ],
+    "all_tokens": [
+      {
+        "token": "s",
+        "attention": 3.8405,
+        "normalized": 0.0674
+      },
+      {
+        "token": "C",
+        "attention": 2.0957,
+        "normalized": 0.0368
+      },
+      {
+        "token": "N",
+        "attention": 2.0007,
+        "normalized": 0.0351
+      },
+      {
+        "token": "n",
+        "attention": 1.9945,
+        "normalized": 0.035
+      },
+      {
+        "token": "N",
+        "attention": 1.9281,
+        "normalized": 0.0338
+      },
+      {
+        "token": "2",
+        "attention": 1.7934,
+        "normalized": 0.0315
+      },
+      {
+        "token": "C",
+        "attention": 1.6313,
+        "normalized": 0.0286
+      },
+      {
+        "token": "c",
+        "attention": 1.6099,
+        "normalized": 0.0282
+      },
+      {
+        "token": "2",
+        "attention": 1.5362,
+        "normalized": 0.027
+      },
+      {
+        "token": "[N+]",
+        "attention": 1.5297,
+        "normalized": 0.0268
+      },
+      {
+        "token": "c",
+        "attention": 1.5283,
+        "normalized": 0.0268
+      },
+      {
+        "token": "C",
+        "attention": 1.4721,
+        "normalized": 0.0258
+      },
+      {
+        "token": "C",
+        "attention": 1.4624,
+        "normalized": 0.0257
+      },
+      {
+        "token": "c",
+        "attention": 1.4061,
+        "normalized": 0.0247
+      },
+      {
+        "token": "=",
+        "attention": 1.3295,
+        "normalized": 0.0233
+      },
+      {
+        "token": "[O-]",
+        "attention": 1.2791,
+        "normalized": 0.0224
+      },
+      {
+        "token": "1",
+        "attention": 1.2732,
+        "normalized": 0.0223
+      },
+      {
+        "token": "c",
+        "attention": 1.2593,
+        "normalized": 0.0221
+      },
+      {
+        "token": "c",
+        "attention": 1.1642,
+        "normalized": 0.0204
+      },
+      {
+        "token": "2",
+        "attention": 1.1509,
+        "normalized": 0.0202
+      },
+      {
+        "token": "C",
+        "attention": 1.1369,
+        "normalized": 0.0199
+      },
+      {
+        "token": "2",
+        "attention": 1.1307,
+        "normalized": 0.0198
+      },
+      {
+        "token": "C",
+        "attention": 1.1227,
+        "normalized": 0.0197
+      },
+      {
+        "token": "c",
+        "attention": 1.1178,
+        "normalized": 0.0196
+      },
+      {
+        "token": "C",
+        "attention": 1.1127,
+        "normalized": 0.0195
+      },
+      {
+        "token": "1",
+        "attention": 1.0606,
+        "normalized": 0.0186
+      },
+      {
+        "token": "c",
+        "attention": 0.981,
+        "normalized": 0.0172
+      },
+      {
+        "token": "C",
+        "attention": 0.9439,
+        "normalized": 0.0166
+      },
+      {
+        "token": "C",
+        "attention": 0.9197,
+        "normalized": 0.0161
+      },
+      {
+        "token": "c",
+        "attention": 0.9123,
+        "normalized": 0.016
+      },
+      {
+        "token": "3",
+        "attention": 0.8888,
+        "normalized": 0.0156
+      },
+      {
+        "token": "C",
+        "attention": 0.8536,
+        "normalized": 0.015
+      },
+      {
+        "token": "C",
+        "attention": 0.8465,
+        "normalized": 0.0149
+      },
+      {
+        "token": "C",
+        "attention": 0.8412,
+        "normalized": 0.0148
+      },
+      {
+        "token": "3",
+        "attention": 0.8117,
+        "normalized": 0.0142
+      },
+      {
+        "token": "=",
+        "attention": 0.6505,
+        "normalized": 0.0114
+      },
+      {
+        "token": "O",
+        "attention": 0.591,
+        "normalized": 0.0104
+      },
+      {
+        "token": "F",
+        "attention": 0.5769,
+        "normalized": 0.0101
+      },
+      {
+        "token": "F",
+        "attention": 0.5165,
+        "normalized": 0.0091
+      },
+      {
+        "token": "F",
+        "attention": 0.5134,
+        "normalized": 0.009
+      },
+      {
+        "token": "(",
+        "attention": 0.4919,
+        "normalized": 0.0086
+      },
+      {
+        "token": "<eos>",
+        "attention": 0.416,
+        "normalized": 0.0073
+      },
+      {
+        "token": "O",
+        "attention": 0.4114,
+        "normalized": 0.0072
+      },
+      {
+        "token": ")",
+        "attention": 0.4011,
+        "normalized": 0.007
+      },
+      {
+        "token": ")",
+        "attention": 0.401,
+        "normalized": 0.007
+      },
+      {
+        "token": ")",
+        "attention": 0.3845,
+        "normalized": 0.0067
+      },
+      {
+        "token": ")",
+        "attention": 0.3827,
+        "normalized": 0.0067
+      },
+      {
+        "token": "(",
+        "attention": 0.3748,
+        "normalized": 0.0066
+      },
+      {
+        "token": ")",
+        "attention": 0.3741,
+        "normalized": 0.0066
+      },
+      {
+        "token": ")",
+        "attention": 0.3715,
+        "normalized": 0.0065
+      },
+      {
+        "token": "(",
+        "attention": 0.3507,
+        "normalized": 0.0062
+      },
+      {
+        "token": ")",
+        "attention": 0.335,
+        "normalized": 0.0059
+      },
+      {
+        "token": "(",
+        "attention": 0.3316,
+        "normalized": 0.0058
+      },
+      {
+        "token": "(",
+        "attention": 0.32,
+        "normalized": 0.0056
+      },
+      {
+        "token": "(",
+        "attention": 0.3145,
+        "normalized": 0.0055
+      },
+      {
+        "token": "(",
+        "attention": 0.3126,
+        "normalized": 0.0055
+      },
+      {
+        "token": "<bos>",
+        "attention": 0.2132,
+        "normalized": 0.0037
+      }
+    ]
+  },
+  {
+    "name": "GSK656",
+    "smiles": "NC[C@H]1OB(O)c2c(OCCO)ccc(Cl)c21",
+    "n_tokens": 29,
+    "top_tokens": [
+      {
+        "token": "B",
+        "attention": 2.2728,
+        "normalized": 0.0784
+      },
+      {
+        "token": "O",
+        "attention": 1.7862,
+        "normalized": 0.0616
+      },
+      {
+        "token": "O",
+        "attention": 1.6556,
+        "normalized": 0.0571
+      },
+      {
+        "token": "N",
+        "attention": 1.5447,
+        "normalized": 0.0533
+      },
+      {
+        "token": "c",
+        "attention": 1.3692,
+        "normalized": 0.0472
+      }
+    ],
+    "all_tokens": [
+      {
+        "token": "B",
+        "attention": 2.2728,
+        "normalized": 0.0784
+      },
+      {
+        "token": "O",
+        "attention": 1.7862,
+        "normalized": 0.0616
+      },
+      {
+        "token": "O",
+        "attention": 1.6556,
+        "normalized": 0.0571
+      },
+      {
+        "token": "N",
+        "attention": 1.5447,
+        "normalized": 0.0533
+      },
+      {
+        "token": "c",
+        "attention": 1.3692,
+        "normalized": 0.0472
+      },
+      {
+        "token": "C",
+        "attention": 1.3055,
+        "normalized": 0.045
+      },
+      {
+        "token": "1",
+        "attention": 1.291,
+        "normalized": 0.0445
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.1715,
+        "normalized": 0.0404
+      },
+      {
+        "token": "O",
+        "attention": 1.1186,
+        "normalized": 0.0386
+      },
+      {
+        "token": "2",
+        "attention": 1.0869,
+        "normalized": 0.0375
+      },
+      {
+        "token": "c",
+        "attention": 1.0765,
+        "normalized": 0.0371
+      },
+      {
+        "token": "2",
+        "attention": 1.0727,
+        "normalized": 0.037
+      },
+      {
+        "token": "c",
+        "attention": 1.0699,
+        "normalized": 0.0369
+      },
+      {
+        "token": "C",
+        "attention": 1.0506,
+        "normalized": 0.0362
+      },
+      {
+        "token": "O",
+        "attention": 1.0316,
+        "normalized": 0.0356
+      },
+      {
+        "token": "C",
+        "attention": 0.9868,
+        "normalized": 0.034
+      },
+      {
+        "token": "1",
+        "attention": 0.9748,
+        "normalized": 0.0336
+      },
+      {
+        "token": "c",
+        "attention": 0.9154,
+        "normalized": 0.0316
+      },
+      {
+        "token": "c",
+        "attention": 0.8362,
+        "normalized": 0.0288
+      },
+      {
+        "token": "c",
+        "attention": 0.7867,
+        "normalized": 0.0271
+      },
+      {
+        "token": "Cl",
+        "attention": 0.7534,
+        "normalized": 0.026
+      },
+      {
+        "token": "<bos>",
+        "attention": 0.7384,
+        "normalized": 0.0255
+      },
+      {
+        "token": ")",
+        "attention": 0.6845,
+        "normalized": 0.0236
+      },
+      {
+        "token": "<eos>",
+        "attention": 0.6097,
+        "normalized": 0.021
+      },
+      {
+        "token": "(",
+        "attention": 0.453,
+        "normalized": 0.0156
+      },
+      {
+        "token": "(",
+        "attention": 0.4167,
+        "normalized": 0.0144
+      },
+      {
+        "token": "(",
+        "attention": 0.3586,
+        "normalized": 0.0124
+      },
+      {
+        "token": ")",
+        "attention": 0.319,
+        "normalized": 0.011
+      },
+      {
+        "token": ")",
+        "attention": 0.2636,
+        "normalized": 0.0091
+      }
+    ]
+  },
+  {
+    "name": "gepotidacin",
+    "smiles": "O=c1ccc2ncc(=O)n3c2n1C[C@H]3CN1CCC(NCc2cc3c(cn2)OCCC3)CC1",
+    "n_tokens": 55,
+    "top_tokens": [
+      {
+        "token": "N",
+        "attention": 3.0055,
+        "normalized": 0.0546
+      },
+      {
+        "token": "3",
+        "attention": 2.518,
+        "normalized": 0.0458
+      },
+      {
+        "token": "n",
+        "attention": 1.9776,
+        "normalized": 0.036
+      },
+      {
+        "token": "n",
+        "attention": 1.8887,
+        "normalized": 0.0343
+      },
+      {
+        "token": "N",
+        "attention": 1.6939,
+        "normalized": 0.0308
+      }
+    ],
+    "all_tokens": [
+      {
+        "token": "N",
+        "attention": 3.0055,
+        "normalized": 0.0546
+      },
+      {
+        "token": "3",
+        "attention": 2.518,
+        "normalized": 0.0458
+      },
+      {
+        "token": "n",
+        "attention": 1.9776,
+        "normalized": 0.036
+      },
+      {
+        "token": "n",
+        "attention": 1.8887,
+        "normalized": 0.0343
+      },
+      {
+        "token": "N",
+        "attention": 1.6939,
+        "normalized": 0.0308
+      },
+      {
+        "token": "O",
+        "attention": 1.5983,
+        "normalized": 0.0291
+      },
+      {
+        "token": "c",
+        "attention": 1.5549,
+        "normalized": 0.0283
+      },
+      {
+        "token": "c",
+        "attention": 1.5029,
+        "normalized": 0.0273
+      },
+      {
+        "token": "c",
+        "attention": 1.4304,
+        "normalized": 0.026
+      },
+      {
+        "token": "c",
+        "attention": 1.3791,
+        "normalized": 0.0251
+      },
+      {
+        "token": "n",
+        "attention": 1.3583,
+        "normalized": 0.0247
+      },
+      {
+        "token": "3",
+        "attention": 1.308,
+        "normalized": 0.0238
+      },
+      {
+        "token": "C",
+        "attention": 1.2722,
+        "normalized": 0.0231
+      },
+      {
+        "token": "C",
+        "attention": 1.2536,
+        "normalized": 0.0228
+      },
+      {
+        "token": "c",
+        "attention": 1.1793,
+        "normalized": 0.0214
+      },
+      {
+        "token": "=",
+        "attention": 1.1453,
+        "normalized": 0.0208
+      },
+      {
+        "token": "n",
+        "attention": 1.1244,
+        "normalized": 0.0204
+      },
+      {
+        "token": "c",
+        "attention": 1.1226,
+        "normalized": 0.0204
+      },
+      {
+        "token": "=",
+        "attention": 1.1016,
+        "normalized": 0.02
+      },
+      {
+        "token": "2",
+        "attention": 1.0955,
+        "normalized": 0.0199
+      },
+      {
+        "token": "c",
+        "attention": 1.0855,
+        "normalized": 0.0197
+      },
+      {
+        "token": "C",
+        "attention": 1.0627,
+        "normalized": 0.0193
+      },
+      {
+        "token": "2",
+        "attention": 1.0044,
+        "normalized": 0.0183
+      },
+      {
+        "token": "C",
+        "attention": 0.9886,
+        "normalized": 0.018
+      },
+      {
+        "token": "1",
+        "attention": 0.9556,
+        "normalized": 0.0174
+      },
+      {
+        "token": "C",
+        "attention": 0.9536,
+        "normalized": 0.0173
+      },
+      {
+        "token": "C",
+        "attention": 0.9526,
+        "normalized": 0.0173
+      },
+      {
+        "token": "c",
+        "attention": 0.947,
+        "normalized": 0.0172
+      },
+      {
+        "token": "C",
+        "attention": 0.9063,
+        "normalized": 0.0165
+      },
+      {
+        "token": "3",
+        "attention": 0.8999,
+        "normalized": 0.0164
+      },
+      {
+        "token": "C",
+        "attention": 0.8899,
+        "normalized": 0.0162
+      },
+      {
+        "token": "C",
+        "attention": 0.8511,
+        "normalized": 0.0155
+      },
+      {
+        "token": "[C@H]",
+        "attention": 0.8464,
+        "normalized": 0.0154
+      },
+      {
+        "token": "c",
+        "attention": 0.8298,
+        "normalized": 0.0151
+      },
+      {
+        "token": "2",
+        "attention": 0.8214,
+        "normalized": 0.0149
+      },
+      {
+        "token": "1",
+        "attention": 0.798,
+        "normalized": 0.0145
+      },
+      {
+        "token": "1",
+        "attention": 0.7729,
+        "normalized": 0.0141
+      },
+      {
+        "token": "3",
+        "attention": 0.7114,
+        "normalized": 0.0129
+      },
+      {
+        "token": "1",
+        "attention": 0.6994,
+        "normalized": 0.0127
+      },
+      {
+        "token": "2",
+        "attention": 0.679,
+        "normalized": 0.0123
+      },
+      {
+        "token": "c",
+        "attention": 0.648,
+        "normalized": 0.0118
+      },
+      {
+        "token": "C",
+        "attention": 0.6398,
+        "normalized": 0.0116
+      },
+      {
+        "token": "C",
+        "attention": 0.5963,
+        "normalized": 0.0108
+      },
+      {
+        "token": "c",
+        "attention": 0.5848,
+        "normalized": 0.0106
+      },
+      {
+        "token": "(",
+        "attention": 0.5132,
+        "normalized": 0.0093
+      },
+      {
+        "token": "O",
+        "attention": 0.4592,
+        "normalized": 0.0083
+      },
+      {
+        "token": "O",
+        "attention": 0.4218,
+        "normalized": 0.0077
+      },
+      {
+        "token": "(",
+        "attention": 0.4127,
+        "normalized": 0.0075
+      },
+      {
+        "token": "c",
+        "attention": 0.4087,
+        "normalized": 0.0074
+      },
+      {
+        "token": ")",
+        "attention": 0.3962,
+        "normalized": 0.0072
+      },
+      {
+        "token": "(",
+        "attention": 0.3917,
+        "normalized": 0.0071
+      },
+      {
+        "token": ")",
+        "attention": 0.3885,
+        "normalized": 0.0071
+      },
+      {
+        "token": ")",
+        "attention": 0.3848,
+        "normalized": 0.007
+      },
+      {
+        "token": "<eos>",
+        "attention": 0.3825,
+        "normalized": 0.007
+      },
+      {
+        "token": "<bos>",
+        "attention": 0.2061,
+        "normalized": 0.0037
+      }
+    ]
+  },
+  {
+    "name": "vinburnine",
+    "smiles": "CC[C@]12CCCN3CCc4c(n(c5ccccc45)C(=O)C1)[C@@H]32",
+    "n_tokens": 41,
+    "top_tokens": [
+      {
+        "token": "n",
+        "attention": 2.4332,
+        "normalized": 0.0593
+      },
+      {
+        "token": "C",
+        "attention": 2.1642,
+        "normalized": 0.0528
+      },
+      {
+        "token": "N",
+        "attention": 1.7709,
+        "normalized": 0.0432
+      },
+      {
+        "token": "2",
+        "attention": 1.6607,
+        "normalized": 0.0405
+      },
+      {
+        "token": "c",
+        "attention": 1.643,
+        "normalized": 0.0401
+      }
+    ],
+    "all_tokens": [
+      {
+        "token": "n",
+        "attention": 2.4332,
+        "normalized": 0.0593
+      },
+      {
+        "token": "C",
+        "attention": 2.1642,
+        "normalized": 0.0528
+      },
+      {
+        "token": "N",
+        "attention": 1.7709,
+        "normalized": 0.0432
+      },
+      {
+        "token": "2",
+        "attention": 1.6607,
+        "normalized": 0.0405
+      },
+      {
+        "token": "c",
+        "attention": 1.643,
+        "normalized": 0.0401
+      },
+      {
+        "token": "1",
+        "attention": 1.4347,
+        "normalized": 0.035
+      },
+      {
+        "token": "c",
+        "attention": 1.4163,
+        "normalized": 0.0345
+      },
+      {
+        "token": "3",
+        "attention": 1.4144,
+        "normalized": 0.0345
+      },
+      {
+        "token": "5",
+        "attention": 1.353,
+        "normalized": 0.033
+      },
+      {
+        "token": "2",
+        "attention": 1.2705,
+        "normalized": 0.031
+      },
+      {
+        "token": "3",
+        "attention": 1.2696,
+        "normalized": 0.031
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.2551,
+        "normalized": 0.0306
+      },
+      {
+        "token": "4",
+        "attention": 1.2423,
+        "normalized": 0.0303
+      },
+      {
+        "token": "4",
+        "attention": 1.2282,
+        "normalized": 0.03
+      },
+      {
+        "token": "C",
+        "attention": 1.1699,
+        "normalized": 0.0285
+      },
+      {
+        "token": "1",
+        "attention": 1.1197,
+        "normalized": 0.0273
+      },
+      {
+        "token": "C",
+        "attention": 1.0993,
+        "normalized": 0.0268
+      },
+      {
+        "token": "C",
+        "attention": 1.0958,
+        "normalized": 0.0267
+      },
+      {
+        "token": "5",
+        "attention": 1.0295,
+        "normalized": 0.0251
+      },
+      {
+        "token": "[C@]",
+        "attention": 1.0206,
+        "normalized": 0.0249
+      },
+      {
+        "token": "C",
+        "attention": 1.0058,
+        "normalized": 0.0245
+      },
+      {
+        "token": "=",
+        "attention": 0.9913,
+        "normalized": 0.0242
+      },
+      {
+        "token": "C",
+        "attention": 0.9739,
+        "normalized": 0.0238
+      },
+      {
+        "token": "C",
+        "attention": 0.8944,
+        "normalized": 0.0218
+      },
+      {
+        "token": "c",
+        "attention": 0.8039,
+        "normalized": 0.0196
+      },
+      {
+        "token": ")",
+        "attention": 0.6729,
+        "normalized": 0.0164
+      },
+      {
+        "token": "C",
+        "attention": 0.657,
+        "normalized": 0.016
+      },
+      {
+        "token": "(",
+        "attention": 0.6169,
+        "normalized": 0.015
+      },
+      {
+        "token": "(",
+        "attention": 0.6079,
+        "normalized": 0.0148
+      },
+      {
+        "token": "C",
+        "attention": 0.602,
+        "normalized": 0.0147
+      },
+      {
+        "token": "c",
+        "attention": 0.5626,
+        "normalized": 0.0137
+      },
+      {
+        "token": "c",
+        "attention": 0.5093,
+        "normalized": 0.0124
+      },
+      {
+        "token": ")",
+        "attention": 0.507,
+        "normalized": 0.0124
+      },
+      {
+        "token": "<eos>",
+        "attention": 0.4868,
+        "normalized": 0.0119
+      },
+      {
+        "token": "O",
+        "attention": 0.4649,
+        "normalized": 0.0113
+      },
+      {
+        "token": "c",
+        "attention": 0.4573,
+        "normalized": 0.0112
+      },
+      {
+        "token": "c",
+        "attention": 0.4483,
+        "normalized": 0.0109
+      },
+      {
+        "token": "(",
+        "attention": 0.4385,
+        "normalized": 0.0107
+      },
+      {
+        "token": "c",
+        "attention": 0.4162,
+        "normalized": 0.0102
+      },
+      {
+        "token": ")",
+        "attention": 0.4147,
+        "normalized": 0.0101
+      },
+      {
+        "token": "<bos>",
+        "attention": 0.3777,
+        "normalized": 0.0092
+      }
+    ]
+  },
+  {
+    "name": "sisomicin",
+    "smiles": "CN[C@@H]1[C@@H](O)[C@@H](O[C@@H]2[C@@H](O)[C@H](O[C@H]3OC(CN)=CC[C@H]3N)[C@@H](N)C[C@H]2N)OC[C@]1(C)O",
+    "n_tokens": 54,
+    "top_tokens": [
+      {
+        "token": "N",
+        "attention": 1.8467,
+        "normalized": 0.0342
+      },
+      {
+        "token": "=",
+        "attention": 1.8438,
+        "normalized": 0.0341
+      },
+      {
+        "token": "N",
+        "attention": 1.7931,
+        "normalized": 0.0332
+      },
+      {
+        "token": "C",
+        "attention": 1.626,
+        "normalized": 0.0301
+      },
+      {
+        "token": "C",
+        "attention": 1.6236,
+        "normalized": 0.0301
+      }
+    ],
+    "all_tokens": [
+      {
+        "token": "N",
+        "attention": 1.8467,
+        "normalized": 0.0342
+      },
+      {
+        "token": "=",
+        "attention": 1.8438,
+        "normalized": 0.0341
+      },
+      {
+        "token": "N",
+        "attention": 1.7931,
+        "normalized": 0.0332
+      },
+      {
+        "token": "C",
+        "attention": 1.626,
+        "normalized": 0.0301
+      },
+      {
+        "token": "C",
+        "attention": 1.6236,
+        "normalized": 0.0301
+      },
+      {
+        "token": "O",
+        "attention": 1.5999,
+        "normalized": 0.0296
+      },
+      {
+        "token": "N",
+        "attention": 1.5838,
+        "normalized": 0.0293
+      },
+      {
+        "token": "O",
+        "attention": 1.5746,
+        "normalized": 0.0292
+      },
+      {
+        "token": "O",
+        "attention": 1.5169,
+        "normalized": 0.0281
+      },
+      {
+        "token": "N",
+        "attention": 1.4634,
+        "normalized": 0.0271
+      },
+      {
+        "token": "C",
+        "attention": 1.4444,
+        "normalized": 0.0267
+      },
+      {
+        "token": "[C@]",
+        "attention": 1.4263,
+        "normalized": 0.0264
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.3757,
+        "normalized": 0.0255
+      },
+      {
+        "token": "O",
+        "attention": 1.315,
+        "normalized": 0.0244
+      },
+      {
+        "token": "N",
+        "attention": 1.3122,
+        "normalized": 0.0243
+      },
+      {
+        "token": "O",
+        "attention": 1.3093,
+        "normalized": 0.0242
+      },
+      {
+        "token": "2",
+        "attention": 1.2916,
+        "normalized": 0.0239
+      },
+      {
+        "token": "3",
+        "attention": 1.2699,
+        "normalized": 0.0235
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.2501,
+        "normalized": 0.0231
+      },
+      {
+        "token": "1",
+        "attention": 1.2087,
+        "normalized": 0.0224
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.1743,
+        "normalized": 0.0217
+      },
+      {
+        "token": "C",
+        "attention": 1.1103,
+        "normalized": 0.0206
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.1098,
+        "normalized": 0.0206
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.0946,
+        "normalized": 0.0203
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.0911,
+        "normalized": 0.0202
+      },
+      {
+        "token": "3",
+        "attention": 1.0762,
+        "normalized": 0.0199
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.0736,
+        "normalized": 0.0199
+      },
+      {
+        "token": "1",
+        "attention": 1.0601,
+        "normalized": 0.0196
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.0472,
+        "normalized": 0.0194
+      },
+      {
+        "token": "O",
+        "attention": 1.0391,
+        "normalized": 0.0192
+      },
+      {
+        "token": "2",
+        "attention": 1.0391,
+        "normalized": 0.0192
+      },
+      {
+        "token": "C",
+        "attention": 0.9769,
+        "normalized": 0.0181
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 0.9707,
+        "normalized": 0.018
+      },
+      {
+        "token": "C",
+        "attention": 0.9254,
+        "normalized": 0.0171
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 0.8835,
+        "normalized": 0.0164
+      },
+      {
+        "token": "O",
+        "attention": 0.7126,
+        "normalized": 0.0132
+      },
+      {
+        "token": ")",
+        "attention": 0.6301,
+        "normalized": 0.0117
+      },
+      {
+        "token": "C",
+        "attention": 0.6041,
+        "normalized": 0.0112
+      },
+      {
+        "token": "C",
+        "attention": 0.5638,
+        "normalized": 0.0104
+      },
+      {
+        "token": ")",
+        "attention": 0.542,
+        "normalized": 0.01
+      },
+      {
+        "token": ")",
+        "attention": 0.5319,
+        "normalized": 0.0098
+      },
+      {
+        "token": ")",
+        "attention": 0.5282,
+        "normalized": 0.0098
+      },
+      {
+        "token": ")",
+        "attention": 0.4817,
+        "normalized": 0.0089
+      },
+      {
+        "token": ")",
+        "attention": 0.4643,
+        "normalized": 0.0086
+      },
+      {
+        "token": ")",
+        "attention": 0.4548,
+        "normalized": 0.0084
+      },
+      {
+        "token": "(",
+        "attention": 0.4233,
+        "normalized": 0.0078
+      },
+      {
+        "token": "<eos>",
+        "attention": 0.3982,
+        "normalized": 0.0074
+      },
+      {
+        "token": "(",
+        "attention": 0.3647,
+        "normalized": 0.0068
+      },
+      {
+        "token": "(",
+        "attention": 0.3637,
+        "normalized": 0.0067
+      },
+      {
+        "token": "(",
+        "attention": 0.3508,
+        "normalized": 0.0065
+      },
+      {
+        "token": "(",
+        "attention": 0.3468,
+        "normalized": 0.0064
+      },
+      {
+        "token": "(",
+        "attention": 0.3208,
+        "normalized": 0.0059
+      },
+      {
+        "token": "(",
+        "attention": 0.3138,
+        "normalized": 0.0058
+      },
+      {
+        "token": "<bos>",
+        "attention": 0.2576,
+        "normalized": 0.0048
+      }
+    ]
+  },
+  {
+    "name": "SB-772077B",
+    "smiles": "CCn1c(-c2nonc2N)nc2cncc(C(=O)N3CC[C@H](N)C3)c21",
+    "n_tokens": 45,
+    "top_tokens": [
+      {
+        "token": "N",
+        "attention": 2.1142,
+        "normalized": 0.047
+      },
+      {
+        "token": "N",
+        "attention": 2.0148,
+        "normalized": 0.0448
+      },
+      {
+        "token": "o",
+        "attention": 2.0062,
+        "normalized": 0.0446
+      },
+      {
+        "token": "c",
+        "attention": 1.7724,
+        "normalized": 0.0394
+      },
+      {
+        "token": "c",
+        "attention": 1.7678,
+        "normalized": 0.0393
+      }
+    ],
+    "all_tokens": [
+      {
+        "token": "N",
+        "attention": 2.1142,
+        "normalized": 0.047
+      },
+      {
+        "token": "N",
+        "attention": 2.0148,
+        "normalized": 0.0448
+      },
+      {
+        "token": "o",
+        "attention": 2.0062,
+        "normalized": 0.0446
+      },
+      {
+        "token": "c",
+        "attention": 1.7724,
+        "normalized": 0.0394
+      },
+      {
+        "token": "c",
+        "attention": 1.7678,
+        "normalized": 0.0393
+      },
+      {
+        "token": "2",
+        "attention": 1.7429,
+        "normalized": 0.0387
+      },
+      {
+        "token": "N",
+        "attention": 1.6927,
+        "normalized": 0.0376
+      },
+      {
+        "token": "c",
+        "attention": 1.6162,
+        "normalized": 0.0359
+      },
+      {
+        "token": "c",
+        "attention": 1.5638,
+        "normalized": 0.0348
+      },
+      {
+        "token": "n",
+        "attention": 1.5535,
+        "normalized": 0.0345
+      },
+      {
+        "token": "n",
+        "attention": 1.4957,
+        "normalized": 0.0332
+      },
+      {
+        "token": "c",
+        "attention": 1.3503,
+        "normalized": 0.03
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.2986,
+        "normalized": 0.0289
+      },
+      {
+        "token": "C",
+        "attention": 1.2769,
+        "normalized": 0.0284
+      },
+      {
+        "token": "n",
+        "attention": 1.2539,
+        "normalized": 0.0279
+      },
+      {
+        "token": "-",
+        "attention": 1.1819,
+        "normalized": 0.0263
+      },
+      {
+        "token": "3",
+        "attention": 1.1397,
+        "normalized": 0.0253
+      },
+      {
+        "token": "C",
+        "attention": 1.0986,
+        "normalized": 0.0244
+      },
+      {
+        "token": "n",
+        "attention": 1.0308,
+        "normalized": 0.0229
+      },
+      {
+        "token": "c",
+        "attention": 0.9587,
+        "normalized": 0.0213
+      },
+      {
+        "token": "2",
+        "attention": 0.9392,
+        "normalized": 0.0209
+      },
+      {
+        "token": "3",
+        "attention": 0.938,
+        "normalized": 0.0208
+      },
+      {
+        "token": "2",
+        "attention": 0.9378,
+        "normalized": 0.0208
+      },
+      {
+        "token": "c",
+        "attention": 0.9018,
+        "normalized": 0.02
+      },
+      {
+        "token": "1",
+        "attention": 0.8434,
+        "normalized": 0.0187
+      },
+      {
+        "token": "n",
+        "attention": 0.8375,
+        "normalized": 0.0186
+      },
+      {
+        "token": "2",
+        "attention": 0.7914,
+        "normalized": 0.0176
+      },
+      {
+        "token": "C",
+        "attention": 0.7543,
+        "normalized": 0.0168
+      },
+      {
+        "token": "C",
+        "attention": 0.6986,
+        "normalized": 0.0155
+      },
+      {
+        "token": "1",
+        "attention": 0.6803,
+        "normalized": 0.0151
+      },
+      {
+        "token": "C",
+        "attention": 0.6259,
+        "normalized": 0.0139
+      },
+      {
+        "token": "(",
+        "attention": 0.5817,
+        "normalized": 0.0129
+      },
+      {
+        "token": "C",
+        "attention": 0.5565,
+        "normalized": 0.0124
+      },
+      {
+        "token": "=",
+        "attention": 0.5289,
+        "normalized": 0.0118
+      },
+      {
+        "token": "c",
+        "attention": 0.4695,
+        "normalized": 0.0104
+      },
+      {
+        "token": "O",
+        "attention": 0.4584,
+        "normalized": 0.0102
+      },
+      {
+        "token": "<eos>",
+        "attention": 0.4464,
+        "normalized": 0.0099
+      },
+      {
+        "token": ")",
+        "attention": 0.4459,
+        "normalized": 0.0099
+      },
+      {
+        "token": ")",
+        "attention": 0.4446,
+        "normalized": 0.0099
+      },
+      {
+        "token": ")",
+        "attention": 0.4068,
+        "normalized": 0.009
+      },
+      {
+        "token": ")",
+        "attention": 0.404,
+        "normalized": 0.009
+      },
+      {
+        "token": "(",
+        "attention": 0.3833,
+        "normalized": 0.0085
+      },
+      {
+        "token": "(",
+        "attention": 0.3808,
+        "normalized": 0.0085
+      },
+      {
+        "token": "(",
+        "attention": 0.3721,
+        "normalized": 0.0083
+      },
+      {
+        "token": "<bos>",
+        "attention": 0.2432,
+        "normalized": 0.0054
+      }
+    ]
+  },
+  {
+    "name": "guadecitabine",
+    "smiles": "Nc1ncn([C@H]2C[C@H](OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(=O)nc(N)[nH]c54)C[C@@H]3O)[C@@H](CO)O2)c(=O)n1",
+    "n_tokens": 71,
+    "top_tokens": [
+      {
+        "token": "n",
+        "attention": 2.4288,
+        "normalized": 0.0342
+      },
+      {
+        "token": "O",
+        "attention": 2.1944,
+        "normalized": 0.0309
+      },
+      {
+        "token": "[nH]",
+        "attention": 2.051,
+        "normalized": 0.0289
+      },
+      {
+        "token": "O",
+        "attention": 2.0195,
+        "normalized": 0.0284
+      },
+      {
+        "token": "C",
+        "attention": 1.8295,
+        "normalized": 0.0258
+      }
+    ],
+    "all_tokens": [
+      {
+        "token": "n",
+        "attention": 2.4288,
+        "normalized": 0.0342
+      },
+      {
+        "token": "O",
+        "attention": 2.1944,
+        "normalized": 0.0309
+      },
+      {
+        "token": "[nH]",
+        "attention": 2.051,
+        "normalized": 0.0289
+      },
+      {
+        "token": "O",
+        "attention": 2.0195,
+        "normalized": 0.0284
+      },
+      {
+        "token": "C",
+        "attention": 1.8295,
+        "normalized": 0.0258
+      },
+      {
+        "token": "n",
+        "attention": 1.8014,
+        "normalized": 0.0254
+      },
+      {
+        "token": "N",
+        "attention": 1.6972,
+        "normalized": 0.0239
+      },
+      {
+        "token": "N",
+        "attention": 1.6524,
+        "normalized": 0.0233
+      },
+      {
+        "token": "O",
+        "attention": 1.6503,
+        "normalized": 0.0232
+      },
+      {
+        "token": "P",
+        "attention": 1.6336,
+        "normalized": 0.023
+      },
+      {
+        "token": "n",
+        "attention": 1.621,
+        "normalized": 0.0228
+      },
+      {
+        "token": "n",
+        "attention": 1.5562,
+        "normalized": 0.0219
+      },
+      {
+        "token": "3",
+        "attention": 1.5501,
+        "normalized": 0.0218
+      },
+      {
+        "token": "O",
+        "attention": 1.5292,
+        "normalized": 0.0215
+      },
+      {
+        "token": "O",
+        "attention": 1.522,
+        "normalized": 0.0214
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.3965,
+        "normalized": 0.0197
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.373,
+        "normalized": 0.0193
+      },
+      {
+        "token": "=",
+        "attention": 1.3451,
+        "normalized": 0.0189
+      },
+      {
+        "token": "C",
+        "attention": 1.3292,
+        "normalized": 0.0187
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.317,
+        "normalized": 0.0185
+      },
+      {
+        "token": "2",
+        "attention": 1.3085,
+        "normalized": 0.0184
+      },
+      {
+        "token": "c",
+        "attention": 1.2845,
+        "normalized": 0.0181
+      },
+      {
+        "token": "c",
+        "attention": 1.2737,
+        "normalized": 0.0179
+      },
+      {
+        "token": "c",
+        "attention": 1.2584,
+        "normalized": 0.0177
+      },
+      {
+        "token": "n",
+        "attention": 1.2368,
+        "normalized": 0.0174
+      },
+      {
+        "token": "O",
+        "attention": 1.2294,
+        "normalized": 0.0173
+      },
+      {
+        "token": "5",
+        "attention": 1.2159,
+        "normalized": 0.0171
+      },
+      {
+        "token": "O",
+        "attention": 1.2003,
+        "normalized": 0.0169
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.1651,
+        "normalized": 0.0164
+      },
+      {
+        "token": "5",
+        "attention": 1.1503,
+        "normalized": 0.0162
+      },
+      {
+        "token": "4",
+        "attention": 1.125,
+        "normalized": 0.0158
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.082,
+        "normalized": 0.0152
+      },
+      {
+        "token": "c",
+        "attention": 1.0393,
+        "normalized": 0.0146
+      },
+      {
+        "token": "2",
+        "attention": 1.0223,
+        "normalized": 0.0144
+      },
+      {
+        "token": "c",
+        "attention": 1.0171,
+        "normalized": 0.0143
+      },
+      {
+        "token": "=",
+        "attention": 0.9983,
+        "normalized": 0.0141
+      },
+      {
+        "token": "n",
+        "attention": 0.9855,
+        "normalized": 0.0139
+      },
+      {
+        "token": "C",
+        "attention": 0.9442,
+        "normalized": 0.0133
+      },
+      {
+        "token": "c",
+        "attention": 0.9183,
+        "normalized": 0.0129
+      },
+      {
+        "token": "[C@H]",
+        "attention": 0.9179,
+        "normalized": 0.0129
+      },
+      {
+        "token": "c",
+        "attention": 0.9118,
+        "normalized": 0.0128
+      },
+      {
+        "token": "C",
+        "attention": 0.9077,
+        "normalized": 0.0128
+      },
+      {
+        "token": "4",
+        "attention": 0.8882,
+        "normalized": 0.0125
+      },
+      {
+        "token": "3",
+        "attention": 0.8808,
+        "normalized": 0.0124
+      },
+      {
+        "token": "1",
+        "attention": 0.8242,
+        "normalized": 0.0116
+      },
+      {
+        "token": "1",
+        "attention": 0.7158,
+        "normalized": 0.0101
+      },
+      {
+        "token": "O",
+        "attention": 0.5121,
+        "normalized": 0.0072
+      },
+      {
+        "token": ")",
+        "attention": 0.49,
+        "normalized": 0.0069
+      },
+      {
+        "token": "(",
+        "attention": 0.4797,
+        "normalized": 0.0068
+      },
+      {
+        "token": "=",
+        "attention": 0.4772,
+        "normalized": 0.0067
+      },
+      {
+        "token": "O",
+        "attention": 0.4631,
+        "normalized": 0.0065
+      },
+      {
+        "token": ")",
+        "attention": 0.4573,
+        "normalized": 0.0064
+      },
+      {
+        "token": ")",
+        "attention": 0.4474,
+        "normalized": 0.0063
+      },
+      {
+        "token": "c",
+        "attention": 0.4314,
+        "normalized": 0.0061
+      },
+      {
+        "token": "O",
+        "attention": 0.4192,
+        "normalized": 0.0059
+      },
+      {
+        "token": ")",
+        "attention": 0.4175,
+        "normalized": 0.0059
+      },
+      {
+        "token": ")",
+        "attention": 0.4133,
+        "normalized": 0.0058
+      },
+      {
+        "token": ")",
+        "attention": 0.4105,
+        "normalized": 0.0058
+      },
+      {
+        "token": "(",
+        "attention": 0.4045,
+        "normalized": 0.0057
+      },
+      {
+        "token": ")",
+        "attention": 0.3992,
+        "normalized": 0.0056
+      },
+      {
+        "token": "(",
+        "attention": 0.395,
+        "normalized": 0.0056
+      },
+      {
+        "token": ")",
+        "attention": 0.3886,
+        "normalized": 0.0055
+      },
+      {
+        "token": ")",
+        "attention": 0.3872,
+        "normalized": 0.0055
+      },
+      {
+        "token": "(",
+        "attention": 0.3669,
+        "normalized": 0.0052
+      },
+      {
+        "token": "(",
+        "attention": 0.3657,
+        "normalized": 0.0052
+      },
+      {
+        "token": "(",
+        "attention": 0.3525,
+        "normalized": 0.005
+      },
+      {
+        "token": "(",
+        "attention": 0.339,
+        "normalized": 0.0048
+      },
+      {
+        "token": "<eos>",
+        "attention": 0.3247,
+        "normalized": 0.0046
+      },
+      {
+        "token": "(",
+        "attention": 0.3162,
+        "normalized": 0.0045
+      },
+      {
+        "token": "(",
+        "attention": 0.3118,
+        "normalized": 0.0044
+      },
+      {
+        "token": "<bos>",
+        "attention": 0.231,
+        "normalized": 0.0033
+      }
+    ]
+  },
+  {
+    "name": "sodium-nitroprusside",
+    "smiles": "N#[C][Fe-2]([C]#N)([C]#N)([C]#N)([C]#N)[N+][O-]",
+    "n_tokens": 28,
+    "top_tokens": [
+      {
+        "token": "(",
+        "attention": 1.3139,
+        "normalized": 0.0469
+      },
+      {
+        "token": "(",
+        "attention": 1.2173,
+        "normalized": 0.0435
+      },
+      {
+        "token": "(",
+        "attention": 1.1964,
+        "normalized": 0.0427
+      },
+      {
+        "token": "[Fe-2]",
+        "attention": 1.1908,
+        "normalized": 0.0425
+      },
+      {
+        "token": "(",
+        "attention": 1.1765,
+        "normalized": 0.042
+      }
+    ],
+    "all_tokens": [
+      {
+        "token": "(",
+        "attention": 1.3139,
+        "normalized": 0.0469
+      },
+      {
+        "token": "(",
+        "attention": 1.2173,
+        "normalized": 0.0435
+      },
+      {
+        "token": "(",
+        "attention": 1.1964,
+        "normalized": 0.0427
+      },
+      {
+        "token": "[Fe-2]",
+        "attention": 1.1908,
+        "normalized": 0.0425
+      },
+      {
+        "token": "(",
+        "attention": 1.1765,
+        "normalized": 0.042
+      },
+      {
+        "token": "[N+]",
+        "attention": 1.1508,
+        "normalized": 0.0411
+      },
+      {
+        "token": "#",
+        "attention": 1.0904,
+        "normalized": 0.0389
+      },
+      {
+        "token": "#",
+        "attention": 1.0903,
+        "normalized": 0.0389
+      },
+      {
+        "token": "N",
+        "attention": 1.0513,
+        "normalized": 0.0375
+      },
+      {
+        "token": "<bos>",
+        "attention": 1.0378,
+        "normalized": 0.0371
+      },
+      {
+        "token": "[C]",
+        "attention": 1.0281,
+        "normalized": 0.0367
+      },
+      {
+        "token": "#",
+        "attention": 1.0032,
+        "normalized": 0.0358
+      },
+      {
+        "token": "<eos>",
+        "attention": 1.0015,
+        "normalized": 0.0358
+      },
+      {
+        "token": "[C]",
+        "attention": 1.0012,
+        "normalized": 0.0358
+      },
+      {
+        "token": "#",
+        "attention": 0.969,
+        "normalized": 0.0346
+      },
+      {
+        "token": "#",
+        "attention": 0.9689,
+        "normalized": 0.0346
+      },
+      {
+        "token": "N",
+        "attention": 0.9638,
+        "normalized": 0.0344
+      },
+      {
+        "token": "N",
+        "attention": 0.9232,
+        "normalized": 0.033
+      },
+      {
+        "token": "[C]",
+        "attention": 0.908,
+        "normalized": 0.0324
+      },
+      {
+        "token": ")",
+        "attention": 0.9071,
+        "normalized": 0.0324
+      },
+      {
+        "token": "[C]",
+        "attention": 0.9063,
+        "normalized": 0.0324
+      },
+      {
+        "token": "[C]",
+        "attention": 0.9025,
+        "normalized": 0.0322
+      },
+      {
+        "token": "[O-]",
+        "attention": 0.879,
+        "normalized": 0.0314
+      },
+      {
+        "token": "N",
+        "attention": 0.8717,
+        "normalized": 0.0311
+      },
+      {
+        "token": ")",
+        "attention": 0.8267,
+        "normalized": 0.0295
+      },
+      {
+        "token": ")",
+        "attention": 0.8153,
+        "normalized": 0.0291
+      },
+      {
+        "token": ")",
+        "attention": 0.8088,
+        "normalized": 0.0289
+      },
+      {
+        "token": "N",
+        "attention": 0.8002,
+        "normalized": 0.0286
+      }
+    ]
+  },
+  {
+    "name": "colistimethate",
+    "smiles": "CC(C)CCCC(=O)N[C@@H](CCNCS(=O)(=O)O)C(=O)N[C@H](C(=O)N[C@@H](CCNCS(=O)(=O)O)C(=O)N[C@H]1CCNC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](CCNCS(=O)(=O)O)NC(=O)[C@H](CCNCS(=O)(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCNCS(=O)(=O)O)NC1=O)[C@@H](C)O",
+    "n_tokens": 198,
+    "top_tokens": [
+      {
+        "token": "1",
+        "attention": 5.1145,
+        "normalized": 0.0258
+      },
+      {
+        "token": "1",
+        "attention": 4.3077,
+        "normalized": 0.0218
+      },
+      {
+        "token": "S",
+        "attention": 2.9741,
+        "normalized": 0.015
+      },
+      {
+        "token": "C",
+        "attention": 2.4845,
+        "normalized": 0.0125
+      },
+      {
+        "token": "S",
+        "attention": 2.4144,
+        "normalized": 0.0122
+      }
+    ],
+    "all_tokens": [
+      {
+        "token": "1",
+        "attention": 5.1145,
+        "normalized": 0.0258
+      },
+      {
+        "token": "1",
+        "attention": 4.3077,
+        "normalized": 0.0218
+      },
+      {
+        "token": "S",
+        "attention": 2.9741,
+        "normalized": 0.015
+      },
+      {
+        "token": "C",
+        "attention": 2.4845,
+        "normalized": 0.0125
+      },
+      {
+        "token": "S",
+        "attention": 2.4144,
+        "normalized": 0.0122
+      },
+      {
+        "token": "C",
+        "attention": 2.3539,
+        "normalized": 0.0119
+      },
+      {
+        "token": "S",
+        "attention": 2.2775,
+        "normalized": 0.0115
+      },
+      {
+        "token": "O",
+        "attention": 2.2225,
+        "normalized": 0.0112
+      },
+      {
+        "token": "[C@H]",
+        "attention": 2.1449,
+        "normalized": 0.0108
+      },
+      {
+        "token": "N",
+        "attention": 2.1358,
+        "normalized": 0.0108
+      },
+      {
+        "token": "O",
+        "attention": 2.0704,
+        "normalized": 0.0105
+      },
+      {
+        "token": "N",
+        "attention": 2.0372,
+        "normalized": 0.0103
+      },
+      {
+        "token": "N",
+        "attention": 2.029,
+        "normalized": 0.0102
+      },
+      {
+        "token": "C",
+        "attention": 1.9858,
+        "normalized": 0.01
+      },
+      {
+        "token": "N",
+        "attention": 1.9709,
+        "normalized": 0.01
+      },
+      {
+        "token": "C",
+        "attention": 1.9703,
+        "normalized": 0.01
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.9526,
+        "normalized": 0.0099
+      },
+      {
+        "token": "C",
+        "attention": 1.9412,
+        "normalized": 0.0098
+      },
+      {
+        "token": "N",
+        "attention": 1.9259,
+        "normalized": 0.0097
+      },
+      {
+        "token": "S",
+        "attention": 1.9257,
+        "normalized": 0.0097
+      },
+      {
+        "token": "N",
+        "attention": 1.9043,
+        "normalized": 0.0096
+      },
+      {
+        "token": "S",
+        "attention": 1.8596,
+        "normalized": 0.0094
+      },
+      {
+        "token": "N",
+        "attention": 1.8505,
+        "normalized": 0.0093
+      },
+      {
+        "token": "C",
+        "attention": 1.8094,
+        "normalized": 0.0091
+      },
+      {
+        "token": "C",
+        "attention": 1.7965,
+        "normalized": 0.0091
+      },
+      {
+        "token": "N",
+        "attention": 1.7611,
+        "normalized": 0.0089
+      },
+      {
+        "token": "N",
+        "attention": 1.7603,
+        "normalized": 0.0089
+      },
+      {
+        "token": "O",
+        "attention": 1.7469,
+        "normalized": 0.0088
+      },
+      {
+        "token": "N",
+        "attention": 1.7373,
+        "normalized": 0.0088
+      },
+      {
+        "token": "C",
+        "attention": 1.6795,
+        "normalized": 0.0085
+      },
+      {
+        "token": "C",
+        "attention": 1.6786,
+        "normalized": 0.0085
+      },
+      {
+        "token": "C",
+        "attention": 1.6702,
+        "normalized": 0.0084
+      },
+      {
+        "token": "N",
+        "attention": 1.6296,
+        "normalized": 0.0082
+      },
+      {
+        "token": "N",
+        "attention": 1.5993,
+        "normalized": 0.0081
+      },
+      {
+        "token": "N",
+        "attention": 1.5904,
+        "normalized": 0.008
+      },
+      {
+        "token": "C",
+        "attention": 1.5846,
+        "normalized": 0.008
+      },
+      {
+        "token": "N",
+        "attention": 1.5803,
+        "normalized": 0.008
+      },
+      {
+        "token": "N",
+        "attention": 1.575,
+        "normalized": 0.008
+      },
+      {
+        "token": "O",
+        "attention": 1.5635,
+        "normalized": 0.0079
+      },
+      {
+        "token": "C",
+        "attention": 1.5439,
+        "normalized": 0.0078
+      },
+      {
+        "token": "C",
+        "attention": 1.5226,
+        "normalized": 0.0077
+      },
+      {
+        "token": "O",
+        "attention": 1.4852,
+        "normalized": 0.0075
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.4779,
+        "normalized": 0.0075
+      },
+      {
+        "token": "N",
+        "attention": 1.4646,
+        "normalized": 0.0074
+      },
+      {
+        "token": "C",
+        "attention": 1.4598,
+        "normalized": 0.0074
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.441,
+        "normalized": 0.0073
+      },
+      {
+        "token": "C",
+        "attention": 1.4305,
+        "normalized": 0.0072
+      },
+      {
+        "token": "C",
+        "attention": 1.4111,
+        "normalized": 0.0071
+      },
+      {
+        "token": "C",
+        "attention": 1.3665,
+        "normalized": 0.0069
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.3614,
+        "normalized": 0.0069
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.3599,
+        "normalized": 0.0069
+      },
+      {
+        "token": "C",
+        "attention": 1.3394,
+        "normalized": 0.0068
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.3272,
+        "normalized": 0.0067
+      },
+      {
+        "token": "C",
+        "attention": 1.3125,
+        "normalized": 0.0066
+      },
+      {
+        "token": "[C@@H]",
+        "attention": 1.2922,
+        "normalized": 0.0065
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.2737,
+        "normalized": 0.0064
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.2595,
+        "normalized": 0.0064
+      },
+      {
+        "token": "C",
+        "attention": 1.2393,
+        "normalized": 0.0063
+      },
+      {
+        "token": "C",
+        "attention": 1.2257,
+        "normalized": 0.0062
+      },
+      {
+        "token": "O",
+        "attention": 1.1998,
+        "normalized": 0.0061
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.1862,
+        "normalized": 0.006
+      },
+      {
+        "token": "C",
+        "attention": 1.1769,
+        "normalized": 0.0059
+      },
+      {
+        "token": "C",
+        "attention": 1.1536,
+        "normalized": 0.0058
+      },
+      {
+        "token": "C",
+        "attention": 1.1279,
+        "normalized": 0.0057
+      },
+      {
+        "token": "C",
+        "attention": 1.111,
+        "normalized": 0.0056
+      },
+      {
+        "token": "C",
+        "attention": 1.09,
+        "normalized": 0.0055
+      },
+      {
+        "token": "O",
+        "attention": 1.0817,
+        "normalized": 0.0055
+      },
+      {
+        "token": "C",
+        "attention": 1.0675,
+        "normalized": 0.0054
+      },
+      {
+        "token": "[C@H]",
+        "attention": 1.0645,
+        "normalized": 0.0054
+      },
+      {
+        "token": "C",
+        "attention": 1.0485,
+        "normalized": 0.0053
+      },
+      {
+        "token": "C",
+        "attention": 1.0176,
+        "normalized": 0.0051
+      },
+      {
+        "token": "C",
+        "attention": 1.0174,
+        "normalized": 0.0051
+      },
+      {
+        "token": "=",
+        "attention": 1.0149,
+        "normalized": 0.0051
+      },
+      {
+        "token": "C",
+        "attention": 0.9911,
+        "normalized": 0.005
+      },
+      {
+        "token": "C",
+        "attention": 0.9625,
+        "normalized": 0.0049
+      },
+      {
+        "token": "C",
+        "attention": 0.9591,
+        "normalized": 0.0048
+      },
+      {
+        "token": "C",
+        "attention": 0.9587,
+        "normalized": 0.0048
+      },
+      {
+        "token": "O",
+        "attention": 0.9368,
+        "normalized": 0.0047
+      },
+      {
+        "token": "C",
+        "attention": 0.9011,
+        "normalized": 0.0046
+      },
+      {
+        "token": "=",
+        "attention": 0.8828,
+        "normalized": 0.0045
+      },
+      {
+        "token": "C",
+        "attention": 0.8766,
+        "normalized": 0.0044
+      },
+      {
+        "token": "O",
+        "attention": 0.8678,
+        "normalized": 0.0044
+      },
+      {
+        "token": "C",
+        "attention": 0.8635,
+        "normalized": 0.0044
+      },
+      {
+        "token": "C",
+        "attention": 0.8532,
+        "normalized": 0.0043
+      },
+      {
+        "token": "C",
+        "attention": 0.8316,
+        "normalized": 0.0042
+      },
+      {
+        "token": "C",
+        "attention": 0.8297,
+        "normalized": 0.0042
+      },
+      {
+        "token": "C",
+        "attention": 0.8217,
+        "normalized": 0.0041
+      },
+      {
+        "token": "=",
+        "attention": 0.8141,
+        "normalized": 0.0041
+      },
+      {
+        "token": "O",
+        "attention": 0.8044,
+        "normalized": 0.0041
+      },
+      {
+        "token": "(",
+        "attention": 0.7856,
+        "normalized": 0.004
+      },
+      {
+        "token": "C",
+        "attention": 0.7741,
+        "normalized": 0.0039
+      },
+      {
+        "token": "=",
+        "attention": 0.7693,
+        "normalized": 0.0039
+      },
+      {
+        "token": "=",
+        "attention": 0.7529,
+        "normalized": 0.0038
+      },
+      {
+        "token": "O",
+        "attention": 0.7365,
+        "normalized": 0.0037
+      },
+      {
+        "token": "O",
+        "attention": 0.7267,
+        "normalized": 0.0037
+      },
+      {
+        "token": "=",
+        "attention": 0.7188,
+        "normalized": 0.0036
+      },
+      {
+        "token": "=",
+        "attention": 0.7099,
+        "normalized": 0.0036
+      },
+      {
+        "token": "=",
+        "attention": 0.7041,
+        "normalized": 0.0036
+      },
+      {
+        "token": "=",
+        "attention": 0.6999,
+        "normalized": 0.0035
+      },
+      {
+        "token": "(",
+        "attention": 0.6879,
+        "normalized": 0.0035
+      },
+      {
+        "token": "C",
+        "attention": 0.6855,
+        "normalized": 0.0035
+      },
+      {
+        "token": "=",
+        "attention": 0.6816,
+        "normalized": 0.0034
+      },
+      {
+        "token": "=",
+        "attention": 0.6777,
+        "normalized": 0.0034
+      },
+      {
+        "token": "=",
+        "attention": 0.6713,
+        "normalized": 0.0034
+      },
+      {
+        "token": "C",
+        "attention": 0.6584,
+        "normalized": 0.0033
+      },
+      {
+        "token": "=",
+        "attention": 0.6572,
+        "normalized": 0.0033
+      },
+      {
+        "token": "=",
+        "attention": 0.6555,
+        "normalized": 0.0033
+      },
+      {
+        "token": "(",
+        "attention": 0.649,
+        "normalized": 0.0033
+      },
+      {
+        "token": "O",
+        "attention": 0.635,
+        "normalized": 0.0032
+      },
+      {
+        "token": "=",
+        "attention": 0.6246,
+        "normalized": 0.0032
+      },
+      {
+        "token": "O",
+        "attention": 0.6068,
+        "normalized": 0.0031
+      },
+      {
+        "token": "=",
+        "attention": 0.6037,
+        "normalized": 0.003
+      },
+      {
+        "token": "(",
+        "attention": 0.6001,
+        "normalized": 0.003
+      },
+      {
+        "token": "O",
+        "attention": 0.5997,
+        "normalized": 0.003
+      },
+      {
+        "token": "=",
+        "attention": 0.597,
+        "normalized": 0.003
+      },
+      {
+        "token": "(",
+        "attention": 0.591,
+        "normalized": 0.003
+      },
+      {
+        "token": "O",
+        "attention": 0.5815,
+        "normalized": 0.0029
+      },
+      {
+        "token": "=",
+        "attention": 0.5783,
+        "normalized": 0.0029
+      },
+      {
+        "token": "=",
+        "attention": 0.5679,
+        "normalized": 0.0029
+      },
+      {
+        "token": "(",
+        "attention": 0.5676,
+        "normalized": 0.0029
+      },
+      {
+        "token": "(",
+        "attention": 0.5671,
+        "normalized": 0.0029
+      },
+      {
+        "token": "O",
+        "attention": 0.5659,
+        "normalized": 0.0029
+      },
+      {
+        "token": "(",
+        "attention": 0.5641,
+        "normalized": 0.0028
+      },
+      {
+        "token": ")",
+        "attention": 0.5608,
+        "normalized": 0.0028
+      },
+      {
+        "token": ")",
+        "attention": 0.5566,
+        "normalized": 0.0028
+      },
+      {
+        "token": "=",
+        "attention": 0.5537,
+        "normalized": 0.0028
+      },
+      {
+        "token": "O",
+        "attention": 0.553,
+        "normalized": 0.0028
+      },
+      {
+        "token": ")",
+        "attention": 0.5525,
+        "normalized": 0.0028
+      },
+      {
+        "token": ")",
+        "attention": 0.5506,
+        "normalized": 0.0028
+      },
+      {
+        "token": ")",
+        "attention": 0.5499,
+        "normalized": 0.0028
+      },
+      {
+        "token": "O",
+        "attention": 0.5469,
+        "normalized": 0.0028
+      },
+      {
+        "token": "(",
+        "attention": 0.5467,
+        "normalized": 0.0028
+      },
+      {
+        "token": ")",
+        "attention": 0.5451,
+        "normalized": 0.0028
+      },
+      {
+        "token": ")",
+        "attention": 0.5419,
+        "normalized": 0.0027
+      },
+      {
+        "token": "=",
+        "attention": 0.5368,
+        "normalized": 0.0027
+      },
+      {
+        "token": "O",
+        "attention": 0.5365,
+        "normalized": 0.0027
+      },
+      {
+        "token": "(",
+        "attention": 0.5346,
+        "normalized": 0.0027
+      },
+      {
+        "token": "(",
+        "attention": 0.533,
+        "normalized": 0.0027
+      },
+      {
+        "token": ")",
+        "attention": 0.5319,
+        "normalized": 0.0027
+      },
+      {
+        "token": "O",
+        "attention": 0.5316,
+        "normalized": 0.0027
+      },
+      {
+        "token": "(",
+        "attention": 0.5306,
+        "normalized": 0.0027
+      },
+      {
+        "token": ")",
+        "attention": 0.5294,
+        "normalized": 0.0027
+      },
+      {
+        "token": ")",
+        "attention": 0.5279,
+        "normalized": 0.0027
+      },
+      {
+        "token": "O",
+        "attention": 0.5277,
+        "normalized": 0.0027
+      },
+      {
+        "token": "O",
+        "attention": 0.5274,
+        "normalized": 0.0027
+      },
+      {
+        "token": "O",
+        "attention": 0.5259,
+        "normalized": 0.0027
+      },
+      {
+        "token": "(",
+        "attention": 0.5255,
+        "normalized": 0.0027
+      },
+      {
+        "token": "(",
+        "attention": 0.525,
+        "normalized": 0.0027
+      },
+      {
+        "token": ")",
+        "attention": 0.5245,
+        "normalized": 0.0026
+      },
+      {
+        "token": ")",
+        "attention": 0.5235,
+        "normalized": 0.0026
+      },
+      {
+        "token": "(",
+        "attention": 0.5225,
+        "normalized": 0.0026
+      },
+      {
+        "token": "O",
+        "attention": 0.5209,
+        "normalized": 0.0026
+      },
+      {
+        "token": ")",
+        "attention": 0.5197,
+        "normalized": 0.0026
+      },
+      {
+        "token": ")",
+        "attention": 0.5191,
+        "normalized": 0.0026
+      },
+      {
+        "token": ")",
+        "attention": 0.5184,
+        "normalized": 0.0026
+      },
+      {
+        "token": ")",
+        "attention": 0.5181,
+        "normalized": 0.0026
+      },
+      {
+        "token": "(",
+        "attention": 0.518,
+        "normalized": 0.0026
+      },
+      {
+        "token": "(",
+        "attention": 0.518,
+        "normalized": 0.0026
+      },
+      {
+        "token": ")",
+        "attention": 0.5177,
+        "normalized": 0.0026
+      },
+      {
+        "token": "(",
+        "attention": 0.5173,
+        "normalized": 0.0026
+      },
+      {
+        "token": ")",
+        "attention": 0.5169,
+        "normalized": 0.0026
+      },
+      {
+        "token": "(",
+        "attention": 0.5132,
+        "normalized": 0.0026
+      },
+      {
+        "token": ")",
+        "attention": 0.5127,
+        "normalized": 0.0026
+      },
+      {
+        "token": "(",
+        "attention": 0.511,
+        "normalized": 0.0026
+      },
+      {
+        "token": ")",
+        "attention": 0.5102,
+        "normalized": 0.0026
+      },
+      {
+        "token": "O",
+        "attention": 0.5102,
+        "normalized": 0.0026
+      },
+      {
+        "token": ")",
+        "attention": 0.5101,
+        "normalized": 0.0026
+      },
+      {
+        "token": "(",
+        "attention": 0.5098,
+        "normalized": 0.0026
+      },
+      {
+        "token": ")",
+        "attention": 0.5084,
+        "normalized": 0.0026
+      },
+      {
+        "token": "(",
+        "attention": 0.5038,
+        "normalized": 0.0025
+      },
+      {
+        "token": "O",
+        "attention": 0.5031,
+        "normalized": 0.0025
+      },
+      {
+        "token": ")",
+        "attention": 0.4999,
+        "normalized": 0.0025
+      },
+      {
+        "token": ")",
+        "attention": 0.4989,
+        "normalized": 0.0025
+      },
+      {
+        "token": ")",
+        "attention": 0.4984,
+        "normalized": 0.0025
+      },
+      {
+        "token": ")",
+        "attention": 0.4941,
+        "normalized": 0.0025
+      },
+      {
+        "token": "(",
+        "attention": 0.4937,
+        "normalized": 0.0025
+      },
+      {
+        "token": ")",
+        "attention": 0.4918,
+        "normalized": 0.0025
+      },
+      {
+        "token": ")",
+        "attention": 0.4914,
+        "normalized": 0.0025
+      },
+      {
+        "token": "(",
+        "attention": 0.4908,
+        "normalized": 0.0025
+      },
+      {
+        "token": "(",
+        "attention": 0.4904,
+        "normalized": 0.0025
+      },
+      {
+        "token": ")",
+        "attention": 0.4891,
+        "normalized": 0.0025
+      },
+      {
+        "token": "(",
+        "attention": 0.4883,
+        "normalized": 0.0025
+      },
+      {
+        "token": ")",
+        "attention": 0.4875,
+        "normalized": 0.0025
+      },
+      {
+        "token": "(",
+        "attention": 0.4859,
+        "normalized": 0.0025
+      },
+      {
+        "token": "(",
+        "attention": 0.4829,
+        "normalized": 0.0024
+      },
+      {
+        "token": ")",
+        "attention": 0.4815,
+        "normalized": 0.0024
+      },
+      {
+        "token": "(",
+        "attention": 0.4808,
+        "normalized": 0.0024
+      },
+      {
+        "token": ")",
+        "attention": 0.4779,
+        "normalized": 0.0024
+      },
+      {
+        "token": "(",
+        "attention": 0.4768,
+        "normalized": 0.0024
+      },
+      {
+        "token": ")",
+        "attention": 0.4764,
+        "normalized": 0.0024
+      },
+      {
+        "token": "O",
+        "attention": 0.473,
+        "normalized": 0.0024
+      },
+      {
+        "token": "(",
+        "attention": 0.4693,
+        "normalized": 0.0024
+      },
+      {
+        "token": "(",
+        "attention": 0.4692,
+        "normalized": 0.0024
+      },
+      {
+        "token": "(",
+        "attention": 0.4636,
+        "normalized": 0.0023
+      },
+      {
+        "token": "(",
+        "attention": 0.4584,
+        "normalized": 0.0023
+      },
+      {
+        "token": ")",
+        "attention": 0.4564,
+        "normalized": 0.0023
+      },
+      {
+        "token": "<eos>",
+        "attention": 0.3614,
+        "normalized": 0.0018
+      },
+      {
+        "token": "<bos>",
+        "attention": 0.2702,
+        "normalized": 0.0014
+      }
+    ]
+  }
+]

@@ -1,0 +1,600 @@
+2026-04-08 16:04:14 | INFO  | dataset_analysis | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/dataset_analysis.log
+2026-04-08 16:04:14 | INFO  | dataset_analysis | ============================================================
+2026-04-08 16:04:14 | INFO  | dataset_analysis |  STARTING: Dataset Analysis Phase 1: Our Pipeline Data
+2026-04-08 16:04:14 | INFO  | dataset_analysis | ============================================================
+2026-04-08 16:04:14 | INFO  | dataset_analysis | 
+  Loading datasets...
+2026-04-08 16:04:14 | INFO  | dataset_analysis |   Loaded: ecoli (28284 compounds)
+2026-04-08 16:04:14 | INFO  | dataset_analysis |   Loaded: saureus (43853 compounds)
+2026-04-08 16:04:14 | INFO  | dataset_analysis |   Loaded: paeruginosa (17783 compounds)
+2026-04-08 16:04:14 | INFO  | dataset_analysis |   Loaded: mtb (18705 compounds)
+2026-04-08 16:04:14 | INFO  | dataset_analysis |   Loaded: maier (1177 compounds)
+2026-04-08 16:04:14 | INFO  | dataset_analysis |   Loaded: hub (6739 compounds)
+2026-04-08 16:04:14 | INFO  | dataset_analysis | 
+  Generating figures...
+2026-04-08 16:04:14 | INFO  | dataset_analysis |   Figure: data_dataset_sizes
+2026-04-08 16:04:17 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_dataset_sizes.png
+2026-04-08 16:04:17 | INFO  | dataset_analysis |   Figure: data_class_balance
+2026-04-08 16:04:17 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_class_balance.png
+2026-04-08 16:04:17 | INFO  | dataset_analysis |   Figure: data_smiles_length
+2026-04-08 16:04:19 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_smiles_length.png
+2026-04-08 16:04:19 | INFO  | dataset_analysis |   Figure: data_molecular_properties (computing RDKit descriptors...)
+2026-04-08 16:04:24 | INFO  | dataset_analysis |     ecoli: 5000 valid molecules
+2026-04-08 16:04:28 | INFO  | dataset_analysis |     saureus: 5000 valid molecules
+2026-04-08 16:04:33 | INFO  | dataset_analysis |     paeruginosa: 5000 valid molecules
+2026-04-08 16:04:37 | INFO  | dataset_analysis |     mtb: 5000 valid molecules
+2026-04-08 16:04:38 | INFO  | dataset_analysis |     maier: 1177 valid molecules
+2026-04-08 16:04:41 | INFO  | dataset_analysis |     hub: 5000 valid molecules
+2026-04-08 16:04:45 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_molecular_properties.png
+2026-04-08 16:04:45 | INFO  | dataset_analysis |   Figure: data_property_boxplots
+2026-04-08 16:04:47 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_property_boxplots.png
+2026-04-08 16:04:47 | INFO  | dataset_analysis |   Figure: data_lipinski
+2026-04-08 16:04:47 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_lipinski.png
+2026-04-08 16:04:47 | INFO  | dataset_analysis |   Figure: data_active_vs_inactive
+2026-04-08 16:04:54 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_active_vs_inactive_mw.png
+2026-04-08 16:04:54 | INFO  | dataset_analysis |   Figure: data_maier_nhit
+2026-04-08 16:04:55 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_maier_nhit.png
+2026-04-08 16:04:55 | INFO  | dataset_analysis |   Figure: data_maier_strain_heatmap
+2026-04-08 16:04:57 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_maier_strain_sensitivity.png
+2026-04-08 16:04:57 | INFO  | dataset_analysis |   Figure: data_hub_clinical_moa
+2026-04-08 16:04:58 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_hub_clinical_moa.png
+2026-04-08 16:04:58 | INFO  | dataset_analysis |   Figure: data_hub_disease_areas
+2026-04-08 16:04:58 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_hub_disease_areas.png
+2026-04-08 16:04:58 | INFO  | dataset_analysis |   Figure: data_cross_dataset_overlap
+2026-04-08 16:04:59 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_cross_dataset_overlap.png
+2026-04-08 16:04:59 | INFO  | dataset_analysis |   Figure: data_chemical_space_pca (computing fingerprints...)
+2026-04-08 16:05:00 | INFO  | dataset_analysis |     ecoli: sampled 2000 from 28284
+2026-04-08 16:05:01 | INFO  | dataset_analysis |     saureus: sampled 2000 from 43853
+2026-04-08 16:05:01 | INFO  | dataset_analysis |     paeruginosa: sampled 2000 from 17783
+2026-04-08 16:05:01 | INFO  | dataset_analysis |     mtb: sampled 2000 from 18705
+2026-04-08 16:05:01 | INFO  | dataset_analysis |     maier: sampled 1177 from 1177
+2026-04-08 16:05:01 | INFO  | dataset_analysis |     hub: sampled 2000 from 6739
+2026-04-08 16:05:03 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_chemical_space_pca.png
+2026-04-08 16:05:03 | INFO  | dataset_analysis |   Figure: data_fingerprint_bits
+2026-04-08 16:05:04 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_fingerprint_bits.png
+2026-04-08 16:05:04 | INFO  | dataset_analysis |   Saving dataset_analysis.json
+2026-04-08 16:05:04 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/dataset_analysis.json
+2026-04-08 16:05:04 | INFO  | dataset_analysis | 
+  Phase 1 complete: 14 PNG, 14 PDF figures generated
+2026-04-08 16:05:04 | INFO  | dataset_analysis |   All in: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures
+2026-04-08 16:05:04 | INFO  | dataset_analysis | ============================================================
+2026-04-08 16:05:04 | INFO  | dataset_analysis |  COMPLETED: Dataset Analysis Phase 1
+2026-04-08 16:05:04 | INFO  | dataset_analysis |  Elapsed: 0m 50.4s
+2026-04-08 16:05:04 | INFO  | dataset_analysis | ============================================================
+2026-04-08 16:37:27 | INFO  | dataset_analysis | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/dataset_analysis.log
+2026-04-08 16:37:27 | INFO  | dataset_analysis | ============================================================
+2026-04-08 16:37:27 | INFO  | dataset_analysis |  STARTING: Dataset Analysis Phase 2: Reference Studies
+2026-04-08 16:37:27 | INFO  | dataset_analysis | ============================================================
+2026-04-08 16:37:27 | INFO  | dataset_analysis | 
+  Loading our pipeline data...
+2026-04-08 16:37:27 | INFO  | dataset_analysis |   Loaded: ecoli (28284 compounds)
+2026-04-08 16:37:27 | INFO  | dataset_analysis |   Loaded: saureus (43853 compounds)
+2026-04-08 16:37:27 | INFO  | dataset_analysis |   Loaded: paeruginosa (17783 compounds)
+2026-04-08 16:37:27 | INFO  | dataset_analysis |   Loaded: mtb (18705 compounds)
+2026-04-08 16:37:27 | INFO  | dataset_analysis |   Loaded: maier (1177 compounds)
+2026-04-08 16:37:27 | INFO  | dataset_analysis |   Loaded: hub (6739 compounds)
+2026-04-08 16:37:27 | INFO  | dataset_analysis | 
+  Loading reference data...
+2026-04-08 16:37:28 | INFO  | dataset_analysis |   Loaded: Stokes S2B Hub predictions (4496 compounds)
+2026-04-08 16:37:28 | INFO  | dataset_analysis |   Loaded: Stokes S2H training data (2335 compounds)
+2026-04-08 16:37:28 | INFO  | dataset_analysis |   Loaded: Stokes S2C (dmpnn_learned, 4496 compounds)
+2026-04-08 16:37:29 | INFO  | dataset_analysis |   Loaded: Stokes S2D (dmpnn_rdkit, 4496 compounds)
+2026-04-08 16:37:29 | INFO  | dataset_analysis |   Loaded: Stokes S2E (ffn_morgan, 4496 compounds)
+2026-04-08 16:37:29 | INFO  | dataset_analysis |   Loaded: Stokes S2F (rf_morgan, 4496 compounds)
+2026-04-08 16:37:30 | INFO  | dataset_analysis |   Loaded: Stokes S2G (svm_morgan, 4496 compounds)
+2026-04-08 16:37:30 | INFO  | dataset_analysis |   Loaded: Stokes S2A (200 RDKit features)
+2026-04-08 16:37:30 | INFO  | dataset_analysis |   Loaded: Wong training data (39312 compounds)
+2026-04-08 16:37:30 | INFO  | dataset_analysis |   Loaded: Wong broad800 predictions (99999 compounds)
+2026-04-08 16:37:30 | INFO  | dataset_analysis |   Loaded: Wong mcule sample (9999 compounds, 1128 total files)
+2026-04-08 16:37:30 | INFO  | dataset_analysis | 
+  Generating Phase 2 figures...
+2026-04-08 16:37:30 | INFO  | dataset_analysis |   Figure: data_study_sizes_comparison
+2026-04-08 16:37:32 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_study_sizes_comparison.png
+2026-04-08 16:37:32 | INFO  | dataset_analysis |   Figure: data_study_class_balance
+2026-04-08 16:37:33 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_study_class_balance.png
+2026-04-08 16:37:33 | INFO  | dataset_analysis |   Figure: data_stokes_training
+2026-04-08 16:37:36 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_training.png
+2026-04-08 16:37:36 | INFO  | dataset_analysis |   Figure: data_stokes_hub_predictions
+2026-04-08 16:37:37 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_hub_predictions.png
+2026-04-08 16:37:37 | INFO  | dataset_analysis |   Figure: data_stokes_model_comparison
+2026-04-08 16:37:38 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_model_comparison.png
+2026-04-08 16:37:38 | INFO  | dataset_analysis |   Figure: data_stokes_rdkit_features
+2026-04-08 16:37:39 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_rdkit_features.png
+2026-04-08 16:37:39 | INFO  | dataset_analysis |   Figure: data_wong_training
+2026-04-08 16:39:30 | INFO  | dataset_analysis | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/dataset_analysis.log
+2026-04-08 16:39:30 | INFO  | dataset_analysis | ============================================================
+2026-04-08 16:39:30 | INFO  | dataset_analysis |  STARTING: Dataset Analysis Phase 2: Reference Studies
+2026-04-08 16:39:30 | INFO  | dataset_analysis | ============================================================
+2026-04-08 16:39:30 | INFO  | dataset_analysis | 
+  Loading our pipeline data...
+2026-04-08 16:39:30 | INFO  | dataset_analysis |   Loaded: ecoli (28284 compounds)
+2026-04-08 16:39:30 | INFO  | dataset_analysis |   Loaded: saureus (43853 compounds)
+2026-04-08 16:39:30 | INFO  | dataset_analysis |   Loaded: paeruginosa (17783 compounds)
+2026-04-08 16:39:30 | INFO  | dataset_analysis |   Loaded: mtb (18705 compounds)
+2026-04-08 16:39:30 | INFO  | dataset_analysis |   Loaded: maier (1177 compounds)
+2026-04-08 16:39:30 | INFO  | dataset_analysis |   Loaded: hub (6739 compounds)
+2026-04-08 16:39:30 | INFO  | dataset_analysis | 
+  Loading reference data...
+2026-04-08 16:39:31 | INFO  | dataset_analysis |   Loaded: Stokes S2B Hub predictions (4496 compounds)
+2026-04-08 16:39:31 | INFO  | dataset_analysis |   Loaded: Stokes S2H training data (2335 compounds)
+2026-04-08 16:39:32 | INFO  | dataset_analysis |   Loaded: Stokes S2C (dmpnn_learned, 4496 compounds)
+2026-04-08 16:39:32 | INFO  | dataset_analysis |   Loaded: Stokes S2D (dmpnn_rdkit, 4496 compounds)
+2026-04-08 16:39:32 | INFO  | dataset_analysis |   Loaded: Stokes S2E (ffn_morgan, 4496 compounds)
+2026-04-08 16:39:33 | INFO  | dataset_analysis |   Loaded: Stokes S2F (rf_morgan, 4496 compounds)
+2026-04-08 16:39:33 | INFO  | dataset_analysis |   Loaded: Stokes S2G (svm_morgan, 4496 compounds)
+2026-04-08 16:39:33 | INFO  | dataset_analysis |   Loaded: Stokes S2A (200 RDKit features)
+2026-04-08 16:39:33 | INFO  | dataset_analysis |   Loaded: Wong training data (39312 compounds)
+2026-04-08 16:39:33 | INFO  | dataset_analysis |   Loaded: Wong broad800 predictions (99999 compounds)
+2026-04-08 16:39:33 | INFO  | dataset_analysis |   Loaded: Wong mcule sample (9999 compounds, 1128 total files)
+2026-04-08 16:39:33 | INFO  | dataset_analysis | 
+  Generating Phase 2 figures...
+2026-04-08 16:39:33 | INFO  | dataset_analysis |   Figure: data_study_sizes_comparison
+2026-04-08 16:39:35 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_study_sizes_comparison.png
+2026-04-08 16:39:35 | INFO  | dataset_analysis |   Figure: data_study_class_balance
+2026-04-08 16:39:35 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_study_class_balance.png
+2026-04-08 16:39:35 | INFO  | dataset_analysis |   Figure: data_stokes_training
+2026-04-08 16:39:39 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_training.png
+2026-04-08 16:39:39 | INFO  | dataset_analysis |   Figure: data_stokes_hub_predictions
+2026-04-08 16:39:40 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_hub_predictions.png
+2026-04-08 16:39:40 | INFO  | dataset_analysis |   Figure: data_stokes_model_comparison
+2026-04-08 16:39:41 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_model_comparison.png
+2026-04-08 16:39:41 | INFO  | dataset_analysis |   Figure: data_stokes_rdkit_features
+2026-04-08 16:39:41 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_rdkit_features.png
+2026-04-08 16:39:41 | INFO  | dataset_analysis |   Figure: data_wong_training
+2026-04-08 16:40:51 | INFO  | dataset_analysis | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/dataset_analysis.log
+2026-04-08 16:40:51 | INFO  | dataset_analysis | ============================================================
+2026-04-08 16:40:51 | INFO  | dataset_analysis |  STARTING: Dataset Analysis Phase 2: Reference Studies
+2026-04-08 16:40:51 | INFO  | dataset_analysis | ============================================================
+2026-04-08 16:40:51 | INFO  | dataset_analysis | 
+  Loading our pipeline data...
+2026-04-08 16:40:51 | INFO  | dataset_analysis |   Loaded: ecoli (28284 compounds)
+2026-04-08 16:40:55 | INFO  | dataset_analysis | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/dataset_analysis.log
+2026-04-08 16:40:55 | INFO  | dataset_analysis | ============================================================
+2026-04-08 16:40:55 | INFO  | dataset_analysis |  STARTING: Dataset Analysis Phase 2: Reference Studies
+2026-04-08 16:40:55 | INFO  | dataset_analysis | ============================================================
+2026-04-08 16:40:55 | INFO  | dataset_analysis | 
+  Loading our pipeline data...
+2026-04-08 16:40:55 | INFO  | dataset_analysis |   Loaded: ecoli (28284 compounds)
+2026-04-08 16:40:55 | INFO  | dataset_analysis |   Loaded: saureus (43853 compounds)
+2026-04-08 16:40:55 | INFO  | dataset_analysis |   Loaded: paeruginosa (17783 compounds)
+2026-04-08 16:40:55 | INFO  | dataset_analysis |   Loaded: mtb (18705 compounds)
+2026-04-08 16:40:55 | INFO  | dataset_analysis |   Loaded: maier (1177 compounds)
+2026-04-08 16:40:55 | INFO  | dataset_analysis |   Loaded: hub (6739 compounds)
+2026-04-08 16:40:55 | INFO  | dataset_analysis | 
+  Loading reference data...
+2026-04-08 16:40:56 | INFO  | dataset_analysis |   Loaded: Stokes S2B Hub predictions (4496 compounds)
+2026-04-08 16:40:56 | INFO  | dataset_analysis |   Loaded: Stokes S2H training data (2335 compounds)
+2026-04-08 16:40:57 | INFO  | dataset_analysis |   Loaded: Stokes S2C (dmpnn_learned, 4496 compounds)
+2026-04-08 16:40:57 | INFO  | dataset_analysis |   Loaded: Stokes S2D (dmpnn_rdkit, 4496 compounds)
+2026-04-08 16:40:57 | INFO  | dataset_analysis |   Loaded: Stokes S2E (ffn_morgan, 4496 compounds)
+2026-04-08 16:40:58 | INFO  | dataset_analysis |   Loaded: Stokes S2F (rf_morgan, 4496 compounds)
+2026-04-08 16:40:58 | INFO  | dataset_analysis |   Loaded: Stokes S2G (svm_morgan, 4496 compounds)
+2026-04-08 16:40:58 | INFO  | dataset_analysis |   Loaded: Stokes S2A (200 RDKit features)
+2026-04-08 16:40:58 | INFO  | dataset_analysis |   Loaded: Wong training data (39312 compounds)
+2026-04-08 16:40:58 | INFO  | dataset_analysis |   Loaded: Wong broad800 predictions (99999 compounds)
+2026-04-08 16:40:58 | INFO  | dataset_analysis |   Loaded: Wong mcule sample (9999 compounds, 1128 total files)
+2026-04-08 16:40:58 | INFO  | dataset_analysis | 
+  Generating Phase 2 figures...
+2026-04-08 16:40:58 | INFO  | dataset_analysis |   Figure: data_study_sizes_comparison
+2026-04-08 16:41:00 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_study_sizes_comparison.png
+2026-04-08 16:41:00 | INFO  | dataset_analysis |   Figure: data_study_class_balance
+2026-04-08 16:41:00 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_study_class_balance.png
+2026-04-08 16:41:00 | INFO  | dataset_analysis |   Figure: data_stokes_training
+2026-04-08 16:41:03 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_training.png
+2026-04-08 16:41:03 | INFO  | dataset_analysis |   Figure: data_stokes_hub_predictions
+2026-04-08 16:41:05 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_hub_predictions.png
+2026-04-08 16:41:05 | INFO  | dataset_analysis |   Figure: data_stokes_model_comparison
+2026-04-08 16:41:06 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_model_comparison.png
+2026-04-08 16:41:06 | INFO  | dataset_analysis |   Figure: data_stokes_rdkit_features
+2026-04-08 16:41:06 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_rdkit_features.png
+2026-04-08 16:41:06 | INFO  | dataset_analysis |   Figure: data_wong_training
+2026-04-08 16:41:13 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_wong_training.png
+2026-04-08 16:41:13 | INFO  | dataset_analysis |   Figure: data_wong_predictions
+2026-04-08 16:43:08 | INFO  | dataset_analysis | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/dataset_analysis.log
+2026-04-08 16:43:08 | INFO  | dataset_analysis | ============================================================
+2026-04-08 16:43:08 | INFO  | dataset_analysis |  STARTING: Dataset Analysis Phase 2: Reference Studies
+2026-04-08 16:43:08 | INFO  | dataset_analysis | ============================================================
+2026-04-08 16:43:08 | INFO  | dataset_analysis | 
+  Loading our pipeline data...
+2026-04-08 16:43:08 | INFO  | dataset_analysis |   Loaded: ecoli (28284 compounds)
+2026-04-08 16:43:08 | INFO  | dataset_analysis |   Loaded: saureus (43853 compounds)
+2026-04-08 16:43:08 | INFO  | dataset_analysis |   Loaded: paeruginosa (17783 compounds)
+2026-04-08 16:43:08 | INFO  | dataset_analysis |   Loaded: mtb (18705 compounds)
+2026-04-08 16:43:08 | INFO  | dataset_analysis |   Loaded: maier (1177 compounds)
+2026-04-08 16:43:08 | INFO  | dataset_analysis |   Loaded: hub (6739 compounds)
+2026-04-08 16:43:08 | INFO  | dataset_analysis | 
+  Loading reference data...
+2026-04-08 16:43:09 | INFO  | dataset_analysis |   Loaded: Stokes S2B Hub predictions (4496 compounds)
+2026-04-08 16:43:09 | INFO  | dataset_analysis |   Loaded: Stokes S2H training data (2335 compounds)
+2026-04-08 16:43:09 | INFO  | dataset_analysis |   Loaded: Stokes S2C (dmpnn_learned, 4496 compounds)
+2026-04-08 16:43:10 | INFO  | dataset_analysis |   Loaded: Stokes S2D (dmpnn_rdkit, 4496 compounds)
+2026-04-08 16:43:10 | INFO  | dataset_analysis |   Loaded: Stokes S2E (ffn_morgan, 4496 compounds)
+2026-04-08 16:43:10 | INFO  | dataset_analysis |   Loaded: Stokes S2F (rf_morgan, 4496 compounds)
+2026-04-08 16:43:11 | INFO  | dataset_analysis |   Loaded: Stokes S2G (svm_morgan, 4496 compounds)
+2026-04-08 16:43:11 | INFO  | dataset_analysis |   Loaded: Stokes S2A (200 RDKit features)
+2026-04-08 16:43:11 | INFO  | dataset_analysis |   Loaded: Wong training data (39312 compounds)
+2026-04-08 16:43:11 | INFO  | dataset_analysis |   Loaded: Wong broad800 predictions (99999 compounds)
+2026-04-08 16:43:11 | INFO  | dataset_analysis |   Loaded: Wong mcule sample (9999 compounds, 1128 total files)
+2026-04-08 16:43:11 | INFO  | dataset_analysis | 
+  Generating Phase 2 figures...
+2026-04-08 16:43:11 | INFO  | dataset_analysis |   Figure: data_study_sizes_comparison
+2026-04-08 16:43:13 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_study_sizes_comparison.png
+2026-04-08 16:43:13 | INFO  | dataset_analysis |   Figure: data_study_class_balance
+2026-04-08 16:43:13 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_study_class_balance.png
+2026-04-08 16:43:13 | INFO  | dataset_analysis |   Figure: data_stokes_training
+2026-04-08 16:43:16 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_training.png
+2026-04-08 16:43:16 | INFO  | dataset_analysis |   Figure: data_stokes_hub_predictions
+2026-04-08 16:43:17 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_hub_predictions.png
+2026-04-08 16:43:17 | INFO  | dataset_analysis |   Figure: data_stokes_model_comparison
+2026-04-08 16:43:19 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_model_comparison.png
+2026-04-08 16:43:19 | INFO  | dataset_analysis |   Figure: data_stokes_rdkit_features
+2026-04-08 16:43:19 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_rdkit_features.png
+2026-04-08 16:43:19 | INFO  | dataset_analysis |   Figure: data_wong_training
+2026-04-08 16:43:25 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_wong_training.png
+2026-04-08 16:43:25 | INFO  | dataset_analysis |   Figure: data_wong_predictions
+2026-04-08 16:43:27 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_wong_predictions.png
+2026-04-08 16:43:27 | INFO  | dataset_analysis |   Figure: data_cross_study_mw
+2026-04-08 16:43:31 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_cross_study_mw.png
+2026-04-08 16:43:31 | INFO  | dataset_analysis |   Figure: data_cross_study_pca (computing fingerprints...)
+2026-04-08 16:43:34 | INFO  | dataset_analysis |     Our E. coli: 2000 FPs
+2026-04-08 16:43:35 | INFO  | dataset_analysis |     Our Hub: 2000 FPs
+2026-04-08 16:43:36 | INFO  | dataset_analysis |     Our Maier: 1177 FPs
+2026-04-08 16:43:38 | INFO  | dataset_analysis |     Stokes training: 1999 FPs
+2026-04-08 16:43:39 | INFO  | dataset_analysis |     Wong training: 2000 FPs
+2026-04-08 16:43:41 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_cross_study_pca.png
+2026-04-08 16:43:41 | INFO  | dataset_analysis |   Figure: data_cross_study_overlap
+2026-04-08 16:44:12 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_cross_study_overlap.png
+2026-04-08 16:44:12 | INFO  | dataset_analysis |   Saving reference_data_stats.json
+2026-04-08 16:44:12 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/reference_data_stats.json
+2026-04-08 16:44:12 | INFO  | dataset_analysis | 
+  Phase 2 complete
+2026-04-08 16:44:12 | INFO  | dataset_analysis | ============================================================
+2026-04-08 16:44:12 | INFO  | dataset_analysis |  COMPLETED: Dataset Analysis Phase 2
+2026-04-08 16:44:12 | INFO  | dataset_analysis |  Elapsed: 1m 4.6s
+2026-04-08 16:44:12 | INFO  | dataset_analysis | ============================================================
+2026-04-08 17:37:05 | INFO  | dataset_analysis | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/dataset_analysis.log
+2026-04-08 17:37:05 | INFO  | dataset_analysis | ============================================================
+2026-04-08 17:37:05 | INFO  | dataset_analysis |  STARTING: Dataset Analysis Phase 1: Our Pipeline Data
+2026-04-08 17:37:05 | INFO  | dataset_analysis | ============================================================
+2026-04-08 17:37:05 | INFO  | dataset_analysis | 
+  Loading datasets...
+2026-04-08 17:37:05 | INFO  | dataset_analysis |   Loaded: ecoli (28284 compounds)
+2026-04-08 17:37:05 | INFO  | dataset_analysis |   Loaded: saureus (43853 compounds)
+2026-04-08 17:37:05 | INFO  | dataset_analysis |   Loaded: paeruginosa (17783 compounds)
+2026-04-08 17:37:05 | INFO  | dataset_analysis |   Loaded: mtb (18705 compounds)
+2026-04-08 17:37:05 | INFO  | dataset_analysis |   Loaded: maier (1177 compounds)
+2026-04-08 17:37:05 | INFO  | dataset_analysis |   Loaded: hub (6739 compounds)
+2026-04-08 17:37:05 | INFO  | dataset_analysis | 
+  Generating figures...
+2026-04-08 17:37:05 | INFO  | dataset_analysis |   Figure: data_dataset_sizes
+2026-04-08 17:37:06 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_dataset_sizes.png
+2026-04-08 17:37:06 | INFO  | dataset_analysis |   Figure: data_class_balance
+2026-04-08 17:37:07 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_class_balance.png
+2026-04-08 17:37:07 | INFO  | dataset_analysis |   Figure: data_smiles_length
+2026-04-08 17:37:08 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_smiles_length.png
+2026-04-08 17:37:08 | INFO  | dataset_analysis |   Figure: data_molecular_properties (computing RDKit descriptors...)
+2026-04-08 17:37:13 | INFO  | dataset_analysis |     ecoli: 5000 valid molecules
+2026-04-08 17:37:17 | INFO  | dataset_analysis |     saureus: 5000 valid molecules
+2026-04-08 17:37:22 | INFO  | dataset_analysis |     paeruginosa: 5000 valid molecules
+2026-04-08 17:37:26 | INFO  | dataset_analysis |     mtb: 5000 valid molecules
+2026-04-08 17:37:27 | INFO  | dataset_analysis |     maier: 1177 valid molecules
+2026-04-08 17:37:30 | INFO  | dataset_analysis |     hub: 5000 valid molecules
+2026-04-08 17:37:35 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_molecular_properties.png
+2026-04-08 17:37:35 | INFO  | dataset_analysis |   Figure: data_property_boxplots
+2026-04-08 17:37:36 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_property_boxplots.png
+2026-04-08 17:37:36 | INFO  | dataset_analysis |   Figure: data_lipinski
+2026-04-08 17:37:36 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_lipinski.png
+2026-04-08 17:37:36 | INFO  | dataset_analysis |   Figure: data_active_vs_inactive
+2026-04-08 17:37:43 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_active_vs_inactive_mw.png
+2026-04-08 17:37:43 | INFO  | dataset_analysis |   Figure: data_maier_nhit
+2026-04-08 17:37:44 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_maier_nhit.png
+2026-04-08 17:37:44 | INFO  | dataset_analysis |   Figure: data_maier_strain_heatmap
+2026-04-08 17:37:46 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_maier_strain_sensitivity.png
+2026-04-08 17:37:46 | INFO  | dataset_analysis |   Figure: data_maier_strain_heatmap (loading p-value matrix...)
+2026-04-08 17:37:53 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_maier_strain_heatmap.png
+2026-04-08 17:37:53 | INFO  | dataset_analysis |   Figure: data_maier_class_strain_heatmap
+2026-04-08 17:37:56 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_maier_class_strain_heatmap.png
+2026-04-08 17:37:56 | INFO  | dataset_analysis |   Figure: data_hub_clinical_moa
+2026-04-08 17:37:57 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_hub_clinical_moa.png
+2026-04-08 17:37:57 | INFO  | dataset_analysis |   Figure: data_hub_disease_areas
+2026-04-08 17:37:57 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_hub_disease_areas.png
+2026-04-08 17:37:57 | INFO  | dataset_analysis |   Figure: data_cross_dataset_overlap
+2026-04-08 17:37:59 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_cross_dataset_overlap.png
+2026-04-08 17:37:59 | INFO  | dataset_analysis |   Figure: data_chemical_space_pca (computing fingerprints...)
+2026-04-08 17:38:00 | INFO  | dataset_analysis |     ecoli: sampled 2000 from 28284
+2026-04-08 17:38:00 | INFO  | dataset_analysis |     saureus: sampled 2000 from 43853
+2026-04-08 17:38:00 | INFO  | dataset_analysis |     paeruginosa: sampled 2000 from 17783
+2026-04-08 17:38:00 | INFO  | dataset_analysis |     mtb: sampled 2000 from 18705
+2026-04-08 17:38:00 | INFO  | dataset_analysis |     maier: sampled 1177 from 1177
+2026-04-08 17:38:00 | INFO  | dataset_analysis |     hub: sampled 2000 from 6739
+2026-04-08 17:38:02 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_chemical_space_pca.png
+2026-04-08 17:38:02 | INFO  | dataset_analysis |   Figure: data_fingerprint_bits
+2026-04-08 17:38:04 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_fingerprint_bits.png
+2026-04-08 17:38:04 | INFO  | dataset_analysis |   Saving dataset_analysis.json
+2026-04-08 17:38:04 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/dataset_analysis.json
+2026-04-08 17:38:04 | INFO  | dataset_analysis |   Generating dynamic dataset report...
+2026-04-08 17:38:04 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/dataset_report_dynamic.md
+2026-04-08 17:38:04 | INFO  | dataset_analysis | 
+  Phase 1 complete: 27 PNG, 27 PDF figures generated
+2026-04-08 17:38:04 | INFO  | dataset_analysis |   All in: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures
+2026-04-08 17:38:04 | INFO  | dataset_analysis | ============================================================
+2026-04-08 17:38:04 | INFO  | dataset_analysis |  COMPLETED: Dataset Analysis Phase 1
+2026-04-08 17:38:04 | INFO  | dataset_analysis |  Elapsed: 0m 58.9s
+2026-04-08 17:38:04 | INFO  | dataset_analysis | ============================================================
+2026-04-08 17:38:04 | INFO  | dataset_analysis | ============================================================
+2026-04-08 17:38:04 | INFO  | dataset_analysis |  STARTING: Dataset Analysis Phase 2: Reference Studies
+2026-04-08 17:38:04 | INFO  | dataset_analysis | ============================================================
+2026-04-08 17:38:04 | INFO  | dataset_analysis | 
+  Loading our pipeline data...
+2026-04-08 17:38:04 | INFO  | dataset_analysis |   Loaded: ecoli (28284 compounds)
+2026-04-08 17:38:04 | INFO  | dataset_analysis |   Loaded: saureus (43853 compounds)
+2026-04-08 17:38:04 | INFO  | dataset_analysis |   Loaded: paeruginosa (17783 compounds)
+2026-04-08 17:38:04 | INFO  | dataset_analysis |   Loaded: mtb (18705 compounds)
+2026-04-08 17:38:04 | INFO  | dataset_analysis |   Loaded: maier (1177 compounds)
+2026-04-08 17:38:04 | INFO  | dataset_analysis |   Loaded: hub (6739 compounds)
+2026-04-08 17:38:04 | INFO  | dataset_analysis | 
+  Loading reference data...
+2026-04-08 17:38:04 | INFO  | dataset_analysis |   Loaded: Stokes S2B Hub predictions (4496 compounds)
+2026-04-08 17:38:05 | INFO  | dataset_analysis |   Loaded: Stokes S2H training data (2335 compounds)
+2026-04-08 17:38:05 | INFO  | dataset_analysis |   Loaded: Stokes S2C (dmpnn_learned, 4496 compounds)
+2026-04-08 17:38:05 | INFO  | dataset_analysis |   Loaded: Stokes S2D (dmpnn_rdkit, 4496 compounds)
+2026-04-08 17:38:06 | INFO  | dataset_analysis |   Loaded: Stokes S2E (ffn_morgan, 4496 compounds)
+2026-04-08 17:38:06 | INFO  | dataset_analysis |   Loaded: Stokes S2F (rf_morgan, 4496 compounds)
+2026-04-08 17:38:06 | INFO  | dataset_analysis |   Loaded: Stokes S2G (svm_morgan, 4496 compounds)
+2026-04-08 17:38:07 | INFO  | dataset_analysis |   Loaded: Stokes S2A (200 RDKit features)
+2026-04-08 17:38:07 | INFO  | dataset_analysis |   Loaded: Wong training data (39312 compounds)
+2026-04-08 17:38:07 | INFO  | dataset_analysis |   Loaded: Wong broad800 predictions (99999 compounds)
+2026-04-08 17:38:07 | INFO  | dataset_analysis |   Loaded: Wong mcule sample (9999 compounds, 1128 total files)
+2026-04-08 17:38:07 | INFO  | dataset_analysis | 
+  Generating Phase 2 figures...
+2026-04-08 17:38:07 | INFO  | dataset_analysis |   Figure: data_study_sizes_comparison
+2026-04-08 17:38:08 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_study_sizes_comparison.png
+2026-04-08 17:38:08 | INFO  | dataset_analysis |   Figure: data_study_class_balance
+2026-04-08 17:38:08 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_study_class_balance.png
+2026-04-08 17:38:08 | INFO  | dataset_analysis |   Figure: data_stokes_training
+2026-04-08 17:38:12 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_training.png
+2026-04-08 17:38:12 | INFO  | dataset_analysis |   Figure: data_stokes_hub_predictions
+2026-04-08 17:38:13 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_hub_predictions.png
+2026-04-08 17:38:13 | INFO  | dataset_analysis |   Figure: data_stokes_model_comparison
+2026-04-08 17:38:14 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_model_comparison.png
+2026-04-08 17:38:14 | INFO  | dataset_analysis |   Figure: data_stokes_rdkit_features
+2026-04-08 17:38:15 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_rdkit_features.png
+2026-04-08 17:38:15 | INFO  | dataset_analysis |   Figure: data_wong_training
+2026-04-08 17:38:21 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_wong_training.png
+2026-04-08 17:38:21 | INFO  | dataset_analysis |   Figure: data_wong_predictions
+2026-04-08 17:38:23 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_wong_predictions.png
+2026-04-08 17:38:23 | INFO  | dataset_analysis |   Figure: data_cross_study_mw
+2026-04-08 17:38:26 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_cross_study_mw.png
+2026-04-08 17:38:26 | INFO  | dataset_analysis |   Figure: data_cross_study_pca (computing fingerprints...)
+2026-04-08 17:38:28 | INFO  | dataset_analysis |     Our E. coli: 2000 FPs
+2026-04-08 17:38:29 | INFO  | dataset_analysis |     Our Hub: 2000 FPs
+2026-04-08 17:38:30 | INFO  | dataset_analysis |     Our Maier: 1177 FPs
+2026-04-08 17:38:32 | INFO  | dataset_analysis |     Stokes training: 1999 FPs
+2026-04-08 17:38:33 | INFO  | dataset_analysis |     Wong training: 2000 FPs
+2026-04-08 17:38:35 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_cross_study_pca.png
+2026-04-08 17:38:35 | INFO  | dataset_analysis |   Figure: data_cross_study_overlap
+2026-04-08 17:39:07 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_cross_study_overlap.png
+2026-04-08 17:39:07 | INFO  | dataset_analysis |   Saving reference_data_stats.json
+2026-04-08 17:39:07 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/reference_data_stats.json
+2026-04-08 17:39:07 | INFO  | dataset_analysis |   Generating dynamic dataset report...
+2026-04-08 17:39:07 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/dataset_report_dynamic.md
+2026-04-08 17:39:07 | INFO  | dataset_analysis | 
+  Phase 2 complete
+2026-04-08 17:39:07 | INFO  | dataset_analysis | ============================================================
+2026-04-08 17:39:07 | INFO  | dataset_analysis |  COMPLETED: Dataset Analysis Phase 2
+2026-04-08 17:39:07 | INFO  | dataset_analysis |  Elapsed: 1m 3.4s
+2026-04-08 17:39:07 | INFO  | dataset_analysis | ============================================================
+2026-04-09 13:10:17 | INFO  | dataset_analysis | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/dataset_analysis.log
+2026-04-09 13:10:17 | INFO  | dataset_analysis | ============================================================
+2026-04-09 13:10:17 | INFO  | dataset_analysis |  STARTING: Dataset Analysis Phase 1: Our Pipeline Data
+2026-04-09 13:10:17 | INFO  | dataset_analysis | ============================================================
+2026-04-09 13:10:17 | INFO  | dataset_analysis | 
+  Loading datasets...
+2026-04-09 13:10:17 | INFO  | dataset_analysis |   Loaded: ecoli (28284 compounds)
+2026-04-09 13:10:17 | INFO  | dataset_analysis |   Loaded: saureus (43853 compounds)
+2026-04-09 13:10:18 | INFO  | dataset_analysis |   Loaded: paeruginosa (17783 compounds)
+2026-04-09 13:10:18 | INFO  | dataset_analysis |   Loaded: mtb (18705 compounds)
+2026-04-09 13:10:18 | INFO  | dataset_analysis |   Loaded: maier (1177 compounds)
+2026-04-09 13:10:18 | INFO  | dataset_analysis |   Loaded: hub (6739 compounds)
+2026-04-09 13:10:18 | INFO  | dataset_analysis | 
+  Generating figures...
+2026-04-09 13:10:18 | INFO  | dataset_analysis |   Figure: data_dataset_sizes
+2026-04-09 13:10:20 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_dataset_sizes.png
+2026-04-09 13:10:20 | INFO  | dataset_analysis |   Figure: data_class_balance
+2026-04-09 13:10:20 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_class_balance.png
+2026-04-09 13:10:20 | INFO  | dataset_analysis |   Figure: data_smiles_length
+2026-04-09 13:10:21 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_smiles_length.png
+2026-04-09 13:10:21 | INFO  | dataset_analysis |   Figure: data_molecular_properties (computing RDKit descriptors...)
+2026-04-09 13:10:26 | INFO  | dataset_analysis |     ecoli: 5000 valid molecules
+2026-04-09 13:10:31 | INFO  | dataset_analysis |     saureus: 5000 valid molecules
+2026-04-09 13:10:35 | INFO  | dataset_analysis |     paeruginosa: 5000 valid molecules
+2026-04-09 13:10:39 | INFO  | dataset_analysis |     mtb: 5000 valid molecules
+2026-04-09 13:10:40 | INFO  | dataset_analysis |     maier: 1177 valid molecules
+2026-04-09 13:10:43 | INFO  | dataset_analysis |     hub: 5000 valid molecules
+2026-04-09 13:10:48 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_molecular_properties.png
+2026-04-09 13:10:48 | INFO  | dataset_analysis |   Figure: data_property_boxplots
+2026-04-09 13:10:49 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_property_boxplots.png
+2026-04-09 13:10:49 | INFO  | dataset_analysis |   Figure: data_lipinski
+2026-04-09 13:10:49 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_lipinski.png
+2026-04-09 13:10:49 | INFO  | dataset_analysis |   Figure: data_active_vs_inactive
+2026-04-09 13:10:56 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_active_vs_inactive_mw.png
+2026-04-09 13:10:56 | INFO  | dataset_analysis |   Figure: data_maier_nhit
+2026-04-09 13:10:57 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_maier_nhit.png
+2026-04-09 13:10:57 | INFO  | dataset_analysis |   Figure: data_maier_strain_heatmap
+2026-04-09 13:10:59 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_maier_strain_sensitivity.png
+2026-04-09 13:10:59 | INFO  | dataset_analysis |   Figure: data_maier_strain_heatmap (loading p-value matrix...)
+2026-04-09 13:11:04 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_maier_strain_heatmap.png
+2026-04-09 13:11:04 | INFO  | dataset_analysis |   Figure: data_maier_class_strain_heatmap
+2026-04-09 13:11:07 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_maier_class_strain_heatmap.png
+2026-04-09 13:11:07 | INFO  | dataset_analysis |   Figure: data_hub_clinical_moa
+2026-04-09 13:11:08 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_hub_clinical_moa.png
+2026-04-09 13:11:08 | INFO  | dataset_analysis |   Figure: data_hub_disease_areas
+2026-04-09 13:11:08 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_hub_disease_areas.png
+2026-04-09 13:11:08 | INFO  | dataset_analysis |   Figure: data_cross_dataset_overlap
+2026-04-09 13:11:09 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_cross_dataset_overlap.png
+2026-04-09 13:11:09 | INFO  | dataset_analysis |   Figure: data_chemical_space_pca (computing fingerprints...)
+2026-04-09 13:11:10 | INFO  | dataset_analysis |     ecoli: sampled 2000 from 28284
+2026-04-09 13:11:10 | INFO  | dataset_analysis |     saureus: sampled 2000 from 43853
+2026-04-09 13:11:10 | INFO  | dataset_analysis |     paeruginosa: sampled 2000 from 17783
+2026-04-09 13:11:10 | INFO  | dataset_analysis |     mtb: sampled 2000 from 18705
+2026-04-09 13:11:10 | INFO  | dataset_analysis |     maier: sampled 1177 from 1177
+2026-04-09 13:11:10 | INFO  | dataset_analysis |     hub: sampled 2000 from 6739
+2026-04-09 13:11:12 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_chemical_space_pca.png
+2026-04-09 13:11:12 | INFO  | dataset_analysis |   Figure: data_fingerprint_bits
+2026-04-09 13:11:13 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_fingerprint_bits.png
+2026-04-09 13:11:13 | INFO  | dataset_analysis |   Saving dataset_analysis.json
+2026-04-09 13:11:13 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/dataset_analysis.json
+2026-04-09 13:11:13 | INFO  | dataset_analysis |   Generating dynamic dataset report...
+2026-04-09 13:11:14 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/dataset_report_dynamic.md
+2026-04-09 13:11:14 | INFO  | dataset_analysis | 
+  Phase 1 complete: 27 PNG, 27 PDF figures generated
+2026-04-09 13:11:14 | INFO  | dataset_analysis |   All in: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures
+2026-04-09 13:11:14 | INFO  | dataset_analysis | ============================================================
+2026-04-09 13:11:14 | INFO  | dataset_analysis |  COMPLETED: Dataset Analysis Phase 1
+2026-04-09 13:11:14 | INFO  | dataset_analysis |  Elapsed: 0m 56.5s
+2026-04-09 13:11:14 | INFO  | dataset_analysis | ============================================================
+2026-04-09 13:11:14 | INFO  | dataset_analysis | ============================================================
+2026-04-09 13:11:14 | INFO  | dataset_analysis |  STARTING: Dataset Analysis Phase 2: Reference Studies
+2026-04-09 13:11:14 | INFO  | dataset_analysis | ============================================================
+2026-04-09 13:11:14 | INFO  | dataset_analysis | 
+  Loading our pipeline data...
+2026-04-09 13:11:14 | INFO  | dataset_analysis |   Loaded: ecoli (28284 compounds)
+2026-04-09 13:11:14 | INFO  | dataset_analysis |   Loaded: saureus (43853 compounds)
+2026-04-09 13:11:14 | INFO  | dataset_analysis |   Loaded: paeruginosa (17783 compounds)
+2026-04-09 13:11:14 | INFO  | dataset_analysis |   Loaded: mtb (18705 compounds)
+2026-04-09 13:11:14 | INFO  | dataset_analysis |   Loaded: maier (1177 compounds)
+2026-04-09 13:11:14 | INFO  | dataset_analysis |   Loaded: hub (6739 compounds)
+2026-04-09 13:11:14 | INFO  | dataset_analysis | 
+  Loading reference data...
+2026-04-09 13:11:14 | INFO  | dataset_analysis |   Loaded: Stokes S2B Hub predictions (4496 compounds)
+2026-04-09 13:11:15 | INFO  | dataset_analysis |   Loaded: Stokes S2H training data (2335 compounds)
+2026-04-09 13:11:15 | INFO  | dataset_analysis |   Loaded: Stokes S2C (dmpnn_learned, 4496 compounds)
+2026-04-09 13:11:15 | INFO  | dataset_analysis |   Loaded: Stokes S2D (dmpnn_rdkit, 4496 compounds)
+2026-04-09 13:11:16 | INFO  | dataset_analysis |   Loaded: Stokes S2E (ffn_morgan, 4496 compounds)
+2026-04-09 13:11:16 | INFO  | dataset_analysis |   Loaded: Stokes S2F (rf_morgan, 4496 compounds)
+2026-04-09 13:11:16 | INFO  | dataset_analysis |   Loaded: Stokes S2G (svm_morgan, 4496 compounds)
+2026-04-09 13:11:17 | INFO  | dataset_analysis |   Loaded: Stokes S2A (200 RDKit features)
+2026-04-09 13:11:17 | INFO  | dataset_analysis |   Loaded: Wong training data (39312 compounds)
+2026-04-09 13:11:17 | INFO  | dataset_analysis |   Loaded: Wong broad800 predictions (99999 compounds)
+2026-04-09 13:11:17 | INFO  | dataset_analysis |   Loaded: Wong mcule sample (9999 compounds, 1128 total files)
+2026-04-09 13:11:17 | INFO  | dataset_analysis | 
+  Generating Phase 2 figures...
+2026-04-09 13:11:17 | INFO  | dataset_analysis |   Figure: data_study_sizes_comparison
+2026-04-09 13:11:18 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_study_sizes_comparison.png
+2026-04-09 13:11:18 | INFO  | dataset_analysis |   Figure: data_study_class_balance
+2026-04-09 13:11:18 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_study_class_balance.png
+2026-04-09 13:11:18 | INFO  | dataset_analysis |   Figure: data_stokes_training
+2026-04-09 13:11:22 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_training.png
+2026-04-09 13:11:22 | INFO  | dataset_analysis |   Figure: data_stokes_hub_predictions
+2026-04-09 13:11:23 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_hub_predictions.png
+2026-04-09 13:11:23 | INFO  | dataset_analysis |   Figure: data_stokes_model_comparison
+2026-04-09 13:11:24 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_model_comparison.png
+2026-04-09 13:11:24 | INFO  | dataset_analysis |   Figure: data_stokes_rdkit_features
+2026-04-09 13:11:24 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_stokes_rdkit_features.png
+2026-04-09 13:11:24 | INFO  | dataset_analysis |   Figure: data_wong_training
+2026-04-09 13:11:30 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_wong_training.png
+2026-04-09 13:11:30 | INFO  | dataset_analysis |   Figure: data_wong_predictions
+2026-04-09 13:11:32 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_wong_predictions.png
+2026-04-09 13:11:32 | INFO  | dataset_analysis |   Figure: data_cross_study_mw
+2026-04-09 13:11:36 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_cross_study_mw.png
+2026-04-09 13:11:36 | INFO  | dataset_analysis |   Figure: data_cross_study_pca (computing fingerprints...)
+2026-04-09 13:11:37 | INFO  | dataset_analysis |     Our E. coli: 2000 FPs
+2026-04-09 13:11:39 | INFO  | dataset_analysis |     Our Hub: 2000 FPs
+2026-04-09 13:11:40 | INFO  | dataset_analysis |     Our Maier: 1177 FPs
+2026-04-09 13:11:41 | INFO  | dataset_analysis |     Stokes training: 1999 FPs
+2026-04-09 13:11:43 | INFO  | dataset_analysis |     Wong training: 2000 FPs
+2026-04-09 13:11:44 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_cross_study_pca.png
+2026-04-09 13:11:44 | INFO  | dataset_analysis |   Figure: data_cross_study_overlap
+2026-04-09 13:12:16 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_cross_study_overlap.png
+2026-04-09 13:12:16 | INFO  | dataset_analysis |   Saving reference_data_stats.json
+2026-04-09 13:12:16 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/reference_data_stats.json
+2026-04-09 13:12:16 | INFO  | dataset_analysis |   Generating dynamic dataset report...
+2026-04-09 13:12:16 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/dataset_report_dynamic.md
+2026-04-09 13:12:16 | INFO  | dataset_analysis | 
+  Phase 2 complete
+2026-04-09 13:12:16 | INFO  | dataset_analysis | ============================================================
+2026-04-09 13:12:16 | INFO  | dataset_analysis |  COMPLETED: Dataset Analysis Phase 2
+2026-04-09 13:12:16 | INFO  | dataset_analysis |  Elapsed: 1m 2.5s
+2026-04-09 13:12:16 | INFO  | dataset_analysis | ============================================================
+2026-04-16 15:54:15 | INFO  | dataset_analysis | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/dataset_analysis.log
+2026-04-16 15:54:15 | INFO  | dataset_analysis | ============================================================
+2026-04-16 15:54:15 | INFO  | dataset_analysis |  STARTING: Dataset Analysis Phase 1: Our Pipeline Data
+2026-04-16 15:54:15 | INFO  | dataset_analysis | ============================================================
+2026-04-16 15:54:15 | INFO  | dataset_analysis | 
+  Loading datasets...
+2026-04-16 15:54:16 | INFO  | dataset_analysis |   Loaded: ecoli (28284 compounds)
+2026-04-16 15:54:16 | INFO  | dataset_analysis |   Loaded: saureus (43853 compounds)
+2026-04-16 15:54:16 | INFO  | dataset_analysis |   Loaded: paeruginosa (17783 compounds)
+2026-04-16 15:54:16 | INFO  | dataset_analysis |   Loaded: mtb (18705 compounds)
+2026-04-16 15:54:16 | INFO  | dataset_analysis |   Loaded: maier (1177 compounds)
+2026-04-16 15:54:16 | INFO  | dataset_analysis |   Loaded: hub (6739 compounds)
+2026-04-16 15:54:16 | INFO  | dataset_analysis | 
+  Generating figures...
+2026-04-16 15:54:16 | INFO  | dataset_analysis |   Figure: data_dataset_sizes
+2026-04-16 15:54:19 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_dataset_sizes.png
+2026-04-16 15:54:19 | INFO  | dataset_analysis |   Figure: data_class_balance
+2026-04-16 15:54:20 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_class_balance.png
+2026-04-16 15:54:20 | INFO  | dataset_analysis |   Figure: data_smiles_length
+2026-04-16 15:54:21 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_smiles_length.png
+2026-04-16 15:54:21 | INFO  | dataset_analysis |   Figure: data_molecular_properties (computing RDKit descriptors...)
+2026-04-16 15:54:26 | INFO  | dataset_analysis |     ecoli: 5000 valid molecules
+2026-04-16 15:54:31 | INFO  | dataset_analysis |     saureus: 5000 valid molecules
+2026-04-16 15:54:36 | INFO  | dataset_analysis |     paeruginosa: 5000 valid molecules
+2026-04-16 15:54:39 | INFO  | dataset_analysis |     mtb: 5000 valid molecules
+2026-04-16 15:54:40 | INFO  | dataset_analysis |     maier: 1177 valid molecules
+2026-04-16 15:54:44 | INFO  | dataset_analysis |     hub: 5000 valid molecules
+2026-04-16 15:54:48 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_molecular_properties.png
+2026-04-16 15:54:48 | INFO  | dataset_analysis |   Figure: data_property_boxplots
+2026-04-16 15:54:49 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_property_boxplots.png
+2026-04-16 15:54:49 | INFO  | dataset_analysis |   Figure: data_lipinski
+2026-04-16 15:54:50 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_lipinski.png
+2026-04-16 15:54:50 | INFO  | dataset_analysis |   Figure: data_active_vs_inactive
+2026-04-16 15:54:57 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_active_vs_inactive_mw.png
+2026-04-16 15:54:57 | INFO  | dataset_analysis |   Figure: data_maier_nhit
+2026-04-16 15:54:58 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_maier_nhit.png
+2026-04-16 15:54:58 | INFO  | dataset_analysis |   Figure: data_maier_strain_heatmap
+2026-04-16 15:55:01 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_maier_strain_sensitivity.png
+2026-04-16 15:55:01 | INFO  | dataset_analysis |   Figure: data_maier_strain_heatmap (loading p-value matrix...)
+2026-04-16 15:55:05 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_maier_strain_heatmap.png
+2026-04-16 15:55:05 | INFO  | dataset_analysis |   Figure: data_maier_class_strain_heatmap
+2026-04-16 15:55:08 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_maier_class_strain_heatmap.png
+2026-04-16 15:55:08 | INFO  | dataset_analysis |   Figure: data_hub_clinical_moa
+2026-04-16 15:55:09 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_hub_clinical_moa.png
+2026-04-16 15:55:09 | INFO  | dataset_analysis |   Figure: data_hub_disease_areas
+2026-04-16 15:55:10 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_hub_disease_areas.png
+2026-04-16 15:55:10 | INFO  | dataset_analysis |   Figure: data_cross_dataset_overlap
+2026-04-16 15:55:11 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_cross_dataset_overlap.png
+2026-04-16 15:55:11 | INFO  | dataset_analysis |   Computing pathogen-gut co-activity
+2026-04-16 15:55:11 | INFO  | dataset_analysis |     ecoli: n_overlap=46, active=25, selective_t10=4
+2026-04-16 15:55:11 | INFO  | dataset_analysis |     saureus: n_overlap=59, active=29, selective_t10=6
+2026-04-16 15:55:11 | INFO  | dataset_analysis |     paeruginosa: n_overlap=36, active=19, selective_t10=3
+2026-04-16 15:55:11 | INFO  | dataset_analysis |     mtb: n_overlap=57, active=15, selective_t10=7
+2026-04-16 15:55:11 | INFO  | dataset_analysis |   Figure: data_pathogen_gut_coactivity
+2026-04-16 16:00:53 | INFO  | dataset_analysis | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/dataset_analysis.log
+2026-04-16 16:00:53 | INFO  | dataset_analysis |   Loaded: ecoli (28284 compounds)
+2026-04-16 16:00:53 | INFO  | dataset_analysis |   Loaded: saureus (43853 compounds)
+2026-04-16 16:00:53 | INFO  | dataset_analysis |   Loaded: paeruginosa (17783 compounds)
+2026-04-16 16:00:53 | INFO  | dataset_analysis |   Loaded: mtb (18705 compounds)
+2026-04-16 16:00:53 | INFO  | dataset_analysis |   Loaded: maier (1177 compounds)
+2026-04-16 16:00:53 | INFO  | dataset_analysis |   Loaded: hub (6739 compounds)
+2026-04-16 16:00:53 | INFO  | dataset_analysis |   Computing pathogen-gut co-activity
+2026-04-16 16:00:53 | INFO  | dataset_analysis |     ecoli: n_overlap=46, active=25, selective_t10=4
+2026-04-16 16:00:53 | INFO  | dataset_analysis |     saureus: n_overlap=59, active=29, selective_t10=6
+2026-04-16 16:00:53 | INFO  | dataset_analysis |     paeruginosa: n_overlap=36, active=19, selective_t10=3
+2026-04-16 16:00:53 | INFO  | dataset_analysis |     mtb: n_overlap=57, active=15, selective_t10=7
+2026-04-16 16:00:53 | INFO  | dataset_analysis |   Figure: data_pathogen_gut_coactivity
+2026-04-16 16:00:56 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/current/results/figures/data_pathogen_gut_coactivity.png
+2026-04-16 18:08:04 | INFO  | dataset_analysis | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/dataset_analysis.log
+2026-04-16 18:08:04 | INFO  | dataset_analysis |   Loaded: ecoli (28284 compounds)
+2026-04-16 18:08:04 | INFO  | dataset_analysis |   Loaded: saureus (43853 compounds)
+2026-04-16 18:08:04 | INFO  | dataset_analysis |   Loaded: paeruginosa (17783 compounds)
+2026-04-16 18:08:04 | INFO  | dataset_analysis |   Loaded: mtb (18705 compounds)
+2026-04-16 18:08:04 | INFO  | dataset_analysis |   Loaded: maier (1177 compounds)
+2026-04-16 18:08:04 | INFO  | dataset_analysis |   Loaded: hub (6739 compounds)
+2026-04-16 18:08:04 | INFO  | dataset_analysis |   Computing pathogen-gut co-activity
+2026-04-16 18:08:04 | INFO  | dataset_analysis |     ecoli: n_overlap=46, active=25, selective_t10=4
+2026-04-16 18:08:04 | INFO  | dataset_analysis |     saureus: n_overlap=59, active=29, selective_t10=6
+2026-04-16 18:08:04 | INFO  | dataset_analysis |     paeruginosa: n_overlap=36, active=19, selective_t10=3
+2026-04-16 18:08:04 | INFO  | dataset_analysis |     mtb: n_overlap=57, active=15, selective_t10=7
+2026-04-16 18:08:04 | INFO  | dataset_analysis |   Figure: data_pathogen_gut_coactivity
+2026-04-16 18:08:06 | INFO  | dataset_analysis |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/data_pathogen_gut_coactivity.png

@@ -1,0 +1,258 @@
+2026-03-22 00:40:49 | INFO  | backfill_metrics | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity/logs/backfill_metrics.log
+2026-03-22 00:40:49 | INFO  | backfill_metrics | ============================================================
+2026-03-22 00:40:49 | INFO  | backfill_metrics |   Backfill full_metrics_agg into existing result JSONs
+2026-03-22 00:40:49 | INFO  | backfill_metrics | ============================================================
+2026-03-22 00:40:49 | INFO  | backfill_metrics | 
+  [1/2] DMPNN backfill...
+2026-03-22 00:40:49 | INFO  | backfill_metrics |   DMPNN ecoli: already has full_metrics_agg, skipping
+2026-03-22 00:40:49 | INFO  | backfill_metrics |   DMPNN saureus: already has full_metrics_agg, skipping
+2026-03-22 00:40:49 | INFO  | backfill_metrics |   DMPNN paeruginosa: already has full_metrics_agg, skipping
+2026-03-22 00:40:49 | INFO  | backfill_metrics |   DMPNN mtb: already has full_metrics_agg, skipping
+2026-03-22 00:40:49 | INFO  | backfill_metrics |   DMPNN gut_t5: already has full_metrics_agg, skipping
+2026-03-22 00:40:49 | INFO  | backfill_metrics |   DMPNN gut_t10: already has full_metrics_agg, skipping
+2026-03-22 00:40:49 | INFO  | backfill_metrics |   DMPNN gut_t20: already has full_metrics_agg, skipping
+2026-03-22 00:40:49 | INFO  | backfill_metrics | 
+  [2/2] RF backfill...
+2026-03-22 00:40:49 | INFO  | backfill_metrics |   RF ecoli: already has full_metrics_agg, skipping
+2026-03-22 00:40:49 | INFO  | backfill_metrics |   RF saureus: already has full_metrics_agg, skipping
+2026-03-22 00:40:49 | INFO  | backfill_metrics |   RF paeruginosa: already has full_metrics_agg, skipping
+2026-03-22 00:40:49 | INFO  | backfill_metrics |   RF mtb: already has full_metrics_agg, skipping
+2026-03-22 00:40:49 | INFO  | backfill_metrics |   RF gut_t5: already has full_metrics_agg, skipping
+2026-03-22 00:40:49 | INFO  | backfill_metrics |   RF gut_t10: already has full_metrics_agg, skipping
+2026-03-22 00:40:49 | INFO  | backfill_metrics |   RF gut_t20: already has full_metrics_agg, skipping
+2026-03-22 00:40:49 | INFO  | backfill_metrics | 
+============================================================
+2026-03-22 00:40:49 | INFO  | backfill_metrics |   DMPNN: no changes needed
+2026-03-22 00:40:49 | INFO  | backfill_metrics |   RF:    no changes needed
+2026-03-22 00:40:49 | INFO  | backfill_metrics | ============================================================
+2026-04-02 20:00:45 | INFO  | backfill_metrics | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/backfill_metrics.log
+2026-04-02 20:00:45 | INFO  | backfill_metrics | ============================================================
+2026-04-02 20:00:45 | INFO  | backfill_metrics |   Backfill full_metrics_agg into existing result JSONs
+2026-04-02 20:00:45 | INFO  | backfill_metrics | ============================================================
+2026-04-02 20:00:45 | INFO  | backfill_metrics | 
+  [1/2] DMPNN backfill...
+2026-04-02 20:00:45 | INFO  | backfill_metrics |   DMPNN ecoli: already has full_metrics_agg, skipping
+2026-04-02 20:00:45 | INFO  | backfill_metrics |   DMPNN saureus: already has full_metrics_agg, skipping
+2026-04-02 20:00:45 | INFO  | backfill_metrics |   DMPNN paeruginosa: already has full_metrics_agg, skipping
+2026-04-02 20:00:45 | INFO  | backfill_metrics |   DMPNN mtb: already has full_metrics_agg, skipping
+2026-04-02 20:00:45 | INFO  | backfill_metrics |   DMPNN gut_t5: already has full_metrics_agg, skipping
+2026-04-02 20:00:45 | INFO  | backfill_metrics |   DMPNN gut_t10: already has full_metrics_agg, skipping
+2026-04-02 20:00:45 | INFO  | backfill_metrics |   DMPNN gut_t20: already has full_metrics_agg, skipping
+2026-04-02 20:00:45 | INFO  | backfill_metrics | 
+  [2/2] RF backfill...
+2026-04-02 20:00:45 | INFO  | backfill_metrics |   Backup: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/rf_cv_metrics.json.bak
+2026-04-02 20:00:46 | INFO  | backfill_metrics | 
+  RF ecoli: recomputing with per-fold CV...
+2026-04-02 20:01:05 | INFO  | backfill_metrics |   RF ecoli fold 0: ROC-AUC=0.8812, MCC=0.6028 (train=22627, test=5657)
+2026-04-02 20:01:22 | INFO  | backfill_metrics |   RF ecoli fold 1: ROC-AUC=0.8718, MCC=0.5712 (train=22627, test=5657)
+2026-04-02 20:01:40 | INFO  | backfill_metrics |   RF ecoli fold 2: ROC-AUC=0.8632, MCC=0.5621 (train=22627, test=5657)
+2026-04-02 20:01:58 | INFO  | backfill_metrics |   RF ecoli fold 3: ROC-AUC=0.8716, MCC=0.5606 (train=22627, test=5657)
+2026-04-02 20:02:17 | INFO  | backfill_metrics |   RF ecoli fold 4: ROC-AUC=0.8946, MCC=0.6354 (train=22628, test=5656)
+2026-04-02 20:02:17 | INFO  | backfill_metrics |   RF ecoli: backfilled 5 folds
+2026-04-02 20:02:17 | INFO  | backfill_metrics |     top-level ROC-AUC = 0.8765 (from original training)
+2026-04-02 20:02:17 | INFO  | backfill_metrics |     backfill ROC-AUC  = 0.8765 (from per-fold CV)
+2026-04-02 20:02:17 | INFO  | backfill_metrics |     mean_mcc          = 0.5864
+2026-04-02 20:02:17 | INFO  | backfill_metrics |     mean_sensitivity  = 0.677
+2026-04-02 20:02:17 | INFO  | backfill_metrics | 
+  RF saureus: recomputing with per-fold CV...
+2026-04-02 20:02:59 | INFO  | backfill_metrics |   RF saureus fold 0: ROC-AUC=0.8762, MCC=0.5877 (train=35082, test=8771)
+2026-04-02 20:03:41 | INFO  | backfill_metrics |   RF saureus fold 1: ROC-AUC=0.8694, MCC=0.5853 (train=35082, test=8771)
+2026-04-02 20:04:23 | INFO  | backfill_metrics |   RF saureus fold 2: ROC-AUC=0.8818, MCC=0.5852 (train=35082, test=8771)
+2026-04-02 20:05:05 | INFO  | backfill_metrics |   RF saureus fold 3: ROC-AUC=0.8619, MCC=0.5640 (train=35083, test=8770)
+2026-04-02 20:05:46 | INFO  | backfill_metrics |   RF saureus fold 4: ROC-AUC=0.8647, MCC=0.5651 (train=35083, test=8770)
+2026-04-02 20:05:46 | INFO  | backfill_metrics |   RF saureus: backfilled 5 folds
+2026-04-02 20:05:46 | INFO  | backfill_metrics |     top-level ROC-AUC = 0.8708 (from original training)
+2026-04-02 20:05:46 | INFO  | backfill_metrics |     backfill ROC-AUC  = 0.8708 (from per-fold CV)
+2026-04-02 20:05:46 | INFO  | backfill_metrics |     mean_mcc          = 0.5775
+2026-04-02 20:05:46 | INFO  | backfill_metrics |     mean_sensitivity  = 0.6965
+2026-04-02 20:05:46 | INFO  | backfill_metrics | 
+  RF paeruginosa: recomputing with per-fold CV...
+2026-04-02 20:05:55 | INFO  | backfill_metrics |   RF paeruginosa fold 0: ROC-AUC=0.8723, MCC=0.5559 (train=14226, test=3557)
+2026-04-02 20:06:03 | INFO  | backfill_metrics |   RF paeruginosa fold 1: ROC-AUC=0.8479, MCC=0.5267 (train=14226, test=3557)
+2026-04-02 20:06:11 | INFO  | backfill_metrics |   RF paeruginosa fold 2: ROC-AUC=0.8466, MCC=0.5261 (train=14227, test=3556)
+2026-04-02 20:06:19 | INFO  | backfill_metrics |   RF paeruginosa fold 3: ROC-AUC=0.8575, MCC=0.5192 (train=14226, test=3557)
+2026-04-02 20:06:27 | INFO  | backfill_metrics |   RF paeruginosa fold 4: ROC-AUC=0.8808, MCC=0.6111 (train=14227, test=3556)
+2026-04-02 20:06:27 | INFO  | backfill_metrics |   RF paeruginosa: backfilled 5 folds
+2026-04-02 20:06:27 | INFO  | backfill_metrics |     top-level ROC-AUC = 0.861 (from original training)
+2026-04-02 20:06:27 | INFO  | backfill_metrics |     backfill ROC-AUC  = 0.861 (from per-fold CV)
+2026-04-02 20:06:27 | INFO  | backfill_metrics |     mean_mcc          = 0.5478
+2026-04-02 20:06:27 | INFO  | backfill_metrics |     mean_sensitivity  = 0.6484
+2026-04-02 20:06:27 | INFO  | backfill_metrics | 
+  RF mtb: recomputing with per-fold CV...
+2026-04-02 20:06:37 | INFO  | backfill_metrics |   RF mtb fold 0: ROC-AUC=0.8144, MCC=0.4589 (train=14964, test=3741)
+2026-04-02 20:06:48 | INFO  | backfill_metrics |   RF mtb fold 1: ROC-AUC=0.7785, MCC=0.3908 (train=14963, test=3742)
+2026-04-02 20:06:58 | INFO  | backfill_metrics |   RF mtb fold 2: ROC-AUC=0.8201, MCC=0.5008 (train=14964, test=3741)
+2026-04-02 20:07:08 | INFO  | backfill_metrics |   RF mtb fold 3: ROC-AUC=0.8115, MCC=0.4641 (train=14964, test=3741)
+2026-04-02 20:07:19 | INFO  | backfill_metrics |   RF mtb fold 4: ROC-AUC=0.8316, MCC=0.4968 (train=14965, test=3740)
+2026-04-02 20:07:19 | INFO  | backfill_metrics |   RF mtb: backfilled 5 folds
+2026-04-02 20:07:19 | INFO  | backfill_metrics |     top-level ROC-AUC = 0.8112 (from original training)
+2026-04-02 20:07:19 | INFO  | backfill_metrics |     backfill ROC-AUC  = 0.8112 (from per-fold CV)
+2026-04-02 20:07:19 | INFO  | backfill_metrics |     mean_mcc          = 0.4623
+2026-04-02 20:07:19 | INFO  | backfill_metrics |     mean_sensitivity  = 0.5873
+2026-04-02 20:07:19 | INFO  | backfill_metrics | 
+  RF gut_t5: recomputing with per-fold CV...
+2026-04-02 20:07:20 | INFO  | backfill_metrics |   RF gut_t5 fold 0: ROC-AUC=0.8064, MCC=0.5054 (train=942, test=235)
+2026-04-02 20:07:22 | INFO  | backfill_metrics |   RF gut_t5 fold 1: ROC-AUC=0.7102, MCC=0.4954 (train=941, test=236)
+2026-04-02 20:07:23 | INFO  | backfill_metrics |   RF gut_t5 fold 2: ROC-AUC=0.8674, MCC=0.5036 (train=941, test=236)
+2026-04-02 20:07:24 | INFO  | backfill_metrics |   RF gut_t5 fold 3: ROC-AUC=0.7347, MCC=0.3184 (train=942, test=235)
+2026-04-02 20:07:26 | INFO  | backfill_metrics |   RF gut_t5 fold 4: ROC-AUC=0.8987, MCC=0.7131 (train=942, test=235)
+2026-04-02 20:07:26 | INFO  | backfill_metrics |   RF gut_t5: backfilled 5 folds
+2026-04-02 20:07:26 | INFO  | backfill_metrics |     top-level ROC-AUC = 0.8035 (from original training)
+2026-04-02 20:07:26 | INFO  | backfill_metrics |     backfill ROC-AUC  = 0.8035 (from per-fold CV)
+2026-04-02 20:07:26 | INFO  | backfill_metrics |     mean_mcc          = 0.5072
+2026-04-02 20:07:26 | INFO  | backfill_metrics |     mean_sensitivity  = 0.4217
+2026-04-02 20:07:26 | INFO  | backfill_metrics | 
+  RF gut_t10: recomputing with per-fold CV...
+2026-04-02 20:07:28 | INFO  | backfill_metrics |   RF gut_t10 fold 0: ROC-AUC=0.8657, MCC=0.4921 (train=942, test=235)
+2026-04-02 20:07:30 | INFO  | backfill_metrics |   RF gut_t10 fold 1: ROC-AUC=0.7601, MCC=0.6129 (train=941, test=236)
+2026-04-02 20:07:32 | INFO  | backfill_metrics |   RF gut_t10 fold 2: ROC-AUC=0.8803, MCC=0.6131 (train=941, test=236)
+2026-04-02 20:07:34 | INFO  | backfill_metrics |   RF gut_t10 fold 3: ROC-AUC=0.6813, MCC=0.3366 (train=942, test=235)
+2026-04-02 20:07:36 | INFO  | backfill_metrics |   RF gut_t10 fold 4: ROC-AUC=0.9288, MCC=0.7824 (train=942, test=235)
+2026-04-02 20:07:36 | INFO  | backfill_metrics |   RF gut_t10: backfilled 5 folds
+2026-04-02 20:07:36 | INFO  | backfill_metrics |     top-level ROC-AUC = 0.8232 (from original training)
+2026-04-02 20:07:36 | INFO  | backfill_metrics |     backfill ROC-AUC  = 0.8232 (from per-fold CV)
+2026-04-02 20:07:36 | INFO  | backfill_metrics |     mean_mcc          = 0.5674
+2026-04-02 20:07:36 | INFO  | backfill_metrics |     mean_sensitivity  = 0.4561
+2026-04-02 20:07:36 | INFO  | backfill_metrics | 
+  RF gut_t20: recomputing with per-fold CV...
+2026-04-02 20:07:38 | INFO  | backfill_metrics |   RF gut_t20 fold 0: ROC-AUC=0.8512, MCC=0.4863 (train=942, test=235)
+2026-04-02 20:07:40 | INFO  | backfill_metrics |   RF gut_t20 fold 1: ROC-AUC=0.8603, MCC=0.8090 (train=941, test=236)
+2026-04-02 20:07:42 | INFO  | backfill_metrics |   RF gut_t20 fold 2: ROC-AUC=0.9386, MCC=0.7547 (train=941, test=236)
+2026-04-02 20:07:44 | INFO  | backfill_metrics |   RF gut_t20 fold 3: ROC-AUC=0.8122, MCC=0.5698 (train=942, test=235)
+2026-04-02 20:07:46 | INFO  | backfill_metrics |   RF gut_t20 fold 4: ROC-AUC=0.9369, MCC=0.7640 (train=942, test=235)
+2026-04-02 20:07:46 | INFO  | backfill_metrics |   RF gut_t20: backfilled 5 folds
+2026-04-02 20:07:46 | INFO  | backfill_metrics |     top-level ROC-AUC = 0.8798 (from original training)
+2026-04-02 20:07:46 | INFO  | backfill_metrics |     backfill ROC-AUC  = 0.8798 (from per-fold CV)
+2026-04-02 20:07:46 | INFO  | backfill_metrics |     mean_mcc          = 0.6768
+2026-04-02 20:07:46 | INFO  | backfill_metrics |     mean_sensitivity  = 0.5615
+2026-04-02 20:07:46 | INFO  | backfill_metrics |   Updated: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/rf_cv_metrics.json (7 tasks)
+2026-04-02 20:07:46 | INFO  | backfill_metrics | 
+============================================================
+2026-04-02 20:07:46 | INFO  | backfill_metrics |   DMPNN: no changes needed
+2026-04-02 20:07:46 | INFO  | backfill_metrics |   RF:    patched
+2026-04-02 20:07:46 | INFO  | backfill_metrics | ============================================================
+2026-04-05 20:24:27 | INFO  | backfill_metrics | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/backfill_metrics.log
+2026-04-05 20:24:27 | INFO  | backfill_metrics | ============================================================
+2026-04-05 20:24:27 | INFO  | backfill_metrics |   Backfill full_metrics_agg into existing result JSONs
+2026-04-05 20:24:27 | INFO  | backfill_metrics | ============================================================
+2026-04-05 20:24:27 | INFO  | backfill_metrics | 
+  [1/3] DMPNN backfill...
+2026-04-05 20:24:27 | INFO  | backfill_metrics |   DMPNN ecoli: already has full_metrics_agg, skipping
+2026-04-05 20:24:27 | INFO  | backfill_metrics |   DMPNN saureus: already has full_metrics_agg, skipping
+2026-04-05 20:24:27 | INFO  | backfill_metrics |   DMPNN paeruginosa: already has full_metrics_agg, skipping
+2026-04-05 20:24:27 | INFO  | backfill_metrics |   DMPNN mtb: already has full_metrics_agg, skipping
+2026-04-05 20:24:27 | INFO  | backfill_metrics |   DMPNN gut_t5: already has full_metrics_agg, skipping
+2026-04-05 20:24:27 | INFO  | backfill_metrics |   DMPNN gut_t10: already has full_metrics_agg, skipping
+2026-04-05 20:24:27 | INFO  | backfill_metrics |   DMPNN gut_t20: already has full_metrics_agg, skipping
+2026-04-05 20:24:27 | INFO  | backfill_metrics | 
+  [2/3] RF backfill...
+2026-04-05 20:24:27 | INFO  | backfill_metrics |   Backup: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/rf_cv_metrics.json.bak
+2026-04-05 20:24:28 | INFO  | backfill_metrics | 
+  RF ecoli: recomputing with per-fold CV...
+2026-04-05 20:24:47 | INFO  | backfill_metrics |   RF ecoli fold 0: ROC-AUC=0.8812, MCC=0.6028 (train=22627, test=5657)
+2026-04-05 20:25:04 | INFO  | backfill_metrics |   RF ecoli fold 1: ROC-AUC=0.8718, MCC=0.5712 (train=22627, test=5657)
+2026-04-05 20:25:22 | INFO  | backfill_metrics |   RF ecoli fold 2: ROC-AUC=0.8632, MCC=0.5621 (train=22627, test=5657)
+2026-04-05 20:25:40 | INFO  | backfill_metrics |   RF ecoli fold 3: ROC-AUC=0.8716, MCC=0.5606 (train=22627, test=5657)
+2026-04-05 20:25:58 | INFO  | backfill_metrics |   RF ecoli fold 4: ROC-AUC=0.8946, MCC=0.6354 (train=22628, test=5656)
+2026-04-05 20:25:58 | INFO  | backfill_metrics |   RF ecoli: backfilled 5 folds
+2026-04-05 20:25:58 | INFO  | backfill_metrics |     top-level ROC-AUC = 0.8765 (from original training)
+2026-04-05 20:25:58 | INFO  | backfill_metrics |     backfill ROC-AUC  = 0.8765 (from per-fold CV)
+2026-04-05 20:25:58 | INFO  | backfill_metrics |     mean_mcc          = 0.5864
+2026-04-05 20:25:58 | INFO  | backfill_metrics |     mean_sensitivity  = 0.677
+2026-04-05 20:25:58 | INFO  | backfill_metrics | 
+  RF saureus: recomputing with per-fold CV...
+2026-04-05 20:26:41 | INFO  | backfill_metrics |   RF saureus fold 0: ROC-AUC=0.8762, MCC=0.5877 (train=35082, test=8771)
+2026-04-05 20:27:23 | INFO  | backfill_metrics |   RF saureus fold 1: ROC-AUC=0.8694, MCC=0.5853 (train=35082, test=8771)
+2026-04-05 20:28:05 | INFO  | backfill_metrics |   RF saureus fold 2: ROC-AUC=0.8818, MCC=0.5852 (train=35082, test=8771)
+2026-04-05 20:28:47 | INFO  | backfill_metrics |   RF saureus fold 3: ROC-AUC=0.8619, MCC=0.5640 (train=35083, test=8770)
+2026-04-05 20:29:29 | INFO  | backfill_metrics |   RF saureus fold 4: ROC-AUC=0.8647, MCC=0.5651 (train=35083, test=8770)
+2026-04-05 20:29:29 | INFO  | backfill_metrics |   RF saureus: backfilled 5 folds
+2026-04-05 20:29:29 | INFO  | backfill_metrics |     top-level ROC-AUC = 0.8708 (from original training)
+2026-04-05 20:29:29 | INFO  | backfill_metrics |     backfill ROC-AUC  = 0.8708 (from per-fold CV)
+2026-04-05 20:29:29 | INFO  | backfill_metrics |     mean_mcc          = 0.5775
+2026-04-05 20:29:29 | INFO  | backfill_metrics |     mean_sensitivity  = 0.6965
+2026-04-05 20:29:29 | INFO  | backfill_metrics | 
+  RF paeruginosa: recomputing with per-fold CV...
+2026-04-05 20:29:37 | INFO  | backfill_metrics |   RF paeruginosa fold 0: ROC-AUC=0.8723, MCC=0.5559 (train=14226, test=3557)
+2026-04-05 20:29:45 | INFO  | backfill_metrics |   RF paeruginosa fold 1: ROC-AUC=0.8479, MCC=0.5267 (train=14226, test=3557)
+2026-04-05 20:29:53 | INFO  | backfill_metrics |   RF paeruginosa fold 2: ROC-AUC=0.8466, MCC=0.5261 (train=14227, test=3556)
+2026-04-05 20:30:01 | INFO  | backfill_metrics |   RF paeruginosa fold 3: ROC-AUC=0.8575, MCC=0.5192 (train=14226, test=3557)
+2026-04-05 20:30:10 | INFO  | backfill_metrics |   RF paeruginosa fold 4: ROC-AUC=0.8808, MCC=0.6111 (train=14227, test=3556)
+2026-04-05 20:30:10 | INFO  | backfill_metrics |   RF paeruginosa: backfilled 5 folds
+2026-04-05 20:30:10 | INFO  | backfill_metrics |     top-level ROC-AUC = 0.861 (from original training)
+2026-04-05 20:30:10 | INFO  | backfill_metrics |     backfill ROC-AUC  = 0.861 (from per-fold CV)
+2026-04-05 20:30:10 | INFO  | backfill_metrics |     mean_mcc          = 0.5478
+2026-04-05 20:30:10 | INFO  | backfill_metrics |     mean_sensitivity  = 0.6484
+2026-04-05 20:30:10 | INFO  | backfill_metrics | 
+  RF mtb: recomputing with per-fold CV...
+2026-04-05 20:30:20 | INFO  | backfill_metrics |   RF mtb fold 0: ROC-AUC=0.8144, MCC=0.4589 (train=14964, test=3741)
+2026-04-05 20:30:30 | INFO  | backfill_metrics |   RF mtb fold 1: ROC-AUC=0.7785, MCC=0.3908 (train=14963, test=3742)
+2026-04-05 20:30:40 | INFO  | backfill_metrics |   RF mtb fold 2: ROC-AUC=0.8201, MCC=0.5008 (train=14964, test=3741)
+2026-04-05 20:30:51 | INFO  | backfill_metrics |   RF mtb fold 3: ROC-AUC=0.8115, MCC=0.4641 (train=14964, test=3741)
+2026-04-05 20:31:01 | INFO  | backfill_metrics |   RF mtb fold 4: ROC-AUC=0.8316, MCC=0.4968 (train=14965, test=3740)
+2026-04-05 20:31:01 | INFO  | backfill_metrics |   RF mtb: backfilled 5 folds
+2026-04-05 20:31:01 | INFO  | backfill_metrics |     top-level ROC-AUC = 0.8112 (from original training)
+2026-04-05 20:31:01 | INFO  | backfill_metrics |     backfill ROC-AUC  = 0.8112 (from per-fold CV)
+2026-04-05 20:31:01 | INFO  | backfill_metrics |     mean_mcc          = 0.4623
+2026-04-05 20:31:01 | INFO  | backfill_metrics |     mean_sensitivity  = 0.5873
+2026-04-05 20:31:01 | INFO  | backfill_metrics | 
+  RF gut_t5: recomputing with per-fold CV...
+2026-04-05 20:31:03 | INFO  | backfill_metrics |   RF gut_t5 fold 0: ROC-AUC=0.8064, MCC=0.5054 (train=942, test=235)
+2026-04-05 20:31:04 | INFO  | backfill_metrics |   RF gut_t5 fold 1: ROC-AUC=0.7102, MCC=0.4954 (train=941, test=236)
+2026-04-05 20:31:06 | INFO  | backfill_metrics |   RF gut_t5 fold 2: ROC-AUC=0.8674, MCC=0.5036 (train=941, test=236)
+2026-04-05 20:31:08 | INFO  | backfill_metrics |   RF gut_t5 fold 3: ROC-AUC=0.7347, MCC=0.3184 (train=942, test=235)
+2026-04-05 20:31:09 | INFO  | backfill_metrics |   RF gut_t5 fold 4: ROC-AUC=0.8987, MCC=0.7131 (train=942, test=235)
+2026-04-05 20:31:10 | INFO  | backfill_metrics |   RF gut_t5: backfilled 5 folds
+2026-04-05 20:31:10 | INFO  | backfill_metrics |     top-level ROC-AUC = 0.8035 (from original training)
+2026-04-05 20:31:10 | INFO  | backfill_metrics |     backfill ROC-AUC  = 0.8035 (from per-fold CV)
+2026-04-05 20:31:10 | INFO  | backfill_metrics |     mean_mcc          = 0.5072
+2026-04-05 20:31:10 | INFO  | backfill_metrics |     mean_sensitivity  = 0.4217
+2026-04-05 20:31:10 | INFO  | backfill_metrics | 
+  RF gut_t10: recomputing with per-fold CV...
+2026-04-05 20:31:11 | INFO  | backfill_metrics |   RF gut_t10 fold 0: ROC-AUC=0.8657, MCC=0.4921 (train=942, test=235)
+2026-04-05 20:31:13 | INFO  | backfill_metrics |   RF gut_t10 fold 1: ROC-AUC=0.7601, MCC=0.6129 (train=941, test=236)
+2026-04-05 20:31:15 | INFO  | backfill_metrics |   RF gut_t10 fold 2: ROC-AUC=0.8803, MCC=0.6131 (train=941, test=236)
+2026-04-05 20:31:17 | INFO  | backfill_metrics |   RF gut_t10 fold 3: ROC-AUC=0.6813, MCC=0.3366 (train=942, test=235)
+2026-04-05 20:31:18 | INFO  | backfill_metrics |   RF gut_t10 fold 4: ROC-AUC=0.9288, MCC=0.7824 (train=942, test=235)
+2026-04-05 20:31:18 | INFO  | backfill_metrics |   RF gut_t10: backfilled 5 folds
+2026-04-05 20:31:18 | INFO  | backfill_metrics |     top-level ROC-AUC = 0.8232 (from original training)
+2026-04-05 20:31:18 | INFO  | backfill_metrics |     backfill ROC-AUC  = 0.8232 (from per-fold CV)
+2026-04-05 20:31:18 | INFO  | backfill_metrics |     mean_mcc          = 0.5674
+2026-04-05 20:31:18 | INFO  | backfill_metrics |     mean_sensitivity  = 0.4561
+2026-04-05 20:31:18 | INFO  | backfill_metrics | 
+  RF gut_t20: recomputing with per-fold CV...
+2026-04-05 20:31:20 | INFO  | backfill_metrics |   RF gut_t20 fold 0: ROC-AUC=0.8512, MCC=0.4863 (train=942, test=235)
+2026-04-05 20:31:22 | INFO  | backfill_metrics |   RF gut_t20 fold 1: ROC-AUC=0.8603, MCC=0.8090 (train=941, test=236)
+2026-04-05 20:31:24 | INFO  | backfill_metrics |   RF gut_t20 fold 2: ROC-AUC=0.9386, MCC=0.7547 (train=941, test=236)
+2026-04-05 20:31:26 | INFO  | backfill_metrics |   RF gut_t20 fold 3: ROC-AUC=0.8122, MCC=0.5698 (train=942, test=235)
+2026-04-05 20:31:28 | INFO  | backfill_metrics |   RF gut_t20 fold 4: ROC-AUC=0.9369, MCC=0.7640 (train=942, test=235)
+2026-04-05 20:31:28 | INFO  | backfill_metrics |   RF gut_t20: backfilled 5 folds
+2026-04-05 20:31:28 | INFO  | backfill_metrics |     top-level ROC-AUC = 0.8798 (from original training)
+2026-04-05 20:31:28 | INFO  | backfill_metrics |     backfill ROC-AUC  = 0.8798 (from per-fold CV)
+2026-04-05 20:31:28 | INFO  | backfill_metrics |     mean_mcc          = 0.6768
+2026-04-05 20:31:28 | INFO  | backfill_metrics |     mean_sensitivity  = 0.5615
+2026-04-05 20:31:28 | INFO  | backfill_metrics |   Updated: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/rf_cv_metrics.json (7 tasks)
+2026-04-05 20:31:28 | INFO  | backfill_metrics | 
+  [3/3] D-MPNN+RDKit backfill...
+2026-04-05 20:31:28 | INFO  | backfill_metrics |   D-MPNN+RDKit ecoli: backfilled from 28284 OOF samples
+2026-04-05 20:31:28 | INFO  | backfill_metrics |     ROC-AUC=0.8402, MCC=0.5364, sens=0.6104, spec=0.8967
+2026-04-05 20:31:29 | INFO  | backfill_metrics |   D-MPNN+RDKit saureus: backfilled from 43853 OOF samples
+2026-04-05 20:31:29 | INFO  | backfill_metrics |     ROC-AUC=0.8380, MCC=0.5230, sens=0.7111, spec=0.8090
+2026-04-05 20:31:29 | INFO  | backfill_metrics |   D-MPNN+RDKit paeruginosa: backfilled from 17783 OOF samples
+2026-04-05 20:31:29 | INFO  | backfill_metrics |     ROC-AUC=0.8238, MCC=0.4811, sens=0.5044, spec=0.9236
+2026-04-05 20:31:29 | INFO  | backfill_metrics |   D-MPNN+RDKit mtb: backfilled from 18705 OOF samples
+2026-04-05 20:31:29 | INFO  | backfill_metrics |     ROC-AUC=0.7385, MCC=0.3499, sens=0.5568, spec=0.7830
+2026-04-05 20:31:29 | INFO  | backfill_metrics |   D-MPNN+RDKit gut_t5: backfilled from 1177 OOF samples
+2026-04-05 20:31:29 | INFO  | backfill_metrics |     ROC-AUC=0.8628, MCC=0.5098, sens=0.5665, spec=0.9206
+2026-04-05 20:31:29 | INFO  | backfill_metrics |   D-MPNN+RDKit gut_t10: backfilled from 1177 OOF samples
+2026-04-05 20:31:29 | INFO  | backfill_metrics |     ROC-AUC=0.8561, MCC=0.5669, sens=0.5140, spec=0.9689
+2026-04-05 20:31:29 | INFO  | backfill_metrics |   D-MPNN+RDKit gut_t20: backfilled from 1177 OOF samples
+2026-04-05 20:31:29 | INFO  | backfill_metrics |     ROC-AUC=0.8948, MCC=0.5863, sens=0.5118, spec=0.9800
+2026-04-05 20:31:29 | INFO  | backfill_metrics |   Backup: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/dmpnn_rdkit_cv_metrics.json.bak
+2026-04-05 20:31:30 | INFO  | backfill_metrics |   Updated: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/dmpnn_rdkit_cv_metrics.json (7 tasks)
+2026-04-05 20:31:30 | INFO  | backfill_metrics | 
+============================================================
+2026-04-05 20:31:30 | INFO  | backfill_metrics |   DMPNN:      no changes needed
+2026-04-05 20:31:30 | INFO  | backfill_metrics |   RF:         patched
+2026-04-05 20:31:30 | INFO  | backfill_metrics |   DMPNN+RDKit: patched
+2026-04-05 20:31:30 | INFO  | backfill_metrics | ============================================================

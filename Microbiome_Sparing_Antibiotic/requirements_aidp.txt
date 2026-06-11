@@ -1,0 +1,47 @@
+# requirements_aidp.txt
+# Microbiome-Sparing Antibiotic Discovery Pipeline
+# Target: Oracle AI Data Platform (AIDP)
+# Python: 3.11 (pre-installed on AIDP)
+#
+# AIDP pre-installed packages (DO NOT reinstall):
+#   pyspark, pandas, numpy, scipy, scikit-learn, matplotlib
+#
+# Install with:
+#   pip install -r requirements_aidp.txt --no-deps --ignore-installed pyspark
+#
+# Or if AIDP restricts pip:
+#   pip install --user -r requirements_aidp.txt
+
+# --- Pin pandas < 3.0 (AIDP PySpark compat) ---
+pandas>=2.0.0,<3.0
+
+# --- Core scientific (only if not already on AIDP) ---
+numpy>=1.24.0
+scipy>=1.11.0
+scikit-learn>=1.3.0
+joblib>=1.3.0
+tqdm>=4.65.0
+
+# --- Chemistry ---
+rdkit>=2023.3.1
+
+# --- Visualization ---
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+openpyxl>=3.1.0
+
+# --- Data APIs ---
+requests>=2.31.0
+chembl-webresource-client>=0.10.8
+pubchempy>=1.0.4
+
+# --- ChEMBL bulk download ---
+chembl-downloader>=0.4.0
+pystow>=0.5.0
+gdown>=4.7.0
+
+# --- D-MPNN stack (Python 3.11 compatible) ---
+torch>=2.0.0
+lightning>=2.0.0
+chemprop>=2.0.0

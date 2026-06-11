@@ -1,0 +1,1304 @@
+2026-03-21 19:07:12 | INFO  | phase3d | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity/logs/phase3d.log
+2026-03-21 19:07:12 | INFO  | phase3d | ============================================================
+2026-03-21 19:07:12 | INFO  | phase3d |  STARTING: Phase 3D: MoLFormer-XL Fine-Tuning
+2026-03-21 19:07:12 | INFO  | phase3d | ============================================================
+2026-03-21 19:07:18 | INFO  | phase3d |   torch=2.4.1+cu118, transformers=4.57.6
+2026-03-21 19:07:20 | INFO  | phase3d |   GPU: NVIDIA GeForce RTX 2080 Ti (10.6 GB)
+2026-03-21 19:07:20 | INFO  | phase3d | 
+  7 tasks to train
+2026-03-21 19:07:20 | INFO  | phase3d | 
+  >>> Model 1/7: molformer_ecoli <<<
+2026-03-21 19:07:20 | INFO  | phase3d | 
+  Training molformer_ecoli with 5-fold scaffold CV...
+2026-03-21 19:07:20 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_0] Starting fold 0/5...
+2026-03-21 19:07:22 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 19:07:22 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 19:07:31 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 19:07:31 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 19:07:31 | INFO  | phase3d |     Device: cuda
+2026-03-21 19:07:42 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_0] SKIP (cached model), ROC-AUC=0.8383, PR-AUC=0.7833
+2026-03-21 19:07:42 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_1] Starting fold 1/5...
+2026-03-21 19:07:42 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 19:07:42 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 19:07:45 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 19:07:45 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 19:07:45 | INFO  | phase3d |     Device: cuda
+2026-03-21 19:07:56 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_1] SKIP (cached model), ROC-AUC=0.8317, PR-AUC=0.7473
+2026-03-21 19:07:56 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_2] Starting fold 2/5...
+2026-03-21 19:07:56 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 19:07:56 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 19:08:00 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 19:08:00 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 19:08:00 | INFO  | phase3d |     Device: cuda
+2026-03-21 19:08:10 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_2] SKIP (cached model), ROC-AUC=0.8330, PR-AUC=0.7289
+2026-03-21 19:08:10 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_3] Starting fold 3/5...
+2026-03-21 19:08:10 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 19:08:10 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 19:08:14 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 19:08:14 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 19:08:14 | INFO  | phase3d |     Device: cuda
+2026-03-21 19:08:24 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_3] SKIP (cached model), ROC-AUC=0.8160, PR-AUC=0.6956
+2026-03-21 19:08:24 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_4] Starting fold 4/5...
+2026-03-21 19:08:24 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 19:08:24 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 19:08:28 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 19:08:28 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 19:08:28 | INFO  | phase3d |     Device: cuda
+2026-03-21 19:08:37 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_4] SKIP (cached model), ROC-AUC=0.8702, PR-AUC=0.8226
+2026-03-21 19:08:37 | INFO  | phase3d |   molformer_ecoli CV: ROC-AUC = 0.8378 +/- 0.0178
+2026-03-21 19:08:37 | INFO  | phase3d |   molformer_ecoli: 77s
+2026-03-21 19:08:37 | INFO  | phase3d |     Training final molformer_ecoli on all 28284 samples...
+2026-03-21 19:08:37 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 19:08:37 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 19:08:41 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 19:08:41 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 19:08:41 | INFO  | phase3d |     Device: cuda
+2026-03-21 19:08:41 | INFO  | phase3d |     Tokenizing 28284 training SMILES...
+2026-03-21 19:08:47 | INFO  | phase3d |     Tokenized in 5.8s, input shape: torch.Size([28284, 202])
+2026-03-21 19:08:47 | INFO  | phase3d |     Training: 20 epochs, 884 batches/epoch, batch_size=32, 28284 compounds
+2026-03-21 19:08:47 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=1768/17680 steps
+2026-03-21 19:12:27 | INFO  | phase3d |     Epoch 1/20: train_loss=0.5484, 221s
+2026-03-21 19:16:14 | INFO  | phase3d |     Epoch 2/20: train_loss=0.4533, 227s
+2026-03-21 19:20:01 | INFO  | phase3d |     Epoch 3/20: train_loss=0.4138, 227s
+2026-03-21 19:23:48 | INFO  | phase3d |     Epoch 4/20: train_loss=0.3743, 228s
+2026-03-21 19:27:37 | INFO  | phase3d |     Epoch 5/20: train_loss=0.3436, 229s
+2026-03-21 19:31:26 | INFO  | phase3d |     Epoch 6/20: train_loss=0.3201, 229s
+2026-03-21 19:35:15 | INFO  | phase3d |     Epoch 7/20: train_loss=0.2970, 229s
+2026-03-21 19:39:04 | INFO  | phase3d |     Epoch 8/20: train_loss=0.2805, 230s
+2026-03-21 19:42:54 | INFO  | phase3d |     Epoch 9/20: train_loss=0.2686, 229s
+2026-03-21 19:46:43 | INFO  | phase3d |     Epoch 10/20: train_loss=0.2557, 229s
+2026-03-21 19:50:32 | INFO  | phase3d |     Epoch 11/20: train_loss=0.2398, 229s
+2026-03-21 19:54:21 | INFO  | phase3d |     Epoch 12/20: train_loss=0.2330, 229s
+2026-03-21 19:58:10 | INFO  | phase3d |     Epoch 13/20: train_loss=0.2218, 229s
+2026-03-21 20:02:00 | INFO  | phase3d |     Epoch 14/20: train_loss=0.2126, 230s
+2026-03-21 20:05:49 | INFO  | phase3d |     Epoch 15/20: train_loss=0.2059, 229s
+2026-03-21 20:09:39 | INFO  | phase3d |     Epoch 16/20: train_loss=0.1986, 230s
+2026-03-21 20:13:29 | INFO  | phase3d |     Epoch 17/20: train_loss=0.1933, 230s
+2026-03-21 20:17:19 | INFO  | phase3d |     Epoch 18/20: train_loss=0.1938, 230s
+2026-03-21 20:21:10 | INFO  | phase3d |     Epoch 19/20: train_loss=0.1909, 230s
+2026-03-21 20:24:59 | INFO  | phase3d |     Epoch 20/20: train_loss=0.1907, 230s
+2026-03-21 20:25:14 | INFO  | phase3d |     Screening: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/screening/molformer_ranked_ecoli.csv (6739 compounds)
+2026-03-21 20:25:14 | INFO  | phase3d | 
+  >>> Model 2/7: molformer_saureus <<<
+2026-03-21 20:25:14 | INFO  | phase3d | 
+  Training molformer_saureus with 5-fold scaffold CV...
+2026-03-21 20:25:14 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_0] Starting fold 0/5...
+2026-03-21 20:25:14 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 20:25:14 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 20:25:18 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 20:25:18 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 20:25:18 | INFO  | phase3d |     Device: cuda
+2026-03-21 20:25:35 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_0] SKIP (cached model), ROC-AUC=0.8562, PR-AUC=0.8203
+2026-03-21 20:25:35 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_1] Starting fold 1/5...
+2026-03-21 20:25:35 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 20:25:35 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 20:25:39 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 20:25:39 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 20:25:39 | INFO  | phase3d |     Device: cuda
+2026-03-21 20:25:55 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_1] SKIP (cached model), ROC-AUC=0.8231, PR-AUC=0.8003
+2026-03-21 20:25:56 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_2] Starting fold 2/5...
+2026-03-21 20:25:56 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 20:25:56 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 20:25:59 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 20:25:59 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 20:25:59 | INFO  | phase3d |     Device: cuda
+2026-03-21 20:26:16 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_2] SKIP (cached model), ROC-AUC=0.8491, PR-AUC=0.8326
+2026-03-21 20:26:16 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_3] Starting fold 3/5...
+2026-03-21 20:26:16 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 20:26:16 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 20:26:20 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 20:26:20 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 20:26:20 | INFO  | phase3d |     Device: cuda
+2026-03-21 20:26:37 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_3] SKIP (cached model), ROC-AUC=0.8239, PR-AUC=0.7670
+2026-03-21 20:26:37 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_4] Starting fold 4/5...
+2026-03-21 20:26:37 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 20:26:37 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 20:26:41 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 20:26:41 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 20:26:41 | INFO  | phase3d |     Device: cuda
+2026-03-21 20:26:58 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_4] SKIP (cached model), ROC-AUC=0.8206, PR-AUC=0.7919
+2026-03-21 20:26:58 | INFO  | phase3d |   molformer_saureus CV: ROC-AUC = 0.8346 +/- 0.0150
+2026-03-21 20:26:58 | INFO  | phase3d |   molformer_saureus: 105s
+2026-03-21 20:26:59 | INFO  | phase3d |     Training final molformer_saureus on all 43853 samples...
+2026-03-21 20:26:59 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 20:26:59 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 20:27:02 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 20:27:02 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 20:27:02 | INFO  | phase3d |     Device: cuda
+2026-03-21 20:27:02 | INFO  | phase3d |     Tokenizing 43853 training SMILES...
+2026-03-21 20:27:10 | INFO  | phase3d |     Tokenized in 8.4s, input shape: torch.Size([43853, 202])
+2026-03-21 20:27:10 | INFO  | phase3d |     Training: 20 epochs, 1371 batches/epoch, batch_size=32, 43853 compounds
+2026-03-21 20:27:10 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=2742/27420 steps
+2026-03-21 20:33:06 | INFO  | phase3d |     Epoch 1/20: train_loss=0.5916, 355s
+2026-03-21 20:39:04 | INFO  | phase3d |     Epoch 2/20: train_loss=0.5111, 358s
+2026-03-21 20:45:02 | INFO  | phase3d |     Epoch 3/20: train_loss=0.4653, 359s
+2026-03-21 20:51:00 | INFO  | phase3d |     Epoch 4/20: train_loss=0.4230, 358s
+2026-03-21 20:56:57 | INFO  | phase3d |     Epoch 5/20: train_loss=0.3921, 357s
+2026-03-21 21:02:55 | INFO  | phase3d |     Epoch 6/20: train_loss=0.3662, 358s
+2026-03-21 21:08:51 | INFO  | phase3d |     Epoch 7/20: train_loss=0.3446, 357s
+2026-03-21 21:14:48 | INFO  | phase3d |     Epoch 8/20: train_loss=0.3288, 357s
+2026-03-21 21:20:44 | INFO  | phase3d |     Epoch 9/20: train_loss=0.3118, 356s
+2026-03-21 21:26:41 | INFO  | phase3d |     Epoch 10/20: train_loss=0.3002, 356s
+2026-03-21 21:32:37 | INFO  | phase3d |     Epoch 11/20: train_loss=0.2837, 356s
+2026-03-21 21:38:33 | INFO  | phase3d |     Epoch 12/20: train_loss=0.2754, 356s
+2026-03-21 21:44:30 | INFO  | phase3d |     Epoch 13/20: train_loss=0.2615, 357s
+2026-03-21 21:50:26 | INFO  | phase3d |     Epoch 14/20: train_loss=0.2558, 355s
+2026-03-21 21:56:22 | INFO  | phase3d |     Epoch 15/20: train_loss=0.2454, 356s
+2026-03-21 22:02:18 | INFO  | phase3d |     Epoch 16/20: train_loss=0.2381, 356s
+2026-03-21 22:08:15 | INFO  | phase3d |     Epoch 17/20: train_loss=0.2366, 357s
+2026-03-21 22:14:11 | INFO  | phase3d |     Epoch 18/20: train_loss=0.2312, 356s
+2026-03-21 22:20:07 | INFO  | phase3d |     Epoch 19/20: train_loss=0.2297, 356s
+2026-03-21 22:26:02 | INFO  | phase3d |     Epoch 20/20: train_loss=0.2284, 355s
+2026-03-21 22:26:17 | INFO  | phase3d |     Screening: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/screening/molformer_ranked_saureus.csv (6739 compounds)
+2026-03-21 22:26:17 | INFO  | phase3d | 
+  >>> Model 3/7: molformer_paeruginosa <<<
+2026-03-21 22:26:17 | INFO  | phase3d | 
+  Training molformer_paeruginosa with 5-fold scaffold CV...
+2026-03-21 22:26:17 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_0] Starting fold 0/5...
+2026-03-21 22:26:17 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 22:26:17 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 22:26:21 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 22:26:21 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 22:26:21 | INFO  | phase3d |     Device: cuda
+2026-03-21 22:26:27 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_0] SKIP (cached model), ROC-AUC=0.8162, PR-AUC=0.6681
+2026-03-21 22:26:27 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_1] Starting fold 1/5...
+2026-03-21 22:26:27 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 22:26:27 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 22:26:31 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 22:26:31 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 22:26:31 | INFO  | phase3d |     Device: cuda
+2026-03-21 22:26:37 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_1] SKIP (cached model), ROC-AUC=0.8189, PR-AUC=0.6450
+2026-03-21 22:26:37 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_2] Starting fold 2/5...
+2026-03-21 22:26:37 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 22:26:37 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 22:26:41 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 22:26:41 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 22:26:41 | INFO  | phase3d |     Device: cuda
+2026-03-21 22:26:47 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_2] SKIP (cached model), ROC-AUC=0.8224, PR-AUC=0.6929
+2026-03-21 22:26:47 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_3] Starting fold 3/5...
+2026-03-21 22:26:47 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 22:26:47 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 22:26:51 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 22:26:51 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 22:26:51 | INFO  | phase3d |     Device: cuda
+2026-03-21 22:26:57 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_3] SKIP (cached model), ROC-AUC=0.8345, PR-AUC=0.6599
+2026-03-21 22:26:57 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_4] Starting fold 4/5...
+2026-03-21 22:26:57 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 22:26:57 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 22:27:01 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 22:27:01 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 22:27:01 | INFO  | phase3d |     Device: cuda
+2026-03-21 22:27:07 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_4] SKIP (cached model), ROC-AUC=0.8456, PR-AUC=0.6995
+2026-03-21 22:27:07 | INFO  | phase3d |   molformer_paeruginosa CV: ROC-AUC = 0.8275 +/- 0.0110
+2026-03-21 22:27:07 | INFO  | phase3d |   molformer_paeruginosa: 50s
+2026-03-21 22:27:07 | INFO  | phase3d |     Training final molformer_paeruginosa on all 17783 samples...
+2026-03-21 22:27:07 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 22:27:07 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 22:27:11 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 22:27:11 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 22:27:11 | INFO  | phase3d |     Device: cuda
+2026-03-21 22:27:11 | INFO  | phase3d |     Tokenizing 17783 training SMILES...
+2026-03-21 22:27:14 | INFO  | phase3d |     Tokenized in 3.2s, input shape: torch.Size([17783, 202])
+2026-03-21 22:27:14 | INFO  | phase3d |     Training: 20 epochs, 556 batches/epoch, batch_size=32, 17783 compounds
+2026-03-21 22:27:14 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=1112/11120 steps
+2026-03-21 22:29:35 | INFO  | phase3d |     Epoch 1/20: train_loss=0.5542, 141s
+2026-03-21 22:31:59 | INFO  | phase3d |     Epoch 2/20: train_loss=0.4345, 144s
+2026-03-21 22:34:23 | INFO  | phase3d |     Epoch 3/20: train_loss=0.3954, 144s
+2026-03-21 22:36:47 | INFO  | phase3d |     Epoch 4/20: train_loss=0.3547, 144s
+2026-03-21 22:39:11 | INFO  | phase3d |     Epoch 5/20: train_loss=0.3289, 144s
+2026-03-21 22:41:35 | INFO  | phase3d |     Epoch 6/20: train_loss=0.3072, 144s
+2026-03-21 22:43:59 | INFO  | phase3d |     Epoch 7/20: train_loss=0.2871, 144s
+2026-03-21 22:46:23 | INFO  | phase3d |     Epoch 8/20: train_loss=0.2723, 144s
+2026-03-21 22:48:47 | INFO  | phase3d |     Epoch 9/20: train_loss=0.2585, 144s
+2026-03-21 22:51:11 | INFO  | phase3d |     Epoch 10/20: train_loss=0.2450, 144s
+2026-03-21 22:53:35 | INFO  | phase3d |     Epoch 11/20: train_loss=0.2356, 144s
+2026-03-21 22:55:59 | INFO  | phase3d |     Epoch 12/20: train_loss=0.2234, 144s
+2026-03-21 22:58:24 | INFO  | phase3d |     Epoch 13/20: train_loss=0.2164, 144s
+2026-03-21 23:00:48 | INFO  | phase3d |     Epoch 14/20: train_loss=0.2078, 144s
+2026-03-21 23:03:12 | INFO  | phase3d |     Epoch 15/20: train_loss=0.2006, 144s
+2026-03-21 23:05:36 | INFO  | phase3d |     Epoch 16/20: train_loss=0.1988, 144s
+2026-03-21 23:08:01 | INFO  | phase3d |     Epoch 17/20: train_loss=0.1960, 145s
+2026-03-21 23:10:25 | INFO  | phase3d |     Epoch 18/20: train_loss=0.1887, 144s
+2026-03-21 23:12:49 | INFO  | phase3d |     Epoch 19/20: train_loss=0.1892, 144s
+2026-03-21 23:15:13 | INFO  | phase3d |     Epoch 20/20: train_loss=0.1849, 144s
+2026-03-21 23:15:27 | INFO  | phase3d |     Screening: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/screening/molformer_ranked_paeruginosa.csv (6739 compounds)
+2026-03-21 23:15:27 | INFO  | phase3d | 
+  >>> Model 4/7: molformer_mtb <<<
+2026-03-21 23:15:27 | INFO  | phase3d | 
+  Training molformer_mtb with 5-fold scaffold CV...
+2026-03-21 23:15:27 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_0] Starting fold 0/5...
+2026-03-21 23:15:27 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 23:15:27 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 23:15:31 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 23:15:31 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 23:15:31 | INFO  | phase3d |     Device: cuda
+2026-03-21 23:15:36 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_0] SKIP (cached model), ROC-AUC=0.7631, PR-AUC=0.7026
+2026-03-21 23:15:36 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_1] Starting fold 1/5...
+2026-03-21 23:15:36 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 23:15:36 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 23:15:40 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 23:15:40 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 23:15:40 | INFO  | phase3d |     Device: cuda
+2026-03-21 23:15:45 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_1] SKIP (cached model), ROC-AUC=0.7305, PR-AUC=0.6700
+2026-03-21 23:15:45 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_2] Starting fold 2/5...
+2026-03-21 23:15:45 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 23:15:45 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 23:15:49 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 23:15:49 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 23:15:49 | INFO  | phase3d |     Device: cuda
+2026-03-21 23:15:54 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_2] SKIP (cached model), ROC-AUC=0.7811, PR-AUC=0.7675
+2026-03-21 23:15:54 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_3] Starting fold 3/5...
+2026-03-21 23:15:54 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 23:15:54 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 23:15:58 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 23:15:58 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 23:15:58 | INFO  | phase3d |     Device: cuda
+2026-03-21 23:16:03 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_3] SKIP (cached model), ROC-AUC=0.7749, PR-AUC=0.6963
+2026-03-21 23:16:03 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_4] Starting fold 4/5...
+2026-03-21 23:16:03 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 23:16:03 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 23:16:07 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 23:16:07 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 23:16:07 | INFO  | phase3d |     Device: cuda
+2026-03-21 23:16:11 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_4] SKIP (cached model), ROC-AUC=0.7702, PR-AUC=0.7599
+2026-03-21 23:16:11 | INFO  | phase3d |   molformer_mtb CV: ROC-AUC = 0.7640 +/- 0.0177
+2026-03-21 23:16:11 | INFO  | phase3d |   molformer_mtb: 44s
+2026-03-21 23:16:11 | INFO  | phase3d |     Training final molformer_mtb on all 18705 samples...
+2026-03-21 23:16:11 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-21 23:16:11 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-21 23:16:15 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-21 23:16:15 | INFO  | phase3d |     Classifier: 769 params
+2026-03-21 23:16:15 | INFO  | phase3d |     Device: cuda
+2026-03-21 23:16:15 | INFO  | phase3d |     Tokenizing 18705 training SMILES...
+2026-03-21 23:16:18 | INFO  | phase3d |     Tokenized in 3.1s, input shape: torch.Size([18705, 202])
+2026-03-21 23:16:18 | INFO  | phase3d |     Training: 20 epochs, 585 batches/epoch, batch_size=32, 18705 compounds
+2026-03-21 23:16:18 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=1170/11700 steps
+2026-03-21 23:18:46 | INFO  | phase3d |     Epoch 1/20: train_loss=0.6489, 148s
+2026-03-21 23:21:17 | INFO  | phase3d |     Epoch 2/20: train_loss=0.5767, 151s
+2026-03-21 23:23:48 | INFO  | phase3d |     Epoch 3/20: train_loss=0.5181, 151s
+2026-03-21 23:26:19 | INFO  | phase3d |     Epoch 4/20: train_loss=0.4753, 151s
+2026-03-21 23:28:50 | INFO  | phase3d |     Epoch 5/20: train_loss=0.4403, 151s
+2026-03-21 23:31:22 | INFO  | phase3d |     Epoch 6/20: train_loss=0.4124, 151s
+2026-03-21 23:33:53 | INFO  | phase3d |     Epoch 7/20: train_loss=0.3881, 151s
+2026-03-21 23:36:24 | INFO  | phase3d |     Epoch 8/20: train_loss=0.3686, 151s
+2026-03-21 23:38:55 | INFO  | phase3d |     Epoch 9/20: train_loss=0.3525, 151s
+2026-03-21 23:41:26 | INFO  | phase3d |     Epoch 10/20: train_loss=0.3329, 151s
+2026-03-21 23:43:57 | INFO  | phase3d |     Epoch 11/20: train_loss=0.3204, 151s
+2026-03-21 23:46:28 | INFO  | phase3d |     Epoch 12/20: train_loss=0.3093, 151s
+2026-03-21 23:48:59 | INFO  | phase3d |     Epoch 13/20: train_loss=0.2916, 151s
+2026-03-21 23:51:30 | INFO  | phase3d |     Epoch 14/20: train_loss=0.2853, 152s
+2026-03-21 23:54:02 | INFO  | phase3d |     Epoch 15/20: train_loss=0.2794, 151s
+2026-03-21 23:56:33 | INFO  | phase3d |     Epoch 16/20: train_loss=0.2741, 152s
+2026-03-21 23:59:05 | INFO  | phase3d |     Epoch 17/20: train_loss=0.2627, 151s
+2026-03-22 00:01:36 | INFO  | phase3d |     Epoch 18/20: train_loss=0.2599, 151s
+2026-03-22 00:04:07 | INFO  | phase3d |     Epoch 19/20: train_loss=0.2588, 151s
+2026-03-22 00:06:38 | INFO  | phase3d |     Epoch 20/20: train_loss=0.2586, 151s
+2026-03-22 00:06:52 | INFO  | phase3d |     Screening: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/screening/molformer_ranked_mtb.csv (6739 compounds)
+2026-03-22 00:06:52 | INFO  | phase3d | 
+  >>> Model 5/7: molformer_gut_t5 <<<
+2026-03-22 00:06:52 | INFO  | phase3d | 
+  Training molformer_gut_t5 with 5-fold scaffold CV...
+2026-03-22 00:06:52 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_0] Starting fold 0/5...
+2026-03-22 00:06:52 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:06:52 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:06:55 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:06:55 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:06:55 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:06:55 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_0] Train: 942 compounds, Test: 235 compounds
+2026-03-22 00:06:55 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_0] Params: lr=1e-05, batch=32, epochs=20, patience=5
+2026-03-22 00:06:55 | INFO  | phase3d |     Tokenizing 942 training SMILES...
+2026-03-22 00:06:56 | INFO  | phase3d |     Tokenized in 0.2s, input shape: torch.Size([942, 202])
+2026-03-22 00:06:56 | INFO  | phase3d |     Training: 20 epochs, 30 batches/epoch, batch_size=32, 942 compounds
+2026-03-22 00:06:56 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=60/600 steps
+2026-03-22 00:07:03 | INFO  | phase3d |     Epoch 1/20: train_loss=0.6160, val_loss=0.5557, best=0.5557 *, patience=0/5, 7s
+2026-03-22 00:07:11 | INFO  | phase3d |     Epoch 2/20: train_loss=0.4856, val_loss=0.4983, best=0.4983 *, patience=0/5, 8s
+2026-03-22 00:07:19 | INFO  | phase3d |     Epoch 3/20: train_loss=0.4084, val_loss=0.4317, best=0.4317 *, patience=0/5, 8s
+2026-03-22 00:07:27 | INFO  | phase3d |     Epoch 4/20: train_loss=0.3489, val_loss=0.3968, best=0.3968 *, patience=0/5, 8s
+2026-03-22 00:07:34 | INFO  | phase3d |     Epoch 5/20: train_loss=0.2900, val_loss=0.3781, best=0.3781 *, patience=0/5, 8s
+2026-03-22 00:07:42 | INFO  | phase3d |     Epoch 6/20: train_loss=0.2431, val_loss=0.3620, best=0.3620 *, patience=0/5, 8s
+2026-03-22 00:07:50 | INFO  | phase3d |     Epoch 7/20: train_loss=0.2181, val_loss=0.3571, best=0.3571 *, patience=0/5, 8s
+2026-03-22 00:07:58 | INFO  | phase3d |     Epoch 8/20: train_loss=0.1865, val_loss=0.3451, best=0.3451 *, patience=0/5, 8s
+2026-03-22 00:08:06 | INFO  | phase3d |     Epoch 9/20: train_loss=0.1591, val_loss=0.3645, best=0.3451, patience=1/5, 8s
+2026-03-22 00:08:14 | INFO  | phase3d |     Epoch 10/20: train_loss=0.1509, val_loss=0.3878, best=0.3451, patience=2/5, 8s
+2026-03-22 00:08:22 | INFO  | phase3d |     Epoch 11/20: train_loss=0.1341, val_loss=0.4163, best=0.3451, patience=3/5, 8s
+2026-03-22 00:08:30 | INFO  | phase3d |     Epoch 12/20: train_loss=0.1205, val_loss=0.4119, best=0.3451, patience=4/5, 8s
+2026-03-22 00:08:38 | INFO  | phase3d |     Epoch 13/20: train_loss=0.1090, val_loss=0.4418, best=0.3451, patience=5/5, 8s
+2026-03-22 00:08:38 | INFO  | phase3d |       Early stopping at epoch 13
+2026-03-22 00:08:39 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_0] ROC-AUC=0.8748, PR-AUC=0.7494, MCC=0.5421, 103s
+2026-03-22 00:08:39 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_1] Starting fold 1/5...
+2026-03-22 00:08:39 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:08:39 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:08:43 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:08:43 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:08:43 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:08:43 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_1] Train: 941 compounds, Test: 236 compounds
+2026-03-22 00:08:43 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_1] Params: lr=1e-05, batch=32, epochs=20, patience=5
+2026-03-22 00:08:43 | INFO  | phase3d |     Tokenizing 941 training SMILES...
+2026-03-22 00:08:43 | INFO  | phase3d |     Tokenized in 0.2s, input shape: torch.Size([941, 202])
+2026-03-22 00:08:43 | INFO  | phase3d |     Training: 20 epochs, 30 batches/epoch, batch_size=32, 941 compounds
+2026-03-22 00:08:43 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=60/600 steps
+2026-03-22 00:08:50 | INFO  | phase3d |     Epoch 1/20: train_loss=0.5773, val_loss=0.5339, best=0.5339 *, patience=0/5, 7s
+2026-03-22 00:08:58 | INFO  | phase3d |     Epoch 2/20: train_loss=0.4848, val_loss=0.4702, best=0.4702 *, patience=0/5, 8s
+2026-03-22 00:09:06 | INFO  | phase3d |     Epoch 3/20: train_loss=0.3903, val_loss=0.4246, best=0.4246 *, patience=0/5, 8s
+2026-03-22 00:09:13 | INFO  | phase3d |     Epoch 4/20: train_loss=0.3303, val_loss=0.3932, best=0.3932 *, patience=0/5, 8s
+2026-03-22 00:09:21 | INFO  | phase3d |     Epoch 5/20: train_loss=0.2754, val_loss=0.3879, best=0.3879 *, patience=0/5, 8s
+2026-03-22 00:09:29 | INFO  | phase3d |     Epoch 6/20: train_loss=0.2391, val_loss=0.4160, best=0.3879, patience=1/5, 8s
+2026-03-22 00:09:37 | INFO  | phase3d |     Epoch 7/20: train_loss=0.2142, val_loss=0.3970, best=0.3879, patience=2/5, 8s
+2026-03-22 00:09:45 | INFO  | phase3d |     Epoch 8/20: train_loss=0.1811, val_loss=0.4033, best=0.3879, patience=3/5, 8s
+2026-03-22 00:09:53 | INFO  | phase3d |     Epoch 9/20: train_loss=0.1670, val_loss=0.4297, best=0.3879, patience=4/5, 8s
+2026-03-22 00:10:01 | INFO  | phase3d |     Epoch 10/20: train_loss=0.1497, val_loss=0.4306, best=0.3879, patience=5/5, 8s
+2026-03-22 00:10:01 | INFO  | phase3d |       Early stopping at epoch 10
+2026-03-22 00:10:01 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_1] ROC-AUC=0.8126, PR-AUC=0.6478, MCC=0.5008, 79s
+2026-03-22 00:10:02 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_2] Starting fold 2/5...
+2026-03-22 00:10:02 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:10:02 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:10:05 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:10:05 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:10:05 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:10:05 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_2] Train: 941 compounds, Test: 236 compounds
+2026-03-22 00:10:05 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_2] Params: lr=1e-05, batch=32, epochs=20, patience=5
+2026-03-22 00:10:05 | INFO  | phase3d |     Tokenizing 941 training SMILES...
+2026-03-22 00:10:05 | INFO  | phase3d |     Tokenized in 0.2s, input shape: torch.Size([941, 202])
+2026-03-22 00:10:05 | INFO  | phase3d |     Training: 20 epochs, 30 batches/epoch, batch_size=32, 941 compounds
+2026-03-22 00:10:05 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=60/600 steps
+2026-03-22 00:10:13 | INFO  | phase3d |     Epoch 1/20: train_loss=0.7191, val_loss=0.5962, best=0.5962 *, patience=0/5, 7s
+2026-03-22 00:10:20 | INFO  | phase3d |     Epoch 2/20: train_loss=0.4923, val_loss=0.5102, best=0.5102 *, patience=0/5, 8s
+2026-03-22 00:10:28 | INFO  | phase3d |     Epoch 3/20: train_loss=0.3763, val_loss=0.5304, best=0.5102, patience=1/5, 8s
+2026-03-22 00:10:36 | INFO  | phase3d |     Epoch 4/20: train_loss=0.3097, val_loss=0.4945, best=0.4945 *, patience=0/5, 8s
+2026-03-22 00:10:44 | INFO  | phase3d |     Epoch 5/20: train_loss=0.2652, val_loss=0.4919, best=0.4919 *, patience=0/5, 8s
+2026-03-22 00:10:52 | INFO  | phase3d |     Epoch 6/20: train_loss=0.2357, val_loss=0.4768, best=0.4768 *, patience=0/5, 8s
+2026-03-22 00:11:00 | INFO  | phase3d |     Epoch 7/20: train_loss=0.2076, val_loss=0.4828, best=0.4768, patience=1/5, 8s
+2026-03-22 00:11:08 | INFO  | phase3d |     Epoch 8/20: train_loss=0.1949, val_loss=0.4808, best=0.4768, patience=2/5, 8s
+2026-03-22 00:11:16 | INFO  | phase3d |     Epoch 9/20: train_loss=0.1599, val_loss=0.5365, best=0.4768, patience=3/5, 8s
+2026-03-22 00:11:24 | INFO  | phase3d |     Epoch 10/20: train_loss=0.1549, val_loss=0.5681, best=0.4768, patience=4/5, 8s
+2026-03-22 00:11:31 | INFO  | phase3d |     Epoch 11/20: train_loss=0.1395, val_loss=0.6396, best=0.4768, patience=5/5, 8s
+2026-03-22 00:11:31 | INFO  | phase3d |       Early stopping at epoch 11
+2026-03-22 00:11:32 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_2] ROC-AUC=0.7946, PR-AUC=0.6316, MCC=0.4296, 87s
+2026-03-22 00:11:32 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_3] Starting fold 3/5...
+2026-03-22 00:11:32 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:11:32 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:11:36 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:11:36 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:11:36 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:11:36 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_3] Train: 942 compounds, Test: 235 compounds
+2026-03-22 00:11:36 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_3] Params: lr=1e-05, batch=32, epochs=20, patience=5
+2026-03-22 00:11:36 | INFO  | phase3d |     Tokenizing 942 training SMILES...
+2026-03-22 00:11:36 | INFO  | phase3d |     Tokenized in 0.2s, input shape: torch.Size([942, 202])
+2026-03-22 00:11:36 | INFO  | phase3d |     Training: 20 epochs, 30 batches/epoch, batch_size=32, 942 compounds
+2026-03-22 00:11:36 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=60/600 steps
+2026-03-22 00:11:43 | INFO  | phase3d |     Epoch 1/20: train_loss=0.6026, val_loss=0.4313, best=0.4313 *, patience=0/5, 7s
+2026-03-22 00:11:51 | INFO  | phase3d |     Epoch 2/20: train_loss=0.5036, val_loss=0.3205, best=0.3205 *, patience=0/5, 8s
+2026-03-22 00:11:59 | INFO  | phase3d |     Epoch 3/20: train_loss=0.4294, val_loss=0.2954, best=0.2954 *, patience=0/5, 8s
+2026-03-22 00:12:06 | INFO  | phase3d |     Epoch 4/20: train_loss=0.3694, val_loss=0.2609, best=0.2609 *, patience=0/5, 8s
+2026-03-22 00:12:14 | INFO  | phase3d |     Epoch 5/20: train_loss=0.3214, val_loss=0.2357, best=0.2357 *, patience=0/5, 8s
+2026-03-22 00:12:22 | INFO  | phase3d |     Epoch 6/20: train_loss=0.2710, val_loss=0.2538, best=0.2357, patience=1/5, 8s
+2026-03-22 00:12:30 | INFO  | phase3d |     Epoch 7/20: train_loss=0.2383, val_loss=0.2432, best=0.2357, patience=2/5, 8s
+2026-03-22 00:12:38 | INFO  | phase3d |     Epoch 8/20: train_loss=0.2074, val_loss=0.2572, best=0.2357, patience=3/5, 8s
+2026-03-22 00:12:46 | INFO  | phase3d |     Epoch 9/20: train_loss=0.1880, val_loss=0.2645, best=0.2357, patience=4/5, 8s
+2026-03-22 00:12:54 | INFO  | phase3d |     Epoch 10/20: train_loss=0.1646, val_loss=0.3022, best=0.2357, patience=5/5, 8s
+2026-03-22 00:12:54 | INFO  | phase3d |       Early stopping at epoch 10
+2026-03-22 00:12:54 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_3] ROC-AUC=0.8451, PR-AUC=0.4985, MCC=0.4821, 79s
+2026-03-22 00:12:54 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_4] Starting fold 4/5...
+2026-03-22 00:12:54 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:12:54 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:12:58 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:12:58 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:12:58 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:12:58 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_4] Train: 942 compounds, Test: 235 compounds
+2026-03-22 00:12:58 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_4] Params: lr=1e-05, batch=32, epochs=20, patience=5
+2026-03-22 00:12:58 | INFO  | phase3d |     Tokenizing 942 training SMILES...
+2026-03-22 00:12:58 | INFO  | phase3d |     Tokenized in 0.2s, input shape: torch.Size([942, 181])
+2026-03-22 00:12:58 | INFO  | phase3d |     Training: 20 epochs, 30 batches/epoch, batch_size=32, 942 compounds
+2026-03-22 00:12:58 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=60/600 steps
+2026-03-22 00:13:05 | INFO  | phase3d |     Epoch 1/20: train_loss=0.7139, val_loss=0.5797, best=0.5797 *, patience=0/5, 7s
+2026-03-22 00:13:12 | INFO  | phase3d |     Epoch 2/20: train_loss=0.4893, val_loss=0.5168, best=0.5168 *, patience=0/5, 7s
+2026-03-22 00:13:20 | INFO  | phase3d |     Epoch 3/20: train_loss=0.3959, val_loss=0.4533, best=0.4533 *, patience=0/5, 7s
+2026-03-22 00:13:27 | INFO  | phase3d |     Epoch 4/20: train_loss=0.3436, val_loss=0.3742, best=0.3742 *, patience=0/5, 7s
+2026-03-22 00:13:35 | INFO  | phase3d |     Epoch 5/20: train_loss=0.2918, val_loss=0.3465, best=0.3465 *, patience=0/5, 8s
+2026-03-22 00:13:42 | INFO  | phase3d |     Epoch 6/20: train_loss=0.2448, val_loss=0.3805, best=0.3465, patience=1/5, 8s
+2026-03-22 00:13:50 | INFO  | phase3d |     Epoch 7/20: train_loss=0.2120, val_loss=0.3642, best=0.3465, patience=2/5, 8s
+2026-03-22 00:13:57 | INFO  | phase3d |     Epoch 8/20: train_loss=0.1835, val_loss=0.3409, best=0.3409 *, patience=0/5, 8s
+2026-03-22 00:14:05 | INFO  | phase3d |     Epoch 9/20: train_loss=0.1642, val_loss=0.4111, best=0.3409, patience=1/5, 8s
+2026-03-22 00:14:12 | INFO  | phase3d |     Epoch 10/20: train_loss=0.1414, val_loss=0.4112, best=0.3409, patience=2/5, 8s
+2026-03-22 00:14:20 | INFO  | phase3d |     Epoch 11/20: train_loss=0.1365, val_loss=0.4094, best=0.3409, patience=3/5, 8s
+2026-03-22 00:14:28 | INFO  | phase3d |     Epoch 12/20: train_loss=0.1180, val_loss=0.4288, best=0.3409, patience=4/5, 8s
+2026-03-22 00:14:35 | INFO  | phase3d |     Epoch 13/20: train_loss=0.1126, val_loss=0.4357, best=0.3409, patience=5/5, 8s
+2026-03-22 00:14:35 | INFO  | phase3d |       Early stopping at epoch 13
+2026-03-22 00:14:36 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_4] ROC-AUC=0.9085, PR-AUC=0.7310, MCC=0.6203, 98s
+2026-03-22 00:14:36 | INFO  | phase3d |   molformer_gut_t5 CV: ROC-AUC = 0.8471 +/- 0.0412
+2026-03-22 00:14:36 | INFO  | phase3d |   molformer_gut_t5: 464s
+2026-03-22 00:14:36 | INFO  | phase3d |     Training final molformer_gut_t5 on all 1177 samples...
+2026-03-22 00:14:36 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:14:36 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:14:40 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:14:40 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:14:40 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:14:40 | INFO  | phase3d |     Tokenizing 1177 training SMILES...
+2026-03-22 00:14:40 | INFO  | phase3d |     Tokenized in 0.3s, input shape: torch.Size([1177, 202])
+2026-03-22 00:14:40 | INFO  | phase3d |     Training: 20 epochs, 37 batches/epoch, batch_size=32, 1177 compounds
+2026-03-22 00:14:40 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=74/740 steps
+2026-03-22 00:14:49 | INFO  | phase3d |     Epoch 1/20: train_loss=0.5842, 9s
+2026-03-22 00:14:58 | INFO  | phase3d |     Epoch 2/20: train_loss=0.4681, 9s
+2026-03-22 00:15:07 | INFO  | phase3d |     Epoch 3/20: train_loss=0.3918, 9s
+2026-03-22 00:15:17 | INFO  | phase3d |     Epoch 4/20: train_loss=0.3274, 9s
+2026-03-22 00:15:26 | INFO  | phase3d |     Epoch 5/20: train_loss=0.2723, 9s
+2026-03-22 00:15:35 | INFO  | phase3d |     Epoch 6/20: train_loss=0.2393, 9s
+2026-03-22 00:15:45 | INFO  | phase3d |     Epoch 7/20: train_loss=0.2071, 9s
+2026-03-22 00:15:54 | INFO  | phase3d |     Epoch 8/20: train_loss=0.1902, 10s
+2026-03-22 00:16:04 | INFO  | phase3d |     Epoch 9/20: train_loss=0.1736, 9s
+2026-03-22 00:16:13 | INFO  | phase3d |     Epoch 10/20: train_loss=0.1508, 9s
+2026-03-22 00:16:23 | INFO  | phase3d |     Epoch 11/20: train_loss=0.1382, 10s
+2026-03-22 00:16:33 | INFO  | phase3d |     Epoch 12/20: train_loss=0.1284, 10s
+2026-03-22 00:16:42 | INFO  | phase3d |     Epoch 13/20: train_loss=0.1162, 9s
+2026-03-22 00:16:52 | INFO  | phase3d |     Epoch 14/20: train_loss=0.1185, 10s
+2026-03-22 00:17:01 | INFO  | phase3d |     Epoch 15/20: train_loss=0.0991, 10s
+2026-03-22 00:17:11 | INFO  | phase3d |     Epoch 16/20: train_loss=0.0913, 10s
+2026-03-22 00:17:20 | INFO  | phase3d |     Epoch 17/20: train_loss=0.0886, 10s
+2026-03-22 00:17:30 | INFO  | phase3d |     Epoch 18/20: train_loss=0.0867, 10s
+2026-03-22 00:17:39 | INFO  | phase3d |     Epoch 19/20: train_loss=0.0796, 10s
+2026-03-22 00:17:49 | INFO  | phase3d |     Epoch 20/20: train_loss=0.0895, 10s
+2026-03-22 00:18:02 | INFO  | phase3d |     Screening: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/screening/molformer_ranked_gut_t5.csv (6739 compounds)
+2026-03-22 00:18:02 | INFO  | phase3d | 
+  >>> Model 6/7: molformer_gut_t10 <<<
+2026-03-22 00:18:02 | INFO  | phase3d | 
+  Training molformer_gut_t10 with 5-fold scaffold CV...
+2026-03-22 00:18:02 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_0] Starting fold 0/5...
+2026-03-22 00:18:02 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:18:02 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:18:06 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:18:06 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:18:06 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:18:06 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_0] Train: 942 compounds, Test: 235 compounds
+2026-03-22 00:18:06 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_0] Params: lr=1e-05, batch=32, epochs=20, patience=5
+2026-03-22 00:18:06 | INFO  | phase3d |     Tokenizing 942 training SMILES...
+2026-03-22 00:18:06 | INFO  | phase3d |     Tokenized in 0.2s, input shape: torch.Size([942, 202])
+2026-03-22 00:18:06 | INFO  | phase3d |     Training: 20 epochs, 30 batches/epoch, batch_size=32, 942 compounds
+2026-03-22 00:18:06 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=60/600 steps
+2026-03-22 00:18:13 | INFO  | phase3d |     Epoch 1/20: train_loss=0.7443, val_loss=0.5915, best=0.5915 *, patience=0/5, 7s
+2026-03-22 00:18:21 | INFO  | phase3d |     Epoch 2/20: train_loss=0.4459, val_loss=0.4557, best=0.4557 *, patience=0/5, 8s
+2026-03-22 00:18:29 | INFO  | phase3d |     Epoch 3/20: train_loss=0.3450, val_loss=0.3645, best=0.3645 *, patience=0/5, 8s
+2026-03-22 00:18:37 | INFO  | phase3d |     Epoch 4/20: train_loss=0.2814, val_loss=0.3548, best=0.3548 *, patience=0/5, 8s
+2026-03-22 00:18:45 | INFO  | phase3d |     Epoch 5/20: train_loss=0.2458, val_loss=0.3333, best=0.3333 *, patience=0/5, 8s
+2026-03-22 00:18:53 | INFO  | phase3d |     Epoch 6/20: train_loss=0.2096, val_loss=0.3230, best=0.3230 *, patience=0/5, 8s
+2026-03-22 00:19:01 | INFO  | phase3d |     Epoch 7/20: train_loss=0.1771, val_loss=0.3932, best=0.3230, patience=1/5, 8s
+2026-03-22 00:19:09 | INFO  | phase3d |     Epoch 8/20: train_loss=0.1674, val_loss=0.3207, best=0.3207 *, patience=0/5, 8s
+2026-03-22 00:19:17 | INFO  | phase3d |     Epoch 9/20: train_loss=0.1471, val_loss=0.3624, best=0.3207, patience=1/5, 8s
+2026-03-22 00:19:25 | INFO  | phase3d |     Epoch 10/20: train_loss=0.1362, val_loss=0.3564, best=0.3207, patience=2/5, 8s
+2026-03-22 00:19:33 | INFO  | phase3d |     Epoch 11/20: train_loss=0.1130, val_loss=0.3735, best=0.3207, patience=3/5, 8s
+2026-03-22 00:19:41 | INFO  | phase3d |     Epoch 12/20: train_loss=0.1042, val_loss=0.3717, best=0.3207, patience=4/5, 8s
+2026-03-22 00:19:49 | INFO  | phase3d |     Epoch 13/20: train_loss=0.1003, val_loss=0.4004, best=0.3207, patience=5/5, 8s
+2026-03-22 00:19:49 | INFO  | phase3d |       Early stopping at epoch 13
+2026-03-22 00:19:49 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_0] ROC-AUC=0.8570, PR-AUC=0.7289, MCC=0.6162, 104s
+2026-03-22 00:19:49 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_1] Starting fold 1/5...
+2026-03-22 00:19:49 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:19:49 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:19:53 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:19:53 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:19:53 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:19:53 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_1] Train: 941 compounds, Test: 236 compounds
+2026-03-22 00:19:53 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_1] Params: lr=1e-05, batch=32, epochs=20, patience=5
+2026-03-22 00:19:53 | INFO  | phase3d |     Tokenizing 941 training SMILES...
+2026-03-22 00:19:53 | INFO  | phase3d |     Tokenized in 0.2s, input shape: torch.Size([941, 202])
+2026-03-22 00:19:53 | INFO  | phase3d |     Training: 20 epochs, 30 batches/epoch, batch_size=32, 941 compounds
+2026-03-22 00:19:53 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=60/600 steps
+2026-03-22 00:20:00 | INFO  | phase3d |     Epoch 1/20: train_loss=0.7534, val_loss=0.6039, best=0.6039 *, patience=0/5, 7s
+2026-03-22 00:20:08 | INFO  | phase3d |     Epoch 2/20: train_loss=0.4502, val_loss=0.4243, best=0.4243 *, patience=0/5, 8s
+2026-03-22 00:20:16 | INFO  | phase3d |     Epoch 3/20: train_loss=0.3319, val_loss=0.3762, best=0.3762 *, patience=0/5, 8s
+2026-03-22 00:20:24 | INFO  | phase3d |     Epoch 4/20: train_loss=0.2885, val_loss=0.3685, best=0.3685 *, patience=0/5, 8s
+2026-03-22 00:20:32 | INFO  | phase3d |     Epoch 5/20: train_loss=0.2483, val_loss=0.3683, best=0.3683 *, patience=0/5, 8s
+2026-03-22 00:20:39 | INFO  | phase3d |     Epoch 6/20: train_loss=0.2185, val_loss=0.3792, best=0.3683, patience=1/5, 8s
+2026-03-22 00:20:47 | INFO  | phase3d |     Epoch 7/20: train_loss=0.1827, val_loss=0.3568, best=0.3568 *, patience=0/5, 8s
+2026-03-22 00:20:55 | INFO  | phase3d |     Epoch 8/20: train_loss=0.1588, val_loss=0.3469, best=0.3469 *, patience=0/5, 8s
+2026-03-22 00:21:03 | INFO  | phase3d |     Epoch 9/20: train_loss=0.1407, val_loss=0.3474, best=0.3469, patience=1/5, 8s
+2026-03-22 00:21:11 | INFO  | phase3d |     Epoch 10/20: train_loss=0.1286, val_loss=0.3883, best=0.3469, patience=2/5, 8s
+2026-03-22 00:21:19 | INFO  | phase3d |     Epoch 11/20: train_loss=0.1162, val_loss=0.4127, best=0.3469, patience=3/5, 8s
+2026-03-22 00:21:27 | INFO  | phase3d |     Epoch 12/20: train_loss=0.1061, val_loss=0.3945, best=0.3469, patience=4/5, 8s
+2026-03-22 00:21:35 | INFO  | phase3d |     Epoch 13/20: train_loss=0.0989, val_loss=0.4019, best=0.3469, patience=5/5, 8s
+2026-03-22 00:21:35 | INFO  | phase3d |       Early stopping at epoch 13
+2026-03-22 00:21:36 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_1] ROC-AUC=0.8210, PR-AUC=0.6733, MCC=0.5907, 103s
+2026-03-22 00:21:36 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_2] Starting fold 2/5...
+2026-03-22 00:21:36 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:21:36 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:21:39 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:21:39 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:21:39 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:21:39 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_2] Train: 941 compounds, Test: 236 compounds
+2026-03-22 00:21:39 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_2] Params: lr=1e-05, batch=32, epochs=20, patience=5
+2026-03-22 00:21:39 | INFO  | phase3d |     Tokenizing 941 training SMILES...
+2026-03-22 00:21:40 | INFO  | phase3d |     Tokenized in 0.2s, input shape: torch.Size([941, 202])
+2026-03-22 00:21:40 | INFO  | phase3d |     Training: 20 epochs, 30 batches/epoch, batch_size=32, 941 compounds
+2026-03-22 00:21:40 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=60/600 steps
+2026-03-22 00:21:47 | INFO  | phase3d |     Epoch 1/20: train_loss=0.6895, val_loss=0.5676, best=0.5676 *, patience=0/5, 7s
+2026-03-22 00:21:55 | INFO  | phase3d |     Epoch 2/20: train_loss=0.4259, val_loss=0.4562, best=0.4562 *, patience=0/5, 8s
+2026-03-22 00:22:03 | INFO  | phase3d |     Epoch 3/20: train_loss=0.3136, val_loss=0.4206, best=0.4206 *, patience=0/5, 8s
+2026-03-22 00:22:11 | INFO  | phase3d |     Epoch 4/20: train_loss=0.2639, val_loss=0.3954, best=0.3954 *, patience=0/5, 8s
+2026-03-22 00:22:18 | INFO  | phase3d |     Epoch 5/20: train_loss=0.2245, val_loss=0.3805, best=0.3805 *, patience=0/5, 8s
+2026-03-22 00:22:26 | INFO  | phase3d |     Epoch 6/20: train_loss=0.1848, val_loss=0.4274, best=0.3805, patience=1/5, 8s
+2026-03-22 00:22:34 | INFO  | phase3d |     Epoch 7/20: train_loss=0.1754, val_loss=0.4224, best=0.3805, patience=2/5, 8s
+2026-03-22 00:22:42 | INFO  | phase3d |     Epoch 8/20: train_loss=0.1549, val_loss=0.4482, best=0.3805, patience=3/5, 8s
+2026-03-22 00:22:50 | INFO  | phase3d |     Epoch 9/20: train_loss=0.1469, val_loss=0.4522, best=0.3805, patience=4/5, 8s
+2026-03-22 00:22:58 | INFO  | phase3d |     Epoch 10/20: train_loss=0.1327, val_loss=0.4103, best=0.3805, patience=5/5, 8s
+2026-03-22 00:22:58 | INFO  | phase3d |       Early stopping at epoch 10
+2026-03-22 00:22:59 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_2] ROC-AUC=0.8075, PR-AUC=0.6186, MCC=0.5116, 79s
+2026-03-22 00:22:59 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_3] Starting fold 3/5...
+2026-03-22 00:22:59 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:22:59 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:23:03 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:23:03 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:23:03 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:23:03 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_3] Train: 942 compounds, Test: 235 compounds
+2026-03-22 00:23:03 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_3] Params: lr=1e-05, batch=32, epochs=20, patience=5
+2026-03-22 00:23:03 | INFO  | phase3d |     Tokenizing 942 training SMILES...
+2026-03-22 00:23:03 | INFO  | phase3d |     Tokenized in 0.2s, input shape: torch.Size([942, 202])
+2026-03-22 00:23:03 | INFO  | phase3d |     Training: 20 epochs, 30 batches/epoch, batch_size=32, 942 compounds
+2026-03-22 00:23:03 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=60/600 steps
+2026-03-22 00:23:10 | INFO  | phase3d |     Epoch 1/20: train_loss=0.5762, val_loss=0.4256, best=0.4256 *, patience=0/5, 7s
+2026-03-22 00:23:18 | INFO  | phase3d |     Epoch 2/20: train_loss=0.4457, val_loss=0.2468, best=0.2468 *, patience=0/5, 8s
+2026-03-22 00:23:26 | INFO  | phase3d |     Epoch 3/20: train_loss=0.3617, val_loss=0.2135, best=0.2135 *, patience=0/5, 8s
+2026-03-22 00:23:33 | INFO  | phase3d |     Epoch 4/20: train_loss=0.3034, val_loss=0.2205, best=0.2135, patience=1/5, 8s
+2026-03-22 00:23:41 | INFO  | phase3d |     Epoch 5/20: train_loss=0.2520, val_loss=0.2231, best=0.2135, patience=2/5, 8s
+2026-03-22 00:23:49 | INFO  | phase3d |     Epoch 6/20: train_loss=0.2247, val_loss=0.2610, best=0.2135, patience=3/5, 8s
+2026-03-22 00:23:57 | INFO  | phase3d |     Epoch 7/20: train_loss=0.1965, val_loss=0.2365, best=0.2135, patience=4/5, 8s
+2026-03-22 00:24:05 | INFO  | phase3d |     Epoch 8/20: train_loss=0.1685, val_loss=0.2485, best=0.2135, patience=5/5, 8s
+2026-03-22 00:24:05 | INFO  | phase3d |       Early stopping at epoch 8
+2026-03-22 00:24:06 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_3] ROC-AUC=0.7149, PR-AUC=0.2264, MCC=0.2917, 63s
+2026-03-22 00:24:06 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_4] Starting fold 4/5...
+2026-03-22 00:24:06 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:24:06 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:24:10 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:24:10 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:24:10 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:24:10 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_4] Train: 942 compounds, Test: 235 compounds
+2026-03-22 00:24:10 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_4] Params: lr=1e-05, batch=32, epochs=20, patience=5
+2026-03-22 00:24:10 | INFO  | phase3d |     Tokenizing 942 training SMILES...
+2026-03-22 00:24:10 | INFO  | phase3d |     Tokenized in 0.2s, input shape: torch.Size([942, 181])
+2026-03-22 00:24:10 | INFO  | phase3d |     Training: 20 epochs, 30 batches/epoch, batch_size=32, 942 compounds
+2026-03-22 00:24:10 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=60/600 steps
+2026-03-22 00:24:17 | INFO  | phase3d |     Epoch 1/20: train_loss=0.5820, val_loss=0.5010, best=0.5010 *, patience=0/5, 7s
+2026-03-22 00:24:24 | INFO  | phase3d |     Epoch 2/20: train_loss=0.4140, val_loss=0.4285, best=0.4285 *, patience=0/5, 7s
+2026-03-22 00:24:32 | INFO  | phase3d |     Epoch 3/20: train_loss=0.3519, val_loss=0.3583, best=0.3583 *, patience=0/5, 7s
+2026-03-22 00:24:39 | INFO  | phase3d |     Epoch 4/20: train_loss=0.2988, val_loss=0.3207, best=0.3207 *, patience=0/5, 7s
+2026-03-22 00:24:47 | INFO  | phase3d |     Epoch 5/20: train_loss=0.2686, val_loss=0.3086, best=0.3086 *, patience=0/5, 8s
+2026-03-22 00:24:54 | INFO  | phase3d |     Epoch 6/20: train_loss=0.2250, val_loss=0.3304, best=0.3086, patience=1/5, 7s
+2026-03-22 00:25:02 | INFO  | phase3d |     Epoch 7/20: train_loss=0.2033, val_loss=0.3027, best=0.3027 *, patience=0/5, 8s
+2026-03-22 00:25:09 | INFO  | phase3d |     Epoch 8/20: train_loss=0.1783, val_loss=0.3374, best=0.3027, patience=1/5, 8s
+2026-03-22 00:25:17 | INFO  | phase3d |     Epoch 9/20: train_loss=0.1616, val_loss=0.3035, best=0.3027, patience=2/5, 8s
+2026-03-22 00:25:25 | INFO  | phase3d |     Epoch 10/20: train_loss=0.1388, val_loss=0.3279, best=0.3027, patience=3/5, 8s
+2026-03-22 00:25:32 | INFO  | phase3d |     Epoch 11/20: train_loss=0.1327, val_loss=0.3285, best=0.3027, patience=4/5, 8s
+2026-03-22 00:25:40 | INFO  | phase3d |     Epoch 12/20: train_loss=0.1151, val_loss=0.3504, best=0.3027, patience=5/5, 8s
+2026-03-22 00:25:40 | INFO  | phase3d |       Early stopping at epoch 12
+2026-03-22 00:25:40 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_4] ROC-AUC=0.9092, PR-AUC=0.6854, MCC=0.5066, 91s
+2026-03-22 00:25:41 | INFO  | phase3d |   molformer_gut_t10 CV: ROC-AUC = 0.8219 +/- 0.0640
+2026-03-22 00:25:41 | INFO  | phase3d |   molformer_gut_t10: 459s
+2026-03-22 00:25:41 | INFO  | phase3d |     Training final molformer_gut_t10 on all 1177 samples...
+2026-03-22 00:25:41 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:25:41 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:25:44 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:25:44 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:25:44 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:25:44 | INFO  | phase3d |     Tokenizing 1177 training SMILES...
+2026-03-22 00:25:44 | INFO  | phase3d |     Tokenized in 0.3s, input shape: torch.Size([1177, 202])
+2026-03-22 00:25:44 | INFO  | phase3d |     Training: 20 epochs, 37 batches/epoch, batch_size=32, 1177 compounds
+2026-03-22 00:25:44 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=74/740 steps
+2026-03-22 00:25:53 | INFO  | phase3d |     Epoch 1/20: train_loss=0.4954, 9s
+2026-03-22 00:26:02 | INFO  | phase3d |     Epoch 2/20: train_loss=0.3960, 9s
+2026-03-22 00:26:12 | INFO  | phase3d |     Epoch 3/20: train_loss=0.3201, 9s
+2026-03-22 00:26:21 | INFO  | phase3d |     Epoch 4/20: train_loss=0.2713, 9s
+2026-03-22 00:26:31 | INFO  | phase3d |     Epoch 5/20: train_loss=0.2334, 9s
+2026-03-22 00:26:40 | INFO  | phase3d |     Epoch 6/20: train_loss=0.2263, 9s
+2026-03-22 00:26:50 | INFO  | phase3d |     Epoch 7/20: train_loss=0.1892, 9s
+2026-03-22 00:26:59 | INFO  | phase3d |     Epoch 8/20: train_loss=0.1695, 9s
+2026-03-22 00:27:08 | INFO  | phase3d |     Epoch 9/20: train_loss=0.1490, 9s
+2026-03-22 00:27:18 | INFO  | phase3d |     Epoch 10/20: train_loss=0.1410, 9s
+2026-03-22 00:27:27 | INFO  | phase3d |     Epoch 11/20: train_loss=0.1246, 10s
+2026-03-22 00:27:37 | INFO  | phase3d |     Epoch 12/20: train_loss=0.1159, 9s
+2026-03-22 00:27:46 | INFO  | phase3d |     Epoch 13/20: train_loss=0.1039, 10s
+2026-03-22 00:27:56 | INFO  | phase3d |     Epoch 14/20: train_loss=0.1020, 10s
+2026-03-22 00:28:06 | INFO  | phase3d |     Epoch 15/20: train_loss=0.0908, 10s
+2026-03-22 00:28:15 | INFO  | phase3d |     Epoch 16/20: train_loss=0.0923, 9s
+2026-03-22 00:28:25 | INFO  | phase3d |     Epoch 17/20: train_loss=0.0860, 10s
+2026-03-22 00:28:34 | INFO  | phase3d |     Epoch 18/20: train_loss=0.0863, 10s
+2026-03-22 00:28:44 | INFO  | phase3d |     Epoch 19/20: train_loss=0.0826, 9s
+2026-03-22 00:28:53 | INFO  | phase3d |     Epoch 20/20: train_loss=0.0802, 10s
+2026-03-22 00:29:06 | INFO  | phase3d |     Screening: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/screening/molformer_ranked_gut_t10.csv (6739 compounds)
+2026-03-22 00:29:06 | INFO  | phase3d | 
+  >>> Model 7/7: molformer_gut_t20 <<<
+2026-03-22 00:29:06 | INFO  | phase3d | 
+  Training molformer_gut_t20 with 5-fold scaffold CV...
+2026-03-22 00:29:06 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_0] Starting fold 0/5...
+2026-03-22 00:29:06 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:29:06 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:29:10 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:29:10 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:29:10 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:29:10 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_0] Train: 942 compounds, Test: 235 compounds
+2026-03-22 00:29:10 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_0] Params: lr=1e-05, batch=32, epochs=20, patience=5
+2026-03-22 00:29:10 | INFO  | phase3d |     Tokenizing 942 training SMILES...
+2026-03-22 00:29:10 | INFO  | phase3d |     Tokenized in 0.2s, input shape: torch.Size([942, 202])
+2026-03-22 00:29:10 | INFO  | phase3d |     Training: 20 epochs, 30 batches/epoch, batch_size=32, 942 compounds
+2026-03-22 00:29:10 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=60/600 steps
+2026-03-22 00:29:18 | INFO  | phase3d |     Epoch 1/20: train_loss=0.5820, val_loss=0.4985, best=0.4985 *, patience=0/5, 7s
+2026-03-22 00:29:25 | INFO  | phase3d |     Epoch 2/20: train_loss=0.3346, val_loss=0.3907, best=0.3907 *, patience=0/5, 8s
+2026-03-22 00:29:33 | INFO  | phase3d |     Epoch 3/20: train_loss=0.2405, val_loss=0.2829, best=0.2829 *, patience=0/5, 8s
+2026-03-22 00:29:41 | INFO  | phase3d |     Epoch 4/20: train_loss=0.1923, val_loss=0.2678, best=0.2678 *, patience=0/5, 8s
+2026-03-22 00:29:49 | INFO  | phase3d |     Epoch 5/20: train_loss=0.1593, val_loss=0.2791, best=0.2678, patience=1/5, 8s
+2026-03-22 00:29:57 | INFO  | phase3d |     Epoch 6/20: train_loss=0.1197, val_loss=0.3114, best=0.2678, patience=2/5, 8s
+2026-03-22 00:30:05 | INFO  | phase3d |     Epoch 7/20: train_loss=0.1028, val_loss=0.2893, best=0.2678, patience=3/5, 8s
+2026-03-22 00:30:13 | INFO  | phase3d |     Epoch 8/20: train_loss=0.0861, val_loss=0.3021, best=0.2678, patience=4/5, 8s
+2026-03-22 00:30:21 | INFO  | phase3d |     Epoch 9/20: train_loss=0.0788, val_loss=0.3121, best=0.2678, patience=5/5, 8s
+2026-03-22 00:30:21 | INFO  | phase3d |       Early stopping at epoch 9
+2026-03-22 00:30:22 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_0] ROC-AUC=0.8406, PR-AUC=0.6331, MCC=0.5394, 72s
+2026-03-22 00:30:22 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_1] Starting fold 1/5...
+2026-03-22 00:30:22 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:30:22 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:30:26 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:30:26 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:30:26 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:30:26 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_1] Train: 941 compounds, Test: 236 compounds
+2026-03-22 00:30:26 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_1] Params: lr=1e-05, batch=32, epochs=20, patience=5
+2026-03-22 00:30:26 | INFO  | phase3d |     Tokenizing 941 training SMILES...
+2026-03-22 00:30:26 | INFO  | phase3d |     Tokenized in 0.2s, input shape: torch.Size([941, 202])
+2026-03-22 00:30:26 | INFO  | phase3d |     Training: 20 epochs, 30 batches/epoch, batch_size=32, 941 compounds
+2026-03-22 00:30:26 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=60/600 steps
+2026-03-22 00:30:33 | INFO  | phase3d |     Epoch 1/20: train_loss=0.9238, val_loss=0.6916, best=0.6916 *, patience=0/5, 7s
+2026-03-22 00:30:41 | INFO  | phase3d |     Epoch 2/20: train_loss=0.4421, val_loss=0.3152, best=0.3152 *, patience=0/5, 8s
+2026-03-22 00:30:49 | INFO  | phase3d |     Epoch 3/20: train_loss=0.2633, val_loss=0.2541, best=0.2541 *, patience=0/5, 8s
+2026-03-22 00:30:57 | INFO  | phase3d |     Epoch 4/20: train_loss=0.2163, val_loss=0.2326, best=0.2326 *, patience=0/5, 8s
+2026-03-22 00:31:05 | INFO  | phase3d |     Epoch 5/20: train_loss=0.1720, val_loss=0.2205, best=0.2205 *, patience=0/5, 8s
+2026-03-22 00:31:12 | INFO  | phase3d |     Epoch 6/20: train_loss=0.1578, val_loss=0.2280, best=0.2205, patience=1/5, 8s
+2026-03-22 00:31:20 | INFO  | phase3d |     Epoch 7/20: train_loss=0.1341, val_loss=0.1880, best=0.1880 *, patience=0/5, 8s
+2026-03-22 00:31:28 | INFO  | phase3d |     Epoch 8/20: train_loss=0.1117, val_loss=0.1758, best=0.1758 *, patience=0/5, 8s
+2026-03-22 00:31:36 | INFO  | phase3d |     Epoch 9/20: train_loss=0.1010, val_loss=0.1675, best=0.1675 *, patience=0/5, 8s
+2026-03-22 00:31:44 | INFO  | phase3d |     Epoch 10/20: train_loss=0.0825, val_loss=0.1727, best=0.1675, patience=1/5, 8s
+2026-03-22 00:31:52 | INFO  | phase3d |     Epoch 11/20: train_loss=0.0781, val_loss=0.1866, best=0.1675, patience=2/5, 8s
+2026-03-22 00:32:00 | INFO  | phase3d |     Epoch 12/20: train_loss=0.0852, val_loss=0.1931, best=0.1675, patience=3/5, 8s
+2026-03-22 00:32:08 | INFO  | phase3d |     Epoch 13/20: train_loss=0.0711, val_loss=0.1944, best=0.1675, patience=4/5, 8s
+2026-03-22 00:32:16 | INFO  | phase3d |     Epoch 14/20: train_loss=0.0594, val_loss=0.2163, best=0.1675, patience=5/5, 8s
+2026-03-22 00:32:16 | INFO  | phase3d |       Early stopping at epoch 14
+2026-03-22 00:32:17 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_1] ROC-AUC=0.9202, PR-AUC=0.8091, MCC=0.7584, 111s
+2026-03-22 00:32:17 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_2] Starting fold 2/5...
+2026-03-22 00:32:17 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:32:17 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:32:20 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:32:20 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:32:20 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:32:20 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_2] Train: 941 compounds, Test: 236 compounds
+2026-03-22 00:32:20 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_2] Params: lr=1e-05, batch=32, epochs=20, patience=5
+2026-03-22 00:32:20 | INFO  | phase3d |     Tokenizing 941 training SMILES...
+2026-03-22 00:32:21 | INFO  | phase3d |     Tokenized in 0.2s, input shape: torch.Size([941, 202])
+2026-03-22 00:32:21 | INFO  | phase3d |     Training: 20 epochs, 30 batches/epoch, batch_size=32, 941 compounds
+2026-03-22 00:32:21 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=60/600 steps
+2026-03-22 00:32:28 | INFO  | phase3d |     Epoch 1/20: train_loss=0.5316, val_loss=0.4705, best=0.4705 *, patience=0/5, 7s
+2026-03-22 00:32:36 | INFO  | phase3d |     Epoch 2/20: train_loss=0.3377, val_loss=0.3739, best=0.3739 *, patience=0/5, 8s
+2026-03-22 00:32:44 | INFO  | phase3d |     Epoch 3/20: train_loss=0.2502, val_loss=0.3184, best=0.3184 *, patience=0/5, 8s
+2026-03-22 00:32:52 | INFO  | phase3d |     Epoch 4/20: train_loss=0.2032, val_loss=0.3156, best=0.3156 *, patience=0/5, 8s
+2026-03-22 00:32:59 | INFO  | phase3d |     Epoch 5/20: train_loss=0.1612, val_loss=0.2681, best=0.2681 *, patience=0/5, 8s
+2026-03-22 00:33:07 | INFO  | phase3d |     Epoch 6/20: train_loss=0.1328, val_loss=0.2652, best=0.2652 *, patience=0/5, 8s
+2026-03-22 00:33:15 | INFO  | phase3d |     Epoch 7/20: train_loss=0.1035, val_loss=0.3205, best=0.2652, patience=1/5, 8s
+2026-03-22 00:33:23 | INFO  | phase3d |     Epoch 8/20: train_loss=0.0941, val_loss=0.3022, best=0.2652, patience=2/5, 8s
+2026-03-22 00:33:31 | INFO  | phase3d |     Epoch 9/20: train_loss=0.0732, val_loss=0.3076, best=0.2652, patience=3/5, 8s
+2026-03-22 00:33:39 | INFO  | phase3d |     Epoch 10/20: train_loss=0.0702, val_loss=0.3709, best=0.2652, patience=4/5, 8s
+2026-03-22 00:33:47 | INFO  | phase3d |     Epoch 11/20: train_loss=0.0548, val_loss=0.3520, best=0.2652, patience=5/5, 8s
+2026-03-22 00:33:47 | INFO  | phase3d |       Early stopping at epoch 11
+2026-03-22 00:33:48 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_2] ROC-AUC=0.8837, PR-AUC=0.7178, MCC=0.6324, 87s
+2026-03-22 00:33:48 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_3] Starting fold 3/5...
+2026-03-22 00:33:48 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:33:48 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:33:52 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:33:52 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:33:52 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:33:52 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_3] Train: 942 compounds, Test: 235 compounds
+2026-03-22 00:33:52 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_3] Params: lr=1e-05, batch=32, epochs=20, patience=5
+2026-03-22 00:33:52 | INFO  | phase3d |     Tokenizing 942 training SMILES...
+2026-03-22 00:33:52 | INFO  | phase3d |     Tokenized in 0.2s, input shape: torch.Size([942, 202])
+2026-03-22 00:33:52 | INFO  | phase3d |     Training: 20 epochs, 30 batches/epoch, batch_size=32, 942 compounds
+2026-03-22 00:33:52 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=60/600 steps
+2026-03-22 00:33:59 | INFO  | phase3d |     Epoch 1/20: train_loss=0.4970, val_loss=0.3364, best=0.3364 *, patience=0/5, 7s
+2026-03-22 00:34:07 | INFO  | phase3d |     Epoch 2/20: train_loss=0.3691, val_loss=0.1855, best=0.1855 *, patience=0/5, 8s
+2026-03-22 00:34:14 | INFO  | phase3d |     Epoch 3/20: train_loss=0.2612, val_loss=0.1667, best=0.1667 *, patience=0/5, 8s
+2026-03-22 00:34:22 | INFO  | phase3d |     Epoch 4/20: train_loss=0.2056, val_loss=0.1636, best=0.1636 *, patience=0/5, 8s
+2026-03-22 00:34:30 | INFO  | phase3d |     Epoch 5/20: train_loss=0.1605, val_loss=0.1663, best=0.1636, patience=1/5, 8s
+2026-03-22 00:34:38 | INFO  | phase3d |     Epoch 6/20: train_loss=0.1347, val_loss=0.1568, best=0.1568 *, patience=0/5, 8s
+2026-03-22 00:34:46 | INFO  | phase3d |     Epoch 7/20: train_loss=0.1134, val_loss=0.1860, best=0.1568, patience=1/5, 8s
+2026-03-22 00:34:54 | INFO  | phase3d |     Epoch 8/20: train_loss=0.0934, val_loss=0.1993, best=0.1568, patience=2/5, 8s
+2026-03-22 00:35:02 | INFO  | phase3d |     Epoch 9/20: train_loss=0.0885, val_loss=0.2042, best=0.1568, patience=3/5, 8s
+2026-03-22 00:35:10 | INFO  | phase3d |     Epoch 10/20: train_loss=0.0779, val_loss=0.2579, best=0.1568, patience=4/5, 8s
+2026-03-22 00:35:18 | INFO  | phase3d |     Epoch 11/20: train_loss=0.0681, val_loss=0.3137, best=0.1568, patience=5/5, 8s
+2026-03-22 00:35:18 | INFO  | phase3d |       Early stopping at epoch 11
+2026-03-22 00:35:18 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_3] ROC-AUC=0.7424, PR-AUC=0.2978, MCC=0.2779, 87s
+2026-03-22 00:35:18 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_4] Starting fold 4/5...
+2026-03-22 00:35:18 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:35:18 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:35:22 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:35:22 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:35:22 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:35:22 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_4] Train: 942 compounds, Test: 235 compounds
+2026-03-22 00:35:22 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_4] Params: lr=1e-05, batch=32, epochs=20, patience=5
+2026-03-22 00:35:22 | INFO  | phase3d |     Tokenizing 942 training SMILES...
+2026-03-22 00:35:22 | INFO  | phase3d |     Tokenized in 0.2s, input shape: torch.Size([942, 181])
+2026-03-22 00:35:22 | INFO  | phase3d |     Training: 20 epochs, 30 batches/epoch, batch_size=32, 942 compounds
+2026-03-22 00:35:22 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=60/600 steps
+2026-03-22 00:35:29 | INFO  | phase3d |     Epoch 1/20: train_loss=0.8255, val_loss=0.6170, best=0.6170 *, patience=0/5, 7s
+2026-03-22 00:35:37 | INFO  | phase3d |     Epoch 2/20: train_loss=0.4149, val_loss=0.3405, best=0.3405 *, patience=0/5, 7s
+2026-03-22 00:35:44 | INFO  | phase3d |     Epoch 3/20: train_loss=0.2652, val_loss=0.2872, best=0.2872 *, patience=0/5, 7s
+2026-03-22 00:35:52 | INFO  | phase3d |     Epoch 4/20: train_loss=0.2090, val_loss=0.2448, best=0.2448 *, patience=0/5, 8s
+2026-03-22 00:35:59 | INFO  | phase3d |     Epoch 5/20: train_loss=0.1604, val_loss=0.2269, best=0.2269 *, patience=0/5, 8s
+2026-03-22 00:36:07 | INFO  | phase3d |     Epoch 6/20: train_loss=0.1199, val_loss=0.2498, best=0.2269, patience=1/5, 8s
+2026-03-22 00:36:14 | INFO  | phase3d |     Epoch 7/20: train_loss=0.0999, val_loss=0.2929, best=0.2269, patience=2/5, 8s
+2026-03-22 00:36:22 | INFO  | phase3d |     Epoch 8/20: train_loss=0.0766, val_loss=0.2495, best=0.2269, patience=3/5, 8s
+2026-03-22 00:36:29 | INFO  | phase3d |     Epoch 9/20: train_loss=0.0578, val_loss=0.2754, best=0.2269, patience=4/5, 8s
+2026-03-22 00:36:37 | INFO  | phase3d |     Epoch 10/20: train_loss=0.0598, val_loss=0.2915, best=0.2269, patience=5/5, 8s
+2026-03-22 00:36:37 | INFO  | phase3d |       Early stopping at epoch 10
+2026-03-22 00:36:38 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_4] ROC-AUC=0.9212, PR-AUC=0.5797, MCC=0.4757, 76s
+2026-03-22 00:36:38 | INFO  | phase3d |   molformer_gut_t20 CV: ROC-AUC = 0.8616 +/- 0.0665
+2026-03-22 00:36:38 | INFO  | phase3d |   molformer_gut_t20: 452s
+2026-03-22 00:36:38 | INFO  | phase3d |     Training final molformer_gut_t20 on all 1177 samples...
+2026-03-22 00:36:38 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-22 00:36:38 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-22 00:36:42 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-22 00:36:42 | INFO  | phase3d |     Classifier: 769 params
+2026-03-22 00:36:42 | INFO  | phase3d |     Device: cuda
+2026-03-22 00:36:42 | INFO  | phase3d |     Tokenizing 1177 training SMILES...
+2026-03-22 00:36:42 | INFO  | phase3d |     Tokenized in 0.3s, input shape: torch.Size([1177, 202])
+2026-03-22 00:36:42 | INFO  | phase3d |     Training: 20 epochs, 37 batches/epoch, batch_size=32, 1177 compounds
+2026-03-22 00:36:42 | INFO  | phase3d |     LR: encoder=1e-05, classifier=0.0001, warmup=74/740 steps
+2026-03-22 00:36:50 | INFO  | phase3d |     Epoch 1/20: train_loss=0.6570, 9s
+2026-03-22 00:37:00 | INFO  | phase3d |     Epoch 2/20: train_loss=0.3475, 9s
+2026-03-22 00:37:09 | INFO  | phase3d |     Epoch 3/20: train_loss=0.2444, 9s
+2026-03-22 00:37:18 | INFO  | phase3d |     Epoch 4/20: train_loss=0.1831, 9s
+2026-03-22 00:37:28 | INFO  | phase3d |     Epoch 5/20: train_loss=0.1533, 9s
+2026-03-22 00:37:37 | INFO  | phase3d |     Epoch 6/20: train_loss=0.1240, 10s
+2026-03-22 00:37:47 | INFO  | phase3d |     Epoch 7/20: train_loss=0.0953, 10s
+2026-03-22 00:37:56 | INFO  | phase3d |     Epoch 8/20: train_loss=0.0856, 10s
+2026-03-22 00:38:06 | INFO  | phase3d |     Epoch 9/20: train_loss=0.0757, 10s
+2026-03-22 00:38:15 | INFO  | phase3d |     Epoch 10/20: train_loss=0.0622, 10s
+2026-03-22 00:38:25 | INFO  | phase3d |     Epoch 11/20: train_loss=0.0528, 10s
+2026-03-22 00:38:35 | INFO  | phase3d |     Epoch 12/20: train_loss=0.0457, 10s
+2026-03-22 00:38:44 | INFO  | phase3d |     Epoch 13/20: train_loss=0.0397, 10s
+2026-03-22 00:38:54 | INFO  | phase3d |     Epoch 14/20: train_loss=0.0333, 10s
+2026-03-22 00:39:03 | INFO  | phase3d |     Epoch 15/20: train_loss=0.0340, 10s
+2026-03-22 00:39:13 | INFO  | phase3d |     Epoch 16/20: train_loss=0.0364, 10s
+2026-03-22 00:39:22 | INFO  | phase3d |     Epoch 17/20: train_loss=0.0321, 10s
+2026-03-22 00:39:32 | INFO  | phase3d |     Epoch 18/20: train_loss=0.0324, 10s
+2026-03-22 00:39:41 | INFO  | phase3d |     Epoch 19/20: train_loss=0.0275, 10s
+2026-03-22 00:39:51 | INFO  | phase3d |     Epoch 20/20: train_loss=0.0273, 10s
+2026-03-22 00:40:04 | INFO  | phase3d |     Screening: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/screening/molformer_ranked_gut_t20.csv (6739 compounds)
+2026-03-22 00:40:05 | INFO  | phase3d | 
+  Saved: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/molformer_cv_metrics.json
+2026-03-22 00:40:05 | INFO  | phase3d | 
+======================================================================
+2026-03-22 00:40:05 | INFO  | phase3d |   MoLFormer-XL CV Results Summary
+2026-03-22 00:40:05 | INFO  | phase3d | ======================================================================
+2026-03-22 00:40:05 | INFO  | phase3d |   ecoli                     ROC-AUC=0.8378 +/- 0.0178  MCC=0.5314
+2026-03-22 00:40:05 | INFO  | phase3d |   saureus                   ROC-AUC=0.8346 +/- 0.0150  MCC=0.5151
+2026-03-22 00:40:05 | INFO  | phase3d |   paeruginosa               ROC-AUC=0.8275 +/- 0.0110  MCC=0.5059
+2026-03-22 00:40:05 | INFO  | phase3d |   mtb                       ROC-AUC=0.7640 +/- 0.0177  MCC=0.3843
+2026-03-22 00:40:05 | INFO  | phase3d |   gut_t5                    ROC-AUC=0.8471 +/- 0.0412  MCC=0.5150
+2026-03-22 00:40:05 | INFO  | phase3d |   gut_t10                   ROC-AUC=0.8219 +/- 0.0640  MCC=0.5034
+2026-03-22 00:40:05 | INFO  | phase3d |   gut_t20                   ROC-AUC=0.8616 +/- 0.0665  MCC=0.5368
+2026-03-22 00:40:05 | INFO  | phase3d | ============================================================
+2026-03-22 00:40:05 | INFO  | phase3d |  COMPLETED: Phase 3D: MoLFormer-XL Fine-Tuning
+2026-03-22 00:40:05 | INFO  | phase3d |  Elapsed: 332m 52.2s
+2026-03-22 00:40:05 | INFO  | phase3d | ============================================================
+2026-04-02 16:15:13 | INFO  | phase3d | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase3d.log
+2026-04-02 16:15:13 | INFO  | phase3d | ============================================================
+2026-04-02 16:15:13 | INFO  | phase3d |  STARTING: Phase 3D: MoLFormer-XL Fine-Tuning
+2026-04-02 16:15:13 | INFO  | phase3d | ============================================================
+2026-04-02 16:15:25 | INFO  | phase3d |   torch=2.4.1+cu118, transformers=4.57.6
+2026-04-02 16:15:26 | INFO  | phase3d |   GPU: NVIDIA GeForce RTX 2080 Ti (10.6 GB)
+2026-04-02 16:15:26 | INFO  | phase3d | 
+  7 tasks to train
+2026-04-02 16:15:26 | INFO  | phase3d | 
+  >>> Model 1/7: molformer_ecoli <<<
+2026-04-02 16:15:27 | INFO  | phase3d | 
+  Training molformer_ecoli with 5-fold scaffold CV...
+2026-04-02 16:15:27 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_0] Starting fold 0/5...
+2026-04-02 16:15:28 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:15:28 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:15:40 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:15:40 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:15:40 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:15:52 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_0] SKIP (cached model), ROC-AUC=0.8383, PR-AUC=0.7833
+2026-04-02 16:15:52 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_1] Starting fold 1/5...
+2026-04-02 16:15:52 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:15:52 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:15:56 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:15:56 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:15:56 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:16:05 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_1] SKIP (cached model), ROC-AUC=0.8317, PR-AUC=0.7473
+2026-04-02 16:16:05 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_2] Starting fold 2/5...
+2026-04-02 16:16:05 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:16:05 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:16:09 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:16:09 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:16:09 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:16:19 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_2] SKIP (cached model), ROC-AUC=0.8330, PR-AUC=0.7289
+2026-04-02 16:16:19 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_3] Starting fold 3/5...
+2026-04-02 16:16:19 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:16:19 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:16:23 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:16:23 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:16:23 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:16:32 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_3] SKIP (cached model), ROC-AUC=0.8160, PR-AUC=0.6956
+2026-04-02 16:16:32 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_4] Starting fold 4/5...
+2026-04-02 16:16:32 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:16:32 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:16:36 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:16:36 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:16:36 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:16:45 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_4] SKIP (cached model), ROC-AUC=0.8702, PR-AUC=0.8226
+2026-04-02 16:16:45 | INFO  | phase3d |   molformer_ecoli CV: ROC-AUC = 0.8378 +/- 0.0178
+2026-04-02 16:16:45 | INFO  | phase3d |   molformer_ecoli: 79s
+2026-04-02 16:16:45 | INFO  | phase3d |     Final model: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/molformer/ecoli/final/molformer_finetuned.pt)
+2026-04-02 16:16:45 | INFO  | phase3d |     Screening: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/screening/molformer_ranked_ecoli.csv)
+2026-04-02 16:16:45 | INFO  | phase3d | 
+  >>> Model 2/7: molformer_saureus <<<
+2026-04-02 16:16:45 | INFO  | phase3d | 
+  Training molformer_saureus with 5-fold scaffold CV...
+2026-04-02 16:16:45 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_0] Starting fold 0/5...
+2026-04-02 16:16:45 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:16:45 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:16:49 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:16:49 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:16:49 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:17:06 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_0] SKIP (cached model), ROC-AUC=0.8562, PR-AUC=0.8203
+2026-04-02 16:17:06 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_1] Starting fold 1/5...
+2026-04-02 16:17:06 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:17:06 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:17:10 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:17:10 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:17:10 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:17:27 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_1] SKIP (cached model), ROC-AUC=0.8231, PR-AUC=0.8003
+2026-04-02 16:17:27 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_2] Starting fold 2/5...
+2026-04-02 16:17:27 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:17:27 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:17:31 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:17:31 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:17:31 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:17:48 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_2] SKIP (cached model), ROC-AUC=0.8491, PR-AUC=0.8326
+2026-04-02 16:17:48 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_3] Starting fold 3/5...
+2026-04-02 16:17:48 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:17:48 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:17:52 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:17:52 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:17:52 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:18:08 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_3] SKIP (cached model), ROC-AUC=0.8239, PR-AUC=0.7670
+2026-04-02 16:18:08 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_4] Starting fold 4/5...
+2026-04-02 16:18:08 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:18:08 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:18:13 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:18:13 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:18:13 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:18:30 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_4] SKIP (cached model), ROC-AUC=0.8206, PR-AUC=0.7919
+2026-04-02 16:18:30 | INFO  | phase3d |   molformer_saureus CV: ROC-AUC = 0.8346 +/- 0.0150
+2026-04-02 16:18:30 | INFO  | phase3d |   molformer_saureus: 104s
+2026-04-02 16:18:30 | INFO  | phase3d |     Final model: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/molformer/saureus/final/molformer_finetuned.pt)
+2026-04-02 16:18:30 | INFO  | phase3d |     Screening: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/screening/molformer_ranked_saureus.csv)
+2026-04-02 16:18:30 | INFO  | phase3d | 
+  >>> Model 3/7: molformer_paeruginosa <<<
+2026-04-02 16:18:30 | INFO  | phase3d | 
+  Training molformer_paeruginosa with 5-fold scaffold CV...
+2026-04-02 16:18:30 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_0] Starting fold 0/5...
+2026-04-02 16:18:30 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:18:30 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:18:36 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:18:36 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:18:36 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:18:44 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_0] SKIP (cached model), ROC-AUC=0.8162, PR-AUC=0.6681
+2026-04-02 16:18:44 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_1] Starting fold 1/5...
+2026-04-02 16:18:44 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:18:44 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:18:49 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:18:49 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:18:49 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:18:57 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_1] SKIP (cached model), ROC-AUC=0.8189, PR-AUC=0.6450
+2026-04-02 16:18:57 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_2] Starting fold 2/5...
+2026-04-02 16:18:57 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:18:57 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:19:02 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:19:02 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:19:02 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:19:09 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_2] SKIP (cached model), ROC-AUC=0.8224, PR-AUC=0.6929
+2026-04-02 16:19:09 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_3] Starting fold 3/5...
+2026-04-02 16:19:09 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:19:09 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:19:14 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:19:14 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:19:14 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:19:21 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_3] SKIP (cached model), ROC-AUC=0.8345, PR-AUC=0.6599
+2026-04-02 16:19:21 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_4] Starting fold 4/5...
+2026-04-02 16:19:21 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:19:21 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:19:26 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:19:26 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:19:26 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:19:33 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_4] SKIP (cached model), ROC-AUC=0.8456, PR-AUC=0.6995
+2026-04-02 16:19:33 | INFO  | phase3d |   molformer_paeruginosa CV: ROC-AUC = 0.8275 +/- 0.0110
+2026-04-02 16:19:33 | INFO  | phase3d |   molformer_paeruginosa: 63s
+2026-04-02 16:19:33 | INFO  | phase3d |     Final model: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/molformer/paeruginosa/final/molformer_finetuned.pt)
+2026-04-02 16:19:33 | INFO  | phase3d |     Screening: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/screening/molformer_ranked_paeruginosa.csv)
+2026-04-02 16:19:33 | INFO  | phase3d | 
+  >>> Model 4/7: molformer_mtb <<<
+2026-04-02 16:19:33 | INFO  | phase3d | 
+  Training molformer_mtb with 5-fold scaffold CV...
+2026-04-02 16:19:33 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_0] Starting fold 0/5...
+2026-04-02 16:19:33 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:19:33 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:19:39 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:19:39 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:19:39 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:22:01 | INFO  | phase3d | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase3d.log
+2026-04-02 16:22:01 | INFO  | phase3d | ============================================================
+2026-04-02 16:22:01 | INFO  | phase3d |  STARTING: Phase 3D: MoLFormer-XL Fine-Tuning
+2026-04-02 16:22:01 | INFO  | phase3d | ============================================================
+2026-04-02 16:22:08 | INFO  | phase3d |   torch=2.4.1+cu118, transformers=4.57.6
+2026-04-02 16:22:10 | INFO  | phase3d |   GPU: NVIDIA GeForce RTX 2080 Ti (10.6 GB)
+2026-04-02 16:22:10 | INFO  | phase3d | 
+  7 tasks to train
+2026-04-02 16:22:10 | INFO  | phase3d | 
+  >>> Model 1/7: molformer_ecoli <<<
+2026-04-02 16:22:10 | INFO  | phase3d | 
+  Training molformer_ecoli with 5-fold scaffold CV...
+2026-04-02 16:22:10 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_0] Starting fold 0/5...
+2026-04-02 16:22:11 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:22:11 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:22:19 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:22:19 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:22:19 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:22:29 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_0] SKIP (cached model), ROC-AUC=0.8383, PR-AUC=0.7833
+2026-04-02 16:22:29 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_1] Starting fold 1/5...
+2026-04-02 16:22:29 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:22:29 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:22:34 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:22:34 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:22:34 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:22:44 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_1] SKIP (cached model), ROC-AUC=0.8317, PR-AUC=0.7473
+2026-04-02 16:22:44 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_2] Starting fold 2/5...
+2026-04-02 16:22:44 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:22:44 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:22:48 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:22:48 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:22:48 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:22:58 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_2] SKIP (cached model), ROC-AUC=0.8330, PR-AUC=0.7289
+2026-04-02 16:22:58 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_3] Starting fold 3/5...
+2026-04-02 16:22:58 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:22:58 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:23:02 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:23:02 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:23:02 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:23:12 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_3] SKIP (cached model), ROC-AUC=0.8160, PR-AUC=0.6956
+2026-04-02 16:23:12 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_4] Starting fold 4/5...
+2026-04-02 16:23:12 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:23:12 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:23:17 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:23:17 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:23:17 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:23:26 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_4] SKIP (cached model), ROC-AUC=0.8702, PR-AUC=0.8226
+2026-04-02 16:23:26 | INFO  | phase3d |   molformer_ecoli CV: ROC-AUC = 0.8378 +/- 0.0178
+2026-04-02 16:23:26 | INFO  | phase3d |   molformer_ecoli: 76s
+2026-04-02 16:23:26 | INFO  | phase3d |     Final model: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/molformer/ecoli/final/molformer_finetuned.pt)
+2026-04-02 16:23:26 | INFO  | phase3d |     Screening: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/screening/molformer_ranked_ecoli.csv)
+2026-04-02 16:23:26 | INFO  | phase3d | 
+  >>> Model 2/7: molformer_saureus <<<
+2026-04-02 16:23:26 | INFO  | phase3d | 
+  Training molformer_saureus with 5-fold scaffold CV...
+2026-04-02 16:23:26 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_0] Starting fold 0/5...
+2026-04-02 16:23:26 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:23:26 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:23:34 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:23:34 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:23:34 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:23:50 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_0] SKIP (cached model), ROC-AUC=0.8562, PR-AUC=0.8203
+2026-04-02 16:23:50 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_1] Starting fold 1/5...
+2026-04-02 16:23:50 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:23:50 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:23:56 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:23:56 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:23:56 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:24:12 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_1] SKIP (cached model), ROC-AUC=0.8231, PR-AUC=0.8003
+2026-04-02 16:24:12 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_2] Starting fold 2/5...
+2026-04-02 16:24:12 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:24:12 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:24:16 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:24:16 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:24:16 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:24:32 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_2] SKIP (cached model), ROC-AUC=0.8491, PR-AUC=0.8326
+2026-04-02 16:24:32 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_3] Starting fold 3/5...
+2026-04-02 16:24:32 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:24:32 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:24:36 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:24:36 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:24:36 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:24:51 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_3] SKIP (cached model), ROC-AUC=0.8239, PR-AUC=0.7670
+2026-04-02 16:24:51 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_4] Starting fold 4/5...
+2026-04-02 16:24:52 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:24:52 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:24:55 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:24:55 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:24:55 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:25:11 | INFO  | phase3d |     [10_train_molformer.py:molformer_saureus:fold_4] SKIP (cached model), ROC-AUC=0.8206, PR-AUC=0.7919
+2026-04-02 16:25:11 | INFO  | phase3d |   molformer_saureus CV: ROC-AUC = 0.8346 +/- 0.0150
+2026-04-02 16:25:11 | INFO  | phase3d |   molformer_saureus: 105s
+2026-04-02 16:25:11 | INFO  | phase3d |     Final model: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/molformer/saureus/final/molformer_finetuned.pt)
+2026-04-02 16:25:11 | INFO  | phase3d |     Screening: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/screening/molformer_ranked_saureus.csv)
+2026-04-02 16:25:11 | INFO  | phase3d | 
+  >>> Model 3/7: molformer_paeruginosa <<<
+2026-04-02 16:25:11 | INFO  | phase3d | 
+  Training molformer_paeruginosa with 5-fold scaffold CV...
+2026-04-02 16:25:11 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_0] Starting fold 0/5...
+2026-04-02 16:25:11 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:25:11 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:25:17 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:25:17 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:25:17 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:25:23 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_0] SKIP (cached model), ROC-AUC=0.8162, PR-AUC=0.6681
+2026-04-02 16:25:23 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_1] Starting fold 1/5...
+2026-04-02 16:25:23 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:25:23 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:25:31 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:25:31 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:25:31 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:25:38 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_1] SKIP (cached model), ROC-AUC=0.8189, PR-AUC=0.6450
+2026-04-02 16:25:38 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_2] Starting fold 2/5...
+2026-04-02 16:25:38 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:25:38 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:25:43 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:25:43 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:25:43 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:25:49 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_2] SKIP (cached model), ROC-AUC=0.8224, PR-AUC=0.6929
+2026-04-02 16:25:49 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_3] Starting fold 3/5...
+2026-04-02 16:25:49 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:25:49 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:25:53 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:25:53 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:25:53 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:25:59 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_3] SKIP (cached model), ROC-AUC=0.8345, PR-AUC=0.6599
+2026-04-02 16:25:59 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_4] Starting fold 4/5...
+2026-04-02 16:25:59 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:25:59 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:26:03 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:26:03 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:26:03 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:26:10 | INFO  | phase3d |     [10_train_molformer.py:molformer_paeruginosa:fold_4] SKIP (cached model), ROC-AUC=0.8456, PR-AUC=0.6995
+2026-04-02 16:26:10 | INFO  | phase3d |   molformer_paeruginosa CV: ROC-AUC = 0.8275 +/- 0.0110
+2026-04-02 16:26:10 | INFO  | phase3d |   molformer_paeruginosa: 59s
+2026-04-02 16:26:10 | INFO  | phase3d |     Final model: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/molformer/paeruginosa/final/molformer_finetuned.pt)
+2026-04-02 16:26:10 | INFO  | phase3d |     Screening: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/screening/molformer_ranked_paeruginosa.csv)
+2026-04-02 16:26:10 | INFO  | phase3d | 
+  >>> Model 4/7: molformer_mtb <<<
+2026-04-02 16:26:10 | INFO  | phase3d | 
+  Training molformer_mtb with 5-fold scaffold CV...
+2026-04-02 16:26:10 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_0] Starting fold 0/5...
+2026-04-02 16:26:10 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:26:10 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:26:16 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:26:16 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:26:16 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:26:21 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_0] SKIP (cached model), ROC-AUC=0.7631, PR-AUC=0.7026
+2026-04-02 16:26:21 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_1] Starting fold 1/5...
+2026-04-02 16:26:21 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:26:21 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:26:29 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:26:29 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:26:29 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:26:35 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_1] SKIP (cached model), ROC-AUC=0.7305, PR-AUC=0.6700
+2026-04-02 16:26:35 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_2] Starting fold 2/5...
+2026-04-02 16:26:35 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:26:35 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:26:40 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:26:40 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:26:40 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:26:46 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_2] SKIP (cached model), ROC-AUC=0.7811, PR-AUC=0.7675
+2026-04-02 16:26:46 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_3] Starting fold 3/5...
+2026-04-02 16:26:46 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:26:46 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:26:51 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:26:51 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:26:51 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:26:57 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_3] SKIP (cached model), ROC-AUC=0.7749, PR-AUC=0.6963
+2026-04-02 16:26:57 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_4] Starting fold 4/5...
+2026-04-02 16:26:57 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:26:57 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:27:04 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:27:04 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:27:04 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:27:10 | INFO  | phase3d |     [10_train_molformer.py:molformer_mtb:fold_4] SKIP (cached model), ROC-AUC=0.7702, PR-AUC=0.7599
+2026-04-02 16:27:10 | INFO  | phase3d |   molformer_mtb CV: ROC-AUC = 0.7640 +/- 0.0177
+2026-04-02 16:27:10 | INFO  | phase3d |   molformer_mtb: 60s
+2026-04-02 16:27:10 | INFO  | phase3d |     Final model: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/molformer/mtb/final/molformer_finetuned.pt)
+2026-04-02 16:27:10 | INFO  | phase3d |     Screening: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/screening/molformer_ranked_mtb.csv)
+2026-04-02 16:27:10 | INFO  | phase3d | 
+  >>> Model 5/7: molformer_gut_t5 <<<
+2026-04-02 16:27:10 | INFO  | phase3d | 
+  Training molformer_gut_t5 with 5-fold scaffold CV...
+2026-04-02 16:27:10 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_0] Starting fold 0/5...
+2026-04-02 16:27:10 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:27:10 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:27:20 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:27:20 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:27:20 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:27:22 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_0] SKIP (cached model), ROC-AUC=0.8748, PR-AUC=0.7494
+2026-04-02 16:27:22 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_1] Starting fold 1/5...
+2026-04-02 16:27:22 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:27:22 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:27:28 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:27:28 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:27:28 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:27:30 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_1] SKIP (cached model), ROC-AUC=0.8126, PR-AUC=0.6478
+2026-04-02 16:27:30 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_2] Starting fold 2/5...
+2026-04-02 16:27:30 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:27:30 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:27:34 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:27:34 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:27:34 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:27:36 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_2] SKIP (cached model), ROC-AUC=0.7946, PR-AUC=0.6316
+2026-04-02 16:27:36 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_3] Starting fold 3/5...
+2026-04-02 16:27:36 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:27:36 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:27:41 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:27:41 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:27:41 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:27:43 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_3] SKIP (cached model), ROC-AUC=0.8451, PR-AUC=0.4985
+2026-04-02 16:27:43 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_4] Starting fold 4/5...
+2026-04-02 16:27:43 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:27:43 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:27:51 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:27:51 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:27:51 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:27:52 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t5:fold_4] SKIP (cached model), ROC-AUC=0.9085, PR-AUC=0.7310
+2026-04-02 16:27:52 | INFO  | phase3d |   molformer_gut_t5 CV: ROC-AUC = 0.8471 +/- 0.0412
+2026-04-02 16:27:52 | INFO  | phase3d |   molformer_gut_t5: 43s
+2026-04-02 16:27:52 | INFO  | phase3d |     Final model: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/molformer/gut_t5/final/molformer_finetuned.pt)
+2026-04-02 16:27:52 | INFO  | phase3d |     Screening: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/screening/molformer_ranked_gut_t5.csv)
+2026-04-02 16:27:52 | INFO  | phase3d | 
+  >>> Model 6/7: molformer_gut_t10 <<<
+2026-04-02 16:27:52 | INFO  | phase3d | 
+  Training molformer_gut_t10 with 5-fold scaffold CV...
+2026-04-02 16:27:52 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_0] Starting fold 0/5...
+2026-04-02 16:27:52 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:27:52 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:27:58 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:27:58 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:27:58 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:28:00 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_0] SKIP (cached model), ROC-AUC=0.8570, PR-AUC=0.7289
+2026-04-02 16:28:00 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_1] Starting fold 1/5...
+2026-04-02 16:28:00 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:28:00 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:28:05 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:28:05 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:28:05 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:28:07 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_1] SKIP (cached model), ROC-AUC=0.8210, PR-AUC=0.6733
+2026-04-02 16:28:07 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_2] Starting fold 2/5...
+2026-04-02 16:28:07 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:28:07 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:28:14 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:28:14 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:28:14 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:28:15 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_2] SKIP (cached model), ROC-AUC=0.8075, PR-AUC=0.6186
+2026-04-02 16:28:15 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_3] Starting fold 3/5...
+2026-04-02 16:28:15 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:28:15 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:28:24 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:28:24 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:28:24 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:28:26 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_3] SKIP (cached model), ROC-AUC=0.7149, PR-AUC=0.2264
+2026-04-02 16:28:26 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_4] Starting fold 4/5...
+2026-04-02 16:28:26 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:28:26 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:28:34 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:28:34 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:28:34 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:28:35 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t10:fold_4] SKIP (cached model), ROC-AUC=0.9092, PR-AUC=0.6854
+2026-04-02 16:28:35 | INFO  | phase3d |   molformer_gut_t10 CV: ROC-AUC = 0.8219 +/- 0.0640
+2026-04-02 16:28:35 | INFO  | phase3d |   molformer_gut_t10: 43s
+2026-04-02 16:28:35 | INFO  | phase3d |     Final model: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/molformer/gut_t10/final/molformer_finetuned.pt)
+2026-04-02 16:28:35 | INFO  | phase3d |     Screening: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/screening/molformer_ranked_gut_t10.csv)
+2026-04-02 16:28:35 | INFO  | phase3d | 
+  >>> Model 7/7: molformer_gut_t20 <<<
+2026-04-02 16:28:35 | INFO  | phase3d | 
+  Training molformer_gut_t20 with 5-fold scaffold CV...
+2026-04-02 16:28:35 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_0] Starting fold 0/5...
+2026-04-02 16:28:35 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:28:35 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:28:40 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:28:40 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:28:40 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:28:41 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_0] SKIP (cached model), ROC-AUC=0.8406, PR-AUC=0.6331
+2026-04-02 16:28:41 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_1] Starting fold 1/5...
+2026-04-02 16:28:41 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:28:41 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:28:46 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:28:46 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:28:46 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:28:48 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_1] SKIP (cached model), ROC-AUC=0.9202, PR-AUC=0.8091
+2026-04-02 16:28:48 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_2] Starting fold 2/5...
+2026-04-02 16:28:48 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:28:48 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:28:52 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:28:52 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:28:52 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:28:54 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_2] SKIP (cached model), ROC-AUC=0.8837, PR-AUC=0.7178
+2026-04-02 16:28:54 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_3] Starting fold 3/5...
+2026-04-02 16:28:54 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:28:54 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:28:58 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:28:58 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:28:58 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:28:59 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_3] SKIP (cached model), ROC-AUC=0.7424, PR-AUC=0.2978
+2026-04-02 16:28:59 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_4] Starting fold 4/5...
+2026-04-02 16:28:59 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-04-02 16:28:59 | INFO  | phase3d |     transformers version: 4.57.6
+2026-04-02 16:29:04 | INFO  | phase3d |     Encoder: 44.4M params
+2026-04-02 16:29:04 | INFO  | phase3d |     Classifier: 769 params
+2026-04-02 16:29:04 | INFO  | phase3d |     Device: cuda
+2026-04-02 16:29:05 | INFO  | phase3d |     [10_train_molformer.py:molformer_gut_t20:fold_4] SKIP (cached model), ROC-AUC=0.9212, PR-AUC=0.5797
+2026-04-02 16:29:05 | INFO  | phase3d |   molformer_gut_t20 CV: ROC-AUC = 0.8616 +/- 0.0665
+2026-04-02 16:29:05 | INFO  | phase3d |   molformer_gut_t20: 30s
+2026-04-02 16:29:05 | INFO  | phase3d |     Final model: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/molformer/gut_t20/final/molformer_finetuned.pt)
+2026-04-02 16:29:05 | INFO  | phase3d |     Screening: SKIP (exists: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/screening/molformer_ranked_gut_t20.csv)
+2026-04-02 16:29:06 | INFO  | phase3d | 
+  Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/molformer_cv_metrics.json
+2026-04-02 16:29:06 | INFO  | phase3d | 
+======================================================================
+2026-04-02 16:29:06 | INFO  | phase3d |   MoLFormer-XL CV Results Summary
+2026-04-02 16:29:06 | INFO  | phase3d | ======================================================================
+2026-04-02 16:29:06 | INFO  | phase3d |   ecoli                     ROC-AUC=0.8378 +/- 0.0178  MCC=0.5314
+2026-04-02 16:29:06 | INFO  | phase3d |   saureus                   ROC-AUC=0.8346 +/- 0.0150  MCC=0.5151
+2026-04-02 16:29:06 | INFO  | phase3d |   paeruginosa               ROC-AUC=0.8275 +/- 0.0110  MCC=0.5059
+2026-04-02 16:29:06 | INFO  | phase3d |   mtb                       ROC-AUC=0.7640 +/- 0.0177  MCC=0.3843
+2026-04-02 16:29:06 | INFO  | phase3d |   gut_t5                    ROC-AUC=0.8471 +/- 0.0412  MCC=0.5150
+2026-04-02 16:29:06 | INFO  | phase3d |   gut_t10                   ROC-AUC=0.8219 +/- 0.0640  MCC=0.5034
+2026-04-02 16:29:06 | INFO  | phase3d |   gut_t20                   ROC-AUC=0.8616 +/- 0.0665  MCC=0.5368
+2026-04-02 16:29:06 | INFO  | phase3d | 
+======================================================================
+2026-04-02 16:29:06 | INFO  | phase3d |   Computing MoLFormer selectivity scores...
+2026-04-02 16:29:06 | INFO  | phase3d | ======================================================================
+2026-04-02 16:29:06 | INFO  | phase3d |     Loaded pathogen probs: ecoli (6739 compounds)
+2026-04-02 16:29:06 | INFO  | phase3d |     Loaded pathogen probs: saureus (6739 compounds)
+2026-04-02 16:29:06 | INFO  | phase3d |     Loaded pathogen probs: paeruginosa (6739 compounds)
+2026-04-02 16:29:06 | INFO  | phase3d |     Loaded pathogen probs: mtb (6739 compounds)
+2026-04-02 16:29:06 | INFO  | phase3d |     Loaded gut probs: t=5 (6739 compounds)
+2026-04-02 16:29:06 | INFO  | phase3d |     Loaded gut probs: t=10 (6739 compounds)
+2026-04-02 16:29:06 | INFO  | phase3d |     Loaded gut probs: t=20 (6739 compounds)
+2026-04-02 16:29:06 | INFO  | phase3d |     Saved: molformer_ranked_ecoli_t5.csv (6739 compounds, top S=0.9983)
+2026-04-02 16:29:07 | INFO  | phase3d |     Saved: molformer_ranked_ecoli_t10.csv (6739 compounds, top S=0.9983)
+2026-04-02 16:29:07 | INFO  | phase3d |     Saved: molformer_ranked_ecoli_t20.csv (6739 compounds, top S=0.9986)
+2026-04-02 16:29:07 | INFO  | phase3d |     Saved: molformer_ranked_saureus_t5.csv (6739 compounds, top S=0.9962)
+2026-04-02 16:29:07 | INFO  | phase3d |     Saved: molformer_ranked_saureus_t10.csv (6739 compounds, top S=0.9955)
+2026-04-02 16:29:07 | INFO  | phase3d |     Saved: molformer_ranked_saureus_t20.csv (6739 compounds, top S=0.9976)
+2026-04-02 16:29:07 | INFO  | phase3d |     Saved: molformer_ranked_paeruginosa_t5.csv (6739 compounds, top S=0.9971)
+2026-04-02 16:29:07 | INFO  | phase3d |     Saved: molformer_ranked_paeruginosa_t10.csv (6739 compounds, top S=0.9971)
+2026-04-02 16:29:07 | INFO  | phase3d |     Saved: molformer_ranked_paeruginosa_t20.csv (6739 compounds, top S=0.9960)
+2026-04-02 16:29:07 | INFO  | phase3d |     Saved: molformer_ranked_mtb_t5.csv (6739 compounds, top S=0.9982)
+2026-04-02 16:29:07 | INFO  | phase3d |     Saved: molformer_ranked_mtb_t10.csv (6739 compounds, top S=0.9986)
+2026-04-02 16:29:07 | INFO  | phase3d |     Saved: molformer_ranked_mtb_t20.csv (6739 compounds, top S=0.9998)
+2026-04-02 16:29:07 | INFO  | phase3d |     Selectivity: 12 computed, 0 skipped (already exist)
+2026-04-02 16:29:07 | INFO  | phase3d | 
+  Generating Phase 3D figures...
+2026-04-02 16:29:09 | INFO  | phase3d |   Figure: phase3d_cv_metrics
+2026-04-02 16:29:11 | INFO  | phase3d |   Figure: phase3d_selectivity_ecoli
+2026-04-02 16:29:11 | INFO  | phase3d |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/reports/phase3d_quality_report.json
+2026-04-02 16:29:11 | INFO  | phase3d | ============================================================
+2026-04-02 16:29:11 | INFO  | phase3d |  COMPLETED: Phase 3D: MoLFormer-XL Fine-Tuning
+2026-04-02 16:29:11 | INFO  | phase3d |  Elapsed: 7m 9.6s
+2026-04-02 16:29:11 | INFO  | phase3d | ============================================================

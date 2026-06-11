@@ -1,0 +1,401 @@
+2026-04-03 15:38:31 | INFO  | phase_diagnostic | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase_diagnostic.log
+2026-04-03 15:38:31 | INFO  | phase_diagnostic | ============================================================
+2026-04-03 15:38:31 | INFO  | phase_diagnostic |  STARTING: Phase B: Diagnostic Analysis
+2026-04-03 15:38:31 | INFO  | phase_diagnostic | ============================================================
+2026-04-03 15:38:31 | INFO  | phase_diagnostic |   Loading screening predictions...
+2026-04-03 15:38:31 | INFO  | phase_diagnostic |     rf: 6739 compounds, cols=['smiles', 'name', 'clinical_phase', 'moa', 'disease_area', 'target']
+2026-04-03 15:38:31 | INFO  | phase_diagnostic |     dmpnn: 6739 compounds, cols=['smiles', 'name', 'clinical_phase', 'moa', 'disease_area', 'target']
+2026-04-03 15:38:31 | INFO  | phase_diagnostic |     chemeleon_frozen: 6739 compounds, cols=['smiles', 'name', 'clinical_phase', 'moa', 'disease_area', 'target']
+2026-04-03 15:38:31 | INFO  | phase_diagnostic |     molformer: 6739 compounds, cols=['smiles', 'name', 'clinical_phase', 'moa', 'disease_area', 'target']
+2026-04-03 15:38:31 | INFO  | phase_diagnostic |   Merged: 6739 compounds, 20 columns
+2026-04-03 15:38:31 | INFO  | phase_diagnostic | 
+  Computing RDKit molecular descriptors...
+2026-04-03 15:38:36 | INFO  | phase_diagnostic |   Computed 14 descriptors for 6739 compounds (0 failed) in 5.0s
+2026-04-03 15:38:36 | INFO  | phase_diagnostic | 
+  Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/diagnostic_properties.csv
+2026-04-03 15:38:36 | INFO  | phase_diagnostic | 
+======================================================================
+2026-04-03 15:38:36 | INFO  | phase_diagnostic |   CHEMICAL PROPERTIES: Top-50 per model vs Full Hub
+2026-04-03 15:38:36 | INFO  | phase_diagnostic | ======================================================================
+2026-04-03 15:43:11 | INFO  | phase_diagnostic | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase_diagnostic.log
+2026-04-03 15:43:11 | INFO  | phase_diagnostic | ============================================================
+2026-04-03 15:43:11 | INFO  | phase_diagnostic |  STARTING: Phase B: Diagnostic Analysis
+2026-04-03 15:43:11 | INFO  | phase_diagnostic | ============================================================
+2026-04-03 15:43:11 | INFO  | phase_diagnostic |   Loading screening predictions...
+2026-04-03 15:43:11 | INFO  | phase_diagnostic |     rf: 6739 compounds, cols=['smiles', 'name', 'clinical_phase', 'moa', 'disease_area', 'target']
+2026-04-03 15:43:11 | INFO  | phase_diagnostic |     dmpnn: 6739 compounds, cols=['smiles', 'name', 'clinical_phase', 'moa', 'disease_area', 'target']
+2026-04-03 15:43:11 | INFO  | phase_diagnostic |     chemeleon_frozen: 6739 compounds, cols=['smiles', 'name', 'clinical_phase', 'moa', 'disease_area', 'target']
+2026-04-03 15:43:11 | INFO  | phase_diagnostic |     molformer: 6739 compounds, cols=['smiles', 'name', 'clinical_phase', 'moa', 'disease_area', 'target']
+2026-04-03 15:43:11 | INFO  | phase_diagnostic |   Merged: 6739 compounds, 20 columns
+2026-04-03 15:43:11 | INFO  | phase_diagnostic | 
+  Computing RDKit molecular descriptors...
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   Computed 14 descriptors for 6739 compounds (0 failed) in 5.0s
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+  Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/diagnostic_properties.csv
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+======================================================================
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   CHEMICAL PROPERTIES: Top-50 per model vs Full Hub
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | ======================================================================
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+  Property               Hub mean         RF top50    D-MPNN top50  CheMeleon top50  MoLFormer top50
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   --------------------------------------------------------------------------------
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   MW                       382.38       402.53          412.66          341.64          423.93    
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   LogP                       2.78        -0.22  **       -0.39  **       -0.34  **        0.05  **
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   TPSA                      88.15       148.48  **      168.71  **      128.83  **      141.17  **
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   n_rings                    3.07         2.64            2.96            2.62            3.86    
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   n_aromatic_rings           1.98         1.42            1.48            1.00  **        1.34    
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   n_rotatable                5.49         7.70            5.06            4.70            6.14    
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   n_HBA                      4.96         7.26  **        8.48  **        6.14            7.82  **
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   n_HBD                      2.11         4.16  **        4.00  **        3.88  **        3.82  **
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   formal_charge              0.03         0.12            0.02            0.04            0.02    
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   n_heavy_atoms             26.67        27.86           27.02           22.68           28.76    
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   fraction_sp3               0.39         0.59  **        0.50            0.52  **        0.58  **
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   has_phosphate              0.02         0.08            0.40  **        0.08            0.08    
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+  ** = > 0.5 std deviation from Hub mean
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+======================================================================
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   PAIRWISE MODEL CORRELATIONS (ecoli_t10)
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | ======================================================================
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+  P(E. coli activity):
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   Pair                                rho      p-value      n
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   ------------------------------------------------------------
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   RF vs D-MPNN                     0.4168    1.37e-281   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   RF vs CheMeleon                  0.4898     0.00e+00   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   RF vs MoLFormer                  0.4783     0.00e+00   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   D-MPNN vs CheMeleon              0.4125    3.51e-275   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   D-MPNN vs MoLFormer              0.4075    4.73e-268   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   CheMeleon vs MoLFormer           0.4447     0.00e+00   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+  P(gut harm):
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   Pair                                rho      p-value      n
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   ------------------------------------------------------------
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   RF vs D-MPNN                     0.5585     0.00e+00   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   RF vs CheMeleon                  0.5937     0.00e+00   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   RF vs MoLFormer                  0.6276     0.00e+00   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   D-MPNN vs CheMeleon              0.6592     0.00e+00   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   D-MPNN vs MoLFormer              0.6133     0.00e+00   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   CheMeleon vs MoLFormer           0.6635     0.00e+00   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+  S = P_path x (1 - P_gut):
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   Pair                                rho      p-value      n
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   ------------------------------------------------------------
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   RF vs D-MPNN                     0.3034    1.79e-143   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   RF vs CheMeleon                  0.4038    9.19e-263   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   RF vs MoLFormer                  0.3940    3.57e-249   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   D-MPNN vs CheMeleon              0.3569    1.13e-201   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   D-MPNN vs MoLFormer              0.3578    1.05e-202   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   CheMeleon vs MoLFormer           0.4085    2.13e-269   6739
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+======================================================================
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   COMPOUND-LEVEL DISAGREEMENT
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | ======================================================================
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+  Most controversial compounds (high avg rank, high disagreement):
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   Name                       RF pctile    DMPNN   CheMel   MoLFor   Disagree
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   ---------------------------------------------------------------------------
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   amcinonide                     0.927    0.958    0.050    0.192      0.478
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   sodium-orthovanadate           0.255    0.987    0.998    0.111      0.471
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   dimesna                        0.269    0.988    0.020    0.879      0.469
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   E7449                          0.305    0.063    0.943    0.931      0.446
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   calcitonin                     0.974    0.061    0.953    0.895      0.441
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   arsenic-trioxide               0.610    0.874    0.987    0.003      0.440
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   granisetron                    0.602    0.037    0.979    0.957      0.440
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   ciaftalan-zinc                 0.249    0.966    0.990    0.188      0.439
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   imexon                         0.907    0.066    0.906    1.000      0.438
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   diatrizoic-acid                0.851    0.015    0.913    0.295      0.436
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   caracemide                     0.448    0.003    0.992    0.802      0.435
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   iothalamic-acid-d3             0.917    0.095    0.964    0.317      0.434
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   glutathione-monoisopropyl      0.972    0.235    0.940    0.180      0.433
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   liraglutide                    0.985    0.112    0.969    0.968      0.431
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   leniolisib                     0.945    0.078    0.265    0.857      0.429
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   halcinonide                    0.874    0.217    0.063    0.869      0.427
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   rifamycin                      0.031    0.362    0.931    0.854      0.425
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   dicloralurea                   0.410    0.056    0.897    0.950      0.425
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   methyldopa                     0.080    0.967    0.926    0.890      0.425
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   gamithromycin                  0.020    0.761    0.874    0.930      0.423
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+  Most agreed-upon compounds (high avg rank, low disagreement):
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   Name                       RF pctile    DMPNN   CheMel   MoLFor   Disagree
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   ---------------------------------------------------------------------------
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   2-chloroadenosine              0.993    0.987    0.988    0.991      0.003
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   inarigivir                     0.975    0.985    0.976    0.982      0.005
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   BC-11                          0.990    0.995    0.999    0.988      0.005
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   clofarabine                    0.983    0.994    0.992    0.992      0.005
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   val-tyr                        0.917    0.929    0.928    0.931      0.006
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   MK-4074                        0.949    0.951    0.938    0.954      0.007
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   carumonam                      0.998    0.994    0.988    0.980      0.008
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   fludarabine                    0.988    0.986    0.994    0.973      0.009
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   AFN-1252                       0.999    0.977    0.989    0.989      0.009
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   alafosfalin                    0.999    0.981    0.998    1.000      0.009
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   sisomicin                      1.000    0.976    0.994    0.993      0.010
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   cladribine                     0.970    0.997    0.985    0.988      0.011
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   avibactam                      0.999    0.987    0.975    0.998      0.011
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   guadecitabine                  0.981    0.998    0.993    0.973      0.011
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   relebactam                     0.999    0.973    0.986    0.996      0.011
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+======================================================================
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   MODEL BIAS CASE STUDIES
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | ======================================================================
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+  A. D-MPNN phosphate/nucleotide bias:
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     Compounds with phosphate: 154
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     D-MPNN mean S (phosphate):    0.2859
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     D-MPNN mean S (no phosphate): 0.0936
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     D-MPNN ratio: 3.1x
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     RF mean S (phosphate):        0.2169
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     RF mean S (no phosphate):     0.1675
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     RF ratio: 1.3x
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+    D-MPNN top-10 phosphate compounds:
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |       diadenosine-tetraphosphate     S=0.9998  RF S=0.4734  MW=836
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |       NADPH                          S=0.9998  RF S=0.3307  MW=745
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |       adenosine-triphosphate         S=0.9996  RF S=0.4710  MW=507
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |       coenzyme-I                     S=0.9991  RF S=0.3627  MW=665
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |       mangafodipir                   S=0.9990  RF S=0.1792  MW=691
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |       coenzyme-A                     S=0.9987  RF S=0.3218  MW=768
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |       uridine-5'-triphosphate        S=0.9986  RF S=0.4322  MW=484
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |       INS316                         S=0.9981  RF S=0.4322  MW=484
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |       nadide                         S=0.9980  RF S=0.3882  MW=664
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |       hexasodium-phytate             S=0.9976  RF S=0.1502  MW=660
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+  B. CheMeleon molecular weight bias:
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     Hub median MW:            358
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     CheMeleon top-50 median:  302
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     RF top-50 median:         348
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     CheMeleon top-50 with MW<200: 6
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     RF top-50 with MW<200:        2
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+  C. Probability calibration (saturation analysis):
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     RF          : S<0.01=   14, 0.2<S<0.8= 1941, S>0.95=    0
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     D-MPNN      : S<0.01= 4153, 0.2<S<0.8=  646, S>0.95=  114
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     CheMeleon   : S<0.01=  742, 0.2<S<0.8= 1440, S>0.95=    9
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     MoLFormer   : S<0.01= 3571, 0.2<S<0.8=  826, S>0.95=   36
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+  D. Non-antibiotic false positives in top-50:
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     RF          : 10 antibiotics, 40 non-antibiotics in top 50
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     D-MPNN      : 1 antibiotics, 49 non-antibiotics in top 50
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     CheMeleon   : 7 antibiotics, 43 non-antibiotics in top 50
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |     MoLFormer   : 5 antibiotics, 45 non-antibiotics in top 50
+2026-04-03 15:43:16 | INFO  | phase_diagnostic |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/diagnostic_disagreement.csv
+2026-04-03 15:43:16 | INFO  | phase_diagnostic | 
+  Generating figures...
+2026-04-03 15:43:19 | INFO  | phase_diagnostic |   Figure: diagnostic_score_distributions
+2026-04-03 15:43:22 | INFO  | phase_diagnostic |   Figure: diagnostic_pairwise_scatter
+2026-04-03 15:43:24 | INFO  | phase_diagnostic |   Figure: diagnostic_property_boxplots
+2026-04-03 15:43:27 | INFO  | phase_diagnostic |   Figure: diagnostic_pairwise_p_pathogen
+2026-04-03 15:43:28 | INFO  | phase_diagnostic |   Figure: diagnostic_interactive_mw_vs_s.html
+2026-04-03 15:43:28 | INFO  | phase_diagnostic | 
+  Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/diagnostic_summary.json
+2026-04-03 15:43:28 | INFO  | phase_diagnostic | 
+======================================================================
+2026-04-03 15:43:28 | INFO  | phase_diagnostic |   DIAGNOSTIC SUMMARY
+2026-04-03 15:43:28 | INFO  | phase_diagnostic | ======================================================================
+2026-04-03 15:43:28 | INFO  | phase_diagnostic |   - D-MPNN shows 3.05x higher selectivity scores for phosphate-containing compounds (vs 1.3x for RF), confirming phosphate group bias.
+2026-04-03 15:43:28 | INFO  | phase_diagnostic |   - CheMeleon top-50 has median MW=302.3 vs Hub median MW=358.4, with 6 compounds below 200 Da (vs 2 for RF).
+2026-04-03 15:43:28 | INFO  | phase_diagnostic | ======================================================================
+2026-04-03 15:43:28 | INFO  | phase_diagnostic | ============================================================
+2026-04-03 15:43:28 | INFO  | phase_diagnostic |  COMPLETED: Phase B: Diagnostic Analysis
+2026-04-03 15:43:28 | INFO  | phase_diagnostic |  Elapsed: 0m 17.4s
+2026-04-03 15:43:28 | INFO  | phase_diagnostic | ============================================================
+2026-04-05 09:16:21 | INFO  | phase_diagnostic | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase_diagnostic.log
+2026-04-05 09:16:21 | INFO  | phase_diagnostic | ============================================================
+2026-04-05 09:16:21 | INFO  | phase_diagnostic |  STARTING: Phase B: Diagnostic Analysis
+2026-04-05 09:16:21 | INFO  | phase_diagnostic | ============================================================
+2026-04-05 09:16:21 | INFO  | phase_diagnostic |   Loading screening predictions...
+2026-04-05 09:16:21 | INFO  | phase_diagnostic |     rf: 6739 compounds, cols=['smiles', 'name', 'clinical_phase', 'moa', 'disease_area', 'target']
+2026-04-05 09:16:21 | INFO  | phase_diagnostic |     dmpnn: 6739 compounds, cols=['smiles', 'name', 'clinical_phase', 'moa', 'disease_area', 'target']
+2026-04-05 09:16:21 | INFO  | phase_diagnostic |     chemeleon_frozen: 6739 compounds, cols=['smiles', 'name', 'clinical_phase', 'moa', 'disease_area', 'target']
+2026-04-05 09:16:21 | INFO  | phase_diagnostic |     molformer: 6739 compounds, cols=['smiles', 'name', 'clinical_phase', 'moa', 'disease_area', 'target']
+2026-04-05 09:16:21 | INFO  | phase_diagnostic |     dmpnn_rdkit: 6739 compounds, cols=['smiles', 'name', 'clinical_phase', 'moa', 'disease_area', 'target']
+2026-04-05 09:16:21 | INFO  | phase_diagnostic |   Merged: 6739 compounds, 24 columns
+2026-04-05 09:16:21 | INFO  | phase_diagnostic | 
+  Computing RDKit molecular descriptors...
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   Computed 14 descriptors for 6739 compounds (0 failed) in 5.1s
+2026-04-05 09:16:26 | INFO  | phase_diagnostic | 
+  Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/diagnostic_properties.csv
+2026-04-05 09:16:26 | INFO  | phase_diagnostic | 
+======================================================================
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   CHEMICAL PROPERTIES: Top-50 per model vs Full Hub
+2026-04-05 09:16:26 | INFO  | phase_diagnostic | ======================================================================
+2026-04-05 09:16:26 | INFO  | phase_diagnostic | 
+  Property               Hub mean         RF top50    D-MPNN top50  CheMeleon top50  MoLFormer top50  D-MPNN+RDKit top50
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   --------------------------------------------------------------------------------
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   MW                       382.38       402.53          412.66          341.64          423.93          447.30    
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   LogP                       2.78        -0.22  **       -0.39  **       -0.34  **        0.05  **        3.13    
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   TPSA                      88.15       148.48  **      168.71  **      128.83  **      141.17  **      104.72    
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   n_rings                    3.07         2.64            2.96            2.62            3.86            4.22  **
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   n_aromatic_rings           1.98         1.42            1.48            1.00  **        1.34            3.08  **
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   n_rotatable                5.49         7.70            5.06            4.70            6.14            5.80    
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   n_HBA                      4.96         7.26  **        8.48  **        6.14            7.82  **        6.08    
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   n_HBD                      2.11         4.16  **        4.00  **        3.88  **        3.82  **        2.24    
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   formal_charge              0.03         0.12            0.02            0.04            0.02           -0.02    
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   n_heavy_atoms             26.67        27.86           27.02           22.68           28.76           31.48    
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   fraction_sp3               0.39         0.59  **        0.50            0.52  **        0.58  **        0.37    
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   has_phosphate              0.02         0.08            0.40  **        0.08            0.08            0.04    
+2026-04-05 09:16:26 | INFO  | phase_diagnostic | 
+  ** = > 0.5 std deviation from Hub mean
+2026-04-05 09:16:26 | INFO  | phase_diagnostic | 
+======================================================================
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   PAIRWISE MODEL CORRELATIONS (ecoli_t10)
+2026-04-05 09:16:26 | INFO  | phase_diagnostic | ======================================================================
+2026-04-05 09:16:26 | INFO  | phase_diagnostic | 
+  P(E. coli activity):
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   Pair                                rho      p-value      n
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   ------------------------------------------------------------
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   RF vs D-MPNN                     0.4168    1.37e-281   6739
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   RF vs CheMeleon                  0.4898     0.00e+00   6739
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   RF vs MoLFormer                  0.4783     0.00e+00   6739
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   RF vs D-MPNN+RDKit               0.5232     0.00e+00   6739
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   D-MPNN vs CheMeleon              0.4125    3.51e-275   6739
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   D-MPNN vs MoLFormer              0.4075    4.73e-268   6739
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   D-MPNN vs D-MPNN+RDKit           0.4325    2.71e-305   6739
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   CheMeleon vs MoLFormer           0.4447     0.00e+00   6739
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   CheMeleon vs D-MPNN+RDKit        0.4296    7.67e-301   6739
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   MoLFormer vs D-MPNN+RDKit        0.4850     0.00e+00   6739
+2026-04-05 09:16:26 | INFO  | phase_diagnostic | 
+  P(gut harm):
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   Pair                                rho      p-value      n
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   ------------------------------------------------------------
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   RF vs D-MPNN                     0.5585     0.00e+00   6739
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   RF vs CheMeleon                  0.5937     0.00e+00   6739
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   RF vs MoLFormer                  0.6276     0.00e+00   6739
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   RF vs D-MPNN+RDKit               0.6858     0.00e+00   6739
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   D-MPNN vs CheMeleon              0.6592     0.00e+00   6739
+2026-04-05 09:16:26 | INFO  | phase_diagnostic |   D-MPNN vs MoLFormer              0.6133     0.00e+00   6739
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   D-MPNN vs D-MPNN+RDKit           0.5976     0.00e+00   6739
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   CheMeleon vs MoLFormer           0.6635     0.00e+00   6739
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   CheMeleon vs D-MPNN+RDKit        0.6037     0.00e+00   6739
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   MoLFormer vs D-MPNN+RDKit        0.7297     0.00e+00   6739
+2026-04-05 09:16:27 | INFO  | phase_diagnostic | 
+  S = P_path x (1 - P_gut):
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   Pair                                rho      p-value      n
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   ------------------------------------------------------------
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   RF vs D-MPNN                     0.3034    1.79e-143   6739
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   RF vs CheMeleon                  0.4038    9.19e-263   6739
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   RF vs MoLFormer                  0.3940    3.57e-249   6739
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   RF vs D-MPNN+RDKit               0.3938    7.97e-249   6739
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   D-MPNN vs CheMeleon              0.3569    1.13e-201   6739
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   D-MPNN vs MoLFormer              0.3578    1.05e-202   6739
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   D-MPNN vs D-MPNN+RDKit           0.3590    4.23e-204   6739
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   CheMeleon vs MoLFormer           0.4085    2.13e-269   6739
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   CheMeleon vs D-MPNN+RDKit        0.3497    4.21e-193   6739
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   MoLFormer vs D-MPNN+RDKit        0.4315    1.01e-303   6739
+2026-04-05 09:16:27 | INFO  | phase_diagnostic | 
+======================================================================
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   COMPOUND-LEVEL DISAGREEMENT
+2026-04-05 09:16:27 | INFO  | phase_diagnostic | ======================================================================
+2026-04-05 09:16:27 | INFO  | phase_diagnostic | 
+  Most controversial compounds (high avg rank, high disagreement):
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   Name                       RF pctile    DMPNN   CheMel   MoLFor   Disagree
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   ---------------------------------------------------------------------------
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   ML218                          0.893    0.098    0.886    0.925      0.456
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   amcinonide                     0.927    0.958    0.050    0.192      0.454
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   NSC-632839                     0.108    0.920    0.973    0.731      0.454
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   granisetron                    0.602    0.037    0.979    0.957      0.452
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   tropanyl-3,5-dimethylbenz      0.722    0.083    0.921    0.991      0.447
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   fluocinonide                   0.925    0.052    0.061    0.579      0.438
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   triamcinolone-hexacetonid      0.947    0.068    0.068    0.522      0.435
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   tenylidone                     0.262    0.989    0.978    0.351      0.434
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   SDZ-SER-082                    0.882    0.653    0.032    0.910      0.434
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   diatrizoic-acid                0.851    0.015    0.913    0.295      0.427
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   3-alpha-bis-(4-fluorophen      0.682    0.082    0.954    0.848      0.424
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   karenitecin                    0.766    0.000    0.149    0.942      0.423
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   sodium-tetradecyl-sulfate      0.895    0.765    0.075    0.032      0.423
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   acetriazoic-acid               0.863    0.030    0.842    0.215      0.422
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   sodium-orthovanadate           0.255    0.987    0.998    0.111      0.421
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   risedronate                    0.126    0.436    0.078    0.887      0.420
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   iothalamic-acid-d3             0.917    0.095    0.964    0.317      0.418
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   dimesna                        0.269    0.988    0.020    0.879      0.418
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   JHW-007                        0.742    0.137    0.942    0.947      0.414
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   leniolisib                     0.945    0.078    0.265    0.857      0.409
+2026-04-05 09:16:27 | INFO  | phase_diagnostic | 
+  Most agreed-upon compounds (high avg rank, low disagreement):
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   Name                       RF pctile    DMPNN   CheMel   MoLFor   Disagree
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   ---------------------------------------------------------------------------
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   AFN-1252                       0.999    0.977    0.989    0.989      0.008
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   alafosfalin                    0.999    0.981    0.998    1.000      0.009
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   netilmicin                     1.000    0.974    0.997    0.996      0.012
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   guadecitabine                  0.981    0.998    0.993    0.973      0.014
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   MK-4074                        0.949    0.951    0.938    0.954      0.016
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   sisomicin                      1.000    0.976    0.994    0.993      0.016
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   pipemidic-acid                 0.991    0.961    0.957    0.951      0.017
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   retapamulin                    0.991    0.962    0.987    0.985      0.018
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   avibactam                      0.999    0.987    0.975    0.998      0.018
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   XL888                          0.956    0.906    0.931    0.909      0.021
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   PHA-665752                     0.791    0.839    0.842    0.809      0.021
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   GSK-3-inhibitor-IX             0.998    0.988    0.975    0.974      0.022
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   rosoxacin                      0.985    0.943    0.943    0.985      0.022
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   toyocamycin                    0.981    0.939    0.997    0.966      0.023
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   triciribine-phosphate          0.973    0.968    0.957    0.998      0.024
+2026-04-05 09:16:27 | INFO  | phase_diagnostic | 
+======================================================================
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   MODEL BIAS CASE STUDIES
+2026-04-05 09:16:27 | INFO  | phase_diagnostic | ======================================================================
+2026-04-05 09:16:27 | INFO  | phase_diagnostic | 
+  A. D-MPNN phosphate/nucleotide bias:
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     Compounds with phosphate: 154
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     D-MPNN mean S (phosphate):    0.2859
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     D-MPNN mean S (no phosphate): 0.0936
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     D-MPNN ratio: 3.1x
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     RF mean S (phosphate):        0.2169
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     RF mean S (no phosphate):     0.1675
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     D-MPNN+RDKit mean S (phosphate):  0.2691
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     D-MPNN+RDKit mean S (no phos):    0.1345
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     D-MPNN+RDKit ratio: 2.0x
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     RF ratio: 1.3x
+2026-04-05 09:16:27 | INFO  | phase_diagnostic | 
+    D-MPNN top-10 phosphate compounds:
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |       diadenosine-tetraphosphate     S=0.9998  RF S=0.4734  MW=836
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |       NADPH                          S=0.9998  RF S=0.3307  MW=745
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |       adenosine-triphosphate         S=0.9996  RF S=0.4710  MW=507
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |       coenzyme-I                     S=0.9991  RF S=0.3627  MW=665
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |       mangafodipir                   S=0.9990  RF S=0.1792  MW=691
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |       coenzyme-A                     S=0.9987  RF S=0.3218  MW=768
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |       uridine-5'-triphosphate        S=0.9986  RF S=0.4322  MW=484
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |       INS316                         S=0.9981  RF S=0.4322  MW=484
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |       nadide                         S=0.9980  RF S=0.3882  MW=664
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |       hexasodium-phytate             S=0.9976  RF S=0.1502  MW=660
+2026-04-05 09:16:27 | INFO  | phase_diagnostic | 
+  B. CheMeleon molecular weight bias:
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     Hub median MW:            358
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     CheMeleon top-50 median:  302
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     RF top-50 median:         348
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     CheMeleon top-50 with MW<200: 6
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     RF top-50 with MW<200:        2
+2026-04-05 09:16:27 | INFO  | phase_diagnostic | 
+  C. Probability calibration (saturation analysis):
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     RF          : S<0.01=   14, 0.2<S<0.8= 1941, S>0.95=    0
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     D-MPNN      : S<0.01= 4153, 0.2<S<0.8=  646, S>0.95=  114
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     CheMeleon   : S<0.01=  742, 0.2<S<0.8= 1440, S>0.95=    9
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     MoLFormer   : S<0.01= 3571, 0.2<S<0.8=  826, S>0.95=   36
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     D-MPNN+RDKit: S<0.01=  212, 0.2<S<0.8= 1612, S>0.95=    0
+2026-04-05 09:16:27 | INFO  | phase_diagnostic | 
+  D. Non-antibiotic false positives in top-50:
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     RF          : 10 antibiotics, 40 non-antibiotics in top 50
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     D-MPNN      : 1 antibiotics, 49 non-antibiotics in top 50
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     CheMeleon   : 7 antibiotics, 43 non-antibiotics in top 50
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     MoLFormer   : 5 antibiotics, 45 non-antibiotics in top 50
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |     D-MPNN+RDKit: 4 antibiotics, 46 non-antibiotics in top 50
+2026-04-05 09:16:27 | INFO  | phase_diagnostic |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/diagnostic_disagreement.csv
+2026-04-05 09:16:27 | INFO  | phase_diagnostic | 
+  Generating figures...
+2026-04-05 09:16:30 | INFO  | phase_diagnostic |   Figure: diagnostic_score_distributions
+2026-04-05 09:16:35 | INFO  | phase_diagnostic |   Figure: diagnostic_pairwise_scatter
+2026-04-05 09:16:38 | INFO  | phase_diagnostic |   Figure: diagnostic_property_boxplots
+2026-04-05 09:16:43 | INFO  | phase_diagnostic |   Figure: diagnostic_pairwise_p_pathogen
+2026-04-05 09:16:45 | INFO  | phase_diagnostic |   Figure: diagnostic_interactive_mw_vs_s.html
+2026-04-05 09:16:45 | INFO  | phase_diagnostic | 
+  Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/diagnostic_summary.json
+2026-04-05 09:16:45 | INFO  | phase_diagnostic | 
+======================================================================
+2026-04-05 09:16:45 | INFO  | phase_diagnostic |   DIAGNOSTIC SUMMARY
+2026-04-05 09:16:45 | INFO  | phase_diagnostic | ======================================================================
+2026-04-05 09:16:45 | INFO  | phase_diagnostic |   - D-MPNN shows 3.05x higher selectivity scores for phosphate-containing compounds (vs 1.3x for RF), confirming phosphate group bias.
+2026-04-05 09:16:45 | INFO  | phase_diagnostic |   - CheMeleon top-50 has median MW=302.3 vs Hub median MW=358.4, with 6 compounds below 200 Da (vs 2 for RF).
+2026-04-05 09:16:45 | INFO  | phase_diagnostic | ======================================================================
+2026-04-05 09:16:45 | INFO  | phase_diagnostic | ============================================================
+2026-04-05 09:16:45 | INFO  | phase_diagnostic |  COMPLETED: Phase B: Diagnostic Analysis
+2026-04-05 09:16:45 | INFO  | phase_diagnostic |  Elapsed: 0m 23.9s
+2026-04-05 09:16:45 | INFO  | phase_diagnostic | ============================================================

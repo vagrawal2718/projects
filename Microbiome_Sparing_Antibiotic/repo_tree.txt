@@ -1,0 +1,692 @@
+.
+├── ada_full_setup.sh
+├── backup_to_drive.sh
+├── collect_and_archive.sh
+├── data
+│   ├── chembl
+│   │   ├── ecoli_activity.csv
+│   │   ├── mtb_activity.csv
+│   │   ├── paeruginosa_activity.csv
+│   │   └── saureus_activity.csv
+│   ├── chemeleon_input
+│   │   ├── ecoli.csv
+│   │   ├── gut_t10.csv
+│   │   ├── gut_t20.csv
+│   │   ├── gut_t5.csv
+│   │   ├── hub_screen.csv
+│   │   ├── mtb.csv
+│   │   ├── paeruginosa.csv
+│   │   └── saureus.csv
+│   ├── dmpnn_input
+│   │   ├── ecoli.csv
+│   │   ├── gut_t10.csv
+│   │   ├── gut_t20.csv
+│   │   ├── gut_t5.csv
+│   │   ├── hub_screen.csv
+│   │   ├── mtb.csv
+│   │   ├── paeruginosa.csv
+│   │   └── saureus.csv
+│   ├── maier
+│   │   ├── 41586_2018_BFnature25979_MOESM13_ESM.xlsx
+│   │   ├── 41586_2018_BFnature25979_MOESM14_ESM.xlsx
+│   │   ├── 41586_2018_BFnature25979_MOESM15_ESM.xlsx
+│   │   ├── 41586_2018_BFnature25979_MOESM16_ESM.xlsx
+│   │   ├── 41586_2018_BFnature25979_MOESM3_ESM.xlsx
+│   │   ├── 41586_2018_BFnature25979_MOESM4_ESM.xlsx
+│   │   ├── 41586_2018_BFnature25979_MOESM5_ESM.xlsx
+│   │   ├── 41586_2018_BFnature25979_MOESM6_ESM.xlsx
+│   │   ├── 41586_2018_BFnature25979_MOESM7_ESM.xlsx
+│   │   ├── 41586_2018_BFnature25979_MOESM8_ESM.xlsx
+│   │   ├── 41586_2021_3986_MOESM10_ESM.xlsx
+│   │   ├── 41586_2021_3986_MOESM11_ESM.xlsx
+│   │   ├── 41586_2021_3986_MOESM12_ESM.xlsx
+│   │   ├── 41586_2021_3986_MOESM13_ESM.xlsx
+│   │   ├── 41586_2021_3986_MOESM14_ESM.xlsx
+│   │   ├── 41586_2021_3986_MOESM15_ESM.xlsx
+│   │   ├── 41586_2021_3986_MOESM16_ESM.xlsx
+│   │   ├── 41586_2021_3986_MOESM17_ESM.xlsx
+│   │   ├── 41586_2021_3986_MOESM18_ESM.xlsx
+│   │   ├── 41586_2021_3986_MOESM19_ESM.xlsx
+│   │   ├── 41586_2021_3986_MOESM20_ESM.xlsx
+│   │   ├── 41586_2021_3986_MOESM3_ESM.xlsx
+│   │   ├── 41586_2021_3986_MOESM8_ESM.xlsx
+│   │   ├── 41586_2021_3986_MOESM9_ESM.xlsx
+│   │   ├── maier_combined.csv
+│   │   └── maier_smiles_lookup.csv
+│   └── repurposing_hub
+│       └── repurposing_hub_clean.csv
+├── job_manager.sh
+├── jobs
+│   ├── phase1a_chembl.sh
+│   ├── phase1b_maier.sh
+│   ├── phase1c_hub.sh
+│   ├── phase2_features.sh
+│   ├── phase3a_rf.sh
+│   ├── phase3b_dmpnn.sh
+│   └── phase4_evaluate.sh
+├── logs
+│   ├── all_models_2594320.log
+│   ├── backfill_metrics.log
+│   ├── batch_2592580.err
+│   ├── batch_2592580.out
+│   ├── batch_2592581.err
+│   ├── batch_2592581.out
+│   ├── dataset_analysis.log
+│   ├── dmpnn_rdkit_slurm.log
+│   ├── interim_report.log
+│   ├── phase3c_frozen.log
+│   ├── phase3d.log
+│   ├── phase4.log
+│   ├── phase5_compare.log
+│   ├── phase6_report.log
+│   ├── phase_diagnostic.log
+│   ├── phase_dmpnn_rdkit.log
+│   ├── phase_ext_benchmark.log
+│   ├── phase_interpret.log
+│   ├── showcase.log
+│   └── uncertainty_adjustment.log
+├── outputs
+│   ├── runs
+│   │   └── run_20260315_034033
+│   │       ├── checkpoints
+│   │       │   ├── phase1a_master.json
+│   │       │   ├── phase2_master.json
+│   │       │   ├── phase3b_master.json
+│   │       │   └── phase4_master.json
+│   │       └── results
+│   │           ├── bias_analysis_and_future_work.md
+│   │           ├── candidate_consensus.csv
+│   │           ├── candidate_consensus_properties.csv
+│   │           ├── candidate_detailed_top100.csv
+│   │           ├── candidate_known_antibiotics.csv
+│   │           ├── candidate_novel_discoveries.csv
+│   │           ├── candidate_properties_summary.json
+│   │           ├── chemeleon_frozen_cv_metrics.json
+│   │           ├── comparison_full_metrics.csv
+│   │           ├── comparison_summary.csv
+│   │           ├── comparison_summary.tex
+│   │           ├── consolidated_results_report.md
+│   │           ├── cv_metrics_diagnostic.csv
+│   │           ├── dataset_analysis.json
+│   │           ├── dataset_report_dynamic.md
+│   │           ├── diagnostic_disagreement.csv
+│   │           ├── diagnostic_properties.csv
+│   │           ├── diagnostic_summary.json
+│   │           ├── dmpnn_cv_metrics.json
+│   │           ├── dmpnn_cv_metrics.json.bak
+│   │           ├── dmpnn_rdkit_checkpoint.json
+│   │           ├── dmpnn_rdkit_cv_metrics.json
+│   │           ├── dmpnn_rdkit_cv_metrics.json.bak
+│   │           ├── dmpnn_rdkit_full_report.json
+│   │           ├── external_golden_intersection.csv
+│   │           ├── external_halicin_case_study.json
+│   │           ├── external_stokes_comparison.csv
+│   │           ├── figures
+│   │           │   ├── 3d_chemical_space.html
+│   │           │   ├── 3d_selectivity_chemeleon_frozen.html
+│   │           │   ├── 3d_selectivity_dmpnn.html
+│   │           │   ├── 3d_selectivity_dmpnn_rdkit.html
+│   │           │   ├── 3d_selectivity_molformer.html
+│   │           │   ├── 3d_selectivity_rf.html
+│   │           │   ├── 3d_selectivity_surface.html
+│   │           │   ├── animated_threshold_bubbles.html
+│   │           │   ├── animated_threshold_bubbles_rf.html
+│   │           │   ├── candidates_3d_landscape_chemeleon_frozen_ecoli.html
+│   │           │   ├── candidates_3d_landscape_chemeleon_frozen_mtb.html
+│   │           │   ├── candidates_3d_landscape_chemeleon_frozen_paeruginosa.html
+│   │           │   ├── candidates_3d_landscape_chemeleon_frozen_saureus.html
+│   │           │   ├── candidates_3d_landscape_dmpnn_ecoli.html
+│   │           │   ├── candidates_3d_landscape_dmpnn_mtb.html
+│   │           │   ├── candidates_3d_landscape_dmpnn_paeruginosa.html
+│   │           │   ├── candidates_3d_landscape_dmpnn_rdkit_ecoli.html
+│   │           │   ├── candidates_3d_landscape_dmpnn_rdkit_mtb.html
+│   │           │   ├── candidates_3d_landscape_dmpnn_rdkit_paeruginosa.html
+│   │           │   ├── candidates_3d_landscape_dmpnn_rdkit_saureus.html
+│   │           │   ├── candidates_3d_landscape_dmpnn_saureus.html
+│   │           │   ├── candidates_3d_landscape_molformer_ecoli.html
+│   │           │   ├── candidates_3d_landscape_molformer_mtb.html
+│   │           │   ├── candidates_3d_landscape_molformer_paeruginosa.html
+│   │           │   ├── candidates_3d_landscape_molformer_saureus.html
+│   │           │   ├── candidates_3d_landscape_rf_ecoli.html
+│   │           │   ├── candidates_3d_landscape_rf_mtb.html
+│   │           │   ├── candidates_3d_landscape_rf_paeruginosa.html
+│   │           │   ├── candidates_3d_landscape_rf_saureus.html
+│   │           │   ├── candidates_benchmark_comparison.html
+│   │           │   ├── candidates_benchmark_lollipop.html
+│   │           │   ├── candidates_consensus_heatmap.html
+│   │           │   ├── candidates_known_vs_novel.html
+│   │           │   ├── candidates_master_dashboard.html
+│   │           │   ├── candidates_radar_top20.html
+│   │           │   ├── candidates_scatter_chemeleon_frozen_ecoli.html
+│   │           │   ├── candidates_scatter_chemeleon_frozen_mtb.html
+│   │           │   ├── candidates_scatter_chemeleon_frozen_paeruginosa.html
+│   │           │   ├── candidates_scatter_chemeleon_frozen_saureus.html
+│   │           │   ├── candidates_scatter_dmpnn_ecoli.html
+│   │           │   ├── candidates_scatter_dmpnn_mtb.html
+│   │           │   ├── candidates_scatter_dmpnn_paeruginosa.html
+│   │           │   ├── candidates_scatter_dmpnn_rdkit_ecoli.html
+│   │           │   ├── candidates_scatter_dmpnn_rdkit_mtb.html
+│   │           │   ├── candidates_scatter_dmpnn_rdkit_paeruginosa.html
+│   │           │   ├── candidates_scatter_dmpnn_rdkit_saureus.html
+│   │           │   ├── candidates_scatter_dmpnn_saureus.html
+│   │           │   ├── candidates_scatter_molformer_ecoli.html
+│   │           │   ├── candidates_scatter_molformer_mtb.html
+│   │           │   ├── candidates_scatter_molformer_paeruginosa.html
+│   │           │   ├── candidates_scatter_molformer_saureus.html
+│   │           │   ├── candidates_scatter_rf_ecoli.html
+│   │           │   ├── candidates_scatter_rf_mtb.html
+│   │           │   ├── candidates_scatter_rf_paeruginosa.html
+│   │           │   ├── candidates_scatter_rf_saureus.html
+│   │           │   ├── comparison_3d_mean_mcc.html
+│   │           │   ├── comparison_3d_mean_roc_auc.html
+│   │           │   ├── comparison_bar_mean_mcc.png
+│   │           │   ├── comparison_bar_mean_pr_auc.png
+│   │           │   ├── comparison_bar_mean_roc_auc.png
+│   │           │   ├── comparison_radar_ecoli.png
+│   │           │   ├── comparison_radar_gut_t10.png
+│   │           │   ├── comparison_radar_gut_t15.png
+│   │           │   ├── comparison_radar_gut_t20.png
+│   │           │   ├── comparison_radar_mtb.png
+│   │           │   ├── comparison_radar_paeruginosa.png
+│   │           │   ├── comparison_radar_saureus.png
+│   │           │   ├── data_active_vs_inactive_mw.pdf
+│   │           │   ├── data_active_vs_inactive_mw.png
+│   │           │   ├── data_chemical_space_pca.pdf
+│   │           │   ├── data_chemical_space_pca.png
+│   │           │   ├── data_class_balance.pdf
+│   │           │   ├── data_class_balance.png
+│   │           │   ├── data_cross_dataset_overlap.pdf
+│   │           │   ├── data_cross_dataset_overlap.png
+│   │           │   ├── data_cross_study_mw.pdf
+│   │           │   ├── data_cross_study_mw.png
+│   │           │   ├── data_cross_study_overlap.pdf
+│   │           │   ├── data_cross_study_overlap.png
+│   │           │   ├── data_cross_study_pca.pdf
+│   │           │   ├── data_cross_study_pca.png
+│   │           │   ├── data_dataset_sizes.pdf
+│   │           │   ├── data_dataset_sizes.png
+│   │           │   ├── data_fingerprint_bits.pdf
+│   │           │   ├── data_fingerprint_bits.png
+│   │           │   ├── data_hub_clinical_moa.pdf
+│   │           │   ├── data_hub_clinical_moa.png
+│   │           │   ├── data_hub_disease_areas.pdf
+│   │           │   ├── data_hub_disease_areas.png
+│   │           │   ├── data_lipinski.pdf
+│   │           │   ├── data_lipinski.png
+│   │           │   ├── data_maier_class_strain_heatmap.pdf
+│   │           │   ├── data_maier_class_strain_heatmap.png
+│   │           │   ├── data_maier_nhit.pdf
+│   │           │   ├── data_maier_nhit.png
+│   │           │   ├── data_maier_strain_heatmap.pdf
+│   │           │   ├── data_maier_strain_heatmap.png
+│   │           │   ├── data_maier_strain_sensitivity.pdf
+│   │           │   ├── data_maier_strain_sensitivity.png
+│   │           │   ├── data_molecular_properties.pdf
+│   │           │   ├── data_molecular_properties.png
+│   │           │   ├── data_pathogen_gut_coactivity.pdf
+│   │           │   ├── data_pathogen_gut_coactivity.png
+│   │           │   ├── data_property_boxplots.pdf
+│   │           │   ├── data_property_boxplots.png
+│   │           │   ├── data_smiles_length.pdf
+│   │           │   ├── data_smiles_length.png
+│   │           │   ├── data_stokes_hub_predictions.pdf
+│   │           │   ├── data_stokes_hub_predictions.png
+│   │           │   ├── data_stokes_model_comparison.pdf
+│   │           │   ├── data_stokes_model_comparison.png
+│   │           │   ├── data_stokes_rdkit_features.pdf
+│   │           │   ├── data_stokes_rdkit_features.png
+│   │           │   ├── data_stokes_training.pdf
+│   │           │   ├── data_stokes_training.png
+│   │           │   ├── data_study_class_balance.pdf
+│   │           │   ├── data_study_class_balance.png
+│   │           │   ├── data_study_sizes_comparison.pdf
+│   │           │   ├── data_study_sizes_comparison.png
+│   │           │   ├── data_wong_predictions.pdf
+│   │           │   ├── data_wong_predictions.png
+│   │           │   ├── data_wong_training.pdf
+│   │           │   ├── data_wong_training.png
+│   │           │   ├── diagnostic_interactive_mw_vs_s.html
+│   │           │   ├── diagnostic_pairwise_p_pathogen.pdf
+│   │           │   ├── diagnostic_pairwise_p_pathogen.png
+│   │           │   ├── diagnostic_pairwise_scatter.pdf
+│   │           │   ├── diagnostic_pairwise_scatter.png
+│   │           │   ├── diagnostic_property_boxplots.pdf
+│   │           │   ├── diagnostic_property_boxplots.png
+│   │           │   ├── diagnostic_score_distributions.pdf
+│   │           │   ├── diagnostic_score_distributions.png
+│   │           │   ├── dmpnn_rdkit_old_vs_new_scatter.pdf
+│   │           │   ├── dmpnn_rdkit_old_vs_new_scatter.png
+│   │           │   ├── dmpnn_rdkit_score_comparison.pdf
+│   │           │   ├── dmpnn_rdkit_score_comparison.png
+│   │           │   ├── external_all_models_vs_stokes.pdf
+│   │           │   ├── external_all_models_vs_stokes.png
+│   │           │   ├── external_interactive_comparison.html
+│   │           │   ├── external_stokes_vs_ours.pdf
+│   │           │   ├── external_stokes_vs_ours.png
+│   │           │   ├── interim_comparison.png
+│   │           │   ├── interpret_rf_importance.pdf
+│   │           │   ├── interpret_rf_importance.png
+│   │           │   ├── interpret_rf_per_compound.pdf
+│   │           │   ├── interpret_rf_per_compound.png
+│   │           │   ├── phase3b_cv_metrics.pdf
+│   │           │   ├── phase3b_cv_metrics.png
+│   │           │   ├── phase3b_selectivity_ecoli.pdf
+│   │           │   ├── phase3b_selectivity_ecoli.png
+│   │           │   ├── phase3c_cv_metrics.pdf
+│   │           │   ├── phase3c_cv_metrics.png
+│   │           │   ├── phase3c_selectivity_ecoli.pdf
+│   │           │   ├── phase3c_selectivity_ecoli.png
+│   │           │   ├── phase3d_cv_metrics.pdf
+│   │           │   ├── phase3d_cv_metrics.png
+│   │           │   ├── phase3d_selectivity_ecoli.pdf
+│   │           │   ├── phase3d_selectivity_ecoli.png
+│   │           │   ├── phase4_level1_diagnostic.pdf
+│   │           │   ├── phase4_level1_diagnostic.png
+│   │           │   ├── phase4_scatter_chemeleon_frozen_ecoli_t10.pdf
+│   │           │   ├── phase4_scatter_chemeleon_frozen_ecoli_t10.png
+│   │           │   ├── phase4_scatter_dmpnn_ecoli_t10.pdf
+│   │           │   ├── phase4_scatter_dmpnn_ecoli_t10.png
+│   │           │   ├── phase4_scatter_dmpnn_rdkit_ecoli_t10.pdf
+│   │           │   ├── phase4_scatter_dmpnn_rdkit_ecoli_t10.png
+│   │           │   ├── phase4_scatter_molformer_ecoli_t10.pdf
+│   │           │   ├── phase4_scatter_molformer_ecoli_t10.png
+│   │           │   ├── phase4_scatter_rf_ecoli_t10.pdf
+│   │           │   ├── phase4_scatter_rf_ecoli_t10.png
+│   │           │   ├── phase4_test1_chemeleon_frozen_ecoli_t10.pdf
+│   │           │   ├── phase4_test1_chemeleon_frozen_ecoli_t10.png
+│   │           │   ├── phase4_test1_chemeleon_frozen_ecoli_t20.pdf
+│   │           │   ├── phase4_test1_chemeleon_frozen_ecoli_t20.png
+│   │           │   ├── phase4_test1_chemeleon_frozen_ecoli_t5.pdf
+│   │           │   ├── phase4_test1_chemeleon_frozen_ecoli_t5.png
+│   │           │   ├── phase4_test1_chemeleon_frozen_mtb_t10.pdf
+│   │           │   ├── phase4_test1_chemeleon_frozen_mtb_t10.png
+│   │           │   ├── phase4_test1_chemeleon_frozen_mtb_t20.pdf
+│   │           │   ├── phase4_test1_chemeleon_frozen_mtb_t20.png
+│   │           │   ├── phase4_test1_chemeleon_frozen_mtb_t5.pdf
+│   │           │   ├── phase4_test1_chemeleon_frozen_mtb_t5.png
+│   │           │   ├── phase4_test1_chemeleon_frozen_paeruginosa_t10.pdf
+│   │           │   ├── phase4_test1_chemeleon_frozen_paeruginosa_t10.png
+│   │           │   ├── phase4_test1_chemeleon_frozen_paeruginosa_t20.pdf
+│   │           │   ├── phase4_test1_chemeleon_frozen_paeruginosa_t20.png
+│   │           │   ├── phase4_test1_chemeleon_frozen_paeruginosa_t5.pdf
+│   │           │   ├── phase4_test1_chemeleon_frozen_paeruginosa_t5.png
+│   │           │   ├── phase4_test1_chemeleon_frozen_saureus_t10.pdf
+│   │           │   ├── phase4_test1_chemeleon_frozen_saureus_t10.png
+│   │           │   ├── phase4_test1_chemeleon_frozen_saureus_t20.pdf
+│   │           │   ├── phase4_test1_chemeleon_frozen_saureus_t20.png
+│   │           │   ├── phase4_test1_chemeleon_frozen_saureus_t5.pdf
+│   │           │   ├── phase4_test1_chemeleon_frozen_saureus_t5.png
+│   │           │   ├── phase4_test1_dmpnn_ecoli_t10.pdf
+│   │           │   ├── phase4_test1_dmpnn_ecoli_t10.png
+│   │           │   ├── phase4_test1_dmpnn_ecoli_t20.pdf
+│   │           │   ├── phase4_test1_dmpnn_ecoli_t20.png
+│   │           │   ├── phase4_test1_dmpnn_ecoli_t5.pdf
+│   │           │   ├── phase4_test1_dmpnn_ecoli_t5.png
+│   │           │   ├── phase4_test1_dmpnn_mtb_t10.pdf
+│   │           │   ├── phase4_test1_dmpnn_mtb_t10.png
+│   │           │   ├── phase4_test1_dmpnn_mtb_t20.pdf
+│   │           │   ├── phase4_test1_dmpnn_mtb_t20.png
+│   │           │   ├── phase4_test1_dmpnn_mtb_t5.pdf
+│   │           │   ├── phase4_test1_dmpnn_mtb_t5.png
+│   │           │   ├── phase4_test1_dmpnn_paeruginosa_t10.pdf
+│   │           │   ├── phase4_test1_dmpnn_paeruginosa_t10.png
+│   │           │   ├── phase4_test1_dmpnn_paeruginosa_t20.pdf
+│   │           │   ├── phase4_test1_dmpnn_paeruginosa_t20.png
+│   │           │   ├── phase4_test1_dmpnn_paeruginosa_t5.pdf
+│   │           │   ├── phase4_test1_dmpnn_paeruginosa_t5.png
+│   │           │   ├── phase4_test1_dmpnn_rdkit_ecoli_t10.pdf
+│   │           │   ├── phase4_test1_dmpnn_rdkit_ecoli_t10.png
+│   │           │   ├── phase4_test1_dmpnn_rdkit_ecoli_t20.pdf
+│   │           │   ├── phase4_test1_dmpnn_rdkit_ecoli_t20.png
+│   │           │   ├── phase4_test1_dmpnn_rdkit_ecoli_t5.pdf
+│   │           │   ├── phase4_test1_dmpnn_rdkit_ecoli_t5.png
+│   │           │   ├── phase4_test1_dmpnn_rdkit_mtb_t10.pdf
+│   │           │   ├── phase4_test1_dmpnn_rdkit_mtb_t10.png
+│   │           │   ├── phase4_test1_dmpnn_rdkit_mtb_t20.pdf
+│   │           │   ├── phase4_test1_dmpnn_rdkit_mtb_t20.png
+│   │           │   ├── phase4_test1_dmpnn_rdkit_mtb_t5.pdf
+│   │           │   ├── phase4_test1_dmpnn_rdkit_mtb_t5.png
+│   │           │   ├── phase4_test1_dmpnn_rdkit_paeruginosa_t10.pdf
+│   │           │   ├── phase4_test1_dmpnn_rdkit_paeruginosa_t10.png
+│   │           │   ├── phase4_test1_dmpnn_rdkit_paeruginosa_t20.pdf
+│   │           │   ├── phase4_test1_dmpnn_rdkit_paeruginosa_t20.png
+│   │           │   ├── phase4_test1_dmpnn_rdkit_paeruginosa_t5.pdf
+│   │           │   ├── phase4_test1_dmpnn_rdkit_paeruginosa_t5.png
+│   │           │   ├── phase4_test1_dmpnn_rdkit_saureus_t10.pdf
+│   │           │   ├── phase4_test1_dmpnn_rdkit_saureus_t10.png
+│   │           │   ├── phase4_test1_dmpnn_rdkit_saureus_t20.pdf
+│   │           │   ├── phase4_test1_dmpnn_rdkit_saureus_t20.png
+│   │           │   ├── phase4_test1_dmpnn_rdkit_saureus_t5.pdf
+│   │           │   ├── phase4_test1_dmpnn_rdkit_saureus_t5.png
+│   │           │   ├── phase4_test1_dmpnn_saureus_t10.pdf
+│   │           │   ├── phase4_test1_dmpnn_saureus_t10.png
+│   │           │   ├── phase4_test1_dmpnn_saureus_t20.pdf
+│   │           │   ├── phase4_test1_dmpnn_saureus_t20.png
+│   │           │   ├── phase4_test1_dmpnn_saureus_t5.pdf
+│   │           │   ├── phase4_test1_dmpnn_saureus_t5.png
+│   │           │   ├── phase4_test1_molformer_ecoli_t10.pdf
+│   │           │   ├── phase4_test1_molformer_ecoli_t10.png
+│   │           │   ├── phase4_test1_molformer_ecoli_t20.pdf
+│   │           │   ├── phase4_test1_molformer_ecoli_t20.png
+│   │           │   ├── phase4_test1_molformer_ecoli_t5.pdf
+│   │           │   ├── phase4_test1_molformer_ecoli_t5.png
+│   │           │   ├── phase4_test1_molformer_mtb_t10.pdf
+│   │           │   ├── phase4_test1_molformer_mtb_t10.png
+│   │           │   ├── phase4_test1_molformer_mtb_t20.pdf
+│   │           │   ├── phase4_test1_molformer_mtb_t20.png
+│   │           │   ├── phase4_test1_molformer_mtb_t5.pdf
+│   │           │   ├── phase4_test1_molformer_mtb_t5.png
+│   │           │   ├── phase4_test1_molformer_paeruginosa_t10.pdf
+│   │           │   ├── phase4_test1_molformer_paeruginosa_t10.png
+│   │           │   ├── phase4_test1_molformer_paeruginosa_t20.pdf
+│   │           │   ├── phase4_test1_molformer_paeruginosa_t20.png
+│   │           │   ├── phase4_test1_molformer_paeruginosa_t5.pdf
+│   │           │   ├── phase4_test1_molformer_paeruginosa_t5.png
+│   │           │   ├── phase4_test1_molformer_saureus_t10.pdf
+│   │           │   ├── phase4_test1_molformer_saureus_t10.png
+│   │           │   ├── phase4_test1_molformer_saureus_t20.pdf
+│   │           │   ├── phase4_test1_molformer_saureus_t20.png
+│   │           │   ├── phase4_test1_molformer_saureus_t5.pdf
+│   │           │   ├── phase4_test1_molformer_saureus_t5.png
+│   │           │   ├── phase4_test1_rf_ecoli_t10.pdf
+│   │           │   ├── phase4_test1_rf_ecoli_t10.png
+│   │           │   ├── phase4_test1_rf_ecoli_t20.pdf
+│   │           │   ├── phase4_test1_rf_ecoli_t20.png
+│   │           │   ├── phase4_test1_rf_ecoli_t5.pdf
+│   │           │   ├── phase4_test1_rf_ecoli_t5.png
+│   │           │   ├── phase4_test1_rf_mtb_t10.pdf
+│   │           │   ├── phase4_test1_rf_mtb_t10.png
+│   │           │   ├── phase4_test1_rf_mtb_t20.pdf
+│   │           │   ├── phase4_test1_rf_mtb_t20.png
+│   │           │   ├── phase4_test1_rf_mtb_t5.pdf
+│   │           │   ├── phase4_test1_rf_mtb_t5.png
+│   │           │   ├── phase4_test1_rf_paeruginosa_t10.pdf
+│   │           │   ├── phase4_test1_rf_paeruginosa_t10.png
+│   │           │   ├── phase4_test1_rf_paeruginosa_t20.pdf
+│   │           │   ├── phase4_test1_rf_paeruginosa_t20.png
+│   │           │   ├── phase4_test1_rf_paeruginosa_t5.pdf
+│   │           │   ├── phase4_test1_rf_paeruginosa_t5.png
+│   │           │   ├── phase4_test1_rf_saureus_t10.pdf
+│   │           │   ├── phase4_test1_rf_saureus_t10.png
+│   │           │   ├── phase4_test1_rf_saureus_t20.pdf
+│   │           │   ├── phase4_test1_rf_saureus_t20.png
+│   │           │   ├── phase4_test1_rf_saureus_t5.pdf
+│   │           │   ├── phase4_test1_rf_saureus_t5.png
+│   │           │   ├── phase4_test3_enrichment.pdf
+│   │           │   ├── phase4_test3_enrichment.png
+│   │           │   ├── pipeline_comparison.html
+│   │           │   ├── ranked_list_explorer_chemeleon_frozen.html
+│   │           │   ├── ranked_list_explorer_dmpnn.html
+│   │           │   ├── ranked_list_explorer_dmpnn_rdkit.html
+│   │           │   ├── ranked_list_explorer.html
+│   │           │   ├── ranked_list_explorer_molformer.html
+│   │           │   ├── ranked_list_explorer_rf.html
+│   │           │   ├── showcase_dataset_overview.png
+│   │           │   ├── showcase_selectivity_heatmap.png
+│   │           │   ├── showcase_validation_chemeleon_frozen.png
+│   │           │   ├── showcase_validation_dmpnn.png
+│   │           │   ├── showcase_validation_dmpnn_rdkit.png
+│   │           │   ├── showcase_validation_molformer.png
+│   │           │   ├── showcase_validation_rf.png
+│   │           │   ├── uncertainty_adjusted_scatter.pdf
+│   │           │   ├── uncertainty_adjusted_scatter.png
+│   │           │   ├── uncertainty_delta_by_pathogen.pdf
+│   │           │   ├── uncertainty_delta_by_pathogen.png
+│   │           │   ├── uncertainty_top20_adjusted.pdf
+│   │           │   └── uncertainty_top20_adjusted.png
+│   │           ├── interim_comparison.csv
+│   │           ├── interim_summary.md
+│   │           ├── interpret_molformer_attention.json
+│   │           ├── interpret_occlusion_chemeleon.json
+│   │           ├── interpret_occlusion_dmpnn.json
+│   │           ├── interpret_occlusion_dmpnn_rdkit.json
+│   │           ├── interpret_rf_feature_importance.csv
+│   │           ├── interpret_rf_top_bits.json
+│   │           ├── interpret_summary.json
+│   │           ├── molformer_cv_metrics.json
+│   │           ├── reference_data_stats.json
+│   │           ├── report_known_antibiotics.md
+│   │           ├── report_novel_candidates.md
+│   │           ├── reports
+│   │           │   ├── external_benchmark_report.json
+│   │           │   ├── phase1a_quality_report.json
+│   │           │   ├── phase2_quality_report.json
+│   │           │   ├── phase3b_quality_report.json
+│   │           │   ├── phase3c_quality_report.json
+│   │           │   ├── phase3d_quality_report.json
+│   │           │   └── phase4_quality_report.json
+│   │           ├── rf_cv_metrics.json
+│   │           ├── rf_cv_metrics.json.bak
+│   │           ├── screening
+│   │           │   ├── chemeleon_frozen_ranked_ecoli.csv
+│   │           │   ├── chemeleon_frozen_ranked_ecoli_t10.csv
+│   │           │   ├── chemeleon_frozen_ranked_ecoli_t20.csv
+│   │           │   ├── chemeleon_frozen_ranked_ecoli_t5.csv
+│   │           │   ├── chemeleon_frozen_ranked_gut_t10.csv
+│   │           │   ├── chemeleon_frozen_ranked_gut_t20.csv
+│   │           │   ├── chemeleon_frozen_ranked_gut_t5.csv
+│   │           │   ├── chemeleon_frozen_ranked_mtb.csv
+│   │           │   ├── chemeleon_frozen_ranked_mtb_t10.csv
+│   │           │   ├── chemeleon_frozen_ranked_mtb_t20.csv
+│   │           │   ├── chemeleon_frozen_ranked_mtb_t5.csv
+│   │           │   ├── chemeleon_frozen_ranked_paeruginosa.csv
+│   │           │   ├── chemeleon_frozen_ranked_paeruginosa_t10.csv
+│   │           │   ├── chemeleon_frozen_ranked_paeruginosa_t20.csv
+│   │           │   ├── chemeleon_frozen_ranked_paeruginosa_t5.csv
+│   │           │   ├── chemeleon_frozen_ranked_saureus.csv
+│   │           │   ├── chemeleon_frozen_ranked_saureus_t10.csv
+│   │           │   ├── chemeleon_frozen_ranked_saureus_t20.csv
+│   │           │   ├── chemeleon_frozen_ranked_saureus_t5.csv
+│   │           │   ├── dmpnn_preds_ecoli.csv
+│   │           │   ├── dmpnn_preds_gut_t10.csv
+│   │           │   ├── dmpnn_preds_gut_t20.csv
+│   │           │   ├── dmpnn_preds_gut_t5.csv
+│   │           │   ├── dmpnn_preds_mtb.csv
+│   │           │   ├── dmpnn_preds_paeruginosa.csv
+│   │           │   ├── dmpnn_preds_saureus.csv
+│   │           │   ├── dmpnn_ranked_ecoli_t10.csv
+│   │           │   ├── dmpnn_ranked_ecoli_t20.csv
+│   │           │   ├── dmpnn_ranked_ecoli_t5.csv
+│   │           │   ├── dmpnn_ranked_mtb_t10.csv
+│   │           │   ├── dmpnn_ranked_mtb_t20.csv
+│   │           │   ├── dmpnn_ranked_mtb_t5.csv
+│   │           │   ├── dmpnn_ranked_paeruginosa_t10.csv
+│   │           │   ├── dmpnn_ranked_paeruginosa_t20.csv
+│   │           │   ├── dmpnn_ranked_paeruginosa_t5.csv
+│   │           │   ├── dmpnn_ranked_saureus_t10.csv
+│   │           │   ├── dmpnn_ranked_saureus_t20.csv
+│   │           │   ├── dmpnn_ranked_saureus_t5.csv
+│   │           │   ├── dmpnn_rdkit_ranked_ecoli_t10.csv
+│   │           │   ├── dmpnn_rdkit_ranked_ecoli_t20.csv
+│   │           │   ├── dmpnn_rdkit_ranked_ecoli_t5.csv
+│   │           │   ├── dmpnn_rdkit_ranked_mtb_t10.csv
+│   │           │   ├── dmpnn_rdkit_ranked_mtb_t20.csv
+│   │           │   ├── dmpnn_rdkit_ranked_mtb_t5.csv
+│   │           │   ├── dmpnn_rdkit_ranked_paeruginosa_t10.csv
+│   │           │   ├── dmpnn_rdkit_ranked_paeruginosa_t20.csv
+│   │           │   ├── dmpnn_rdkit_ranked_paeruginosa_t5.csv
+│   │           │   ├── dmpnn_rdkit_ranked_saureus_t10.csv
+│   │           │   ├── dmpnn_rdkit_ranked_saureus_t20.csv
+│   │           │   ├── dmpnn_rdkit_ranked_saureus_t5.csv
+│   │           │   ├── molformer_ranked_ecoli.csv
+│   │           │   ├── molformer_ranked_ecoli_t10.csv
+│   │           │   ├── molformer_ranked_ecoli_t20.csv
+│   │           │   ├── molformer_ranked_ecoli_t5.csv
+│   │           │   ├── molformer_ranked_gut_t10.csv
+│   │           │   ├── molformer_ranked_gut_t20.csv
+│   │           │   ├── molformer_ranked_gut_t5.csv
+│   │           │   ├── molformer_ranked_mtb.csv
+│   │           │   ├── molformer_ranked_mtb_t10.csv
+│   │           │   ├── molformer_ranked_mtb_t20.csv
+│   │           │   ├── molformer_ranked_mtb_t5.csv
+│   │           │   ├── molformer_ranked_paeruginosa.csv
+│   │           │   ├── molformer_ranked_paeruginosa_t10.csv
+│   │           │   ├── molformer_ranked_paeruginosa_t20.csv
+│   │           │   ├── molformer_ranked_paeruginosa_t5.csv
+│   │           │   ├── molformer_ranked_saureus.csv
+│   │           │   ├── molformer_ranked_saureus_t10.csv
+│   │           │   ├── molformer_ranked_saureus_t20.csv
+│   │           │   ├── molformer_ranked_saureus_t5.csv
+│   │           │   ├── rf_ranked_ecoli_t10.csv
+│   │           │   ├── rf_ranked_ecoli_t20.csv
+│   │           │   ├── rf_ranked_ecoli_t5.csv
+│   │           │   ├── rf_ranked_mtb_t10.csv
+│   │           │   ├── rf_ranked_mtb_t20.csv
+│   │           │   ├── rf_ranked_mtb_t5.csv
+│   │           │   ├── rf_ranked_paeruginosa_t10.csv
+│   │           │   ├── rf_ranked_paeruginosa_t20.csv
+│   │           │   ├── rf_ranked_paeruginosa_t5.csv
+│   │           │   ├── rf_ranked_saureus_t10.csv
+│   │           │   ├── rf_ranked_saureus_t20.csv
+│   │           │   └── rf_ranked_saureus_t5.csv
+│   │           ├── screening_overlap.csv
+│   │           ├── test1_rank_separation.csv
+│   │           ├── test2_selectivity_auc.csv
+│   │           ├── test3_topk_enrichment.csv
+│   │           ├── test4_rank_correlation.csv
+│   │           ├── test5_threshold_sensitivity.csv
+│   │           ├── uncertainty_rf_ecoli_t10.csv
+│   │           ├── uncertainty_rf_ecoli_t20.csv
+│   │           ├── uncertainty_rf_ecoli_t5.csv
+│   │           ├── uncertainty_rf_mtb_t10.csv
+│   │           ├── uncertainty_rf_mtb_t20.csv
+│   │           ├── uncertainty_rf_mtb_t5.csv
+│   │           ├── uncertainty_rf_paeruginosa_t10.csv
+│   │           ├── uncertainty_rf_paeruginosa_t20.csv
+│   │           ├── uncertainty_rf_paeruginosa_t5.csv
+│   │           ├── uncertainty_rf_saureus_t10.csv
+│   │           ├── uncertainty_rf_saureus_t20.csv
+│   │           ├── uncertainty_rf_saureus_t5.csv
+│   │           ├── uncertainty_summary.json
+│   │           └── validation_set.csv
+│   └── shared
+│       ├── features
+│       │   ├── morgan_ecoli_indices.json
+│       │   ├── morgan_ecoli.npz
+│       │   ├── morgan_maier_indices.json
+│       │   ├── morgan_maier.npz
+│       │   ├── morgan_mtb_indices.json
+│       │   ├── morgan_mtb.npz
+│       │   ├── morgan_paeruginosa_indices.json
+│       │   ├── morgan_paeruginosa.npz
+│       │   ├── morgan_repurposing_hub_indices.json
+│       │   ├── morgan_repurposing_hub.npz
+│       │   ├── morgan_saureus_indices.json
+│       │   └── morgan_saureus.npz
+│       └── splits
+│           ├── ecoli_scaffold_folds.pkl
+│           ├── maier_scaffold_folds.pkl
+│           ├── mtb_scaffold_folds.pkl
+│           ├── paeruginosa_scaffold_folds.pkl
+│           └── saureus_scaffold_folds.pkl
+├── project_tree.txt
+├── README.md
+├── reconstitute.sh
+├── Report
+│   ├── NarrowSpectrum_final.pdf
+│   ├── references.bib
+│   └── report.tex
+├── repo_Tree.txt
+├── requirements_aidp.txt
+├── requirements.txt
+├── resources
+│   └── maier
+│       ├── 41586_2018_BFnature25979_MOESM13_ESM.xlsx
+│       ├── 41586_2018_BFnature25979_MOESM14_ESM.xlsx
+│       ├── 41586_2018_BFnature25979_MOESM15_ESM.xlsx
+│       ├── 41586_2018_BFnature25979_MOESM16_ESM.xlsx
+│       ├── 41586_2018_BFnature25979_MOESM3_ESM.xlsx
+│       ├── 41586_2018_BFnature25979_MOESM4_ESM.xlsx
+│       ├── 41586_2018_BFnature25979_MOESM5_ESM.xlsx
+│       ├── 41586_2018_BFnature25979_MOESM6_ESM.xlsx
+│       ├── 41586_2018_BFnature25979_MOESM7_ESM.xlsx
+│       ├── 41586_2018_BFnature25979_MOESM8_ESM.xlsx
+│       ├── 41586_2021_3986_MOESM10_ESM.xlsx
+│       ├── 41586_2021_3986_MOESM11_ESM.xlsx
+│       ├── 41586_2021_3986_MOESM12_ESM.xlsx
+│       ├── 41586_2021_3986_MOESM13_ESM.xlsx
+│       ├── 41586_2021_3986_MOESM14_ESM.xlsx
+│       ├── 41586_2021_3986_MOESM15_ESM.xlsx
+│       ├── 41586_2021_3986_MOESM16_ESM.xlsx
+│       ├── 41586_2021_3986_MOESM17_ESM.xlsx
+│       ├── 41586_2021_3986_MOESM18_ESM.xlsx
+│       ├── 41586_2021_3986_MOESM19_ESM.xlsx
+│       ├── 41586_2021_3986_MOESM20_ESM.xlsx
+│       ├── 41586_2021_3986_MOESM3_ESM.xlsx
+│       ├── 41586_2021_3986_MOESM8_ESM.xlsx
+│       └── 41586_2021_3986_MOESM9_ESM.xlsx
+├── run_ada_dmpnn_only_current_GPU_torch_2.10.sh
+├── run_ada_dmpnn_only.sh
+├── run_ada.sh
+├── run_all.sh
+├── run_batch.sh
+├── run_batch_working_old.sh
+├── run_mac.sh
+├── run_ubuntu.sh
+├── scripts
+│   ├── 00_ada_setup.sh
+│   ├── 00_verify_environment.py
+│   ├── 01_fetch_chembl.py
+│   ├── 02_process_maier.py
+│   ├── 03_fetch_repurposing_hub.py
+│   ├── 04_compute_morgan_fps.py
+│   ├── 05_train_rf.py
+│   ├── 06_train_dmpnn_old_train_issue.py
+│   ├── 06_train_dmpnn.py
+│   ├── 07_evaluate.py
+│   ├── 08_create_showcase.py
+│   ├── 09_train_chemeleon.py
+│   ├── 10_train_molformer.py
+│   ├── 11_train_chemeleon_frozen.py
+│   ├── 12_compare_models.py
+│   ├── 13_candidate_report.py
+│   ├── 14_external_benchmark.py
+│   ├── 15_backfill_full_metrics.py
+│   ├── 16_interim_report.py
+│   ├── 17_external_benchmark_comparison.py
+│   ├── 18_diagnostic_analysis.py
+│   ├── 19_interpretability.py
+│   ├── 20_retrain_dmpnn_rdkit.py
+│   ├── 21_consolidated_report.py
+│   ├── 22_dataset_analysis.py
+│   ├── 23_uncertainty_and_adjustment.py
+│   ├── config.py
+│   ├── __pycache__
+│   │   ├── 11_train_chemeleon_frozen.cpython-312.pyc
+│   │   ├── 13_candidate_report.cpython-312.pyc
+│   │   ├── 19_interpretability.cpython-312.pyc
+│   │   ├── 22_dataset_analysis.cpython-312.pyc
+│   │   └── config.cpython-312.pyc
+│   ├── REGULATORY_STANDARDS.md
+│   ├── restore_data.py
+│   ├── run_pipeline.py
+│   ├── test_local.py
+│   └── utils
+│       ├── alternative_data.py
+│       ├── data_cache.py
+│       ├── diagnostics.py
+│       ├── full_metrics.py
+│       ├── gdrive_backup.py
+│       ├── __init__.py
+│       ├── logging_utils.py
+│       ├── network_utils.py
+│       ├── __pycache__
+│       │   ├── data_cache.cpython-312.pyc
+│       │   ├── diagnostics.cpython-312.pyc
+│       │   ├── full_metrics.cpython-312.pyc
+│       │   ├── gdrive_backup.cpython-312.pyc
+│       │   ├── __init__.cpython-312.pyc
+│       │   ├── logging_utils.cpython-312.pyc
+│       │   ├── network_utils.cpython-312.pyc
+│       │   ├── scaffold_split.cpython-312.pyc
+│       │   ├── smiles_utils.cpython-312.pyc
+│       │   └── viz_utils.cpython-312.pyc
+│       ├── scaffold_split.py
+│       ├── smiles_utils.py
+│       └── viz_utils.py
+├── setup_mac.sh
+├── setup_rclone_gdrive.sh
+├── setup_ubuntu.sh
+└── WORKFLOW.md
+
+26 directories, 663 files

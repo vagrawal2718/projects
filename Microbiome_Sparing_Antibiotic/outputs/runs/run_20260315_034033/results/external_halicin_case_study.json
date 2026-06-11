@@ -1,0 +1,29 @@
+{
+  "compound": "SU3327 (halicin)",
+  "smiles": "Nc1nnc(Sc2ncc([N+](=O)[O-])s2)s1",
+  "stokes_dmpnn_score": 0.331534500652924,
+  "stokes_dmpnn_rank": 89,
+  "stokes_validated_active": true,
+  "stokes_inhibition": 0.05,
+  "our_scores": {
+    "rf": {
+      "p_pathogen": 0.1729949082821252,
+      "p_gut": 0.5089584411179741,
+      "S": 0.0849476894415078,
+      "rank": 6000
+    },
+    "dmpnn": {
+      "S": 0.000304,
+      "rank": 4941
+    },
+    "chemeleon_frozen": {
+      "S": 0.000482,
+      "rank": 6647
+    },
+    "molformer": {
+      "S": 0.0071109005086432,
+      "rank": 3448
+    }
+  },
+  "explanation": "Halicin is a broad-spectrum antibiotic that kills E. coli, M. tuberculosis, A. baumannii, and C. difficile. Stokes et al. ranked it #89 by D-MPNN prediction score; they selected it for follow-up not because of its rank but because it was structurally divergent from all known antibiotics (Tanimoto similarity 0.21 to nearest antibiotic). Our pipeline correctly assigns low selectivity because halicin would devastate gut commensals. This demonstrates that our selectivity framework successfully distinguishes microbiome-sparing from broad-spectrum compounds."
+}

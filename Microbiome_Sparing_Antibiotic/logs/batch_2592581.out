@@ -1,0 +1,48 @@
+==========================================
+SLURM_JOB_ID = 2592581
+SLURM_NODELIST = gnode086
+SLURM_JOB_GPUS = 2
+==========================================
+[2026-03-17 17:21:50] ============================================================
+[2026-03-17 17:21:50]   Antibiotic Pipeline Batch Job
+[2026-03-17 17:21:50]   Node: gnode086
+[2026-03-17 17:21:50]   Job ID: 2592581
+[2026-03-17 17:21:50] ============================================================
+[2026-03-17 17:21:50] Scratch: /scratch/vishakha.agrawal/antibiotic-selectivity
+[2026-03-17 17:21:50] Share1:  /share1/vishakha.agrawal/antibiotic-selectivity (via scp)
+[2026-03-17 17:21:50] Home:    /home2/vishakha.agrawal/antibiotic-selectivity
+[2026-03-17 17:21:50] 
+[2026-03-17 17:21:50] Copying project from share1 to scratch...
+[2026-03-17 17:23:13] Copy complete. Scratch usage: 13G
+[2026-03-17 17:23:13] 
+[2026-03-17 17:23:13] Setting up Python environment on scratch...
+[2026-03-17 17:23:13]   Python: Python 3.12.4
+[2026-03-17 17:23:25]   Installing PyTorch (cu118)...
+[2026-03-17 17:23:33]   Installing transformers (pinned to 4.x for MoLFormer)...
+  torch=2.4.1+cu118, chemprop=2.2.2, transformers=4.57.6
+  CUDA=False, GPU=none
+[2026-03-17 17:23:51] 
+[2026-03-17 17:23:51] Run ID: run_20260315_034033
+[2026-03-17 17:23:51] 
+[2026-03-17 17:23:51] ==========================================
+[2026-03-17 17:23:51]   MoLFormer-XL Training
+[2026-03-17 17:23:51] ==========================================
+[2026-03-17 17:23:51]   Training MoLFormer (0/7 tasks complete, resuming)...
+2026-03-17 17:23:53 | INFO  | phase3d | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity/logs/phase3d.log
+2026-03-17 17:23:53 | INFO  | phase3d | ============================================================
+2026-03-17 17:23:53 | INFO  | phase3d |  STARTING: Phase 3D: MoLFormer-XL Fine-Tuning
+2026-03-17 17:23:53 | INFO  | phase3d | ============================================================
+2026-03-17 17:23:55 | INFO  | phase3d |   torch=2.4.1+cu118, transformers=4.57.6
+2026-03-17 17:23:55 | INFO  | phase3d |   GPU: not available (CPU mode)
+2026-03-17 17:23:55 | INFO  | phase3d | 
+  7 tasks to train
+2026-03-17 17:23:55 | INFO  | phase3d | 
+  >>> Model 1/7: molformer_ecoli <<<
+2026-03-17 17:23:55 | INFO  | phase3d | 
+  Training molformer_ecoli with 5-fold scaffold CV...
+2026-03-17 17:23:55 | INFO  | phase3d |     [10_train_molformer.py:molformer_ecoli:fold_0] Starting fold 0/5...
+2026-03-17 17:23:56 | INFO  | phase3d |     Loading MoLFormer from ibm/MoLFormer-XL-both-10pct...
+2026-03-17 17:23:56 | INFO  | phase3d |     transformers version: 4.57.6
+2026-03-17 17:24:03 | INFO  | phase3d |     Encoder: 44.4M params
+2026-03-17 17:24:03 | INFO  | phase3d |     Classifier: 769 params
+2026-03-17 17:24:03 | INFO  | phase3d |     Device: cpu

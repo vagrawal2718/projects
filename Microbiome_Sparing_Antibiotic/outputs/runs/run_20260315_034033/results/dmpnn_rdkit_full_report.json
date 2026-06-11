@@ -1,0 +1,537 @@
+{
+  "timestamp": "2026-04-04 23:20:53",
+  "architecture": {
+    "hidden_dim": 1600,
+    "depth": 5,
+    "dropout": 0.35,
+    "epochs": 50,
+    "batch_size": 50,
+    "ffn_num_layers": 2,
+    "ffn_hidden_dim": 1600
+  },
+  "features": "v1_rdkit_2d_normalized",
+  "screening_method": "ensemble of 5 fold models",
+  "cv_metrics": {
+    "ecoli": {
+      "mean_roc_auc": 0.8408,
+      "std_roc_auc": 0.0137,
+      "mean_pr_auc": 0.757,
+      "std_pr_auc": 0.0452,
+      "n_samples": 28284,
+      "n_positive": 9249,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "roc_auc": 0.8474,
+          "pr_auc": 0.7921,
+          "train_size": 22627,
+          "test_size": 5657
+        },
+        {
+          "fold": 1,
+          "roc_auc": 0.8444,
+          "pr_auc": 0.7674,
+          "train_size": 22627,
+          "test_size": 5657
+        },
+        {
+          "fold": 2,
+          "roc_auc": 0.8164,
+          "pr_auc": 0.7017,
+          "train_size": 22627,
+          "test_size": 5657
+        },
+        {
+          "fold": 3,
+          "roc_auc": 0.8381,
+          "pr_auc": 0.7082,
+          "train_size": 22627,
+          "test_size": 5657
+        },
+        {
+          "fold": 4,
+          "roc_auc": 0.8577,
+          "pr_auc": 0.8157,
+          "train_size": 22628,
+          "test_size": 5656
+        }
+      ]
+    },
+    "saureus": {
+      "mean_roc_auc": 0.8386,
+      "std_roc_auc": 0.0089,
+      "mean_pr_auc": 0.805,
+      "std_pr_auc": 0.0153,
+      "n_samples": 43853,
+      "n_positive": 19267,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "roc_auc": 0.8461,
+          "pr_auc": 0.8148,
+          "train_size": 35082,
+          "test_size": 8771
+        },
+        {
+          "fold": 1,
+          "roc_auc": 0.8283,
+          "pr_auc": 0.8099,
+          "train_size": 35082,
+          "test_size": 8771
+        },
+        {
+          "fold": 2,
+          "roc_auc": 0.8496,
+          "pr_auc": 0.8249,
+          "train_size": 35082,
+          "test_size": 8771
+        },
+        {
+          "fold": 3,
+          "roc_auc": 0.8406,
+          "pr_auc": 0.7824,
+          "train_size": 35083,
+          "test_size": 8770
+        },
+        {
+          "fold": 4,
+          "roc_auc": 0.8282,
+          "pr_auc": 0.7931,
+          "train_size": 35083,
+          "test_size": 8770
+        }
+      ]
+    },
+    "paeruginosa": {
+      "mean_roc_auc": 0.8233,
+      "std_roc_auc": 0.0141,
+      "mean_pr_auc": 0.6604,
+      "std_pr_auc": 0.0469,
+      "n_samples": 17783,
+      "n_positive": 4657,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "roc_auc": 0.8214,
+          "pr_auc": 0.6795,
+          "train_size": 14226,
+          "test_size": 3557
+        },
+        {
+          "fold": 1,
+          "roc_auc": 0.808,
+          "pr_auc": 0.6329,
+          "train_size": 14226,
+          "test_size": 3557
+        },
+        {
+          "fold": 2,
+          "roc_auc": 0.8167,
+          "pr_auc": 0.6901,
+          "train_size": 14227,
+          "test_size": 3556
+        },
+        {
+          "fold": 3,
+          "roc_auc": 0.8203,
+          "pr_auc": 0.5835,
+          "train_size": 14226,
+          "test_size": 3557
+        },
+        {
+          "fold": 4,
+          "roc_auc": 0.8499,
+          "pr_auc": 0.716,
+          "train_size": 14227,
+          "test_size": 3556
+        }
+      ]
+    },
+    "mtb": {
+      "mean_roc_auc": 0.7376,
+      "std_roc_auc": 0.0309,
+      "mean_pr_auc": 0.6956,
+      "std_pr_auc": 0.0546,
+      "n_samples": 18705,
+      "n_positive": 8129,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "roc_auc": 0.7112,
+          "pr_auc": 0.6632,
+          "train_size": 14964,
+          "test_size": 3741
+        },
+        {
+          "fold": 1,
+          "roc_auc": 0.6995,
+          "pr_auc": 0.6323,
+          "train_size": 14963,
+          "test_size": 3742
+        },
+        {
+          "fold": 2,
+          "roc_auc": 0.7596,
+          "pr_auc": 0.7504,
+          "train_size": 14964,
+          "test_size": 3741
+        },
+        {
+          "fold": 3,
+          "roc_auc": 0.734,
+          "pr_auc": 0.6612,
+          "train_size": 14964,
+          "test_size": 3741
+        },
+        {
+          "fold": 4,
+          "roc_auc": 0.7839,
+          "pr_auc": 0.7708,
+          "train_size": 14965,
+          "test_size": 3740
+        }
+      ]
+    },
+    "gut_t5": {
+      "mean_roc_auc": 0.8486,
+      "std_roc_auc": 0.0542,
+      "mean_pr_auc": 0.6695,
+      "std_pr_auc": 0.1057,
+      "n_samples": 1177,
+      "n_positive": 233,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "roc_auc": 0.8699,
+          "pr_auc": 0.7404,
+          "train_size": 942,
+          "test_size": 235
+        },
+        {
+          "fold": 1,
+          "roc_auc": 0.8865,
+          "pr_auc": 0.7354,
+          "train_size": 941,
+          "test_size": 236
+        },
+        {
+          "fold": 2,
+          "roc_auc": 0.8008,
+          "pr_auc": 0.6325,
+          "train_size": 941,
+          "test_size": 236
+        },
+        {
+          "fold": 3,
+          "roc_auc": 0.7706,
+          "pr_auc": 0.478,
+          "train_size": 942,
+          "test_size": 235
+        },
+        {
+          "fold": 4,
+          "roc_auc": 0.915,
+          "pr_auc": 0.7614,
+          "train_size": 942,
+          "test_size": 235
+        }
+      ]
+    },
+    "gut_t10": {
+      "mean_roc_auc": 0.8286,
+      "std_roc_auc": 0.091,
+      "mean_pr_auc": 0.6226,
+      "std_pr_auc": 0.1721,
+      "n_samples": 1177,
+      "n_positive": 179,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "roc_auc": 0.8839,
+          "pr_auc": 0.7608,
+          "train_size": 942,
+          "test_size": 235
+        },
+        {
+          "fold": 1,
+          "roc_auc": 0.8567,
+          "pr_auc": 0.6485,
+          "train_size": 941,
+          "test_size": 236
+        },
+        {
+          "fold": 2,
+          "roc_auc": 0.8247,
+          "pr_auc": 0.6483,
+          "train_size": 941,
+          "test_size": 236
+        },
+        {
+          "fold": 3,
+          "roc_auc": 0.6577,
+          "pr_auc": 0.2935,
+          "train_size": 942,
+          "test_size": 235
+        },
+        {
+          "fold": 4,
+          "roc_auc": 0.9199,
+          "pr_auc": 0.7617,
+          "train_size": 942,
+          "test_size": 235
+        }
+      ]
+    },
+    "gut_t20": {
+      "mean_roc_auc": 0.8559,
+      "std_roc_auc": 0.1117,
+      "mean_pr_auc": 0.6438,
+      "std_pr_auc": 0.1885,
+      "n_samples": 1177,
+      "n_positive": 127,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "roc_auc": 0.8673,
+          "pr_auc": 0.7027,
+          "train_size": 942,
+          "test_size": 235
+        },
+        {
+          "fold": 1,
+          "roc_auc": 0.9069,
+          "pr_auc": 0.7356,
+          "train_size": 941,
+          "test_size": 236
+        },
+        {
+          "fold": 2,
+          "roc_auc": 0.91,
+          "pr_auc": 0.7838,
+          "train_size": 941,
+          "test_size": 236
+        },
+        {
+          "fold": 3,
+          "roc_auc": 0.6396,
+          "pr_auc": 0.2706,
+          "train_size": 942,
+          "test_size": 235
+        },
+        {
+          "fold": 4,
+          "roc_auc": 0.9555,
+          "pr_auc": 0.7264,
+          "train_size": 942,
+          "test_size": 235
+        }
+      ]
+    }
+  },
+  "validation": {
+    "narrow_vs_broad": {
+      "ecoli_t10": {
+        "narrow_mean": 0.1068,
+        "broad_mean": 0.157,
+        "p_value": 0.8714285714285714,
+        "direction": "WRONG"
+      },
+      "saureus_t10": {
+        "narrow_mean": 0.1956,
+        "broad_mean": 0.2438,
+        "p_value": 0.8238095238095238,
+        "direction": "WRONG"
+      },
+      "paeruginosa_t10": {
+        "narrow_mean": 0.0727,
+        "broad_mean": 0.1126,
+        "p_value": 0.8714285714285714,
+        "direction": "WRONG"
+      },
+      "mtb_t10": {
+        "narrow_mean": 0.1103,
+        "broad_mean": 0.2953,
+        "p_value": 0.9428571428571428,
+        "direction": "WRONG"
+      }
+    },
+    "enrichment": {
+      "ecoli_t10": {
+        "n_antibiotics_top50": 1,
+        "total_antibiotics": 231,
+        "expected": 1.71,
+        "enrichment_ratio": 0.58
+      },
+      "saureus_t10": {
+        "n_antibiotics_top50": 0,
+        "total_antibiotics": 231,
+        "expected": 1.71,
+        "enrichment_ratio": 0.0
+      },
+      "paeruginosa_t10": {
+        "n_antibiotics_top50": 1,
+        "total_antibiotics": 231,
+        "expected": 1.71,
+        "enrichment_ratio": 0.58
+      },
+      "mtb_t10": {
+        "n_antibiotics_top50": 0,
+        "total_antibiotics": 231,
+        "expected": 1.71,
+        "enrichment_ratio": 0.0
+      }
+    }
+  },
+  "calibration": {
+    "ecoli_t10": {
+      "new": {
+        "S_lt_0.01": 212,
+        "S_0.2_to_0.8": 1612,
+        "S_gt_0.95": 0,
+        "median": 0.1082,
+        "n_above_0.5": 58
+      },
+      "old": {
+        "S_lt_0.01": 4153,
+        "S_0.2_to_0.8": 646,
+        "S_gt_0.95": 114,
+        "median": 0.003,
+        "n_above_0.5": 551
+      }
+    },
+    "saureus_t10": {
+      "new": {
+        "S_lt_0.01": 215,
+        "S_0.2_to_0.8": 1921,
+        "S_gt_0.95": 0,
+        "median": 0.1066,
+        "n_above_0.5": 211
+      },
+      "old": {
+        "S_lt_0.01": 3351,
+        "S_0.2_to_0.8": 1001,
+        "S_gt_0.95": 84,
+        "median": 0.0103,
+        "n_above_0.5": 597
+      }
+    },
+    "paeruginosa_t10": {
+      "new": {
+        "S_lt_0.01": 557,
+        "S_0.2_to_0.8": 636,
+        "S_gt_0.95": 0,
+        "median": 0.0556,
+        "n_above_0.5": 20
+      },
+      "old": {
+        "S_lt_0.01": 5101,
+        "S_0.2_to_0.8": 346,
+        "S_gt_0.95": 32,
+        "median": 0.0009,
+        "n_above_0.5": 237
+      }
+    },
+    "mtb_t10": {
+      "new": {
+        "S_lt_0.01": 0,
+        "S_0.2_to_0.8": 4193,
+        "S_gt_0.95": 0,
+        "median": 0.249,
+        "n_above_0.5": 507
+      },
+      "old": {
+        "S_lt_0.01": 2364,
+        "S_0.2_to_0.8": 1530,
+        "S_gt_0.95": 256,
+        "median": 0.0458,
+        "n_above_0.5": 1311
+      }
+    }
+  },
+  "comparison_with_old": {
+    "cv_comparison": {
+      "ecoli": {
+        "old_roc_auc": 0.8525,
+        "new_roc_auc": 0.8408,
+        "change": -0.0117
+      },
+      "saureus": {
+        "old_roc_auc": 0.8544,
+        "new_roc_auc": 0.8386,
+        "change": -0.0158
+      },
+      "paeruginosa": {
+        "old_roc_auc": 0.8379,
+        "new_roc_auc": 0.8233,
+        "change": -0.0146
+      },
+      "mtb": {
+        "old_roc_auc": 0.7599,
+        "new_roc_auc": 0.7376,
+        "change": -0.0223
+      },
+      "gut_t5": {
+        "old_roc_auc": 0.8248,
+        "new_roc_auc": 0.8486,
+        "change": 0.0238
+      },
+      "gut_t10": {
+        "old_roc_auc": 0.841,
+        "new_roc_auc": 0.8286,
+        "change": -0.0124
+      },
+      "gut_t20": {
+        "old_roc_auc": 0.8776,
+        "new_roc_auc": 0.8559,
+        "change": -0.0217
+      }
+    },
+    "old_top10": [
+      "diadenosine-tetraphosphate",
+      "NADPH",
+      "adenosine-triphosphate",
+      "coenzyme-I",
+      "mangafodipir",
+      "diflorasone-diacetate",
+      "coenzyme-A",
+      "uridine-5'-triphosphate",
+      "fluticasone-propionate",
+      "INS316"
+    ],
+    "new_top10": [
+      "asciminib",
+      "CUDC-907",
+      "AZD3965",
+      "AR-C155858",
+      "BEBT-908",
+      "ketohexokinase-inhibitor-1",
+      "itacitinib",
+      "alanosine",
+      "gepotidacin",
+      "TS-011"
+    ],
+    "overlap_top50": 1
+  },
+  "stokes_correlation": {
+    "ecoli_t10": {
+      "new_rho": 0.1868,
+      "old_rho": 0.1535,
+      "n_matched": 4343
+    },
+    "saureus_t10": {
+      "new_rho": 0.2716,
+      "old_rho": 0.1983,
+      "n_matched": 4343
+    },
+    "paeruginosa_t10": {
+      "new_rho": 0.2392,
+      "old_rho": 0.0323,
+      "n_matched": 4343
+    },
+    "mtb_t10": {
+      "new_rho": 0.163,
+      "old_rho": 0.1988,
+      "n_matched": 4343
+    }
+  }
+}

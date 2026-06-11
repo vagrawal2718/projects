@@ -1,0 +1,18 @@
+{
+  "ecoli": {
+    "status": "restored",
+    "n_compounds": 28284
+  },
+  "saureus": {
+    "status": "restored",
+    "n_compounds": 43853
+  },
+  "paeruginosa": {
+    "status": "restored",
+    "n_compounds": 17783
+  },
+  "mtb": {
+    "status": "restored",
+    "n_compounds": 18705
+  }
+}

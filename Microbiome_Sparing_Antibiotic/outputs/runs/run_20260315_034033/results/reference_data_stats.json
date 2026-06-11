@@ -1,0 +1,20 @@
+{
+  "stokes": {
+    "training_compounds": 2335,
+    "target": "E. coli growth inhibition",
+    "source": "Stokes et al., Cell 2020",
+    "architecture": "D-MPNN + 200 RDKit features, ensemble of 20",
+    "hub_compounds_scored": 4496,
+    "hub_validated": "162"
+  },
+  "wong": {
+    "training_compounds": 39312,
+    "active": 512,
+    "active_pct": 1.3,
+    "target": "S. aureus growth inhibition",
+    "source": "Wong et al., Nature 2024",
+    "architecture": "Chemprop D-MPNN + RDKit, ensemble of 10",
+    "broad800_compounds": 99999,
+    "mcule_files": 1128
+  }
+}

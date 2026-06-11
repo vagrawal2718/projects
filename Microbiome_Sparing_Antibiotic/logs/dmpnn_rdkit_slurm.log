@@ -1,0 +1,754 @@
+==========================================
+SLURM_JOB_ID = 2601222
+SLURM_NODELIST = gnode068
+SLURM_JOB_GPUS = 0,2,3
+==========================================
+CUDA_VISIBLE_DEVICES=0,1,2
+Node: gnode068
+GPU 0: NVIDIA GeForce RTX 2080 Ti (UUID: GPU-715aa3e9-734e-0220-5669-d95c207d0cec)
+GPU 1: NVIDIA GeForce RTX 4070 (UUID: GPU-4b4c6b30-3a70-e5ac-b62d-2c0de8903156)
+GPU 2: NVIDIA GeForce RTX 2080 Ti (UUID: GPU-6913ecdb-6d5e-e376-be06-39ab5d6cbd2e)
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase_dmpnn_rdkit.log
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit | ============================================================
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit |  STARTING: Phase D: Retrain D-MPNN with RDKit features
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit | ============================================================
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit | 
+  PHASE 1/7: TRAINING
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit | 
+======================================================================
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit |   TRAINING D-MPNN + RDKit (Stokes architecture)
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit |   depth=5, hidden=1600, dropout=0.35
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit |   Features: v1_rdkit_2d_normalized
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit |   GPUs: 4 in parallel
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit | ======================================================================
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit |   GPUPool initialized: 3 GPUs (IDs: ['0', '1', '2'])
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit | 
+  Phase 1: Training fold models (35 total)...
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit |     Launched ecoli_fold0 on GPU 0 (PID 927205)
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_0/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_0...
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_ecoli_fold0.log
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit |     Launched ecoli_fold1 on GPU 1 (PID 927213)
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_1/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_1...
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_ecoli_fold1.log
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit |     Launched ecoli_fold2 on GPU 2 (PID 927221)
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_2/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_2...
+2026-04-04 10:03:02 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_ecoli_fold2.log
+2026-04-04 10:43:38 | INFO  | phase_dmpnn_rdkit |     ecoli_fold0 completed (GPU 0)
+2026-04-04 10:43:38 | INFO  | phase_dmpnn_rdkit |     Launched ecoli_fold3 on GPU 0 (PID 927646)
+2026-04-04 10:43:38 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_3/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_3...
+2026-04-04 10:43:38 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_ecoli_fold3.log
+2026-04-04 10:46:28 | INFO  | phase_dmpnn_rdkit |     ecoli_fold2 completed (GPU 2)
+2026-04-04 10:46:28 | INFO  | phase_dmpnn_rdkit |     Launched ecoli_fold4 on GPU 2 (PID 927716)
+2026-04-04 10:46:28 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_4/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_4...
+2026-04-04 10:46:28 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_ecoli_fold4.log
+2026-04-04 10:47:48 | INFO  | phase_dmpnn_rdkit |     ecoli_fold1 completed (GPU 1)
+2026-04-04 10:47:48 | INFO  | phase_dmpnn_rdkit |     Launched saureus_fold0 on GPU 1 (PID 927754)
+2026-04-04 10:47:48 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_0/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_0...
+2026-04-04 10:47:48 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_saureus_fold0.log
+2026-04-04 11:23:48 | INFO  | phase_dmpnn_rdkit |     ecoli_fold3 completed (GPU 0)
+2026-04-04 11:23:48 | INFO  | phase_dmpnn_rdkit |     Launched saureus_fold1 on GPU 0 (PID 928063)
+2026-04-04 11:23:48 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_1/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_1...
+2026-04-04 11:23:48 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_saureus_fold1.log
+2026-04-04 11:29:14 | INFO  | phase_dmpnn_rdkit |     ecoli_fold4 completed (GPU 2)
+2026-04-04 11:29:14 | INFO  | phase_dmpnn_rdkit |     Launched saureus_fold2 on GPU 2 (PID 928111)
+2026-04-04 11:29:14 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_2/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_2...
+2026-04-04 11:29:14 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_saureus_fold2.log
+2026-04-04 11:57:24 | INFO  | phase_dmpnn_rdkit |     saureus_fold0 completed (GPU 1)
+2026-04-04 11:57:24 | INFO  | phase_dmpnn_rdkit |     Launched saureus_fold3 on GPU 1 (PID 928341)
+2026-04-04 11:57:24 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_3/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_3...
+2026-04-04 11:57:24 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_saureus_fold3.log
+2026-04-04 12:25:54 | INFO  | phase_dmpnn_rdkit |     saureus_fold1 completed (GPU 0)
+2026-04-04 12:25:54 | INFO  | phase_dmpnn_rdkit |     Launched saureus_fold4 on GPU 0 (PID 928624)
+2026-04-04 12:25:54 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_4/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_4...
+2026-04-04 12:25:54 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_saureus_fold4.log
+2026-04-04 12:35:19 | INFO  | phase_dmpnn_rdkit |     saureus_fold2 completed (GPU 2)
+2026-04-04 12:35:19 | INFO  | phase_dmpnn_rdkit |     Launched paeruginosa_fold0 on GPU 2 (PID 929573)
+2026-04-04 12:35:19 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_0/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_0...
+2026-04-04 12:35:19 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_paeruginosa_fold0.log
+2026-04-04 13:03:44 | INFO  | phase_dmpnn_rdkit |     paeruginosa_fold0 completed (GPU 2)
+2026-04-04 13:03:44 | INFO  | phase_dmpnn_rdkit |     Launched paeruginosa_fold1 on GPU 2 (PID 929813)
+2026-04-04 13:03:44 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_1/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_1...
+2026-04-04 13:03:44 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_paeruginosa_fold1.log
+2026-04-04 13:07:55 | INFO  | phase_dmpnn_rdkit |     saureus_fold3 completed (GPU 1)
+2026-04-04 13:07:55 | INFO  | phase_dmpnn_rdkit |     Launched paeruginosa_fold2 on GPU 1 (PID 929909)
+2026-04-04 13:07:55 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_2/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_2...
+2026-04-04 13:07:55 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_paeruginosa_fold2.log
+2026-04-04 13:29:30 | INFO  | phase_dmpnn_rdkit |     saureus_fold4 completed (GPU 0)
+2026-04-04 13:29:30 | INFO  | phase_dmpnn_rdkit |     Launched paeruginosa_fold3 on GPU 0 (PID 930082)
+2026-04-04 13:29:30 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_3/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_3...
+2026-04-04 13:29:30 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_paeruginosa_fold3.log
+2026-04-04 13:32:30 | INFO  | phase_dmpnn_rdkit |     paeruginosa_fold1 completed (GPU 2)
+2026-04-04 13:32:30 | INFO  | phase_dmpnn_rdkit |     Launched paeruginosa_fold4 on GPU 2 (PID 930142)
+2026-04-04 13:32:30 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_4/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_4...
+2026-04-04 13:32:30 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_paeruginosa_fold4.log
+2026-04-04 13:37:41 | INFO  | phase_dmpnn_rdkit |     paeruginosa_fold2 completed (GPU 1)
+2026-04-04 13:37:41 | INFO  | phase_dmpnn_rdkit |     Launched mtb_fold0 on GPU 1 (PID 930167)
+2026-04-04 13:37:41 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_0/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_0...
+2026-04-04 13:37:41 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_mtb_fold0.log
+2026-04-04 13:56:56 | INFO  | phase_dmpnn_rdkit |     paeruginosa_fold3 completed (GPU 0)
+2026-04-04 13:56:56 | INFO  | phase_dmpnn_rdkit |     Launched mtb_fold1 on GPU 0 (PID 930566)
+2026-04-04 13:56:56 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_1/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_1...
+2026-04-04 13:56:56 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_mtb_fold1.log
+2026-04-04 14:01:51 | INFO  | phase_dmpnn_rdkit |     paeruginosa_fold4 completed (GPU 2)
+2026-04-04 14:01:51 | INFO  | phase_dmpnn_rdkit |     Launched mtb_fold2 on GPU 2 (PID 930639)
+2026-04-04 14:01:51 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_2/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_2...
+2026-04-04 14:01:51 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_mtb_fold2.log
+2026-04-04 14:03:26 | INFO  | phase_dmpnn_rdkit |     mtb_fold0 completed (GPU 1)
+2026-04-04 14:03:26 | INFO  | phase_dmpnn_rdkit |     Launched mtb_fold3 on GPU 1 (PID 930657)
+2026-04-04 14:03:26 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_3/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_3...
+2026-04-04 14:03:26 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_mtb_fold3.log
+2026-04-04 14:20:31 | INFO  | phase_dmpnn_rdkit |     mtb_fold1 completed (GPU 0)
+2026-04-04 14:20:31 | INFO  | phase_dmpnn_rdkit |     Launched mtb_fold4 on GPU 0 (PID 930884)
+2026-04-04 14:20:31 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_4/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_4...
+2026-04-04 14:20:31 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_mtb_fold4.log
+2026-04-04 14:27:26 | INFO  | phase_dmpnn_rdkit |     mtb_fold2 completed (GPU 2)
+2026-04-04 14:27:26 | INFO  | phase_dmpnn_rdkit |     Launched gut_t5_fold0 on GPU 2 (PID 930929)
+2026-04-04 14:27:26 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_0/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_0...
+2026-04-04 14:27:26 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t5_fold0.log
+2026-04-04 14:28:46 | INFO  | phase_dmpnn_rdkit |     mtb_fold3 completed (GPU 1)
+2026-04-04 14:28:46 | INFO  | phase_dmpnn_rdkit |     Launched gut_t5_fold1 on GPU 1 (PID 930960)
+2026-04-04 14:28:46 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_1/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_1...
+2026-04-04 14:28:46 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t5_fold1.log
+2026-04-04 14:32:22 | INFO  | phase_dmpnn_rdkit |     gut_t5_fold0 completed (GPU 2)
+2026-04-04 14:32:22 | INFO  | phase_dmpnn_rdkit |     Launched gut_t5_fold2 on GPU 2 (PID 931049)
+2026-04-04 14:32:22 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_2/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_2...
+2026-04-04 14:32:22 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t5_fold2.log
+2026-04-04 14:33:52 | INFO  | phase_dmpnn_rdkit |     gut_t5_fold1 completed (GPU 1)
+2026-04-04 14:33:52 | INFO  | phase_dmpnn_rdkit |     Launched gut_t5_fold3 on GPU 1 (PID 931095)
+2026-04-04 14:33:52 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_3/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_3...
+2026-04-04 14:33:52 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t5_fold3.log
+2026-04-04 14:37:47 | INFO  | phase_dmpnn_rdkit |     gut_t5_fold2 completed (GPU 2)
+2026-04-04 14:37:47 | INFO  | phase_dmpnn_rdkit |     Launched gut_t5_fold4 on GPU 2 (PID 931185)
+2026-04-04 14:37:47 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_4/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_4...
+2026-04-04 14:37:47 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t5_fold4.log
+2026-04-04 14:38:57 | INFO  | phase_dmpnn_rdkit |     gut_t5_fold3 completed (GPU 1)
+2026-04-04 14:38:57 | INFO  | phase_dmpnn_rdkit |     Launched gut_t10_fold0 on GPU 1 (PID 931216)
+2026-04-04 14:38:57 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_0/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_0...
+2026-04-04 14:38:57 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t10_fold0.log
+2026-04-04 14:43:07 | INFO  | phase_dmpnn_rdkit |     gut_t5_fold4 completed (GPU 2)
+2026-04-04 14:43:07 | INFO  | phase_dmpnn_rdkit |     Launched gut_t10_fold1 on GPU 2 (PID 931250)
+2026-04-04 14:43:07 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_1/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_1...
+2026-04-04 14:43:07 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t10_fold1.log
+2026-04-04 14:43:52 | INFO  | phase_dmpnn_rdkit |     gut_t10_fold0 completed (GPU 1)
+2026-04-04 14:43:52 | INFO  | phase_dmpnn_rdkit |     Launched gut_t10_fold2 on GPU 1 (PID 931265)
+2026-04-04 14:43:52 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_2/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_2...
+2026-04-04 14:43:52 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t10_fold2.log
+2026-04-04 14:46:22 | INFO  | phase_dmpnn_rdkit |     mtb_fold4 completed (GPU 0)
+2026-04-04 14:46:22 | INFO  | phase_dmpnn_rdkit |     Launched gut_t10_fold3 on GPU 0 (PID 931343)
+2026-04-04 14:46:22 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_3/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_3...
+2026-04-04 14:46:22 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t10_fold3.log
+2026-04-04 14:48:07 | INFO  | phase_dmpnn_rdkit |     gut_t10_fold1 completed (GPU 2)
+2026-04-04 14:48:07 | INFO  | phase_dmpnn_rdkit |     Launched gut_t10_fold4 on GPU 2 (PID 931385)
+2026-04-04 14:48:07 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_4/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_4...
+2026-04-04 14:48:07 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t10_fold4.log
+2026-04-04 14:49:02 | INFO  | phase_dmpnn_rdkit |     gut_t10_fold2 completed (GPU 1)
+2026-04-04 14:49:02 | INFO  | phase_dmpnn_rdkit |     Launched gut_t20_fold0 on GPU 1 (PID 931414)
+2026-04-04 14:49:02 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_0/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_0...
+2026-04-04 14:49:02 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t20_fold0.log
+2026-04-04 14:52:17 | INFO  | phase_dmpnn_rdkit |     gut_t10_fold3 completed (GPU 0)
+2026-04-04 14:52:17 | INFO  | phase_dmpnn_rdkit |     Launched gut_t20_fold1 on GPU 0 (PID 931481)
+2026-04-04 14:52:17 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_1/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_1...
+2026-04-04 14:52:17 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t20_fold1.log
+2026-04-04 14:54:27 | INFO  | phase_dmpnn_rdkit |     gut_t10_fold4 completed (GPU 2)
+2026-04-04 14:54:27 | INFO  | phase_dmpnn_rdkit |     Launched gut_t20_fold2 on GPU 2 (PID 931542)
+2026-04-04 14:54:27 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_2/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_2...
+2026-04-04 14:54:27 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t20_fold2.log
+2026-04-04 14:55:02 | INFO  | phase_dmpnn_rdkit |     gut_t20_fold0 completed (GPU 1)
+2026-04-04 14:55:02 | INFO  | phase_dmpnn_rdkit |     Launched gut_t20_fold3 on GPU 1 (PID 931558)
+2026-04-04 14:55:02 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_3/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_3...
+2026-04-04 14:55:02 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t20_fold3.log
+2026-04-04 14:57:47 | INFO  | phase_dmpnn_rdkit |     gut_t20_fold1 completed (GPU 0)
+2026-04-04 14:57:47 | INFO  | phase_dmpnn_rdkit |     Launched gut_t20_fold4 on GPU 0 (PID 931609)
+2026-04-04 14:57:47 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_4/combined.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_4...
+2026-04-04 14:57:47 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t20_fold4.log
+2026-04-04 15:00:47 | INFO  | phase_dmpnn_rdkit |     gut_t20_fold2 completed (GPU 2)
+2026-04-04 15:01:07 | INFO  | phase_dmpnn_rdkit |     gut_t20_fold3 completed (GPU 1)
+2026-04-04 15:02:37 | INFO  | phase_dmpnn_rdkit |     gut_t20_fold4 completed (GPU 0)
+2026-04-04 15:02:37 | INFO  | phase_dmpnn_rdkit | 
+  Fold models: 35 exist, 0 missing (expected 35)
+2026-04-04 15:02:37 | INFO  | phase_dmpnn_rdkit | 
+  Phase 2: Training final models (7 total)...
+2026-04-04 15:02:37 | INFO  | phase_dmpnn_rdkit |     Launched ecoli_final on GPU 2 (PID 931710)
+2026-04-04 15:02:37 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/ecoli.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/final...
+2026-04-04 15:02:37 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_ecoli_final.log
+2026-04-04 15:02:37 | INFO  | phase_dmpnn_rdkit |     Launched saureus_final on GPU 1 (PID 931711)
+2026-04-04 15:02:37 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/saureus.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/final...
+2026-04-04 15:02:37 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_saureus_final.log
+2026-04-04 15:02:37 | INFO  | phase_dmpnn_rdkit |     Launched paeruginosa_final on GPU 0 (PID 931712)
+2026-04-04 15:02:37 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/paeruginosa.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/final...
+2026-04-04 15:02:37 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_paeruginosa_final.log
+2026-04-04 15:31:08 | INFO  | phase_dmpnn_rdkit |     paeruginosa_final completed (GPU 0)
+2026-04-04 15:31:08 | INFO  | phase_dmpnn_rdkit |     Launched mtb_final on GPU 0 (PID 931983)
+2026-04-04 15:31:08 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/mtb.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/final...
+2026-04-04 15:31:08 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_mtb_final.log
+2026-04-04 15:47:18 | INFO  | phase_dmpnn_rdkit |     ecoli_final completed (GPU 2)
+2026-04-04 15:47:18 | INFO  | phase_dmpnn_rdkit |     Launched gut_t5_final on GPU 2 (PID 932828)
+2026-04-04 15:47:18 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/gut_t5.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/final...
+2026-04-04 15:47:18 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t5_final.log
+2026-04-04 15:51:28 | INFO  | phase_dmpnn_rdkit |     gut_t5_final completed (GPU 2)
+2026-04-04 15:51:28 | INFO  | phase_dmpnn_rdkit |     Launched gut_t10_final on GPU 2 (PID 932886)
+2026-04-04 15:51:28 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/gut_t10.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/final...
+2026-04-04 15:51:28 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t10_final.log
+2026-04-04 15:55:58 | INFO  | phase_dmpnn_rdkit |     gut_t10_final completed (GPU 2)
+2026-04-04 15:55:58 | INFO  | phase_dmpnn_rdkit |     Launched gut_t20_final on GPU 2 (PID 932945)
+2026-04-04 15:55:58 | INFO  | phase_dmpnn_rdkit |     CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop train --data-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/gut_t20.csv --save-dir /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/final...
+2026-04-04 15:55:58 | INFO  | phase_dmpnn_rdkit |     Log: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_gut_t20_final.log
+2026-04-04 15:56:23 | INFO  | phase_dmpnn_rdkit |     mtb_final completed (GPU 0)
+2026-04-04 15:59:33 | INFO  | phase_dmpnn_rdkit |     gut_t20_final completed (GPU 2)
+2026-04-04 16:15:08 | INFO  | phase_dmpnn_rdkit |     saureus_final completed (GPU 1)
+2026-04-04 16:15:08 | INFO  | phase_dmpnn_rdkit | 
+  Final models: 7/7 exist
+2026-04-04 16:15:08 | INFO  | phase_dmpnn_rdkit |   Saved training status: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/training_status.json
+2026-04-04 16:15:08 | INFO  | phase_dmpnn_rdkit | 
+  PHASE 2/7: CV METRICS
+2026-04-04 16:15:08 | INFO  | phase_dmpnn_rdkit | 
+======================================================================
+2026-04-04 16:15:08 | INFO  | phase_dmpnn_rdkit |   CV METRICS (from fold model predictions)
+2026-04-04 16:15:08 | INFO  | phase_dmpnn_rdkit | ======================================================================
+2026-04-04 16:15:28 | ERROR | phase_dmpnn_rdkit |   ecoli fold 0: OOF predict FAILED (exit 1)
+2026-04-04 16:15:28 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:15:42 | ERROR | phase_dmpnn_rdkit |   ecoli fold 1: OOF predict FAILED (exit 1)
+2026-04-04 16:15:42 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:15:56 | ERROR | phase_dmpnn_rdkit |   ecoli fold 2: OOF predict FAILED (exit 1)
+2026-04-04 16:15:56 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:16:10 | ERROR | phase_dmpnn_rdkit |   ecoli fold 3: OOF predict FAILED (exit 1)
+2026-04-04 16:16:10 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:16:26 | ERROR | phase_dmpnn_rdkit |   ecoli fold 4: OOF predict FAILED (exit 1)
+2026-04-04 16:16:26 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:16:26 | WARNING | phase_dmpnn_rdkit |   ecoli: too few OOF predictions
+2026-04-04 16:16:41 | ERROR | phase_dmpnn_rdkit |   saureus fold 0: OOF predict FAILED (exit 1)
+2026-04-04 16:16:41 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:16:56 | ERROR | phase_dmpnn_rdkit |   saureus fold 1: OOF predict FAILED (exit 1)
+2026-04-04 16:16:56 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:17:12 | ERROR | phase_dmpnn_rdkit |   saureus fold 2: OOF predict FAILED (exit 1)
+2026-04-04 16:17:12 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:17:28 | ERROR | phase_dmpnn_rdkit |   saureus fold 3: OOF predict FAILED (exit 1)
+2026-04-04 16:17:28 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:17:43 | ERROR | phase_dmpnn_rdkit |   saureus fold 4: OOF predict FAILED (exit 1)
+2026-04-04 16:17:43 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:17:43 | WARNING | phase_dmpnn_rdkit |   saureus: too few OOF predictions
+2026-04-04 16:17:57 | ERROR | phase_dmpnn_rdkit |   paeruginosa fold 0: OOF predict FAILED (exit 1)
+2026-04-04 16:17:57 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:18:10 | ERROR | phase_dmpnn_rdkit |   paeruginosa fold 1: OOF predict FAILED (exit 1)
+2026-04-04 16:18:10 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:18:24 | ERROR | phase_dmpnn_rdkit |   paeruginosa fold 2: OOF predict FAILED (exit 1)
+2026-04-04 16:18:24 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:18:39 | ERROR | phase_dmpnn_rdkit |   paeruginosa fold 3: OOF predict FAILED (exit 1)
+2026-04-04 16:18:39 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:18:53 | ERROR | phase_dmpnn_rdkit |   paeruginosa fold 4: OOF predict FAILED (exit 1)
+2026-04-04 16:18:53 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:18:53 | WARNING | phase_dmpnn_rdkit |   paeruginosa: too few OOF predictions
+2026-04-04 16:19:06 | ERROR | phase_dmpnn_rdkit |   mtb fold 0: OOF predict FAILED (exit 1)
+2026-04-04 16:19:06 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:19:20 | ERROR | phase_dmpnn_rdkit |   mtb fold 1: OOF predict FAILED (exit 1)
+2026-04-04 16:19:20 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:19:33 | ERROR | phase_dmpnn_rdkit |   mtb fold 2: OOF predict FAILED (exit 1)
+2026-04-04 16:19:33 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:19:48 | ERROR | phase_dmpnn_rdkit |   mtb fold 3: OOF predict FAILED (exit 1)
+2026-04-04 16:19:48 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:20:01 | ERROR | phase_dmpnn_rdkit |   mtb fold 4: OOF predict FAILED (exit 1)
+2026-04-04 16:20:01 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:20:01 | WARNING | phase_dmpnn_rdkit |   mtb: too few OOF predictions
+2026-04-04 16:20:13 | ERROR | phase_dmpnn_rdkit |   gut_t5 fold 0: OOF predict FAILED (exit 1)
+2026-04-04 16:20:13 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:20:25 | ERROR | phase_dmpnn_rdkit |   gut_t5 fold 1: OOF predict FAILED (exit 1)
+2026-04-04 16:20:25 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:20:37 | ERROR | phase_dmpnn_rdkit |   gut_t5 fold 2: OOF predict FAILED (exit 1)
+2026-04-04 16:20:37 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:20:50 | ERROR | phase_dmpnn_rdkit |   gut_t5 fold 3: OOF predict FAILED (exit 1)
+2026-04-04 16:20:50 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:21:02 | ERROR | phase_dmpnn_rdkit |   gut_t5 fold 4: OOF predict FAILED (exit 1)
+2026-04-04 16:21:02 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:21:02 | WARNING | phase_dmpnn_rdkit |   gut_t5: too few OOF predictions
+2026-04-04 16:21:14 | ERROR | phase_dmpnn_rdkit |   gut_t10 fold 0: OOF predict FAILED (exit 1)
+2026-04-04 16:21:14 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:21:26 | ERROR | phase_dmpnn_rdkit |   gut_t10 fold 1: OOF predict FAILED (exit 1)
+2026-04-04 16:21:26 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:21:38 | ERROR | phase_dmpnn_rdkit |   gut_t10 fold 2: OOF predict FAILED (exit 1)
+2026-04-04 16:21:38 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:21:51 | ERROR | phase_dmpnn_rdkit |   gut_t10 fold 3: OOF predict FAILED (exit 1)
+2026-04-04 16:21:51 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:22:04 | ERROR | phase_dmpnn_rdkit |   gut_t10 fold 4: OOF predict FAILED (exit 1)
+2026-04-04 16:22:04 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:22:04 | WARNING | phase_dmpnn_rdkit |   gut_t10: too few OOF predictions
+2026-04-04 16:22:16 | ERROR | phase_dmpnn_rdkit |   gut_t20 fold 0: OOF predict FAILED (exit 1)
+2026-04-04 16:22:16 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:22:28 | ERROR | phase_dmpnn_rdkit |   gut_t20 fold 1: OOF predict FAILED (exit 1)
+2026-04-04 16:22:28 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:22:40 | ERROR | phase_dmpnn_rdkit |   gut_t20 fold 2: OOF predict FAILED (exit 1)
+2026-04-04 16:22:40 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:22:53 | ERROR | phase_dmpnn_rdkit |   gut_t20 fold 3: OOF predict FAILED (exit 1)
+2026-04-04 16:22:53 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:23:06 | ERROR | phase_dmpnn_rdkit |   gut_t20 fold 4: OOF predict FAILED (exit 1)
+2026-04-04 16:23:06 | ERROR | phase_dmpnn_rdkit |     STDERR: y/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:23:06 | WARNING | phase_dmpnn_rdkit |   gut_t20: too few OOF predictions
+2026-04-04 16:23:06 | INFO  | phase_dmpnn_rdkit | 
+  Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/dmpnn_rdkit_cv_metrics.json
+2026-04-04 16:23:06 | INFO  | phase_dmpnn_rdkit | 
+  PHASE 3/7: HUB SCREENING
+2026-04-04 16:23:06 | INFO  | phase_dmpnn_rdkit | 
+======================================================================
+2026-04-04 16:23:06 | INFO  | phase_dmpnn_rdkit |   HUB SCREENING (Ensemble of 5 fold models)
+2026-04-04 16:23:06 | INFO  | phase_dmpnn_rdkit | ======================================================================
+2026-04-04 16:23:06 | INFO  | phase_dmpnn_rdkit |   Predicting ecoli fold 0...
+2026-04-04 16:23:20 | ERROR | phase_dmpnn_rdkit |   ecoli fold 0: predict FAILED (exit 1)
+2026-04-04 16:23:20 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_0/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_0/hub_preds.csv --smiles-column smiles
+2026-04-04 16:23:20 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:23:20 | ERROR | phase_dmpnn_rdkit |   ecoli fold 0: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_0/hub_preds.csv
+2026-04-04 16:23:20 | INFO  | phase_dmpnn_rdkit |   Predicting ecoli fold 1...
+2026-04-04 16:23:34 | ERROR | phase_dmpnn_rdkit |   ecoli fold 1: predict FAILED (exit 1)
+2026-04-04 16:23:34 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_1/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_1/hub_preds.csv --smiles-column smiles
+2026-04-04 16:23:34 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:23:34 | ERROR | phase_dmpnn_rdkit |   ecoli fold 1: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_1/hub_preds.csv
+2026-04-04 16:23:34 | INFO  | phase_dmpnn_rdkit |   Predicting ecoli fold 2...
+2026-04-04 16:23:48 | ERROR | phase_dmpnn_rdkit |   ecoli fold 2: predict FAILED (exit 1)
+2026-04-04 16:23:48 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_2/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_2/hub_preds.csv --smiles-column smiles
+2026-04-04 16:23:48 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:23:48 | ERROR | phase_dmpnn_rdkit |   ecoli fold 2: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_2/hub_preds.csv
+2026-04-04 16:23:48 | INFO  | phase_dmpnn_rdkit |   Predicting ecoli fold 3...
+2026-04-04 16:24:02 | ERROR | phase_dmpnn_rdkit |   ecoli fold 3: predict FAILED (exit 1)
+2026-04-04 16:24:02 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_3/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_3/hub_preds.csv --smiles-column smiles
+2026-04-04 16:24:02 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:24:02 | ERROR | phase_dmpnn_rdkit |   ecoli fold 3: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_3/hub_preds.csv
+2026-04-04 16:24:02 | INFO  | phase_dmpnn_rdkit |   Predicting ecoli fold 4...
+2026-04-04 16:24:16 | ERROR | phase_dmpnn_rdkit |   ecoli fold 4: predict FAILED (exit 1)
+2026-04-04 16:24:16 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_4/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_4/hub_preds.csv --smiles-column smiles
+2026-04-04 16:24:16 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:24:16 | ERROR | phase_dmpnn_rdkit |   ecoli fold 4: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/ecoli/fold_4/hub_preds.csv
+2026-04-04 16:24:16 | INFO  | phase_dmpnn_rdkit |   Predicting saureus fold 0...
+2026-04-04 16:24:29 | ERROR | phase_dmpnn_rdkit |   saureus fold 0: predict FAILED (exit 1)
+2026-04-04 16:24:29 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_0/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_0/hub_preds.csv --smiles-column smiles
+2026-04-04 16:24:29 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:24:29 | ERROR | phase_dmpnn_rdkit |   saureus fold 0: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_0/hub_preds.csv
+2026-04-04 16:24:29 | INFO  | phase_dmpnn_rdkit |   Predicting saureus fold 1...
+2026-04-04 16:24:43 | ERROR | phase_dmpnn_rdkit |   saureus fold 1: predict FAILED (exit 1)
+2026-04-04 16:24:43 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_1/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_1/hub_preds.csv --smiles-column smiles
+2026-04-04 16:24:43 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:24:43 | ERROR | phase_dmpnn_rdkit |   saureus fold 1: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_1/hub_preds.csv
+2026-04-04 16:24:43 | INFO  | phase_dmpnn_rdkit |   Predicting saureus fold 2...
+2026-04-04 16:24:56 | ERROR | phase_dmpnn_rdkit |   saureus fold 2: predict FAILED (exit 1)
+2026-04-04 16:24:56 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_2/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_2/hub_preds.csv --smiles-column smiles
+2026-04-04 16:24:56 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:24:56 | ERROR | phase_dmpnn_rdkit |   saureus fold 2: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_2/hub_preds.csv
+2026-04-04 16:24:56 | INFO  | phase_dmpnn_rdkit |   Predicting saureus fold 3...
+2026-04-04 16:25:11 | ERROR | phase_dmpnn_rdkit |   saureus fold 3: predict FAILED (exit 1)
+2026-04-04 16:25:11 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_3/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_3/hub_preds.csv --smiles-column smiles
+2026-04-04 16:25:11 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:25:11 | ERROR | phase_dmpnn_rdkit |   saureus fold 3: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_3/hub_preds.csv
+2026-04-04 16:25:11 | INFO  | phase_dmpnn_rdkit |   Predicting saureus fold 4...
+2026-04-04 16:25:25 | ERROR | phase_dmpnn_rdkit |   saureus fold 4: predict FAILED (exit 1)
+2026-04-04 16:25:25 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_4/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_4/hub_preds.csv --smiles-column smiles
+2026-04-04 16:25:25 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:25:25 | ERROR | phase_dmpnn_rdkit |   saureus fold 4: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/saureus/fold_4/hub_preds.csv
+2026-04-04 16:25:25 | INFO  | phase_dmpnn_rdkit |   Predicting paeruginosa fold 0...
+2026-04-04 16:25:39 | ERROR | phase_dmpnn_rdkit |   paeruginosa fold 0: predict FAILED (exit 1)
+2026-04-04 16:25:39 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_0/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_0/hub_preds.csv --smiles-column smiles
+2026-04-04 16:25:39 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:25:39 | ERROR | phase_dmpnn_rdkit |   paeruginosa fold 0: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_0/hub_preds.csv
+2026-04-04 16:25:39 | INFO  | phase_dmpnn_rdkit |   Predicting paeruginosa fold 1...
+2026-04-04 16:25:53 | ERROR | phase_dmpnn_rdkit |   paeruginosa fold 1: predict FAILED (exit 1)
+2026-04-04 16:25:53 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_1/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_1/hub_preds.csv --smiles-column smiles
+2026-04-04 16:25:53 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:25:53 | ERROR | phase_dmpnn_rdkit |   paeruginosa fold 1: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_1/hub_preds.csv
+2026-04-04 16:25:53 | INFO  | phase_dmpnn_rdkit |   Predicting paeruginosa fold 2...
+2026-04-04 16:26:07 | ERROR | phase_dmpnn_rdkit |   paeruginosa fold 2: predict FAILED (exit 1)
+2026-04-04 16:26:07 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_2/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_2/hub_preds.csv --smiles-column smiles
+2026-04-04 16:26:07 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:26:07 | ERROR | phase_dmpnn_rdkit |   paeruginosa fold 2: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_2/hub_preds.csv
+2026-04-04 16:26:07 | INFO  | phase_dmpnn_rdkit |   Predicting paeruginosa fold 3...
+2026-04-04 16:26:22 | ERROR | phase_dmpnn_rdkit |   paeruginosa fold 3: predict FAILED (exit 1)
+2026-04-04 16:26:22 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_3/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_3/hub_preds.csv --smiles-column smiles
+2026-04-04 16:26:22 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:26:22 | ERROR | phase_dmpnn_rdkit |   paeruginosa fold 3: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_3/hub_preds.csv
+2026-04-04 16:26:22 | INFO  | phase_dmpnn_rdkit |   Predicting paeruginosa fold 4...
+2026-04-04 16:26:35 | ERROR | phase_dmpnn_rdkit |   paeruginosa fold 4: predict FAILED (exit 1)
+2026-04-04 16:26:35 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_4/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_4/hub_preds.csv --smiles-column smiles
+2026-04-04 16:26:35 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:26:35 | ERROR | phase_dmpnn_rdkit |   paeruginosa fold 4: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/paeruginosa/fold_4/hub_preds.csv
+2026-04-04 16:26:35 | INFO  | phase_dmpnn_rdkit |   Predicting mtb fold 0...
+2026-04-04 16:26:49 | ERROR | phase_dmpnn_rdkit |   mtb fold 0: predict FAILED (exit 1)
+2026-04-04 16:26:49 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_0/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_0/hub_preds.csv --smiles-column smiles
+2026-04-04 16:26:49 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:26:49 | ERROR | phase_dmpnn_rdkit |   mtb fold 0: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_0/hub_preds.csv
+2026-04-04 16:26:49 | INFO  | phase_dmpnn_rdkit |   Predicting mtb fold 1...
+2026-04-04 16:27:03 | ERROR | phase_dmpnn_rdkit |   mtb fold 1: predict FAILED (exit 1)
+2026-04-04 16:27:03 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_1/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_1/hub_preds.csv --smiles-column smiles
+2026-04-04 16:27:03 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:27:03 | ERROR | phase_dmpnn_rdkit |   mtb fold 1: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_1/hub_preds.csv
+2026-04-04 16:27:03 | INFO  | phase_dmpnn_rdkit |   Predicting mtb fold 2...
+2026-04-04 16:27:17 | ERROR | phase_dmpnn_rdkit |   mtb fold 2: predict FAILED (exit 1)
+2026-04-04 16:27:17 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_2/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_2/hub_preds.csv --smiles-column smiles
+2026-04-04 16:27:17 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:27:17 | ERROR | phase_dmpnn_rdkit |   mtb fold 2: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_2/hub_preds.csv
+2026-04-04 16:27:17 | INFO  | phase_dmpnn_rdkit |   Predicting mtb fold 3...
+2026-04-04 16:27:31 | ERROR | phase_dmpnn_rdkit |   mtb fold 3: predict FAILED (exit 1)
+2026-04-04 16:27:31 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_3/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_3/hub_preds.csv --smiles-column smiles
+2026-04-04 16:27:31 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:27:31 | ERROR | phase_dmpnn_rdkit |   mtb fold 3: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_3/hub_preds.csv
+2026-04-04 16:27:31 | INFO  | phase_dmpnn_rdkit |   Predicting mtb fold 4...
+2026-04-04 16:27:45 | ERROR | phase_dmpnn_rdkit |   mtb fold 4: predict FAILED (exit 1)
+2026-04-04 16:27:45 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_4/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_4/hub_preds.csv --smiles-column smiles
+2026-04-04 16:27:45 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:27:45 | ERROR | phase_dmpnn_rdkit |   mtb fold 4: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/mtb/fold_4/hub_preds.csv
+2026-04-04 16:27:45 | INFO  | phase_dmpnn_rdkit |   Predicting gut_t5 fold 0...
+2026-04-04 16:27:59 | ERROR | phase_dmpnn_rdkit |   gut_t5 fold 0: predict FAILED (exit 1)
+2026-04-04 16:27:59 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_0/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_0/hub_preds.csv --smiles-column smiles
+2026-04-04 16:27:59 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:27:59 | ERROR | phase_dmpnn_rdkit |   gut_t5 fold 0: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_0/hub_preds.csv
+2026-04-04 16:27:59 | INFO  | phase_dmpnn_rdkit |   Predicting gut_t5 fold 1...
+2026-04-04 16:28:12 | ERROR | phase_dmpnn_rdkit |   gut_t5 fold 1: predict FAILED (exit 1)
+2026-04-04 16:28:12 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_1/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_1/hub_preds.csv --smiles-column smiles
+2026-04-04 16:28:12 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:28:12 | ERROR | phase_dmpnn_rdkit |   gut_t5 fold 1: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_1/hub_preds.csv
+2026-04-04 16:28:12 | INFO  | phase_dmpnn_rdkit |   Predicting gut_t5 fold 2...
+2026-04-04 16:28:26 | ERROR | phase_dmpnn_rdkit |   gut_t5 fold 2: predict FAILED (exit 1)
+2026-04-04 16:28:26 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_2/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_2/hub_preds.csv --smiles-column smiles
+2026-04-04 16:28:26 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:28:26 | ERROR | phase_dmpnn_rdkit |   gut_t5 fold 2: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_2/hub_preds.csv
+2026-04-04 16:28:26 | INFO  | phase_dmpnn_rdkit |   Predicting gut_t5 fold 3...
+2026-04-04 16:28:41 | ERROR | phase_dmpnn_rdkit |   gut_t5 fold 3: predict FAILED (exit 1)
+2026-04-04 16:28:41 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_3/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_3/hub_preds.csv --smiles-column smiles
+2026-04-04 16:28:41 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:28:41 | ERROR | phase_dmpnn_rdkit |   gut_t5 fold 3: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_3/hub_preds.csv
+2026-04-04 16:28:41 | INFO  | phase_dmpnn_rdkit |   Predicting gut_t5 fold 4...
+2026-04-04 16:28:55 | ERROR | phase_dmpnn_rdkit |   gut_t5 fold 4: predict FAILED (exit 1)
+2026-04-04 16:28:55 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_4/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_4/hub_preds.csv --smiles-column smiles
+2026-04-04 16:28:55 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:28:55 | ERROR | phase_dmpnn_rdkit |   gut_t5 fold 4: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t5/fold_4/hub_preds.csv
+2026-04-04 16:28:55 | INFO  | phase_dmpnn_rdkit |   Predicting gut_t10 fold 0...
+2026-04-04 16:29:09 | ERROR | phase_dmpnn_rdkit |   gut_t10 fold 0: predict FAILED (exit 1)
+2026-04-04 16:29:09 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_0/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_0/hub_preds.csv --smiles-column smiles
+2026-04-04 16:29:09 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:29:09 | ERROR | phase_dmpnn_rdkit |   gut_t10 fold 0: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_0/hub_preds.csv
+2026-04-04 16:29:09 | INFO  | phase_dmpnn_rdkit |   Predicting gut_t10 fold 1...
+2026-04-04 16:29:22 | ERROR | phase_dmpnn_rdkit |   gut_t10 fold 1: predict FAILED (exit 1)
+2026-04-04 16:29:22 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_1/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_1/hub_preds.csv --smiles-column smiles
+2026-04-04 16:29:22 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:29:22 | ERROR | phase_dmpnn_rdkit |   gut_t10 fold 1: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_1/hub_preds.csv
+2026-04-04 16:29:22 | INFO  | phase_dmpnn_rdkit |   Predicting gut_t10 fold 2...
+2026-04-04 16:29:35 | ERROR | phase_dmpnn_rdkit |   gut_t10 fold 2: predict FAILED (exit 1)
+2026-04-04 16:29:35 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_2/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_2/hub_preds.csv --smiles-column smiles
+2026-04-04 16:29:35 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:29:35 | ERROR | phase_dmpnn_rdkit |   gut_t10 fold 2: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_2/hub_preds.csv
+2026-04-04 16:29:35 | INFO  | phase_dmpnn_rdkit |   Predicting gut_t10 fold 3...
+2026-04-04 16:29:51 | ERROR | phase_dmpnn_rdkit |   gut_t10 fold 3: predict FAILED (exit 1)
+2026-04-04 16:29:51 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_3/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_3/hub_preds.csv --smiles-column smiles
+2026-04-04 16:29:51 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:29:51 | ERROR | phase_dmpnn_rdkit |   gut_t10 fold 3: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_3/hub_preds.csv
+2026-04-04 16:29:51 | INFO  | phase_dmpnn_rdkit |   Predicting gut_t10 fold 4...
+2026-04-04 16:30:04 | ERROR | phase_dmpnn_rdkit |   gut_t10 fold 4: predict FAILED (exit 1)
+2026-04-04 16:30:04 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_4/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_4/hub_preds.csv --smiles-column smiles
+2026-04-04 16:30:04 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:30:04 | ERROR | phase_dmpnn_rdkit |   gut_t10 fold 4: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t10/fold_4/hub_preds.csv
+2026-04-04 16:30:04 | INFO  | phase_dmpnn_rdkit |   Predicting gut_t20 fold 0...
+2026-04-04 16:30:18 | ERROR | phase_dmpnn_rdkit |   gut_t20 fold 0: predict FAILED (exit 1)
+2026-04-04 16:30:18 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_0/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_0/hub_preds.csv --smiles-column smiles
+2026-04-04 16:30:18 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:30:18 | ERROR | phase_dmpnn_rdkit |   gut_t20 fold 0: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_0/hub_preds.csv
+2026-04-04 16:30:18 | INFO  | phase_dmpnn_rdkit |   Predicting gut_t20 fold 1...
+2026-04-04 16:30:31 | ERROR | phase_dmpnn_rdkit |   gut_t20 fold 1: predict FAILED (exit 1)
+2026-04-04 16:30:31 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_1/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_1/hub_preds.csv --smiles-column smiles
+2026-04-04 16:30:31 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:30:31 | ERROR | phase_dmpnn_rdkit |   gut_t20 fold 1: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_1/hub_preds.csv
+2026-04-04 16:30:31 | INFO  | phase_dmpnn_rdkit |   Predicting gut_t20 fold 2...
+2026-04-04 16:30:44 | ERROR | phase_dmpnn_rdkit |   gut_t20 fold 2: predict FAILED (exit 1)
+2026-04-04 16:30:44 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_2/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_2/hub_preds.csv --smiles-column smiles
+2026-04-04 16:30:44 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:30:44 | ERROR | phase_dmpnn_rdkit |   gut_t20 fold 2: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_2/hub_preds.csv
+2026-04-04 16:30:44 | INFO  | phase_dmpnn_rdkit |   Predicting gut_t20 fold 3...
+2026-04-04 16:31:00 | ERROR | phase_dmpnn_rdkit |   gut_t20 fold 3: predict FAILED (exit 1)
+2026-04-04 16:31:00 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_3/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_3/hub_preds.csv --smiles-column smiles
+2026-04-04 16:31:00 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:31:00 | ERROR | phase_dmpnn_rdkit |   gut_t20 fold 3: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_3/hub_preds.csv
+2026-04-04 16:31:00 | INFO  | phase_dmpnn_rdkit |   Predicting gut_t20 fold 4...
+2026-04-04 16:31:14 | ERROR | phase_dmpnn_rdkit |   gut_t20 fold 4: predict FAILED (exit 1)
+2026-04-04 16:31:14 | ERROR | phase_dmpnn_rdkit |   CMD: /home2/vishakha.agrawal/antibiotic-selectivity/venv/bin/chemprop predict --test-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/data/dmpnn_input/hub_screen.csv --model-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_4/model_0/best.pt --preds-path /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_4/hub_preds.csv --smiles-column smiles
+2026-04-04 16:31:14 | ERROR | phase_dmpnn_rdkit |   STDERR: subprocess_script.py", line 99, in launch
+    self.cluster_environment.validate_settings(num_devices=self.num_processes, num_nodes=self.num_nodes)
+  File "/home2/vishakha.agrawal/antibiotic-selectivity/venv/lib/python3.12/site-packages/lightning/fabric/plugins/environments/slurm.py", line 163, in validate_settings
+    raise ValueError(
+ValueError: You set `devices=3` in Lightning, but the number of tasks per node configured in SLURM `--ntasks-per-node=30` does not match. HINT: Set `devices=30`.
+
+2026-04-04 16:31:14 | ERROR | phase_dmpnn_rdkit |   gut_t20 fold 4: prediction failed, no output file /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/gut_t20/fold_4/hub_preds.csv
+2026-04-04 16:31:14 | ERROR | phase_dmpnn_rdkit |   Missing predictions, cannot compute selectivity
+2026-04-04 16:31:14 | ERROR | phase_dmpnn_rdkit |   No ranked lists produced. Cannot run validation, calibration, or comparison.
+2026-04-04 16:31:14 | ERROR | phase_dmpnn_rdkit |   Check training logs in /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/dmpnn_rdkit/train_*.log
+2026-04-04 16:31:14 | INFO  | phase_dmpnn_rdkit | ============================================================
+2026-04-04 16:31:14 | INFO  | phase_dmpnn_rdkit |  COMPLETED: Phase D: D-MPNN + RDKit (INCOMPLETE)
+2026-04-04 16:31:14 | INFO  | phase_dmpnn_rdkit |  Elapsed: 388m 12.1s
+2026-04-04 16:31:14 | INFO  | phase_dmpnn_rdkit | ============================================================

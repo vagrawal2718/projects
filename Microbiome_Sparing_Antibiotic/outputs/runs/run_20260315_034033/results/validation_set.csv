@@ -1,0 +1,601 @@
+drug,category,reason,selectivity_score,p_pathogen,p_gut,rank,pipeline
+daptomycin,narrow,Gram-pos only lipopeptide,0.2244700586675546,0.4971171405663502,0.5484564092643781,987,rf
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.1406294736730544,0.3886364235721807,0.6381464393366733,3910,rf
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0306615271682037,0.2080545644661599,0.8526274718034804,6616,rf
+methenamine,narrow,Narrow (urinary antiseptic),0.2312749257073571,0.2537805446554229,0.0886814195257694,864,rf
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0498852683115017,0.9888878790689762,0.9495541715422096,6450,rf
+amoxicillin,broad,Broad beta-lactam,0.0205897277975703,0.4556047091657594,0.9548079126853816,6672,rf
+clindamycin,broad,High C. difficile risk,0.14011481789547,0.5954903535916657,0.7647068217807802,3929,rf
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.0569709848452457,0.5080392798640421,0.8878610629073959,6354,rf
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.2029899298439161,0.7978090249545989,0.7455657638675275,1504,rf
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0912629247618348,0.3612959101004379,0.7474011683761814,5685,rf
+daptomycin,narrow,Gram-pos only lipopeptide,0.2282833922321974,0.4971171405663502,0.540785513909013,1139,rf
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.1550660557475237,0.3886364235721807,0.6009996841721048,3688,rf
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0292001288723292,0.2080545644661599,0.8596515825199375,6639,rf
+methenamine,narrow,Narrow (urinary antiseptic),0.2393105919041825,0.2537805446554229,0.0570175809610912,921,rf
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0472032066854611,0.9888878790689762,0.9522663714617452,6513,rf
+amoxicillin,broad,Broad beta-lactam,0.0211392202296252,0.4556047091657594,0.9536018399187915,6673,rf
+clindamycin,broad,High C. difficile risk,0.1453525985555272,0.5954903535916657,0.7559110778556841,4109,rf
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.0531816700520894,0.5080392798640421,0.8953197672701182,6461,rf
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.1723184559803642,0.7978090249545989,0.7840103952319035,2991,rf
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0849166788440394,0.3612959101004379,0.7649663988157709,6001,rf
+daptomycin,narrow,Gram-pos only lipopeptide,0.2396883983925565,0.4971171405663502,0.5178432227875166,1369,rf
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.2013193226350391,0.3886364235721807,0.4819854485470055,2475,rf
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.026701221587802,0.2080545644661599,0.8716624090593074,6672,rf
+methenamine,narrow,Narrow (urinary antiseptic),0.2424864355602087,0.2537805446554229,0.0445034473014826,1290,rf
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0578322504443278,0.9888878790689762,0.941517889268927,6473,rf
+amoxicillin,broad,Broad beta-lactam,0.0205821601417135,0.4556047091657594,0.954824522820669,6695,rf
+clindamycin,broad,High C. difficile risk,0.1334004452672839,0.5954903535916657,0.7759821893626205,4967,rf
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.0597678708995428,0.5080392798640421,0.8823558073786392,6450,rf
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.2197586199599028,0.7978090249545989,0.7245473376634105,1854,rf
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0862721441052681,0.3612959101004379,0.7612147226319693,6125,rf
+daptomycin,narrow,Gram-pos only lipopeptide,0.3973601828690649,0.8800040373105831,0.5484564092643781,65,rf
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.2483299106399342,0.6862718448443945,0.6381464393366733,1125,rf
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0254542593965682,0.1727205179151525,0.8526274718034804,6685,rf
+methenamine,narrow,Narrow (urinary antiseptic),0.0791047643765458,0.086802536534898,0.0886814195257694,6224,rf
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0456026699080848,0.9039928831031488,0.9495541715422096,6555,rf
+amoxicillin,broad,Broad beta-lactam,0.0257784633177305,0.5704198422672091,0.9548079126853816,6681,rf
+clindamycin,broad,High C. difficile risk,0.2165923467818514,0.9205211490664424,0.7647068217807802,2042,rf
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.1030352471433716,0.9188177613836784,0.8878610629073959,5803,rf
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.2298644785397725,0.9034337596772644,0.7455657638675275,1587,rf
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0428925709914262,0.1698051044642352,0.7474011683761814,6579,rf
+daptomycin,narrow,Gram-pos only lipopeptide,0.4041106017515732,0.8800040373105831,0.540785513909013,87,rf
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.2738226828367057,0.6862718448443945,0.6009996841721048,907,rf
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0242410513557284,0.1727205179151525,0.8596515825199375,6694,rf
+methenamine,narrow,Narrow (urinary antiseptic),0.0818532658803914,0.086802536534898,0.0570175809610912,6271,rf
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0431508604832717,0.9039928831031488,0.9522663714617452,6601,rf
+amoxicillin,broad,Broad beta-lactam,0.0264664311550115,0.5704198422672091,0.9536018399187915,6679,rf
+clindamycin,broad,High C. difficile risk,0.224689015086675,0.9205211490664424,0.7559110778556841,2204,rf
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.0961820570979924,0.9188177613836784,0.8953197672701182,6066,rf
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.1951323006868478,0.9034337596772644,0.7840103952319035,3250,rf
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0399099052016934,0.1698051044642352,0.7649663988157709,6619,rf
+daptomycin,narrow,Gram-pos only lipopeptide,0.4242999105636447,0.8800040373105831,0.5178432227875166,101,rf
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.355498801881888,0.6862718448443945,0.4819854485470055,263,rf
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0221665351752594,0.1727205179151525,0.8716624090593074,6707,rf
+methenamine,narrow,Narrow (urinary antiseptic),0.0829395244245822,0.086802536534898,0.0445034473014826,6357,rf
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0528674118897402,0.9039928831031488,0.941517889268927,6578,rf
+amoxicillin,broad,Broad beta-lactam,0.0257689885669799,0.5704198422672091,0.954824522820669,6698,rf
+clindamycin,broad,High C. difficile risk,0.2062131324592692,0.9205211490664424,0.7759821893626205,3437,rf
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.108093573704149,0.9188177613836784,0.8823558073786392,6015,rf
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.248853234347857,0.9034337596772644,0.7245473376634105,2082,rf
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0405469589679998,0.1698051044642352,0.7612147226319693,6646,rf
+daptomycin,narrow,Gram-pos only lipopeptide,0.1828584441279775,0.4049629933404168,0.5484564092643781,1407,rf
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.1438815982920037,0.397623828899871,0.6381464393366733,2875,rf
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0210308776480941,0.1427055497076747,0.8526274718034804,6631,rf
+methenamine,narrow,Narrow (urinary antiseptic),0.2519261903315437,0.2764414066927579,0.0886814195257694,269,rf
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0451974015596305,0.8959591494755317,0.9495541715422096,6403,rf
+amoxicillin,broad,Broad beta-lactam,0.0087177395875424,0.1929041145378238,0.9548079126853816,6716,rf
+clindamycin,broad,High C. difficile risk,0.0572406871989008,0.2432738918829615,0.7647068217807802,6168,rf
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.0729869708172511,0.6508619816592214,0.8878610629073959,5752,rf
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0909400673060226,0.3574207177790106,0.7455657638675275,5200,rf
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0495124158243573,0.1960120539990993,0.7474011683761814,6318,rf
+daptomycin,narrow,Gram-pos only lipopeptide,0.1859648728726873,0.4049629933404168,0.540785513909013,1571,rf
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.1586520333117455,0.397623828899871,0.6009996841721048,2636,rf
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0200284980670945,0.1427055497076747,0.8596515825199375,6646,rf
+methenamine,narrow,Narrow (urinary antiseptic),0.2606793864056557,0.2764414066927579,0.0570175809610912,270,rf
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0427673812265157,0.8959591494755317,0.9522663714617452,6476,rf
+amoxicillin,broad,Broad beta-lactam,0.0089503959866497,0.1929041145378238,0.9536018399187915,6715,rf
+clindamycin,broad,High C. difficile risk,0.0593804620555649,0.2432738918829615,0.7559110778556841,6222,rf
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.0681323837151193,0.6508619816592214,0.8953197672701182,6050,rf
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0771991595690178,0.3574207177790106,0.7840103952319035,5818,rf
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0460694189269259,0.1960120539990993,0.7649663988157709,6436,rf
+daptomycin,narrow,Gram-pos only lipopeptide,0.1952556517593357,0.4049629933404168,0.5178432227875166,1749,rf
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.2059749293745889,0.397623828899871,0.4819854485470055,1401,rf
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0183144864633502,0.1427055497076747,0.8716624090593074,6675,rf
+methenamine,narrow,Narrow (urinary antiseptic),0.2641388111180591,0.2764414066927579,0.0445034473014826,360,rf
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.052397582190146,0.8959591494755317,0.941517889268927,6436,rf
+amoxicillin,broad,Broad beta-lactam,0.0087145354241025,0.1929041145378238,0.954824522820669,6717,rf
+clindamycin,broad,High C. difficile risk,0.0544976846448556,0.2432738918829615,0.7759821893626205,6412,rf
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.076570132340238,0.6508619816592214,0.8823558073786392,6017,rf
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0984524882864832,0.3574207177790106,0.7245473376634105,5482,rf
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0468047926816523,0.1960120539990993,0.7612147226319693,6499,rf
+daptomycin,narrow,Gram-pos only lipopeptide,0.2461283454143767,0.5450821370610143,0.5484564092643781,3334,rf
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.2314457064445167,0.6396115213575495,0.6381464393366733,3776,rf
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0453015530397383,0.3073948285621406,0.8526274718034804,6594,rf
+methenamine,narrow,Narrow (urinary antiseptic),0.0997258969848579,0.1094303343765499,0.0886814195257694,6259,rf
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0415078850548213,0.8228209610939838,0.9495541715422096,6610,rf
+amoxicillin,broad,Broad beta-lactam,0.0081160754720655,0.1795906308899399,0.9548079126853816,6729,rf
+clindamycin,broad,High C. difficile risk,0.0741857462018529,0.3152906801774549,0.7647068217807802,6439,rf
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.110918897933196,0.9891202896064498,0.8878610629073959,6171,rf
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0997738578469282,0.3921400648102267,0.7455657638675275,6258,rf
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0543391349071837,0.2151202939374953,0.7474011683761814,6551,rf
+daptomycin,narrow,Gram-pos only lipopeptide,0.2503096134478506,0.5450821370610143,0.540785513909013,3704,rf
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.2552051990288227,0.6396115213575495,0.6009996841721048,3574,rf
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0431423777302515,0.3073948285621406,0.8596515825199375,6608,rf
+methenamine,narrow,Narrow (urinary antiseptic),0.1031908814266357,0.1094303343765499,0.0570175809610912,6292,rf
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.03927623011035,0.8228209610939838,0.9522663714617452,6625,rf
+amoxicillin,broad,Broad beta-lactam,0.0083326748411166,0.1795906308899399,0.9536018399187915,6727,rf
+clindamycin,broad,High C. difficile risk,0.0769589622866631,0.3152906801774549,0.7559110778556841,6456,rf
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.1035413421138512,0.9891202896064498,0.8953197672701182,6289,rf
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0846981776120966,0.3921400648102267,0.7840103952319035,6418,rf
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0505604973719394,0.2151202939374953,0.7649663988157709,6578,rf
+daptomycin,narrow,Gram-pos only lipopeptide,0.2628150465214318,0.5450821370610143,0.5178432227875166,3883,rf
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.3313280753401983,0.6396115213575495,0.4819854485470055,2066,rf
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0394503117652923,0.3073948285621406,0.8716624090593074,6642,rf
+methenamine,narrow,Narrow (urinary antiseptic),0.1045603072574395,0.1094303343765499,0.0445034473014826,6362,rf
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0481203065585462,0.8228209610939838,0.941517889268927,6617,rf
+amoxicillin,broad,Broad beta-lactam,0.0081130924473901,0.1795906308899399,0.954824522820669,6732,rf
+clindamycin,broad,High C. difficile risk,0.0706307278877236,0.3152906801774549,0.7759821893626205,6528,rf
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.1163642578761574,0.9891202896064498,0.8823558073786392,6283,rf
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.1080160248608196,0.3921400648102267,0.7245473376634105,6344,rf
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0513675590553571,0.2151202939374953,0.7612147226319693,6601,rf
+daptomycin,narrow,Gram-pos only lipopeptide,0.01857,0.059803,0.689479,2117,dmpnn
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.000363,0.112789,0.996784,4759,dmpnn
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.000346,0.005244,0.93397,4789,dmpnn
+methenamine,narrow,Narrow (urinary antiseptic),0.000911,0.000913,0.001746,4150,dmpnn
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.042215,0.999746,0.957774,1624,dmpnn
+amoxicillin,broad,Broad beta-lactam,0.009735,0.300876,0.967644,2501,dmpnn
+clindamycin,broad,High C. difficile risk,0.345276,0.935046,0.630739,656,dmpnn
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.037292,0.75158,0.950382,1703,dmpnn
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.018414,0.971086,0.981038,2122,dmpnn
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.018808,0.046792,0.598042,2110,dmpnn
+daptomycin,narrow,Gram-pos only lipopeptide,0.040552,0.059803,0.321908,1768,dmpnn
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.001108,0.112789,0.99018,4066,dmpnn
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.000317,0.005244,0.939597,4917,dmpnn
+methenamine,narrow,Narrow (urinary antiseptic),0.000911,0.000913,0.002336,4224,dmpnn
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.03071,0.999746,0.969282,1920,dmpnn
+amoxicillin,broad,Broad beta-lactam,0.005222,0.300876,0.982642,2996,dmpnn
+clindamycin,broad,High C. difficile risk,0.115216,0.935046,0.876781,1203,dmpnn
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.034856,0.75158,0.953623,1849,dmpnn
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.026919,0.971086,0.972279,1988,dmpnn
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.007204,0.046792,0.846036,2788,dmpnn
+daptomycin,narrow,Gram-pos only lipopeptide,0.05936,0.059803,0.007402,1727,dmpnn
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.1116,0.112789,0.01054,1390,dmpnn
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.000321,0.005244,0.938832,4998,dmpnn
+methenamine,narrow,Narrow (urinary antiseptic),0.000913,0.000913,3e-06,4349,dmpnn
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.103502,0.999746,0.896472,1428,dmpnn
+amoxicillin,broad,Broad beta-lactam,0.148823,0.300876,0.505367,1233,dmpnn
+clindamycin,broad,High C. difficile risk,0.731198,0.935046,0.218009,440,dmpnn
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.718395,0.75158,0.044154,450,dmpnn
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.757801,0.971086,0.219635,409,dmpnn
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.00585,0.046792,0.874982,3095,dmpnn
+daptomycin,narrow,Gram-pos only lipopeptide,0.248319,0.799683,0.689479,967,dmpnn
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.003065,0.952939,0.996784,4127,dmpnn
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.000814,0.012332,0.93397,4924,dmpnn
+methenamine,narrow,Narrow (urinary antiseptic),0.0,0.0,0.001746,6644,dmpnn
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.040462,0.958219,0.957774,2206,dmpnn
+amoxicillin,broad,Broad beta-lactam,0.030267,0.935445,0.967644,2441,dmpnn
+clindamycin,broad,High C. difficile risk,0.367074,0.99408,0.630739,713,dmpnn
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.049572,0.99908,0.950382,2052,dmpnn
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.017497,0.922707,0.981038,2865,dmpnn
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.032185,0.080071,0.598042,2396,dmpnn
+daptomycin,narrow,Gram-pos only lipopeptide,0.542259,0.799683,0.321908,533,dmpnn
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.009358,0.952939,0.99018,3442,dmpnn
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.000745,0.012332,0.939597,4997,dmpnn
+methenamine,narrow,Narrow (urinary antiseptic),0.0,0.0,0.002336,6729,dmpnn
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.029435,0.958219,0.969282,2576,dmpnn
+amoxicillin,broad,Broad beta-lactam,0.016237,0.935445,0.982642,3009,dmpnn
+clindamycin,broad,High C. difficile risk,0.12249,0.99408,0.876781,1560,dmpnn
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.046334,0.99908,0.953623,2249,dmpnn
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.025578,0.922707,0.972279,2686,dmpnn
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.012328,0.080071,0.846036,3234,dmpnn
+daptomycin,narrow,Gram-pos only lipopeptide,0.793763,0.799683,0.007402,411,dmpnn
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.942895,0.952939,0.01054,214,dmpnn
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.000754,0.012332,0.938832,5067,dmpnn
+methenamine,narrow,Narrow (urinary antiseptic),0.0,0.0,3e-06,6623,dmpnn
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.099203,0.958219,0.896472,1915,dmpnn
+amoxicillin,broad,Broad beta-lactam,0.462702,0.935445,0.505367,850,dmpnn
+clindamycin,broad,High C. difficile risk,0.777362,0.99408,0.218009,435,dmpnn
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.954967,0.99908,0.044154,190,dmpnn
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.720048,0.922707,0.219635,511,dmpnn
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.01001,0.080071,0.874982,3579,dmpnn
+daptomycin,narrow,Gram-pos only lipopeptide,0.001432,0.004612,0.689479,2909,dmpnn
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",3.9e-05,0.012184,0.996784,5365,dmpnn
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",1e-06,2.2e-05,0.93397,6513,dmpnn
+methenamine,narrow,Narrow (urinary antiseptic),0.030271,0.030324,0.001746,1037,dmpnn
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.041898,0.992231,0.957774,909,dmpnn
+amoxicillin,broad,Broad beta-lactam,5e-06,0.00015,0.967644,6162,dmpnn
+clindamycin,broad,High C. difficile risk,4e-06,1e-05,0.630739,6271,dmpnn
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.022529,0.45405,0.950382,1168,dmpnn
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0,1.8e-05,0.981038,6621,dmpnn
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",7.1e-05,0.000178,0.598042,5050,dmpnn
+daptomycin,narrow,Gram-pos only lipopeptide,0.003127,0.004612,0.321908,2404,dmpnn
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.00012,0.012184,0.99018,4826,dmpnn
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",1e-06,2.2e-05,0.939597,6522,dmpnn
+methenamine,narrow,Narrow (urinary antiseptic),0.030253,0.030324,0.002336,1078,dmpnn
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.030479,0.992231,0.969282,1076,dmpnn
+amoxicillin,broad,Broad beta-lactam,3e-06,0.00015,0.982642,6323,dmpnn
+clindamycin,broad,High C. difficile risk,1e-06,1e-05,0.876781,6566,dmpnn
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.021057,0.45405,0.953623,1258,dmpnn
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",1e-06,1.8e-05,0.972279,6532,dmpnn
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",2.7e-05,0.000178,0.846036,5645,dmpnn
+daptomycin,narrow,Gram-pos only lipopeptide,0.004578,0.004612,0.007402,2274,dmpnn
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.012055,0.012184,0.01054,1660,dmpnn
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",1e-06,2.2e-05,0.938832,6579,dmpnn
+methenamine,narrow,Narrow (urinary antiseptic),0.030324,0.030324,3e-06,1203,dmpnn
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.102724,0.992231,0.896472,736,dmpnn
+amoxicillin,broad,Broad beta-lactam,7.4e-05,0.00015,0.505367,5241,dmpnn
+clindamycin,broad,High C. difficile risk,7e-06,1e-05,0.218009,6208,dmpnn
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.434002,0.45405,0.044154,341,dmpnn
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",1.4e-05,1.8e-05,0.219635,5982,dmpnn
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",2.2e-05,0.000178,0.874982,5821,dmpnn
+daptomycin,narrow,Gram-pos only lipopeptide,0.019533,0.062905,0.689479,3819,dmpnn
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.003197,0.994242,0.996784,4936,dmpnn
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.002923,0.044264,0.93397,5000,dmpnn
+methenamine,narrow,Narrow (urinary antiseptic),0.201689,0.202042,0.001746,2028,dmpnn
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.037892,0.897369,0.957774,3364,dmpnn
+amoxicillin,broad,Broad beta-lactam,6.7e-05,0.002085,0.967644,6423,dmpnn
+clindamycin,broad,High C. difficile risk,0.077716,0.210465,0.630739,2815,dmpnn
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.049616,0.999969,0.950382,3148,dmpnn
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.007552,0.398242,0.981038,4430,dmpnn
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.000121,0.000302,0.598042,6302,dmpnn
+daptomycin,narrow,Gram-pos only lipopeptide,0.042655,0.062905,0.321908,3411,dmpnn
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.009763,0.994242,0.99018,4389,dmpnn
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.002674,0.044264,0.939597,5145,dmpnn
+methenamine,narrow,Narrow (urinary antiseptic),0.20157,0.202042,0.002336,2217,dmpnn
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.027566,0.897369,0.969282,3719,dmpnn
+amoxicillin,broad,Broad beta-lactam,3.6e-05,0.002085,0.982642,6534,dmpnn
+clindamycin,broad,High C. difficile risk,0.025933,0.210465,0.876781,3760,dmpnn
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.046375,0.999969,0.953623,3361,dmpnn
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.01104,0.398242,0.972279,4310,dmpnn
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",4.6e-05,0.000302,0.846036,6501,dmpnn
+daptomycin,narrow,Gram-pos only lipopeptide,0.062439,0.062905,0.007402,3353,dmpnn
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.983762,0.994242,0.01054,286,dmpnn
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.002708,0.044264,0.938832,5241,dmpnn
+methenamine,narrow,Narrow (urinary antiseptic),0.202041,0.202042,3e-06,2449,dmpnn
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.092903,0.897369,0.896472,3058,dmpnn
+amoxicillin,broad,Broad beta-lactam,0.001031,0.002085,0.505367,5659,dmpnn
+clindamycin,broad,High C. difficile risk,0.164582,0.210465,0.218009,2632,dmpnn
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.955817,0.999969,0.044154,438,dmpnn
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.310774,0.398242,0.219635,2080,dmpnn
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",3.8e-05,0.000302,0.874982,6555,dmpnn
+daptomycin,narrow,Gram-pos only lipopeptide,0.221003,0.229452,0.036821,1111,chemeleon_frozen
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.20911,0.273137,0.234412,1204,chemeleon_frozen
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.052637,0.245039,0.78519,3949,chemeleon_frozen
+methenamine,narrow,Narrow (urinary antiseptic),0.999997,1.0,3e-06,1,chemeleon_frozen
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.231549,0.962622,0.75946,1038,chemeleon_frozen
+amoxicillin,broad,Broad beta-lactam,0.035627,0.349503,0.898063,4645,chemeleon_frozen
+clindamycin,broad,High C. difficile risk,0.087784,0.252635,0.652527,2971,chemeleon_frozen
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.153895,0.513951,0.700565,1837,chemeleon_frozen
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.070044,0.349818,0.79977,3407,chemeleon_frozen
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.048479,0.114979,0.578367,4087,chemeleon_frozen
+daptomycin,narrow,Gram-pos only lipopeptide,0.220569,0.229452,0.038715,1270,chemeleon_frozen
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.246149,0.273137,0.098808,1089,chemeleon_frozen
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.042697,0.245039,0.825756,4469,chemeleon_frozen
+methenamine,narrow,Narrow (urinary antiseptic),1.0,1.0,0.0,1,chemeleon_frozen
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.12489,0.962622,0.870261,2454,chemeleon_frozen
+amoxicillin,broad,Broad beta-lactam,0.020397,0.349503,0.94164,5465,chemeleon_frozen
+clindamycin,broad,High C. difficile risk,0.2349,0.252635,0.070197,1163,chemeleon_frozen
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.280565,0.513951,0.454101,900,chemeleon_frozen
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.054483,0.349818,0.844253,4075,chemeleon_frozen
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.058223,0.114979,0.493619,3967,chemeleon_frozen
+daptomycin,narrow,Gram-pos only lipopeptide,0.215052,0.229452,0.062757,1454,chemeleon_frozen
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.182286,0.273137,0.332618,1802,chemeleon_frozen
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.013561,0.245039,0.944656,5857,chemeleon_frozen
+methenamine,narrow,Narrow (urinary antiseptic),1.0,1.0,0.0,1,chemeleon_frozen
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.091478,0.962622,0.90497,3186,chemeleon_frozen
+amoxicillin,broad,Broad beta-lactam,0.059112,0.349503,0.830868,4033,chemeleon_frozen
+clindamycin,broad,High C. difficile risk,0.029064,0.252635,0.884956,5124,chemeleon_frozen
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.08774,0.513951,0.829283,3277,chemeleon_frozen
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.022058,0.349818,0.936946,5460,chemeleon_frozen
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.033068,0.114979,0.712398,4983,chemeleon_frozen
+daptomycin,narrow,Gram-pos only lipopeptide,0.871033,0.904332,0.036821,22,chemeleon_frozen
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.299947,0.391786,0.234412,1467,chemeleon_frozen
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.057179,0.266187,0.78519,4327,chemeleon_frozen
+methenamine,narrow,Narrow (urinary antiseptic),0.999996,0.999999,3e-06,2,chemeleon_frozen
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.19301,0.802406,0.75946,2285,chemeleon_frozen
+amoxicillin,broad,Broad beta-lactam,0.05872,0.576042,0.898063,4296,chemeleon_frozen
+clindamycin,broad,High C. difficile risk,0.255238,0.734554,0.652527,1786,chemeleon_frozen
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.294149,0.982347,0.700565,1495,chemeleon_frozen
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.171774,0.857886,0.79977,2512,chemeleon_frozen
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.029404,0.069738,0.578367,5119,chemeleon_frozen
+daptomycin,narrow,Gram-pos only lipopeptide,0.869321,0.904332,0.038715,32,chemeleon_frozen
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.353074,0.391786,0.098808,1392,chemeleon_frozen
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.046381,0.266187,0.825756,4674,chemeleon_frozen
+methenamine,narrow,Narrow (urinary antiseptic),0.999999,0.999999,0.0,2,chemeleon_frozen
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.104103,0.802406,0.870261,3528,chemeleon_frozen
+amoxicillin,broad,Broad beta-lactam,0.033618,0.576042,0.94164,5037,chemeleon_frozen
+clindamycin,broad,High C. difficile risk,0.68299,0.734554,0.070197,250,chemeleon_frozen
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.536262,0.982347,0.454101,597,chemeleon_frozen
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.133613,0.857886,0.844253,3157,chemeleon_frozen
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.035314,0.069738,0.493619,4983,chemeleon_frozen
+daptomycin,narrow,Gram-pos only lipopeptide,0.847579,0.904332,0.062757,63,chemeleon_frozen
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.261471,0.391786,0.332618,2064,chemeleon_frozen
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.014732,0.266187,0.944656,5712,chemeleon_frozen
+methenamine,narrow,Narrow (urinary antiseptic),0.999999,0.999999,0.0,2,chemeleon_frozen
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.076252,0.802406,0.90497,4117,chemeleon_frozen
+amoxicillin,broad,Broad beta-lactam,0.097427,0.576042,0.830868,3754,chemeleon_frozen
+clindamycin,broad,High C. difficile risk,0.084506,0.734554,0.884956,3972,chemeleon_frozen
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.167703,0.982347,0.829283,2868,chemeleon_frozen
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.054094,0.857886,0.936946,4585,chemeleon_frozen
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.020057,0.069738,0.712398,5521,chemeleon_frozen
+daptomycin,narrow,Gram-pos only lipopeptide,0.220875,0.229319,0.036821,828,chemeleon_frozen
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.198335,0.259062,0.234412,953,chemeleon_frozen
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.001275,0.005936,0.78519,6530,chemeleon_frozen
+methenamine,narrow,Narrow (urinary antiseptic),0.99755,0.997553,3e-06,2,chemeleon_frozen
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.197845,0.822507,0.75946,955,chemeleon_frozen
+amoxicillin,broad,Broad beta-lactam,0.010666,0.104631,0.898063,5476,chemeleon_frozen
+clindamycin,broad,High C. difficile risk,0.0734,0.211241,0.652527,2518,chemeleon_frozen
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.074187,0.247756,0.700565,2496,chemeleon_frozen
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.005451,0.027221,0.79977,6061,chemeleon_frozen
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.02368,0.056162,0.578367,4479,chemeleon_frozen
+daptomycin,narrow,Gram-pos only lipopeptide,0.220441,0.229319,0.038715,884,chemeleon_frozen
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.233465,0.259062,0.098808,812,chemeleon_frozen
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.001034,0.005936,0.825756,6563,chemeleon_frozen
+methenamine,narrow,Narrow (urinary antiseptic),0.997553,0.997553,0.0,1,chemeleon_frozen
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.106711,0.822507,0.870261,1985,chemeleon_frozen
+amoxicillin,broad,Broad beta-lactam,0.006106,0.104631,0.94164,6018,chemeleon_frozen
+clindamycin,broad,High C. difficile risk,0.196412,0.211241,0.070197,1050,chemeleon_frozen
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.13525,0.247756,0.454101,1588,chemeleon_frozen
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.00424,0.027221,0.844253,6207,chemeleon_frozen
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.028439,0.056162,0.493619,4352,chemeleon_frozen
+daptomycin,narrow,Gram-pos only lipopeptide,0.214927,0.229319,0.062757,989,chemeleon_frozen
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.172893,0.259062,0.332618,1307,chemeleon_frozen
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.000329,0.005936,0.944656,6649,chemeleon_frozen
+methenamine,narrow,Narrow (urinary antiseptic),0.997553,0.997553,0.0,2,chemeleon_frozen
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.078163,0.822507,0.90497,2670,chemeleon_frozen
+amoxicillin,broad,Broad beta-lactam,0.017696,0.104631,0.830868,5131,chemeleon_frozen
+clindamycin,broad,High C. difficile risk,0.024302,0.211241,0.884956,4717,chemeleon_frozen
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.042296,0.247756,0.829283,3820,chemeleon_frozen
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.001716,0.027221,0.936946,6478,chemeleon_frozen
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.016152,0.056162,0.712398,5240,chemeleon_frozen
+daptomycin,narrow,Gram-pos only lipopeptide,0.248232,0.257721,0.036821,2722,chemeleon_frozen
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.194747,0.254376,0.234412,3339,chemeleon_frozen
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.018699,0.087051,0.78519,6109,chemeleon_frozen
+methenamine,narrow,Narrow (urinary antiseptic),0.005193,0.005193,3e-06,6461,chemeleon_frozen
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.191359,0.795543,0.75946,3381,chemeleon_frozen
+amoxicillin,broad,Broad beta-lactam,0.02367,0.232204,0.898063,6005,chemeleon_frozen
+clindamycin,broad,High C. difficile risk,0.206756,0.595026,0.652527,3183,chemeleon_frozen
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.276964,0.924957,0.700565,2431,chemeleon_frozen
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.096611,0.4825,0.79977,4667,chemeleon_frozen
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.057736,0.136934,0.578367,5319,chemeleon_frozen
+daptomycin,narrow,Gram-pos only lipopeptide,0.247744,0.257721,0.038715,3003,chemeleon_frozen
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.229242,0.254376,0.098808,3196,chemeleon_frozen
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.015168,0.087051,0.825756,6208,chemeleon_frozen
+methenamine,narrow,Narrow (urinary antiseptic),0.005193,0.005193,0.0,6458,chemeleon_frozen
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.103213,0.795543,0.870261,4693,chemeleon_frozen
+amoxicillin,broad,Broad beta-lactam,0.013551,0.232204,0.94164,6234,chemeleon_frozen
+clindamycin,broad,High C. difficile risk,0.553257,0.595026,0.070197,814,chemeleon_frozen
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.504933,0.924957,0.454101,1035,chemeleon_frozen
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.075148,0.4825,0.844253,5121,chemeleon_frozen
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.069341,0.136934,0.493619,5213,chemeleon_frozen
+daptomycin,narrow,Gram-pos only lipopeptide,0.241547,0.257721,0.062757,3205,chemeleon_frozen
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.169766,0.254376,0.332618,3971,chemeleon_frozen
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.004818,0.087051,0.944656,6482,chemeleon_frozen
+methenamine,narrow,Narrow (urinary antiseptic),0.005193,0.005193,0.0,6473,chemeleon_frozen
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0756,0.795543,0.90497,5175,chemeleon_frozen
+amoxicillin,broad,Broad beta-lactam,0.039273,0.232204,0.830868,5750,chemeleon_frozen
+clindamycin,broad,High C. difficile risk,0.068454,0.595026,0.884956,5276,chemeleon_frozen
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.157906,0.924957,0.829283,4095,chemeleon_frozen
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.030424,0.4825,0.936946,5925,chemeleon_frozen
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.039382,0.136934,0.712398,5748,chemeleon_frozen
+daptomycin,narrow,Gram-pos only lipopeptide,0.1310409748275584,0.71248496,0.81607896,1109,molformer
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.1245431610059795,0.43036908,0.71061313,1143,molformer
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0001522085781281,0.016754018,0.9909151,5930,molformer
+methenamine,narrow,Narrow (urinary antiseptic),0.3727394193036738,0.3766602,0.010409331,526,molformer
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0267947875079843,0.99644214,0.97310954,2150,molformer
+amoxicillin,broad,Broad beta-lactam,0.002309356438476,0.06884641,0.9664564,4154,molformer
+clindamycin,broad,High C. difficile risk,0.051633317924676,0.10724092,0.5185297,1687,molformer
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.3756141064041918,0.53908026,0.30323157,520,molformer
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.00769806807077,0.27239674,0.9717395,3145,molformer
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0231188528762411,0.40522963,0.94294876,2274,molformer
+daptomycin,narrow,Gram-pos only lipopeptide,0.6861979656228822,0.71248496,0.036894806,290,molformer
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.020657199397104,0.43036908,0.9520012,2566,molformer
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0002288180008349,0.016754018,0.9863425,5881,molformer
+methenamine,narrow,Narrow (urinary antiseptic),0.3764639401104754,0.3766602,0.0005210529,631,molformer
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0257914101306899,0.99644214,0.9741165,2395,molformer
+amoxicillin,broad,Broad beta-lactam,0.002328261662662,0.06884641,0.9661818,4352,molformer
+clindamycin,broad,High C. difficile risk,0.0901436491892788,0.10724092,0.15942861,1500,molformer
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.131044265691036,0.53908026,0.7569114,1267,molformer
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0020258608628257,0.27239674,0.99256283,4460,molformer
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0904222102248659,0.40522963,0.7768618,1497,molformer
+daptomycin,narrow,Gram-pos only lipopeptide,0.5521580033766016,0.71248496,0.22502504,454,molformer
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.0761604191750687,0.43036908,0.82303464,1644,molformer
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0001028356598634,0.016754018,0.99386203,6238,molformer
+methenamine,narrow,Narrow (urinary antiseptic),0.3766496712739284,0.3766602,2.795285e-05,655,molformer
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0100903218643889,0.99644214,0.98987365,3212,molformer
+amoxicillin,broad,Broad beta-lactam,0.0038105751278412,0.06884641,0.94465107,4023,molformer
+clindamycin,broad,High C. difficile risk,0.0839854519612448,0.10724092,0.21685256,1576,molformer
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.0828239892614543,0.53908026,0.84636056,1594,molformer
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0013660696510999,0.27239674,0.994985,4813,molformer
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.006070420903326,0.40522963,0.9850198,3638,molformer
+daptomycin,narrow,Gram-pos only lipopeptide,0.1712493217544959,0.9311024,0.81607896,1247,molformer
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.2052899922097931,0.70939636,0.71061313,1108,molformer
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0006947245742249,0.07647025,0.9909151,5358,molformer
+methenamine,narrow,Narrow (urinary antiseptic),0.0002085313650782,0.00021072487,0.010409331,5992,molformer
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0221274509703789,0.82287365,0.97310954,2691,molformer
+amoxicillin,broad,Broad beta-lactam,0.027372658710228,0.81603223,0.9664564,2545,molformer
+clindamycin,broad,High C. difficile risk,0.4734552639159,0.983353,0.5185297,568,molformer
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.6760772852826159,0.97030413,0.30323157,302,molformer
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.024286077517375,0.85936475,0.9717395,2624,molformer
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0030481112295826,0.053427607,0.94294876,4271,molformer
+daptomycin,narrow,Gram-pos only lipopeptide,0.8967495575858655,0.9311024,0.036894806,121,molformer
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.034050174004368,0.70939636,0.9520012,2612,molformer
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0010443924393749,0.07647025,0.9863425,5229,molformer
+methenamine,narrow,Narrow (urinary antiseptic),0.0002106150711953,0.00021072487,0.0005210529,6080,molformer
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0212988501197749,0.82287365,0.9741165,2959,molformer
+amoxicillin,broad,Broad beta-lactam,0.027596741160586,0.81603223,0.9661818,2766,molformer
+clindamycin,broad,High C. difficile risk,0.82657839807067,0.983353,0.15942861,226,molformer
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.2358698725359179,0.97030413,0.7569114,1267,molformer
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0063912417377574,0.85936475,0.99256283,3892,molformer
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0119217400562873,0.053427607,0.7768618,3429,molformer
+daptomycin,narrow,Gram-pos only lipopeptide,0.7215810451959039,0.9311024,0.22502504,463,molformer
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.1255385822300895,0.70939636,0.82303464,1743,molformer
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0004693721003925,0.07647025,0.99386203,5729,molformer
+methenamine,narrow,Narrow (urinary antiseptic),0.0002107189796393,0.00021072487,2.795285e-05,6093,molformer
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0083327065856774,0.82287365,0.98987365,3759,molformer
+amoxicillin,broad,Broad beta-lactam,0.0451665107760138,0.81603223,0.94465107,2452,molformer
+clindamycin,broad,High C. difficile risk,0.7701103845663201,0.983353,0.21685256,398,molformer
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.1490769831628871,0.97030413,0.84636056,1627,molformer
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0043097142212499,0.85936475,0.994985,4270,molformer
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0008003562383814,0.053427607,0.9850198,5429,molformer
+daptomycin,narrow,Gram-pos only lipopeptide,0.0268997616178047,0.14625712,0.81607896,1627,molformer
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.0298765927395386,0.10324101,0.71061313,1554,molformer
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",1.643198672708991e-05,0.0018087141,0.9909151,6602,molformer
+methenamine,narrow,Narrow (urinary antiseptic),0.0001308962255197,0.0001322731,0.010409331,6073,molformer
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0253203895020855,0.94161236,0.97310954,1673,molformer
+amoxicillin,broad,Broad beta-lactam,7.886319735144002e-05,0.0023510654,0.9664564,6251,molformer
+clindamycin,broad,High C. difficile risk,0.0007899295438683,0.001640661,0.5185297,4927,molformer
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.6427368950040631,0.9224541,0.30323157,122,molformer
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",2.8383452957350023e-05,0.0010043507,0.9717395,6513,molformer
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0001613564018367,0.0028282716,0.94294876,5982,molformer
+daptomycin,narrow,Gram-pos only lipopeptide,0.1408609919314812,0.14625712,0.036894806,744,molformer
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.004955444590788,0.10324101,0.9520012,3357,molformer
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",2.4702512820749975e-05,0.0018087141,0.9863425,6604,molformer
+methenamine,narrow,Narrow (urinary antiseptic),0.0001322041787176,0.0001322731,0.0005210529,6224,molformer
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0243722235200599,0.94161236,0.9741165,1842,molformer
+amoxicillin,broad,Broad beta-lactam,7.950879991028005e-05,0.0023510654,0.9661818,6381,molformer
+clindamycin,broad,High C. difficile risk,0.0013790926972887,0.001640661,0.15942861,4693,molformer
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.22423807573326,0.9224541,0.7569114,525,molformer
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",7.469526895518993e-06,0.0010043507,0.99256283,6721,molformer
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0006310954339351,0.0028282716,0.7768618,5384,molformer
+daptomycin,narrow,Gram-pos only lipopeptide,0.1133456057217151,0.14625712,0.22502504,894,molformer
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.0182700825014135,0.10324101,0.82303464,2133,molformer
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",1.1101832884377088e-05,0.0018087141,0.99386203,6698,molformer
+methenamine,narrow,Narrow (urinary antiseptic),0.0001322694025898,0.0001322731,2.795285e-05,6250,molformer
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0095350963216859,0.94161236,0.98987365,2763,molformer
+amoxicillin,broad,Broad beta-lactam,0.00013012895425,0.0023510654,0.94465107,6254,molformer
+clindamycin,broad,High C. difficile risk,0.0012848794620578,0.001640661,0.21685256,4834,molformer
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.1417253313497039,0.9224541,0.84636056,753,molformer
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",5.036818760499992e-06,0.0010043507,0.994985,6725,molformer
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",4.236807422232e-05,0.0028282716,0.9850198,6522,molformer
+daptomycin,narrow,Gram-pos only lipopeptide,0.0532584937475039,0.2895726,0.81607896,3753,molformer
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.2804051610342039,0.96896297,0.71061313,1991,molformer
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0013380086276699,0.1472783,0.9909151,6252,molformer
+methenamine,narrow,Narrow (urinary antiseptic),8.051768853054417e-06,8.136464e-06,0.010409331,6733,molformer
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0256504171932839,0.9538854,0.97310954,4435,molformer
+amoxicillin,broad,Broad beta-lactam,0.0004174307808864,0.012444424,0.9664564,6505,molformer
+clindamycin,broad,High C. difficile risk,0.075402558139185,0.15660895,0.5185297,3436,molformer
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.696647958738453,0.9998271,0.30323157,744,molformer
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.02784126565628,0.98516536,0.9717395,4346,molformer
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0019246812031523,0.03373601,0.94294876,6125,molformer
+daptomycin,narrow,Gram-pos only lipopeptide,0.2788888751000844,0.2895726,0.036894806,2324,molformer
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.046509059804436,0.96896297,0.9520012,4181,molformer
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0020114533822499,0.1472783,0.9863425,6231,molformer
+methenamine,narrow,Narrow (urinary antiseptic),8.132224471837054e-06,8.136464e-06,0.0005210529,6735,molformer
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0246898927508999,0.9538854,0.9741165,4710,molformer
+amoxicillin,broad,Broad beta-lactam,0.0004208480197168,0.012444424,0.9661818,6579,molformer
+clindamycin,broad,High C. difficile risk,0.1316410027879405,0.15660895,0.15942861,3168,molformer
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.2430465699810599,0.9998271,0.7569114,2480,molformer
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0073268422604311,0.98516536,0.99256283,5622,molformer
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0075277925465819,0.03373601,0.7768618,5606,molformer
+daptomycin,narrow,Gram-pos only lipopeptide,0.224411514102096,0.2895726,0.22502504,2653,molformer
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.1714728808127191,0.96896297,0.82303464,2953,molformer
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.000903989787051,0.1472783,0.99386203,6445,molformer
+methenamine,narrow,Narrow (urinary antiseptic),8.136236562642278e-06,8.136464e-06,2.795285e-05,6735,molformer
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.0096593774202899,0.9538854,0.98987365,5446,molformer
+amoxicillin,broad,Broad beta-lactam,0.0006887855528663,0.012444424,0.94465107,6502,molformer
+clindamycin,broad,High C. difficile risk,0.122647898273588,0.15660895,0.21685256,3330,molformer
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.1536128757408239,0.9998271,0.84636056,3083,molformer
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0049406042803999,0.98516536,0.994985,5874,molformer
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0005053721770019,0.03373601,0.9850198,6561,molformer
+daptomycin,narrow,Gram-pos only lipopeptide,0.2601637367245525,0.422381618,0.3840552579999999,675,dmpnn_rdkit
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.0229600189598079,0.4301845999999999,0.94662752,6016,dmpnn_rdkit
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0150339197178711,0.10743065,0.8600593059999999,6287,dmpnn_rdkit
+methenamine,narrow,Narrow (urinary antiseptic),0.0600630125896379,0.061924482,0.0300603146,4417,dmpnn_rdkit
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.2508382532916078,0.976506232,0.7431268280000001,756,dmpnn_rdkit
+amoxicillin,broad,Broad beta-lactam,0.0096486113567355,0.405043656,0.976178836,6488,dmpnn_rdkit
+clindamycin,broad,High C. difficile risk,0.0765643084292657,0.4705505719999999,0.8372878220000001,3834,dmpnn_rdkit
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.1220632248436691,0.495943072,0.7538765399999999,2598,dmpnn_rdkit
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0468844808118194,0.5749692799999999,0.918457416,4938,dmpnn_rdkit
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0897968169481437,0.185973142,0.517151692,3436,dmpnn_rdkit
+daptomycin,narrow,Gram-pos only lipopeptide,0.2771115271330406,0.422381618,0.343930902,786,dmpnn_rdkit
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.0573232009433143,0.4301845999999999,0.866747436,4925,dmpnn_rdkit
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0321161264969186,0.10743065,0.701052479,5861,dmpnn_rdkit
+methenamine,narrow,Narrow (urinary antiseptic),0.0606670216252662,0.061924482,0.02030635274,4795,dmpnn_rdkit
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.2632531883119252,0.976506232,0.7304132019999999,896,dmpnn_rdkit
+amoxicillin,broad,Broad beta-lactam,0.0458693834968576,0.405043656,0.88675447,5369,dmpnn_rdkit
+clindamycin,broad,High C. difficile risk,0.1426511439555439,0.4705505719999999,0.696842056,2574,dmpnn_rdkit
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.1441586006056365,0.495943072,0.7093242980000001,2549,dmpnn_rdkit
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.081848008547543,0.5749692799999999,0.857648032,4072,dmpnn_rdkit
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.1064323962865485,0.185973142,0.4277001768,3421,dmpnn_rdkit
+daptomycin,narrow,Gram-pos only lipopeptide,0.3646489892822389,0.422381618,0.136683573,497,dmpnn_rdkit
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.1222983878923567,0.4301845999999999,0.715707192,3410,dmpnn_rdkit
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0370610034345455,0.10743065,0.6550239299999999,5778,dmpnn_rdkit
+methenamine,narrow,Narrow (urinary antiseptic),0.0617026215364995,0.061924482,0.003582758488,5019,dmpnn_rdkit
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.4130924097822043,0.976506232,0.5769689980000001,315,dmpnn_rdkit
+amoxicillin,broad,Broad beta-lactam,0.0887258448980355,0.405043656,0.7809474519999999,4221,dmpnn_rdkit
+clindamycin,broad,High C. difficile risk,0.2080520165045673,0.4705505719999999,0.557854078,1847,dmpnn_rdkit
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.2687776442655902,0.495943072,0.4580473859999999,1156,dmpnn_rdkit
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.1351833387973055,0.5749692799999999,0.7648859800000001,3134,dmpnn_rdkit
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.1002364019416169,0.185973142,0.4610167852,3926,dmpnn_rdkit
+daptomycin,narrow,Gram-pos only lipopeptide,0.5242072132915834,0.8510620799999999,0.3840552579999999,104,dmpnn_rdkit
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.0358832829582034,0.6723180739999999,0.94662752,5372,dmpnn_rdkit
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0291277478007587,0.208143514,0.8600593059999999,5684,dmpnn_rdkit
+methenamine,narrow,Narrow (urinary antiseptic),0.0713837200782737,0.0735960402,0.0300603146,3936,dmpnn_rdkit
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.1980390269945057,0.770960336,0.7431268280000001,1517,dmpnn_rdkit
+amoxicillin,broad,Broad beta-lactam,0.0104967671406338,0.440648792,0.976178836,6458,dmpnn_rdkit
+clindamycin,broad,High C. difficile risk,0.1390222709189986,0.85440606,0.8372878220000001,2336,dmpnn_rdkit
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.2444651042466191,0.993262098,0.7538765399999999,1064,dmpnn_rdkit
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0631238930443273,0.7741218139999999,0.918457416,4252,dmpnn_rdkit
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.1102000589137782,0.22822915,0.517151692,2893,dmpnn_rdkit
+daptomycin,narrow,Gram-pos only lipopeptide,0.5583555311676038,0.8510620799999999,0.343930902,113,dmpnn_rdkit
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.0895881071840417,0.6723180739999999,0.866747436,3763,dmpnn_rdkit
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0622239875225287,0.208143514,0.701052479,4587,dmpnn_rdkit
+methenamine,narrow,Narrow (urinary antiseptic),0.0721015730474315,0.0735960402,0.02030635274,4252,dmpnn_rdkit
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.2078407283672441,0.770960336,0.7304132019999999,1839,dmpnn_rdkit
+amoxicillin,broad,Broad beta-lactam,0.0499015059938997,0.440648792,0.88675447,5011,dmpnn_rdkit
+clindamycin,broad,High C. difficile risk,0.2590199844907406,0.85440606,0.696842056,1380,dmpnn_rdkit
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.2887171576061427,0.993262098,0.7093242980000001,1143,dmpnn_rdkit
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.1101977636946299,0.7741218139999999,0.857648032,3280,dmpnn_rdkit
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.1306155021940863,0.22822915,0.4277001768,2880,dmpnn_rdkit
+daptomycin,narrow,Gram-pos only lipopeptide,0.7347358740607881,0.8510620799999999,0.136683573,40,dmpnn_rdkit
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.1911351931266117,0.6723180739999999,0.715707192,2333,dmpnn_rdkit
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.07180453145571,0.208143514,0.6550239299999999,4464,dmpnn_rdkit
+methenamine,narrow,Narrow (urinary antiseptic),0.0733323633622902,0.0735960402,0.003582758488,4420,dmpnn_rdkit
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.3261401234403366,0.770960336,0.5769689980000001,1240,dmpnn_rdkit
+amoxicillin,broad,Broad beta-lactam,0.096525240660722,0.440648792,0.7809474519999999,3857,dmpnn_rdkit
+clindamycin,broad,High C. difficile risk,0.3777721551610873,0.85440606,0.557854078,909,dmpnn_rdkit
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.5383009903982242,0.993262098,0.4580473859999999,297,dmpnn_rdkit
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.1820068916592322,0.7741218139999999,0.7648859800000001,2441,dmpnn_rdkit
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.1230116809780714,0.22822915,0.4610167852,3337,dmpnn_rdkit
+daptomycin,narrow,Gram-pos only lipopeptide,0.131261768291194,0.2131064027999999,0.3840552579999999,1026,dmpnn_rdkit
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.0150430192375478,0.281849733,0.94662752,5647,dmpnn_rdkit
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0018523195132546,0.01323646082,0.8600593059999999,6596,dmpnn_rdkit
+methenamine,narrow,Narrow (urinary antiseptic),0.108345102260615,0.1117029274,0.0300603146,1400,dmpnn_rdkit
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.1797781207505487,0.699871144,0.7431268280000001,591,dmpnn_rdkit
+amoxicillin,broad,Broad beta-lactam,0.0085751410445231,0.359979934,0.976178836,6160,dmpnn_rdkit
+clindamycin,broad,High C. difficile risk,0.0139563428843321,0.085773192,0.8372878220000001,5741,dmpnn_rdkit
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.1507698926859057,0.612578308,0.7538765399999999,823,dmpnn_rdkit
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0211489123107185,0.25936034,0.918457416,5140,dmpnn_rdkit
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0205540754720627,0.0425683908,0.517151692,5189,dmpnn_rdkit
+daptomycin,narrow,Gram-pos only lipopeptide,0.1398125254630206,0.2131064027999999,0.343930902,1170,dmpnn_rdkit
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.0375571995849654,0.281849733,0.866747436,4336,dmpnn_rdkit
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0039570071489526,0.01323646082,0.701052479,6537,dmpnn_rdkit
+methenamine,narrow,Narrow (urinary antiseptic),0.109434648354125,0.1117029274,0.02030635274,1691,dmpnn_rdkit
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.1886760207235569,0.699871144,0.7304132019999999,712,dmpnn_rdkit
+amoxicillin,broad,Broad beta-lactam,0.040766118415195,0.359979934,0.88675447,4139,dmpnn_rdkit
+clindamycin,broad,High C. difficile risk,0.0260028245370372,0.085773192,0.696842056,5045,dmpnn_rdkit
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.1780616297078721,0.612578308,0.7093242980000001,795,dmpnn_rdkit
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0369204548201491,0.25936034,0.857648032,4368,dmpnn_rdkit
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0243618825287485,0.0425683908,0.4277001768,5146,dmpnn_rdkit
+daptomycin,narrow,Gram-pos only lipopeptide,0.1839782582361187,0.2131064027999999,0.136683573,929,dmpnn_rdkit
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.0801278520286202,0.281849733,0.715707192,2756,dmpnn_rdkit
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0045662622343925,0.01323646082,0.6550239299999999,6529,dmpnn_rdkit
+methenamine,narrow,Narrow (urinary antiseptic),0.1113027227887232,0.1117029274,0.003582758488,1941,dmpnn_rdkit
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.2960671913172061,0.699871144,0.5769689980000001,356,dmpnn_rdkit
+amoxicillin,broad,Broad beta-lactam,0.0788545217715718,0.359979934,0.7809474519999999,2805,dmpnn_rdkit
+clindamycin,broad,High C. difficile risk,0.037924267059723,0.085773192,0.557854078,4571,dmpnn_rdkit
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.3319884153002971,0.612578308,0.4580473859999999,261,dmpnn_rdkit
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0609792521659667,0.25936034,0.7648859800000001,3446,dmpnn_rdkit
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0229436481222467,0.0425683908,0.4610167852,5429,dmpnn_rdkit
+daptomycin,narrow,Gram-pos only lipopeptide,0.1577914169708175,0.256177878,0.3840552579999999,4533,dmpnn_rdkit
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.0236527336527954,0.443163474,0.94662752,6665,dmpnn_rdkit
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0237575008301874,0.1697683508,0.8600593059999999,6663,dmpnn_rdkit
+methenamine,narrow,Narrow (urinary antiseptic),0.1615269695084769,0.1665330039999999,0.0300603146,4466,dmpnn_rdkit
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.1901415568781857,0.740215708,0.7431268280000001,3825,dmpnn_rdkit
+amoxicillin,broad,Broad beta-lactam,0.0119864911405526,0.503186626,0.976178836,6709,dmpnn_rdkit
+clindamycin,broad,High C. difficile risk,0.0724668132372974,0.445368098,0.8372878220000001,6208,dmpnn_rdkit
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.2163696160872176,0.8791100860000001,0.7538765399999999,3303,dmpnn_rdkit
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.046422242649091,0.569300608,0.918457416,6550,dmpnn_rdkit
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.0911692717386792,0.1888155559999999,0.517151692,5915,dmpnn_rdkit
+daptomycin,narrow,Gram-pos only lipopeptide,0.168070389347014,0.256177878,0.343930902,4833,dmpnn_rdkit
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.0590526691816473,0.443163474,0.866747436,6574,dmpnn_rdkit
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0507518276159183,0.1697683508,0.701052479,6649,dmpnn_rdkit
+methenamine,narrow,Narrow (urinary antiseptic),0.1631513260779241,0.1665330039999999,0.02030635274,4920,dmpnn_rdkit
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.199552382549023,0.740215708,0.7304132019999999,4264,dmpnn_rdkit
+amoxicillin,broad,Broad beta-lactam,0.0569836361502818,0.503186626,0.88675447,6594,dmpnn_rdkit
+clindamycin,broad,High C. difficile risk,0.1350168769128705,0.445368098,0.696842056,5444,dmpnn_rdkit
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.2555359413833303,0.8791100860000001,0.7093242980000001,3264,dmpnn_rdkit
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.0810410619323965,0.569300608,0.857648032,6343,dmpnn_rdkit
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.1080591093162097,0.1888155559999999,0.4277001768,5888,dmpnn_rdkit
+daptomycin,narrow,Gram-pos only lipopeptide,0.2211625703114019,0.256177878,0.136683573,4309,dmpnn_rdkit
+fidaxomicin,narrow,"Very narrow, anti-C. difficile only",0.125988188426495,0.443163474,0.715707192,5845,dmpnn_rdkit
+nitrofurantoin,narrow,"Narrow (urinary tract), minimal gut absorption",0.0585660184693653,0.1697683508,0.6550239299999999,6632,dmpnn_rdkit
+methenamine,narrow,Narrow (urinary antiseptic),0.1659363564663868,0.1665330039999999,0.003582758488,5225,dmpnn_rdkit
+ciprofloxacin,broad,"Broad fluoroquinolone, n_hit=39/40 in Maier",0.3131341926513793,0.740215708,0.5769689980000001,2860,dmpnn_rdkit
+amoxicillin,broad,Broad beta-lactam,0.110224312544823,0.503186626,0.7809474519999999,6064,dmpnn_rdkit
+clindamycin,broad,High C. difficile risk,0.1969176883195963,0.445368098,0.557854078,4694,dmpnn_rdkit
+rifabutin,broad,"Kills nearly all commensals, n_hit=40/40 in Maier",0.4764360091014649,0.8791100860000001,0.4580473859999999,1078,dmpnn_rdkit
+doxycycline,broad,"Broad tetracycline, n_hit=40/40 in Maier",0.1338505545353241,0.569300608,0.7648859800000001,5730,dmpnn_rdkit
+chloramphenicol,broad,"Broad, n_hit=40/40 in Maier",0.1017684153771294,0.1888155559999999,0.4610167852,6171,dmpnn_rdkit

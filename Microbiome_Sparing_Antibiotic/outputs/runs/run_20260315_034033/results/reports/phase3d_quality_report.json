@@ -1,0 +1,118 @@
+{
+  "phase": "3D",
+  "model": "MoLFormer-XL",
+  "timestamp": "2026-04-02 16:29:11",
+  "n_tasks_trained": 7,
+  "n_selectivity_lists": 12,
+  "cv_summary": {
+    "ecoli": {
+      "roc_auc": 0.8378,
+      "pr_auc": 0.7555,
+      "n_folds": 5
+    },
+    "saureus": {
+      "roc_auc": 0.8346,
+      "pr_auc": 0.8024,
+      "n_folds": 5
+    },
+    "paeruginosa": {
+      "roc_auc": 0.8275,
+      "pr_auc": 0.6731,
+      "n_folds": 5
+    },
+    "mtb": {
+      "roc_auc": 0.764,
+      "pr_auc": 0.7193,
+      "n_folds": 5
+    },
+    "gut_t5": {
+      "roc_auc": 0.8471,
+      "pr_auc": 0.6517,
+      "n_folds": 5
+    },
+    "gut_t10": {
+      "roc_auc": 0.8219,
+      "pr_auc": 0.5865,
+      "n_folds": 5
+    },
+    "gut_t20": {
+      "roc_auc": 0.8616,
+      "pr_auc": 0.6075,
+      "n_folds": 5
+    }
+  },
+  "selectivity_summary": {
+    "ecoli_t5": {
+      "n_compounds": 6739,
+      "top_score": 0.9983,
+      "mean_score": 0.0837,
+      "n_above_0.5": 398
+    },
+    "ecoli_t10": {
+      "n_compounds": 6739,
+      "top_score": 0.9983,
+      "mean_score": 0.0977,
+      "n_above_0.5": 488
+    },
+    "ecoli_t20": {
+      "n_compounds": 6739,
+      "top_score": 0.9986,
+      "mean_score": 0.1021,
+      "n_above_0.5": 515
+    },
+    "saureus_t5": {
+      "n_compounds": 6739,
+      "top_score": 0.9962,
+      "mean_score": 0.1069,
+      "n_above_0.5": 540
+    },
+    "saureus_t10": {
+      "n_compounds": 6739,
+      "top_score": 0.9955,
+      "mean_score": 0.1323,
+      "n_above_0.5": 726
+    },
+    "saureus_t20": {
+      "n_compounds": 6739,
+      "top_score": 0.9976,
+      "mean_score": 0.1422,
+      "n_above_0.5": 814
+    },
+    "paeruginosa_t5": {
+      "n_compounds": 6739,
+      "top_score": 0.9971,
+      "mean_score": 0.0518,
+      "n_above_0.5": 199
+    },
+    "paeruginosa_t10": {
+      "n_compounds": 6739,
+      "top_score": 0.9971,
+      "mean_score": 0.0595,
+      "n_above_0.5": 247
+    },
+    "paeruginosa_t20": {
+      "n_compounds": 6739,
+      "top_score": 0.996,
+      "mean_score": 0.062,
+      "n_above_0.5": 262
+    },
+    "mtb_t5": {
+      "n_compounds": 6739,
+      "top_score": 0.9982,
+      "mean_score": 0.2244,
+      "n_above_0.5": 1274
+    },
+    "mtb_t10": {
+      "n_compounds": 6739,
+      "top_score": 0.9986,
+      "mean_score": 0.2628,
+      "n_above_0.5": 1567
+    },
+    "mtb_t20": {
+      "n_compounds": 6739,
+      "top_score": 0.9998,
+      "mean_score": 0.279,
+      "n_above_0.5": 1699
+    }
+  }
+}

@@ -1,0 +1,72 @@
+2026-04-02 16:47:47 | INFO  | phase3c_frozen | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase3c_frozen.log
+2026-04-02 16:47:47 | INFO  | phase3c_frozen | ============================================================
+2026-04-02 16:47:47 | INFO  | phase3c_frozen |  STARTING: Phase 3C-Frozen: CheMeleon Frozen Encoder Training
+2026-04-02 16:47:47 | INFO  | phase3c_frozen | ============================================================
+2026-04-02 16:47:47 | INFO  | phase3c_frozen |   SKIP: all 7/7 tasks already complete in /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/chemeleon_frozen_cv_metrics.json
+2026-04-02 16:47:47 | INFO  | phase3c_frozen |   CheMeleon weights cached: /home2/vishakha.agrawal/.chemprop/chemeleon_mp.pt (34.9 MB)
+2026-04-02 16:47:52 | INFO  | phase3c_frozen |   GPU: NVIDIA GeForce RTX 2080 Ti (11.3 GB)
+2026-04-02 16:47:52 | INFO  | phase3c_frozen | 
+======================================================================
+2026-04-02 16:47:52 | INFO  | phase3c_frozen |   Training final models and screening hub...
+2026-04-02 16:47:52 | INFO  | phase3c_frozen | ======================================================================
+2026-04-02 16:48:07 | INFO  | phase3c_frozen |     Training final model on 28284 compounds...
+2026-04-02 16:54:30 | INFO  | phase3c_frozen |     Saved final model: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/chemeleon_frozen/ecoli/final_model.pt
+2026-04-02 16:54:30 | INFO  | phase3c_frozen |     Training final model on 43853 compounds...
+2026-04-02 17:04:40 | INFO  | phase3c_frozen |     Saved final model: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/chemeleon_frozen/saureus/final_model.pt
+2026-04-02 17:04:40 | INFO  | phase3c_frozen |     Training final model on 17783 compounds...
+2026-04-02 17:08:46 | INFO  | phase3c_frozen |     Saved final model: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/chemeleon_frozen/paeruginosa/final_model.pt
+2026-04-02 17:08:46 | INFO  | phase3c_frozen |     Training final model on 18705 compounds...
+2026-04-02 17:12:16 | INFO  | phase3c_frozen |     Saved final model: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/chemeleon_frozen/mtb/final_model.pt
+2026-04-02 17:12:16 | INFO  | phase3c_frozen |     Training final model on 1177 compounds...
+2026-04-02 17:12:27 | INFO  | phase3c_frozen |     Saved final model: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/chemeleon_frozen/gut_t5/final_model.pt
+2026-04-02 17:12:27 | INFO  | phase3c_frozen |     Training final model on 1177 compounds...
+2026-04-02 17:12:38 | INFO  | phase3c_frozen |     Saved final model: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/chemeleon_frozen/gut_t10/final_model.pt
+2026-04-02 17:12:38 | INFO  | phase3c_frozen |     Training final model on 1177 compounds...
+2026-04-02 17:12:49 | INFO  | phase3c_frozen |     Saved final model: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/models/chemeleon_frozen/gut_t20/final_model.pt
+2026-04-02 17:12:49 | INFO  | phase3c_frozen | 
+  Screening hub with CheMeleon frozen models...
+2026-04-02 17:12:49 | INFO  | phase3c_frozen |     ecoli: predicting on 6739 compounds...
+2026-04-02 17:12:59 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_ecoli.csv (top prob=1.0000)
+2026-04-02 17:12:59 | INFO  | phase3c_frozen |     saureus: predicting on 6739 compounds...
+2026-04-02 17:13:06 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_saureus.csv (top prob=1.0000)
+2026-04-02 17:13:06 | INFO  | phase3c_frozen |     paeruginosa: predicting on 6739 compounds...
+2026-04-02 17:13:14 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_paeruginosa.csv (top prob=0.9995)
+2026-04-02 17:13:14 | INFO  | phase3c_frozen |     mtb: predicting on 6739 compounds...
+2026-04-02 17:13:22 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_mtb.csv (top prob=1.0000)
+2026-04-02 17:13:22 | INFO  | phase3c_frozen |     gut_t5: predicting on 6739 compounds...
+2026-04-02 17:13:29 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_gut_t5.csv (top prob=0.9981)
+2026-04-02 17:13:29 | INFO  | phase3c_frozen |     gut_t10: predicting on 6739 compounds...
+2026-04-02 17:13:37 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_gut_t10.csv (top prob=0.9988)
+2026-04-02 17:13:37 | INFO  | phase3c_frozen |     gut_t20: predicting on 6739 compounds...
+2026-04-02 17:13:46 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_gut_t20.csv (top prob=0.9995)
+2026-04-02 17:13:46 | INFO  | phase3c_frozen | 
+  Computing CheMeleon selectivity scores...
+2026-04-02 17:13:46 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_ecoli_t5.csv (6739 compounds, top S=1.0000)
+2026-04-02 17:13:46 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_ecoli_t10.csv (6739 compounds, top S=1.0000)
+2026-04-02 17:13:46 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_ecoli_t20.csv (6739 compounds, top S=1.0000)
+2026-04-02 17:13:46 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_saureus_t5.csv (6739 compounds, top S=1.0000)
+2026-04-02 17:13:46 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_saureus_t10.csv (6739 compounds, top S=1.0000)
+2026-04-02 17:13:46 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_saureus_t20.csv (6739 compounds, top S=1.0000)
+2026-04-02 17:13:46 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_paeruginosa_t5.csv (6739 compounds, top S=0.9995)
+2026-04-02 17:13:46 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_paeruginosa_t10.csv (6739 compounds, top S=0.9976)
+2026-04-02 17:13:46 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_paeruginosa_t20.csv (6739 compounds, top S=0.9995)
+2026-04-02 17:13:46 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_mtb_t5.csv (6739 compounds, top S=1.0000)
+2026-04-02 17:13:46 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_mtb_t10.csv (6739 compounds, top S=0.9941)
+2026-04-02 17:13:46 | INFO  | phase3c_frozen |     Saved: chemeleon_frozen_ranked_mtb_t20.csv (6739 compounds, top S=1.0000)
+2026-04-02 17:13:46 | INFO  | phase3c_frozen | 
+  Generating Phase 3C figures...
+2026-04-02 17:13:48 | INFO  | phase3c_frozen |   Figure: phase3c_cv_metrics
+2026-04-02 17:13:49 | INFO  | phase3c_frozen |   Figure: phase3c_selectivity_ecoli
+2026-04-02 17:13:49 | INFO  | phase3c_frozen |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/reports/phase3c_quality_report.json
+2026-04-02 17:13:49 | INFO  | phase3c_frozen |   CheMeleon Frozen: 7 tasks, 1562s
+2026-04-02 17:13:49 | INFO  | phase3c_frozen | ============================================================
+2026-04-02 17:13:49 | INFO  | phase3c_frozen |  COMPLETED: Phase 3C-Frozen
+2026-04-02 17:13:49 | INFO  | phase3c_frozen |  Elapsed: 26m 2.4s
+2026-04-02 17:13:49 | INFO  | phase3c_frozen | ============================================================
+2026-04-03 16:22:50 | INFO  | phase3c_frozen | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase3c_frozen.log
+2026-04-03 16:30:00 | INFO  | phase3c_frozen | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase3c_frozen.log
+2026-04-03 16:40:37 | INFO  | phase3c_frozen | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase3c_frozen.log
+2026-04-03 16:53:13 | INFO  | phase3c_frozen | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase3c_frozen.log
+2026-04-03 17:05:06 | INFO  | phase3c_frozen | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase3c_frozen.log
+2026-04-05 09:36:29 | INFO  | phase3c_frozen | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase3c_frozen.log
+2026-04-16 18:01:54 | INFO  | phase3c_frozen | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase3c_frozen.log

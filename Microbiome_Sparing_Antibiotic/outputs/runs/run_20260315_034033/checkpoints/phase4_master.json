@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "pipelines": [
+    "rf",
+    "dmpnn",
+    "chemeleon_frozen",
+    "molformer",
+    "dmpnn_rdkit"
+  ],
+  "_checkpoint_time": "2026-04-05 09:06:06"
+}

@@ -1,0 +1,744 @@
+{
+  "timestamp": "2026-04-05 09:16:45",
+  "n_compounds": 6739,
+  "property_analysis": {
+    "hub_mean": {
+      "MW": 382.38260528268296,
+      "LogP": 2.781435761982492,
+      "TPSA": 88.14545778305387,
+      "n_rings": 3.0681109956966908,
+      "n_aromatic_rings": 1.9772963347677697,
+      "n_rotatable": 5.491764356729485,
+      "n_HBA": 4.959489538507197,
+      "n_HBD": 2.1124795963792846,
+      "formal_charge": 0.027748924172725925,
+      "n_heavy_atoms": 26.669980709304053,
+      "fraction_sp3": 0.3932109110649561,
+      "has_phosphate": 0.022852055201068408
+    },
+    "hub_std": {
+      "MW": 204.8959661314913,
+      "LogP": 2.5021369453481204,
+      "TPSA": 80.7973990463064,
+      "n_rings": 1.7426322473336704,
+      "n_aromatic_rings": 1.3560067404279375,
+      "n_rotatable": 5.683555571660484,
+      "n_HBA": 3.6634934725304,
+      "n_HBD": 2.84623084945232,
+      "formal_charge": 0.1986190642342971,
+      "n_heavy_atoms": 14.318463904786789,
+      "fraction_sp3": 0.2502819925966977,
+      "has_phosphate": 0.14944280775601848
+    },
+    "per_model": {
+      "MW": {
+        "rf": 402.5296200000001,
+        "dmpnn": 412.6594800000001,
+        "chemeleon_frozen": 341.63560000000007,
+        "molformer": 423.93182000000013,
+        "dmpnn_rdkit": 447.30080000000015
+      },
+      "LogP": {
+        "rf": -0.2157525999999963,
+        "dmpnn": -0.39326679999999903,
+        "chemeleon_frozen": -0.33920519999999654,
+        "molformer": 0.054460600000000595,
+        "dmpnn_rdkit": 3.128983200000001
+      },
+      "TPSA": {
+        "rf": 148.483,
+        "dmpnn": 168.70860000000002,
+        "chemeleon_frozen": 128.8298,
+        "molformer": 141.1672,
+        "dmpnn_rdkit": 104.71639999999998
+      },
+      "n_rings": {
+        "rf": 2.64,
+        "dmpnn": 2.96,
+        "chemeleon_frozen": 2.62,
+        "molformer": 3.86,
+        "dmpnn_rdkit": 4.22
+      },
+      "n_aromatic_rings": {
+        "rf": 1.42,
+        "dmpnn": 1.48,
+        "chemeleon_frozen": 1.0,
+        "molformer": 1.34,
+        "dmpnn_rdkit": 3.08
+      },
+      "n_rotatable": {
+        "rf": 7.7,
+        "dmpnn": 5.06,
+        "chemeleon_frozen": 4.7,
+        "molformer": 6.14,
+        "dmpnn_rdkit": 5.8
+      },
+      "n_HBA": {
+        "rf": 7.26,
+        "dmpnn": 8.48,
+        "chemeleon_frozen": 6.14,
+        "molformer": 7.82,
+        "dmpnn_rdkit": 6.08
+      },
+      "n_HBD": {
+        "rf": 4.16,
+        "dmpnn": 4.0,
+        "chemeleon_frozen": 3.88,
+        "molformer": 3.82,
+        "dmpnn_rdkit": 2.24
+      },
+      "formal_charge": {
+        "rf": 0.12,
+        "dmpnn": 0.02,
+        "chemeleon_frozen": 0.04,
+        "molformer": 0.02,
+        "dmpnn_rdkit": -0.02
+      },
+      "n_heavy_atoms": {
+        "rf": 27.86,
+        "dmpnn": 27.02,
+        "chemeleon_frozen": 22.68,
+        "molformer": 28.76,
+        "dmpnn_rdkit": 31.48
+      },
+      "fraction_sp3": {
+        "rf": 0.5889130132131065,
+        "dmpnn": 0.5022512233574894,
+        "chemeleon_frozen": 0.5243384264663711,
+        "molformer": 0.575932551802611,
+        "dmpnn_rdkit": 0.3679329882538888
+      },
+      "has_phosphate": {
+        "rf": 0.08,
+        "dmpnn": 0.4,
+        "chemeleon_frozen": 0.08,
+        "molformer": 0.08,
+        "dmpnn_rdkit": 0.04
+      }
+    }
+  },
+  "pairwise_correlations": {
+    "P_pathogen": {
+      "RF vs D-MPNN": {
+        "rho": 0.4168,
+        "p_value": 1.3660501424028496e-281,
+        "n": 6739
+      },
+      "RF vs CheMeleon": {
+        "rho": 0.4898,
+        "p_value": 0.0,
+        "n": 6739
+      },
+      "RF vs MoLFormer": {
+        "rho": 0.4783,
+        "p_value": 0.0,
+        "n": 6739
+      },
+      "RF vs D-MPNN+RDKit": {
+        "rho": 0.5232,
+        "p_value": 0.0,
+        "n": 6739
+      },
+      "D-MPNN vs CheMeleon": {
+        "rho": 0.4125,
+        "p_value": 3.50735239450707e-275,
+        "n": 6739
+      },
+      "D-MPNN vs MoLFormer": {
+        "rho": 0.4075,
+        "p_value": 4.732772458773663e-268,
+        "n": 6739
+      },
+      "D-MPNN vs D-MPNN+RDKit": {
+        "rho": 0.4325,
+        "p_value": 2.706273115640491e-305,
+        "n": 6739
+      },
+      "CheMeleon vs MoLFormer": {
+        "rho": 0.4447,
+        "p_value": 0.0,
+        "n": 6739
+      },
+      "CheMeleon vs D-MPNN+RDKit": {
+        "rho": 0.4296,
+        "p_value": 7.666223821983198e-301,
+        "n": 6739
+      },
+      "MoLFormer vs D-MPNN+RDKit": {
+        "rho": 0.485,
+        "p_value": 0.0,
+        "n": 6739
+      }
+    },
+    "P_gut": {
+      "RF vs D-MPNN": {
+        "rho": 0.5585,
+        "p_value": 0.0,
+        "n": 6739
+      },
+      "RF vs CheMeleon": {
+        "rho": 0.5937,
+        "p_value": 0.0,
+        "n": 6739
+      },
+      "RF vs MoLFormer": {
+        "rho": 0.6276,
+        "p_value": 0.0,
+        "n": 6739
+      },
+      "RF vs D-MPNN+RDKit": {
+        "rho": 0.6858,
+        "p_value": 0.0,
+        "n": 6739
+      },
+      "D-MPNN vs CheMeleon": {
+        "rho": 0.6592,
+        "p_value": 0.0,
+        "n": 6739
+      },
+      "D-MPNN vs MoLFormer": {
+        "rho": 0.6133,
+        "p_value": 0.0,
+        "n": 6739
+      },
+      "D-MPNN vs D-MPNN+RDKit": {
+        "rho": 0.5976,
+        "p_value": 0.0,
+        "n": 6739
+      },
+      "CheMeleon vs MoLFormer": {
+        "rho": 0.6635,
+        "p_value": 0.0,
+        "n": 6739
+      },
+      "CheMeleon vs D-MPNN+RDKit": {
+        "rho": 0.6037,
+        "p_value": 0.0,
+        "n": 6739
+      },
+      "MoLFormer vs D-MPNN+RDKit": {
+        "rho": 0.7297,
+        "p_value": 0.0,
+        "n": 6739
+      }
+    },
+    "Selectivity": {
+      "RF vs D-MPNN": {
+        "rho": 0.3034,
+        "p_value": 1.7888191414494868e-143,
+        "n": 6739
+      },
+      "RF vs CheMeleon": {
+        "rho": 0.4038,
+        "p_value": 9.192899964469762e-263,
+        "n": 6739
+      },
+      "RF vs MoLFormer": {
+        "rho": 0.394,
+        "p_value": 3.5665428221132345e-249,
+        "n": 6739
+      },
+      "RF vs D-MPNN+RDKit": {
+        "rho": 0.3938,
+        "p_value": 7.971851174859973e-249,
+        "n": 6739
+      },
+      "D-MPNN vs CheMeleon": {
+        "rho": 0.3569,
+        "p_value": 1.1279605208622626e-201,
+        "n": 6739
+      },
+      "D-MPNN vs MoLFormer": {
+        "rho": 0.3578,
+        "p_value": 1.0545959418430463e-202,
+        "n": 6739
+      },
+      "D-MPNN vs D-MPNN+RDKit": {
+        "rho": 0.359,
+        "p_value": 4.231490679949143e-204,
+        "n": 6739
+      },
+      "CheMeleon vs MoLFormer": {
+        "rho": 0.4085,
+        "p_value": 2.127949932152527e-269,
+        "n": 6739
+      },
+      "CheMeleon vs D-MPNN+RDKit": {
+        "rho": 0.3497,
+        "p_value": 4.2133770286361647e-193,
+        "n": 6739
+      },
+      "MoLFormer vs D-MPNN+RDKit": {
+        "rho": 0.4315,
+        "p_value": 1.0120967068035907e-303,
+        "n": 6739
+      }
+    }
+  },
+  "disagreement_analysis": {
+    "compounds": [
+      {
+        "name": "ML218",
+        "smiles": "CC(C)(C)CCN1C[C@@H]2[C@@H](CNC(=O)c3cc(Cl)cc(Cl)c3)[C@@H]2C1",
+        "percentiles": {
+          "rf": 0.8933,
+          "dmpnn": 0.0976,
+          "chemeleon_frozen": 0.8857,
+          "molformer": 0.9246,
+          "dmpnn_rdkit": 0.042
+        },
+        "disagreement": 0.456
+      },
+      {
+        "name": "amcinonide",
+        "smiles": "CC(=O)OCC(=O)[C@@]12OC3(CCCC3)O[C@@H]1C[C@H]1[C@H]3CCC4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@@]12C",
+        "percentiles": {
+          "rf": 0.9265,
+          "dmpnn": 0.9577,
+          "chemeleon_frozen": 0.0505,
+          "molformer": 0.1917,
+          "dmpnn_rdkit": 0.9516
+        },
+        "disagreement": 0.4543
+      },
+      {
+        "name": "NSC-632839",
+        "smiles": "Cc1ccc(/C=C2\\CNC/C(=C\\c3ccc(C)cc3)C2=O)cc1",
+        "percentiles": {
+          "rf": 0.1083,
+          "dmpnn": 0.9197,
+          "chemeleon_frozen": 0.9728,
+          "molformer": 0.7307,
+          "dmpnn_rdkit": 0.0214
+        },
+        "disagreement": 0.4535
+      },
+      {
+        "name": "granisetron",
+        "smiles": "CN1[C@@H]2CCC[C@H]1C[C@@H](NC(=O)c1nn(C)c3ccccc13)C2",
+        "percentiles": {
+          "rf": 0.6022,
+          "dmpnn": 0.0374,
+          "chemeleon_frozen": 0.9791,
+          "molformer": 0.9568,
+          "dmpnn_rdkit": 0.0979
+        },
+        "disagreement": 0.4523
+      },
+      {
+        "name": "tropanyl-3,5-dimethylbenzoate",
+        "smiles": "Cc1cc(C)cc(C(=O)O[C@H]2C[C@H]3CC[C@@H](C2)N3C)c1",
+        "percentiles": {
+          "rf": 0.7221,
+          "dmpnn": 0.0828,
+          "chemeleon_frozen": 0.9209,
+          "molformer": 0.9914,
+          "dmpnn_rdkit": 0.0828
+        },
+        "disagreement": 0.4467
+      },
+      {
+        "name": "fluocinonide",
+        "smiles": "CC(=O)OCC(=O)[C@@]12OC(C)(C)O[C@@H]1C[C@H]1[C@@H]3C[C@H](F)C4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@@]12C",
+        "percentiles": {
+          "rf": 0.9254,
+          "dmpnn": 0.0521,
+          "chemeleon_frozen": 0.0608,
+          "molformer": 0.5793,
+          "dmpnn_rdkit": 0.9344
+        },
+        "disagreement": 0.4384
+      },
+      {
+        "name": "triamcinolone-hexacetonide",
+        "smiles": "CC(C)(C)CC(=O)OCC(=O)[C@@]12OC(C)(C)O[C@@H]1C[C@H]1[C@@H]3CCC4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@@]12C",
+        "percentiles": {
+          "rf": 0.9466,
+          "dmpnn": 0.0683,
+          "chemeleon_frozen": 0.0681,
+          "molformer": 0.5217,
+          "dmpnn_rdkit": 0.9294
+        },
+        "disagreement": 0.435
+      },
+      {
+        "name": "tenylidone",
+        "smiles": "O=C1/C(=C/c2cccs2)CCC/C1=C\\c1cccs1",
+        "percentiles": {
+          "rf": 0.2618,
+          "dmpnn": 0.9889,
+          "chemeleon_frozen": 0.9785,
+          "molformer": 0.3512,
+          "dmpnn_rdkit": 0.0418
+        },
+        "disagreement": 0.4341
+      },
+      {
+        "name": "SDZ-SER-082",
+        "smiles": "CN1CC[C@@H]2CN3CCc4cccc(c43)[C@@H]2C1",
+        "percentiles": {
+          "rf": 0.8825,
+          "dmpnn": 0.6531,
+          "chemeleon_frozen": 0.0321,
+          "molformer": 0.9099,
+          "dmpnn_rdkit": 0.0582
+        },
+        "disagreement": 0.4335
+      },
+      {
+        "name": "diatrizoic-acid",
+        "smiles": "CC(=O)Nc1c(I)c(NC(C)=O)c(I)c(C(=O)O)c1I",
+        "percentiles": {
+          "rf": 0.851,
+          "dmpnn": 0.0153,
+          "chemeleon_frozen": 0.9135,
+          "molformer": 0.2949,
+          "dmpnn_rdkit": 0.9645
+        },
+        "disagreement": 0.4269
+      },
+      {
+        "name": "3-alpha-bis-(4-fluorophenyl)-methoxytropane",
+        "smiles": "CN1[C@@H]2CC[C@H]1C[C@@H](OC(c1ccc(F)cc1)c1ccc(F)cc1)C2",
+        "percentiles": {
+          "rf": 0.6816,
+          "dmpnn": 0.0819,
+          "chemeleon_frozen": 0.9541,
+          "molformer": 0.8482,
+          "dmpnn_rdkit": 0.0665
+        },
+        "disagreement": 0.4242
+      },
+      {
+        "name": "karenitecin",
+        "smiles": "CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2c-1nc1ccccc1c2CC[Si](C)(C)C",
+        "percentiles": {
+          "rf": 0.7655,
+          "dmpnn": 0.0003,
+          "chemeleon_frozen": 0.1487,
+          "molformer": 0.9415,
+          "dmpnn_rdkit": 0.7878
+        },
+        "disagreement": 0.4235
+      },
+      {
+        "name": "sodium-tetradecyl-sulfate",
+        "smiles": "CCCC[C@@H](CC)CC[C@@H](CC(C)C)OS(=O)(=O)O",
+        "percentiles": {
+          "rf": 0.8948,
+          "dmpnn": 0.7652,
+          "chemeleon_frozen": 0.0749,
+          "molformer": 0.0319,
+          "dmpnn_rdkit": 0.8018
+        },
+        "disagreement": 0.4231
+      },
+      {
+        "name": "acetriazoic-acid",
+        "smiles": "CC(=O)Nc1c(I)cc(I)c(C(=O)O)c1I",
+        "percentiles": {
+          "rf": 0.8635,
+          "dmpnn": 0.0295,
+          "chemeleon_frozen": 0.8423,
+          "molformer": 0.2155,
+          "dmpnn_rdkit": 0.9383
+        },
+        "disagreement": 0.4223
+      },
+      {
+        "name": "sodium-orthovanadate",
+        "smiles": "[O]=[V]([OH])([OH])[OH]",
+        "percentiles": {
+          "rf": 0.2552,
+          "dmpnn": 0.9866,
+          "chemeleon_frozen": 0.9978,
+          "molformer": 0.1114,
+          "dmpnn_rdkit": 0.8221
+        },
+        "disagreement": 0.4209
+      },
+      {
+        "name": "risedronate",
+        "smiles": "O=P(O)(O)C(O)(Cc1cccnc1)P(=O)(O)O",
+        "percentiles": {
+          "rf": 0.1263,
+          "dmpnn": 0.4361,
+          "chemeleon_frozen": 0.0778,
+          "molformer": 0.8871,
+          "dmpnn_rdkit": 0.9825
+        },
+        "disagreement": 0.4197
+      },
+      {
+        "name": "iothalamic-acid-d3",
+        "smiles": "CNC(=O)c1c(I)c(NC(C)=O)c(I)c(C(=O)O)c1I",
+        "percentiles": {
+          "rf": 0.9173,
+          "dmpnn": 0.0948,
+          "chemeleon_frozen": 0.9638,
+          "molformer": 0.3167,
+          "dmpnn_rdkit": 0.9837
+        },
+        "disagreement": 0.4185
+      },
+      {
+        "name": "dimesna",
+        "smiles": "O=S(=O)(O)CCSSCCS(=O)(=O)O",
+        "percentiles": {
+          "rf": 0.269,
+          "dmpnn": 0.9877,
+          "chemeleon_frozen": 0.0199,
+          "molformer": 0.8794,
+          "dmpnn_rdkit": 0.759
+        },
+        "disagreement": 0.4178
+      },
+      {
+        "name": "JHW-007",
+        "smiles": "CCCCN1[C@@H]2CC[C@H]1C[C@@H](OC(c1ccc(F)cc1)c1ccc(F)cc1)C2",
+        "percentiles": {
+          "rf": 0.7418,
+          "dmpnn": 0.1368,
+          "chemeleon_frozen": 0.9415,
+          "molformer": 0.9473,
+          "dmpnn_rdkit": 0.1362
+        },
+        "disagreement": 0.4139
+      },
+      {
+        "name": "leniolisib",
+        "smiles": "CCC(=O)N1CC[C@H](Nc2ncnc3c2CN(c2cnc(OC)c(C(F)(F)F)c2)CC3)C1",
+        "percentiles": {
+          "rf": 0.9445,
+          "dmpnn": 0.0779,
+          "chemeleon_frozen": 0.2646,
+          "molformer": 0.857,
+          "dmpnn_rdkit": 0.9169
+        },
+        "disagreement": 0.4091
+      }
+    ],
+    "agreed": [
+      {
+        "name": "AFN-1252",
+        "percentiles": {
+          "rf": 0.9993,
+          "dmpnn": 0.9771,
+          "chemeleon_frozen": 0.9886,
+          "molformer": 0.9886,
+          "dmpnn_rdkit": 0.9941
+        },
+        "disagreement": 0.0082
+      },
+      {
+        "name": "alafosfalin",
+        "percentiles": {
+          "rf": 0.9988,
+          "dmpnn": 0.9807,
+          "chemeleon_frozen": 0.9976,
+          "molformer": 0.9997,
+          "dmpnn_rdkit": 0.9856
+        },
+        "disagreement": 0.0087
+      },
+      {
+        "name": "netilmicin",
+        "percentiles": {
+          "rf": 0.9996,
+          "dmpnn": 0.9736,
+          "chemeleon_frozen": 0.9967,
+          "molformer": 0.9963,
+          "dmpnn_rdkit": 0.9763
+        },
+        "disagreement": 0.0125
+      },
+      {
+        "name": "guadecitabine",
+        "percentiles": {
+          "rf": 0.9807,
+          "dmpnn": 0.9976,
+          "chemeleon_frozen": 0.9932,
+          "molformer": 0.973,
+          "dmpnn_rdkit": 0.9633
+        },
+        "disagreement": 0.0141
+      },
+      {
+        "name": "MK-4074",
+        "percentiles": {
+          "rf": 0.949,
+          "dmpnn": 0.9507,
+          "chemeleon_frozen": 0.9381,
+          "molformer": 0.954,
+          "dmpnn_rdkit": 0.9806
+        },
+        "disagreement": 0.0158
+      },
+      {
+        "name": "sisomicin",
+        "percentiles": {
+          "rf": 0.9999,
+          "dmpnn": 0.9757,
+          "chemeleon_frozen": 0.9941,
+          "molformer": 0.9932,
+          "dmpnn_rdkit": 0.9611
+        },
+        "disagreement": 0.016
+      },
+      {
+        "name": "pipemidic-acid",
+        "percentiles": {
+          "rf": 0.9905,
+          "dmpnn": 0.961,
+          "chemeleon_frozen": 0.9573,
+          "molformer": 0.9506,
+          "dmpnn_rdkit": 0.9797
+        },
+        "disagreement": 0.0167
+      },
+      {
+        "name": "retapamulin",
+        "percentiles": {
+          "rf": 0.9908,
+          "dmpnn": 0.9619,
+          "chemeleon_frozen": 0.9871,
+          "molformer": 0.9846,
+          "dmpnn_rdkit": 0.9503
+        },
+        "disagreement": 0.0178
+      },
+      {
+        "name": "avibactam",
+        "percentiles": {
+          "rf": 0.9991,
+          "dmpnn": 0.9874,
+          "chemeleon_frozen": 0.9752,
+          "molformer": 0.9976,
+          "dmpnn_rdkit": 0.9549
+        },
+        "disagreement": 0.0183
+      },
+      {
+        "name": "XL888",
+        "percentiles": {
+          "rf": 0.9561,
+          "dmpnn": 0.9059,
+          "chemeleon_frozen": 0.9307,
+          "molformer": 0.9089,
+          "dmpnn_rdkit": 0.938
+        },
+        "disagreement": 0.0209
+      },
+      {
+        "name": "PHA-665752",
+        "percentiles": {
+          "rf": 0.7908,
+          "dmpnn": 0.8386,
+          "chemeleon_frozen": 0.8421,
+          "molformer": 0.8089,
+          "dmpnn_rdkit": 0.8222
+        },
+        "disagreement": 0.0213
+      },
+      {
+        "name": "GSK-3-inhibitor-IX",
+        "percentiles": {
+          "rf": 0.9984,
+          "dmpnn": 0.9875,
+          "chemeleon_frozen": 0.9746,
+          "molformer": 0.9736,
+          "dmpnn_rdkit": 0.9406
+        },
+        "disagreement": 0.0217
+      },
+      {
+        "name": "rosoxacin",
+        "percentiles": {
+          "rf": 0.9855,
+          "dmpnn": 0.9435,
+          "chemeleon_frozen": 0.9427,
+          "molformer": 0.9847,
+          "dmpnn_rdkit": 0.9472
+        },
+        "disagreement": 0.0223
+      },
+      {
+        "name": "toyocamycin",
+        "percentiles": {
+          "rf": 0.9815,
+          "dmpnn": 0.9393,
+          "chemeleon_frozen": 0.9972,
+          "molformer": 0.966,
+          "dmpnn_rdkit": 0.9513
+        },
+        "disagreement": 0.0231
+      },
+      {
+        "name": "triciribine-phosphate",
+        "percentiles": {
+          "rf": 0.9725,
+          "dmpnn": 0.9677,
+          "chemeleon_frozen": 0.9565,
+          "molformer": 0.9981,
+          "dmpnn_rdkit": 0.9326
+        },
+        "disagreement": 0.0239
+      }
+    ]
+  },
+  "bias_case_studies": {
+    "dmpnn_phosphate_bias": {
+      "n_phosphate": 154,
+      "dmpnn_mean_S_phosphate": 0.2859,
+      "dmpnn_mean_S_no_phosphate": 0.0936,
+      "dmpnn_ratio": 3.05,
+      "rf_ratio": 1.3
+    },
+    "chemeleon_mw_bias": {
+      "hub_median_MW": 358.4,
+      "chemeleon_top50_median_MW": 302.3,
+      "rf_top50_median_MW": 347.9,
+      "chemeleon_top50_small_mw": 6,
+      "rf_top50_small_mw": 2
+    },
+    "rf_saturation": {
+      "p_path_near_0": 2,
+      "p_path_near_1": 5,
+      "S_near_0": 14,
+      "S_near_1": 0,
+      "S_mid_range": 1941
+    },
+    "dmpnn_saturation": {
+      "p_path_near_0": 3892,
+      "p_path_near_1": 154,
+      "S_near_0": 4153,
+      "S_near_1": 114,
+      "S_mid_range": 646
+    },
+    "chemeleon_frozen_saturation": {
+      "p_path_near_0": 654,
+      "p_path_near_1": 7,
+      "S_near_0": 742,
+      "S_near_1": 9,
+      "S_mid_range": 1440
+    },
+    "molformer_saturation": {
+      "p_path_near_0": 3344,
+      "p_path_near_1": 40,
+      "S_near_0": 3571,
+      "S_near_1": 36,
+      "S_mid_range": 826
+    },
+    "dmpnn_rdkit_saturation": {
+      "p_path_near_0": 203,
+      "p_path_near_1": 3,
+      "S_near_0": 212,
+      "S_near_1": 0,
+      "S_mid_range": 1612
+    }
+  },
+  "key_findings": [
+    "D-MPNN shows 3.05x higher selectivity scores for phosphate-containing compounds (vs 1.3x for RF), confirming phosphate group bias.",
+    "CheMeleon top-50 has median MW=302.3 vs Hub median MW=358.4, with 6 compounds below 200 Da (vs 2 for RF)."
+  ]
+}

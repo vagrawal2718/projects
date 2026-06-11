@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "pathogens_processed": [
+    "ecoli",
+    "saureus",
+    "paeruginosa",
+    "mtb"
+  ],
+  "compound_counts": {
+    "ecoli": 28284,
+    "saureus": 43853,
+    "paeruginosa": 17783,
+    "mtb": 18705
+  },
+  "_checkpoint_time": "2026-03-15 03:42:18"
+}

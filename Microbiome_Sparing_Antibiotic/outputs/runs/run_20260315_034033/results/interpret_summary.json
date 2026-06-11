@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-04-16 18:02:23",
+  "n_candidates": 15,
+  "rf": {
+    "status": "complete",
+    "n_bits_analyzed": 30,
+    "top30_cumulative": 0.1974
+  },
+  "dmpnn": {
+    "status": "complete",
+    "n_compounds": 15
+  },
+  "chemeleon": {
+    "status": "complete",
+    "n_compounds": 15
+  },
+  "molformer": {
+    "status": "complete",
+    "n_compounds": 15
+  },
+  "dmpnn_rdkit": {
+    "status": "complete",
+    "n_compounds": 15
+  }
+}

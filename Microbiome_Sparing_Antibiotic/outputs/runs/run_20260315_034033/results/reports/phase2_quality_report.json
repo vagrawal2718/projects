@@ -1,0 +1,83 @@
+{
+  "ecoli": {
+    "dataset": "ecoli",
+    "total_rows": 28284,
+    "valid_fps": 28284,
+    "failed_fps": 0,
+    "matrix_shape": [
+      28284,
+      2048
+    ],
+    "status": "OK",
+    "scaffold_splits": {
+      "status": "cached"
+    }
+  },
+  "saureus": {
+    "dataset": "saureus",
+    "total_rows": 43853,
+    "valid_fps": 43853,
+    "failed_fps": 0,
+    "matrix_shape": [
+      43853,
+      2048
+    ],
+    "status": "OK",
+    "scaffold_splits": {
+      "status": "cached"
+    }
+  },
+  "paeruginosa": {
+    "dataset": "paeruginosa",
+    "total_rows": 17783,
+    "valid_fps": 17783,
+    "failed_fps": 0,
+    "matrix_shape": [
+      17783,
+      2048
+    ],
+    "status": "OK",
+    "scaffold_splits": {
+      "status": "cached"
+    }
+  },
+  "mtb": {
+    "dataset": "mtb",
+    "total_rows": 18705,
+    "valid_fps": 18705,
+    "failed_fps": 0,
+    "matrix_shape": [
+      18705,
+      2048
+    ],
+    "status": "OK",
+    "scaffold_splits": {
+      "status": "cached"
+    }
+  },
+  "maier": {
+    "dataset": "maier",
+    "total_rows": 1177,
+    "valid_fps": 1177,
+    "failed_fps": 0,
+    "matrix_shape": [
+      1177,
+      2048
+    ],
+    "status": "OK",
+    "scaffold_splits": {
+      "status": "cached"
+    }
+  },
+  "repurposing_hub": {
+    "dataset": "repurposing_hub",
+    "total_rows": 6739,
+    "valid_fps": 6739,
+    "failed_fps": 0,
+    "matrix_shape": [
+      6739,
+      2048
+    ],
+    "status": "OK"
+  }
+}

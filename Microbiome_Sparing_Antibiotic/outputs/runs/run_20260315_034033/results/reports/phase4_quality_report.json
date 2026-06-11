@@ -1,0 +1,4334 @@
+{
+  "level1": [
+    {
+      "task": "E. coli (MIC)",
+      "task_key": "ecoli",
+      "rf_roc_auc": "0.8765 +/- 0.0107",
+      "rf_roc_mean": 0.8765,
+      "rf_pr_auc": "0.8049 +/- 0.0374",
+      "rf_pr_mean": 0.8049,
+      "dmpnn_roc_auc": "0.8525 +/- 0.0123",
+      "dmpnn_roc_mean": 0.8525,
+      "dmpnn_pr_auc": "0.7743 +/- 0.0369",
+      "dmpnn_pr_mean": 0.7743,
+      "chemeleon_frozen_roc_auc": "0.8330 +/- 0.0113",
+      "chemeleon_frozen_roc_mean": 0.833,
+      "chemeleon_frozen_pr_auc": "0.7504 +/- 0.0401",
+      "chemeleon_frozen_pr_mean": 0.7504,
+      "molformer_roc_auc": "0.8378 +/- 0.0178",
+      "molformer_roc_mean": 0.8378,
+      "molformer_pr_auc": "0.7555 +/- 0.0439",
+      "molformer_pr_mean": 0.7555,
+      "dmpnn_rdkit_roc_auc": "0.8408 +/- 0.0137",
+      "dmpnn_rdkit_roc_mean": 0.8408,
+      "dmpnn_rdkit_pr_auc": "0.7570 +/- 0.0452",
+      "dmpnn_rdkit_pr_mean": 0.757
+    },
+    {
+      "task": "S. aureus (MIC)",
+      "task_key": "saureus",
+      "rf_roc_auc": "0.8708 +/- 0.0073",
+      "rf_roc_mean": 0.8708,
+      "rf_pr_auc": "0.8470 +/- 0.0129",
+      "rf_pr_mean": 0.847,
+      "dmpnn_roc_auc": "0.8544 +/- 0.0125",
+      "dmpnn_roc_mean": 0.8544,
+      "dmpnn_pr_auc": "0.8250 +/- 0.0173",
+      "dmpnn_pr_mean": 0.825,
+      "chemeleon_frozen_roc_auc": "0.8311 +/- 0.0100",
+      "chemeleon_frozen_roc_mean": 0.8311,
+      "chemeleon_frozen_pr_auc": "0.7997 +/- 0.0208",
+      "chemeleon_frozen_pr_mean": 0.7997,
+      "molformer_roc_auc": "0.8346 +/- 0.0150",
+      "molformer_roc_mean": 0.8346,
+      "molformer_pr_auc": "0.8024 +/- 0.0228",
+      "molformer_pr_mean": 0.8024,
+      "dmpnn_rdkit_roc_auc": "0.8386 +/- 0.0089",
+      "dmpnn_rdkit_roc_mean": 0.8386,
+      "dmpnn_rdkit_pr_auc": "0.8050 +/- 0.0153",
+      "dmpnn_rdkit_pr_mean": 0.805
+    },
+    {
+      "task": "P. aeruginosa (MIC)",
+      "task_key": "paeruginosa",
+      "rf_roc_auc": "0.8610 +/- 0.0135",
+      "rf_roc_mean": 0.861,
+      "rf_pr_auc": "0.7194 +/- 0.0313",
+      "rf_pr_mean": 0.7194,
+      "dmpnn_roc_auc": "0.8379 +/- 0.0131",
+      "dmpnn_roc_mean": 0.8379,
+      "dmpnn_pr_auc": "0.6867 +/- 0.0240",
+      "dmpnn_pr_mean": 0.6867,
+      "chemeleon_frozen_roc_auc": "0.8204 +/- 0.0184",
+      "chemeleon_frozen_roc_mean": 0.8204,
+      "chemeleon_frozen_pr_auc": "0.6588 +/- 0.0391",
+      "chemeleon_frozen_pr_mean": 0.6588,
+      "molformer_roc_auc": "0.8275 +/- 0.0110",
+      "molformer_roc_mean": 0.8275,
+      "molformer_pr_auc": "0.6731 +/- 0.0204",
+      "molformer_pr_mean": 0.6731,
+      "dmpnn_rdkit_roc_auc": "0.8233 +/- 0.0141",
+      "dmpnn_rdkit_roc_mean": 0.8233,
+      "dmpnn_rdkit_pr_auc": "0.6604 +/- 0.0469",
+      "dmpnn_rdkit_pr_mean": 0.6604
+    },
+    {
+      "task": "M. tuberculosis (MIC)",
+      "task_key": "mtb",
+      "rf_roc_auc": "0.8112 +/- 0.0178",
+      "rf_roc_mean": 0.8112,
+      "rf_pr_auc": "0.7755 +/- 0.0376",
+      "rf_pr_mean": 0.7755,
+      "dmpnn_roc_auc": "0.7599 +/- 0.0232",
+      "dmpnn_roc_mean": 0.7599,
+      "dmpnn_pr_auc": "0.7219 +/- 0.0387",
+      "dmpnn_pr_mean": 0.7219,
+      "chemeleon_frozen_roc_auc": "0.7620 +/- 0.0129",
+      "chemeleon_frozen_roc_mean": 0.762,
+      "chemeleon_frozen_pr_auc": "0.7149 +/- 0.0382",
+      "chemeleon_frozen_pr_mean": 0.7149,
+      "molformer_roc_auc": "0.7640 +/- 0.0177",
+      "molformer_roc_mean": 0.764,
+      "molformer_pr_auc": "0.7193 +/- 0.0380",
+      "molformer_pr_mean": 0.7193,
+      "dmpnn_rdkit_roc_auc": "0.7376 +/- 0.0309",
+      "dmpnn_rdkit_roc_mean": 0.7376,
+      "dmpnn_rdkit_pr_auc": "0.6956 +/- 0.0546",
+      "dmpnn_rdkit_pr_mean": 0.6956
+    },
+    {
+      "task": "Gut harm (t=10)",
+      "task_key": "gut_t10",
+      "rf_roc_auc": "0.8232 +/- 0.0898",
+      "rf_roc_mean": 0.8232,
+      "rf_pr_auc": "0.6654 +/- 0.1570",
+      "rf_pr_mean": 0.6654,
+      "dmpnn_roc_auc": "0.8410 +/- 0.0391",
+      "dmpnn_roc_mean": 0.841,
+      "dmpnn_pr_auc": "0.5970 +/- 0.1864",
+      "dmpnn_pr_mean": 0.597,
+      "chemeleon_frozen_roc_auc": "0.8122 +/- 0.0709",
+      "chemeleon_frozen_roc_mean": 0.8122,
+      "chemeleon_frozen_pr_auc": "0.6145 +/- 0.1645",
+      "chemeleon_frozen_pr_mean": 0.6145,
+      "molformer_roc_auc": "0.8219 +/- 0.0640",
+      "molformer_roc_mean": 0.8219,
+      "molformer_pr_auc": "0.5865 +/- 0.1835",
+      "molformer_pr_mean": 0.5865,
+      "dmpnn_rdkit_roc_auc": "0.8286 +/- 0.0910",
+      "dmpnn_rdkit_roc_mean": 0.8286,
+      "dmpnn_rdkit_pr_auc": "0.6226 +/- 0.1721",
+      "dmpnn_rdkit_pr_mean": 0.6226
+    }
+  ],
+  "test1": [
+    {
+      "pipeline": "rf",
+      "pathogen": "ecoli",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1568,
+      "broad_mean_S": 0.0936,
+      "U_statistic": 18.0,
+      "p_value": 0.12857142857142856,
+      "rank_biserial": -0.5,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "ecoli",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.163,
+      "broad_mean_S": 0.0874,
+      "U_statistic": 18.0,
+      "p_value": 0.12857142857142856,
+      "rank_biserial": -0.5,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "ecoli",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1775,
+      "broad_mean_S": 0.0963,
+      "U_statistic": 18.0,
+      "p_value": 0.12857142857142856,
+      "rank_biserial": -0.5,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "saureus",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1876,
+      "broad_mean_S": 0.1106,
+      "U_statistic": 15.0,
+      "p_value": 0.30476190476190473,
+      "rank_biserial": -0.25,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "saureus",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.196,
+      "broad_mean_S": 0.1043,
+      "U_statistic": 15.0,
+      "p_value": 0.30476190476190473,
+      "rank_biserial": -0.25,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "saureus",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.2212,
+      "broad_mean_S": 0.1137,
+      "U_statistic": 15.0,
+      "p_value": 0.30476190476190473,
+      "rank_biserial": -0.25,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "paeruginosa",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1499,
+      "broad_mean_S": 0.0541,
+      "U_statistic": 19.0,
+      "p_value": 0.08571428571428572,
+      "rank_biserial": -0.5833,
+      "effect_size": "large"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "paeruginosa",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1563,
+      "broad_mean_S": 0.0504,
+      "U_statistic": 19.0,
+      "p_value": 0.08571428571428572,
+      "rank_biserial": -0.5833,
+      "effect_size": "large"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "paeruginosa",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1709,
+      "broad_mean_S": 0.0562,
+      "U_statistic": 19.0,
+      "p_value": 0.08571428571428572,
+      "rank_biserial": -0.5833,
+      "effect_size": "large"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "mtb",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1557,
+      "broad_mean_S": 0.0648,
+      "U_statistic": 18.0,
+      "p_value": 0.12857142857142856,
+      "rank_biserial": -0.5,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "mtb",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.163,
+      "broad_mean_S": 0.0606,
+      "U_statistic": 19.0,
+      "p_value": 0.08571428571428572,
+      "rank_biserial": -0.5833,
+      "effect_size": "large"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "mtb",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1845,
+      "broad_mean_S": 0.0671,
+      "U_statistic": 17.0,
+      "p_value": 0.17619047619047618,
+      "rank_biserial": -0.4167,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "ecoli",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.005,
+      "broad_mean_S": 0.0786,
+      "U_statistic": 2.0,
+      "p_value": 0.9904761904761904,
+      "rank_biserial": 0.8333,
+      "effect_size": "large"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "ecoli",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.0107,
+      "broad_mean_S": 0.0367,
+      "U_statistic": 5.0,
+      "p_value": 0.9428571428571428,
+      "rank_biserial": 0.5833,
+      "effect_size": "large"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "ecoli",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.043,
+      "broad_mean_S": 0.4109,
+      "U_statistic": 3.0,
+      "p_value": 0.9809523809523809,
+      "rank_biserial": 0.75,
+      "effect_size": "large"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "saureus",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.063,
+      "broad_mean_S": 0.0895,
+      "U_statistic": 5.0,
+      "p_value": 0.9428571428571428,
+      "rank_biserial": 0.5833,
+      "effect_size": "large"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "saureus",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1381,
+      "broad_mean_S": 0.0421,
+      "U_statistic": 6.0,
+      "p_value": 0.9142857142857143,
+      "rank_biserial": 0.5,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "saureus",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.4344,
+      "broad_mean_S": 0.504,
+      "U_statistic": 10.0,
+      "p_value": 0.6952380952380952,
+      "rank_biserial": 0.1667,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "paeruginosa",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.0079,
+      "broad_mean_S": 0.0108,
+      "U_statistic": 13.0,
+      "p_value": 0.45714285714285713,
+      "rank_biserial": -0.0833,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "paeruginosa",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.0084,
+      "broad_mean_S": 0.0086,
+      "U_statistic": 14.0,
+      "p_value": 0.3730638892518787,
+      "rank_biserial": -0.1667,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "paeruginosa",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.0117,
+      "broad_mean_S": 0.0895,
+      "U_statistic": 12.0,
+      "p_value": 0.5428571428571428,
+      "rank_biserial": 0.0,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "mtb",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.0568,
+      "broad_mean_S": 0.0288,
+      "U_statistic": 13.0,
+      "p_value": 0.45714285714285713,
+      "rank_biserial": -0.0833,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "mtb",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.0642,
+      "broad_mean_S": 0.0185,
+      "U_statistic": 15.0,
+      "p_value": 0.30476190476190473,
+      "rank_biserial": -0.25,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "mtb",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.3127,
+      "broad_mean_S": 0.2542,
+      "U_statistic": 14.0,
+      "p_value": 0.38095238095238093,
+      "rank_biserial": -0.1667,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "ecoli",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.3707,
+      "broad_mean_S": 0.1046,
+      "U_statistic": 18.0,
+      "p_value": 0.12857142857142856,
+      "rank_biserial": -0.5,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "ecoli",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.3774,
+      "broad_mean_S": 0.1289,
+      "U_statistic": 16.0,
+      "p_value": 0.23809523809523808,
+      "rank_biserial": -0.3333,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "ecoli",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.3527,
+      "broad_mean_S": 0.0538,
+      "U_statistic": 18.0,
+      "p_value": 0.12857142857142856,
+      "rank_biserial": -0.5,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "saureus",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.557,
+      "broad_mean_S": 0.167,
+      "U_statistic": 19.0,
+      "p_value": 0.08571428571428572,
+      "rank_biserial": -0.5833,
+      "effect_size": "large"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "saureus",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.5672,
+      "broad_mean_S": 0.2543,
+      "U_statistic": 18.0,
+      "p_value": 0.12857142857142856,
+      "rank_biserial": -0.5,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "saureus",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.5309,
+      "broad_mean_S": 0.0833,
+      "U_statistic": 18.0,
+      "p_value": 0.12857142857142856,
+      "rank_biserial": -0.5,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "paeruginosa",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.3545,
+      "broad_mean_S": 0.0642,
+      "U_statistic": 18.0,
+      "p_value": 0.12857142857142856,
+      "rank_biserial": -0.5,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "paeruginosa",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.3631,
+      "broad_mean_S": 0.0795,
+      "U_statistic": 18.0,
+      "p_value": 0.12857142857142856,
+      "rank_biserial": -0.5,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "paeruginosa",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.3464,
+      "broad_mean_S": 0.0301,
+      "U_statistic": 18.0,
+      "p_value": 0.12857142857142856,
+      "rank_biserial": -0.5,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "mtb",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1167,
+      "broad_mean_S": 0.1422,
+      "U_statistic": 9.0,
+      "p_value": 0.7619047619047619,
+      "rank_biserial": 0.25,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "mtb",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1243,
+      "broad_mean_S": 0.2199,
+      "U_statistic": 9.0,
+      "p_value": 0.7619047619047619,
+      "rank_biserial": 0.25,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "mtb",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1053,
+      "broad_mean_S": 0.0685,
+      "U_statistic": 12.0,
+      "p_value": 0.5428571428571428,
+      "rank_biserial": 0.0,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "ecoli",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1571,
+      "broad_mean_S": 0.0812,
+      "U_statistic": 15.0,
+      "p_value": 0.30476190476190473,
+      "rank_biserial": -0.25,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "ecoli",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.2709,
+      "broad_mean_S": 0.057,
+      "U_statistic": 14.0,
+      "p_value": 0.38095238095238093,
+      "rank_biserial": -0.1667,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "ecoli",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.2513,
+      "broad_mean_S": 0.0314,
+      "U_statistic": 16.0,
+      "p_value": 0.23809523809523808,
+      "rank_biserial": -0.3333,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "saureus",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.0944,
+      "broad_mean_S": 0.2044,
+      "U_statistic": 8.0,
+      "p_value": 0.8238095238095238,
+      "rank_biserial": 0.3333,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "saureus",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.233,
+      "broad_mean_S": 0.1883,
+      "U_statistic": 10.0,
+      "p_value": 0.6952380952380952,
+      "rank_biserial": 0.1667,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "saureus",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.2119,
+      "broad_mean_S": 0.163,
+      "U_statistic": 9.0,
+      "p_value": 0.7619047619047619,
+      "rank_biserial": 0.25,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "paeruginosa",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.0142,
+      "broad_mean_S": 0.1115,
+      "U_statistic": 12.0,
+      "p_value": 0.5428571428571428,
+      "rank_biserial": 0.0,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "paeruginosa",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.0365,
+      "broad_mean_S": 0.0418,
+      "U_statistic": 12.0,
+      "p_value": 0.5428571428571428,
+      "rank_biserial": 0.0,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "paeruginosa",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.0329,
+      "broad_mean_S": 0.0255,
+      "U_statistic": 14.0,
+      "p_value": 0.38095238095238093,
+      "rank_biserial": -0.1667,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "mtb",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.0838,
+      "broad_mean_S": 0.138,
+      "U_statistic": 10.0,
+      "p_value": 0.6952380952380952,
+      "rank_biserial": 0.1667,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "mtb",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.0819,
+      "broad_mean_S": 0.0691,
+      "U_statistic": 11.0,
+      "p_value": 0.6190476190476191,
+      "rank_biserial": 0.0833,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "mtb",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.0992,
+      "broad_mean_S": 0.0487,
+      "U_statistic": 14.0,
+      "p_value": 0.38095238095238093,
+      "rank_biserial": -0.1667,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "ecoli",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.0896,
+      "broad_mean_S": 0.0993,
+      "U_statistic": 10.0,
+      "p_value": 0.6952380952380952,
+      "rank_biserial": 0.1667,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "ecoli",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1068,
+      "broad_mean_S": 0.1307,
+      "U_statistic": 8.0,
+      "p_value": 0.8238095238095238,
+      "rank_biserial": 0.3333,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "ecoli",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1464,
+      "broad_mean_S": 0.2023,
+      "U_statistic": 7.0,
+      "p_value": 0.8714285714285714,
+      "rank_biserial": 0.4167,
+      "effect_size": "medium"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "saureus",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1652,
+      "broad_mean_S": 0.1276,
+      "U_statistic": 10.0,
+      "p_value": 0.6952380952380952,
+      "rank_biserial": 0.1667,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "saureus",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1956,
+      "broad_mean_S": 0.1744,
+      "U_statistic": 9.0,
+      "p_value": 0.7619047619047619,
+      "rank_biserial": 0.25,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "saureus",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.2678,
+      "broad_mean_S": 0.274,
+      "U_statistic": 9.0,
+      "p_value": 0.7619047619047619,
+      "rank_biserial": 0.25,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "paeruginosa",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.0641,
+      "broad_mean_S": 0.0658,
+      "U_statistic": 10.0,
+      "p_value": 0.6952380952380952,
+      "rank_biserial": 0.1667,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "paeruginosa",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.0727,
+      "broad_mean_S": 0.0825,
+      "U_statistic": 11.0,
+      "p_value": 0.6190476190476191,
+      "rank_biserial": 0.0833,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "paeruginosa",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.095,
+      "broad_mean_S": 0.1381,
+      "U_statistic": 12.0,
+      "p_value": 0.5428571428571428,
+      "rank_biserial": 0.0,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "mtb",
+      "threshold": 5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.0917,
+      "broad_mean_S": 0.1048,
+      "U_statistic": 10.0,
+      "p_value": 0.6952380952380952,
+      "rank_biserial": 0.1667,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "mtb",
+      "threshold": 10,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1103,
+      "broad_mean_S": 0.1394,
+      "U_statistic": 9.0,
+      "p_value": 0.7619047619047619,
+      "rank_biserial": 0.25,
+      "effect_size": "small"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "mtb",
+      "threshold": 20,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "narrow_mean_S": 0.1429,
+      "broad_mean_S": 0.2221,
+      "U_statistic": 9.0,
+      "p_value": 0.7619047619047619,
+      "rank_biserial": 0.25,
+      "effect_size": "small"
+    }
+  ],
+  "test2": [
+    {
+      "pipeline": "rf",
+      "pathogen": "ecoli",
+      "threshold": 5,
+      "selectivity_auc": 0.75,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "ecoli",
+      "threshold": 10,
+      "selectivity_auc": 0.75,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "ecoli",
+      "threshold": 20,
+      "selectivity_auc": 0.75,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "saureus",
+      "threshold": 5,
+      "selectivity_auc": 0.625,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "saureus",
+      "threshold": 10,
+      "selectivity_auc": 0.625,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "saureus",
+      "threshold": 20,
+      "selectivity_auc": 0.625,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "paeruginosa",
+      "threshold": 5,
+      "selectivity_auc": 0.7917,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "paeruginosa",
+      "threshold": 10,
+      "selectivity_auc": 0.7917,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "paeruginosa",
+      "threshold": 20,
+      "selectivity_auc": 0.7917,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "mtb",
+      "threshold": 5,
+      "selectivity_auc": 0.75,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "mtb",
+      "threshold": 10,
+      "selectivity_auc": 0.7917,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "mtb",
+      "threshold": 20,
+      "selectivity_auc": 0.7083,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "ecoli",
+      "threshold": 5,
+      "selectivity_auc": 0.0833,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "ecoli",
+      "threshold": 10,
+      "selectivity_auc": 0.2083,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "ecoli",
+      "threshold": 20,
+      "selectivity_auc": 0.125,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "saureus",
+      "threshold": 5,
+      "selectivity_auc": 0.2083,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "saureus",
+      "threshold": 10,
+      "selectivity_auc": 0.25,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "saureus",
+      "threshold": 20,
+      "selectivity_auc": 0.4167,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "paeruginosa",
+      "threshold": 5,
+      "selectivity_auc": 0.5417,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "paeruginosa",
+      "threshold": 10,
+      "selectivity_auc": 0.5833,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "paeruginosa",
+      "threshold": 20,
+      "selectivity_auc": 0.5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "mtb",
+      "threshold": 5,
+      "selectivity_auc": 0.5417,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "mtb",
+      "threshold": 10,
+      "selectivity_auc": 0.625,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "mtb",
+      "threshold": 20,
+      "selectivity_auc": 0.5833,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "ecoli",
+      "threshold": 5,
+      "selectivity_auc": 0.75,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "ecoli",
+      "threshold": 10,
+      "selectivity_auc": 0.6667,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "ecoli",
+      "threshold": 20,
+      "selectivity_auc": 0.75,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "saureus",
+      "threshold": 5,
+      "selectivity_auc": 0.7917,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "saureus",
+      "threshold": 10,
+      "selectivity_auc": 0.75,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "saureus",
+      "threshold": 20,
+      "selectivity_auc": 0.75,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "paeruginosa",
+      "threshold": 5,
+      "selectivity_auc": 0.75,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "paeruginosa",
+      "threshold": 10,
+      "selectivity_auc": 0.75,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "paeruginosa",
+      "threshold": 20,
+      "selectivity_auc": 0.75,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "mtb",
+      "threshold": 5,
+      "selectivity_auc": 0.375,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "mtb",
+      "threshold": 10,
+      "selectivity_auc": 0.375,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "mtb",
+      "threshold": 20,
+      "selectivity_auc": 0.5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "ecoli",
+      "threshold": 5,
+      "selectivity_auc": 0.625,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "ecoli",
+      "threshold": 10,
+      "selectivity_auc": 0.5833,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "ecoli",
+      "threshold": 20,
+      "selectivity_auc": 0.6667,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "saureus",
+      "threshold": 5,
+      "selectivity_auc": 0.3333,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "saureus",
+      "threshold": 10,
+      "selectivity_auc": 0.4167,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "saureus",
+      "threshold": 20,
+      "selectivity_auc": 0.375,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "paeruginosa",
+      "threshold": 5,
+      "selectivity_auc": 0.5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "paeruginosa",
+      "threshold": 10,
+      "selectivity_auc": 0.5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "paeruginosa",
+      "threshold": 20,
+      "selectivity_auc": 0.5833,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "mtb",
+      "threshold": 5,
+      "selectivity_auc": 0.4167,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "mtb",
+      "threshold": 10,
+      "selectivity_auc": 0.4583,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "mtb",
+      "threshold": 20,
+      "selectivity_auc": 0.5833,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "ecoli",
+      "threshold": 5,
+      "selectivity_auc": 0.4167,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "ecoli",
+      "threshold": 10,
+      "selectivity_auc": 0.3333,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "ecoli",
+      "threshold": 20,
+      "selectivity_auc": 0.2917,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "saureus",
+      "threshold": 5,
+      "selectivity_auc": 0.4167,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "saureus",
+      "threshold": 10,
+      "selectivity_auc": 0.375,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "saureus",
+      "threshold": 20,
+      "selectivity_auc": 0.375,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "paeruginosa",
+      "threshold": 5,
+      "selectivity_auc": 0.4167,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "paeruginosa",
+      "threshold": 10,
+      "selectivity_auc": 0.4583,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "paeruginosa",
+      "threshold": 20,
+      "selectivity_auc": 0.5,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "mtb",
+      "threshold": 5,
+      "selectivity_auc": 0.4167,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "mtb",
+      "threshold": 10,
+      "selectivity_auc": 0.375,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "mtb",
+      "threshold": 20,
+      "selectivity_auc": 0.375,
+      "n_narrow": 4,
+      "n_broad": 6,
+      "caveat": "Small sample size; suggestive, not definitive"
+    }
+  ],
+  "test3": [
+    {
+      "pipeline": "rf",
+      "pathogen": "ecoli",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 5,
+      "frac_ab_topk": 0.1,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 2.92,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "sisomicin",
+          "selectivity_score": 0.6824935922137708,
+          "moa": "protein synthesis inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 2,
+          "name": "gepotidacin",
+          "selectivity_score": 0.6748324110638095,
+          "moa": "topoisomerase inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 3,
+          "name": "netilmicin",
+          "selectivity_score": 0.6717936201823734,
+          "moa": "protein synthesis inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 4,
+          "name": "gentamycin",
+          "selectivity_score": 0.6630257770119826,
+          "moa": "bacterial 50S ribosomal subunit inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 5,
+          "name": "AFN-1252",
+          "selectivity_score": 0.6517553803022758,
+          "moa": "FABI inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 6,
+          "name": "avibactam",
+          "selectivity_score": 0.6193808494157618,
+          "moa": "beta lactamase inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 7,
+          "name": "aztreonam",
+          "selectivity_score": 0.6012917312861694,
+          "moa": "bacterial cell wall synthesis inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 8,
+          "name": "alafosfalin",
+          "selectivity_score": 0.6000935760125878,
+          "moa": "bacterial cell wall synthesis inhibitor",
+          "clinical_phase": "Phase 1"
+        },
+        {
+          "rank": 9,
+          "name": "relebactam",
+          "selectivity_score": 0.5920290942824226,
+          "moa": "beta lactamase inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 10,
+          "name": "micronomicin",
+          "selectivity_score": 0.5887264449927618,
+          "moa": "protein synthesis inhibitor",
+          "clinical_phase": "Launched"
+        }
+      ]
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "saureus",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 9,
+      "frac_ab_topk": 0.18,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 5.25,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "gentamycin",
+          "selectivity_score": 0.7780937723612252,
+          "moa": "bacterial 50S ribosomal subunit inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 2,
+          "name": "retapamulin",
+          "selectivity_score": 0.749341678597917,
+          "moa": "protein synthesis inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 3,
+          "name": "sisomicin",
+          "selectivity_score": 0.714035422598796,
+          "moa": "protein synthesis inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 4,
+          "name": "valnemulin",
+          "selectivity_score": 0.7033427730303164,
+          "moa": "bacterial 50S ribosomal subunit inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 5,
+          "name": "gepotidacin",
+          "selectivity_score": 0.7019467179879658,
+          "moa": "topoisomerase inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 6,
+          "name": "AFN-1252",
+          "selectivity_score": 0.6921164986175784,
+          "moa": "FABI inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 7,
+          "name": "micronomicin",
+          "selectivity_score": 0.6805175435666435,
+          "moa": "protein synthesis inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 8,
+          "name": "octenidine",
+          "selectivity_score": 0.607975693293651,
+          "moa": "membrane integrity inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 9,
+          "name": "CD-437",
+          "selectivity_score": 0.5702245372814937,
+          "moa": "retinoid receptor agonist",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 10,
+          "name": "DHBP",
+          "selectivity_score": 0.567221461691403,
+          "moa": "ryanodine receptor blocker",
+          "clinical_phase": "Preclinical"
+        }
+      ]
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "paeruginosa",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 2,
+      "frac_ab_topk": 0.04,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 1.17,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "gentamycin",
+          "selectivity_score": 0.6861800700870117,
+          "moa": "bacterial 50S ribosomal subunit inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 2,
+          "name": "etofylline",
+          "selectivity_score": 0.5992659177401638,
+          "moa": "adenosine receptor antagonist",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 3,
+          "name": "acefylline",
+          "selectivity_score": 0.5616159438807138,
+          "moa": "adenosine receptor agonist",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 4,
+          "name": "CaCCinh-A01",
+          "selectivity_score": 0.5254257992912043,
+          "moa": "calcium-activated chloride channel inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 5,
+          "name": "sisomicin",
+          "selectivity_score": 0.5061491644756606,
+          "moa": "protein synthesis inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 6,
+          "name": "doxofylline",
+          "selectivity_score": 0.5012032555947096,
+          "moa": "adenosine receptor antagonist",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 7,
+          "name": "vinburnine",
+          "selectivity_score": 0.4968571408629409,
+          "moa": "adrenergic receptor antagonist",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 8,
+          "name": "dyphylline",
+          "selectivity_score": 0.4960207030384474,
+          "moa": "adenosine receptor antagonist|phosphodiesterase inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 9,
+          "name": "dalargin",
+          "selectivity_score": 0.4853234329379757,
+          "moa": "opioid receptor agonist",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 10,
+          "name": "CH-170",
+          "selectivity_score": 0.4845469637311032,
+          "moa": NaN,
+          "clinical_phase": "Phase 1"
+        }
+      ]
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "mtb",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 8,
+      "frac_ab_topk": 0.16,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 4.67,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "SQ-109",
+          "selectivity_score": 0.7780870580243624,
+          "moa": "bacterial cell wall synthesis inhibitor",
+          "clinical_phase": "Phase 3"
+        },
+        {
+          "rank": 2,
+          "name": "acefylline",
+          "selectivity_score": 0.7258447464636595,
+          "moa": "adenosine receptor agonist",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 3,
+          "name": "ETC-159",
+          "selectivity_score": 0.7121697318373116,
+          "moa": "beta catenin inhibitor|porcupine inhibitor",
+          "clinical_phase": "Phase 1"
+        },
+        {
+          "rank": 4,
+          "name": "GSK656",
+          "selectivity_score": 0.7048675475761511,
+          "moa": "leucyl-tRNA synthetase inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 5,
+          "name": "bedaquiline",
+          "selectivity_score": 0.6952521607190855,
+          "moa": "ATPase inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 6,
+          "name": "HC-030031",
+          "selectivity_score": 0.6916801091625324,
+          "moa": "TRPA1 channel blocker",
+          "clinical_phase": "Phase 1"
+        },
+        {
+          "rank": 7,
+          "name": "AZ-7371",
+          "selectivity_score": 0.677712204671733,
+          "moa": "antibacterial",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 8,
+          "name": "TCS-5861528",
+          "selectivity_score": 0.6692691271590144,
+          "moa": "transient receptor potential channel antagonist",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 9,
+          "name": "valnemulin",
+          "selectivity_score": 0.6463914608874403,
+          "moa": "bacterial 50S ribosomal subunit inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 10,
+          "name": "epetraborole",
+          "selectivity_score": 0.6423684598724526,
+          "moa": "leucyl-tRNA synthetase inhibitor",
+          "clinical_phase": "Preclinical"
+        }
+      ]
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "ecoli",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 1,
+      "frac_ab_topk": 0.02,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 0.58,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "diadenosine-tetraphosphate",
+          "selectivity_score": 0.999848,
+          "moa": "adenosine kinase inhibitor",
+          "clinical_phase": "Phase 1"
+        },
+        {
+          "rank": 2,
+          "name": "NADPH",
+          "selectivity_score": 0.99978,
+          "moa": NaN,
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 3,
+          "name": "adenosine-triphosphate",
+          "selectivity_score": 0.999565,
+          "moa": "adenosine receptor agonist",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 4,
+          "name": "coenzyme-I",
+          "selectivity_score": 0.999133,
+          "moa": NaN,
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 5,
+          "name": "mangafodipir",
+          "selectivity_score": 0.998977,
+          "moa": "contrast agent",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 6,
+          "name": "diflorasone-diacetate",
+          "selectivity_score": 0.998772,
+          "moa": "glucocorticoid receptor agonist",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 7,
+          "name": "coenzyme-A",
+          "selectivity_score": 0.99865,
+          "moa": NaN,
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 8,
+          "name": "uridine-5'-triphosphate",
+          "selectivity_score": 0.998603,
+          "moa": "purinergic receptor activator",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 9,
+          "name": "fluticasone-propionate",
+          "selectivity_score": 0.998276,
+          "moa": "glucocorticoid receptor agonist",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 10,
+          "name": "INS316",
+          "selectivity_score": 0.998112,
+          "moa": "purinergic receptor antagonist",
+          "clinical_phase": "Phase 2"
+        }
+      ]
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "saureus",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 0,
+      "frac_ab_topk": 0.0,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 0.0,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "valspodar",
+          "selectivity_score": 0.999291,
+          "moa": "P glycoprotein inhibitor",
+          "clinical_phase": "Phase 3"
+        },
+        {
+          "rank": 2,
+          "name": "voclosporin",
+          "selectivity_score": 0.998978,
+          "moa": "calcineurin inhibitor",
+          "clinical_phase": "Phase 3"
+        },
+        {
+          "rank": 3,
+          "name": "SJG-136",
+          "selectivity_score": 0.997842,
+          "moa": "DNA intercalating agent",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 4,
+          "name": "NIM811",
+          "selectivity_score": 0.997078,
+          "moa": "mitochondrial permeability transition inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 5,
+          "name": "alisporivir",
+          "selectivity_score": 0.997056,
+          "moa": "cyclophilin inhibitor",
+          "clinical_phase": "Phase 3"
+        },
+        {
+          "rank": 6,
+          "name": "cyclosporin-A",
+          "selectivity_score": 0.996424,
+          "moa": "calcineurin inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 7,
+          "name": "delgocitinib",
+          "selectivity_score": 0.996237,
+          "moa": "JAK inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 8,
+          "name": "etofylline-clofibrate",
+          "selectivity_score": 0.995431,
+          "moa": "platelet aggregation inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 9,
+          "name": "AFN-1252",
+          "selectivity_score": 0.995287,
+          "moa": "FABI inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 10,
+          "name": "coenzyme-I",
+          "selectivity_score": 0.99448,
+          "moa": NaN,
+          "clinical_phase": "Phase 2"
+        }
+      ]
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "paeruginosa",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 0,
+      "frac_ab_topk": 0.0,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 0.0,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "etofylline-clofibrate",
+          "selectivity_score": 0.995115,
+          "moa": "platelet aggregation inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 2,
+          "name": "bismuth-subcitrate-potassium",
+          "selectivity_score": 0.994343,
+          "moa": NaN,
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 3,
+          "name": "monocrotaline",
+          "selectivity_score": 0.994296,
+          "moa": "antitumor agent",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 4,
+          "name": "CH-170",
+          "selectivity_score": 0.992541,
+          "moa": NaN,
+          "clinical_phase": "Phase 1"
+        },
+        {
+          "rank": 5,
+          "name": "epetraborole",
+          "selectivity_score": 0.991356,
+          "moa": "leucyl-tRNA synthetase inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 6,
+          "name": "ETC-159",
+          "selectivity_score": 0.990443,
+          "moa": "beta catenin inhibitor|porcupine inhibitor",
+          "clinical_phase": "Phase 1"
+        },
+        {
+          "rank": 7,
+          "name": "acefylline",
+          "selectivity_score": 0.988397,
+          "moa": "adenosine receptor agonist",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 8,
+          "name": "doxofylline",
+          "selectivity_score": 0.987704,
+          "moa": "adenosine receptor antagonist",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 9,
+          "name": "toloxatone",
+          "selectivity_score": 0.987458,
+          "moa": "monoamine oxidase inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 10,
+          "name": "KW-2449",
+          "selectivity_score": 0.985041,
+          "moa": "Abl kinase inhibitor|Aurora kinase inhibitor|FLT3 inhibitor",
+          "clinical_phase": "Phase 1"
+        }
+      ]
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "mtb",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 1,
+      "frac_ab_topk": 0.02,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 0.58,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "sucralfate",
+          "selectivity_score": 1.0,
+          "moa": "antacid",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 2,
+          "name": "hexasodium-phytate",
+          "selectivity_score": 0.999997,
+          "moa": NaN,
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 3,
+          "name": "diadenosine-tetraphosphate",
+          "selectivity_score": 0.999861,
+          "moa": "adenosine kinase inhibitor",
+          "clinical_phase": "Phase 1"
+        },
+        {
+          "rank": 4,
+          "name": "fondaparinux",
+          "selectivity_score": 0.99971,
+          "moa": "coagulation factor inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 5,
+          "name": "NADPH",
+          "selectivity_score": 0.999423,
+          "moa": NaN,
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 6,
+          "name": "valspodar",
+          "selectivity_score": 0.999332,
+          "moa": "P glycoprotein inhibitor",
+          "clinical_phase": "Phase 3"
+        },
+        {
+          "rank": 7,
+          "name": "colistimethate",
+          "selectivity_score": 0.999289,
+          "moa": "bacterial permeability inducer",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 8,
+          "name": "voclosporin",
+          "selectivity_score": 0.998991,
+          "moa": "calcineurin inhibitor",
+          "clinical_phase": "Phase 3"
+        },
+        {
+          "rank": 9,
+          "name": "NXY-059",
+          "selectivity_score": 0.998286,
+          "moa": "free radical scavenger",
+          "clinical_phase": "Phase 3"
+        },
+        {
+          "rank": 10,
+          "name": "cyclosporin-A",
+          "selectivity_score": 0.998248,
+          "moa": "calcineurin inhibitor",
+          "clinical_phase": "Launched"
+        }
+      ]
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "ecoli",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 4,
+      "frac_ab_topk": 0.08,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 2.33,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "methenamine",
+          "selectivity_score": 1.0,
+          "moa": "bacterial DNA inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 2,
+          "name": "1-((Z)-3-chloroallyl)-1,3,5,7-tetraazaadamantan-1-ium",
+          "selectivity_score": 0.999996,
+          "moa": NaN,
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 3,
+          "name": "Y-11",
+          "selectivity_score": 0.999994,
+          "moa": "focal adhesion kinase inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 4,
+          "name": "PR-619",
+          "selectivity_score": 0.990722,
+          "moa": "DUB inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 5,
+          "name": "memantine",
+          "selectivity_score": 0.988433,
+          "moa": "glutamate receptor antagonist",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 6,
+          "name": "saxagliptin",
+          "selectivity_score": 0.979469,
+          "moa": "dipeptidyl peptidase inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 7,
+          "name": "vildagliptin",
+          "selectivity_score": 0.967654,
+          "moa": "dipeptidyl peptidase inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 8,
+          "name": "BC-11",
+          "selectivity_score": 0.958279,
+          "moa": "urokinase inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 9,
+          "name": "thiotepa",
+          "selectivity_score": 0.957192,
+          "moa": "cytochrome P450 inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 10,
+          "name": "haloprogin",
+          "selectivity_score": 0.929686,
+          "moa": "other antifungal",
+          "clinical_phase": "Launched"
+        }
+      ]
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "saureus",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 4,
+      "frac_ab_topk": 0.08,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 2.33,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "C11-Acetate",
+          "selectivity_score": 1.0,
+          "moa": NaN,
+          "clinical_phase": "Phase 3"
+        },
+        {
+          "rank": 2,
+          "name": "methenamine",
+          "selectivity_score": 0.999999,
+          "moa": "bacterial DNA inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 3,
+          "name": "thiotepa",
+          "selectivity_score": 0.999972,
+          "moa": "cytochrome P450 inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 4,
+          "name": "cisplatin",
+          "selectivity_score": 0.999929,
+          "moa": "DNA alkylating agent|DNA synthesis inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 5,
+          "name": "tribromoethanol",
+          "selectivity_score": 0.999862,
+          "moa": "analgesic agent",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 6,
+          "name": "trichloroethylene",
+          "selectivity_score": 0.995321,
+          "moa": NaN,
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 7,
+          "name": "arsenic-trioxide",
+          "selectivity_score": 0.994711,
+          "moa": "apoptosis stimulant",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 8,
+          "name": "trichloroacetic-acid",
+          "selectivity_score": 0.985487,
+          "moa": NaN,
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 9,
+          "name": "sodium-nitroprusside",
+          "selectivity_score": 0.98149,
+          "moa": "nitric oxide donor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 10,
+          "name": "taurolidine",
+          "selectivity_score": 0.973366,
+          "moa": "apoptosis stimulant",
+          "clinical_phase": "Launched"
+        }
+      ]
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "paeruginosa",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 4,
+      "frac_ab_topk": 0.08,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 2.33,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "methenamine",
+          "selectivity_score": 0.997553,
+          "moa": "bacterial DNA inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 2,
+          "name": "satraplatin",
+          "selectivity_score": 0.988458,
+          "moa": "DNA alkylating agent",
+          "clinical_phase": "Phase 3"
+        },
+        {
+          "rank": 3,
+          "name": "sodium-nitroprusside",
+          "selectivity_score": 0.981018,
+          "moa": "nitric oxide donor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 4,
+          "name": "Y-11",
+          "selectivity_score": 0.970785,
+          "moa": "focal adhesion kinase inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 5,
+          "name": "1-((Z)-3-chloroallyl)-1,3,5,7-tetraazaadamantan-1-ium",
+          "selectivity_score": 0.957663,
+          "moa": NaN,
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 6,
+          "name": "nedaplatin",
+          "selectivity_score": 0.935231,
+          "moa": "DNA inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 7,
+          "name": "thiotepa",
+          "selectivity_score": 0.935128,
+          "moa": "cytochrome P450 inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 8,
+          "name": "bicifadine",
+          "selectivity_score": 0.93114,
+          "moa": "dopamine reuptake inhibitor|serotonin receptor antagonist",
+          "clinical_phase": "Phase 3"
+        },
+        {
+          "rank": 9,
+          "name": "AZD1446",
+          "selectivity_score": 0.928368,
+          "moa": "acetylcholine receptor agonist",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 10,
+          "name": "amantadine",
+          "selectivity_score": 0.928182,
+          "moa": "glutamate receptor antagonist",
+          "clinical_phase": "Launched"
+        }
+      ]
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "mtb",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 3,
+      "frac_ab_topk": 0.06,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 1.75,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "sucralfate",
+          "selectivity_score": 0.994113,
+          "moa": "antacid",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 2,
+          "name": "sodium-nitroprusside",
+          "selectivity_score": 0.981497,
+          "moa": "nitric oxide donor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 3,
+          "name": "perfluorodecalin",
+          "selectivity_score": 0.978542,
+          "moa": NaN,
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 4,
+          "name": "memantine",
+          "selectivity_score": 0.973755,
+          "moa": "glutamate receptor antagonist",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 5,
+          "name": "dimethyl-fumarate",
+          "selectivity_score": 0.970909,
+          "moa": "nuclear factor erythroid derived|like (NRF2) activator",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 6,
+          "name": "thiophanate",
+          "selectivity_score": 0.964916,
+          "moa": NaN,
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 7,
+          "name": "DSM265",
+          "selectivity_score": 0.963885,
+          "moa": "dihydroorotate dehydrogenase inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 8,
+          "name": "2-fluorofucose",
+          "selectivity_score": 0.952257,
+          "moa": NaN,
+          "clinical_phase": "Phase 1"
+        },
+        {
+          "rank": 9,
+          "name": "chuanxiongzine",
+          "selectivity_score": 0.95193,
+          "moa": NaN,
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 10,
+          "name": "indium-tri(2-propanolate)",
+          "selectivity_score": 0.946666,
+          "moa": NaN,
+          "clinical_phase": "Preclinical"
+        }
+      ]
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "ecoli",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 1,
+      "frac_ab_topk": 0.02,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 0.58,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "imexon",
+          "selectivity_score": 0.9982948637515972,
+          "moa": "apoptosis stimulant|ribonucleotide reductase inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 2,
+          "name": "alafosfalin",
+          "selectivity_score": 0.996206700984386,
+          "moa": "bacterial cell wall synthesis inhibitor",
+          "clinical_phase": "Phase 1"
+        },
+        {
+          "rank": 3,
+          "name": "sugammadex",
+          "selectivity_score": 0.9959368911793892,
+          "moa": "neuromuscular blockade reversal agent",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 4,
+          "name": "OP-0595",
+          "selectivity_score": 0.991686996777324,
+          "moa": "beta lactamase inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 5,
+          "name": "epetraborole",
+          "selectivity_score": 0.9898615386396976,
+          "moa": "leucyl-tRNA synthetase inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 6,
+          "name": "paeoniflorin",
+          "selectivity_score": 0.9868512722224078,
+          "moa": "anticonvulsant",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 7,
+          "name": "monocrotaline",
+          "selectivity_score": 0.9853362339385888,
+          "moa": "antitumor agent",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 8,
+          "name": "gepotidacin",
+          "selectivity_score": 0.9812794721994696,
+          "moa": "topoisomerase inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 9,
+          "name": "heptaminol",
+          "selectivity_score": 0.9762600571512572,
+          "moa": "vasoconstrictor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 10,
+          "name": "Proxyphylline",
+          "selectivity_score": 0.975847248698577,
+          "moa": NaN,
+          "clinical_phase": "Launched"
+        }
+      ]
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "saureus",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 1,
+      "frac_ab_topk": 0.02,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 0.58,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "bucillamine",
+          "selectivity_score": 0.9954552089132358,
+          "moa": "immunosuppressant",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 2,
+          "name": "pagoclone",
+          "selectivity_score": 0.9892946278771984,
+          "moa": "GABA receptor agonist",
+          "clinical_phase": "Phase 2/Phase 3"
+        },
+        {
+          "rank": 3,
+          "name": "karenitecin",
+          "selectivity_score": 0.9885283808053502,
+          "moa": "topoisomerase inhibitor",
+          "clinical_phase": "Phase 3"
+        },
+        {
+          "rank": 4,
+          "name": "vinflunine",
+          "selectivity_score": 0.9884373175636678,
+          "moa": "microtubule inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 5,
+          "name": "doramectin",
+          "selectivity_score": 0.987770899933348,
+          "moa": NaN,
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 6,
+          "name": "gepotidacin",
+          "selectivity_score": 0.9859345960846322,
+          "moa": "topoisomerase inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 7,
+          "name": "L-leucine",
+          "selectivity_score": 0.9856664682185888,
+          "moa": NaN,
+          "clinical_phase": "Phase 3"
+        },
+        {
+          "rank": 8,
+          "name": "vitamin-B12",
+          "selectivity_score": 0.985079666720748,
+          "moa": NaN,
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 9,
+          "name": "indapamide",
+          "selectivity_score": 0.9826466960615072,
+          "moa": "thiazide diuretic",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 10,
+          "name": "EB-47",
+          "selectivity_score": 0.9825175909569926,
+          "moa": "PARP inhibitor",
+          "clinical_phase": "Preclinical"
+        }
+      ]
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "paeruginosa",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 2,
+      "frac_ab_topk": 0.04,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 1.17,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "DMSO",
+          "selectivity_score": 0.9970725025561322,
+          "moa": "control vehicle",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 2,
+          "name": "chlorobutanol",
+          "selectivity_score": 0.9957179808057398,
+          "moa": NaN,
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 3,
+          "name": "iodixanol",
+          "selectivity_score": 0.9935705783724752,
+          "moa": "radiopaque medium",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 4,
+          "name": "vincamine",
+          "selectivity_score": 0.99228968963579,
+          "moa": "adrenergic receptor antagonist",
+          "clinical_phase": "Withdrawn"
+        },
+        {
+          "rank": 5,
+          "name": "vinburnine",
+          "selectivity_score": 0.99222052035293,
+          "moa": "adrenergic receptor antagonist",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 6,
+          "name": "ZAMI-633",
+          "selectivity_score": 0.9918801586768036,
+          "moa": "urease inhibitor",
+          "clinical_phase": "Phase 3"
+        },
+        {
+          "rank": 7,
+          "name": "catharanthine",
+          "selectivity_score": 0.9904166574990896,
+          "moa": "tubulin polymerization inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 8,
+          "name": "captamine",
+          "selectivity_score": 0.9894362388206795,
+          "moa": NaN,
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 9,
+          "name": "monocrotaline",
+          "selectivity_score": 0.9876737316104331,
+          "moa": "antitumor agent",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 10,
+          "name": "AY-9944",
+          "selectivity_score": 0.9871338171942774,
+          "moa": "hedgehog pathway modulator",
+          "clinical_phase": "Preclinical"
+        }
+      ]
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "mtb",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 5,
+      "frac_ab_topk": 0.1,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 2.92,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "SQ-109",
+          "selectivity_score": 0.9986077259724224,
+          "moa": "bacterial cell wall synthesis inhibitor",
+          "clinical_phase": "Phase 3"
+        },
+        {
+          "rank": 2,
+          "name": "mibampator",
+          "selectivity_score": 0.997403276981064,
+          "moa": "glutamate receptor modulator",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 3,
+          "name": "LY404187",
+          "selectivity_score": 0.9965594546679628,
+          "moa": "glutamate receptor positive allosteric modulator",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 4,
+          "name": "brinzolamide",
+          "selectivity_score": 0.9965192740760006,
+          "moa": "carbonic anhydrase inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 5,
+          "name": "M-25",
+          "selectivity_score": 0.9954868180344728,
+          "moa": "smoothened receptor antagonist",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 6,
+          "name": "vorapaxar",
+          "selectivity_score": 0.9950848087427806,
+          "moa": "thrombin inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 7,
+          "name": "pyrrolidine-dithiocarbamate",
+          "selectivity_score": 0.9944701848772838,
+          "moa": "NFkB pathway inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 8,
+          "name": "micronomicin",
+          "selectivity_score": 0.9942770218720266,
+          "moa": "protein synthesis inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 9,
+          "name": "oxyquinoline",
+          "selectivity_score": 0.9940217508685552,
+          "moa": "chelating agent",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 10,
+          "name": "GSK656",
+          "selectivity_score": 0.9938751357892838,
+          "moa": "leucyl-tRNA synthetase inhibitor",
+          "clinical_phase": "Preclinical"
+        }
+      ]
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "ecoli",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 1,
+      "frac_ab_topk": 0.02,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 0.58,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "asciminib",
+          "selectivity_score": 0.8246053274872903,
+          "moa": "Bcr-Abl kinase inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 2,
+          "name": "CUDC-907",
+          "selectivity_score": 0.7816714345274248,
+          "moa": "PI3K inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 3,
+          "name": "AZD3965",
+          "selectivity_score": 0.7517747229229238,
+          "moa": "monocarboxylate transporter inhibitor",
+          "clinical_phase": "Phase 1"
+        },
+        {
+          "rank": 4,
+          "name": "AR-C155858",
+          "selectivity_score": 0.7517596484697561,
+          "moa": "monocarboxylate transporter inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 5,
+          "name": "BEBT-908",
+          "selectivity_score": 0.7240272576886816,
+          "moa": "PI3K inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 6,
+          "name": "ketohexokinase-inhibitor-1",
+          "selectivity_score": 0.7077648757377942,
+          "moa": "kinase inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 7,
+          "name": "itacitinib",
+          "selectivity_score": 0.6824376178822674,
+          "moa": "JAK inhibitor",
+          "clinical_phase": "Phase 3"
+        },
+        {
+          "rank": 8,
+          "name": "alanosine",
+          "selectivity_score": 0.682334791806697,
+          "moa": "antimetabolite",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 9,
+          "name": "gepotidacin",
+          "selectivity_score": 0.6726706564091439,
+          "moa": "topoisomerase inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 10,
+          "name": "TS-011",
+          "selectivity_score": 0.6672098210023201,
+          "moa": "delayed vasospasm antagonist",
+          "clinical_phase": "Preclinical"
+        }
+      ]
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "saureus",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 0,
+      "frac_ab_topk": 0.0,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 0.0,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "gepotidacin",
+          "selectivity_score": 0.8068960952441635,
+          "moa": "topoisomerase inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 2,
+          "name": "PF-04691502",
+          "selectivity_score": 0.7566211200469455,
+          "moa": "mTOR inhibitor|PI3K inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 3,
+          "name": "CPI-1205",
+          "selectivity_score": 0.7517288600127933,
+          "moa": "EZH2 inhibitor",
+          "clinical_phase": "Phase 1/Phase 2"
+        },
+        {
+          "rank": 4,
+          "name": "retapamulin",
+          "selectivity_score": 0.7472114020800331,
+          "moa": "protein synthesis inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 5,
+          "name": "itacitinib",
+          "selectivity_score": 0.7412453771035511,
+          "moa": "JAK inhibitor",
+          "clinical_phase": "Phase 3"
+        },
+        {
+          "rank": 6,
+          "name": "PF-03758309",
+          "selectivity_score": 0.7377265073212183,
+          "moa": "p21 activated kinase inhibitor",
+          "clinical_phase": "Phase 1"
+        },
+        {
+          "rank": 7,
+          "name": "AFN-1252",
+          "selectivity_score": 0.7350750575900677,
+          "moa": "FABI inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 8,
+          "name": "WIN-64338",
+          "selectivity_score": 0.7111961711586361,
+          "moa": "bradykinin receptor antagonist",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 9,
+          "name": "GNF-5837",
+          "selectivity_score": 0.706341409399672,
+          "moa": "growth factor receptor inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 10,
+          "name": "LY3214996",
+          "selectivity_score": 0.7052863407003704,
+          "moa": "ERK inhibitor",
+          "clinical_phase": "Phase 1"
+        }
+      ]
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "paeruginosa",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 1,
+      "frac_ab_topk": 0.02,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 0.58,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "simurosertib",
+          "selectivity_score": 0.7590362496986334,
+          "moa": "kinase inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 2,
+          "name": "AR-C155858",
+          "selectivity_score": 0.7529696659731374,
+          "moa": "monocarboxylate transporter inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 3,
+          "name": "AZD3965",
+          "selectivity_score": 0.7220064996399801,
+          "moa": "monocarboxylate transporter inhibitor",
+          "clinical_phase": "Phase 1"
+        },
+        {
+          "rank": 4,
+          "name": "IPAG",
+          "selectivity_score": 0.6503168829684944,
+          "moa": NaN,
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 5,
+          "name": "iodixanol",
+          "selectivity_score": 0.6083373511805604,
+          "moa": "radiopaque medium",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 6,
+          "name": "LY2584702",
+          "selectivity_score": 0.5957223254492375,
+          "moa": "ribosomal protein inhibitor",
+          "clinical_phase": "Phase 1"
+        },
+        {
+          "rank": 7,
+          "name": "CUDC-907",
+          "selectivity_score": 0.5879908159319337,
+          "moa": "PI3K inhibitor",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 8,
+          "name": "PD-198306",
+          "selectivity_score": 0.5841170081362657,
+          "moa": "MAP kinase inhibitor|MEK inhibitor",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 9,
+          "name": "LY3214996",
+          "selectivity_score": 0.5840874162886498,
+          "moa": "ERK inhibitor",
+          "clinical_phase": "Phase 1"
+        },
+        {
+          "rank": 10,
+          "name": "SD-2590",
+          "selectivity_score": 0.5775260539124463,
+          "moa": "matrix metalloprotease inhibitor",
+          "clinical_phase": "Preclinical"
+        }
+      ]
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "mtb",
+      "threshold": 10,
+      "top_k": 50,
+      "n_ab_topk": 0,
+      "frac_ab_topk": 0.0,
+      "n_ab_total": 231,
+      "frac_ab_total": 0.0343,
+      "enrichment_ratio": 0.0,
+      "top10_compounds": [
+        {
+          "rank": 1,
+          "name": "riboflavin-5-phosphate-sodium",
+          "selectivity_score": 0.9306716066506656,
+          "moa": NaN,
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 2,
+          "name": "triciribine-phosphate",
+          "selectivity_score": 0.9294476823690078,
+          "moa": "AKT inhibitor",
+          "clinical_phase": "Phase 1/Phase 2"
+        },
+        {
+          "rank": 3,
+          "name": "mifobate",
+          "selectivity_score": 0.9203128702098584,
+          "moa": "PPAR receptor antagonist",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 4,
+          "name": "estramustine-phosphate",
+          "selectivity_score": 0.9201065317446234,
+          "moa": "DNA synthesis inhibitor|microtubule inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 5,
+          "name": "fosamprenavir",
+          "selectivity_score": 0.9168796478121984,
+          "moa": "HIV protease inhibitor",
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 6,
+          "name": "fosfluconazole",
+          "selectivity_score": 0.9147728510757764,
+          "moa": "other antifungal",
+          "clinical_phase": "Preclinical"
+        },
+        {
+          "rank": 7,
+          "name": "Lu-AA-47070",
+          "selectivity_score": 0.908020111186406,
+          "moa": "adenosine receptor antagonist",
+          "clinical_phase": "Phase 2"
+        },
+        {
+          "rank": 8,
+          "name": "betamethasone-phosphate",
+          "selectivity_score": 0.9078778169603332,
+          "moa": NaN,
+          "clinical_phase": "Launched"
+        },
+        {
+          "rank": 9,
+          "name": "diquafosol",
+          "selectivity_score": 0.9055383747828196,
+          "moa": "purinergic receptor activator",
+          "clinical_phase": "Phase 3"
+        },
+        {
+          "rank": 10,
+          "name": "fosfestrol",
+          "selectivity_score": 0.9050575699338096,
+          "moa": "synthetic estrogen",
+          "clinical_phase": "Launched"
+        }
+      ]
+    }
+  ],
+  "test4": {
+    "chemeleon_frozen_vs_dmpnn": {
+      "ecoli_t5": {
+        "spearman_rho": 0.3585,
+        "p_value": 1.549603601595196e-203,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t10": {
+        "spearman_rho": 0.3569,
+        "p_value": 1.1279605208619185e-201,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t20": {
+        "spearman_rho": 0.3716,
+        "p_value": 1.1354975347912203e-219,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t5": {
+        "spearman_rho": 0.4396,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t10": {
+        "spearman_rho": 0.4628,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t20": {
+        "spearman_rho": 0.4796,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t5": {
+        "spearman_rho": 0.2948,
+        "p_value": 2.918734689299361e-135,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t10": {
+        "spearman_rho": 0.2879,
+        "p_value": 8.392800095617176e-129,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t20": {
+        "spearman_rho": 0.2964,
+        "p_value": 9.144069442174894e-137,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t5": {
+        "spearman_rho": 0.5019,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "mtb_t10": {
+        "spearman_rho": 0.5122,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "mtb_t20": {
+        "spearman_rho": 0.5281,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      }
+    },
+    "chemeleon_frozen_vs_dmpnn_rdkit": {
+      "ecoli_t5": {
+        "spearman_rho": 0.3196,
+        "p_value": 7.25466375524804e-160,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t10": {
+        "spearman_rho": 0.3497,
+        "p_value": 4.2133770286361647e-193,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t20": {
+        "spearman_rho": 0.3629,
+        "p_value": 6.250276519304049e-209,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t5": {
+        "spearman_rho": 0.4502,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t10": {
+        "spearman_rho": 0.4993,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t20": {
+        "spearman_rho": 0.5157,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "paeruginosa_t5": {
+        "spearman_rho": 0.3751,
+        "p_value": 3.8967878469339005e-224,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t10": {
+        "spearman_rho": 0.3786,
+        "p_value": 1.2199787946035657e-228,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t20": {
+        "spearman_rho": 0.3866,
+        "p_value": 3.8498632345190685e-239,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t5": {
+        "spearman_rho": 0.4371,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t10": {
+        "spearman_rho": 0.5002,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "mtb_t20": {
+        "spearman_rho": 0.5437,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      }
+    },
+    "chemeleon_frozen_vs_molformer": {
+      "ecoli_t5": {
+        "spearman_rho": 0.4013,
+        "p_value": 3.174858559184963e-259,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t10": {
+        "spearman_rho": 0.4085,
+        "p_value": 2.127949932152527e-269,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t20": {
+        "spearman_rho": 0.406,
+        "p_value": 6.535422979407153e-266,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t5": {
+        "spearman_rho": 0.4904,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t10": {
+        "spearman_rho": 0.5247,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "saureus_t20": {
+        "spearman_rho": 0.5228,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "paeruginosa_t5": {
+        "spearman_rho": 0.3204,
+        "p_value": 1.1222278357936075e-160,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t10": {
+        "spearman_rho": 0.3224,
+        "p_value": 7.860144856959075e-163,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t20": {
+        "spearman_rho": 0.3308,
+        "p_value": 7.955932877137896e-172,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t5": {
+        "spearman_rho": 0.4995,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t10": {
+        "spearman_rho": 0.5287,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "mtb_t20": {
+        "spearman_rho": 0.5403,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      }
+    },
+    "chemeleon_frozen_vs_rf": {
+      "ecoli_t5": {
+        "spearman_rho": 0.4012,
+        "p_value": 4.453554879358948e-259,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t10": {
+        "spearman_rho": 0.4038,
+        "p_value": 9.19289996446656e-263,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t20": {
+        "spearman_rho": 0.4259,
+        "p_value": 3.041883367674362e-295,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t5": {
+        "spearman_rho": 0.4987,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t10": {
+        "spearman_rho": 0.5115,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "saureus_t20": {
+        "spearman_rho": 0.5345,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "paeruginosa_t5": {
+        "spearman_rho": 0.4052,
+        "p_value": 8.57537934026839e-265,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t10": {
+        "spearman_rho": 0.4079,
+        "p_value": 1.62641471798486e-268,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t20": {
+        "spearman_rho": 0.4205,
+        "p_value": 5.387294977150955e-287,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t5": {
+        "spearman_rho": 0.5288,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "mtb_t10": {
+        "spearman_rho": 0.5549,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "mtb_t20": {
+        "spearman_rho": 0.5938,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      }
+    },
+    "dmpnn_vs_dmpnn_rdkit": {
+      "ecoli_t5": {
+        "spearman_rho": 0.3367,
+        "p_value": 2.7580627673474674e-178,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t10": {
+        "spearman_rho": 0.359,
+        "p_value": 4.231490679949143e-204,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t20": {
+        "spearman_rho": 0.3874,
+        "p_value": 2.874105620281964e-240,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t5": {
+        "spearman_rho": 0.3719,
+        "p_value": 4.8237072573517085e-220,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t10": {
+        "spearman_rho": 0.4064,
+        "p_value": 2.1636418042126704e-266,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t20": {
+        "spearman_rho": 0.447,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t5": {
+        "spearman_rho": 0.1817,
+        "p_value": 3.9348114329436875e-51,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t10": {
+        "spearman_rho": 0.1835,
+        "p_value": 4.2673463317723346e-52,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t20": {
+        "spearman_rho": 0.2011,
+        "p_value": 1.8653642613950006e-62,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t5": {
+        "spearman_rho": 0.4017,
+        "p_value": 1.0129196622760597e-259,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t10": {
+        "spearman_rho": 0.4571,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t20": {
+        "spearman_rho": 0.4814,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      }
+    },
+    "dmpnn_vs_molformer": {
+      "ecoli_t5": {
+        "spearman_rho": 0.341,
+        "p_value": 3.7281043751469775e-183,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t10": {
+        "spearman_rho": 0.3578,
+        "p_value": 1.0545959418430463e-202,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t20": {
+        "spearman_rho": 0.3647,
+        "p_value": 3.934035615447214e-211,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t5": {
+        "spearman_rho": 0.3883,
+        "p_value": 2.3566872907991896e-241,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t10": {
+        "spearman_rho": 0.4271,
+        "p_value": 4.59659276911003e-297,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t20": {
+        "spearman_rho": 0.4438,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t5": {
+        "spearman_rho": 0.2908,
+        "p_value": 2.0347026662251257e-131,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t10": {
+        "spearman_rho": 0.3005,
+        "p_value": 1.0214321471465336e-140,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t20": {
+        "spearman_rho": 0.2985,
+        "p_value": 9.862430533371647e-139,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t5": {
+        "spearman_rho": 0.4525,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t10": {
+        "spearman_rho": 0.4823,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t20": {
+        "spearman_rho": 0.4814,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      }
+    },
+    "dmpnn_vs_rf": {
+      "ecoli_t5": {
+        "spearman_rho": 0.3015,
+        "p_value": 1.2537642107739581e-141,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t10": {
+        "spearman_rho": 0.3034,
+        "p_value": 1.7888191414494868e-143,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t20": {
+        "spearman_rho": 0.3197,
+        "p_value": 5.550318607808182e-160,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t5": {
+        "spearman_rho": 0.3738,
+        "p_value": 1.9704152155665885e-222,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t10": {
+        "spearman_rho": 0.3938,
+        "p_value": 6.696012145184254e-249,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t20": {
+        "spearman_rho": 0.417,
+        "p_value": 7.096364131374465e-282,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t5": {
+        "spearman_rho": 0.1895,
+        "p_value": 1.6034836270400929e-55,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t10": {
+        "spearman_rho": 0.1835,
+        "p_value": 4.1591180910230964e-52,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t20": {
+        "spearman_rho": 0.1881,
+        "p_value": 1.0239765788820737e-54,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t5": {
+        "spearman_rho": 0.5084,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "mtb_t10": {
+        "spearman_rho": 0.5358,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "mtb_t20": {
+        "spearman_rho": 0.5303,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      }
+    },
+    "dmpnn_rdkit_vs_molformer": {
+      "ecoli_t5": {
+        "spearman_rho": 0.4138,
+        "p_value": 3.9458030978311095e-277,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t10": {
+        "spearman_rho": 0.4315,
+        "p_value": 1.0120967068035907e-303,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t20": {
+        "spearman_rho": 0.4414,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t5": {
+        "spearman_rho": 0.4436,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t10": {
+        "spearman_rho": 0.5011,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "saureus_t20": {
+        "spearman_rho": 0.5208,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "paeruginosa_t5": {
+        "spearman_rho": 0.3148,
+        "p_value": 7.051640889658212e-155,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t10": {
+        "spearman_rho": 0.3216,
+        "p_value": 5.533746529585827e-162,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t20": {
+        "spearman_rho": 0.3252,
+        "p_value": 9.438034697461736e-166,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t5": {
+        "spearman_rho": 0.4324,
+        "p_value": 3.595479000004835e-305,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t10": {
+        "spearman_rho": 0.4855,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t20": {
+        "spearman_rho": 0.5225,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      }
+    },
+    "dmpnn_rdkit_vs_rf": {
+      "ecoli_t5": {
+        "spearman_rho": 0.3978,
+        "p_value": 2.3014217512576148e-254,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t10": {
+        "spearman_rho": 0.3938,
+        "p_value": 7.971851174859973e-249,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t20": {
+        "spearman_rho": 0.4123,
+        "p_value": 6.896145612576078e-275,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t5": {
+        "spearman_rho": 0.4688,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t10": {
+        "spearman_rho": 0.477,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t20": {
+        "spearman_rho": 0.5079,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "paeruginosa_t5": {
+        "spearman_rho": 0.3554,
+        "p_value": 8.300321633608074e-200,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t10": {
+        "spearman_rho": 0.3496,
+        "p_value": 5.296116387165477e-193,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t20": {
+        "spearman_rho": 0.3617,
+        "p_value": 2.1941466070733735e-207,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t5": {
+        "spearman_rho": 0.5976,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "mtb_t10": {
+        "spearman_rho": 0.6232,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "mtb_t20": {
+        "spearman_rho": 0.6432,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      }
+    },
+    "molformer_vs_rf": {
+      "ecoli_t5": {
+        "spearman_rho": 0.3922,
+        "p_value": 9.878634741696525e-247,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t10": {
+        "spearman_rho": 0.394,
+        "p_value": 3.5665428221132345e-249,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "ecoli_t20": {
+        "spearman_rho": 0.4096,
+        "p_value": 5.241347364115944e-271,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t5": {
+        "spearman_rho": 0.4234,
+        "p_value": 2.505709863532676e-291,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t10": {
+        "spearman_rho": 0.4453,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "saureus_t20": {
+        "spearman_rho": 0.476,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t5": {
+        "spearman_rho": 0.2629,
+        "p_value": 5.80854294730607e-107,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t10": {
+        "spearman_rho": 0.2639,
+        "p_value": 9.164368777568302e-108,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "paeruginosa_t20": {
+        "spearman_rho": 0.2829,
+        "p_value": 3.1960348535291456e-124,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t5": {
+        "spearman_rho": 0.4865,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "low agreement"
+      },
+      "mtb_t10": {
+        "spearman_rho": 0.518,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      },
+      "mtb_t20": {
+        "spearman_rho": 0.5528,
+        "p_value": 0.0,
+        "n_common": 6739,
+        "interpretation": "moderate agreement"
+      }
+    }
+  },
+  "test5": [
+    {
+      "pipeline": "rf",
+      "pathogen": "ecoli",
+      "comparisons": [
+        {
+          "pair": "ecoli_t5 vs ecoli_t10",
+          "spearman_rho": 0.9755,
+          "top50_overlap": 43,
+          "top50_jaccard": 0.7544
+        },
+        {
+          "pair": "ecoli_t5 vs ecoli_t20",
+          "spearman_rho": 0.9512,
+          "top50_overlap": 38,
+          "top50_jaccard": 0.6129
+        },
+        {
+          "pair": "ecoli_t10 vs ecoli_t20",
+          "spearman_rho": 0.9759,
+          "top50_overlap": 38,
+          "top50_jaccard": 0.6129
+        }
+      ]
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "saureus",
+      "comparisons": [
+        {
+          "pair": "saureus_t5 vs saureus_t10",
+          "spearman_rho": 0.9705,
+          "top50_overlap": 44,
+          "top50_jaccard": 0.7857
+        },
+        {
+          "pair": "saureus_t5 vs saureus_t20",
+          "spearman_rho": 0.9422,
+          "top50_overlap": 39,
+          "top50_jaccard": 0.6393
+        },
+        {
+          "pair": "saureus_t10 vs saureus_t20",
+          "spearman_rho": 0.9716,
+          "top50_overlap": 44,
+          "top50_jaccard": 0.7857
+        }
+      ]
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "paeruginosa",
+      "comparisons": [
+        {
+          "pair": "paeruginosa_t5 vs paeruginosa_t10",
+          "spearman_rho": 0.9765,
+          "top50_overlap": 46,
+          "top50_jaccard": 0.8519
+        },
+        {
+          "pair": "paeruginosa_t5 vs paeruginosa_t20",
+          "spearman_rho": 0.9536,
+          "top50_overlap": 40,
+          "top50_jaccard": 0.6667
+        },
+        {
+          "pair": "paeruginosa_t10 vs paeruginosa_t20",
+          "spearman_rho": 0.9782,
+          "top50_overlap": 40,
+          "top50_jaccard": 0.6667
+        }
+      ]
+    },
+    {
+      "pipeline": "rf",
+      "pathogen": "mtb",
+      "comparisons": [
+        {
+          "pair": "mtb_t5 vs mtb_t10",
+          "spearman_rho": 0.9628,
+          "top50_overlap": 43,
+          "top50_jaccard": 0.7544
+        },
+        {
+          "pair": "mtb_t5 vs mtb_t20",
+          "spearman_rho": 0.9357,
+          "top50_overlap": 33,
+          "top50_jaccard": 0.4925
+        },
+        {
+          "pair": "mtb_t10 vs mtb_t20",
+          "spearman_rho": 0.9731,
+          "top50_overlap": 37,
+          "top50_jaccard": 0.5873
+        }
+      ]
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "ecoli",
+      "comparisons": [
+        {
+          "pair": "ecoli_t5 vs ecoli_t10",
+          "spearman_rho": 0.9823,
+          "top50_overlap": 41,
+          "top50_jaccard": 0.6949
+        },
+        {
+          "pair": "ecoli_t5 vs ecoli_t20",
+          "spearman_rho": 0.9661,
+          "top50_overlap": 32,
+          "top50_jaccard": 0.4706
+        },
+        {
+          "pair": "ecoli_t10 vs ecoli_t20",
+          "spearman_rho": 0.977,
+          "top50_overlap": 29,
+          "top50_jaccard": 0.4085
+        }
+      ]
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "saureus",
+      "comparisons": [
+        {
+          "pair": "saureus_t5 vs saureus_t10",
+          "spearman_rho": 0.9784,
+          "top50_overlap": 30,
+          "top50_jaccard": 0.4286
+        },
+        {
+          "pair": "saureus_t5 vs saureus_t20",
+          "spearman_rho": 0.9534,
+          "top50_overlap": 15,
+          "top50_jaccard": 0.1765
+        },
+        {
+          "pair": "saureus_t10 vs saureus_t20",
+          "spearman_rho": 0.9686,
+          "top50_overlap": 20,
+          "top50_jaccard": 0.25
+        }
+      ]
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "paeruginosa",
+      "comparisons": [
+        {
+          "pair": "paeruginosa_t5 vs paeruginosa_t10",
+          "spearman_rho": 0.9825,
+          "top50_overlap": 42,
+          "top50_jaccard": 0.7241
+        },
+        {
+          "pair": "paeruginosa_t5 vs paeruginosa_t20",
+          "spearman_rho": 0.9662,
+          "top50_overlap": 37,
+          "top50_jaccard": 0.5873
+        },
+        {
+          "pair": "paeruginosa_t10 vs paeruginosa_t20",
+          "spearman_rho": 0.9786,
+          "top50_overlap": 33,
+          "top50_jaccard": 0.4925
+        }
+      ]
+    },
+    {
+      "pipeline": "dmpnn",
+      "pathogen": "mtb",
+      "comparisons": [
+        {
+          "pair": "mtb_t5 vs mtb_t10",
+          "spearman_rho": 0.9739,
+          "top50_overlap": 37,
+          "top50_jaccard": 0.5873
+        },
+        {
+          "pair": "mtb_t5 vs mtb_t20",
+          "spearman_rho": 0.9406,
+          "top50_overlap": 20,
+          "top50_jaccard": 0.25
+        },
+        {
+          "pair": "mtb_t10 vs mtb_t20",
+          "spearman_rho": 0.9604,
+          "top50_overlap": 26,
+          "top50_jaccard": 0.3514
+        }
+      ]
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "ecoli",
+      "comparisons": [
+        {
+          "pair": "ecoli_t5 vs ecoli_t10",
+          "spearman_rho": 0.981,
+          "top50_overlap": 45,
+          "top50_jaccard": 0.8182
+        },
+        {
+          "pair": "ecoli_t5 vs ecoli_t20",
+          "spearman_rho": 0.9682,
+          "top50_overlap": 43,
+          "top50_jaccard": 0.7544
+        },
+        {
+          "pair": "ecoli_t10 vs ecoli_t20",
+          "spearman_rho": 0.9843,
+          "top50_overlap": 45,
+          "top50_jaccard": 0.8182
+        }
+      ]
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "saureus",
+      "comparisons": [
+        {
+          "pair": "saureus_t5 vs saureus_t10",
+          "spearman_rho": 0.9831,
+          "top50_overlap": 39,
+          "top50_jaccard": 0.6393
+        },
+        {
+          "pair": "saureus_t5 vs saureus_t20",
+          "spearman_rho": 0.9713,
+          "top50_overlap": 35,
+          "top50_jaccard": 0.5385
+        },
+        {
+          "pair": "saureus_t10 vs saureus_t20",
+          "spearman_rho": 0.9851,
+          "top50_overlap": 40,
+          "top50_jaccard": 0.6667
+        }
+      ]
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "paeruginosa",
+      "comparisons": [
+        {
+          "pair": "paeruginosa_t5 vs paeruginosa_t10",
+          "spearman_rho": 0.9853,
+          "top50_overlap": 44,
+          "top50_jaccard": 0.7857
+        },
+        {
+          "pair": "paeruginosa_t5 vs paeruginosa_t20",
+          "spearman_rho": 0.9758,
+          "top50_overlap": 45,
+          "top50_jaccard": 0.8182
+        },
+        {
+          "pair": "paeruginosa_t10 vs paeruginosa_t20",
+          "spearman_rho": 0.9872,
+          "top50_overlap": 48,
+          "top50_jaccard": 0.9231
+        }
+      ]
+    },
+    {
+      "pipeline": "chemeleon_frozen",
+      "pathogen": "mtb",
+      "comparisons": [
+        {
+          "pair": "mtb_t5 vs mtb_t10",
+          "spearman_rho": 0.9737,
+          "top50_overlap": 33,
+          "top50_jaccard": 0.4925
+        },
+        {
+          "pair": "mtb_t5 vs mtb_t20",
+          "spearman_rho": 0.9575,
+          "top50_overlap": 27,
+          "top50_jaccard": 0.3699
+        },
+        {
+          "pair": "mtb_t10 vs mtb_t20",
+          "spearman_rho": 0.9778,
+          "top50_overlap": 28,
+          "top50_jaccard": 0.3889
+        }
+      ]
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "ecoli",
+      "comparisons": [
+        {
+          "pair": "ecoli_t5 vs ecoli_t10",
+          "spearman_rho": 0.9655,
+          "top50_overlap": 34,
+          "top50_jaccard": 0.5152
+        },
+        {
+          "pair": "ecoli_t5 vs ecoli_t20",
+          "spearman_rho": 0.9529,
+          "top50_overlap": 23,
+          "top50_jaccard": 0.2987
+        },
+        {
+          "pair": "ecoli_t10 vs ecoli_t20",
+          "spearman_rho": 0.9805,
+          "top50_overlap": 35,
+          "top50_jaccard": 0.5385
+        }
+      ]
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "saureus",
+      "comparisons": [
+        {
+          "pair": "saureus_t5 vs saureus_t10",
+          "spearman_rho": 0.9615,
+          "top50_overlap": 31,
+          "top50_jaccard": 0.4493
+        },
+        {
+          "pair": "saureus_t5 vs saureus_t20",
+          "spearman_rho": 0.9462,
+          "top50_overlap": 20,
+          "top50_jaccard": 0.25
+        },
+        {
+          "pair": "saureus_t10 vs saureus_t20",
+          "spearman_rho": 0.9791,
+          "top50_overlap": 32,
+          "top50_jaccard": 0.4706
+        }
+      ]
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "paeruginosa",
+      "comparisons": [
+        {
+          "pair": "paeruginosa_t5 vs paeruginosa_t10",
+          "spearman_rho": 0.96,
+          "top50_overlap": 38,
+          "top50_jaccard": 0.6129
+        },
+        {
+          "pair": "paeruginosa_t5 vs paeruginosa_t20",
+          "spearman_rho": 0.9425,
+          "top50_overlap": 33,
+          "top50_jaccard": 0.4925
+        },
+        {
+          "pair": "paeruginosa_t10 vs paeruginosa_t20",
+          "spearman_rho": 0.9766,
+          "top50_overlap": 39,
+          "top50_jaccard": 0.6393
+        }
+      ]
+    },
+    {
+      "pipeline": "molformer",
+      "pathogen": "mtb",
+      "comparisons": [
+        {
+          "pair": "mtb_t5 vs mtb_t10",
+          "spearman_rho": 0.9378,
+          "top50_overlap": 28,
+          "top50_jaccard": 0.3889
+        },
+        {
+          "pair": "mtb_t5 vs mtb_t20",
+          "spearman_rho": 0.9119,
+          "top50_overlap": 27,
+          "top50_jaccard": 0.3699
+        },
+        {
+          "pair": "mtb_t10 vs mtb_t20",
+          "spearman_rho": 0.9615,
+          "top50_overlap": 28,
+          "top50_jaccard": 0.3889
+        }
+      ]
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "ecoli",
+      "comparisons": [
+        {
+          "pair": "ecoli_t5 vs ecoli_t10",
+          "spearman_rho": 0.9561,
+          "top50_overlap": 35,
+          "top50_jaccard": 0.5385
+        },
+        {
+          "pair": "ecoli_t5 vs ecoli_t20",
+          "spearman_rho": 0.9167,
+          "top50_overlap": 29,
+          "top50_jaccard": 0.4085
+        },
+        {
+          "pair": "ecoli_t10 vs ecoli_t20",
+          "spearman_rho": 0.9824,
+          "top50_overlap": 42,
+          "top50_jaccard": 0.7241
+        }
+      ]
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "saureus",
+      "comparisons": [
+        {
+          "pair": "saureus_t5 vs saureus_t10",
+          "spearman_rho": 0.9636,
+          "top50_overlap": 28,
+          "top50_jaccard": 0.3889
+        },
+        {
+          "pair": "saureus_t5 vs saureus_t20",
+          "spearman_rho": 0.9333,
+          "top50_overlap": 24,
+          "top50_jaccard": 0.3158
+        },
+        {
+          "pair": "saureus_t10 vs saureus_t20",
+          "spearman_rho": 0.988,
+          "top50_overlap": 41,
+          "top50_jaccard": 0.6949
+        }
+      ]
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "paeruginosa",
+      "comparisons": [
+        {
+          "pair": "paeruginosa_t5 vs paeruginosa_t10",
+          "spearman_rho": 0.966,
+          "top50_overlap": 40,
+          "top50_jaccard": 0.6667
+        },
+        {
+          "pair": "paeruginosa_t5 vs paeruginosa_t20",
+          "spearman_rho": 0.9365,
+          "top50_overlap": 29,
+          "top50_jaccard": 0.4085
+        },
+        {
+          "pair": "paeruginosa_t10 vs paeruginosa_t20",
+          "spearman_rho": 0.9877,
+          "top50_overlap": 38,
+          "top50_jaccard": 0.6129
+        }
+      ]
+    },
+    {
+      "pipeline": "dmpnn_rdkit",
+      "pathogen": "mtb",
+      "comparisons": [
+        {
+          "pair": "mtb_t5 vs mtb_t10",
+          "spearman_rho": 0.9304,
+          "top50_overlap": 48,
+          "top50_jaccard": 0.9231
+        },
+        {
+          "pair": "mtb_t5 vs mtb_t20",
+          "spearman_rho": 0.8591,
+          "top50_overlap": 45,
+          "top50_jaccard": 0.8182
+        },
+        {
+          "pair": "mtb_t10 vs mtb_t20",
+          "spearman_rho": 0.9682,
+          "top50_overlap": 44,
+          "top50_jaccard": 0.7857
+        }
+      ]
+    }
+  ]
+}

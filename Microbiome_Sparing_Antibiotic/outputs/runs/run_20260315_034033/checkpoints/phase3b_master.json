@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "chemprop_version": "2.2.2",
+  "models_trained": [
+    "ecoli",
+    "saureus",
+    "paeruginosa",
+    "mtb",
+    "gut_t5",
+    "gut_t10",
+    "gut_t20"
+  ],
+  "ranked_lists": [
+    "ecoli_t5",
+    "ecoli_t10",
+    "ecoli_t20",
+    "saureus_t5",
+    "saureus_t10",
+    "saureus_t20",
+    "paeruginosa_t5",
+    "paeruginosa_t10",
+    "paeruginosa_t20",
+    "mtb_t5",
+    "mtb_t10",
+    "mtb_t20"
+  ],
+  "_checkpoint_time": "2026-03-15 13:45:51"
+}

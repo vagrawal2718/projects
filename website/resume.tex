@@ -1,0 +1,185 @@
+%-------------------------
+% General Purpose Resume
+% Template Author : Jake Gutierrez (MIT License)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\setlength{\footskip}{10pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Vishakha Agrawal} \\ \vspace{1pt}
+    \small \href{mailto:vishakha.agrawal@students.iiit.ac.in}{\underline{vishakha.agrawal@students.iiit.ac.in}} $|$ 
+    \href{https://www.linkedin.com/in/vishakha-agrawal-81b75b378}{\underline{LinkedIn}} $|$
+    \href{https://github.com/vagrawal2718/projects}{\underline{GitHub}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {International Institute of Information Technology, Hyderabad (IIIT-H)}{Hyderabad, India}
+      {Bachelor of Technology in Computer Science \textbf{(Third Year)}}{July 2023 -- Present}
+  \resumeSubHeadingListEnd
+
+
+%-----------COURSEWORK-----------
+\section{Coursework}
+{
+  \small
+  \setlength{\leftskip}{0.15in}
+  \textbf{Computer Science:} Computer Programming, Introduction to Software Systems, Data Structures and Algorithms, Computer Systems Organization, Operating Systems and Networks, Algorithm Analysis \& Design, Automata Theory, Design and Analysis of Software Systems, Introduction to Information Security\par
+  \textbf{Data Science \& ML:} Data and Applications, Machine Data and Learning, Machine Learning for Natural Sciences\par
+  \textbf{Geospatial \& Remote Sensing:} Introduction to Spatial Sciences, Spatial Informatics, Advanced Remote Sensing, Optical Remote Sensing, Spatial Data Sciences\par
+  \textbf{Behavioral \& Cognitive Sciences:} Introduction to Brain and Cognition, Introduction to Neuroeconomics, Behavioral Research: Experimental Design\par
+  \textbf{Digital Systems \& IoT:} Digital Systems and Microcontrollers, Introduction to IoT, Embedded Systems Workshop\par
+  \textbf{Mathematics:} Discrete Structures, Linear Algebra, Real Analysis, Probability and Statistics\par
+}
+
+%-----------SELECTED PROJECTS-----------
+\section{Selected Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Microbiome-Sparing Antibiotic Discovery Pipeline} $|$ \emph{PyTorch, Chemprop, RDKit} \ \href{https://github.com/vagrawal2718/projects/tree/main/Microbiome_Sparing_Antibiotic}{\underline{GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Five-model ML pipeline (RF, D-MPNN, CheMeleon, MoLFormer-XL, D-MPNN+RDKit) to identify antibiotics that kill pathogens while sparing gut commensals. Trained on 108,625 instances across 7 tasks with scaffold CV.}
+            \resumeItem{Screened 6,739 Drug Repurposing Hub compounds. Consensus: 890 candidates, 3 with 5/5 model agreement. Validated against Stokes et al.\ (Cell, 2020).}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{IoT-Enabled Smart Refill Pod Monitoring} $|$ \emph{Flutter, Dart, Firebase}}{Work for Live Customer (Proprietary)}
+          \resumeItemListStart
+            \resumeItem{Real-time mobile dashboard for monitoring IoT refill pods: live device status, inventory, temperature/humidity, and automated offline detection with configurable per-kiosk alerting.}
+            \resumeItem{Role-based access control, remote command dispatch to kiosks, and environmental threshold alerts.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Buy-Sell E-Commerce Platform} $|$ \emph{MERN Stack, JWT} \ \href{https://github.com/vagrawal2718/projects/tree/main/Ecommerce_Platform}{\underline{GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Full-stack MERN app for IIITH buy/sell with authentication, shopping cart, search/filtering, and JWT sessions.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Distributed Network File System} $|$ \emph{C, Sockets, TCP/IP} \ \href{https://github.com/vagrawal2718/projects/tree/main/NetworkFileSystem}{\underline{GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Client-server distributed file system with naming server, trie-based path resolution, mutex locks, LRU caching, and async writes.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Enhanced XV6 Operating System} $|$ \emph{C, POSIX Threads, Socket Programming} \ \href{https://github.com/vagrawal2718/projects/tree/main/XV6_Scheduling_Networking}{\underline{GitHub}} \ \href{https://github.com/vagrawal2718/projects/tree/main/XV6_COW_Concurrency}{\underline{GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{COW fork, custom schedulers (LBS, MLFQ), TCP/UDP networking, and multi-threaded file manager with distributed sorting.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Custom Unix-like Shell} $|$ \emph{C} \ \href{https://github.com/vagrawal2718/projects/tree/main/CustomShell}{\underline{GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Unix shell with pipes, I/O redirection, background/foreground process management, signal handling, and man page fetching.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Photo-to-Video Web App} $|$ \emph{Flask, MoviePy, OpenCV, MySQL, JWT} \ \href{https://github.com/vagrawal2718/projects/tree/main/PhotoVideoConverter}{\underline{GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Web app that converts uploaded photos into a video with music. Flask backend, JWT auth, media storage with preview.}
+          \resumeItemListEnd
+
+    %----------ADDITIONAL PROJECTS----------
+      \resumeProjectHeading
+          {\textbf{Additional Projects}}{}
+          \resumeItemListStart
+            \resumeItem{Predictive Coral Reef Vulnerability Index (pCRVI) $|$ Python, GEE, 7-component satellite early warning system \hfill \href{https://github.com/vagrawal2718/projects/tree/main/pCRVI_Coral_Bleaching}{\underline{GitHub}}}
+            \resumeItem{Hybrid CA-MLR-GA Urban Growth Simulation $|$ Python, GEE, Landsat \hfill \href{https://github.com/vagrawal2718/projects/tree/main/Simulating_Urban_Growth}{\underline{GitHub}}}
+            \resumeItem{Urban Heat Island Effect Analysis $|$ Python, GEE, LST remote sensing \hfill \href{https://github.com/vagrawal2718/projects/tree/main/LST_LandUse}{\underline{GitHub}}}
+            \resumeItem{Social Proof and AI Content Detection $|$ Next.js, React, Python, 2$\times$2 experiment (N=35) \hfill \href{https://github.com/vagrawal2718/projects/tree/main/SocialProof}{\underline{GitHub}}}
+            \resumeItem{Job Scam Victimization Analysis $|$ Python, HuggingFace Transformers, survey design (N=96) \hfill \href{https://github.com/vagrawal2718/projects/tree/main/JobScams}{\underline{GitHub}}}
+            \resumeItem{Word Superiority Effect Replication $|$ PsychoJS, Pavlovia (N=41) \hfill \href{https://github.com/vagrawal2718/projects/tree/main/WordSuperiorityEffect}{\underline{GitHub}}}
+            \resumeItem{Veterinary Clinic Management System $|$ MySQL, ER design, stored procedures \hfill \href{https://github.com/vagrawal2718/projects/tree/main/VeterinaryManagementSystem}{\underline{GitHub}}}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C, C++, Java, JavaScript, TypeScript, SQL, Dart, Bash, HTML, CSS} \\
+     \textbf{ML/DL}{: PyTorch, scikit-learn, HuggingFace Transformers, Chemprop, RDKit, pandas, NumPy, scipy, seaborn, matplotlib} \\
+     \textbf{Web \& Mobile}{: React.js, Next.js, Node.js, Express.js, Flask, Flutter, Firebase, MongoDB, MySQL, PostGIS, REST APIs} \\
+     \textbf{Geospatial}{: Google Earth Engine, QGIS, PostGIS} \\
+     \textbf{Experiment Platforms}{: PsychoJS/Pavlovia}
+    }}
+ \end{itemize}
+
+\end{document}

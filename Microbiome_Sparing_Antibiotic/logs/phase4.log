@@ -1,0 +1,1490 @@
+2026-03-22 00:40:13 | INFO  | phase4 | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity/logs/phase4.log
+2026-03-22 00:40:13 | INFO  | phase4 | Running unit tests...
+2026-03-22 00:40:13 | INFO  | phase4 | All unit tests passed.
+
+2026-03-22 00:40:13 | INFO  | phase4 | ============================================================
+2026-03-22 00:40:13 | INFO  | phase4 |  STARTING: Phase 4: Full Evaluation Suite
+2026-03-22 00:40:13 | INFO  | phase4 | ============================================================
+2026-03-22 00:40:13 | INFO  | phase4 | [07_evaluate.py:main] Loading pipeline results...
+2026-03-22 00:40:13 | INFO  | phase4 | [07_evaluate.py:main] Results dir: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results
+2026-03-22 00:40:13 | INFO  | phase4 | [07_evaluate.py:main] Screening dir: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/screening
+2026-03-22 00:40:14 | INFO  | phase4 | [07_evaluate.py:main] Found 12 RF ranked files, 12 D-MPNN ranked files
+2026-03-22 00:40:14 | INFO  | phase4 | [07_evaluate.py:main] RF metrics: EXISTS
+2026-03-22 00:40:14 | INFO  | phase4 | [07_evaluate.py:main] D-MPNN metrics: EXISTS
+2026-03-22 00:40:14 | INFO  | phase4 |   [07_evaluate.py:load_cv_metrics(rf)] Loaded: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/rf_cv_metrics.json (7 tasks: ['ecoli', 'saureus', 'paeruginosa', 'mtb', 'gut_t5', 'gut_t10', 'gut_t20'])
+2026-03-22 00:40:14 | INFO  | phase4 |   [07_evaluate.py:load_cv_metrics(dmpnn)] Loaded: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/dmpnn_cv_metrics.json (7 tasks: ['ecoli', 'saureus', 'paeruginosa', 'mtb', 'gut_t5', 'gut_t10', 'gut_t20'])
+2026-03-22 00:40:14 | INFO  | phase4 |   [07_evaluate.py:load_ranked_lists(rf)] Loaded 12 ranked lists: ['ecoli_t5', 'ecoli_t10', 'ecoli_t20', 'saureus_t5', 'saureus_t10', 'saureus_t20', 'paeruginosa_t5', 'paeruginosa_t10', 'paeruginosa_t20', 'mtb_t5', 'mtb_t10', 'mtb_t20']
+2026-03-22 00:40:14 | INFO  | phase4 |   [07_evaluate.py:load_ranked_lists(dmpnn)] Loaded 12 ranked lists: ['ecoli_t5', 'ecoli_t10', 'ecoli_t20', 'saureus_t5', 'saureus_t10', 'saureus_t20', 'paeruginosa_t5', 'paeruginosa_t10', 'paeruginosa_t20', 'mtb_t5', 'mtb_t10', 'mtb_t20']
+2026-03-22 00:40:14 | INFO  | phase4 | [07_evaluate.py:main] RF pipeline:     AVAILABLE (12 ranked lists)
+2026-03-22 00:40:14 | INFO  | phase4 | [07_evaluate.py:main] D-MPNN pipeline: AVAILABLE (12 ranked lists)
+2026-03-22 00:40:14 | INFO  | phase4 | 
+======================================================================
+2026-03-22 00:40:14 | INFO  | phase4 |  LEVEL 1: Diagnostic Per-Model Metrics
+2026-03-22 00:40:14 | INFO  | phase4 | ======================================================================
+2026-03-22 00:40:14 | INFO  | phase4 | 
+2026-03-22 00:40:14 | INFO  | phase4 |   Task                                  RF ROC-AUC         D-MPNN ROC-AUC              RF PR-AUC          D-MPNN PR-AUC
+2026-03-22 00:40:14 | INFO  | phase4 |   -------------------------------------------------------------------------------------------------------------------
+2026-03-22 00:40:14 | INFO  | phase4 |   E. coli (MIC)                  0.8765 +/- 0.0107      0.8525 +/- 0.0123      0.8049 +/- 0.0374      0.7743 +/- 0.0369
+2026-03-22 00:40:14 | INFO  | phase4 |   S. aureus (MIC)                0.8708 +/- 0.0073      0.8544 +/- 0.0125      0.8470 +/- 0.0129      0.8250 +/- 0.0173
+2026-03-22 00:40:14 | INFO  | phase4 |   P. aeruginosa (MIC)            0.8610 +/- 0.0135      0.8379 +/- 0.0131      0.7194 +/- 0.0313      0.6867 +/- 0.0240
+2026-03-22 00:40:14 | INFO  | phase4 |   M. tuberculosis (MIC)          0.8112 +/- 0.0178      0.7599 +/- 0.0232      0.7755 +/- 0.0376      0.7219 +/- 0.0387
+2026-03-22 00:40:14 | INFO  | phase4 |   Gut harm (t=10)                0.8232 +/- 0.0898      0.8410 +/- 0.0391      0.6654 +/- 0.1570      0.5970 +/- 0.1864
+2026-03-22 00:40:14 | INFO  | phase4 | 
+2026-03-22 00:40:14 | INFO  | phase4 |   Reference: McCoubrey et al. 2021 reported AUROC 0.857 for commensal harm (Extra Trees)
+2026-03-22 00:40:14 | INFO  | phase4 | 
+  Saved: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/cv_metrics_diagnostic.csv
+2026-03-22 00:40:14 | INFO  | phase4 | 
+======================================================================
+2026-03-22 00:40:14 | INFO  | phase4 |  LEVEL 2: Pipeline-Level Selectivity Evaluation
+2026-03-22 00:40:14 | INFO  | phase4 | ======================================================================
+2026-03-22 00:40:14 | INFO  | phase4 | 
+--- Test 1: Rank Separation (Mann-Whitney U) ---
+2026-03-22 00:40:14 | INFO  | phase4 |     lolamicin: not in Broad Hub (expected if post-2020 compound)
+2026-03-22 00:40:14 | INFO  | phase4 |   Test 1 (rf, ecoli_t5): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.1568, broad_mean=0.0936
+2026-03-22 00:40:14 | INFO  | phase4 |   Test 1 (rf, ecoli_t10): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.163, broad_mean=0.0874
+2026-03-22 00:40:14 | INFO  | phase4 |   Test 1 (rf, ecoli_t20): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.1775, broad_mean=0.0963
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (rf, saureus_t5): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.1876, broad_mean=0.1106
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (rf, saureus_t10): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.196, broad_mean=0.1043
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (rf, saureus_t20): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.2212, broad_mean=0.1137
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (rf, paeruginosa_t5): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.1499, broad_mean=0.0541
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (rf, paeruginosa_t10): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.1563, broad_mean=0.0504
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (rf, paeruginosa_t20): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.1709, broad_mean=0.0562
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (rf, mtb_t5): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.1557, broad_mean=0.0648
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (rf, mtb_t10): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.163, broad_mean=0.0606
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (rf, mtb_t20): U=17.0, p=0.1762, r_rb=-0.417 (medium), narrow_mean=0.1845, broad_mean=0.0671
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (dmpnn, ecoli_t5): U=2.0, p=0.9905, r_rb=0.833 (large), narrow_mean=0.005, broad_mean=0.0786
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (dmpnn, ecoli_t10): U=5.0, p=0.9429, r_rb=0.583 (large), narrow_mean=0.0107, broad_mean=0.0367
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (dmpnn, ecoli_t20): U=3.0, p=0.9810, r_rb=0.750 (large), narrow_mean=0.043, broad_mean=0.4109
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (dmpnn, saureus_t5): U=5.0, p=0.9429, r_rb=0.583 (large), narrow_mean=0.063, broad_mean=0.0895
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (dmpnn, saureus_t10): U=6.0, p=0.9143, r_rb=0.500 (medium), narrow_mean=0.1381, broad_mean=0.0421
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (dmpnn, saureus_t20): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.4344, broad_mean=0.504
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (dmpnn, paeruginosa_t5): U=13.0, p=0.4571, r_rb=-0.083 (small), narrow_mean=0.0079, broad_mean=0.0108
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (dmpnn, paeruginosa_t10): U=14.0, p=0.3731, r_rb=-0.167 (small), narrow_mean=0.0084, broad_mean=0.0086
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (dmpnn, paeruginosa_t20): U=12.0, p=0.5429, r_rb=0.000 (small), narrow_mean=0.0117, broad_mean=0.0895
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (dmpnn, mtb_t5): U=13.0, p=0.4571, r_rb=-0.083 (small), narrow_mean=0.0568, broad_mean=0.0288
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (dmpnn, mtb_t10): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.0642, broad_mean=0.0185
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 1 (dmpnn, mtb_t20): U=14.0, p=0.3810, r_rb=-0.167 (small), narrow_mean=0.3127, broad_mean=0.2542
+2026-03-22 00:40:15 | INFO  | phase4 | 
+--- Test 2: Selectivity ROC-AUC ---
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (rf, ecoli_t5): Selectivity AUC = 0.7500
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (rf, ecoli_t10): Selectivity AUC = 0.7500
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (rf, ecoli_t20): Selectivity AUC = 0.7500
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (rf, saureus_t5): Selectivity AUC = 0.6250
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (rf, saureus_t10): Selectivity AUC = 0.6250
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (rf, saureus_t20): Selectivity AUC = 0.6250
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (rf, paeruginosa_t5): Selectivity AUC = 0.7917
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (rf, paeruginosa_t10): Selectivity AUC = 0.7917
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (rf, paeruginosa_t20): Selectivity AUC = 0.7917
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (rf, mtb_t5): Selectivity AUC = 0.7500
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (rf, mtb_t10): Selectivity AUC = 0.7917
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (rf, mtb_t20): Selectivity AUC = 0.7083
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (dmpnn, ecoli_t5): Selectivity AUC = 0.0833
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (dmpnn, ecoli_t10): Selectivity AUC = 0.2083
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (dmpnn, ecoli_t20): Selectivity AUC = 0.1250
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (dmpnn, saureus_t5): Selectivity AUC = 0.2083
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (dmpnn, saureus_t10): Selectivity AUC = 0.2500
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (dmpnn, saureus_t20): Selectivity AUC = 0.4167
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (dmpnn, paeruginosa_t5): Selectivity AUC = 0.5417
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (dmpnn, paeruginosa_t10): Selectivity AUC = 0.5833
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (dmpnn, paeruginosa_t20): Selectivity AUC = 0.5000
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (dmpnn, mtb_t5): Selectivity AUC = 0.5417
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (dmpnn, mtb_t10): Selectivity AUC = 0.6250
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 2 (dmpnn, mtb_t20): Selectivity AUC = 0.5833
+2026-03-22 00:40:15 | INFO  | phase4 | 
+--- Test 3: Top-k Enrichment ---
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 3 (rf, ecoli_t10): 5/50 antibiotics in top-50 (enrichment = 2.92x)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 3 (rf, saureus_t10): 9/50 antibiotics in top-50 (enrichment = 5.25x)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 3 (rf, paeruginosa_t10): 2/50 antibiotics in top-50 (enrichment = 1.17x)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 3 (rf, mtb_t10): 8/50 antibiotics in top-50 (enrichment = 4.67x)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 3 (dmpnn, ecoli_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 3 (dmpnn, saureus_t10): 0/50 antibiotics in top-50 (enrichment = 0.00x)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 3 (dmpnn, paeruginosa_t10): 0/50 antibiotics in top-50 (enrichment = 0.00x)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 3 (dmpnn, mtb_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-03-22 00:40:15 | INFO  | phase4 | 
+--- Test 4: Pipeline Agreement ---
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 4 (ecoli_t5): rho=0.3015, n=6739 (low agreement)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 4 (ecoli_t10): rho=0.3034, n=6739 (low agreement)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 4 (ecoli_t20): rho=0.3197, n=6739 (low agreement)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 4 (saureus_t5): rho=0.3738, n=6739 (low agreement)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 4 (saureus_t10): rho=0.3938, n=6739 (low agreement)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 4 (saureus_t20): rho=0.4170, n=6739 (low agreement)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 4 (paeruginosa_t5): rho=0.1895, n=6739 (low agreement)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 4 (paeruginosa_t10): rho=0.1835, n=6739 (low agreement)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 4 (paeruginosa_t20): rho=0.1881, n=6739 (low agreement)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 4 (mtb_t5): rho=0.5084, n=6739 (moderate agreement)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 4 (mtb_t10): rho=0.5358, n=6739 (moderate agreement)
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 4 (mtb_t20): rho=0.5303, n=6739 (moderate agreement)
+2026-03-22 00:40:15 | INFO  | phase4 | 
+--- Test 5: Threshold Sensitivity ---
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (rf, ecoli_t5 vs ecoli_t10): rho=0.9755, top-50 overlap=43/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (rf, ecoli_t5 vs ecoli_t20): rho=0.9512, top-50 overlap=38/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (rf, ecoli_t10 vs ecoli_t20): rho=0.9759, top-50 overlap=38/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (rf, saureus_t5 vs saureus_t10): rho=0.9705, top-50 overlap=44/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (rf, saureus_t5 vs saureus_t20): rho=0.9422, top-50 overlap=39/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (rf, saureus_t10 vs saureus_t20): rho=0.9716, top-50 overlap=44/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (rf, paeruginosa_t5 vs paeruginosa_t10): rho=0.9765, top-50 overlap=46/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (rf, paeruginosa_t5 vs paeruginosa_t20): rho=0.9536, top-50 overlap=40/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (rf, paeruginosa_t10 vs paeruginosa_t20): rho=0.9782, top-50 overlap=40/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (rf, mtb_t5 vs mtb_t10): rho=0.9628, top-50 overlap=43/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (rf, mtb_t5 vs mtb_t20): rho=0.9357, top-50 overlap=33/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (rf, mtb_t10 vs mtb_t20): rho=0.9731, top-50 overlap=37/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (dmpnn, ecoli_t5 vs ecoli_t10): rho=0.9823, top-50 overlap=41/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (dmpnn, ecoli_t5 vs ecoli_t20): rho=0.9661, top-50 overlap=32/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (dmpnn, ecoli_t10 vs ecoli_t20): rho=0.9770, top-50 overlap=29/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (dmpnn, saureus_t5 vs saureus_t10): rho=0.9784, top-50 overlap=30/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (dmpnn, saureus_t5 vs saureus_t20): rho=0.9534, top-50 overlap=15/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (dmpnn, saureus_t10 vs saureus_t20): rho=0.9686, top-50 overlap=20/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (dmpnn, paeruginosa_t5 vs paeruginosa_t10): rho=0.9825, top-50 overlap=42/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (dmpnn, paeruginosa_t5 vs paeruginosa_t20): rho=0.9662, top-50 overlap=37/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (dmpnn, paeruginosa_t10 vs paeruginosa_t20): rho=0.9786, top-50 overlap=33/50
+2026-03-22 00:40:15 | INFO  | phase4 |   Test 5 (dmpnn, mtb_t5 vs mtb_t10): rho=0.9739, top-50 overlap=37/50
+2026-03-22 00:40:16 | INFO  | phase4 |   Test 5 (dmpnn, mtb_t5 vs mtb_t20): rho=0.9406, top-50 overlap=20/50
+2026-03-22 00:40:16 | INFO  | phase4 |   Test 5 (dmpnn, mtb_t10 vs mtb_t20): rho=0.9604, top-50 overlap=26/50
+2026-03-22 00:40:16 | INFO  | phase4 | 
+Generating Phase 4 figures...
+2026-03-22 00:40:18 | INFO  | phase4 |   Figure: phase4_level1_diagnostic
+2026-03-22 00:40:18 | INFO  | phase4 |   Figure: phase4_test1_rf_ecoli_t5
+2026-03-22 00:40:19 | INFO  | phase4 |   Figure: phase4_test1_rf_ecoli_t10
+2026-03-22 00:40:19 | INFO  | phase4 |   Figure: phase4_test1_rf_ecoli_t20
+2026-03-22 00:40:20 | INFO  | phase4 |   Figure: phase4_test1_rf_saureus_t5
+2026-03-22 00:40:20 | INFO  | phase4 |   Figure: phase4_test1_rf_saureus_t10
+2026-03-22 00:40:21 | INFO  | phase4 |   Figure: phase4_test1_rf_saureus_t20
+2026-03-22 00:40:21 | INFO  | phase4 |   Figure: phase4_test1_rf_paeruginosa_t5
+2026-03-22 00:40:22 | INFO  | phase4 |   Figure: phase4_test1_rf_paeruginosa_t10
+2026-03-22 00:40:22 | INFO  | phase4 |   Figure: phase4_test1_rf_paeruginosa_t20
+2026-03-22 00:40:23 | INFO  | phase4 |   Figure: phase4_test1_rf_mtb_t5
+2026-03-22 00:40:23 | INFO  | phase4 |   Figure: phase4_test1_rf_mtb_t10
+2026-03-22 00:40:23 | INFO  | phase4 |   Figure: phase4_test1_rf_mtb_t20
+2026-03-22 00:40:24 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_ecoli_t5
+2026-03-22 00:40:24 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_ecoli_t10
+2026-03-22 00:40:25 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_ecoli_t20
+2026-03-22 00:40:25 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_saureus_t5
+2026-03-22 00:40:26 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_saureus_t10
+2026-03-22 00:40:26 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_saureus_t20
+2026-03-22 00:40:27 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_paeruginosa_t5
+2026-03-22 00:40:27 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_paeruginosa_t10
+2026-03-22 00:40:27 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_paeruginosa_t20
+2026-03-22 00:40:28 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_mtb_t5
+2026-03-22 00:40:28 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_mtb_t10
+2026-03-22 00:40:29 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_mtb_t20
+2026-03-22 00:40:30 | INFO  | phase4 |   Figure: phase4_scatter_rf_ecoli_t10
+2026-03-22 00:40:31 | INFO  | phase4 |   Figure: phase4_scatter_dmpnn_ecoli_t10
+2026-03-22 00:40:31 | INFO  | phase4 |   Figure: phase4_test3_enrichment
+2026-03-22 00:40:31 | INFO  | phase4 | 
+======================================================================
+2026-03-22 00:40:31 | INFO  | phase4 |  PHASE 4 COMPLETE: EVALUATION SUMMARY
+2026-03-22 00:40:31 | INFO  | phase4 | ======================================================================
+2026-03-22 00:40:31 | INFO  | phase4 |   Level 1 Diagnostic: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/cv_metrics_diagnostic.csv
+2026-03-22 00:40:31 | INFO  | phase4 |   Test 1 (Rank Separation):  24 tests with p-values
+2026-03-22 00:40:31 | INFO  | phase4 |   Test 2 (Selectivity AUC):  24 computed
+2026-03-22 00:40:31 | INFO  | phase4 |   Test 3 (Top-k Enrichment): 8 computed
+2026-03-22 00:40:31 | INFO  | phase4 |   Test 4 (Rank Correlation): computed
+2026-03-22 00:40:31 | INFO  | phase4 |   Test 5 (Threshold Sens.):  8 computed
+2026-03-22 00:40:31 | INFO  | phase4 | 
+  Figures in: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures
+2026-03-22 00:40:31 | INFO  | phase4 |   All results in: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results
+2026-03-22 00:40:31 | INFO  | phase4 | ======================================================================
+2026-03-22 00:40:31 | INFO  | phase4 | Checkpoint saved: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/checkpoints/phase4_master.json
+2026-03-22 00:40:31 | INFO  | phase4 | ============================================================
+2026-03-22 00:40:31 | INFO  | phase4 |  COMPLETED: Phase 4
+2026-03-22 00:40:31 | INFO  | phase4 |  Elapsed: 0m 17.7s
+2026-03-22 00:40:31 | INFO  | phase4 | ============================================================
+2026-04-02 17:35:39 | INFO  | phase4 | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase4.log
+2026-04-02 17:35:39 | INFO  | phase4 | Running unit tests...
+2026-04-02 17:35:39 | INFO  | phase4 | All unit tests passed.
+
+2026-04-02 17:35:39 | INFO  | phase4 | ============================================================
+2026-04-02 17:35:39 | INFO  | phase4 |  STARTING: Phase 4: Full Evaluation Suite
+2026-04-02 17:35:39 | INFO  | phase4 | ============================================================
+2026-04-02 17:35:39 | INFO  | phase4 | [07_evaluate.py:main] Loading pipeline results...
+2026-04-02 17:35:39 | INFO  | phase4 | [07_evaluate.py:main] Results dir: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results
+2026-04-02 17:35:39 | INFO  | phase4 | [07_evaluate.py:main] Screening dir: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/screening
+2026-04-02 17:35:39 | INFO  | phase4 | [07_evaluate.py:main] Found 12 rf ranked files
+2026-04-02 17:35:39 | INFO  | phase4 | [07_evaluate.py:main] Found 12 dmpnn ranked files
+2026-04-02 17:35:39 | INFO  | phase4 | [07_evaluate.py:main] Found 19 chemeleon_frozen ranked files
+2026-04-02 17:35:39 | INFO  | phase4 | [07_evaluate.py:main] Found 19 molformer ranked files
+2026-04-02 17:35:39 | INFO  | phase4 |   [07_evaluate.py:load_cv_metrics(rf)] Loaded: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/rf_cv_metrics.json (7 tasks: ['ecoli', 'saureus', 'paeruginosa', 'mtb', 'gut_t5', 'gut_t10', 'gut_t20'])
+2026-04-02 17:35:40 | INFO  | phase4 |   [07_evaluate.py:load_ranked_lists(rf)] Loaded 12 ranked lists: ['ecoli_t5', 'ecoli_t10', 'ecoli_t20', 'saureus_t5', 'saureus_t10', 'saureus_t20', 'paeruginosa_t5', 'paeruginosa_t10', 'paeruginosa_t20', 'mtb_t5', 'mtb_t10', 'mtb_t20']
+2026-04-02 17:35:40 | INFO  | phase4 |   [07_evaluate.py:load_cv_metrics(dmpnn)] Loaded: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/dmpnn_cv_metrics.json (7 tasks: ['ecoli', 'saureus', 'paeruginosa', 'mtb', 'gut_t5', 'gut_t10', 'gut_t20'])
+2026-04-02 17:35:41 | INFO  | phase4 |   [07_evaluate.py:load_ranked_lists(dmpnn)] Loaded 12 ranked lists: ['ecoli_t5', 'ecoli_t10', 'ecoli_t20', 'saureus_t5', 'saureus_t10', 'saureus_t20', 'paeruginosa_t5', 'paeruginosa_t10', 'paeruginosa_t20', 'mtb_t5', 'mtb_t10', 'mtb_t20']
+2026-04-02 17:35:41 | INFO  | phase4 |   [07_evaluate.py:load_cv_metrics(chemeleon_frozen)] Loaded: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/chemeleon_frozen_cv_metrics.json (7 tasks: ['ecoli', 'saureus', 'paeruginosa', 'mtb', 'gut_t5', 'gut_t10', 'gut_t20'])
+2026-04-02 17:35:41 | INFO  | phase4 |   [07_evaluate.py:load_ranked_lists(chemeleon_frozen)] Loaded 12 ranked lists: ['ecoli_t5', 'ecoli_t10', 'ecoli_t20', 'saureus_t5', 'saureus_t10', 'saureus_t20', 'paeruginosa_t5', 'paeruginosa_t10', 'paeruginosa_t20', 'mtb_t5', 'mtb_t10', 'mtb_t20']
+2026-04-02 17:35:41 | INFO  | phase4 |   [07_evaluate.py:load_cv_metrics(molformer)] Loaded: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/molformer_cv_metrics.json (7 tasks: ['ecoli', 'saureus', 'paeruginosa', 'mtb', 'gut_t5', 'gut_t10', 'gut_t20'])
+2026-04-02 17:35:41 | INFO  | phase4 |   [07_evaluate.py:load_ranked_lists(molformer)] Loaded 12 ranked lists: ['ecoli_t5', 'ecoli_t10', 'ecoli_t20', 'saureus_t5', 'saureus_t10', 'saureus_t20', 'paeruginosa_t5', 'paeruginosa_t10', 'paeruginosa_t20', 'mtb_t5', 'mtb_t10', 'mtb_t20']
+2026-04-02 17:35:41 | INFO  | phase4 | [07_evaluate.py:main] rf                  : AVAILABLE (12 ranked lists)
+2026-04-02 17:35:41 | INFO  | phase4 | [07_evaluate.py:main] dmpnn               : AVAILABLE (12 ranked lists)
+2026-04-02 17:35:41 | INFO  | phase4 | [07_evaluate.py:main] chemeleon_frozen    : AVAILABLE (12 ranked lists)
+2026-04-02 17:35:41 | INFO  | phase4 | [07_evaluate.py:main] molformer           : AVAILABLE (12 ranked lists)
+2026-04-02 17:35:41 | INFO  | phase4 | 
+======================================================================
+2026-04-02 17:35:41 | INFO  | phase4 |  LEVEL 1: Diagnostic Per-Model Metrics
+2026-04-02 17:35:41 | INFO  | phase4 | ======================================================================
+2026-04-02 17:35:41 | INFO  | phase4 | 
+2026-04-02 17:35:41 | INFO  | phase4 |   Task                                      RF ROC             D-MPNN ROC          CheMeleon ROC          MoLFormer ROC
+2026-04-02 17:35:41 | INFO  | phase4 |   ---------------------------------------------------------------------------------------------------------------------
+2026-04-02 17:35:41 | INFO  | phase4 |   E. coli (MIC)                  0.8765 +/- 0.0107      0.8525 +/- 0.0123      0.8330 +/- 0.0113      0.8378 +/- 0.0178
+2026-04-02 17:35:41 | INFO  | phase4 |   S. aureus (MIC)                0.8708 +/- 0.0073      0.8544 +/- 0.0125      0.8311 +/- 0.0100      0.8346 +/- 0.0150
+2026-04-02 17:35:41 | INFO  | phase4 |   P. aeruginosa (MIC)            0.8610 +/- 0.0135      0.8379 +/- 0.0131      0.8204 +/- 0.0184      0.8275 +/- 0.0110
+2026-04-02 17:35:41 | INFO  | phase4 |   M. tuberculosis (MIC)          0.8112 +/- 0.0178      0.7599 +/- 0.0232      0.7620 +/- 0.0129      0.7640 +/- 0.0177
+2026-04-02 17:35:41 | INFO  | phase4 |   Gut harm (t=10)                0.8232 +/- 0.0898      0.8410 +/- 0.0391      0.8122 +/- 0.0709      0.8219 +/- 0.0640
+2026-04-02 17:35:41 | INFO  | phase4 | 
+  Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/cv_metrics_diagnostic.csv
+2026-04-02 17:35:41 | INFO  | phase4 | 
+======================================================================
+2026-04-02 17:35:41 | INFO  | phase4 |  LEVEL 2: Pipeline-Level Selectivity Evaluation
+2026-04-02 17:35:41 | INFO  | phase4 | ======================================================================
+2026-04-02 17:35:41 | INFO  | phase4 | 
+--- Test 1: Rank Separation (Mann-Whitney U) ---
+2026-04-02 17:35:41 | INFO  | phase4 |     lolamicin: not in Broad Hub (expected if post-2020 compound)
+2026-04-02 17:35:41 | INFO  | phase4 |   Test 1 (rf, ecoli_t5): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.1568, broad_mean=0.0936
+2026-04-02 17:35:41 | INFO  | phase4 |   Test 1 (rf, ecoli_t10): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.163, broad_mean=0.0874
+2026-04-02 17:35:41 | INFO  | phase4 |   Test 1 (rf, ecoli_t20): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.1775, broad_mean=0.0963
+2026-04-02 17:35:41 | INFO  | phase4 |   Test 1 (rf, saureus_t5): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.1876, broad_mean=0.1106
+2026-04-02 17:35:41 | INFO  | phase4 |   Test 1 (rf, saureus_t10): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.196, broad_mean=0.1043
+2026-04-02 17:35:41 | INFO  | phase4 |   Test 1 (rf, saureus_t20): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.2212, broad_mean=0.1137
+2026-04-02 17:35:41 | INFO  | phase4 |   Test 1 (rf, paeruginosa_t5): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.1499, broad_mean=0.0541
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (rf, paeruginosa_t10): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.1563, broad_mean=0.0504
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (rf, paeruginosa_t20): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.1709, broad_mean=0.0562
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (rf, mtb_t5): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.1557, broad_mean=0.0648
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (rf, mtb_t10): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.163, broad_mean=0.0606
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (rf, mtb_t20): U=17.0, p=0.1762, r_rb=-0.417 (medium), narrow_mean=0.1845, broad_mean=0.0671
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (dmpnn, ecoli_t5): U=2.0, p=0.9905, r_rb=0.833 (large), narrow_mean=0.005, broad_mean=0.0786
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (dmpnn, ecoli_t10): U=5.0, p=0.9429, r_rb=0.583 (large), narrow_mean=0.0107, broad_mean=0.0367
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (dmpnn, ecoli_t20): U=3.0, p=0.9810, r_rb=0.750 (large), narrow_mean=0.043, broad_mean=0.4109
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (dmpnn, saureus_t5): U=5.0, p=0.9429, r_rb=0.583 (large), narrow_mean=0.063, broad_mean=0.0895
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (dmpnn, saureus_t10): U=6.0, p=0.9143, r_rb=0.500 (medium), narrow_mean=0.1381, broad_mean=0.0421
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (dmpnn, saureus_t20): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.4344, broad_mean=0.504
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (dmpnn, paeruginosa_t5): U=13.0, p=0.4571, r_rb=-0.083 (small), narrow_mean=0.0079, broad_mean=0.0108
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (dmpnn, paeruginosa_t10): U=14.0, p=0.3731, r_rb=-0.167 (small), narrow_mean=0.0084, broad_mean=0.0086
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (dmpnn, paeruginosa_t20): U=12.0, p=0.5429, r_rb=0.000 (small), narrow_mean=0.0117, broad_mean=0.0895
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (dmpnn, mtb_t5): U=13.0, p=0.4571, r_rb=-0.083 (small), narrow_mean=0.0568, broad_mean=0.0288
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (dmpnn, mtb_t10): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.0642, broad_mean=0.0185
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (dmpnn, mtb_t20): U=14.0, p=0.3810, r_rb=-0.167 (small), narrow_mean=0.3127, broad_mean=0.2542
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (chemeleon_frozen, ecoli_t5): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.3707, broad_mean=0.1046
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (chemeleon_frozen, ecoli_t10): U=16.0, p=0.2381, r_rb=-0.333 (medium), narrow_mean=0.3774, broad_mean=0.1289
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (chemeleon_frozen, ecoli_t20): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.3527, broad_mean=0.0538
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (chemeleon_frozen, saureus_t5): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.557, broad_mean=0.167
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (chemeleon_frozen, saureus_t10): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.5672, broad_mean=0.2543
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (chemeleon_frozen, saureus_t20): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.5309, broad_mean=0.0833
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (chemeleon_frozen, paeruginosa_t5): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.3545, broad_mean=0.0642
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (chemeleon_frozen, paeruginosa_t10): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.3631, broad_mean=0.0795
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (chemeleon_frozen, paeruginosa_t20): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.3464, broad_mean=0.0301
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (chemeleon_frozen, mtb_t5): U=9.0, p=0.7619, r_rb=0.250 (small), narrow_mean=0.1167, broad_mean=0.1422
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (chemeleon_frozen, mtb_t10): U=9.0, p=0.7619, r_rb=0.250 (small), narrow_mean=0.1243, broad_mean=0.2199
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (chemeleon_frozen, mtb_t20): U=12.0, p=0.5429, r_rb=0.000 (small), narrow_mean=0.1053, broad_mean=0.0685
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (molformer, ecoli_t5): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.1571, broad_mean=0.0812
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (molformer, ecoli_t10): U=14.0, p=0.3810, r_rb=-0.167 (small), narrow_mean=0.2709, broad_mean=0.057
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (molformer, ecoli_t20): U=16.0, p=0.2381, r_rb=-0.333 (medium), narrow_mean=0.2513, broad_mean=0.0314
+2026-04-02 17:35:42 | INFO  | phase4 |   Test 1 (molformer, saureus_t5): U=8.0, p=0.8238, r_rb=0.333 (medium), narrow_mean=0.0944, broad_mean=0.2044
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 1 (molformer, saureus_t10): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.233, broad_mean=0.1883
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 1 (molformer, saureus_t20): U=9.0, p=0.7619, r_rb=0.250 (small), narrow_mean=0.2119, broad_mean=0.163
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 1 (molformer, paeruginosa_t5): U=12.0, p=0.5429, r_rb=0.000 (small), narrow_mean=0.0142, broad_mean=0.1115
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 1 (molformer, paeruginosa_t10): U=12.0, p=0.5429, r_rb=0.000 (small), narrow_mean=0.0365, broad_mean=0.0418
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 1 (molformer, paeruginosa_t20): U=14.0, p=0.3810, r_rb=-0.167 (small), narrow_mean=0.0329, broad_mean=0.0255
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 1 (molformer, mtb_t5): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.0838, broad_mean=0.138
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 1 (molformer, mtb_t10): U=11.0, p=0.6190, r_rb=0.083 (small), narrow_mean=0.0819, broad_mean=0.0691
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 1 (molformer, mtb_t20): U=14.0, p=0.3810, r_rb=-0.167 (small), narrow_mean=0.0992, broad_mean=0.0487
+2026-04-02 17:35:43 | INFO  | phase4 | 
+--- Test 2: Selectivity ROC-AUC ---
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (rf, ecoli_t5): Selectivity AUC = 0.7500
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (rf, ecoli_t10): Selectivity AUC = 0.7500
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (rf, ecoli_t20): Selectivity AUC = 0.7500
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (rf, saureus_t5): Selectivity AUC = 0.6250
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (rf, saureus_t10): Selectivity AUC = 0.6250
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (rf, saureus_t20): Selectivity AUC = 0.6250
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (rf, paeruginosa_t5): Selectivity AUC = 0.7917
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (rf, paeruginosa_t10): Selectivity AUC = 0.7917
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (rf, paeruginosa_t20): Selectivity AUC = 0.7917
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (rf, mtb_t5): Selectivity AUC = 0.7500
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (rf, mtb_t10): Selectivity AUC = 0.7917
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (rf, mtb_t20): Selectivity AUC = 0.7083
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (dmpnn, ecoli_t5): Selectivity AUC = 0.0833
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (dmpnn, ecoli_t10): Selectivity AUC = 0.2083
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (dmpnn, ecoli_t20): Selectivity AUC = 0.1250
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (dmpnn, saureus_t5): Selectivity AUC = 0.2083
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (dmpnn, saureus_t10): Selectivity AUC = 0.2500
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (dmpnn, saureus_t20): Selectivity AUC = 0.4167
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (dmpnn, paeruginosa_t5): Selectivity AUC = 0.5417
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (dmpnn, paeruginosa_t10): Selectivity AUC = 0.5833
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (dmpnn, paeruginosa_t20): Selectivity AUC = 0.5000
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (dmpnn, mtb_t5): Selectivity AUC = 0.5417
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (dmpnn, mtb_t10): Selectivity AUC = 0.6250
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (dmpnn, mtb_t20): Selectivity AUC = 0.5833
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (chemeleon_frozen, ecoli_t5): Selectivity AUC = 0.7500
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (chemeleon_frozen, ecoli_t10): Selectivity AUC = 0.6667
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (chemeleon_frozen, ecoli_t20): Selectivity AUC = 0.7500
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (chemeleon_frozen, saureus_t5): Selectivity AUC = 0.7917
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (chemeleon_frozen, saureus_t10): Selectivity AUC = 0.7500
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (chemeleon_frozen, saureus_t20): Selectivity AUC = 0.7500
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (chemeleon_frozen, paeruginosa_t5): Selectivity AUC = 0.7500
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (chemeleon_frozen, paeruginosa_t10): Selectivity AUC = 0.7500
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (chemeleon_frozen, paeruginosa_t20): Selectivity AUC = 0.7500
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (chemeleon_frozen, mtb_t5): Selectivity AUC = 0.3750
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (chemeleon_frozen, mtb_t10): Selectivity AUC = 0.3750
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (chemeleon_frozen, mtb_t20): Selectivity AUC = 0.5000
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (molformer, ecoli_t5): Selectivity AUC = 0.6250
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (molformer, ecoli_t10): Selectivity AUC = 0.5833
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (molformer, ecoli_t20): Selectivity AUC = 0.6667
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (molformer, saureus_t5): Selectivity AUC = 0.3333
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (molformer, saureus_t10): Selectivity AUC = 0.4167
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (molformer, saureus_t20): Selectivity AUC = 0.3750
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (molformer, paeruginosa_t5): Selectivity AUC = 0.5000
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (molformer, paeruginosa_t10): Selectivity AUC = 0.5000
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (molformer, paeruginosa_t20): Selectivity AUC = 0.5833
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (molformer, mtb_t5): Selectivity AUC = 0.4167
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (molformer, mtb_t10): Selectivity AUC = 0.4583
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 2 (molformer, mtb_t20): Selectivity AUC = 0.5833
+2026-04-02 17:35:43 | INFO  | phase4 | 
+--- Test 3: Top-k Enrichment ---
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 3 (rf, ecoli_t10): 5/50 antibiotics in top-50 (enrichment = 2.92x)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 3 (rf, saureus_t10): 9/50 antibiotics in top-50 (enrichment = 5.25x)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 3 (rf, paeruginosa_t10): 2/50 antibiotics in top-50 (enrichment = 1.17x)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 3 (rf, mtb_t10): 8/50 antibiotics in top-50 (enrichment = 4.67x)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 3 (dmpnn, ecoli_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 3 (dmpnn, saureus_t10): 0/50 antibiotics in top-50 (enrichment = 0.00x)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 3 (dmpnn, paeruginosa_t10): 0/50 antibiotics in top-50 (enrichment = 0.00x)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 3 (dmpnn, mtb_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 3 (chemeleon_frozen, ecoli_t10): 4/50 antibiotics in top-50 (enrichment = 2.33x)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 3 (chemeleon_frozen, saureus_t10): 4/50 antibiotics in top-50 (enrichment = 2.33x)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 3 (chemeleon_frozen, paeruginosa_t10): 4/50 antibiotics in top-50 (enrichment = 2.33x)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 3 (chemeleon_frozen, mtb_t10): 3/50 antibiotics in top-50 (enrichment = 1.75x)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 3 (molformer, ecoli_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 3 (molformer, saureus_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 3 (molformer, paeruginosa_t10): 2/50 antibiotics in top-50 (enrichment = 1.17x)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 3 (molformer, mtb_t10): 5/50 antibiotics in top-50 (enrichment = 2.92x)
+2026-04-02 17:35:43 | INFO  | phase4 | 
+--- Test 4: Pairwise Pipeline Agreement ---
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, ecoli_t5): rho=0.3585, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, ecoli_t10): rho=0.3569, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, ecoli_t20): rho=0.3716, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, saureus_t5): rho=0.4396, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, saureus_t10): rho=0.4628, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, saureus_t20): rho=0.4796, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, paeruginosa_t5): rho=0.2948, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, paeruginosa_t10): rho=0.2879, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, paeruginosa_t20): rho=0.2964, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, mtb_t5): rho=0.5019, n=6739 (moderate agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, mtb_t10): rho=0.5122, n=6739 (moderate agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, mtb_t20): rho=0.5281, n=6739 (moderate agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, ecoli_t5): rho=0.4013, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, ecoli_t10): rho=0.4085, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, ecoli_t20): rho=0.4060, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, saureus_t5): rho=0.4904, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, saureus_t10): rho=0.5247, n=6739 (moderate agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, saureus_t20): rho=0.5228, n=6739 (moderate agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, paeruginosa_t5): rho=0.3204, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, paeruginosa_t10): rho=0.3224, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, paeruginosa_t20): rho=0.3308, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, mtb_t5): rho=0.4995, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, mtb_t10): rho=0.5287, n=6739 (moderate agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, mtb_t20): rho=0.5403, n=6739 (moderate agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, ecoli_t5): rho=0.4012, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, ecoli_t10): rho=0.4038, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, ecoli_t20): rho=0.4259, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, saureus_t5): rho=0.4987, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, saureus_t10): rho=0.5115, n=6739 (moderate agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, saureus_t20): rho=0.5345, n=6739 (moderate agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, paeruginosa_t5): rho=0.4052, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, paeruginosa_t10): rho=0.4079, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, paeruginosa_t20): rho=0.4205, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, mtb_t5): rho=0.5288, n=6739 (moderate agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, mtb_t10): rho=0.5549, n=6739 (moderate agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, mtb_t20): rho=0.5938, n=6739 (moderate agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, ecoli_t5): rho=0.3410, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, ecoli_t10): rho=0.3578, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, ecoli_t20): rho=0.3647, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, saureus_t5): rho=0.3883, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, saureus_t10): rho=0.4271, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, saureus_t20): rho=0.4438, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, paeruginosa_t5): rho=0.2908, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, paeruginosa_t10): rho=0.3005, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, paeruginosa_t20): rho=0.2985, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, mtb_t5): rho=0.4525, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, mtb_t10): rho=0.4823, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, mtb_t20): rho=0.4814, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs rf, ecoli_t5): rho=0.3015, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs rf, ecoli_t10): rho=0.3034, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs rf, ecoli_t20): rho=0.3197, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs rf, saureus_t5): rho=0.3738, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs rf, saureus_t10): rho=0.3938, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs rf, saureus_t20): rho=0.4170, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs rf, paeruginosa_t5): rho=0.1895, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs rf, paeruginosa_t10): rho=0.1835, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs rf, paeruginosa_t20): rho=0.1881, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs rf, mtb_t5): rho=0.5084, n=6739 (moderate agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs rf, mtb_t10): rho=0.5358, n=6739 (moderate agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (dmpnn vs rf, mtb_t20): rho=0.5303, n=6739 (moderate agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (molformer vs rf, ecoli_t5): rho=0.3922, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (molformer vs rf, ecoli_t10): rho=0.3940, n=6739 (low agreement)
+2026-04-02 17:35:43 | INFO  | phase4 |   Test 4 (molformer vs rf, ecoli_t20): rho=0.4096, n=6739 (low agreement)
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 4 (molformer vs rf, saureus_t5): rho=0.4234, n=6739 (low agreement)
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 4 (molformer vs rf, saureus_t10): rho=0.4453, n=6739 (low agreement)
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 4 (molformer vs rf, saureus_t20): rho=0.4760, n=6739 (low agreement)
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 4 (molformer vs rf, paeruginosa_t5): rho=0.2629, n=6739 (low agreement)
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 4 (molformer vs rf, paeruginosa_t10): rho=0.2639, n=6739 (low agreement)
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 4 (molformer vs rf, paeruginosa_t20): rho=0.2829, n=6739 (low agreement)
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 4 (molformer vs rf, mtb_t5): rho=0.4865, n=6739 (low agreement)
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 4 (molformer vs rf, mtb_t10): rho=0.5180, n=6739 (moderate agreement)
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 4 (molformer vs rf, mtb_t20): rho=0.5528, n=6739 (moderate agreement)
+2026-04-02 17:35:44 | INFO  | phase4 | 
+--- Test 5: Threshold Sensitivity ---
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (rf, ecoli_t5 vs ecoli_t10): rho=0.9755, top-50 overlap=43/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (rf, ecoli_t5 vs ecoli_t20): rho=0.9512, top-50 overlap=38/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (rf, ecoli_t10 vs ecoli_t20): rho=0.9759, top-50 overlap=38/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (rf, saureus_t5 vs saureus_t10): rho=0.9705, top-50 overlap=44/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (rf, saureus_t5 vs saureus_t20): rho=0.9422, top-50 overlap=39/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (rf, saureus_t10 vs saureus_t20): rho=0.9716, top-50 overlap=44/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (rf, paeruginosa_t5 vs paeruginosa_t10): rho=0.9765, top-50 overlap=46/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (rf, paeruginosa_t5 vs paeruginosa_t20): rho=0.9536, top-50 overlap=40/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (rf, paeruginosa_t10 vs paeruginosa_t20): rho=0.9782, top-50 overlap=40/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (rf, mtb_t5 vs mtb_t10): rho=0.9628, top-50 overlap=43/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (rf, mtb_t5 vs mtb_t20): rho=0.9357, top-50 overlap=33/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (rf, mtb_t10 vs mtb_t20): rho=0.9731, top-50 overlap=37/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (dmpnn, ecoli_t5 vs ecoli_t10): rho=0.9823, top-50 overlap=41/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (dmpnn, ecoli_t5 vs ecoli_t20): rho=0.9661, top-50 overlap=32/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (dmpnn, ecoli_t10 vs ecoli_t20): rho=0.9770, top-50 overlap=29/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (dmpnn, saureus_t5 vs saureus_t10): rho=0.9784, top-50 overlap=30/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (dmpnn, saureus_t5 vs saureus_t20): rho=0.9534, top-50 overlap=15/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (dmpnn, saureus_t10 vs saureus_t20): rho=0.9686, top-50 overlap=20/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (dmpnn, paeruginosa_t5 vs paeruginosa_t10): rho=0.9825, top-50 overlap=42/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (dmpnn, paeruginosa_t5 vs paeruginosa_t20): rho=0.9662, top-50 overlap=37/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (dmpnn, paeruginosa_t10 vs paeruginosa_t20): rho=0.9786, top-50 overlap=33/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (dmpnn, mtb_t5 vs mtb_t10): rho=0.9739, top-50 overlap=37/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (dmpnn, mtb_t5 vs mtb_t20): rho=0.9406, top-50 overlap=20/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (dmpnn, mtb_t10 vs mtb_t20): rho=0.9604, top-50 overlap=26/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (chemeleon_frozen, ecoli_t5 vs ecoli_t10): rho=0.9810, top-50 overlap=45/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (chemeleon_frozen, ecoli_t5 vs ecoli_t20): rho=0.9682, top-50 overlap=43/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (chemeleon_frozen, ecoli_t10 vs ecoli_t20): rho=0.9843, top-50 overlap=45/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (chemeleon_frozen, saureus_t5 vs saureus_t10): rho=0.9831, top-50 overlap=39/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (chemeleon_frozen, saureus_t5 vs saureus_t20): rho=0.9713, top-50 overlap=35/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (chemeleon_frozen, saureus_t10 vs saureus_t20): rho=0.9851, top-50 overlap=40/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (chemeleon_frozen, paeruginosa_t5 vs paeruginosa_t10): rho=0.9853, top-50 overlap=44/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (chemeleon_frozen, paeruginosa_t5 vs paeruginosa_t20): rho=0.9758, top-50 overlap=45/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (chemeleon_frozen, paeruginosa_t10 vs paeruginosa_t20): rho=0.9872, top-50 overlap=48/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (chemeleon_frozen, mtb_t5 vs mtb_t10): rho=0.9737, top-50 overlap=33/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (chemeleon_frozen, mtb_t5 vs mtb_t20): rho=0.9575, top-50 overlap=27/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (chemeleon_frozen, mtb_t10 vs mtb_t20): rho=0.9778, top-50 overlap=28/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (molformer, ecoli_t5 vs ecoli_t10): rho=0.9655, top-50 overlap=34/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (molformer, ecoli_t5 vs ecoli_t20): rho=0.9529, top-50 overlap=23/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (molformer, ecoli_t10 vs ecoli_t20): rho=0.9805, top-50 overlap=35/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (molformer, saureus_t5 vs saureus_t10): rho=0.9615, top-50 overlap=31/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (molformer, saureus_t5 vs saureus_t20): rho=0.9462, top-50 overlap=20/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (molformer, saureus_t10 vs saureus_t20): rho=0.9791, top-50 overlap=32/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (molformer, paeruginosa_t5 vs paeruginosa_t10): rho=0.9600, top-50 overlap=38/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (molformer, paeruginosa_t5 vs paeruginosa_t20): rho=0.9425, top-50 overlap=33/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (molformer, paeruginosa_t10 vs paeruginosa_t20): rho=0.9766, top-50 overlap=39/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (molformer, mtb_t5 vs mtb_t10): rho=0.9378, top-50 overlap=28/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (molformer, mtb_t5 vs mtb_t20): rho=0.9119, top-50 overlap=27/50
+2026-04-02 17:35:44 | INFO  | phase4 |   Test 5 (molformer, mtb_t10 vs mtb_t20): rho=0.9615, top-50 overlap=28/50
+2026-04-02 17:35:44 | INFO  | phase4 | 
+Generating Phase 4 figures...
+2026-04-02 17:35:45 | INFO  | phase4 |   Figure: phase4_level1_diagnostic
+2026-04-02 17:35:46 | INFO  | phase4 |   Figure: phase4_test1_rf_ecoli_t5
+2026-04-02 17:35:46 | INFO  | phase4 |   Figure: phase4_test1_rf_ecoli_t10
+2026-04-02 17:35:46 | INFO  | phase4 |   Figure: phase4_test1_rf_ecoli_t20
+2026-04-02 17:35:47 | INFO  | phase4 |   Figure: phase4_test1_rf_saureus_t5
+2026-04-02 17:35:47 | INFO  | phase4 |   Figure: phase4_test1_rf_saureus_t10
+2026-04-02 17:35:48 | INFO  | phase4 |   Figure: phase4_test1_rf_saureus_t20
+2026-04-02 17:35:48 | INFO  | phase4 |   Figure: phase4_test1_rf_paeruginosa_t5
+2026-04-02 17:35:49 | INFO  | phase4 |   Figure: phase4_test1_rf_paeruginosa_t10
+2026-04-02 17:35:49 | INFO  | phase4 |   Figure: phase4_test1_rf_paeruginosa_t20
+2026-04-02 17:35:50 | INFO  | phase4 |   Figure: phase4_test1_rf_mtb_t5
+2026-04-02 17:35:50 | INFO  | phase4 |   Figure: phase4_test1_rf_mtb_t10
+2026-04-02 17:35:50 | INFO  | phase4 |   Figure: phase4_test1_rf_mtb_t20
+2026-04-02 17:35:51 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_ecoli_t5
+2026-04-02 17:35:51 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_ecoli_t10
+2026-04-02 17:35:52 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_ecoli_t20
+2026-04-02 17:35:52 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_saureus_t5
+2026-04-02 17:35:53 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_saureus_t10
+2026-04-02 17:35:53 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_saureus_t20
+2026-04-02 17:35:54 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_paeruginosa_t5
+2026-04-02 17:35:54 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_paeruginosa_t10
+2026-04-02 17:35:54 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_paeruginosa_t20
+2026-04-02 17:35:55 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_mtb_t5
+2026-04-02 17:35:55 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_mtb_t10
+2026-04-02 17:35:56 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_mtb_t20
+2026-04-02 17:35:56 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_ecoli_t5
+2026-04-02 17:35:57 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_ecoli_t10
+2026-04-02 17:35:57 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_ecoli_t20
+2026-04-02 17:35:58 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_saureus_t5
+2026-04-02 17:35:58 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_saureus_t10
+2026-04-02 17:35:58 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_saureus_t20
+2026-04-02 17:35:59 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_paeruginosa_t5
+2026-04-02 17:35:59 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_paeruginosa_t10
+2026-04-02 17:36:00 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_paeruginosa_t20
+2026-04-02 17:36:00 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_mtb_t5
+2026-04-02 17:36:01 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_mtb_t10
+2026-04-02 17:36:01 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_mtb_t20
+2026-04-02 17:36:02 | INFO  | phase4 |   Figure: phase4_test1_molformer_ecoli_t5
+2026-04-02 17:36:02 | INFO  | phase4 |   Figure: phase4_test1_molformer_ecoli_t10
+2026-04-02 17:36:03 | INFO  | phase4 |   Figure: phase4_test1_molformer_ecoli_t20
+2026-04-02 17:36:03 | INFO  | phase4 |   Figure: phase4_test1_molformer_saureus_t5
+2026-04-02 17:36:03 | INFO  | phase4 |   Figure: phase4_test1_molformer_saureus_t10
+2026-04-02 17:36:04 | INFO  | phase4 |   Figure: phase4_test1_molformer_saureus_t20
+2026-04-02 17:36:04 | INFO  | phase4 |   Figure: phase4_test1_molformer_paeruginosa_t5
+2026-04-02 17:36:05 | INFO  | phase4 |   Figure: phase4_test1_molformer_paeruginosa_t10
+2026-04-02 17:36:05 | INFO  | phase4 |   Figure: phase4_test1_molformer_paeruginosa_t20
+2026-04-02 17:36:06 | INFO  | phase4 |   Figure: phase4_test1_molformer_mtb_t5
+2026-04-02 17:36:06 | INFO  | phase4 |   Figure: phase4_test1_molformer_mtb_t10
+2026-04-02 17:36:06 | INFO  | phase4 |   Figure: phase4_test1_molformer_mtb_t20
+2026-04-02 17:36:07 | INFO  | phase4 |   Figure: phase4_scatter_rf_ecoli_t10
+2026-04-02 17:36:08 | INFO  | phase4 |   Figure: phase4_scatter_dmpnn_ecoli_t10
+2026-04-02 17:36:09 | INFO  | phase4 |   Figure: phase4_scatter_chemeleon_frozen_ecoli_t10
+2026-04-02 17:36:10 | INFO  | phase4 |   Figure: phase4_scatter_molformer_ecoli_t10
+2026-04-02 17:36:11 | INFO  | phase4 |   Figure: phase4_test3_enrichment
+2026-04-02 17:36:11 | INFO  | phase4 | 
+======================================================================
+2026-04-02 17:36:11 | INFO  | phase4 |  PHASE 4 COMPLETE: EVALUATION SUMMARY
+2026-04-02 17:36:11 | INFO  | phase4 | ======================================================================
+2026-04-02 17:36:11 | INFO  | phase4 |   Active pipelines: rf, dmpnn, chemeleon_frozen, molformer
+2026-04-02 17:36:11 | INFO  | phase4 |   Level 1 Diagnostic: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/cv_metrics_diagnostic.csv
+2026-04-02 17:36:11 | INFO  | phase4 |   Test 1 (Rank Separation):  48 tests with p-values
+2026-04-02 17:36:11 | INFO  | phase4 |   Test 2 (Selectivity AUC):  48 computed
+2026-04-02 17:36:11 | INFO  | phase4 |   Test 3 (Top-k Enrichment): 16 computed
+2026-04-02 17:36:11 | INFO  | phase4 |   Test 4 (Pairwise Corr.):   6 pipeline pairs
+2026-04-02 17:36:11 | INFO  | phase4 |   Test 5 (Threshold Sens.):  16 computed
+2026-04-02 17:36:11 | INFO  | phase4 | 
+  Figures in: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures
+2026-04-02 17:36:11 | INFO  | phase4 |   All results in: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results
+2026-04-02 17:36:11 | INFO  | phase4 | ======================================================================
+2026-04-02 17:36:11 | INFO  | phase4 | Checkpoint saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/checkpoints/phase4_master.json
+2026-04-02 17:36:11 | INFO  | phase4 | ============================================================
+2026-04-02 17:36:11 | INFO  | phase4 |  COMPLETED: Phase 4
+2026-04-02 17:36:11 | INFO  | phase4 |  Elapsed: 0m 31.3s
+2026-04-02 17:36:11 | INFO  | phase4 | ============================================================
+2026-04-05 08:58:06 | INFO  | phase4 | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase4.log
+2026-04-05 08:58:06 | INFO  | phase4 | Running unit tests...
+2026-04-05 08:58:06 | INFO  | phase4 | All unit tests passed.
+
+2026-04-05 08:58:06 | INFO  | phase4 | ============================================================
+2026-04-05 08:58:06 | INFO  | phase4 |  STARTING: Phase 4: Full Evaluation Suite
+2026-04-05 08:58:06 | INFO  | phase4 | ============================================================
+2026-04-05 08:58:06 | INFO  | phase4 | [07_evaluate.py:main] Loading pipeline results...
+2026-04-05 08:58:06 | INFO  | phase4 | [07_evaluate.py:main] Results dir: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results
+2026-04-05 08:58:06 | INFO  | phase4 | [07_evaluate.py:main] Screening dir: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/screening
+2026-04-05 08:58:06 | INFO  | phase4 | [07_evaluate.py:main] Found 12 rf ranked files
+2026-04-05 08:58:06 | INFO  | phase4 | [07_evaluate.py:main] Found 12 dmpnn ranked files
+2026-04-05 08:58:06 | INFO  | phase4 | [07_evaluate.py:main] Found 19 chemeleon_frozen ranked files
+2026-04-05 08:58:06 | INFO  | phase4 | [07_evaluate.py:main] Found 19 molformer ranked files
+2026-04-05 08:58:06 | INFO  | phase4 | [07_evaluate.py:main] Found 12 dmpnn_rdkit ranked files
+2026-04-05 08:58:06 | INFO  | phase4 |   [07_evaluate.py:load_cv_metrics(rf)] Loaded: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/rf_cv_metrics.json (7 tasks: ['ecoli', 'saureus', 'paeruginosa', 'mtb', 'gut_t5', 'gut_t10', 'gut_t20'])
+2026-04-05 08:58:07 | INFO  | phase4 |   [07_evaluate.py:load_ranked_lists(rf)] Loaded 12 ranked lists: ['ecoli_t5', 'ecoli_t10', 'ecoli_t20', 'saureus_t5', 'saureus_t10', 'saureus_t20', 'paeruginosa_t5', 'paeruginosa_t10', 'paeruginosa_t20', 'mtb_t5', 'mtb_t10', 'mtb_t20']
+2026-04-05 08:58:07 | INFO  | phase4 |   [07_evaluate.py:load_cv_metrics(dmpnn)] Loaded: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/dmpnn_cv_metrics.json (7 tasks: ['ecoli', 'saureus', 'paeruginosa', 'mtb', 'gut_t5', 'gut_t10', 'gut_t20'])
+2026-04-05 08:58:07 | INFO  | phase4 |   [07_evaluate.py:load_ranked_lists(dmpnn)] Loaded 12 ranked lists: ['ecoli_t5', 'ecoli_t10', 'ecoli_t20', 'saureus_t5', 'saureus_t10', 'saureus_t20', 'paeruginosa_t5', 'paeruginosa_t10', 'paeruginosa_t20', 'mtb_t5', 'mtb_t10', 'mtb_t20']
+2026-04-05 08:58:07 | INFO  | phase4 |   [07_evaluate.py:load_cv_metrics(chemeleon_frozen)] Loaded: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/chemeleon_frozen_cv_metrics.json (7 tasks: ['ecoli', 'saureus', 'paeruginosa', 'mtb', 'gut_t5', 'gut_t10', 'gut_t20'])
+2026-04-05 08:58:08 | INFO  | phase4 |   [07_evaluate.py:load_ranked_lists(chemeleon_frozen)] Loaded 12 ranked lists: ['ecoli_t5', 'ecoli_t10', 'ecoli_t20', 'saureus_t5', 'saureus_t10', 'saureus_t20', 'paeruginosa_t5', 'paeruginosa_t10', 'paeruginosa_t20', 'mtb_t5', 'mtb_t10', 'mtb_t20']
+2026-04-05 08:58:08 | INFO  | phase4 |   [07_evaluate.py:load_cv_metrics(molformer)] Loaded: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/molformer_cv_metrics.json (7 tasks: ['ecoli', 'saureus', 'paeruginosa', 'mtb', 'gut_t5', 'gut_t10', 'gut_t20'])
+2026-04-05 08:58:08 | INFO  | phase4 |   [07_evaluate.py:load_ranked_lists(molformer)] Loaded 12 ranked lists: ['ecoli_t5', 'ecoli_t10', 'ecoli_t20', 'saureus_t5', 'saureus_t10', 'saureus_t20', 'paeruginosa_t5', 'paeruginosa_t10', 'paeruginosa_t20', 'mtb_t5', 'mtb_t10', 'mtb_t20']
+2026-04-05 08:58:08 | INFO  | phase4 |   [07_evaluate.py:load_cv_metrics(dmpnn_rdkit)] Loaded: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/dmpnn_rdkit_cv_metrics.json (7 tasks: ['ecoli', 'saureus', 'paeruginosa', 'mtb', 'gut_t5', 'gut_t10', 'gut_t20'])
+2026-04-05 08:58:08 | INFO  | phase4 |   [07_evaluate.py:load_ranked_lists(dmpnn_rdkit)] Loaded 12 ranked lists: ['ecoli_t5', 'ecoli_t10', 'ecoli_t20', 'saureus_t5', 'saureus_t10', 'saureus_t20', 'paeruginosa_t5', 'paeruginosa_t10', 'paeruginosa_t20', 'mtb_t5', 'mtb_t10', 'mtb_t20']
+2026-04-05 08:58:08 | INFO  | phase4 | [07_evaluate.py:main] rf                  : AVAILABLE (12 ranked lists)
+2026-04-05 08:58:08 | INFO  | phase4 | [07_evaluate.py:main] dmpnn               : AVAILABLE (12 ranked lists)
+2026-04-05 08:58:08 | INFO  | phase4 | [07_evaluate.py:main] chemeleon_frozen    : AVAILABLE (12 ranked lists)
+2026-04-05 08:58:08 | INFO  | phase4 | [07_evaluate.py:main] molformer           : AVAILABLE (12 ranked lists)
+2026-04-05 08:58:08 | INFO  | phase4 | [07_evaluate.py:main] dmpnn_rdkit         : AVAILABLE (12 ranked lists)
+2026-04-05 08:58:08 | INFO  | phase4 | 
+======================================================================
+2026-04-05 08:58:08 | INFO  | phase4 |  LEVEL 1: Diagnostic Per-Model Metrics
+2026-04-05 08:58:08 | INFO  | phase4 | ======================================================================
+2026-04-05 08:58:08 | INFO  | phase4 | 
+2026-04-05 08:58:08 | INFO  | phase4 |   Task                                      RF ROC             D-MPNN ROC          CheMeleon ROC          MoLFormer ROC       D-MPNN+RDKit ROC
+2026-04-05 08:58:08 | INFO  | phase4 |   --------------------------------------------------------------------------------------------------------------------------------------------
+2026-04-05 08:58:08 | INFO  | phase4 |   E. coli (MIC)                  0.8765 +/- 0.0107      0.8525 +/- 0.0123      0.8330 +/- 0.0113      0.8378 +/- 0.0178      0.8408 +/- 0.0137
+2026-04-05 08:58:08 | INFO  | phase4 |   S. aureus (MIC)                0.8708 +/- 0.0073      0.8544 +/- 0.0125      0.8311 +/- 0.0100      0.8346 +/- 0.0150      0.8386 +/- 0.0089
+2026-04-05 08:58:08 | INFO  | phase4 |   P. aeruginosa (MIC)            0.8610 +/- 0.0135      0.8379 +/- 0.0131      0.8204 +/- 0.0184      0.8275 +/- 0.0110      0.8233 +/- 0.0141
+2026-04-05 08:58:08 | INFO  | phase4 |   M. tuberculosis (MIC)          0.8112 +/- 0.0178      0.7599 +/- 0.0232      0.7620 +/- 0.0129      0.7640 +/- 0.0177      0.7376 +/- 0.0309
+2026-04-05 08:58:08 | INFO  | phase4 |   Gut harm (t=10)                0.8232 +/- 0.0898      0.8410 +/- 0.0391      0.8122 +/- 0.0709      0.8219 +/- 0.0640      0.8286 +/- 0.0910
+2026-04-05 08:58:08 | INFO  | phase4 | 
+  Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/cv_metrics_diagnostic.csv
+2026-04-05 08:58:08 | INFO  | phase4 | 
+======================================================================
+2026-04-05 08:58:08 | INFO  | phase4 |  LEVEL 2: Pipeline-Level Selectivity Evaluation
+2026-04-05 08:58:08 | INFO  | phase4 | ======================================================================
+2026-04-05 08:58:08 | INFO  | phase4 | 
+--- Test 1: Rank Separation (Mann-Whitney U) ---
+2026-04-05 08:58:08 | INFO  | phase4 |     lolamicin: not in Broad Hub (expected if post-2020 compound)
+2026-04-05 08:58:08 | INFO  | phase4 |   Test 1 (rf, ecoli_t5): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.1568, broad_mean=0.0936
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (rf, ecoli_t10): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.163, broad_mean=0.0874
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (rf, ecoli_t20): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.1775, broad_mean=0.0963
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (rf, saureus_t5): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.1876, broad_mean=0.1106
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (rf, saureus_t10): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.196, broad_mean=0.1043
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (rf, saureus_t20): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.2212, broad_mean=0.1137
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (rf, paeruginosa_t5): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.1499, broad_mean=0.0541
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (rf, paeruginosa_t10): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.1563, broad_mean=0.0504
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (rf, paeruginosa_t20): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.1709, broad_mean=0.0562
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (rf, mtb_t5): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.1557, broad_mean=0.0648
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (rf, mtb_t10): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.163, broad_mean=0.0606
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (rf, mtb_t20): U=17.0, p=0.1762, r_rb=-0.417 (medium), narrow_mean=0.1845, broad_mean=0.0671
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (dmpnn, ecoli_t5): U=2.0, p=0.9905, r_rb=0.833 (large), narrow_mean=0.005, broad_mean=0.0786
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (dmpnn, ecoli_t10): U=5.0, p=0.9429, r_rb=0.583 (large), narrow_mean=0.0107, broad_mean=0.0367
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (dmpnn, ecoli_t20): U=3.0, p=0.9810, r_rb=0.750 (large), narrow_mean=0.043, broad_mean=0.4109
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (dmpnn, saureus_t5): U=5.0, p=0.9429, r_rb=0.583 (large), narrow_mean=0.063, broad_mean=0.0895
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (dmpnn, saureus_t10): U=6.0, p=0.9143, r_rb=0.500 (medium), narrow_mean=0.1381, broad_mean=0.0421
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (dmpnn, saureus_t20): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.4344, broad_mean=0.504
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (dmpnn, paeruginosa_t5): U=13.0, p=0.4571, r_rb=-0.083 (small), narrow_mean=0.0079, broad_mean=0.0108
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (dmpnn, paeruginosa_t10): U=14.0, p=0.3731, r_rb=-0.167 (small), narrow_mean=0.0084, broad_mean=0.0086
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (dmpnn, paeruginosa_t20): U=12.0, p=0.5429, r_rb=0.000 (small), narrow_mean=0.0117, broad_mean=0.0895
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (dmpnn, mtb_t5): U=13.0, p=0.4571, r_rb=-0.083 (small), narrow_mean=0.0568, broad_mean=0.0288
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (dmpnn, mtb_t10): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.0642, broad_mean=0.0185
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (dmpnn, mtb_t20): U=14.0, p=0.3810, r_rb=-0.167 (small), narrow_mean=0.3127, broad_mean=0.2542
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (chemeleon_frozen, ecoli_t5): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.3707, broad_mean=0.1046
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (chemeleon_frozen, ecoli_t10): U=16.0, p=0.2381, r_rb=-0.333 (medium), narrow_mean=0.3774, broad_mean=0.1289
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (chemeleon_frozen, ecoli_t20): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.3527, broad_mean=0.0538
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (chemeleon_frozen, saureus_t5): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.557, broad_mean=0.167
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (chemeleon_frozen, saureus_t10): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.5672, broad_mean=0.2543
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (chemeleon_frozen, saureus_t20): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.5309, broad_mean=0.0833
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (chemeleon_frozen, paeruginosa_t5): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.3545, broad_mean=0.0642
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (chemeleon_frozen, paeruginosa_t10): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.3631, broad_mean=0.0795
+2026-04-05 08:58:09 | INFO  | phase4 |   Test 1 (chemeleon_frozen, paeruginosa_t20): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.3464, broad_mean=0.0301
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (chemeleon_frozen, mtb_t5): U=9.0, p=0.7619, r_rb=0.250 (small), narrow_mean=0.1167, broad_mean=0.1422
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (chemeleon_frozen, mtb_t10): U=9.0, p=0.7619, r_rb=0.250 (small), narrow_mean=0.1243, broad_mean=0.2199
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (chemeleon_frozen, mtb_t20): U=12.0, p=0.5429, r_rb=0.000 (small), narrow_mean=0.1053, broad_mean=0.0685
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (molformer, ecoli_t5): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.1571, broad_mean=0.0812
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (molformer, ecoli_t10): U=14.0, p=0.3810, r_rb=-0.167 (small), narrow_mean=0.2709, broad_mean=0.057
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (molformer, ecoli_t20): U=16.0, p=0.2381, r_rb=-0.333 (medium), narrow_mean=0.2513, broad_mean=0.0314
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (molformer, saureus_t5): U=8.0, p=0.8238, r_rb=0.333 (medium), narrow_mean=0.0944, broad_mean=0.2044
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (molformer, saureus_t10): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.233, broad_mean=0.1883
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (molformer, saureus_t20): U=9.0, p=0.7619, r_rb=0.250 (small), narrow_mean=0.2119, broad_mean=0.163
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (molformer, paeruginosa_t5): U=12.0, p=0.5429, r_rb=0.000 (small), narrow_mean=0.0142, broad_mean=0.1115
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (molformer, paeruginosa_t10): U=12.0, p=0.5429, r_rb=0.000 (small), narrow_mean=0.0365, broad_mean=0.0418
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (molformer, paeruginosa_t20): U=14.0, p=0.3810, r_rb=-0.167 (small), narrow_mean=0.0329, broad_mean=0.0255
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (molformer, mtb_t5): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.0838, broad_mean=0.138
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (molformer, mtb_t10): U=11.0, p=0.6190, r_rb=0.083 (small), narrow_mean=0.0819, broad_mean=0.0691
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (molformer, mtb_t20): U=14.0, p=0.3810, r_rb=-0.167 (small), narrow_mean=0.0992, broad_mean=0.0487
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, ecoli_t5): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.0896, broad_mean=0.0993
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, ecoli_t10): U=8.0, p=0.8238, r_rb=0.333 (medium), narrow_mean=0.1068, broad_mean=0.1307
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, ecoli_t20): U=7.0, p=0.8714, r_rb=0.417 (medium), narrow_mean=0.1464, broad_mean=0.2023
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, saureus_t5): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.1652, broad_mean=0.1276
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, saureus_t10): U=9.0, p=0.7619, r_rb=0.250 (small), narrow_mean=0.1956, broad_mean=0.1744
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, saureus_t20): U=9.0, p=0.7619, r_rb=0.250 (small), narrow_mean=0.2678, broad_mean=0.274
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, paeruginosa_t5): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.0641, broad_mean=0.0658
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, paeruginosa_t10): U=11.0, p=0.6190, r_rb=0.083 (small), narrow_mean=0.0727, broad_mean=0.0825
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, paeruginosa_t20): U=12.0, p=0.5429, r_rb=0.000 (small), narrow_mean=0.095, broad_mean=0.1381
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, mtb_t5): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.0917, broad_mean=0.1048
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, mtb_t10): U=9.0, p=0.7619, r_rb=0.250 (small), narrow_mean=0.1103, broad_mean=0.1394
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, mtb_t20): U=9.0, p=0.7619, r_rb=0.250 (small), narrow_mean=0.1429, broad_mean=0.2221
+2026-04-05 08:58:10 | INFO  | phase4 | 
+--- Test 2: Selectivity ROC-AUC ---
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (rf, ecoli_t5): Selectivity AUC = 0.7500
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (rf, ecoli_t10): Selectivity AUC = 0.7500
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (rf, ecoli_t20): Selectivity AUC = 0.7500
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (rf, saureus_t5): Selectivity AUC = 0.6250
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (rf, saureus_t10): Selectivity AUC = 0.6250
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (rf, saureus_t20): Selectivity AUC = 0.6250
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (rf, paeruginosa_t5): Selectivity AUC = 0.7917
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (rf, paeruginosa_t10): Selectivity AUC = 0.7917
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (rf, paeruginosa_t20): Selectivity AUC = 0.7917
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (rf, mtb_t5): Selectivity AUC = 0.7500
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (rf, mtb_t10): Selectivity AUC = 0.7917
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (rf, mtb_t20): Selectivity AUC = 0.7083
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn, ecoli_t5): Selectivity AUC = 0.0833
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn, ecoli_t10): Selectivity AUC = 0.2083
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn, ecoli_t20): Selectivity AUC = 0.1250
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn, saureus_t5): Selectivity AUC = 0.2083
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn, saureus_t10): Selectivity AUC = 0.2500
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn, saureus_t20): Selectivity AUC = 0.4167
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn, paeruginosa_t5): Selectivity AUC = 0.5417
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn, paeruginosa_t10): Selectivity AUC = 0.5833
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn, paeruginosa_t20): Selectivity AUC = 0.5000
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn, mtb_t5): Selectivity AUC = 0.5417
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn, mtb_t10): Selectivity AUC = 0.6250
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn, mtb_t20): Selectivity AUC = 0.5833
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (chemeleon_frozen, ecoli_t5): Selectivity AUC = 0.7500
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (chemeleon_frozen, ecoli_t10): Selectivity AUC = 0.6667
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (chemeleon_frozen, ecoli_t20): Selectivity AUC = 0.7500
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (chemeleon_frozen, saureus_t5): Selectivity AUC = 0.7917
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (chemeleon_frozen, saureus_t10): Selectivity AUC = 0.7500
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (chemeleon_frozen, saureus_t20): Selectivity AUC = 0.7500
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (chemeleon_frozen, paeruginosa_t5): Selectivity AUC = 0.7500
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (chemeleon_frozen, paeruginosa_t10): Selectivity AUC = 0.7500
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (chemeleon_frozen, paeruginosa_t20): Selectivity AUC = 0.7500
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (chemeleon_frozen, mtb_t5): Selectivity AUC = 0.3750
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (chemeleon_frozen, mtb_t10): Selectivity AUC = 0.3750
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (chemeleon_frozen, mtb_t20): Selectivity AUC = 0.5000
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (molformer, ecoli_t5): Selectivity AUC = 0.6250
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (molformer, ecoli_t10): Selectivity AUC = 0.5833
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (molformer, ecoli_t20): Selectivity AUC = 0.6667
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (molformer, saureus_t5): Selectivity AUC = 0.3333
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (molformer, saureus_t10): Selectivity AUC = 0.4167
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (molformer, saureus_t20): Selectivity AUC = 0.3750
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (molformer, paeruginosa_t5): Selectivity AUC = 0.5000
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (molformer, paeruginosa_t10): Selectivity AUC = 0.5000
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (molformer, paeruginosa_t20): Selectivity AUC = 0.5833
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (molformer, mtb_t5): Selectivity AUC = 0.4167
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (molformer, mtb_t10): Selectivity AUC = 0.4583
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (molformer, mtb_t20): Selectivity AUC = 0.5833
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, ecoli_t5): Selectivity AUC = 0.4167
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, ecoli_t10): Selectivity AUC = 0.3333
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, ecoli_t20): Selectivity AUC = 0.2917
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, saureus_t5): Selectivity AUC = 0.4167
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, saureus_t10): Selectivity AUC = 0.3750
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, saureus_t20): Selectivity AUC = 0.3750
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, paeruginosa_t5): Selectivity AUC = 0.4167
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, paeruginosa_t10): Selectivity AUC = 0.4583
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, paeruginosa_t20): Selectivity AUC = 0.5000
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, mtb_t5): Selectivity AUC = 0.4167
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, mtb_t10): Selectivity AUC = 0.3750
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, mtb_t20): Selectivity AUC = 0.3750
+2026-04-05 08:58:10 | INFO  | phase4 | 
+--- Test 3: Top-k Enrichment ---
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 3 (rf, ecoli_t10): 5/50 antibiotics in top-50 (enrichment = 2.92x)
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 3 (rf, saureus_t10): 9/50 antibiotics in top-50 (enrichment = 5.25x)
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 3 (rf, paeruginosa_t10): 2/50 antibiotics in top-50 (enrichment = 1.17x)
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 3 (rf, mtb_t10): 8/50 antibiotics in top-50 (enrichment = 4.67x)
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 3 (dmpnn, ecoli_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 3 (dmpnn, saureus_t10): 0/50 antibiotics in top-50 (enrichment = 0.00x)
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 3 (dmpnn, paeruginosa_t10): 0/50 antibiotics in top-50 (enrichment = 0.00x)
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 3 (dmpnn, mtb_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-04-05 08:58:10 | INFO  | phase4 |   Test 3 (chemeleon_frozen, ecoli_t10): 4/50 antibiotics in top-50 (enrichment = 2.33x)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 3 (chemeleon_frozen, saureus_t10): 4/50 antibiotics in top-50 (enrichment = 2.33x)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 3 (chemeleon_frozen, paeruginosa_t10): 4/50 antibiotics in top-50 (enrichment = 2.33x)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 3 (chemeleon_frozen, mtb_t10): 3/50 antibiotics in top-50 (enrichment = 1.75x)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 3 (molformer, ecoli_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 3 (molformer, saureus_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 3 (molformer, paeruginosa_t10): 2/50 antibiotics in top-50 (enrichment = 1.17x)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 3 (molformer, mtb_t10): 5/50 antibiotics in top-50 (enrichment = 2.92x)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 3 (dmpnn_rdkit, ecoli_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 3 (dmpnn_rdkit, saureus_t10): 0/50 antibiotics in top-50 (enrichment = 0.00x)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 3 (dmpnn_rdkit, paeruginosa_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 3 (dmpnn_rdkit, mtb_t10): 0/50 antibiotics in top-50 (enrichment = 0.00x)
+2026-04-05 08:58:11 | INFO  | phase4 | 
+--- Test 4: Pairwise Pipeline Agreement ---
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, ecoli_t5): rho=0.3585, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, ecoli_t10): rho=0.3569, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, ecoli_t20): rho=0.3716, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, saureus_t5): rho=0.4396, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, saureus_t10): rho=0.4628, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, saureus_t20): rho=0.4796, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, paeruginosa_t5): rho=0.2948, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, paeruginosa_t10): rho=0.2879, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, paeruginosa_t20): rho=0.2964, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, mtb_t5): rho=0.5019, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, mtb_t10): rho=0.5122, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, mtb_t20): rho=0.5281, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, ecoli_t5): rho=0.3196, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, ecoli_t10): rho=0.3497, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, ecoli_t20): rho=0.3629, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, saureus_t5): rho=0.4502, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, saureus_t10): rho=0.4993, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, saureus_t20): rho=0.5157, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, paeruginosa_t5): rho=0.3751, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, paeruginosa_t10): rho=0.3786, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, paeruginosa_t20): rho=0.3866, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, mtb_t5): rho=0.4371, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, mtb_t10): rho=0.5002, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, mtb_t20): rho=0.5437, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, ecoli_t5): rho=0.4013, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, ecoli_t10): rho=0.4085, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, ecoli_t20): rho=0.4060, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, saureus_t5): rho=0.4904, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, saureus_t10): rho=0.5247, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, saureus_t20): rho=0.5228, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, paeruginosa_t5): rho=0.3204, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, paeruginosa_t10): rho=0.3224, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, paeruginosa_t20): rho=0.3308, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, mtb_t5): rho=0.4995, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, mtb_t10): rho=0.5287, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, mtb_t20): rho=0.5403, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, ecoli_t5): rho=0.4012, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, ecoli_t10): rho=0.4038, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, ecoli_t20): rho=0.4259, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, saureus_t5): rho=0.4987, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, saureus_t10): rho=0.5115, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, saureus_t20): rho=0.5345, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, paeruginosa_t5): rho=0.4052, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, paeruginosa_t10): rho=0.4079, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, paeruginosa_t20): rho=0.4205, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, mtb_t5): rho=0.5288, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, mtb_t10): rho=0.5549, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, mtb_t20): rho=0.5938, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, ecoli_t5): rho=0.3367, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, ecoli_t10): rho=0.3590, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, ecoli_t20): rho=0.3874, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, saureus_t5): rho=0.3719, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, saureus_t10): rho=0.4064, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, saureus_t20): rho=0.4470, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, paeruginosa_t5): rho=0.1817, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, paeruginosa_t10): rho=0.1835, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, paeruginosa_t20): rho=0.2011, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, mtb_t5): rho=0.4017, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, mtb_t10): rho=0.4571, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, mtb_t20): rho=0.4814, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, ecoli_t5): rho=0.3410, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, ecoli_t10): rho=0.3578, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, ecoli_t20): rho=0.3647, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, saureus_t5): rho=0.3883, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, saureus_t10): rho=0.4271, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, saureus_t20): rho=0.4438, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, paeruginosa_t5): rho=0.2908, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, paeruginosa_t10): rho=0.3005, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, paeruginosa_t20): rho=0.2985, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, mtb_t5): rho=0.4525, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, mtb_t10): rho=0.4823, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, mtb_t20): rho=0.4814, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs rf, ecoli_t5): rho=0.3015, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs rf, ecoli_t10): rho=0.3034, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs rf, ecoli_t20): rho=0.3197, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs rf, saureus_t5): rho=0.3738, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs rf, saureus_t10): rho=0.3938, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs rf, saureus_t20): rho=0.4170, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs rf, paeruginosa_t5): rho=0.1895, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs rf, paeruginosa_t10): rho=0.1835, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs rf, paeruginosa_t20): rho=0.1881, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs rf, mtb_t5): rho=0.5084, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs rf, mtb_t10): rho=0.5358, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn vs rf, mtb_t20): rho=0.5303, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, ecoli_t5): rho=0.4138, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, ecoli_t10): rho=0.4315, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, ecoli_t20): rho=0.4414, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, saureus_t5): rho=0.4436, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, saureus_t10): rho=0.5011, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, saureus_t20): rho=0.5208, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, paeruginosa_t5): rho=0.3148, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, paeruginosa_t10): rho=0.3216, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, paeruginosa_t20): rho=0.3252, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, mtb_t5): rho=0.4324, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, mtb_t10): rho=0.4855, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, mtb_t20): rho=0.5225, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, ecoli_t5): rho=0.3978, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, ecoli_t10): rho=0.3938, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, ecoli_t20): rho=0.4123, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, saureus_t5): rho=0.4688, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, saureus_t10): rho=0.4770, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, saureus_t20): rho=0.5079, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, paeruginosa_t5): rho=0.3554, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, paeruginosa_t10): rho=0.3496, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, paeruginosa_t20): rho=0.3617, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, mtb_t5): rho=0.5976, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, mtb_t10): rho=0.6232, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, mtb_t20): rho=0.6432, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (molformer vs rf, ecoli_t5): rho=0.3922, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (molformer vs rf, ecoli_t10): rho=0.3940, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (molformer vs rf, ecoli_t20): rho=0.4096, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (molformer vs rf, saureus_t5): rho=0.4234, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (molformer vs rf, saureus_t10): rho=0.4453, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (molformer vs rf, saureus_t20): rho=0.4760, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (molformer vs rf, paeruginosa_t5): rho=0.2629, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (molformer vs rf, paeruginosa_t10): rho=0.2639, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (molformer vs rf, paeruginosa_t20): rho=0.2829, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (molformer vs rf, mtb_t5): rho=0.4865, n=6739 (low agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (molformer vs rf, mtb_t10): rho=0.5180, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 4 (molformer vs rf, mtb_t20): rho=0.5528, n=6739 (moderate agreement)
+2026-04-05 08:58:11 | INFO  | phase4 | 
+--- Test 5: Threshold Sensitivity ---
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 5 (rf, ecoli_t5 vs ecoli_t10): rho=0.9755, top-50 overlap=43/50
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 5 (rf, ecoli_t5 vs ecoli_t20): rho=0.9512, top-50 overlap=38/50
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 5 (rf, ecoli_t10 vs ecoli_t20): rho=0.9759, top-50 overlap=38/50
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 5 (rf, saureus_t5 vs saureus_t10): rho=0.9705, top-50 overlap=44/50
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 5 (rf, saureus_t5 vs saureus_t20): rho=0.9422, top-50 overlap=39/50
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 5 (rf, saureus_t10 vs saureus_t20): rho=0.9716, top-50 overlap=44/50
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 5 (rf, paeruginosa_t5 vs paeruginosa_t10): rho=0.9765, top-50 overlap=46/50
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 5 (rf, paeruginosa_t5 vs paeruginosa_t20): rho=0.9536, top-50 overlap=40/50
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 5 (rf, paeruginosa_t10 vs paeruginosa_t20): rho=0.9782, top-50 overlap=40/50
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 5 (rf, mtb_t5 vs mtb_t10): rho=0.9628, top-50 overlap=43/50
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 5 (rf, mtb_t5 vs mtb_t20): rho=0.9357, top-50 overlap=33/50
+2026-04-05 08:58:11 | INFO  | phase4 |   Test 5 (rf, mtb_t10 vs mtb_t20): rho=0.9731, top-50 overlap=37/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn, ecoli_t5 vs ecoli_t10): rho=0.9823, top-50 overlap=41/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn, ecoli_t5 vs ecoli_t20): rho=0.9661, top-50 overlap=32/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn, ecoli_t10 vs ecoli_t20): rho=0.9770, top-50 overlap=29/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn, saureus_t5 vs saureus_t10): rho=0.9784, top-50 overlap=30/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn, saureus_t5 vs saureus_t20): rho=0.9534, top-50 overlap=15/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn, saureus_t10 vs saureus_t20): rho=0.9686, top-50 overlap=20/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn, paeruginosa_t5 vs paeruginosa_t10): rho=0.9825, top-50 overlap=42/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn, paeruginosa_t5 vs paeruginosa_t20): rho=0.9662, top-50 overlap=37/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn, paeruginosa_t10 vs paeruginosa_t20): rho=0.9786, top-50 overlap=33/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn, mtb_t5 vs mtb_t10): rho=0.9739, top-50 overlap=37/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn, mtb_t5 vs mtb_t20): rho=0.9406, top-50 overlap=20/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn, mtb_t10 vs mtb_t20): rho=0.9604, top-50 overlap=26/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (chemeleon_frozen, ecoli_t5 vs ecoli_t10): rho=0.9810, top-50 overlap=45/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (chemeleon_frozen, ecoli_t5 vs ecoli_t20): rho=0.9682, top-50 overlap=43/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (chemeleon_frozen, ecoli_t10 vs ecoli_t20): rho=0.9843, top-50 overlap=45/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (chemeleon_frozen, saureus_t5 vs saureus_t10): rho=0.9831, top-50 overlap=39/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (chemeleon_frozen, saureus_t5 vs saureus_t20): rho=0.9713, top-50 overlap=35/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (chemeleon_frozen, saureus_t10 vs saureus_t20): rho=0.9851, top-50 overlap=40/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (chemeleon_frozen, paeruginosa_t5 vs paeruginosa_t10): rho=0.9853, top-50 overlap=44/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (chemeleon_frozen, paeruginosa_t5 vs paeruginosa_t20): rho=0.9758, top-50 overlap=45/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (chemeleon_frozen, paeruginosa_t10 vs paeruginosa_t20): rho=0.9872, top-50 overlap=48/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (chemeleon_frozen, mtb_t5 vs mtb_t10): rho=0.9737, top-50 overlap=33/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (chemeleon_frozen, mtb_t5 vs mtb_t20): rho=0.9575, top-50 overlap=27/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (chemeleon_frozen, mtb_t10 vs mtb_t20): rho=0.9778, top-50 overlap=28/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (molformer, ecoli_t5 vs ecoli_t10): rho=0.9655, top-50 overlap=34/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (molformer, ecoli_t5 vs ecoli_t20): rho=0.9529, top-50 overlap=23/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (molformer, ecoli_t10 vs ecoli_t20): rho=0.9805, top-50 overlap=35/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (molformer, saureus_t5 vs saureus_t10): rho=0.9615, top-50 overlap=31/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (molformer, saureus_t5 vs saureus_t20): rho=0.9462, top-50 overlap=20/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (molformer, saureus_t10 vs saureus_t20): rho=0.9791, top-50 overlap=32/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (molformer, paeruginosa_t5 vs paeruginosa_t10): rho=0.9600, top-50 overlap=38/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (molformer, paeruginosa_t5 vs paeruginosa_t20): rho=0.9425, top-50 overlap=33/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (molformer, paeruginosa_t10 vs paeruginosa_t20): rho=0.9766, top-50 overlap=39/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (molformer, mtb_t5 vs mtb_t10): rho=0.9378, top-50 overlap=28/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (molformer, mtb_t5 vs mtb_t20): rho=0.9119, top-50 overlap=27/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (molformer, mtb_t10 vs mtb_t20): rho=0.9615, top-50 overlap=28/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, ecoli_t5 vs ecoli_t10): rho=0.9561, top-50 overlap=35/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, ecoli_t5 vs ecoli_t20): rho=0.9167, top-50 overlap=29/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, ecoli_t10 vs ecoli_t20): rho=0.9824, top-50 overlap=42/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, saureus_t5 vs saureus_t10): rho=0.9636, top-50 overlap=28/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, saureus_t5 vs saureus_t20): rho=0.9333, top-50 overlap=24/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, saureus_t10 vs saureus_t20): rho=0.9880, top-50 overlap=41/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, paeruginosa_t5 vs paeruginosa_t10): rho=0.9660, top-50 overlap=40/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, paeruginosa_t5 vs paeruginosa_t20): rho=0.9365, top-50 overlap=29/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, paeruginosa_t10 vs paeruginosa_t20): rho=0.9877, top-50 overlap=38/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, mtb_t5 vs mtb_t10): rho=0.9304, top-50 overlap=48/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, mtb_t5 vs mtb_t20): rho=0.8591, top-50 overlap=45/50
+2026-04-05 08:58:12 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, mtb_t10 vs mtb_t20): rho=0.9682, top-50 overlap=44/50
+2026-04-05 08:58:12 | INFO  | phase4 | 
+Generating Phase 4 figures...
+2026-04-05 08:58:13 | INFO  | phase4 |   Figure: phase4_level1_diagnostic
+2026-04-05 08:58:14 | INFO  | phase4 |   Figure: phase4_test1_rf_ecoli_t5
+2026-04-05 08:58:14 | INFO  | phase4 |   Figure: phase4_test1_rf_ecoli_t10
+2026-04-05 08:58:14 | INFO  | phase4 |   Figure: phase4_test1_rf_ecoli_t20
+2026-04-05 08:58:15 | INFO  | phase4 |   Figure: phase4_test1_rf_saureus_t5
+2026-04-05 08:58:15 | INFO  | phase4 |   Figure: phase4_test1_rf_saureus_t10
+2026-04-05 08:58:16 | INFO  | phase4 |   Figure: phase4_test1_rf_saureus_t20
+2026-04-05 08:58:16 | INFO  | phase4 |   Figure: phase4_test1_rf_paeruginosa_t5
+2026-04-05 08:58:17 | INFO  | phase4 |   Figure: phase4_test1_rf_paeruginosa_t10
+2026-04-05 08:58:17 | INFO  | phase4 |   Figure: phase4_test1_rf_paeruginosa_t20
+2026-04-05 08:58:18 | INFO  | phase4 |   Figure: phase4_test1_rf_mtb_t5
+2026-04-05 08:58:18 | INFO  | phase4 |   Figure: phase4_test1_rf_mtb_t10
+2026-04-05 08:58:18 | INFO  | phase4 |   Figure: phase4_test1_rf_mtb_t20
+2026-04-05 08:58:19 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_ecoli_t5
+2026-04-05 08:58:19 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_ecoli_t10
+2026-04-05 08:58:20 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_ecoli_t20
+2026-04-05 08:58:20 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_saureus_t5
+2026-04-05 08:58:21 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_saureus_t10
+2026-04-05 08:58:21 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_saureus_t20
+2026-04-05 08:58:22 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_paeruginosa_t5
+2026-04-05 08:58:22 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_paeruginosa_t10
+2026-04-05 08:58:22 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_paeruginosa_t20
+2026-04-05 08:58:23 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_mtb_t5
+2026-04-05 08:58:23 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_mtb_t10
+2026-04-05 08:58:24 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_mtb_t20
+2026-04-05 08:58:24 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_ecoli_t5
+2026-04-05 08:58:25 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_ecoli_t10
+2026-04-05 08:58:25 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_ecoli_t20
+2026-04-05 08:58:26 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_saureus_t5
+2026-04-05 08:58:26 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_saureus_t10
+2026-04-05 08:58:26 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_saureus_t20
+2026-04-05 08:58:27 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_paeruginosa_t5
+2026-04-05 08:58:27 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_paeruginosa_t10
+2026-04-05 08:58:28 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_paeruginosa_t20
+2026-04-05 08:58:28 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_mtb_t5
+2026-04-05 08:58:29 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_mtb_t10
+2026-04-05 08:58:29 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_mtb_t20
+2026-04-05 08:58:29 | INFO  | phase4 |   Figure: phase4_test1_molformer_ecoli_t5
+2026-04-05 08:58:30 | INFO  | phase4 |   Figure: phase4_test1_molformer_ecoli_t10
+2026-04-05 08:58:30 | INFO  | phase4 |   Figure: phase4_test1_molformer_ecoli_t20
+2026-04-05 08:58:31 | INFO  | phase4 |   Figure: phase4_test1_molformer_saureus_t5
+2026-04-05 08:58:31 | INFO  | phase4 |   Figure: phase4_test1_molformer_saureus_t10
+2026-04-05 08:58:32 | INFO  | phase4 |   Figure: phase4_test1_molformer_saureus_t20
+2026-04-05 08:58:32 | INFO  | phase4 |   Figure: phase4_test1_molformer_paeruginosa_t5
+2026-04-05 08:58:33 | INFO  | phase4 |   Figure: phase4_test1_molformer_paeruginosa_t10
+2026-04-05 08:58:33 | INFO  | phase4 |   Figure: phase4_test1_molformer_paeruginosa_t20
+2026-04-05 08:58:33 | INFO  | phase4 |   Figure: phase4_test1_molformer_mtb_t5
+2026-04-05 08:58:34 | INFO  | phase4 |   Figure: phase4_test1_molformer_mtb_t10
+2026-04-05 08:58:34 | INFO  | phase4 |   Figure: phase4_test1_molformer_mtb_t20
+2026-04-05 08:58:35 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_ecoli_t5
+2026-04-05 08:58:35 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_ecoli_t10
+2026-04-05 08:58:36 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_ecoli_t20
+2026-04-05 08:58:36 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_saureus_t5
+2026-04-05 08:58:37 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_saureus_t10
+2026-04-05 08:58:37 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_saureus_t20
+2026-04-05 08:58:37 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_paeruginosa_t5
+2026-04-05 08:58:38 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_paeruginosa_t10
+2026-04-05 08:58:38 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_paeruginosa_t20
+2026-04-05 08:58:39 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_mtb_t5
+2026-04-05 08:58:39 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_mtb_t10
+2026-04-05 08:58:40 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_mtb_t20
+2026-04-05 08:58:40 | INFO  | phase4 |   Figure: phase4_scatter_rf_ecoli_t10
+2026-04-05 08:58:41 | INFO  | phase4 |   Figure: phase4_scatter_dmpnn_ecoli_t10
+2026-04-05 08:58:42 | INFO  | phase4 |   Figure: phase4_scatter_chemeleon_frozen_ecoli_t10
+2026-04-05 08:58:43 | INFO  | phase4 |   Figure: phase4_scatter_molformer_ecoli_t10
+2026-04-05 08:58:44 | INFO  | phase4 |   Figure: phase4_scatter_dmpnn_rdkit_ecoli_t10
+2026-04-05 08:58:45 | INFO  | phase4 |   Figure: phase4_test3_enrichment
+2026-04-05 08:58:45 | INFO  | phase4 | 
+======================================================================
+2026-04-05 08:58:45 | INFO  | phase4 |  PHASE 4 COMPLETE: EVALUATION SUMMARY
+2026-04-05 08:58:45 | INFO  | phase4 | ======================================================================
+2026-04-05 08:58:45 | INFO  | phase4 |   Active pipelines: rf, dmpnn, chemeleon_frozen, molformer, dmpnn_rdkit
+2026-04-05 08:58:45 | INFO  | phase4 |   Level 1 Diagnostic: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/cv_metrics_diagnostic.csv
+2026-04-05 08:58:45 | INFO  | phase4 |   Test 1 (Rank Separation):  60 tests with p-values
+2026-04-05 08:58:45 | INFO  | phase4 |   Test 2 (Selectivity AUC):  60 computed
+2026-04-05 08:58:45 | INFO  | phase4 |   Test 3 (Top-k Enrichment): 20 computed
+2026-04-05 08:58:45 | INFO  | phase4 |   Test 4 (Pairwise Corr.):   10 pipeline pairs
+2026-04-05 08:58:45 | INFO  | phase4 |   Test 5 (Threshold Sens.):  20 computed
+2026-04-05 08:58:45 | INFO  | phase4 | 
+  Figures in: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures
+2026-04-05 08:58:45 | INFO  | phase4 |   All results in: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results
+2026-04-05 08:58:45 | INFO  | phase4 | ======================================================================
+2026-04-05 08:58:45 | INFO  | phase4 | Checkpoint saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/checkpoints/phase4_master.json
+2026-04-05 08:58:45 | INFO  | phase4 | ============================================================
+2026-04-05 08:58:45 | INFO  | phase4 |  COMPLETED: Phase 4
+2026-04-05 08:58:45 | INFO  | phase4 |  Elapsed: 0m 38.1s
+2026-04-05 08:58:45 | INFO  | phase4 | ============================================================
+2026-04-05 09:05:28 | INFO  | phase4 | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase4.log
+2026-04-05 09:05:28 | INFO  | phase4 | Running unit tests...
+2026-04-05 09:05:28 | INFO  | phase4 | All unit tests passed.
+
+2026-04-05 09:05:28 | INFO  | phase4 | ============================================================
+2026-04-05 09:05:28 | INFO  | phase4 |  STARTING: Phase 4: Full Evaluation Suite
+2026-04-05 09:05:28 | INFO  | phase4 | ============================================================
+2026-04-05 09:05:28 | INFO  | phase4 | [07_evaluate.py:main] Loading pipeline results...
+2026-04-05 09:05:28 | INFO  | phase4 | [07_evaluate.py:main] Results dir: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results
+2026-04-05 09:05:28 | INFO  | phase4 | [07_evaluate.py:main] Screening dir: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/screening
+2026-04-05 09:05:28 | INFO  | phase4 | [07_evaluate.py:main] Found 12 rf ranked files
+2026-04-05 09:05:28 | INFO  | phase4 | [07_evaluate.py:main] Found 12 dmpnn ranked files
+2026-04-05 09:05:28 | INFO  | phase4 | [07_evaluate.py:main] Found 19 chemeleon_frozen ranked files
+2026-04-05 09:05:28 | INFO  | phase4 | [07_evaluate.py:main] Found 19 molformer ranked files
+2026-04-05 09:05:28 | INFO  | phase4 | [07_evaluate.py:main] Found 12 dmpnn_rdkit ranked files
+2026-04-05 09:05:28 | INFO  | phase4 |   [07_evaluate.py:load_cv_metrics(rf)] Loaded: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/rf_cv_metrics.json (7 tasks: ['ecoli', 'saureus', 'paeruginosa', 'mtb', 'gut_t5', 'gut_t10', 'gut_t20'])
+2026-04-05 09:05:29 | INFO  | phase4 |   [07_evaluate.py:load_ranked_lists(rf)] Loaded 12 ranked lists: ['ecoli_t5', 'ecoli_t10', 'ecoli_t20', 'saureus_t5', 'saureus_t10', 'saureus_t20', 'paeruginosa_t5', 'paeruginosa_t10', 'paeruginosa_t20', 'mtb_t5', 'mtb_t10', 'mtb_t20']
+2026-04-05 09:05:29 | INFO  | phase4 |   [07_evaluate.py:load_cv_metrics(dmpnn)] Loaded: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/dmpnn_cv_metrics.json (7 tasks: ['ecoli', 'saureus', 'paeruginosa', 'mtb', 'gut_t5', 'gut_t10', 'gut_t20'])
+2026-04-05 09:05:29 | INFO  | phase4 |   [07_evaluate.py:load_ranked_lists(dmpnn)] Loaded 12 ranked lists: ['ecoli_t5', 'ecoli_t10', 'ecoli_t20', 'saureus_t5', 'saureus_t10', 'saureus_t20', 'paeruginosa_t5', 'paeruginosa_t10', 'paeruginosa_t20', 'mtb_t5', 'mtb_t10', 'mtb_t20']
+2026-04-05 09:05:29 | INFO  | phase4 |   [07_evaluate.py:load_cv_metrics(chemeleon_frozen)] Loaded: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/chemeleon_frozen_cv_metrics.json (7 tasks: ['ecoli', 'saureus', 'paeruginosa', 'mtb', 'gut_t5', 'gut_t10', 'gut_t20'])
+2026-04-05 09:05:29 | INFO  | phase4 |   [07_evaluate.py:load_ranked_lists(chemeleon_frozen)] Loaded 12 ranked lists: ['ecoli_t5', 'ecoli_t10', 'ecoli_t20', 'saureus_t5', 'saureus_t10', 'saureus_t20', 'paeruginosa_t5', 'paeruginosa_t10', 'paeruginosa_t20', 'mtb_t5', 'mtb_t10', 'mtb_t20']
+2026-04-05 09:05:29 | INFO  | phase4 |   [07_evaluate.py:load_cv_metrics(molformer)] Loaded: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/molformer_cv_metrics.json (7 tasks: ['ecoli', 'saureus', 'paeruginosa', 'mtb', 'gut_t5', 'gut_t10', 'gut_t20'])
+2026-04-05 09:05:29 | INFO  | phase4 |   [07_evaluate.py:load_ranked_lists(molformer)] Loaded 12 ranked lists: ['ecoli_t5', 'ecoli_t10', 'ecoli_t20', 'saureus_t5', 'saureus_t10', 'saureus_t20', 'paeruginosa_t5', 'paeruginosa_t10', 'paeruginosa_t20', 'mtb_t5', 'mtb_t10', 'mtb_t20']
+2026-04-05 09:05:29 | INFO  | phase4 |   [07_evaluate.py:load_cv_metrics(dmpnn_rdkit)] Loaded: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/dmpnn_rdkit_cv_metrics.json (7 tasks: ['ecoli', 'saureus', 'paeruginosa', 'mtb', 'gut_t5', 'gut_t10', 'gut_t20'])
+2026-04-05 09:05:30 | INFO  | phase4 |   [07_evaluate.py:load_ranked_lists(dmpnn_rdkit)] Loaded 12 ranked lists: ['ecoli_t5', 'ecoli_t10', 'ecoli_t20', 'saureus_t5', 'saureus_t10', 'saureus_t20', 'paeruginosa_t5', 'paeruginosa_t10', 'paeruginosa_t20', 'mtb_t5', 'mtb_t10', 'mtb_t20']
+2026-04-05 09:05:30 | INFO  | phase4 | [07_evaluate.py:main] rf                  : AVAILABLE (12 ranked lists)
+2026-04-05 09:05:30 | INFO  | phase4 | [07_evaluate.py:main] dmpnn               : AVAILABLE (12 ranked lists)
+2026-04-05 09:05:30 | INFO  | phase4 | [07_evaluate.py:main] chemeleon_frozen    : AVAILABLE (12 ranked lists)
+2026-04-05 09:05:30 | INFO  | phase4 | [07_evaluate.py:main] molformer           : AVAILABLE (12 ranked lists)
+2026-04-05 09:05:30 | INFO  | phase4 | [07_evaluate.py:main] dmpnn_rdkit         : AVAILABLE (12 ranked lists)
+2026-04-05 09:05:30 | INFO  | phase4 | 
+======================================================================
+2026-04-05 09:05:30 | INFO  | phase4 |  LEVEL 1: Diagnostic Per-Model Metrics
+2026-04-05 09:05:30 | INFO  | phase4 | ======================================================================
+2026-04-05 09:05:30 | INFO  | phase4 | 
+2026-04-05 09:05:30 | INFO  | phase4 |   Task                                      RF ROC             D-MPNN ROC          CheMeleon ROC          MoLFormer ROC       D-MPNN+RDKit ROC
+2026-04-05 09:05:30 | INFO  | phase4 |   --------------------------------------------------------------------------------------------------------------------------------------------
+2026-04-05 09:05:30 | INFO  | phase4 |   E. coli (MIC)                  0.8765 +/- 0.0107      0.8525 +/- 0.0123      0.8330 +/- 0.0113      0.8378 +/- 0.0178      0.8408 +/- 0.0137
+2026-04-05 09:05:30 | INFO  | phase4 |   S. aureus (MIC)                0.8708 +/- 0.0073      0.8544 +/- 0.0125      0.8311 +/- 0.0100      0.8346 +/- 0.0150      0.8386 +/- 0.0089
+2026-04-05 09:05:30 | INFO  | phase4 |   P. aeruginosa (MIC)            0.8610 +/- 0.0135      0.8379 +/- 0.0131      0.8204 +/- 0.0184      0.8275 +/- 0.0110      0.8233 +/- 0.0141
+2026-04-05 09:05:30 | INFO  | phase4 |   M. tuberculosis (MIC)          0.8112 +/- 0.0178      0.7599 +/- 0.0232      0.7620 +/- 0.0129      0.7640 +/- 0.0177      0.7376 +/- 0.0309
+2026-04-05 09:05:30 | INFO  | phase4 |   Gut harm (t=10)                0.8232 +/- 0.0898      0.8410 +/- 0.0391      0.8122 +/- 0.0709      0.8219 +/- 0.0640      0.8286 +/- 0.0910
+2026-04-05 09:05:30 | INFO  | phase4 | 
+  Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/cv_metrics_diagnostic.csv
+2026-04-05 09:05:30 | INFO  | phase4 | 
+======================================================================
+2026-04-05 09:05:30 | INFO  | phase4 |  LEVEL 2: Pipeline-Level Selectivity Evaluation
+2026-04-05 09:05:30 | INFO  | phase4 | ======================================================================
+2026-04-05 09:05:30 | INFO  | phase4 | 
+--- Test 1: Rank Separation (Mann-Whitney U) ---
+2026-04-05 09:05:30 | INFO  | phase4 |     lolamicin: not in Broad Hub (expected if post-2020 compound)
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (rf, ecoli_t5): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.1568, broad_mean=0.0936
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (rf, ecoli_t10): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.163, broad_mean=0.0874
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (rf, ecoli_t20): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.1775, broad_mean=0.0963
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (rf, saureus_t5): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.1876, broad_mean=0.1106
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (rf, saureus_t10): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.196, broad_mean=0.1043
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (rf, saureus_t20): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.2212, broad_mean=0.1137
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (rf, paeruginosa_t5): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.1499, broad_mean=0.0541
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (rf, paeruginosa_t10): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.1563, broad_mean=0.0504
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (rf, paeruginosa_t20): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.1709, broad_mean=0.0562
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (rf, mtb_t5): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.1557, broad_mean=0.0648
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (rf, mtb_t10): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.163, broad_mean=0.0606
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (rf, mtb_t20): U=17.0, p=0.1762, r_rb=-0.417 (medium), narrow_mean=0.1845, broad_mean=0.0671
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (dmpnn, ecoli_t5): U=2.0, p=0.9905, r_rb=0.833 (large), narrow_mean=0.005, broad_mean=0.0786
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (dmpnn, ecoli_t10): U=5.0, p=0.9429, r_rb=0.583 (large), narrow_mean=0.0107, broad_mean=0.0367
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (dmpnn, ecoli_t20): U=3.0, p=0.9810, r_rb=0.750 (large), narrow_mean=0.043, broad_mean=0.4109
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (dmpnn, saureus_t5): U=5.0, p=0.9429, r_rb=0.583 (large), narrow_mean=0.063, broad_mean=0.0895
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (dmpnn, saureus_t10): U=6.0, p=0.9143, r_rb=0.500 (medium), narrow_mean=0.1381, broad_mean=0.0421
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (dmpnn, saureus_t20): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.4344, broad_mean=0.504
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (dmpnn, paeruginosa_t5): U=13.0, p=0.4571, r_rb=-0.083 (small), narrow_mean=0.0079, broad_mean=0.0108
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (dmpnn, paeruginosa_t10): U=14.0, p=0.3731, r_rb=-0.167 (small), narrow_mean=0.0084, broad_mean=0.0086
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (dmpnn, paeruginosa_t20): U=12.0, p=0.5429, r_rb=0.000 (small), narrow_mean=0.0117, broad_mean=0.0895
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (dmpnn, mtb_t5): U=13.0, p=0.4571, r_rb=-0.083 (small), narrow_mean=0.0568, broad_mean=0.0288
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (dmpnn, mtb_t10): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.0642, broad_mean=0.0185
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (dmpnn, mtb_t20): U=14.0, p=0.3810, r_rb=-0.167 (small), narrow_mean=0.3127, broad_mean=0.2542
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (chemeleon_frozen, ecoli_t5): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.3707, broad_mean=0.1046
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (chemeleon_frozen, ecoli_t10): U=16.0, p=0.2381, r_rb=-0.333 (medium), narrow_mean=0.3774, broad_mean=0.1289
+2026-04-05 09:05:30 | INFO  | phase4 |   Test 1 (chemeleon_frozen, ecoli_t20): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.3527, broad_mean=0.0538
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (chemeleon_frozen, saureus_t5): U=19.0, p=0.0857, r_rb=-0.583 (large), narrow_mean=0.557, broad_mean=0.167
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (chemeleon_frozen, saureus_t10): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.5672, broad_mean=0.2543
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (chemeleon_frozen, saureus_t20): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.5309, broad_mean=0.0833
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (chemeleon_frozen, paeruginosa_t5): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.3545, broad_mean=0.0642
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (chemeleon_frozen, paeruginosa_t10): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.3631, broad_mean=0.0795
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (chemeleon_frozen, paeruginosa_t20): U=18.0, p=0.1286, r_rb=-0.500 (medium), narrow_mean=0.3464, broad_mean=0.0301
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (chemeleon_frozen, mtb_t5): U=9.0, p=0.7619, r_rb=0.250 (small), narrow_mean=0.1167, broad_mean=0.1422
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (chemeleon_frozen, mtb_t10): U=9.0, p=0.7619, r_rb=0.250 (small), narrow_mean=0.1243, broad_mean=0.2199
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (chemeleon_frozen, mtb_t20): U=12.0, p=0.5429, r_rb=0.000 (small), narrow_mean=0.1053, broad_mean=0.0685
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (molformer, ecoli_t5): U=15.0, p=0.3048, r_rb=-0.250 (small), narrow_mean=0.1571, broad_mean=0.0812
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (molformer, ecoli_t10): U=14.0, p=0.3810, r_rb=-0.167 (small), narrow_mean=0.2709, broad_mean=0.057
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (molformer, ecoli_t20): U=16.0, p=0.2381, r_rb=-0.333 (medium), narrow_mean=0.2513, broad_mean=0.0314
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (molformer, saureus_t5): U=8.0, p=0.8238, r_rb=0.333 (medium), narrow_mean=0.0944, broad_mean=0.2044
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (molformer, saureus_t10): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.233, broad_mean=0.1883
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (molformer, saureus_t20): U=9.0, p=0.7619, r_rb=0.250 (small), narrow_mean=0.2119, broad_mean=0.163
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (molformer, paeruginosa_t5): U=12.0, p=0.5429, r_rb=0.000 (small), narrow_mean=0.0142, broad_mean=0.1115
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (molformer, paeruginosa_t10): U=12.0, p=0.5429, r_rb=0.000 (small), narrow_mean=0.0365, broad_mean=0.0418
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (molformer, paeruginosa_t20): U=14.0, p=0.3810, r_rb=-0.167 (small), narrow_mean=0.0329, broad_mean=0.0255
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (molformer, mtb_t5): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.0838, broad_mean=0.138
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (molformer, mtb_t10): U=11.0, p=0.6190, r_rb=0.083 (small), narrow_mean=0.0819, broad_mean=0.0691
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (molformer, mtb_t20): U=14.0, p=0.3810, r_rb=-0.167 (small), narrow_mean=0.0992, broad_mean=0.0487
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, ecoli_t5): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.0896, broad_mean=0.0993
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, ecoli_t10): U=8.0, p=0.8238, r_rb=0.333 (medium), narrow_mean=0.1068, broad_mean=0.1307
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, ecoli_t20): U=7.0, p=0.8714, r_rb=0.417 (medium), narrow_mean=0.1464, broad_mean=0.2023
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, saureus_t5): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.1652, broad_mean=0.1276
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, saureus_t10): U=9.0, p=0.7619, r_rb=0.250 (small), narrow_mean=0.1956, broad_mean=0.1744
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, saureus_t20): U=9.0, p=0.7619, r_rb=0.250 (small), narrow_mean=0.2678, broad_mean=0.274
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, paeruginosa_t5): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.0641, broad_mean=0.0658
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, paeruginosa_t10): U=11.0, p=0.6190, r_rb=0.083 (small), narrow_mean=0.0727, broad_mean=0.0825
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, paeruginosa_t20): U=12.0, p=0.5429, r_rb=0.000 (small), narrow_mean=0.095, broad_mean=0.1381
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, mtb_t5): U=10.0, p=0.6952, r_rb=0.167 (small), narrow_mean=0.0917, broad_mean=0.1048
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, mtb_t10): U=9.0, p=0.7619, r_rb=0.250 (small), narrow_mean=0.1103, broad_mean=0.1394
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 1 (dmpnn_rdkit, mtb_t20): U=9.0, p=0.7619, r_rb=0.250 (small), narrow_mean=0.1429, broad_mean=0.2221
+2026-04-05 09:05:31 | INFO  | phase4 | 
+--- Test 2: Selectivity ROC-AUC ---
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 2 (rf, ecoli_t5): Selectivity AUC = 0.7500
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 2 (rf, ecoli_t10): Selectivity AUC = 0.7500
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 2 (rf, ecoli_t20): Selectivity AUC = 0.7500
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 2 (rf, saureus_t5): Selectivity AUC = 0.6250
+2026-04-05 09:05:31 | INFO  | phase4 |   Test 2 (rf, saureus_t10): Selectivity AUC = 0.6250
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (rf, saureus_t20): Selectivity AUC = 0.6250
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (rf, paeruginosa_t5): Selectivity AUC = 0.7917
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (rf, paeruginosa_t10): Selectivity AUC = 0.7917
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (rf, paeruginosa_t20): Selectivity AUC = 0.7917
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (rf, mtb_t5): Selectivity AUC = 0.7500
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (rf, mtb_t10): Selectivity AUC = 0.7917
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (rf, mtb_t20): Selectivity AUC = 0.7083
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn, ecoli_t5): Selectivity AUC = 0.0833
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn, ecoli_t10): Selectivity AUC = 0.2083
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn, ecoli_t20): Selectivity AUC = 0.1250
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn, saureus_t5): Selectivity AUC = 0.2083
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn, saureus_t10): Selectivity AUC = 0.2500
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn, saureus_t20): Selectivity AUC = 0.4167
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn, paeruginosa_t5): Selectivity AUC = 0.5417
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn, paeruginosa_t10): Selectivity AUC = 0.5833
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn, paeruginosa_t20): Selectivity AUC = 0.5000
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn, mtb_t5): Selectivity AUC = 0.5417
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn, mtb_t10): Selectivity AUC = 0.6250
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn, mtb_t20): Selectivity AUC = 0.5833
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (chemeleon_frozen, ecoli_t5): Selectivity AUC = 0.7500
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (chemeleon_frozen, ecoli_t10): Selectivity AUC = 0.6667
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (chemeleon_frozen, ecoli_t20): Selectivity AUC = 0.7500
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (chemeleon_frozen, saureus_t5): Selectivity AUC = 0.7917
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (chemeleon_frozen, saureus_t10): Selectivity AUC = 0.7500
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (chemeleon_frozen, saureus_t20): Selectivity AUC = 0.7500
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (chemeleon_frozen, paeruginosa_t5): Selectivity AUC = 0.7500
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (chemeleon_frozen, paeruginosa_t10): Selectivity AUC = 0.7500
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (chemeleon_frozen, paeruginosa_t20): Selectivity AUC = 0.7500
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (chemeleon_frozen, mtb_t5): Selectivity AUC = 0.3750
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (chemeleon_frozen, mtb_t10): Selectivity AUC = 0.3750
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (chemeleon_frozen, mtb_t20): Selectivity AUC = 0.5000
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (molformer, ecoli_t5): Selectivity AUC = 0.6250
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (molformer, ecoli_t10): Selectivity AUC = 0.5833
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (molformer, ecoli_t20): Selectivity AUC = 0.6667
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (molformer, saureus_t5): Selectivity AUC = 0.3333
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (molformer, saureus_t10): Selectivity AUC = 0.4167
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (molformer, saureus_t20): Selectivity AUC = 0.3750
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (molformer, paeruginosa_t5): Selectivity AUC = 0.5000
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (molformer, paeruginosa_t10): Selectivity AUC = 0.5000
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (molformer, paeruginosa_t20): Selectivity AUC = 0.5833
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (molformer, mtb_t5): Selectivity AUC = 0.4167
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (molformer, mtb_t10): Selectivity AUC = 0.4583
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (molformer, mtb_t20): Selectivity AUC = 0.5833
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, ecoli_t5): Selectivity AUC = 0.4167
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, ecoli_t10): Selectivity AUC = 0.3333
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, ecoli_t20): Selectivity AUC = 0.2917
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, saureus_t5): Selectivity AUC = 0.4167
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, saureus_t10): Selectivity AUC = 0.3750
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, saureus_t20): Selectivity AUC = 0.3750
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, paeruginosa_t5): Selectivity AUC = 0.4167
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, paeruginosa_t10): Selectivity AUC = 0.4583
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, paeruginosa_t20): Selectivity AUC = 0.5000
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, mtb_t5): Selectivity AUC = 0.4167
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, mtb_t10): Selectivity AUC = 0.3750
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 2 (dmpnn_rdkit, mtb_t20): Selectivity AUC = 0.3750
+2026-04-05 09:05:32 | INFO  | phase4 | 
+--- Test 3: Top-k Enrichment ---
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (rf, ecoli_t10): 5/50 antibiotics in top-50 (enrichment = 2.92x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (rf, saureus_t10): 9/50 antibiotics in top-50 (enrichment = 5.25x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (rf, paeruginosa_t10): 2/50 antibiotics in top-50 (enrichment = 1.17x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (rf, mtb_t10): 8/50 antibiotics in top-50 (enrichment = 4.67x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (dmpnn, ecoli_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (dmpnn, saureus_t10): 0/50 antibiotics in top-50 (enrichment = 0.00x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (dmpnn, paeruginosa_t10): 0/50 antibiotics in top-50 (enrichment = 0.00x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (dmpnn, mtb_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (chemeleon_frozen, ecoli_t10): 4/50 antibiotics in top-50 (enrichment = 2.33x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (chemeleon_frozen, saureus_t10): 4/50 antibiotics in top-50 (enrichment = 2.33x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (chemeleon_frozen, paeruginosa_t10): 4/50 antibiotics in top-50 (enrichment = 2.33x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (chemeleon_frozen, mtb_t10): 3/50 antibiotics in top-50 (enrichment = 1.75x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (molformer, ecoli_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (molformer, saureus_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (molformer, paeruginosa_t10): 2/50 antibiotics in top-50 (enrichment = 1.17x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (molformer, mtb_t10): 5/50 antibiotics in top-50 (enrichment = 2.92x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (dmpnn_rdkit, ecoli_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (dmpnn_rdkit, saureus_t10): 0/50 antibiotics in top-50 (enrichment = 0.00x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (dmpnn_rdkit, paeruginosa_t10): 1/50 antibiotics in top-50 (enrichment = 0.58x)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 3 (dmpnn_rdkit, mtb_t10): 0/50 antibiotics in top-50 (enrichment = 0.00x)
+2026-04-05 09:05:32 | INFO  | phase4 | 
+--- Test 4: Pairwise Pipeline Agreement ---
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, ecoli_t5): rho=0.3585, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, ecoli_t10): rho=0.3569, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, ecoli_t20): rho=0.3716, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, saureus_t5): rho=0.4396, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, saureus_t10): rho=0.4628, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, saureus_t20): rho=0.4796, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, paeruginosa_t5): rho=0.2948, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, paeruginosa_t10): rho=0.2879, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, paeruginosa_t20): rho=0.2964, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, mtb_t5): rho=0.5019, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, mtb_t10): rho=0.5122, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn, mtb_t20): rho=0.5281, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, ecoli_t5): rho=0.3196, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, ecoli_t10): rho=0.3497, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, ecoli_t20): rho=0.3629, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, saureus_t5): rho=0.4502, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, saureus_t10): rho=0.4993, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, saureus_t20): rho=0.5157, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, paeruginosa_t5): rho=0.3751, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, paeruginosa_t10): rho=0.3786, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, paeruginosa_t20): rho=0.3866, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, mtb_t5): rho=0.4371, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, mtb_t10): rho=0.5002, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs dmpnn_rdkit, mtb_t20): rho=0.5437, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, ecoli_t5): rho=0.4013, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, ecoli_t10): rho=0.4085, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, ecoli_t20): rho=0.4060, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, saureus_t5): rho=0.4904, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, saureus_t10): rho=0.5247, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, saureus_t20): rho=0.5228, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, paeruginosa_t5): rho=0.3204, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, paeruginosa_t10): rho=0.3224, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, paeruginosa_t20): rho=0.3308, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, mtb_t5): rho=0.4995, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, mtb_t10): rho=0.5287, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs molformer, mtb_t20): rho=0.5403, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, ecoli_t5): rho=0.4012, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, ecoli_t10): rho=0.4038, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, ecoli_t20): rho=0.4259, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, saureus_t5): rho=0.4987, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, saureus_t10): rho=0.5115, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, saureus_t20): rho=0.5345, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, paeruginosa_t5): rho=0.4052, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, paeruginosa_t10): rho=0.4079, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, paeruginosa_t20): rho=0.4205, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, mtb_t5): rho=0.5288, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, mtb_t10): rho=0.5549, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (chemeleon_frozen vs rf, mtb_t20): rho=0.5938, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, ecoli_t5): rho=0.3367, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, ecoli_t10): rho=0.3590, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, ecoli_t20): rho=0.3874, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, saureus_t5): rho=0.3719, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, saureus_t10): rho=0.4064, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, saureus_t20): rho=0.4470, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, paeruginosa_t5): rho=0.1817, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, paeruginosa_t10): rho=0.1835, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, paeruginosa_t20): rho=0.2011, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, mtb_t5): rho=0.4017, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, mtb_t10): rho=0.4571, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs dmpnn_rdkit, mtb_t20): rho=0.4814, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, ecoli_t5): rho=0.3410, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, ecoli_t10): rho=0.3578, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, ecoli_t20): rho=0.3647, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, saureus_t5): rho=0.3883, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, saureus_t10): rho=0.4271, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, saureus_t20): rho=0.4438, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, paeruginosa_t5): rho=0.2908, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, paeruginosa_t10): rho=0.3005, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, paeruginosa_t20): rho=0.2985, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, mtb_t5): rho=0.4525, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, mtb_t10): rho=0.4823, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs molformer, mtb_t20): rho=0.4814, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs rf, ecoli_t5): rho=0.3015, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs rf, ecoli_t10): rho=0.3034, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs rf, ecoli_t20): rho=0.3197, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs rf, saureus_t5): rho=0.3738, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs rf, saureus_t10): rho=0.3938, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs rf, saureus_t20): rho=0.4170, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs rf, paeruginosa_t5): rho=0.1895, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs rf, paeruginosa_t10): rho=0.1835, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs rf, paeruginosa_t20): rho=0.1881, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs rf, mtb_t5): rho=0.5084, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs rf, mtb_t10): rho=0.5358, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn vs rf, mtb_t20): rho=0.5303, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, ecoli_t5): rho=0.4138, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, ecoli_t10): rho=0.4315, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, ecoli_t20): rho=0.4414, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, saureus_t5): rho=0.4436, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, saureus_t10): rho=0.5011, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, saureus_t20): rho=0.5208, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, paeruginosa_t5): rho=0.3148, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, paeruginosa_t10): rho=0.3216, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, paeruginosa_t20): rho=0.3252, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, mtb_t5): rho=0.4324, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, mtb_t10): rho=0.4855, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs molformer, mtb_t20): rho=0.5225, n=6739 (moderate agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, ecoli_t5): rho=0.3978, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, ecoli_t10): rho=0.3938, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, ecoli_t20): rho=0.4123, n=6739 (low agreement)
+2026-04-05 09:05:32 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, saureus_t5): rho=0.4688, n=6739 (low agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, saureus_t10): rho=0.4770, n=6739 (low agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, saureus_t20): rho=0.5079, n=6739 (moderate agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, paeruginosa_t5): rho=0.3554, n=6739 (low agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, paeruginosa_t10): rho=0.3496, n=6739 (low agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, paeruginosa_t20): rho=0.3617, n=6739 (low agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, mtb_t5): rho=0.5976, n=6739 (moderate agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, mtb_t10): rho=0.6232, n=6739 (moderate agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (dmpnn_rdkit vs rf, mtb_t20): rho=0.6432, n=6739 (moderate agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (molformer vs rf, ecoli_t5): rho=0.3922, n=6739 (low agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (molformer vs rf, ecoli_t10): rho=0.3940, n=6739 (low agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (molformer vs rf, ecoli_t20): rho=0.4096, n=6739 (low agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (molformer vs rf, saureus_t5): rho=0.4234, n=6739 (low agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (molformer vs rf, saureus_t10): rho=0.4453, n=6739 (low agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (molformer vs rf, saureus_t20): rho=0.4760, n=6739 (low agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (molformer vs rf, paeruginosa_t5): rho=0.2629, n=6739 (low agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (molformer vs rf, paeruginosa_t10): rho=0.2639, n=6739 (low agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (molformer vs rf, paeruginosa_t20): rho=0.2829, n=6739 (low agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (molformer vs rf, mtb_t5): rho=0.4865, n=6739 (low agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (molformer vs rf, mtb_t10): rho=0.5180, n=6739 (moderate agreement)
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 4 (molformer vs rf, mtb_t20): rho=0.5528, n=6739 (moderate agreement)
+2026-04-05 09:05:33 | INFO  | phase4 | 
+--- Test 5: Threshold Sensitivity ---
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (rf, ecoli_t5 vs ecoli_t10): rho=0.9755, top-50 overlap=43/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (rf, ecoli_t5 vs ecoli_t20): rho=0.9512, top-50 overlap=38/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (rf, ecoli_t10 vs ecoli_t20): rho=0.9759, top-50 overlap=38/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (rf, saureus_t5 vs saureus_t10): rho=0.9705, top-50 overlap=44/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (rf, saureus_t5 vs saureus_t20): rho=0.9422, top-50 overlap=39/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (rf, saureus_t10 vs saureus_t20): rho=0.9716, top-50 overlap=44/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (rf, paeruginosa_t5 vs paeruginosa_t10): rho=0.9765, top-50 overlap=46/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (rf, paeruginosa_t5 vs paeruginosa_t20): rho=0.9536, top-50 overlap=40/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (rf, paeruginosa_t10 vs paeruginosa_t20): rho=0.9782, top-50 overlap=40/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (rf, mtb_t5 vs mtb_t10): rho=0.9628, top-50 overlap=43/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (rf, mtb_t5 vs mtb_t20): rho=0.9357, top-50 overlap=33/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (rf, mtb_t10 vs mtb_t20): rho=0.9731, top-50 overlap=37/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn, ecoli_t5 vs ecoli_t10): rho=0.9823, top-50 overlap=41/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn, ecoli_t5 vs ecoli_t20): rho=0.9661, top-50 overlap=32/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn, ecoli_t10 vs ecoli_t20): rho=0.9770, top-50 overlap=29/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn, saureus_t5 vs saureus_t10): rho=0.9784, top-50 overlap=30/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn, saureus_t5 vs saureus_t20): rho=0.9534, top-50 overlap=15/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn, saureus_t10 vs saureus_t20): rho=0.9686, top-50 overlap=20/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn, paeruginosa_t5 vs paeruginosa_t10): rho=0.9825, top-50 overlap=42/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn, paeruginosa_t5 vs paeruginosa_t20): rho=0.9662, top-50 overlap=37/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn, paeruginosa_t10 vs paeruginosa_t20): rho=0.9786, top-50 overlap=33/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn, mtb_t5 vs mtb_t10): rho=0.9739, top-50 overlap=37/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn, mtb_t5 vs mtb_t20): rho=0.9406, top-50 overlap=20/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn, mtb_t10 vs mtb_t20): rho=0.9604, top-50 overlap=26/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (chemeleon_frozen, ecoli_t5 vs ecoli_t10): rho=0.9810, top-50 overlap=45/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (chemeleon_frozen, ecoli_t5 vs ecoli_t20): rho=0.9682, top-50 overlap=43/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (chemeleon_frozen, ecoli_t10 vs ecoli_t20): rho=0.9843, top-50 overlap=45/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (chemeleon_frozen, saureus_t5 vs saureus_t10): rho=0.9831, top-50 overlap=39/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (chemeleon_frozen, saureus_t5 vs saureus_t20): rho=0.9713, top-50 overlap=35/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (chemeleon_frozen, saureus_t10 vs saureus_t20): rho=0.9851, top-50 overlap=40/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (chemeleon_frozen, paeruginosa_t5 vs paeruginosa_t10): rho=0.9853, top-50 overlap=44/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (chemeleon_frozen, paeruginosa_t5 vs paeruginosa_t20): rho=0.9758, top-50 overlap=45/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (chemeleon_frozen, paeruginosa_t10 vs paeruginosa_t20): rho=0.9872, top-50 overlap=48/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (chemeleon_frozen, mtb_t5 vs mtb_t10): rho=0.9737, top-50 overlap=33/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (chemeleon_frozen, mtb_t5 vs mtb_t20): rho=0.9575, top-50 overlap=27/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (chemeleon_frozen, mtb_t10 vs mtb_t20): rho=0.9778, top-50 overlap=28/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (molformer, ecoli_t5 vs ecoli_t10): rho=0.9655, top-50 overlap=34/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (molformer, ecoli_t5 vs ecoli_t20): rho=0.9529, top-50 overlap=23/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (molformer, ecoli_t10 vs ecoli_t20): rho=0.9805, top-50 overlap=35/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (molformer, saureus_t5 vs saureus_t10): rho=0.9615, top-50 overlap=31/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (molformer, saureus_t5 vs saureus_t20): rho=0.9462, top-50 overlap=20/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (molformer, saureus_t10 vs saureus_t20): rho=0.9791, top-50 overlap=32/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (molformer, paeruginosa_t5 vs paeruginosa_t10): rho=0.9600, top-50 overlap=38/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (molformer, paeruginosa_t5 vs paeruginosa_t20): rho=0.9425, top-50 overlap=33/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (molformer, paeruginosa_t10 vs paeruginosa_t20): rho=0.9766, top-50 overlap=39/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (molformer, mtb_t5 vs mtb_t10): rho=0.9378, top-50 overlap=28/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (molformer, mtb_t5 vs mtb_t20): rho=0.9119, top-50 overlap=27/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (molformer, mtb_t10 vs mtb_t20): rho=0.9615, top-50 overlap=28/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, ecoli_t5 vs ecoli_t10): rho=0.9561, top-50 overlap=35/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, ecoli_t5 vs ecoli_t20): rho=0.9167, top-50 overlap=29/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, ecoli_t10 vs ecoli_t20): rho=0.9824, top-50 overlap=42/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, saureus_t5 vs saureus_t10): rho=0.9636, top-50 overlap=28/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, saureus_t5 vs saureus_t20): rho=0.9333, top-50 overlap=24/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, saureus_t10 vs saureus_t20): rho=0.9880, top-50 overlap=41/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, paeruginosa_t5 vs paeruginosa_t10): rho=0.9660, top-50 overlap=40/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, paeruginosa_t5 vs paeruginosa_t20): rho=0.9365, top-50 overlap=29/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, paeruginosa_t10 vs paeruginosa_t20): rho=0.9877, top-50 overlap=38/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, mtb_t5 vs mtb_t10): rho=0.9304, top-50 overlap=48/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, mtb_t5 vs mtb_t20): rho=0.8591, top-50 overlap=45/50
+2026-04-05 09:05:33 | INFO  | phase4 |   Test 5 (dmpnn_rdkit, mtb_t10 vs mtb_t20): rho=0.9682, top-50 overlap=44/50
+2026-04-05 09:05:33 | INFO  | phase4 | 
+Generating Phase 4 figures...
+2026-04-05 09:05:34 | INFO  | phase4 |   Figure: phase4_level1_diagnostic
+2026-04-05 09:05:35 | INFO  | phase4 |   Figure: phase4_test1_rf_ecoli_t5
+2026-04-05 09:05:35 | INFO  | phase4 |   Figure: phase4_test1_rf_ecoli_t10
+2026-04-05 09:05:35 | INFO  | phase4 |   Figure: phase4_test1_rf_ecoli_t20
+2026-04-05 09:05:36 | INFO  | phase4 |   Figure: phase4_test1_rf_saureus_t5
+2026-04-05 09:05:36 | INFO  | phase4 |   Figure: phase4_test1_rf_saureus_t10
+2026-04-05 09:05:37 | INFO  | phase4 |   Figure: phase4_test1_rf_saureus_t20
+2026-04-05 09:05:37 | INFO  | phase4 |   Figure: phase4_test1_rf_paeruginosa_t5
+2026-04-05 09:05:38 | INFO  | phase4 |   Figure: phase4_test1_rf_paeruginosa_t10
+2026-04-05 09:05:38 | INFO  | phase4 |   Figure: phase4_test1_rf_paeruginosa_t20
+2026-04-05 09:05:39 | INFO  | phase4 |   Figure: phase4_test1_rf_mtb_t5
+2026-04-05 09:05:39 | INFO  | phase4 |   Figure: phase4_test1_rf_mtb_t10
+2026-04-05 09:05:39 | INFO  | phase4 |   Figure: phase4_test1_rf_mtb_t20
+2026-04-05 09:05:40 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_ecoli_t5
+2026-04-05 09:05:40 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_ecoli_t10
+2026-04-05 09:05:41 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_ecoli_t20
+2026-04-05 09:05:41 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_saureus_t5
+2026-04-05 09:05:42 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_saureus_t10
+2026-04-05 09:05:42 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_saureus_t20
+2026-04-05 09:05:43 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_paeruginosa_t5
+2026-04-05 09:05:43 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_paeruginosa_t10
+2026-04-05 09:05:43 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_paeruginosa_t20
+2026-04-05 09:05:44 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_mtb_t5
+2026-04-05 09:05:44 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_mtb_t10
+2026-04-05 09:05:45 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_mtb_t20
+2026-04-05 09:05:45 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_ecoli_t5
+2026-04-05 09:05:46 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_ecoli_t10
+2026-04-05 09:05:46 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_ecoli_t20
+2026-04-05 09:05:47 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_saureus_t5
+2026-04-05 09:05:47 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_saureus_t10
+2026-04-05 09:05:47 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_saureus_t20
+2026-04-05 09:05:48 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_paeruginosa_t5
+2026-04-05 09:05:48 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_paeruginosa_t10
+2026-04-05 09:05:49 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_paeruginosa_t20
+2026-04-05 09:05:49 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_mtb_t5
+2026-04-05 09:05:50 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_mtb_t10
+2026-04-05 09:05:50 | INFO  | phase4 |   Figure: phase4_test1_chemeleon_frozen_mtb_t20
+2026-04-05 09:05:51 | INFO  | phase4 |   Figure: phase4_test1_molformer_ecoli_t5
+2026-04-05 09:05:51 | INFO  | phase4 |   Figure: phase4_test1_molformer_ecoli_t10
+2026-04-05 09:05:52 | INFO  | phase4 |   Figure: phase4_test1_molformer_ecoli_t20
+2026-04-05 09:05:52 | INFO  | phase4 |   Figure: phase4_test1_molformer_saureus_t5
+2026-04-05 09:05:52 | INFO  | phase4 |   Figure: phase4_test1_molformer_saureus_t10
+2026-04-05 09:05:53 | INFO  | phase4 |   Figure: phase4_test1_molformer_saureus_t20
+2026-04-05 09:05:53 | INFO  | phase4 |   Figure: phase4_test1_molformer_paeruginosa_t5
+2026-04-05 09:05:54 | INFO  | phase4 |   Figure: phase4_test1_molformer_paeruginosa_t10
+2026-04-05 09:05:54 | INFO  | phase4 |   Figure: phase4_test1_molformer_paeruginosa_t20
+2026-04-05 09:05:55 | INFO  | phase4 |   Figure: phase4_test1_molformer_mtb_t5
+2026-04-05 09:05:55 | INFO  | phase4 |   Figure: phase4_test1_molformer_mtb_t10
+2026-04-05 09:05:55 | INFO  | phase4 |   Figure: phase4_test1_molformer_mtb_t20
+2026-04-05 09:05:56 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_ecoli_t5
+2026-04-05 09:05:56 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_ecoli_t10
+2026-04-05 09:05:57 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_ecoli_t20
+2026-04-05 09:05:57 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_saureus_t5
+2026-04-05 09:05:58 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_saureus_t10
+2026-04-05 09:05:58 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_saureus_t20
+2026-04-05 09:05:59 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_paeruginosa_t5
+2026-04-05 09:05:59 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_paeruginosa_t10
+2026-04-05 09:06:00 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_paeruginosa_t20
+2026-04-05 09:06:00 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_mtb_t5
+2026-04-05 09:06:00 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_mtb_t10
+2026-04-05 09:06:01 | INFO  | phase4 |   Figure: phase4_test1_dmpnn_rdkit_mtb_t20
+2026-04-05 09:06:02 | INFO  | phase4 |   Figure: phase4_scatter_rf_ecoli_t10
+2026-04-05 09:06:03 | INFO  | phase4 |   Figure: phase4_scatter_dmpnn_ecoli_t10
+2026-04-05 09:06:04 | INFO  | phase4 |   Figure: phase4_scatter_chemeleon_frozen_ecoli_t10
+2026-04-05 09:06:04 | INFO  | phase4 |   Figure: phase4_scatter_molformer_ecoli_t10
+2026-04-05 09:06:05 | INFO  | phase4 |   Figure: phase4_scatter_dmpnn_rdkit_ecoli_t10
+2026-04-05 09:06:06 | INFO  | phase4 |   Figure: phase4_test3_enrichment
+2026-04-05 09:06:06 | INFO  | phase4 | 
+======================================================================
+2026-04-05 09:06:06 | INFO  | phase4 |  PHASE 4 COMPLETE: EVALUATION SUMMARY
+2026-04-05 09:06:06 | INFO  | phase4 | ======================================================================
+2026-04-05 09:06:06 | INFO  | phase4 |   Active pipelines: rf, dmpnn, chemeleon_frozen, molformer, dmpnn_rdkit
+2026-04-05 09:06:06 | INFO  | phase4 |   Level 1 Diagnostic: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/cv_metrics_diagnostic.csv
+2026-04-05 09:06:06 | INFO  | phase4 |   Test 1 (Rank Separation):  60 tests with p-values
+2026-04-05 09:06:06 | INFO  | phase4 |   Test 2 (Selectivity AUC):  60 computed
+2026-04-05 09:06:06 | INFO  | phase4 |   Test 3 (Top-k Enrichment): 20 computed
+2026-04-05 09:06:06 | INFO  | phase4 |   Test 4 (Pairwise Corr.):   10 pipeline pairs
+2026-04-05 09:06:06 | INFO  | phase4 |   Test 5 (Threshold Sens.):  20 computed
+2026-04-05 09:06:06 | INFO  | phase4 | 
+  Figures in: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures
+2026-04-05 09:06:06 | INFO  | phase4 |   All results in: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results
+2026-04-05 09:06:06 | INFO  | phase4 | ======================================================================
+2026-04-05 09:06:06 | INFO  | phase4 | Checkpoint saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/checkpoints/phase4_master.json
+2026-04-05 09:06:06 | INFO  | phase4 | ============================================================
+2026-04-05 09:06:06 | INFO  | phase4 |  COMPLETED: Phase 4
+2026-04-05 09:06:06 | INFO  | phase4 |  Elapsed: 0m 37.5s
+2026-04-05 09:06:06 | INFO  | phase4 | ============================================================

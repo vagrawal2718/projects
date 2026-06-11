@@ -1,0 +1,20 @@
+\begin{table}[ht]
+\centering
+\caption{Cross-validation performance across all models and tasks. Values are mean $\pm$ std over 5 scaffold CV folds.}
+\label{tab:model_comparison}
+\small
+\begin{tabular}{lcccccccccc}
+\toprule
+Task & \multicolumn{2}{c}{RF + Morgan FP} & \multicolumn{2}{c}{D-MPNN (Chemprop)} & \multicolumn{2}{c}{CheMeleon (Frozen Enc.)} & \multicolumn{2}{c}{MoLFormer-XL (Transformer)} & \multicolumn{2}{c}{D-MPNN+RDKit (Stokes)} \\
+ & ROC-AUC & MCC & ROC-AUC & MCC & ROC-AUC & MCC & ROC-AUC & MCC & ROC-AUC & MCC \\
+\midrule
+E. coli & 0.876$\pm$0.011 & 0.586$\pm$0.029 & 0.853$\pm$0.012 & 0.549$\pm$0.032 & 0.833$\pm$0.011 & 0.523$\pm$0.031 & 0.838$\pm$0.018 & 0.531$\pm$0.029 & 0.840$\pm$0.000 & 0.536$\pm$0.000 \\
+S. aureus & 0.871$\pm$0.007 & 0.578$\pm$0.011 & 0.854$\pm$0.013 & 0.550$\pm$0.019 & 0.831$\pm$0.010 & 0.515$\pm$0.021 & 0.835$\pm$0.015 & 0.515$\pm$0.026 & 0.838$\pm$0.000 & 0.523$\pm$0.000 \\
+P. aeruginosa & 0.861$\pm$0.013 & 0.548$\pm$0.034 & 0.838$\pm$0.013 & 0.518$\pm$0.020 & 0.820$\pm$0.018 & 0.494$\pm$0.033 & 0.828$\pm$0.011 & 0.506$\pm$0.017 & 0.824$\pm$0.000 & 0.481$\pm$0.000 \\
+M. tuberculosis & 0.811$\pm$0.018 & 0.462$\pm$0.040 & 0.760$\pm$0.023 & 0.396$\pm$0.035 & 0.762$\pm$0.013 & 0.394$\pm$0.040 & 0.764$\pm$0.018 & 0.384$\pm$0.024 & 0.739$\pm$0.000 & 0.350$\pm$0.000 \\
+Gut Harm (t=10) & 0.823$\pm$0.090 & 0.567$\pm$0.148 & 0.841$\pm$0.039 & 0.491$\pm$0.196 & 0.812$\pm$0.071 & 0.531$\pm$0.143 & 0.822$\pm$0.064 & 0.503$\pm$0.114 & 0.856$\pm$0.000 & 0.567$\pm$0.000 \\
+Gut Harm (t=15) & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+Gut Harm (t=20) & 0.880$\pm$0.050 & 0.677$\pm$0.126 & 0.878$\pm$0.072 & 0.617$\pm$0.129 & 0.858$\pm$0.076 & 0.578$\pm$0.203 & 0.862$\pm$0.067 & 0.537$\pm$0.161 & 0.895$\pm$0.000 & 0.586$\pm$0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

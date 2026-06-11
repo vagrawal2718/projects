@@ -1,0 +1,24 @@
+2026-03-21 19:07:06 | INFO  | interim_report | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity/logs/interim_report.log
+2026-03-21 19:07:06 | INFO  | interim_report | ============================================================
+2026-03-21 19:07:06 | INFO  | interim_report |   Interim Progress Report
+2026-03-21 19:07:06 | INFO  | interim_report | ============================================================
+2026-03-21 19:07:06 | INFO  | interim_report |   Loaded: rf (7 tasks)
+2026-03-21 19:07:06 | INFO  | interim_report |   Loaded: dmpnn (7 tasks)
+2026-03-21 19:07:06 | INFO  | interim_report |   Loaded: chemeleon_frozen (7 tasks)
+2026-03-21 19:07:06 | INFO  | interim_report |   CSV: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/interim_comparison.csv
+2026-03-21 19:07:06 | INFO  | interim_report |   Figure: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/interim_comparison.png
+2026-03-21 19:07:06 | INFO  | interim_report |   Report: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/interim_summary.md
+2026-03-21 19:07:06 | INFO  | interim_report | 
+  Done. 3 models, 7 tasks.
+2026-03-21 19:07:09 | INFO  | interim_report | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity/logs/interim_report.log
+2026-03-21 19:07:09 | INFO  | interim_report | ============================================================
+2026-03-21 19:07:09 | INFO  | interim_report |   Interim Progress Report
+2026-03-21 19:07:09 | INFO  | interim_report | ============================================================
+2026-03-21 19:07:09 | INFO  | interim_report |   Loaded: rf (7 tasks)
+2026-03-21 19:07:09 | INFO  | interim_report |   Loaded: dmpnn (7 tasks)
+2026-03-21 19:07:09 | INFO  | interim_report |   Loaded: chemeleon_frozen (7 tasks)
+2026-03-21 19:07:09 | INFO  | interim_report |   CSV: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/interim_comparison.csv
+2026-03-21 19:07:10 | INFO  | interim_report |   Figure: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/interim_comparison.png
+2026-03-21 19:07:10 | INFO  | interim_report |   Report: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/interim_summary.md
+2026-03-21 19:07:10 | INFO  | interim_report | 
+  Done. 3 models, 7 tasks.

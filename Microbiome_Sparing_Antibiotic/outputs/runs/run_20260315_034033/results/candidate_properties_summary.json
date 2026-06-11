@@ -1,0 +1,287 @@
+{
+  "all": {
+    "n_total": 890,
+    "n_known_antibiotic": 58,
+    "n_novel": 832,
+    "pct_antibiotic": 6.52,
+    "lipinski_pass_count": 694,
+    "lipinski_pass_pct": 77.98,
+    "MW": {
+      "mean": 470.13,
+      "median": 412.535,
+      "std": 335.832,
+      "min": 78.14,
+      "max": 4186.64
+    },
+    "LogP": {
+      "mean": 1.997,
+      "median": 2.515,
+      "std": 3.545,
+      "min": -20.604,
+      "max": 17.854
+    },
+    "TPSA": {
+      "mean": 127.156,
+      "median": 95.37,
+      "std": 145.423,
+      "min": 0.0,
+      "max": 1749.75
+    },
+    "HBD": {
+      "mean": 3.172,
+      "median": 2.0,
+      "std": 5.073,
+      "min": 0.0,
+      "max": 58.0
+    },
+    "HBA": {
+      "mean": 6.778,
+      "median": 5.0,
+      "std": 5.964,
+      "min": 0.0,
+      "max": 60.0
+    },
+    "RotBonds": {
+      "mean": 6.757,
+      "median": 5.0,
+      "std": 10.154,
+      "min": 0.0,
+      "max": 134.0
+    },
+    "Rings": {
+      "mean": 3.483,
+      "median": 3.0,
+      "std": 2.329,
+      "min": 0.0,
+      "max": 30.0
+    }
+  },
+  "tier_2plus": {
+    "n_total": 235,
+    "n_known_antibiotic": 27,
+    "n_novel": 208,
+    "pct_antibiotic": 11.49,
+    "lipinski_pass_count": 157,
+    "lipinski_pass_pct": 66.81,
+    "MW": {
+      "mean": 538.918,
+      "median": 428.44,
+      "std": 444.814,
+      "min": 116.12,
+      "max": 4186.64
+    },
+    "LogP": {
+      "mean": 0.816,
+      "median": 1.513,
+      "std": 4.303,
+      "min": -20.604,
+      "max": 7.744
+    },
+    "TPSA": {
+      "mean": 170.834,
+      "median": 110.19,
+      "std": 199.254,
+      "min": 0.0,
+      "max": 1749.75
+    },
+    "HBD": {
+      "mean": 4.451,
+      "median": 2.0,
+      "std": 6.944,
+      "min": 0.0,
+      "max": 58.0
+    },
+    "HBA": {
+      "mean": 8.804,
+      "median": 7.0,
+      "std": 7.898,
+      "min": 0.0,
+      "max": 60.0
+    },
+    "RotBonds": {
+      "mean": 7.932,
+      "median": 5.0,
+      "std": 13.634,
+      "min": 0.0,
+      "max": 134.0
+    },
+    "Rings": {
+      "mean": 3.745,
+      "median": 4.0,
+      "std": 2.336,
+      "min": 0.0,
+      "max": 16.0
+    }
+  },
+  "tier_3plus": {
+    "n_total": 52,
+    "n_known_antibiotic": 9,
+    "n_novel": 43,
+    "pct_antibiotic": 17.31,
+    "lipinski_pass_count": 31,
+    "lipinski_pass_pct": 59.62,
+    "MW": {
+      "mean": 569.992,
+      "median": 439.46,
+      "std": 551.233,
+      "min": 196.14,
+      "max": 3751.26
+    },
+    "LogP": {
+      "mean": -0.312,
+      "median": -0.699,
+      "std": 4.024,
+      "min": -10.162,
+      "max": 6.763
+    },
+    "TPSA": {
+      "mean": 212.256,
+      "median": 132.71,
+      "std": 235.297,
+      "min": 0.0,
+      "max": 1513.76
+    },
+    "HBD": {
+      "mean": 5.981,
+      "median": 3.0,
+      "std": 8.433,
+      "min": 0.0,
+      "max": 54.0
+    },
+    "HBA": {
+      "mean": 10.077,
+      "median": 7.5,
+      "std": 8.063,
+      "min": 0.0,
+      "max": 49.0
+    },
+    "RotBonds": {
+      "mean": 9.981,
+      "median": 5.0,
+      "std": 18.857,
+      "min": 0.0,
+      "max": 130.0
+    },
+    "Rings": {
+      "mean": 3.558,
+      "median": 3.0,
+      "std": 2.033,
+      "min": 0.0,
+      "max": 9.0
+    }
+  },
+  "tier_4plus": {
+    "n_total": 12,
+    "n_known_antibiotic": 3,
+    "n_novel": 9,
+    "pct_antibiotic": 25.0,
+    "lipinski_pass_count": 8,
+    "lipinski_pass_pct": 66.67,
+    "MW": {
+      "mean": 398.263,
+      "median": 411.48,
+      "std": 81.209,
+      "min": 257.48,
+      "max": 517.78
+    },
+    "LogP": {
+      "mean": 1.203,
+      "median": 1.914,
+      "std": 3.389,
+      "min": -3.851,
+      "max": 5.251
+    },
+    "TPSA": {
+      "mean": 110.257,
+      "median": 89.61,
+      "std": 65.621,
+      "min": 24.06,
+      "max": 213.72
+    },
+    "HBD": {
+      "mean": 3.083,
+      "median": 2.0,
+      "std": 3.118,
+      "min": 0.0,
+      "max": 8.0
+    },
+    "HBA": {
+      "mean": 7.083,
+      "median": 7.0,
+      "std": 3.579,
+      "min": 2.0,
+      "max": 12.0
+    },
+    "RotBonds": {
+      "mean": 5.167,
+      "median": 5.0,
+      "std": 2.209,
+      "min": 1.0,
+      "max": 9.0
+    },
+    "Rings": {
+      "mean": 3.833,
+      "median": 4.0,
+      "std": 1.115,
+      "min": 2.0,
+      "max": 6.0
+    }
+  },
+  "tier_5": {
+    "n_total": 3,
+    "n_known_antibiotic": 1,
+    "n_novel": 2,
+    "pct_antibiotic": 33.33,
+    "lipinski_pass_count": 2,
+    "lipinski_pass_pct": 66.67,
+    "MW": {
+      "mean": 420.88,
+      "median": 375.43,
+      "std": 83.971,
+      "min": 369.43,
+      "max": 517.78
+    },
+    "LogP": {
+      "mean": 3.895,
+      "median": 3.693,
+      "std": 1.267,
+      "min": 2.741,
+      "max": 5.251
+    },
+    "TPSA": {
+      "mean": 86.607,
+      "median": 75.44,
+      "std": 27.132,
+      "min": 66.84,
+      "max": 117.54
+    },
+    "HBD": {
+      "mean": 1.667,
+      "median": 1.0,
+      "std": 1.155,
+      "min": 1.0,
+      "max": 3.0
+    },
+    "HBA": {
+      "mean": 6.0,
+      "median": 6.0,
+      "std": 2.0,
+      "min": 4.0,
+      "max": 8.0
+    },
+    "RotBonds": {
+      "mean": 5.0,
+      "median": 5.0,
+      "std": 1.0,
+      "min": 4.0,
+      "max": 6.0
+    },
+    "Rings": {
+      "mean": 4.0,
+      "median": 4.0,
+      "std": 1.0,
+      "min": 3.0,
+      "max": 5.0
+    }
+  }
+}

@@ -1,0 +1,534 @@
+{
+  "ecoli": {
+    "n_compounds": 28284,
+    "n_active": 9249,
+    "active_pct": 32.7,
+    "source": "ChEMBL 34 MIC"
+  },
+  "saureus": {
+    "n_compounds": 43853,
+    "n_active": 19267,
+    "active_pct": 43.9,
+    "source": "ChEMBL 34 MIC"
+  },
+  "paeruginosa": {
+    "n_compounds": 17783,
+    "n_active": 4657,
+    "active_pct": 26.2,
+    "source": "ChEMBL 34 MIC"
+  },
+  "mtb": {
+    "n_compounds": 18705,
+    "n_active": 8129,
+    "active_pct": 43.5,
+    "source": "ChEMBL 34 MIC"
+  },
+  "maier": {
+    "n_compounds": 1177,
+    "n_strains": 40,
+    "n_species": 38,
+    "harm_t5": 233,
+    "harm_t10": 179,
+    "harm_t20": 127,
+    "n_hit_mean": 4.7,
+    "n_hit_median": 0,
+    "n_hit_max": 40,
+    "drug_classes": {
+      "human-targeted drugs": 819,
+      "antibiotics": 142,
+      "non-drugs": 87,
+      "antifungals": 27,
+      "antivirals": 22,
+      "antiprotozoals": 20,
+      "antiparasitics": 18,
+      "vet: anti-infectives": 12,
+      "antiseptics": 12,
+      "vet: antiparasitics": 11,
+      "vet: animal-targeted drugs": 7
+    },
+    "source": "Maier et al., Nature 2018/2021"
+  },
+  "hub": {
+    "n_compounds": 6739,
+    "clinical_phases": {
+      "Launched": 2393,
+      "Preclinical": 2297,
+      "Phase 2": 810,
+      "Phase 1": 565,
+      "Phase 3": 450,
+      "Withdrawn": 95,
+      "Phase 1/Phase 2": 85,
+      "Phase 2/Phase 3": 44
+    },
+    "n_launched": 2393,
+    "top_moa": {
+      "adrenergic receptor antagonist": 102,
+      "cyclooxygenase inhibitor": 102,
+      "bacterial cell wall synthesis inhibitor": 96,
+      "adrenergic receptor agonist": 85,
+      "acetylcholine receptor antagonist": 79,
+      "glutamate receptor antagonist": 77,
+      "histamine receptor antagonist": 75,
+      "serotonin receptor antagonist": 75,
+      "phosphodiesterase inhibitor": 74,
+      "dopamine receptor antagonist": 71
+    },
+    "source": "Broad Institute Drug Repurposing Hub"
+  },
+  "molecular_properties": {
+    "ecoli": {
+      "MW": {
+        "mean": 539.51,
+        "median": 436.97,
+        "std": 393.23,
+        "min": 76.12,
+        "max": 5612.56
+      },
+      "LogP": {
+        "mean": 3.04,
+        "median": 3.34,
+        "std": 3.26,
+        "min": -21.11,
+        "max": 31.66
+      },
+      "TPSA": {
+        "mean": 138.19,
+        "median": 94.08,
+        "std": 166.17,
+        "min": 0.0,
+        "max": 2143.24
+      },
+      "HBD": {
+        "mean": 3.54,
+        "median": 2.0,
+        "std": 6.34,
+        "min": 0.0,
+        "max": 72.0
+      },
+      "HBA": {
+        "mean": 7.15,
+        "median": 6.0,
+        "std": 5.89,
+        "min": 0.0,
+        "max": 91.0
+      },
+      "RotBonds": {
+        "mean": 9.3,
+        "median": 6.0,
+        "std": 13.69,
+        "min": 0.0,
+        "max": 154.0
+      }
+    },
+    "saureus": {
+      "MW": {
+        "mean": 561.25,
+        "median": 443.44,
+        "std": 396.51,
+        "min": 115.09,
+        "max": 4233.29
+      },
+      "LogP": {
+        "mean": 3.48,
+        "median": 3.61,
+        "std": 2.87,
+        "min": -19.67,
+        "max": 18.44
+      },
+      "TPSA": {
+        "mean": 137.09,
+        "median": 93.06,
+        "std": 156.66,
+        "min": 0.0,
+        "max": 2131.91
+      },
+      "HBD": {
+        "mean": 3.4,
+        "median": 2.0,
+        "std": 5.83,
+        "min": 0.0,
+        "max": 91.0
+      },
+      "HBA": {
+        "mean": 7.48,
+        "median": 6.0,
+        "std": 6.35,
+        "min": 0.0,
+        "max": 54.0
+      },
+      "RotBonds": {
+        "mean": 8.93,
+        "median": 6.0,
+        "std": 11.87,
+        "min": 0.0,
+        "max": 155.0
+      }
+    },
+    "paeruginosa": {
+      "MW": {
+        "mean": 555.56,
+        "median": 446.37,
+        "std": 395.93,
+        "min": 32.07,
+        "max": 4151.41
+      },
+      "LogP": {
+        "mean": 3.08,
+        "median": 3.26,
+        "std": 3.2,
+        "min": -17.34,
+        "max": 23.08
+      },
+      "TPSA": {
+        "mean": 142.59,
+        "median": 95.72,
+        "std": 163.75,
+        "min": 0.0,
+        "max": 1733.71
+      },
+      "HBD": {
+        "mean": 3.59,
+        "median": 2.0,
+        "std": 6.36,
+        "min": 0.0,
+        "max": 66.0
+      },
+      "HBA": {
+        "mean": 7.35,
+        "median": 6.0,
+        "std": 5.7,
+        "min": 0.0,
+        "max": 72.0
+      },
+      "RotBonds": {
+        "mean": 9.96,
+        "median": 6.0,
+        "std": 13.99,
+        "min": 0.0,
+        "max": 152.0
+      }
+    },
+    "mtb": {
+      "MW": {
+        "mean": 411.14,
+        "median": 391.41,
+        "std": 154.67,
+        "min": 74.08,
+        "max": 2841.94
+      },
+      "LogP": {
+        "mean": 3.85,
+        "median": 3.82,
+        "std": 1.95,
+        "min": -11.87,
+        "max": 14.77
+      },
+      "TPSA": {
+        "mean": 81.84,
+        "median": 74.45,
+        "std": 56.87,
+        "min": 0.0,
+        "max": 1023.93
+      },
+      "HBD": {
+        "mean": 1.32,
+        "median": 1.0,
+        "std": 1.94,
+        "min": 0.0,
+        "max": 34.0
+      },
+      "HBA": {
+        "mean": 5.19,
+        "median": 5.0,
+        "std": 2.75,
+        "min": 0.0,
+        "max": 41.0
+      },
+      "RotBonds": {
+        "mean": 5.42,
+        "median": 5.0,
+        "std": 4.55,
+        "min": 0.0,
+        "max": 87.0
+      }
+    },
+    "maier": {
+      "MW": {
+        "mean": 342.78,
+        "median": 312.41,
+        "std": 162.16,
+        "min": 82.11,
+        "max": 1664.92
+      },
+      "LogP": {
+        "mean": 2.29,
+        "median": 2.48,
+        "std": 2.23,
+        "min": -8.9,
+        "max": 9.91
+      },
+      "TPSA": {
+        "mean": 78.41,
+        "median": 65.78,
+        "std": 62.29,
+        "min": 0.0,
+        "max": 562.74
+      },
+      "HBD": {
+        "mean": 1.88,
+        "median": 1.0,
+        "std": 2.16,
+        "min": 0.0,
+        "max": 19.0
+      },
+      "HBA": {
+        "mean": 4.57,
+        "median": 4.0,
+        "std": 3.24,
+        "min": 0.0,
+        "max": 31.0
+      },
+      "RotBonds": {
+        "mean": 4.69,
+        "median": 4.0,
+        "std": 3.64,
+        "min": 0.0,
+        "max": 32.0
+      }
+    },
+    "hub": {
+      "MW": {
+        "mean": 379.64,
+        "median": 357.39,
+        "std": 200.75,
+        "min": 47.06,
+        "max": 4186.64
+      },
+      "LogP": {
+        "mean": 2.77,
+        "median": 3.04,
+        "std": 2.53,
+        "min": -20.6,
+        "max": 17.85
+      },
+      "TPSA": {
+        "mean": 87.4,
+        "median": 74.6,
+        "std": 79.58,
+        "min": 0.0,
+        "max": 1749.75
+      },
+      "HBD": {
+        "mean": 2.1,
+        "median": 2.0,
+        "std": 2.81,
+        "min": 0.0,
+        "max": 58.0
+      },
+      "HBA": {
+        "mean": 4.92,
+        "median": 4.0,
+        "std": 3.62,
+        "min": 0.0,
+        "max": 60.0
+      },
+      "RotBonds": {
+        "mean": 5.45,
+        "median": 4.0,
+        "std": 5.47,
+        "min": 0.0,
+        "max": 134.0
+      }
+    }
+  },
+  "pathogen_gut_coactivity": {
+    "ecoli": {
+      "n_overlap": 46,
+      "n_pathogen_active": 25,
+      "pct_pathogen_active": 54.35,
+      "harm_t5": {
+        "n_gut_harmful": 27,
+        "contingency": {
+          "inactive_safe": 15,
+          "inactive_harmful": 6,
+          "active_safe_selective": 4,
+          "active_harmful": 21
+        },
+        "chi2": 12.267,
+        "p_value": 0.0004609524126154833,
+        "odds_ratio": 13.125,
+        "fisher_p": 0.00023409149402800881,
+        "pct_actives_selective": 16.0
+      },
+      "harm_t10": {
+        "n_gut_harmful": 27,
+        "contingency": {
+          "inactive_safe": 15,
+          "inactive_harmful": 6,
+          "active_safe_selective": 4,
+          "active_harmful": 21
+        },
+        "chi2": 12.267,
+        "p_value": 0.0004609524126154833,
+        "odds_ratio": 13.125,
+        "fisher_p": 0.00023409149402800881,
+        "pct_actives_selective": 16.0
+      },
+      "harm_t20": {
+        "n_gut_harmful": 23,
+        "contingency": {
+          "inactive_safe": 16,
+          "inactive_harmful": 5,
+          "active_safe_selective": 7,
+          "active_harmful": 18
+        },
+        "chi2": 8.762,
+        "p_value": 0.003075876397694014,
+        "odds_ratio": 8.229,
+        "fisher_p": 0.00265140405284777,
+        "pct_actives_selective": 28.0
+      }
+    },
+    "saureus": {
+      "n_overlap": 59,
+      "n_pathogen_active": 29,
+      "pct_pathogen_active": 49.15,
+      "harm_t5": {
+        "n_gut_harmful": 35,
+        "contingency": {
+          "inactive_safe": 18,
+          "inactive_harmful": 12,
+          "active_safe_selective": 6,
+          "active_harmful": 23
+        },
+        "chi2": 7.884,
+        "p_value": 0.004987059302938943,
+        "odds_ratio": 5.75,
+        "fisher_p": 0.003329949289659802,
+        "pct_actives_selective": 20.69
+      },
+      "harm_t10": {
+        "n_gut_harmful": 33,
+        "contingency": {
+          "inactive_safe": 20,
+          "inactive_harmful": 10,
+          "active_safe_selective": 6,
+          "active_harmful": 23
+        },
+        "chi2": 10.85,
+        "p_value": 0.0009880621047078416,
+        "odds_ratio": 7.667,
+        "fisher_p": 0.000573726156541731,
+        "pct_actives_selective": 20.69
+      },
+      "harm_t20": {
+        "n_gut_harmful": 27,
+        "contingency": {
+          "inactive_safe": 23,
+          "inactive_harmful": 7,
+          "active_safe_selective": 9,
+          "active_harmful": 20
+        },
+        "chi2": 10.601,
+        "p_value": 0.0011304610813923132,
+        "odds_ratio": 7.302,
+        "fisher_p": 0.0006345701992330211,
+        "pct_actives_selective": 31.03
+      }
+    },
+    "paeruginosa": {
+      "n_overlap": 36,
+      "n_pathogen_active": 19,
+      "pct_pathogen_active": 52.78,
+      "harm_t5": {
+        "n_gut_harmful": 22,
+        "contingency": {
+          "inactive_safe": 11,
+          "inactive_harmful": 6,
+          "active_safe_selective": 3,
+          "active_harmful": 16
+        },
+        "chi2": 7.093,
+        "p_value": 0.00774029684291862,
+        "odds_ratio": 9.778,
+        "fisher_p": 0.005379460807230793,
+        "pct_actives_selective": 15.79
+      },
+      "harm_t10": {
+        "n_gut_harmful": 22,
+        "contingency": {
+          "inactive_safe": 11,
+          "inactive_harmful": 6,
+          "active_safe_selective": 3,
+          "active_harmful": 16
+        },
+        "chi2": 7.093,
+        "p_value": 0.00774029684291862,
+        "odds_ratio": 9.778,
+        "fisher_p": 0.005379460807230793,
+        "pct_actives_selective": 15.79
+      },
+      "harm_t20": {
+        "n_gut_harmful": 19,
+        "contingency": {
+          "inactive_safe": 12,
+          "inactive_harmful": 5,
+          "active_safe_selective": 5,
+          "active_harmful": 14
+        },
+        "chi2": 5.392,
+        "p_value": 0.020233935880390436,
+        "odds_ratio": 6.72,
+        "fisher_p": 0.018015293428554537,
+        "pct_actives_selective": 26.32
+      }
+    },
+    "mtb": {
+      "n_overlap": 57,
+      "n_pathogen_active": 15,
+      "pct_pathogen_active": 26.32,
+      "harm_t5": {
+        "n_gut_harmful": 27,
+        "contingency": {
+          "inactive_safe": 23,
+          "inactive_harmful": 19,
+          "active_safe_selective": 7,
+          "active_harmful": 8
+        },
+        "chi2": 0.057,
+        "p_value": 0.8120382098927796,
+        "odds_ratio": 1.383,
+        "fisher_p": 0.7643676962644861,
+        "pct_actives_selective": 46.67
+      },
+      "harm_t10": {
+        "n_gut_harmful": 24,
+        "contingency": {
+          "inactive_safe": 26,
+          "inactive_harmful": 16,
+          "active_safe_selective": 7,
+          "active_harmful": 8
+        },
+        "chi2": 0.52,
+        "p_value": 0.47063055008903754,
+        "odds_ratio": 1.857,
+        "fisher_p": 0.3684574543820005,
+        "pct_actives_selective": 46.67
+      },
+      "harm_t20": {
+        "n_gut_harmful": 18,
+        "contingency": {
+          "inactive_safe": 31,
+          "inactive_harmful": 11,
+          "active_safe_selective": 8,
+          "active_harmful": 7
+        },
+        "chi2": 1.302,
+        "p_value": 0.2538928668532301,
+        "odds_ratio": 2.466,
+        "fisher_p": 0.19752397580290834,
+        "pct_actives_selective": 53.33
+      }
+    }
+  }
+}

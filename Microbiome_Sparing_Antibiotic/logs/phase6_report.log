@@ -1,0 +1,417 @@
+2026-03-22 00:40:58 | INFO  | phase6_report | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity/logs/phase6_report.log
+2026-03-22 00:40:58 | INFO  | phase6_report | ======================================================================
+2026-03-22 00:40:58 | INFO  | phase6_report |   CANDIDATE REPORT GENERATION (Scientific + Interactive HTML)
+2026-03-22 00:40:58 | INFO  | phase6_report | ======================================================================
+2026-03-22 00:40:59 | INFO  | phase6_report |   Loaded 24 screening lists
+2026-03-22 00:40:59 | INFO  | phase6_report |   Total unique compounds in consensus: 395
+2026-03-22 00:40:59 | INFO  | phase6_report |   Known antibiotics rediscovered: 36
+2026-03-22 00:40:59 | INFO  | phase6_report |   Novel repurposing candidates: 359
+2026-03-22 00:40:59 | INFO  | phase6_report |   Multi-model consensus (3+): 0
+2026-03-22 00:40:59 | INFO  | phase6_report |   Multi-model consensus (4/4): 0
+2026-03-22 00:40:59 | INFO  | phase6_report | 
+  Generating interactive HTML visualizations...
+2026-03-22 00:41:00 | INFO  | phase6_report |     Benchmark ecoli/dmpnn: known=283 (median S=0.010), novel=6456 (median S=0.003), novels>known_median=2474, novels>known_best=37
+2026-03-22 00:41:00 | INFO  | phase6_report |     Benchmark ecoli/rf: known=283 (median S=0.119), novel=6456 (median S=0.164), novels>known_median=4964, novels>known_best=1
+2026-03-22 00:41:00 | INFO  | phase6_report |     Benchmark saureus/dmpnn: known=283 (median S=0.014), novel=6456 (median S=0.010), novels>known_median=2994, novels>known_best=68
+2026-03-22 00:41:00 | INFO  | phase6_report |     Benchmark saureus/rf: known=283 (median S=0.127), novel=6456 (median S=0.193), novels>known_median=5295, novels>known_best=0
+2026-03-22 00:41:00 | INFO  | phase6_report |     Benchmark paeruginosa/dmpnn: known=283 (median S=0.001), novel=6456 (median S=0.001), novels>known_median=3243, novels>known_best=100
+2026-03-22 00:41:00 | INFO  | phase6_report |     Benchmark paeruginosa/rf: known=283 (median S=0.090), novel=6456 (median S=0.144), novels>known_median=5317, novels>known_best=0
+2026-03-22 00:41:00 | INFO  | phase6_report |     Benchmark mtb/dmpnn: known=283 (median S=0.018), novel=6456 (median S=0.048), novels>known_median=3834, novels>known_best=135
+2026-03-22 00:41:00 | INFO  | phase6_report |     Benchmark mtb/rf: known=283 (median S=0.121), novel=6456 (median S=0.265), novels>known_median=5993, novels>known_best=0
+2026-03-22 00:41:02 | INFO  | phase6_report |     Benchmark comparison: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_benchmark_comparison.html
+2026-03-22 00:41:02 | INFO  | phase6_report |     Benchmark lollipop: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_benchmark_lollipop.html
+2026-03-22 00:41:02 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_ecoli.html
+2026-03-22 00:41:02 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_ecoli.html
+2026-03-22 00:41:02 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_mtb.html
+2026-03-22 00:41:02 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_mtb.html
+2026-03-22 00:41:02 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_paeruginosa.html
+2026-03-22 00:41:02 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_paeruginosa.html
+2026-03-22 00:41:03 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_saureus.html
+2026-03-22 00:41:03 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_saureus.html
+2026-03-22 00:41:03 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_rf_ecoli.html
+2026-03-22 00:41:03 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_rf_ecoli.html
+2026-03-22 00:41:03 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_rf_mtb.html
+2026-03-22 00:41:03 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_rf_mtb.html
+2026-03-22 00:41:03 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_rf_paeruginosa.html
+2026-03-22 00:41:03 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_rf_paeruginosa.html
+2026-03-22 00:41:03 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_rf_saureus.html
+2026-03-22 00:41:03 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_rf_saureus.html
+2026-03-22 00:41:04 | INFO  | phase6_report |     Consensus heatmap: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_consensus_heatmap.html
+2026-03-22 00:41:04 | INFO  | phase6_report |     Known vs Novel: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_known_vs_novel.html
+2026-03-22 00:41:04 | INFO  | phase6_report |     Radar chart: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_radar_top20.html
+2026-03-22 00:41:04 | INFO  | phase6_report |     Master dashboard: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_master_dashboard.html
+2026-03-22 00:41:04 | INFO  | phase6_report | 
+  Writing Markdown reports...
+2026-03-22 00:41:04 | INFO  | phase6_report |   Report written: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/report_known_antibiotics.md
+2026-03-22 00:41:04 | INFO  | phase6_report |   Report written: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/report_novel_candidates.md
+2026-03-22 00:41:04 | INFO  | phase6_report | 
+======================================================================
+2026-03-22 00:41:04 | INFO  | phase6_report |   TOP NOVEL CANDIDATES (potential new antibiotics)
+2026-03-22 00:41:04 | INFO  | phase6_report | ======================================================================
+2026-03-22 00:41:04 | INFO  | phase6_report |    1. diquafosol                     S=1.000 models=2/4  [ecoli, mtb]  MoA: purinergic receptor activator
+2026-03-22 00:41:04 | INFO  | phase6_report |    2. squalamine                     S=1.000 models=2/4  [ecoli, mtb, paeruginosa]  MoA: antiviral
+2026-03-22 00:41:04 | INFO  | phase6_report |    3. diadenosine-tetraphosphate     S=1.000 models=2/4  [ecoli, mtb, saureus]  MoA: adenosine kinase inhibitor
+2026-03-22 00:41:04 | INFO  | phase6_report |    4. relebactam                     S=1.000 models=2/4  [ecoli, mtb]  MoA: beta lactamase inhibitor
+2026-03-22 00:41:04 | INFO  | phase6_report |    5. trodusquemine                  S=1.000 models=2/4  [ecoli, mtb, paeruginosa]  MoA: tyrosine phosphatase inhibitor
+2026-03-22 00:41:04 | INFO  | phase6_report |    6. micronomicin                   S=1.000 models=2/4  [ecoli, mtb, paeruginosa, saureus]  MoA: protein synthesis inhibitor
+2026-03-22 00:41:04 | INFO  | phase6_report |    7. adenosine-triphosphate         S=1.000 models=2/4  [ecoli, mtb, saureus]  MoA: adenosine receptor agonist
+2026-03-22 00:41:04 | INFO  | phase6_report |    8. uridine-5'-triphosphate        S=1.000 models=2/4  [ecoli, mtb]  MoA: purinergic receptor activator
+2026-03-22 00:41:04 | INFO  | phase6_report |    9. netilmicin                     S=1.000 models=2/4  [ecoli, mtb, paeruginosa, saureus]  MoA: protein synthesis inhibitor
+2026-03-22 00:41:04 | INFO  | phase6_report |   10. Q-203                          S=1.000 models=2/4  [mtb]  MoA: ATP synthase inhibitor
+2026-03-22 00:41:04 | INFO  | phase6_report |   11. BTZ043-racemate                S=1.000 models=2/4  [mtb]  MoA: DPRE1 inhibitor
+2026-03-22 00:41:04 | INFO  | phase6_report |   12. retapamulin                    S=1.000 models=2/4  [paeruginosa, saureus]  MoA: protein synthesis inhibitor
+2026-03-22 00:41:04 | INFO  | phase6_report |   13. macozinone                     S=0.999 models=2/4  [mtb]  MoA: DPRE1 inhibitor
+2026-03-22 00:41:04 | INFO  | phase6_report |   14. puromycin                      S=0.999 models=2/4  [saureus]  MoA: protein synthesis inhibitor
+2026-03-22 00:41:04 | INFO  | phase6_report |   15. INS316                         S=0.999 models=2/4  [ecoli, mtb]  MoA: purinergic receptor antagonist
+2026-03-22 00:41:04 | INFO  | phase6_report | 
+  KNOWN ANTIBIOTICS REDISCOVERED (pipeline validation)
+2026-03-22 00:41:04 | INFO  | phase6_report | ----------------------------------------------------------------------
+2026-03-22 00:41:04 | INFO  | phase6_report |    1. gentamycin                     S=1.000 models=2/4  MoA: bacterial 50S ribosomal subuni
+2026-03-22 00:41:04 | INFO  | phase6_report |    2. SQ-109                         S=1.000 models=2/4  MoA: bacterial cell wall synthesis 
+2026-03-22 00:41:04 | INFO  | phase6_report |    3. carumonam                      S=1.000 models=2/4  MoA: bacterial cell wall synthesis 
+2026-03-22 00:41:04 | INFO  | phase6_report |    4. aztreonam                      S=0.998 models=2/4  MoA: bacterial cell wall synthesis 
+2026-03-22 00:41:04 | INFO  | phase6_report |    5. trimetrexate                   S=0.982 models=2/4  MoA: dihydrofolate reductase inhibi
+2026-03-22 00:41:04 | INFO  | phase6_report |    6. omadacycline                   S=1.000 models=1/4  MoA: bacterial 30S ribosomal subuni
+2026-03-22 00:41:04 | INFO  | phase6_report |    7. tilmicosin                     S=0.999 models=1/4  MoA: bacterial 50S ribosomal subuni
+2026-03-22 00:41:04 | INFO  | phase6_report |    8. teicoplanin-A2-3               S=0.996 models=1/4  MoA: bacterial cell wall synthesis 
+2026-03-22 00:41:04 | INFO  | phase6_report |    9. demeclocycline                 S=0.996 models=1/4  MoA: bacterial 30S ribosomal subuni
+2026-03-22 00:41:04 | INFO  | phase6_report |   10. rolitetracycline               S=0.995 models=1/4  MoA: bacterial 30S ribosomal subuni
+2026-03-22 00:41:04 | INFO  | phase6_report | 
+======================================================================
+2026-03-22 00:41:04 | INFO  | phase6_report |   FILES GENERATED:
+2026-03-22 00:41:04 | INFO  | phase6_report |     Reports:  report_known_antibiotics.md, report_novel_candidates.md
+2026-03-22 00:41:04 | INFO  | phase6_report |     CSVs:     candidate_consensus.csv, candidate_known_antibiotics.csv
+2026-03-22 00:41:04 | INFO  | phase6_report |               candidate_novel_discoveries.csv, candidate_detailed_top100.csv
+2026-03-22 00:41:04 | INFO  | phase6_report |     HTML viz: 22 interactive plots in /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures
+2026-03-22 00:41:04 | INFO  | phase6_report | ======================================================================
+2026-03-22 00:41:06 | INFO  | phase6_report | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity/logs/phase6_report.log
+2026-03-22 00:41:06 | INFO  | phase6_report | ======================================================================
+2026-03-22 00:41:06 | INFO  | phase6_report |   CANDIDATE REPORT GENERATION (Scientific + Interactive HTML)
+2026-03-22 00:41:06 | INFO  | phase6_report | ======================================================================
+2026-03-22 00:41:06 | INFO  | phase6_report |   Loaded 24 screening lists
+2026-03-22 00:41:07 | INFO  | phase6_report |   Total unique compounds in consensus: 395
+2026-03-22 00:41:07 | INFO  | phase6_report |   Known antibiotics rediscovered: 36
+2026-03-22 00:41:07 | INFO  | phase6_report |   Novel repurposing candidates: 359
+2026-03-22 00:41:07 | INFO  | phase6_report |   Multi-model consensus (3+): 0
+2026-03-22 00:41:07 | INFO  | phase6_report |   Multi-model consensus (4/4): 0
+2026-03-22 00:41:07 | INFO  | phase6_report | 
+  Generating interactive HTML visualizations...
+2026-03-22 00:41:08 | INFO  | phase6_report |     Benchmark ecoli/dmpnn: known=283 (median S=0.010), novel=6456 (median S=0.003), novels>known_median=2474, novels>known_best=37
+2026-03-22 00:41:08 | INFO  | phase6_report |     Benchmark ecoli/rf: known=283 (median S=0.119), novel=6456 (median S=0.164), novels>known_median=4964, novels>known_best=1
+2026-03-22 00:41:08 | INFO  | phase6_report |     Benchmark saureus/dmpnn: known=283 (median S=0.014), novel=6456 (median S=0.010), novels>known_median=2994, novels>known_best=68
+2026-03-22 00:41:08 | INFO  | phase6_report |     Benchmark saureus/rf: known=283 (median S=0.127), novel=6456 (median S=0.193), novels>known_median=5295, novels>known_best=0
+2026-03-22 00:41:08 | INFO  | phase6_report |     Benchmark paeruginosa/dmpnn: known=283 (median S=0.001), novel=6456 (median S=0.001), novels>known_median=3243, novels>known_best=100
+2026-03-22 00:41:08 | INFO  | phase6_report |     Benchmark paeruginosa/rf: known=283 (median S=0.090), novel=6456 (median S=0.144), novels>known_median=5317, novels>known_best=0
+2026-03-22 00:41:08 | INFO  | phase6_report |     Benchmark mtb/dmpnn: known=283 (median S=0.018), novel=6456 (median S=0.048), novels>known_median=3834, novels>known_best=135
+2026-03-22 00:41:08 | INFO  | phase6_report |     Benchmark mtb/rf: known=283 (median S=0.121), novel=6456 (median S=0.265), novels>known_median=5993, novels>known_best=0
+2026-03-22 00:41:09 | INFO  | phase6_report |     Benchmark comparison: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_benchmark_comparison.html
+2026-03-22 00:41:09 | INFO  | phase6_report |     Benchmark lollipop: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_benchmark_lollipop.html
+2026-03-22 00:41:09 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_ecoli.html
+2026-03-22 00:41:09 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_ecoli.html
+2026-03-22 00:41:09 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_mtb.html
+2026-03-22 00:41:10 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_mtb.html
+2026-03-22 00:41:10 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_paeruginosa.html
+2026-03-22 00:41:10 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_paeruginosa.html
+2026-03-22 00:41:10 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_saureus.html
+2026-03-22 00:41:10 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_saureus.html
+2026-03-22 00:41:10 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_rf_ecoli.html
+2026-03-22 00:41:10 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_rf_ecoli.html
+2026-03-22 00:41:10 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_rf_mtb.html
+2026-03-22 00:41:10 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_rf_mtb.html
+2026-03-22 00:41:10 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_rf_paeruginosa.html
+2026-03-22 00:41:11 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_rf_paeruginosa.html
+2026-03-22 00:41:11 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_rf_saureus.html
+2026-03-22 00:41:11 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_rf_saureus.html
+2026-03-22 00:41:11 | INFO  | phase6_report |     Consensus heatmap: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_consensus_heatmap.html
+2026-03-22 00:41:11 | INFO  | phase6_report |     Known vs Novel: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_known_vs_novel.html
+2026-03-22 00:41:11 | INFO  | phase6_report |     Radar chart: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_radar_top20.html
+2026-03-22 00:41:11 | INFO  | phase6_report |     Master dashboard: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures/candidates_master_dashboard.html
+2026-03-22 00:41:11 | INFO  | phase6_report | 
+  Writing Markdown reports...
+2026-03-22 00:41:11 | INFO  | phase6_report |   Report written: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/report_known_antibiotics.md
+2026-03-22 00:41:11 | INFO  | phase6_report |   Report written: /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/report_novel_candidates.md
+2026-03-22 00:41:11 | INFO  | phase6_report | 
+======================================================================
+2026-03-22 00:41:11 | INFO  | phase6_report |   TOP NOVEL CANDIDATES (potential new antibiotics)
+2026-03-22 00:41:11 | INFO  | phase6_report | ======================================================================
+2026-03-22 00:41:11 | INFO  | phase6_report |    1. diquafosol                     S=1.000 models=2/4  [ecoli, mtb]  MoA: purinergic receptor activator
+2026-03-22 00:41:11 | INFO  | phase6_report |    2. squalamine                     S=1.000 models=2/4  [ecoli, mtb, paeruginosa]  MoA: antiviral
+2026-03-22 00:41:11 | INFO  | phase6_report |    3. diadenosine-tetraphosphate     S=1.000 models=2/4  [ecoli, mtb, saureus]  MoA: adenosine kinase inhibitor
+2026-03-22 00:41:11 | INFO  | phase6_report |    4. relebactam                     S=1.000 models=2/4  [ecoli, mtb]  MoA: beta lactamase inhibitor
+2026-03-22 00:41:11 | INFO  | phase6_report |    5. trodusquemine                  S=1.000 models=2/4  [ecoli, mtb, paeruginosa]  MoA: tyrosine phosphatase inhibitor
+2026-03-22 00:41:11 | INFO  | phase6_report |    6. micronomicin                   S=1.000 models=2/4  [ecoli, mtb, paeruginosa, saureus]  MoA: protein synthesis inhibitor
+2026-03-22 00:41:11 | INFO  | phase6_report |    7. adenosine-triphosphate         S=1.000 models=2/4  [ecoli, mtb, saureus]  MoA: adenosine receptor agonist
+2026-03-22 00:41:11 | INFO  | phase6_report |    8. uridine-5'-triphosphate        S=1.000 models=2/4  [ecoli, mtb]  MoA: purinergic receptor activator
+2026-03-22 00:41:11 | INFO  | phase6_report |    9. netilmicin                     S=1.000 models=2/4  [ecoli, mtb, paeruginosa, saureus]  MoA: protein synthesis inhibitor
+2026-03-22 00:41:11 | INFO  | phase6_report |   10. Q-203                          S=1.000 models=2/4  [mtb]  MoA: ATP synthase inhibitor
+2026-03-22 00:41:11 | INFO  | phase6_report |   11. BTZ043-racemate                S=1.000 models=2/4  [mtb]  MoA: DPRE1 inhibitor
+2026-03-22 00:41:11 | INFO  | phase6_report |   12. retapamulin                    S=1.000 models=2/4  [paeruginosa, saureus]  MoA: protein synthesis inhibitor
+2026-03-22 00:41:11 | INFO  | phase6_report |   13. macozinone                     S=0.999 models=2/4  [mtb]  MoA: DPRE1 inhibitor
+2026-03-22 00:41:11 | INFO  | phase6_report |   14. puromycin                      S=0.999 models=2/4  [saureus]  MoA: protein synthesis inhibitor
+2026-03-22 00:41:11 | INFO  | phase6_report |   15. INS316                         S=0.999 models=2/4  [ecoli, mtb]  MoA: purinergic receptor antagonist
+2026-03-22 00:41:11 | INFO  | phase6_report | 
+  KNOWN ANTIBIOTICS REDISCOVERED (pipeline validation)
+2026-03-22 00:41:11 | INFO  | phase6_report | ----------------------------------------------------------------------
+2026-03-22 00:41:11 | INFO  | phase6_report |    1. gentamycin                     S=1.000 models=2/4  MoA: bacterial 50S ribosomal subuni
+2026-03-22 00:41:11 | INFO  | phase6_report |    2. SQ-109                         S=1.000 models=2/4  MoA: bacterial cell wall synthesis 
+2026-03-22 00:41:11 | INFO  | phase6_report |    3. carumonam                      S=1.000 models=2/4  MoA: bacterial cell wall synthesis 
+2026-03-22 00:41:11 | INFO  | phase6_report |    4. aztreonam                      S=0.998 models=2/4  MoA: bacterial cell wall synthesis 
+2026-03-22 00:41:11 | INFO  | phase6_report |    5. trimetrexate                   S=0.982 models=2/4  MoA: dihydrofolate reductase inhibi
+2026-03-22 00:41:11 | INFO  | phase6_report |    6. omadacycline                   S=1.000 models=1/4  MoA: bacterial 30S ribosomal subuni
+2026-03-22 00:41:11 | INFO  | phase6_report |    7. tilmicosin                     S=0.999 models=1/4  MoA: bacterial 50S ribosomal subuni
+2026-03-22 00:41:11 | INFO  | phase6_report |    8. teicoplanin-A2-3               S=0.996 models=1/4  MoA: bacterial cell wall synthesis 
+2026-03-22 00:41:11 | INFO  | phase6_report |    9. demeclocycline                 S=0.996 models=1/4  MoA: bacterial 30S ribosomal subuni
+2026-03-22 00:41:11 | INFO  | phase6_report |   10. rolitetracycline               S=0.995 models=1/4  MoA: bacterial 30S ribosomal subuni
+2026-03-22 00:41:11 | INFO  | phase6_report | 
+======================================================================
+2026-03-22 00:41:11 | INFO  | phase6_report |   FILES GENERATED:
+2026-03-22 00:41:11 | INFO  | phase6_report |     Reports:  report_known_antibiotics.md, report_novel_candidates.md
+2026-03-22 00:41:11 | INFO  | phase6_report |     CSVs:     candidate_consensus.csv, candidate_known_antibiotics.csv
+2026-03-22 00:41:11 | INFO  | phase6_report |               candidate_novel_discoveries.csv, candidate_detailed_top100.csv
+2026-03-22 00:41:11 | INFO  | phase6_report |     HTML viz: 22 interactive plots in /scratch/vishakha.agrawal/antibiotic-selectivity/outputs/runs/run_20260315_034033/results/figures
+2026-03-22 00:41:11 | INFO  | phase6_report | ======================================================================
+2026-04-02 17:41:59 | INFO  | phase6_report | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase6_report.log
+2026-04-02 17:41:59 | INFO  | phase6_report | ======================================================================
+2026-04-02 17:41:59 | INFO  | phase6_report |   CANDIDATE REPORT GENERATION (Scientific + Interactive HTML)
+2026-04-02 17:41:59 | INFO  | phase6_report | ======================================================================
+2026-04-02 17:42:00 | INFO  | phase6_report |   Loaded 48 screening lists
+2026-04-02 17:42:01 | INFO  | phase6_report |   Total unique compounds in consensus: 748
+2026-04-02 17:42:01 | INFO  | phase6_report |   Known antibiotics rediscovered: 56
+2026-04-02 17:42:01 | INFO  | phase6_report |   Novel repurposing candidates: 692
+2026-04-02 17:42:01 | INFO  | phase6_report |   Multi-model consensus (3+): 30
+2026-04-02 17:42:01 | INFO  | phase6_report |   Multi-model consensus (4/4): 8
+2026-04-02 17:42:01 | INFO  | phase6_report | 
+  Generating interactive HTML visualizations...
+2026-04-02 17:42:03 | INFO  | phase6_report |     Benchmark ecoli/chemeleon_frozen: known=283 (median S=0.108), novel=6456 (median S=0.077), novels>known_median=2623, novels>known_best=9
+2026-04-02 17:42:03 | INFO  | phase6_report |     Benchmark ecoli/dmpnn: known=283 (median S=0.010), novel=6456 (median S=0.003), novels>known_median=2474, novels>known_best=37
+2026-04-02 17:42:03 | INFO  | phase6_report |     Benchmark ecoli/molformer: known=283 (median S=0.014), novel=6456 (median S=0.008), novels>known_median=2770, novels>known_best=1
+2026-04-02 17:42:03 | INFO  | phase6_report |     Benchmark ecoli/rf: known=283 (median S=0.119), novel=6456 (median S=0.164), novels>known_median=4964, novels>known_best=1
+2026-04-02 17:42:03 | INFO  | phase6_report |     Benchmark saureus/chemeleon_frozen: known=283 (median S=0.151), novel=6456 (median S=0.115), novels>known_median=2791, novels>known_best=12
+2026-04-02 17:42:03 | INFO  | phase6_report |     Benchmark saureus/dmpnn: known=283 (median S=0.014), novel=6456 (median S=0.010), novels>known_median=2994, novels>known_best=68
+2026-04-02 17:42:03 | INFO  | phase6_report |     Benchmark saureus/molformer: known=283 (median S=0.034), novel=6456 (median S=0.012), novels>known_median=2463, novels>known_best=2
+2026-04-02 17:42:03 | INFO  | phase6_report |     Benchmark saureus/rf: known=283 (median S=0.127), novel=6456 (median S=0.193), novels>known_median=5295, novels>known_best=0
+2026-04-02 17:42:03 | INFO  | phase6_report |     Benchmark paeruginosa/chemeleon_frozen: known=283 (median S=0.048), novel=6456 (median S=0.050), novels>known_median=3303, novels>known_best=32
+2026-04-02 17:42:03 | INFO  | phase6_report |     Benchmark paeruginosa/dmpnn: known=283 (median S=0.001), novel=6456 (median S=0.001), novels>known_median=3243, novels>known_best=100
+2026-04-02 17:42:03 | INFO  | phase6_report |     Benchmark paeruginosa/molformer: known=283 (median S=0.003), novel=6456 (median S=0.005), novels>known_median=3901, novels>known_best=67
+2026-04-02 17:42:03 | INFO  | phase6_report |     Benchmark paeruginosa/rf: known=283 (median S=0.090), novel=6456 (median S=0.144), novels>known_median=5317, novels>known_best=0
+2026-04-02 17:42:03 | INFO  | phase6_report |     Benchmark mtb/chemeleon_frozen: known=283 (median S=0.154), novel=6456 (median S=0.215), novels>known_median=3906, novels>known_best=28
+2026-04-02 17:42:03 | INFO  | phase6_report |     Benchmark mtb/dmpnn: known=283 (median S=0.018), novel=6456 (median S=0.048), novels>known_median=3834, novels>known_best=135
+2026-04-02 17:42:03 | INFO  | phase6_report |     Benchmark mtb/molformer: known=283 (median S=0.039), novel=6456 (median S=0.113), novels>known_median=4197, novels>known_best=0
+2026-04-02 17:42:03 | INFO  | phase6_report |     Benchmark mtb/rf: known=283 (median S=0.121), novel=6456 (median S=0.265), novels>known_median=5993, novels>known_best=0
+2026-04-02 17:42:05 | INFO  | phase6_report |     Benchmark comparison: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_benchmark_comparison.html
+2026-04-02 17:42:06 | INFO  | phase6_report |     Benchmark lollipop: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_benchmark_lollipop.html
+2026-04-02 17:42:06 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_chemeleon_frozen_ecoli.html
+2026-04-02 17:42:06 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_chemeleon_frozen_ecoli.html
+2026-04-02 17:42:06 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_chemeleon_frozen_mtb.html
+2026-04-02 17:42:06 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_chemeleon_frozen_mtb.html
+2026-04-02 17:42:06 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_chemeleon_frozen_paeruginosa.html
+2026-04-02 17:42:06 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_chemeleon_frozen_paeruginosa.html
+2026-04-02 17:42:07 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_chemeleon_frozen_saureus.html
+2026-04-02 17:42:07 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_chemeleon_frozen_saureus.html
+2026-04-02 17:42:07 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_ecoli.html
+2026-04-02 17:42:07 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_ecoli.html
+2026-04-02 17:42:07 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_mtb.html
+2026-04-02 17:42:07 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_mtb.html
+2026-04-02 17:42:07 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_paeruginosa.html
+2026-04-02 17:42:07 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_paeruginosa.html
+2026-04-02 17:42:07 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_saureus.html
+2026-04-02 17:42:07 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_saureus.html
+2026-04-02 17:42:08 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_molformer_ecoli.html
+2026-04-02 17:42:08 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_molformer_ecoli.html
+2026-04-02 17:42:08 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_molformer_mtb.html
+2026-04-02 17:42:08 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_molformer_mtb.html
+2026-04-02 17:42:08 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_molformer_paeruginosa.html
+2026-04-02 17:42:08 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_molformer_paeruginosa.html
+2026-04-02 17:42:08 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_molformer_saureus.html
+2026-04-02 17:42:08 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_molformer_saureus.html
+2026-04-02 17:42:08 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_rf_ecoli.html
+2026-04-02 17:42:08 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_rf_ecoli.html
+2026-04-02 17:42:09 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_rf_mtb.html
+2026-04-02 17:42:09 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_rf_mtb.html
+2026-04-02 17:42:09 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_rf_paeruginosa.html
+2026-04-02 17:42:09 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_rf_paeruginosa.html
+2026-04-02 17:42:09 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_rf_saureus.html
+2026-04-02 17:42:09 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_rf_saureus.html
+2026-04-02 17:42:09 | INFO  | phase6_report |     Consensus heatmap: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_consensus_heatmap.html
+2026-04-02 17:42:09 | INFO  | phase6_report |     Known vs Novel: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_known_vs_novel.html
+2026-04-02 17:42:09 | INFO  | phase6_report |     Radar chart: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_radar_top20.html
+2026-04-02 17:42:09 | INFO  | phase6_report |     Master dashboard: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_master_dashboard.html
+2026-04-02 17:42:09 | INFO  | phase6_report | 
+  Writing Markdown reports...
+2026-04-02 17:42:09 | INFO  | phase6_report |   Report written: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/report_known_antibiotics.md
+2026-04-02 17:42:09 | INFO  | phase6_report |   Report written: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/report_novel_candidates.md
+2026-04-02 17:42:09 | INFO  | phase6_report | 
+======================================================================
+2026-04-02 17:42:09 | INFO  | phase6_report |   TOP NOVEL CANDIDATES (potential new antibiotics)
+2026-04-02 17:42:09 | INFO  | phase6_report | ======================================================================
+2026-04-02 17:42:09 | INFO  | phase6_report |    1. micronomicin                   S=1.000 models=4/4  [ecoli, mtb, paeruginosa, saureus]  MoA: protein synthesis inhibitor
+2026-04-02 17:42:09 | INFO  | phase6_report |    2. netilmicin                     S=1.000 models=4/4  [ecoli, mtb, paeruginosa, saureus]  MoA: protein synthesis inhibitor
+2026-04-02 17:42:09 | INFO  | phase6_report |    3. retapamulin                    S=1.000 models=4/4  [paeruginosa, saureus]  MoA: protein synthesis inhibitor
+2026-04-02 17:42:09 | INFO  | phase6_report |    4. AFN-1252                       S=0.998 models=4/4  [ecoli, saureus]  MoA: FABI inhibitor
+2026-04-02 17:42:09 | INFO  | phase6_report |    5. GSK656                         S=0.995 models=4/4  [ecoli, mtb, paeruginosa]  MoA: leucyl-tRNA synthetase inhibit
+2026-04-02 17:42:09 | INFO  | phase6_report |    6. sisomicin                      S=0.989 models=4/4  [ecoli, mtb, paeruginosa, saureus]  MoA: protein synthesis inhibitor
+2026-04-02 17:42:09 | INFO  | phase6_report |    7. relebactam                     S=1.000 models=3/4  [ecoli, mtb]  MoA: beta lactamase inhibitor
+2026-04-02 17:42:09 | INFO  | phase6_report |    8. BTZ043-racemate                S=1.000 models=3/4  [mtb]  MoA: DPRE1 inhibitor
+2026-04-02 17:42:09 | INFO  | phase6_report |    9. Q-203                          S=1.000 models=3/4  [mtb]  MoA: ATP synthase inhibitor
+2026-04-02 17:42:09 | INFO  | phase6_report |   10. macozinone                     S=0.999 models=3/4  [mtb]  MoA: DPRE1 inhibitor
+2026-04-02 17:42:09 | INFO  | phase6_report |   11. boronophenylalanine            S=0.999 models=3/4  [ecoli]  MoA: nan
+2026-04-02 17:42:09 | INFO  | phase6_report |   12. monocrotaline                  S=0.998 models=3/4  [ecoli, paeruginosa]  MoA: antitumor agent
+2026-04-02 17:42:09 | INFO  | phase6_report |   13. vindesine                      S=0.998 models=3/4  [mtb]  MoA: tubulin polymerization inhibit
+2026-04-02 17:42:09 | INFO  | phase6_report |   14. epetraborole                   S=0.997 models=3/4  [ecoli, mtb, paeruginosa]  MoA: leucyl-tRNA synthetase inhibit
+2026-04-02 17:42:09 | INFO  | phase6_report |   15. IKK-2-inhibitor-V              S=0.997 models=3/4  [mtb, saureus]  MoA: IKK inhibitor|NFkB pathway inh
+2026-04-02 17:42:09 | INFO  | phase6_report | 
+  KNOWN ANTIBIOTICS REDISCOVERED (pipeline validation)
+2026-04-02 17:42:09 | INFO  | phase6_report | ----------------------------------------------------------------------
+2026-04-02 17:42:09 | INFO  | phase6_report |    1. SQ-109                         S=1.000 models=4/4  MoA: bacterial cell wall synthesis 
+2026-04-02 17:42:09 | INFO  | phase6_report |    2. trimetrexate                   S=0.992 models=4/4  MoA: dihydrofolate reductase inhibi
+2026-04-02 17:42:09 | INFO  | phase6_report |    3. gentamycin                     S=1.000 models=3/4  MoA: bacterial 50S ribosomal subuni
+2026-04-02 17:42:09 | INFO  | phase6_report |    4. alafosfalin                    S=0.996 models=3/4  MoA: bacterial cell wall synthesis 
+2026-04-02 17:42:09 | INFO  | phase6_report |    5. gepotidacin                    S=0.994 models=3/4  MoA: topoisomerase inhibitor
+2026-04-02 17:42:09 | INFO  | phase6_report |    6. dihydrostreptomycin            S=0.993 models=3/4  MoA: bacterial 30S ribosomal subuni
+2026-04-02 17:42:09 | INFO  | phase6_report |    7. streptomycin                   S=0.991 models=3/4  MoA: bacterial 30S ribosomal subuni
+2026-04-02 17:42:09 | INFO  | phase6_report |    8. carumonam                      S=1.000 models=2/4  MoA: bacterial cell wall synthesis 
+2026-04-02 17:42:09 | INFO  | phase6_report |    9. aztreonam                      S=0.998 models=2/4  MoA: bacterial cell wall synthesis 
+2026-04-02 17:42:09 | INFO  | phase6_report |   10. neomycin                       S=0.998 models=2/4  MoA: bacterial 30S ribosomal subuni
+2026-04-02 17:42:09 | INFO  | phase6_report | 
+======================================================================
+2026-04-02 17:42:09 | INFO  | phase6_report |   FILES GENERATED:
+2026-04-02 17:42:09 | INFO  | phase6_report |     Reports:  report_known_antibiotics.md, report_novel_candidates.md
+2026-04-02 17:42:09 | INFO  | phase6_report |     CSVs:     candidate_consensus.csv, candidate_known_antibiotics.csv
+2026-04-02 17:42:09 | INFO  | phase6_report |               candidate_novel_discoveries.csv, candidate_detailed_top100.csv
+2026-04-02 17:42:09 | INFO  | phase6_report |     HTML viz: 38 interactive plots in /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures
+2026-04-02 17:42:09 | INFO  | phase6_report | ======================================================================
+2026-04-05 09:05:26 | INFO  | phase6_report | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase6_report.log
+2026-04-05 09:07:27 | INFO  | phase6_report | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase6_report.log
+2026-04-05 09:07:27 | INFO  | phase6_report | ======================================================================
+2026-04-05 09:07:27 | INFO  | phase6_report |   CANDIDATE REPORT GENERATION (Scientific + Interactive HTML)
+2026-04-05 09:07:27 | INFO  | phase6_report | ======================================================================
+2026-04-05 09:07:28 | INFO  | phase6_report |   Loaded 60 screening lists
+2026-04-05 09:07:28 | INFO  | phase6_report |   Total unique compounds in consensus: 890
+2026-04-05 09:07:28 | INFO  | phase6_report |   Known antibiotics rediscovered: 58
+2026-04-05 09:07:28 | INFO  | phase6_report |   Novel repurposing candidates: 832
+2026-04-05 09:07:28 | INFO  | phase6_report |   Multi-model consensus (3+): 52
+2026-04-05 09:07:28 | INFO  | phase6_report |   Multi-model consensus (4/4): 12
+2026-04-05 09:07:29 | INFO  | phase6_report | 
+  Generating interactive HTML visualizations...
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark ecoli/chemeleon_frozen: known=283 (median S=0.108), novel=6456 (median S=0.077), novels>known_median=2623, novels>known_best=9
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark ecoli/dmpnn: known=283 (median S=0.010), novel=6456 (median S=0.003), novels>known_median=2474, novels>known_best=37
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark ecoli/dmpnn_rdkit: known=283 (median S=0.117), novel=6456 (median S=0.108), novels>known_median=3029, novels>known_best=8
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark ecoli/molformer: known=283 (median S=0.014), novel=6456 (median S=0.008), novels>known_median=2770, novels>known_best=1
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark ecoli/rf: known=283 (median S=0.119), novel=6456 (median S=0.164), novels>known_median=4964, novels>known_best=1
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark saureus/chemeleon_frozen: known=283 (median S=0.151), novel=6456 (median S=0.115), novels>known_median=2791, novels>known_best=12
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark saureus/dmpnn: known=283 (median S=0.014), novel=6456 (median S=0.010), novels>known_median=2994, novels>known_best=68
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark saureus/dmpnn_rdkit: known=283 (median S=0.122), novel=6456 (median S=0.106), novels>known_median=2922, novels>known_best=0
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark saureus/molformer: known=283 (median S=0.034), novel=6456 (median S=0.012), novels>known_median=2463, novels>known_best=2
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark saureus/rf: known=283 (median S=0.127), novel=6456 (median S=0.193), novels>known_median=5295, novels>known_best=0
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark paeruginosa/chemeleon_frozen: known=283 (median S=0.048), novel=6456 (median S=0.050), novels>known_median=3303, novels>known_best=32
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark paeruginosa/dmpnn: known=283 (median S=0.001), novel=6456 (median S=0.001), novels>known_median=3243, novels>known_best=100
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark paeruginosa/dmpnn_rdkit: known=283 (median S=0.058), novel=6456 (median S=0.056), novels>known_median=3115, novels>known_best=100
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark paeruginosa/molformer: known=283 (median S=0.003), novel=6456 (median S=0.005), novels>known_median=3901, novels>known_best=67
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark paeruginosa/rf: known=283 (median S=0.090), novel=6456 (median S=0.144), novels>known_median=5317, novels>known_best=0
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark mtb/chemeleon_frozen: known=283 (median S=0.154), novel=6456 (median S=0.215), novels>known_median=3906, novels>known_best=28
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark mtb/dmpnn: known=283 (median S=0.018), novel=6456 (median S=0.048), novels>known_median=3834, novels>known_best=135
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark mtb/dmpnn_rdkit: known=283 (median S=0.149), novel=6456 (median S=0.254), novels>known_median=5053, novels>known_best=5
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark mtb/molformer: known=283 (median S=0.039), novel=6456 (median S=0.113), novels>known_median=4197, novels>known_best=0
+2026-04-05 09:07:31 | INFO  | phase6_report |     Benchmark mtb/rf: known=283 (median S=0.121), novel=6456 (median S=0.265), novels>known_median=5993, novels>known_best=0
+2026-04-05 09:07:35 | INFO  | phase6_report |     Benchmark comparison: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_benchmark_comparison.html
+2026-04-05 09:07:37 | INFO  | phase6_report |     Benchmark lollipop: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_benchmark_lollipop.html
+2026-04-05 09:07:37 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_chemeleon_frozen_ecoli.html
+2026-04-05 09:07:38 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_chemeleon_frozen_ecoli.html
+2026-04-05 09:07:38 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_chemeleon_frozen_mtb.html
+2026-04-05 09:07:38 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_chemeleon_frozen_mtb.html
+2026-04-05 09:07:38 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_chemeleon_frozen_paeruginosa.html
+2026-04-05 09:07:38 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_chemeleon_frozen_paeruginosa.html
+2026-04-05 09:07:38 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_chemeleon_frozen_saureus.html
+2026-04-05 09:07:39 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_chemeleon_frozen_saureus.html
+2026-04-05 09:07:39 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_ecoli.html
+2026-04-05 09:07:39 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_ecoli.html
+2026-04-05 09:07:39 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_mtb.html
+2026-04-05 09:07:39 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_mtb.html
+2026-04-05 09:07:39 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_paeruginosa.html
+2026-04-05 09:07:39 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_paeruginosa.html
+2026-04-05 09:07:39 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_saureus.html
+2026-04-05 09:07:39 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_saureus.html
+2026-04-05 09:07:40 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_rdkit_ecoli.html
+2026-04-05 09:07:40 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_rdkit_ecoli.html
+2026-04-05 09:07:40 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_rdkit_mtb.html
+2026-04-05 09:07:40 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_rdkit_mtb.html
+2026-04-05 09:07:40 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_rdkit_paeruginosa.html
+2026-04-05 09:07:40 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_rdkit_paeruginosa.html
+2026-04-05 09:07:40 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_dmpnn_rdkit_saureus.html
+2026-04-05 09:07:40 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_dmpnn_rdkit_saureus.html
+2026-04-05 09:07:40 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_molformer_ecoli.html
+2026-04-05 09:07:40 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_molformer_ecoli.html
+2026-04-05 09:07:41 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_molformer_mtb.html
+2026-04-05 09:07:41 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_molformer_mtb.html
+2026-04-05 09:07:41 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_molformer_paeruginosa.html
+2026-04-05 09:07:41 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_molformer_paeruginosa.html
+2026-04-05 09:07:41 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_molformer_saureus.html
+2026-04-05 09:07:41 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_molformer_saureus.html
+2026-04-05 09:07:41 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_rf_ecoli.html
+2026-04-05 09:07:41 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_rf_ecoli.html
+2026-04-05 09:07:41 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_rf_mtb.html
+2026-04-05 09:07:42 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_rf_mtb.html
+2026-04-05 09:07:42 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_rf_paeruginosa.html
+2026-04-05 09:07:42 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_rf_paeruginosa.html
+2026-04-05 09:07:42 | INFO  | phase6_report |     3D landscape: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_3d_landscape_rf_saureus.html
+2026-04-05 09:07:42 | INFO  | phase6_report |     2D scatter: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_scatter_rf_saureus.html
+2026-04-05 09:07:42 | INFO  | phase6_report |     Consensus heatmap: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_consensus_heatmap.html
+2026-04-05 09:07:42 | INFO  | phase6_report |     Known vs Novel: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_known_vs_novel.html
+2026-04-05 09:07:42 | INFO  | phase6_report |     Radar chart: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_radar_top20.html
+2026-04-05 09:07:43 | INFO  | phase6_report |     Master dashboard: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures/candidates_master_dashboard.html
+2026-04-05 09:07:43 | INFO  | phase6_report | 
+  Writing Markdown reports...
+2026-04-05 09:07:43 | INFO  | phase6_report |   Report written: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/report_known_antibiotics.md
+2026-04-05 09:07:43 | INFO  | phase6_report |   Report written: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/report_novel_candidates.md
+2026-04-05 09:07:43 | INFO  | phase6_report | 
+======================================================================
+2026-04-05 09:07:43 | INFO  | phase6_report |   TOP NOVEL CANDIDATES (potential new antibiotics)
+2026-04-05 09:07:43 | INFO  | phase6_report | ======================================================================
+2026-04-05 09:07:43 | INFO  | phase6_report |    1. retapamulin                    S=1.000 models=5/4  [paeruginosa, saureus]  MoA: protein synthesis inhibitor
+2026-04-05 09:07:43 | INFO  | phase6_report |    2. AFN-1252                       S=0.998 models=5/4  [ecoli, saureus]  MoA: FABI inhibitor
+2026-04-05 09:07:43 | INFO  | phase6_report |    3. micronomicin                   S=1.000 models=4/4  [ecoli, mtb, paeruginosa, saureus]  MoA: protein synthesis inhibitor
+2026-04-05 09:07:43 | INFO  | phase6_report |    4. netilmicin                     S=1.000 models=4/4  [ecoli, mtb, paeruginosa, saureus]  MoA: protein synthesis inhibitor
+2026-04-05 09:07:43 | INFO  | phase6_report |    5. macozinone                     S=0.999 models=4/4  [mtb]  MoA: DPRE1 inhibitor
+2026-04-05 09:07:43 | INFO  | phase6_report |    6. GSK656                         S=0.995 models=4/4  [ecoli, mtb, paeruginosa]  MoA: leucyl-tRNA synthetase inhibit
+2026-04-05 09:07:43 | INFO  | phase6_report |    7. vinburnine                     S=0.993 models=4/4  [paeruginosa]  MoA: adrenergic receptor antagonist
+2026-04-05 09:07:43 | INFO  | phase6_report |    8. sisomicin                      S=0.989 models=4/4  [ecoli, mtb, paeruginosa, saureus]  MoA: protein synthesis inhibitor
+2026-04-05 09:07:43 | INFO  | phase6_report |    9. SB-772077B                     S=0.975 models=4/4  [paeruginosa, saureus]  MoA: rho associated kinase inhibito
+2026-04-05 09:07:43 | INFO  | phase6_report |   10. guadecitabine                  S=1.000 models=3/4  [ecoli, mtb, saureus]  MoA: DNA methyltransferase inhibito
+2026-04-05 09:07:43 | INFO  | phase6_report |   11. sodium-nitroprusside           S=1.000 models=3/4  [ecoli, mtb, paeruginosa, saureus]  MoA: nitric oxide donor
+2026-04-05 09:07:43 | INFO  | phase6_report |   12. colistimethate                 S=1.000 models=3/4  [mtb, paeruginosa]  MoA: bacterial permeability inducer
+2026-04-05 09:07:43 | INFO  | phase6_report |   13. diquafosol                     S=1.000 models=3/4  [ecoli, mtb]  MoA: purinergic receptor activator
+2026-04-05 09:07:43 | INFO  | phase6_report |   14. diadenosine-tetraphosphate     S=1.000 models=3/4  [ecoli, mtb, saureus]  MoA: adenosine kinase inhibitor
+2026-04-05 09:07:43 | INFO  | phase6_report |   15. relebactam                     S=1.000 models=3/4  [ecoli, mtb]  MoA: beta lactamase inhibitor
+2026-04-05 09:07:43 | INFO  | phase6_report | 
+  KNOWN ANTIBIOTICS REDISCOVERED (pipeline validation)
+2026-04-05 09:07:43 | INFO  | phase6_report | ----------------------------------------------------------------------
+2026-04-05 09:07:43 | INFO  | phase6_report |    1. trimetrexate                   S=0.992 models=5/4  MoA: dihydrofolate reductase inhibi
+2026-04-05 09:07:43 | INFO  | phase6_report |    2. SQ-109                         S=1.000 models=4/4  MoA: bacterial cell wall synthesis 
+2026-04-05 09:07:43 | INFO  | phase6_report |    3. gepotidacin                    S=0.994 models=4/4  MoA: topoisomerase inhibitor
+2026-04-05 09:07:43 | INFO  | phase6_report |    4. gentamycin                     S=1.000 models=3/4  MoA: bacterial 50S ribosomal subuni
+2026-04-05 09:07:43 | INFO  | phase6_report |    5. alafosfalin                    S=0.996 models=3/4  MoA: bacterial cell wall synthesis 
+2026-04-05 09:07:43 | INFO  | phase6_report |    6. AZ-7371                        S=0.994 models=3/4  MoA: antibacterial
+2026-04-05 09:07:43 | INFO  | phase6_report |    7. dihydrostreptomycin            S=0.993 models=3/4  MoA: bacterial 30S ribosomal subuni
+2026-04-05 09:07:43 | INFO  | phase6_report |    8. streptomycin                   S=0.991 models=3/4  MoA: bacterial 30S ribosomal subuni
+2026-04-05 09:07:43 | INFO  | phase6_report |    9. iclaprim                       S=0.954 models=3/4  MoA: dihydrofolate reductase inhibi
+2026-04-05 09:07:43 | INFO  | phase6_report |   10. carumonam                      S=1.000 models=2/4  MoA: bacterial cell wall synthesis 
+2026-04-05 09:07:43 | INFO  | phase6_report | 
+======================================================================
+2026-04-05 09:07:43 | INFO  | phase6_report |   FILES GENERATED:
+2026-04-05 09:07:43 | INFO  | phase6_report |     Reports:  report_known_antibiotics.md, report_novel_candidates.md
+2026-04-05 09:07:43 | INFO  | phase6_report |     CSVs:     candidate_consensus.csv, candidate_known_antibiotics.csv
+2026-04-05 09:07:43 | INFO  | phase6_report |               candidate_novel_discoveries.csv, candidate_detailed_top100.csv
+2026-04-05 09:07:43 | INFO  | phase6_report |     HTML viz: 46 interactive plots in /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/figures
+2026-04-05 09:07:43 | INFO  | phase6_report | ======================================================================
+2026-04-16 18:38:05 | INFO  | phase6_report | Logging to file: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/logs/phase6_report.log
+2026-04-16 18:38:05 | INFO  | phase6_report | 
+======================================================================
+2026-04-16 18:38:05 | INFO  | phase6_report |   CONSENSUS CANDIDATE PROPERTY CHARACTERIZATION
+2026-04-16 18:38:05 | INFO  | phase6_report | ======================================================================
+2026-04-16 18:38:06 | INFO  | phase6_report |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/candidate_consensus_properties.csv
+2026-04-16 18:38:06 | INFO  | phase6_report |   all             (n>=1):  890 compounds, antibiotics=58/890 (6.52%), Lipinski-compliant=694 (77.98%)
+2026-04-16 18:38:06 | INFO  | phase6_report |   tier_2plus      (n>=2):  235 compounds, antibiotics=27/235 (11.49%), Lipinski-compliant=157 (66.81%)
+2026-04-16 18:38:06 | INFO  | phase6_report |   tier_3plus      (n>=3):   52 compounds, antibiotics=9/52 (17.31%), Lipinski-compliant=31 (59.62%)
+2026-04-16 18:38:06 | INFO  | phase6_report |   tier_4plus      (n>=4):   12 compounds, antibiotics=3/12 (25.0%), Lipinski-compliant=8 (66.67%)
+2026-04-16 18:38:06 | INFO  | phase6_report |   tier_5          (n>=5):    3 compounds, antibiotics=1/3 (33.33%), Lipinski-compliant=2 (66.67%)
+2026-04-16 18:38:06 | INFO  | phase6_report |   Saved: /scratch/vishakha.agrawal/antibiotic-selectivity-v2/outputs/runs/run_20260315_034033/results/candidate_properties_summary.json
