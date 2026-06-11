@@ -4,6 +4,8 @@
 > **Institution:** IIIT Hyderabad  
 > **Course — Introduction to Neuroeconomics**
 
+> 📄 **Paper:** Modeling Behavioral Signals in Job Scams: A Human-Centered Security Study — G. Anagha, V. D. Agrawal, G. Sarkar, K. Vemuri, S. K. Shukla. [arXiv:2601.19342](https://arxiv.org/abs/2601.19342) [cs.CY], 2026.
+
 ---
 
 ## Table of Contents
