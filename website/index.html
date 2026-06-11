@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<!--
+  Vishakha Agrawal — Personal Portfolio
+  Static site (no build step) for deployment to a university public_html directory.
+
+  External libraries & assets (all via CDN, credited per the project brief):
+    - Google Fonts: "Fraunces" + "Inter"            https://fonts.google.com/
+    - AOS (Animate On Scroll) 2.3.4                  https://github.com/michalsnik/aos        (MIT)
+    - Typed.js 2.1.0                                 https://github.com/mattboldt/typed.js    (MIT)
+    - GSAP 3.12 + ScrollTrigger                      https://gsap.com/                        (Standard "No Charge" license)
+    - Lucide Icons                                   https://lucide.dev/                      (ISC)
+  Project descriptions are drawn from the author's own GitHub READMEs (github.com/vagrawal2718/projects).
+  Design, layout, and CSS are hand-authored (see styles.css).
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>document.documentElement.className += " has-js";</script>
+  <title>Vishakha Agrawal — Computer Science · IIIT Hyderabad</title>
+  <meta name="description" content="Vishakha Agrawal — B.Tech Computer Science student at IIIT Hyderabad working across machine learning, systems, and the environment. Projects, publications, and research." />
+  <meta name="author" content="Vishakha Agrawal" />
+  <meta property="og:title" content="Vishakha Agrawal — Portfolio" />
+  <meta property="og:description" content="Computer Science @ IIIT Hyderabad · ML, systems & the environment." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230F6E6A'/%3E%3Ctext x='50%25' y='53%25' font-family='Georgia,serif' font-size='30' font-weight='600' fill='white' text-anchor='middle' dominant-baseline='middle'%3EVA%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body id="top">
+
+  <!-- ====================================================== INTRO / WELCOME CURTAIN -->
+  <div class="intro" id="intro" role="presentation" aria-hidden="true">
+    <canvas class="intro__canvas" id="introCanvas" aria-hidden="true"></canvas>
+    <div class="intro__content">
+      <span class="intro__name">Vishakha Agrawal</span>
+      <span class="intro__tag">Computer Science · IIIT Hyderabad</span>
+    </div>
+  </div>
+
+  <!-- ====================================================== NAVBAR -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand__mark">VA</span>
+        <span>Vishakha Agrawal<small>IIIT Hyderabad</small></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#education">Education</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#publications">Publications</a>
+        <a class="nav__link" href="#contact">Contact</a>
+        <a class="btn btn-primary nav__cta" href="Resume.pdf" download>
+          <i data-lucide="download"></i> Résumé
+        </a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="navBackdrop"></div>
+
+  <!-- ====================================================== HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <span class="blob blob--1"></span>
+      <span class="blob blob--2"></span>
+      <span class="blob blob--3"></span>
+    </div>
+
+    <div class="container hero__grid">
+      <div class="hero__intro">
+        <span class="hero__status" data-aos="fade-up">
+          <span class="dot"></span> Open to research &amp; internship opportunities
+        </span>
+        <h1 class="hero__title" data-aos="fade-up" data-aos-delay="60">
+          Vishakha
+          <span class="line2 text-grad">Agrawal</span>
+        </h1>
+        <div class="hero__typed-wrap" data-aos="fade-up" data-aos-delay="120">
+          <span class="typed" id="typed"></span>
+        </div>
+        <p class="hero__lead" data-aos="fade-up" data-aos-delay="180">
+          Welcome to my website — a space where I share stories of my life's milestones and
+          stumbling blocks, and where I talk about my skills, interests, and passions. Explore
+          these pages and join me on my journey to learn and discover.
+        </p>
+
+        <div class="hero__cta" data-aos="fade-up" data-aos-delay="240">
+          <a class="btn btn-primary" href="#projects"><i data-lucide="folder-open"></i> View Projects</a>
+          <a class="btn btn-ghost" href="Resume.pdf" download><i data-lucide="download"></i> Download Résumé</a>
+        </div>
+
+        <div class="hero__meta" data-aos="fade-up" data-aos-delay="300">
+          <div class="hero__stat"><span class="n">14+</span><span class="l">Projects</span></div>
+          <div class="hero__stat"><span class="n">5</span><span class="l">Fields explored</span></div>
+          <div class="hero__stat"><span class="n">2023</span><span class="l">At IIIT-H since</span></div>
+        </div>
+      </div>
+
+      <div class="hero__portrait" data-aos="zoom-in" data-aos-delay="200">
+        <span class="portrait-ring" aria-hidden="true"></span>
+        <div class="portrait-frame">
+          <img src="profile.png" alt="Portrait of Vishakha Agrawal" width="360" height="360" />
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ====================================================== ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="sec-head" data-aos="fade-up">
+        <span class="eyebrow">About</span>
+        <h2 class="sec-title">A little about me.</h2>
+      </div>
+
+      <div class="about__grid">
+        <div data-aos="fade-up">
+          <p class="about__lead">
+            Hi! I'm an undergraduate in <strong>Computer Science at IIIT Hyderabad</strong>.
+          </p>
+          <div class="about__body">
+            <p>
+              I attempt to understand how computation might aid us in answering questions in health,
+              ecology, and human behaviour — from antibiotic discovery and coral-reef forecasting to
+              geospatial models of urban growth and studies of how people reason in different contexts.
+            </p>
+            <p>
+              I grew up in Hyderabad and occasionally visit the Birla Science Museum and the Golconda
+              Fort. Should you ever arrive here for the first time, I would be delighted to serve as
+              your guide — the city, reading, and music have remained my most faithful companions.
+            </p>
+            <p>
+              I hope to contribute to endeavours that serve both the people around us and the environment.
+            </p>
+          </div>
+        </div>
+
+        <div class="facts">
+          <div class="fact" data-aos="fade-up" data-aos-delay="60">
+            <span class="ic"><i data-lucide="graduation-cap"></i></span>
+            <div><h4>B.Tech, Computer Science</h4><p>IIIT Hyderabad · 2023 – Present</p></div>
+          </div>
+          <div class="fact" data-aos="fade-up" data-aos-delay="120">
+            <span class="ic"><i data-lucide="microscope"></i></span>
+            <div><h4>Curious about</h4><p>ML for health &amp; the environment, and geospatial modelling</p></div>
+          </div>
+          <div class="fact" data-aos="fade-up" data-aos-delay="180">
+            <span class="ic"><i data-lucide="map-pin"></i></span>
+            <div><h4>Based in</h4><p>Hyderabad, India</p></div>
+          </div>
+          <div class="fact" data-aos="fade-up" data-aos-delay="240">
+            <span class="ic"><i data-lucide="book-open"></i></span>
+            <div><h4>Beyond code</h4><p>Reading and music</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================== EDUCATION -->
+  <section class="section section--alt" id="education">
+    <div class="container">
+      <div class="sec-head" data-aos="fade-up">
+        <span class="eyebrow">Education</span>
+        <h2 class="sec-title">Where I've studied.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="edu-card" data-aos="fade-up">
+          <div class="edu-logo"><img src="iiit.jpeg" alt="IIIT Hyderabad logo" loading="lazy" /></div>
+          <div>
+            <div class="edu-top">
+              <h3>International Institute of Information Technology, Hyderabad</h3>
+              <span class="edu-period">2023 – Present</span>
+            </div>
+            <p class="edu-degree">Bachelor of Technology, Computer Science</p>
+            <p class="edu-note">Undergraduate coursework spanning machine learning, systems, and spatial informatics.</p>
+          </div>
+        </article>
+
+        <article class="edu-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="edu-logo"><img src="fiitjee.png" alt="FIITJEE logo" loading="lazy" /></div>
+          <div>
+            <div class="edu-top">
+              <h3>FIITJEE</h3>
+              <span class="edu-period">2020 – 2022</span>
+            </div>
+            <p class="edu-degree">TSBIE — Class 12</p>
+            <p class="edu-note">Telangana State Board of Intermediate Education; Mathematics, Physics, Chemistry.</p>
+          </div>
+        </article>
+
+        <article class="edu-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="edu-logo"><img src="prerana.webp" alt="Prerana Waldorf School logo" loading="lazy" /></div>
+          <div>
+            <div class="edu-top">
+              <h3>Prerana Waldorf School</h3>
+              <span class="edu-period">2010 – 2020</span>
+            </div>
+            <p class="edu-degree">CBSE — Class 10</p>
+            <p class="edu-note">Forever grateful to the many loving teachers who gave me the chance to take part in wonderful music, plays, and so much more.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================== SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="sec-head center" data-aos="fade-up">
+        <span class="eyebrow">Skills</span>
+        <h2 class="sec-title">What I work with.</h2>
+        <p class="sec-sub">The languages, libraries, and platforms I have had the chance to interact with most often.</p>
+      </div>
+
+      <div class="skills__grid">
+        <!-- Languages -->
+        <div class="skill-cat" data-aos="fade-up">
+          <div class="skill-cat__head">
+            <span class="skill-cat__ic"><i data-lucide="code-2"></i></span>
+            <div><h3>Languages</h3><span class="skill-cat__count">9 languages</span></div>
+          </div>
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">C</span><span class="chip">C++</span>
+            <span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span>
+            <span class="chip">SQL</span><span class="chip">Dart</span><span class="chip">Bash</span>
+          </div>
+        </div>
+
+        <!-- ML / DL -->
+        <div class="skill-cat" data-aos="fade-up" data-aos-delay="80">
+          <div class="skill-cat__head">
+            <span class="skill-cat__ic"><i data-lucide="brain-circuit"></i></span>
+            <div><h3>Machine Learning &amp; DL</h3><span class="skill-cat__count">10 libraries</span></div>
+          </div>
+          <div class="chips">
+            <span class="chip">PyTorch</span><span class="chip">HuggingFace Transformers</span><span class="chip">scikit-learn</span>
+            <span class="chip">Chemprop</span><span class="chip">RDKit</span><span class="chip">pandas</span>
+            <span class="chip">NumPy</span><span class="chip">SciPy</span><span class="chip">Matplotlib</span><span class="chip">seaborn</span>
+          </div>
+        </div>
+
+        <!-- Web & Mobile -->
+        <div class="skill-cat" data-aos="fade-up" data-aos-delay="160">
+          <div class="skill-cat__head">
+            <span class="skill-cat__ic"><i data-lucide="layout-grid"></i></span>
+            <div><h3>Web &amp; Mobile</h3><span class="skill-cat__count">10 technologies</span></div>
+          </div>
+          <div class="chips">
+            <span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Node.js</span>
+            <span class="chip">Express.js</span><span class="chip">Flask</span><span class="chip">Flutter</span>
+            <span class="chip">Firebase</span><span class="chip">MongoDB</span><span class="chip">MySQL</span><span class="chip">REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Geospatial -->
+        <div class="skill-cat" data-aos="fade-up">
+          <div class="skill-cat__head">
+            <span class="skill-cat__ic"><i data-lucide="globe-2"></i></span>
+            <div><h3>Geospatial</h3><span class="skill-cat__count">3 platforms</span></div>
+          </div>
+          <div class="chips">
+            <span class="chip">Google Earth Engine</span><span class="chip">QGIS</span><span class="chip">PostGIS</span>
+          </div>
+        </div>
+
+        <!-- Systems -->
+        <div class="skill-cat" data-aos="fade-up" data-aos-delay="80">
+          <div class="skill-cat__head">
+            <span class="skill-cat__ic"><i data-lucide="cpu"></i></span>
+            <div><h3>Systems</h3><span class="skill-cat__count">3 areas</span></div>
+          </div>
+          <div class="chips">
+            <span class="chip">POSIX Threads</span><span class="chip">Socket Programming</span><span class="chip">SLURM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================== PROJECTS -->
+  <section class="section section--alt" id="projects">
+    <div class="container">
+      <div class="sec-head center" data-aos="fade-up">
+        <span class="eyebrow">Projects</span>
+        <h2 class="sec-title">Selected work.</h2>
+        <p class="sec-sub">Fourteen projects spanning machine learning, geospatial science, systems, full-stack web, and behavioral science.</p>
+      </div>
+
+      <div class="proj-filter" id="projFilter" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">ML &amp; Research</button>
+        <button class="filter-btn" data-filter="geo">Geospatial</button>
+        <button class="filter-btn" data-filter="sys">Systems</button>
+        <button class="filter-btn" data-filter="web">Web &amp; Data</button>
+        <button class="filter-btn" data-filter="beh">Behavioral Science</button>
+      </div>
+
+      <div class="proj-grid" id="projGrid">
+
+        <!-- Microbiome -->
+        <article class="proj-card" data-cat="ml" data-aos="fade-up">
+          <div class="proj-card__top"><span class="proj-cat">ML &amp; Research</span>
+            <span class="proj-icon"><i data-lucide="flask-conical"></i></span></div>
+          <h3>Microbiome-Sparing Antibiotic Discovery Pipeline</h3>
+          <p class="proj-card__desc">A multi-model machine-learning pipeline that identifies antibiotics selectively lethal to pathogens while sparing the gut microbiome — combining Morgan fingerprints, a directed message-passing neural network (D-MPNN), and the MoLFormer-XL chemical language model.</p>
+          <div class="proj-tech"><span>Python</span><span>PyTorch</span><span>Chemprop</span><span>HuggingFace</span><span>RDKit</span></div>
+          <div class="proj-links">
+            <a class="proj-link" href="https://github.com/vagrawal2718/projects" target="_blank" rel="noopener"><i data-lucide="github"></i> Repository</a>
+          </div>
+        </article>
+
+        <!-- pCRVI -->
+        <article class="proj-card" data-cat="ml geo" data-aos="fade-up" data-aos-delay="60">
+          <div class="proj-card__top"><span class="proj-cat">ML &amp; Research</span>
+            <span class="proj-icon"><i data-lucide="waves"></i></span></div>
+          <h3>Predictive Coral Reef Vulnerability Index (pCRVI)</h3>
+          <p class="proj-card__desc">A seven-component, satellite-driven early-warning system for coral bleaching integrating thermal, water-quality and climate-driver sub-indices. Validated across 14 reef systems in three ocean basins, it detected 7/7 documented bleaching events on the Andaman calibration domain — versus 3/7 for NOAA's standard DHW metric.</p>
+          <div class="proj-tech"><span>Python</span><span>XGBoost</span><span>Google Earth Engine</span><span>NOAA CRW</span><span>pandas</span></div>
+          <div class="proj-links">
+            <a class="proj-link" href="https://github.com/vagrawal2718/projects/tree/main/pCRVI_Coral_Bleaching" target="_blank" rel="noopener"><i data-lucide="github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- IoT (proprietary) -->
+        <article class="proj-card" data-cat="sys" data-aos="fade-up" data-aos-delay="120">
+          <div class="proj-card__top"><span class="proj-cat">Systems · IoT</span>
+            <span class="proj-icon"><i data-lucide="cpu"></i></span></div>
+          <h3>IoT Smart Refill Pod Monitoring</h3>
+          <p class="proj-card__desc">An IoT system for real-time monitoring of smart refill pods — tracking consumption and fill levels in dispensers, running remote diagnostics on device health, and flagging when a pod is running low or due for replacement, so refills can be scheduled proactively.</p>
+          <div class="proj-tech"><span>IoT</span><span>Embedded Systems</span></div>
+          <div class="proj-links">
+            <span class="proj-link muted"><i data-lucide="lock"></i> Proprietary — no public repo</span>
+          </div>
+        </article>
+
+        <!-- Ecommerce -->
+        <article class="proj-card" data-cat="web" data-aos="fade-up">
+          <div class="proj-card__top"><span class="proj-cat">Web &amp; Data</span>
+            <span class="proj-icon"><i data-lucide="shopping-cart"></i></span></div>
+          <h3>Buy-Sell E-Commerce Platform</h3>
+          <p class="proj-card__desc">A full-stack MERN buy-sell marketplace featuring JWT authentication, full product/category CRUD, reviews and ratings, and search with category, brand, and price filtering.</p>
+          <div class="proj-tech"><span>React</span><span>Redux Toolkit</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JWT</span></div>
+          <div class="proj-links">
+            <a class="proj-link" href="https://github.com/vagrawal2718/projects/tree/main/Ecommerce_Platform" target="_blank" rel="noopener"><i data-lucide="github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- Job Scams -->
+        <article class="proj-card" data-cat="beh ml" data-aos="fade-up" data-aos-delay="60">
+          <div class="proj-card__top"><span class="proj-cat">Behavioral Science</span>
+            <span class="proj-icon"><i data-lucide="shield-alert"></i></span></div>
+          <h3>Job Scam Victimization Analysis</h3>
+          <p class="proj-card__desc">A human-centred behavioral-economics study (N=96) of why people fall for job scams — testing sunk-cost, loss-aversion and social-proof mechanisms via logistic regression, Bayesian bootstrap, propensity-score matching, and NLP sentiment analysis.</p>
+          <div class="proj-tech"><span>Python</span><span>scikit-learn</span><span>NLP</span><span>Survey Design</span><span>pandas</span></div>
+          <div class="proj-links">
+            <a class="proj-link" href="https://github.com/vagrawal2718/projects/tree/main/JobScams" target="_blank" rel="noopener"><i data-lucide="github"></i> Code</a>
+            <a class="proj-link" href="https://arxiv.org/abs/2601.19342" target="_blank" rel="noopener"><i data-lucide="file-text"></i> Paper</a>
+          </div>
+        </article>
+
+        <!-- Social Proof -->
+        <article class="proj-card" data-cat="beh web" data-aos="fade-up" data-aos-delay="120">
+          <div class="proj-card__top"><span class="proj-cat">Behavioral Science</span>
+            <span class="proj-icon"><i data-lucide="bot"></i></span></div>
+          <h3>Social Proof &amp; AI Content Detection</h3>
+          <p class="proj-card__desc">A 2×2 within-subjects experiment (N=35) testing whether social-media engagement (likes) biases people's ability to tell AI-generated from human-written LinkedIn posts, analysed with repeated-measures ANOVA and Signal Detection Theory.</p>
+          <div class="proj-tech"><span>Next.js</span><span>TypeScript</span><span>React</span><span>Python</span><span>SciPy</span></div>
+          <div class="proj-links">
+            <a class="proj-link" href="https://github.com/vagrawal2718/projects/tree/main/SocialProof" target="_blank" rel="noopener"><i data-lucide="github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- Urban Growth -->
+        <article class="proj-card" data-cat="geo ml" data-aos="fade-up">
+          <div class="proj-card__top"><span class="proj-cat">Geospatial</span>
+            <span class="proj-icon"><i data-lucide="building-2"></i></span></div>
+          <h3>Hybrid CA-MLR-GA Urban Growth Simulation</h3>
+          <p class="proj-card__desc">A hybrid Cellular-Automata + Multinomial-Logistic-Regression + Genetic-Algorithm model projecting Hyderabad's built-up expansion from 457 km² (2020) to 1,007 km² (2050) from Landsat imagery, validated to 93%+ accuracy.</p>
+          <div class="proj-tech"><span>Python</span><span>Google Earth Engine</span><span>scikit-learn</span><span>Cellular Automata</span></div>
+          <div class="proj-links">
+            <a class="proj-link" href="https://github.com/vagrawal2718/projects/tree/main/Simulating_Urban_Growth" target="_blank" rel="noopener"><i data-lucide="github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- LST -->
+        <article class="proj-card" data-cat="geo" data-aos="fade-up" data-aos-delay="60">
+          <div class="proj-card__top"><span class="proj-cat">Geospatial</span>
+            <span class="proj-icon"><i data-lucide="thermometer-sun"></i></span></div>
+          <h3>Urban Heat Island Effect Analysis</h3>
+          <p class="proj-card__desc">A remote-sensing study of how urbanisation reshaped Land Surface Temperature in Jaipur (2014–2024), using index-based land-cover classification (NDBI / NDVI / MNDWI) and the Mono-window algorithm for sector-wise LST analysis.</p>
+          <div class="proj-tech"><span>Python</span><span>Google Earth Engine</span><span>Remote Sensing</span></div>
+          <div class="proj-links">
+            <a class="proj-link" href="https://github.com/vagrawal2718/projects/tree/main/LST_LandUse" target="_blank" rel="noopener"><i data-lucide="github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- NFS -->
+        <article class="proj-card" data-cat="sys" data-aos="fade-up" data-aos-delay="120">
+          <div class="proj-card__top"><span class="proj-cat">Systems</span>
+            <span class="proj-icon"><i data-lucide="network"></i></span></div>
+          <h3>Distributed Network File System</h3>
+          <p class="proj-card__desc">A distributed client–server file system with a central naming server and multiple storage servers — supporting CREATE/COPY/READ/WRITE/DELETE, asynchronous writes, mp3 streaming with pause/resume, and storage-server failure detection.</p>
+          <div class="proj-tech"><span>C</span><span>Sockets</span><span>TCP/IP</span><span>POSIX Threads</span></div>
+          <div class="proj-links">
+            <a class="proj-link" href="https://github.com/vagrawal2718/projects/tree/main/NetworkFileSystem" target="_blank" rel="noopener"><i data-lucide="github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- XV6 -->
+        <article class="proj-card" data-cat="sys" data-aos="fade-up">
+          <div class="proj-card__top"><span class="proj-cat">Systems</span>
+            <span class="proj-icon"><i data-lucide="server-cog"></i></span></div>
+          <h3>Enhanced XV6 Operating System</h3>
+          <p class="proj-card__desc">Kernel-level extensions to the xv6 OS: a Copy-On-Write fork, custom system calls (syscount, sigalarm), Lottery and Multi-Level-Feedback-Queue schedulers, plus TCP/UDP networked applications and a reliable-UDP transport.</p>
+          <div class="proj-tech"><span>C</span><span>RISC-V</span><span>Operating Systems</span><span>Socket Programming</span></div>
+          <div class="proj-links">
+            <a class="proj-link" href="https://github.com/vagrawal2718/projects/tree/main/XV6_Scheduling_Networking" target="_blank" rel="noopener"><i data-lucide="github"></i> Scheduling &amp; Net</a>
+            <a class="proj-link" href="https://github.com/vagrawal2718/projects/tree/main/XV6_COW_Concurrency" target="_blank" rel="noopener"><i data-lucide="github"></i> COW &amp; Threads</a>
+          </div>
+        </article>
+
+        <!-- Custom Shell -->
+        <article class="proj-card" data-cat="sys" data-aos="fade-up" data-aos-delay="60">
+          <div class="proj-card__top"><span class="proj-cat">Systems</span>
+            <span class="proj-icon"><i data-lucide="terminal"></i></span></div>
+          <h3>Custom Unix-like Shell</h3>
+          <p class="proj-card__desc">A POSIX-style UNIX shell in C supporting pipes, I/O redirection, foreground/background job control and signal handling, alongside custom built-ins: hop, reveal, seek, log, proclore, activities, and an HTTP-based man-page viewer.</p>
+          <div class="proj-tech"><span>C</span><span>Operating Systems</span><span>Systems Programming</span></div>
+          <div class="proj-links">
+            <a class="proj-link" href="https://github.com/vagrawal2718/projects/tree/main/CustomShell" target="_blank" rel="noopener"><i data-lucide="github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- Photo to Video -->
+        <article class="proj-card" data-cat="web" data-aos="fade-up" data-aos-delay="120">
+          <div class="proj-card__top"><span class="proj-cat">Web &amp; Data</span>
+            <span class="proj-icon"><i data-lucide="clapperboard"></i></span></div>
+          <h3>Photo-to-Video Web App</h3>
+          <p class="proj-card__desc">A Flask web application with user authentication that converts uploaded photo sequences and audio into rendered videos, backed by a MySQL store for accounts and media.</p>
+          <div class="proj-tech"><span>Python</span><span>Flask</span><span>JavaScript</span><span>MySQL</span></div>
+          <div class="proj-links">
+            <a class="proj-link" href="https://github.com/vagrawal2718/projects/tree/main/PhotoVideoConverter" target="_blank" rel="noopener"><i data-lucide="github"></i> Code</a>
+            <a class="proj-link" href="https://avk-video.onrender.com/" target="_blank" rel="noopener"><i data-lucide="external-link"></i> Live Demo</a>
+          </div>
+        </article>
+
+        <!-- Word Superiority -->
+        <article class="proj-card" data-cat="beh" data-aos="fade-up">
+          <div class="proj-card__top"><span class="proj-cat">Behavioral Science</span>
+            <span class="proj-icon"><i data-lucide="type"></i></span></div>
+          <h3>Word Superiority Effect Replication</h3>
+          <p class="proj-card__desc">An online replication and extension of Reicher's (1969) Word Superiority Effect (N=41), measuring trial-level accuracy and reaction time for target letters shown in real words versus scrambled nonwords.</p>
+          <div class="proj-tech"><span>PsychoJS</span><span>Pavlovia</span><span>JavaScript</span></div>
+          <div class="proj-links">
+            <a class="proj-link" href="https://github.com/vagrawal2718/projects/tree/main/WordSuperiorityEffect" target="_blank" rel="noopener"><i data-lucide="github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- Veterinary -->
+        <article class="proj-card" data-cat="web" data-aos="fade-up" data-aos-delay="60">
+          <div class="proj-card__top"><span class="proj-cat">Web &amp; Data</span>
+            <span class="proj-icon"><i data-lucide="stethoscope"></i></span></div>
+          <h3>Veterinary Clinic Management System</h3>
+          <p class="proj-card__desc">A Python command-line application backed by MySQL for running a veterinary clinic — managing appointments, animals, billing and medicine inventory, with mentor assignment and summary revenue reporting.</p>
+          <div class="proj-tech"><span>Python</span><span>MySQL</span><span>SQL</span></div>
+          <div class="proj-links">
+            <a class="proj-link" href="https://github.com/vagrawal2718/projects/tree/main/VeterinaryManagementSystem" target="_blank" rel="noopener"><i data-lucide="github"></i> Code</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================== PUBLICATIONS -->
+  <section class="section" id="publications">
+    <div class="container">
+      <div class="sec-head" data-aos="fade-up">
+        <span class="eyebrow">Publications</span>
+        <h2 class="sec-title">A study I contributed to.</h2>
+      </div>
+
+      <article class="pub-card" data-aos="fade-up">
+        <span class="pub-badge"><i data-lucide="scroll-text"></i></span>
+        <div>
+          <p class="pub-venue">arXiv preprint · 2026</p>
+          <h3>Modeling Behavioral Signals in Job Scams: A Human-Centered Security Study</h3>
+          <p class="pub-authors">
+            G. Anagha, V. D. Agrawal, G. Sarkar, K. Vemuri, S. K. Shukla
+          </p>
+          <p class="pub-cite">arXiv:2601.19342, 2026.</p>
+          <div class="pub-actions">
+            <a class="btn btn-primary" href="https://arxiv.org/abs/2601.19342" target="_blank" rel="noopener"><i data-lucide="external-link"></i> View on arXiv</a>
+            <a class="btn btn-ghost" href="https://arxiv.org/pdf/2601.19342" target="_blank" rel="noopener"><i data-lucide="file-down"></i> PDF</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ====================================================== CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__card" data-aos="fade-up">
+        <div class="contact__inner">
+          <span class="eyebrow">Contact</span>
+          <h2>Let's create together.</h2>
+
+          <div class="contact__links">
+            <a class="clink" href="mailto:vishakha.d.agrawal@gmail.com">
+              <span class="ic"><i data-lucide="mail"></i></span>
+              <span><b>Email</b><small>vishakha.d.agrawal@gmail.com</small></span>
+            </a>
+            <a class="clink" href="https://github.com/vagrawal2718" target="_blank" rel="noopener">
+              <span class="ic"><i data-lucide="github"></i></span>
+              <span><b>GitHub</b><small>github.com/vagrawal2718</small></span>
+            </a>
+            <a class="clink" href="https://www.linkedin.com/in/vishakha-agrawal-81b75b378" target="_blank" rel="noopener">
+              <span class="ic"><i data-lucide="linkedin"></i></span>
+              <span><b>LinkedIn</b><small>in/vishakha-agrawal</small></span>
+            </a>
+          </div>
+
+          <div class="contact__resume">
+            <a class="btn btn-primary" href="Resume.pdf" download><i data-lucide="download"></i> Download Résumé (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================== FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__brand">Vishakha Agrawal</div>
+        <p class="footer__note">© <span id="year"></span> · Computer Science, IIIT Hyderabad · Built as a static site.</p>
+      </div>
+      <div class="footer__socials">
+        <a href="https://github.com/vagrawal2718" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+        <a href="https://www.linkedin.com/in/vishakha-agrawal-81b75b378" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="mailto:vishakha.d.agrawal@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="to-top" id="toTop" aria-label="Back to top"><i data-lucide="arrow-up"></i></a>
+
+  <!-- ====================================================== SCRIPTS (CDN) -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lucide@0.544.0/dist/umd/lucide.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

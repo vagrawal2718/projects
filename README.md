@@ -20,3 +20,15 @@ Welcome to my main projects repository! This repository contains projects comple
 | **Job Scam Victimization: Behavioral Economics Analysis** | Structured survey (N=96) with logistic regression, Bayesian bootstrap, propensity score matching, and NLP sentiment classification | Python, Survey Design, NLP |
 | **Word Superiority Effect: Online Replication** | Web-based replication of Reicher (1969) with trial-level accuracy and reaction time analysis (N=41) | PsychoJS, Pavlovia, JavaScript |
 | **Microbiome-Sparing Antibiotic Discovery Pipeline** | Multi-model ML pipeline identifying selective antibiotics using Morgan fingerprints, D-MPNN, and MoLFormer-XL | PyTorch, Chemprop, HuggingFace, RDKit |
+| **Personal Portfolio Website** | Static single-page portfolio site served from a university `public_html` directory; sections for about, education, skills, projects, and publications | HTML, CSS, JavaScript, GSAP, AOS, Typed.js |
+
+## Personal Portfolio Website
+
+A static, single-page personal portfolio website (`website/`), served from a university
+`public_html` directory with no build step and no server-side code. It presents the about,
+education, skills, projects, and publications sections, with all third-party libraries
+loaded from public CDNs.
+
+- **Live:** <https://students.iiit.ac.in/~vishakha.agrawal/>
+- **Source:** [`website/`](website/) — see [`website/README.md`](website/README.md) for the file structure and deployment steps.
+- **Built with:** HTML, CSS, vanilla JavaScript, GSAP, AOS, Typed.js, Lucide, and Google Fonts.
